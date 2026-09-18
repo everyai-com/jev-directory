@@ -9423,5 +9423,18 @@
   "note": "Added from X",
   "submittedAt": "2026-09-18T19:19:22+00:00",
   "reviewedAt": "2026-09-18T22:11:50+00:00"
+ },
+ {
+  "id": "x-HugoDuprez-2100953089003921543",
+  "status": "approved",
+  "title": "Jev generates game levels in real time — faster, cheaper structured output",
+  "category": "Fun",
+  "description": "Hugo demoed Jev generating game levels in real time on video: faster and cheaper structured output could be a big deal for game dev.\n\n— @HugoDuprez (1260 likes)\n\nLinked projects:\n• Post by @HugoDuprez — Jev can generate game levels in real time. Faster and cheaper structured output could be a big deal for game dev! (x.com/HugoDuprez/status/2100953089003921543)",
+  "prompt": "",
+  "handle": "@HugoDuprez",
+  "sourceUrl": "https://x.com/HugoDuprez/status/2100953089003921543",
+  "note": "Added from X",
+  "submittedAt": "2026-09-18T14:20:24+00:00",
+  "reviewedAt": "2026-09-18T22:34:51+00:00"
  }
 ]

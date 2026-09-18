@@ -18401,5 +18401,22 @@
     "desc": "tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook — 106★ · Python"
    }
   }
+ },
+ {
+  "id": "x-HugoDuprez-2100953089003921543",
+  "author": "@HugoDuprez",
+  "timestamp": "2026-09-18T14:20:24+00:00",
+  "sourceUrl": "https://x.com/HugoDuprez/status/2100953089003921543",
+  "urls": [
+   "https://x.com/HugoDuprez/status/2100953089003921543"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/HugoDuprez/status/2100953089003921543": {
+    "kind": "x",
+    "title": "Post by @HugoDuprez",
+    "desc": "Jev can generate game levels in real time.\n\nFaster and cheaper structured output could be a big deal for game dev!"
+   }
+  }
  }
 ]
