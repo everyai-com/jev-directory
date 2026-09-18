@@ -18349,5 +18349,57 @@
     "desc": "I built a realtime tool to filter out cringe content on linkedin with typesafe 🚨\n\nIt checks every post and classifies as cringe content or non-cringe. automatically filters cringe, clickbait & low-value posts. next filter engagement baits on youtube + twitter.\n\nbtw, It filtered out almost my entire linkedIn feed 😭"
    }
   }
+ },
+ {
+  "id": "x-yusukebe-2100871075743859182",
+  "author": "@yusukebe",
+  "timestamp": "2026-09-18T08:54:31+00:00",
+  "sourceUrl": "https://x.com/yusukebe/status/2100871075743859182",
+  "urls": [
+   "https://x.com/yusukebe/status/2100871075743859182",
+   "https://github.com/yusukebe/hono-jev-router",
+   "https://hono-jev-router.yusuke.run"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/yusukebe/status/2100871075743859182": {
+    "kind": "x",
+    "title": "Post by @yusukebe",
+    "desc": "I created JevRouter for Hono! This routes HTTP requests by meaning, not by method and path\n\nnpm i hono-jev-router\n\nPlayground: https://hono-jev-router.yusuke.run"
+   },
+   "https://github.com/yusukebe/hono-jev-router": {
+    "kind": "github",
+    "title": "yusukebe/hono-jev-router",
+    "desc": "Route HTTP requests by meaning. A semantic router for Hono powered by Jev. — 26★ · TypeScript"
+   },
+   "https://hono-jev-router.yusuke.run": {
+    "kind": "page",
+    "title": "JevRouter playground",
+    "desc": "Try semantic routing in the browser."
+   }
+  }
+ },
+ {
+  "id": "x-jaredpalmer-2101028325472841920",
+  "author": "@jaredpalmer",
+  "timestamp": "2026-09-18T19:19:22+00:00",
+  "sourceUrl": "https://x.com/jaredpalmer/status/2101028325472841920",
+  "urls": [
+   "https://x.com/jaredpalmer/status/2101028325472841920",
+   "https://github.com/jaredpalmer/kev"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/jaredpalmer/status/2101028325472841920": {
+    "kind": "x",
+    "title": "Post by @jaredpalmer",
+    "desc": "Kev-0.5B: A tiny open source Jev-like decision model with a TypeSafe-compatible API based on Qwen2.5-0.5B that you can train and run on a MacBook Pro.\n\nModel card and weights are available on GitHub\n\nhttps://github.com/jaredpalmer/kev"
+   },
+   "https://github.com/jaredpalmer/kev": {
+    "kind": "github",
+    "title": "jaredpalmer/kev",
+    "desc": "tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook — 106★ · Python"
+   }
+  }
  }
 ]

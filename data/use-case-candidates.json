@@ -9397,5 +9397,31 @@
   "note": "Added from X",
   "submittedAt": "2026-09-18T14:27:44+00:00",
   "reviewedAt": "2026-09-18T22:06:03+00:00"
+ },
+ {
+  "id": "x-yusukebe-2100871075743859182",
+  "status": "approved",
+  "title": "JevRouter for Hono routes HTTP requests by meaning, not method and path",
+  "category": "Integrations",
+  "description": "Yusuke (Hono's creator) built JevRouter for Hono: it routes HTTP requests by meaning, not by method and path. Install with `npm i hono-jev-router`, try it in the playground.\n\n— @yusukebe (844 likes)\n\nLinked projects:\n• Post by @yusukebe — I created JevRouter for Hono! This routes HTTP requests by meaning, not by method and path. (x.com/yusukebe/status/2100871075743859182)\n• yusukebe/hono-jev-router — Route HTTP requests by meaning. A semantic router for Hono powered by Jev. — 26★ · TypeScript (github.com/yusukebe/hono-jev-router)\n• JevRouter playground — Try semantic routing in the browser. (hono-jev-router.yusuke.run)",
+  "prompt": "",
+  "handle": "@yusukebe",
+  "sourceUrl": "https://x.com/yusukebe/status/2100871075743859182",
+  "note": "Added from X",
+  "submittedAt": "2026-09-18T08:54:31+00:00",
+  "reviewedAt": "2026-09-18T22:11:50+00:00"
+ },
+ {
+  "id": "x-jaredpalmer-2101028325472841920",
+  "status": "approved",
+  "title": "Kev-0.5B: tiny open-source Jev-like decision model that trains on a MacBook",
+  "category": "Evaluation",
+  "description": "Jared Palmer shipped Kev-0.5B: a tiny open-source Jev-like decision model with a TypeSafe-compatible API, based on Qwen2.5-0.5B, that you can train and run on a MacBook Pro. Model card and weights are on GitHub.\n\n— @jaredpalmer (643 likes)\n\nLinked projects:\n• Post by @jaredpalmer — Kev-0.5B: A tiny open source Jev-like decision model with a TypeSafe-compatible API based on Qwen2.5-0.5B that you can train and run on a MacBook Pro. (x.com/jaredpalmer/status/2101028325472841920)\n• jaredpalmer/kev — tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook — 106★ · Python (github.com/jaredpalmer/kev)",
+  "prompt": "",
+  "handle": "@jaredpalmer",
+  "sourceUrl": "https://x.com/jaredpalmer/status/2101028325472841920",
+  "note": "Added from X",
+  "submittedAt": "2026-09-18T19:19:22+00:00",
+  "reviewedAt": "2026-09-18T22:11:50+00:00"
  }
 ]
