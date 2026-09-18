@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I&#39;m building Solenoid, which is a, well, type-safe node-graph alternative to Excel. — Jev Directory</title>
+<meta name="description" content="I&#39;m building Solenoid, which is a, well, type-safe node-graph alternative to Excel. numbers/strings/dates/booleans all have different socket types so they can&#39;t">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>I&#39;m building Solenoid, which is a, well, type-safe node-graph alternative to Excel.</h1>
+<div class="meta"><span class="catname">Home</span><span>by big guy</span><span>2026-09-15</span></div>
+<div class="body">I&#39;m building Solenoid, which is a, well, type-safe node-graph alternative to Excel.  numbers/strings/dates/booleans all have different socket types so they can&#39;t be confused for one another. 
+Supports all Excel functions (except the ones that are strictly for spreadsheet grids). The windows desktop build uses Rust/Polars for big operations but otherwise it runs in your browser. Has additional convenience functions + widgets + Obsidian integration.
+
+http://solenoid-ngc.vercel.app
+
+Linked projects:
+• Solenoid — A node-graph alternative to Excel for data tables. (solenoid-ngc.vercel.app)
+• 91766215-7682-4291-b1d9-11121e21c207.jpg — image/jpeg · 145 KB (cdn.discordapp.com/attachments/1483217545040232493/1549549541282549880)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549549541798182982</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="http://solenoid-ngc.vercel.app" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=solenoid-ngc.vercel.app&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Solenoid</span><span class="d">solenoid-ngc.vercel.app</span><span class="x">A node-graph alternative to Excel for data tables.</span></span></a><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1549549541282549880/91766215-7682-4291-b1d9-11121e21c207.jpg?ex=6aae65b7&amp;is=6aad1437&amp;hm=12e7e88565be71ed7e5b46370687c803957d6204b88540d27c770470fbf6d1e8&amp;" target="_blank" rel="noopener"><img class="th" src="https://cdn.discordapp.com/attachments/1483217545040232493/1549549541282549880/91766215-7682-4291-b1d9-11121e21c207.jpg?ex=6aae65b7&amp;is=6aad1437&amp;hm=12e7e88565be71ed7e5b46370687c803957d6204b88540d27c770470fbf6d1e8&amp;" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">91766215-7682-4291-b1d9-11121e21c207.jpg</span><span class="d">cdn.discordapp.com</span><span class="x">image/jpeg · 145 KB</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="http://solenoid-ngc.vercel.app" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "I'm building Solenoid, which is a, well, type-safe node-graph alternative to Excel.\n\nI'm building Solenoid, which is a, well, type-safe node-graph alternative to Excel.  numbers/strings/dates/booleans all have different socket types so they can't be confused for one another. \nSupports all Excel functions (except the ones that are strictly for spreadsheet grids). The windows desktop build uses Rust/Polars for big operations but otherwise it runs in your browser. Has additional convenience functions + widgets + Obsidian integration.\n\nhttp://solenoid-ngc.vercel.app\n\nLinked projects:\n• Solenoid — A node-graph alternative to Excel for data tables. (solenoid-ngc.vercel.app)\n• 91766215-7682-4291-b1d9-11121e21c207.jpg — image/jpeg · 145 KB (cdn.discordapp.com/attachments/1483217545040232493/1549549541282549880)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549549541798182982\n- Solenoid: http://solenoid-ngc.vercel.app\n- 91766215-7682-4291-b1d9-11121e21c207.jpg: https://cdn.discordapp.com/attachments/1483217545040232493/1549549541282549880/91766215-7682-4291-b1d9-11121e21c207.jpg?ex=6aae65b7&is=6aad1437&hm=12e7e88565be71ed7e5b46370687c803957d6204b88540d27c770470fbf6d1e8&\n\nSource: http://solenoid-ngc.vercel.app";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

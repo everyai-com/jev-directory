@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hi I&#39;m Dunk, and I&#39;m building and - I&#39;d like to use Jev to poke around for improvements, optimisations and new ideas! — Jev Directory</title>
+<meta name="description" content="Hi I&#39;m Dunk, and I&#39;m building https://fleetpass.vercel.app/ and https://apply-os-bice.vercel.app/ - I&#39;d like to use Jev to poke around for improvements, optimis">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Hi I&#39;m Dunk, and I&#39;m building and - I&#39;d like to use Jev to poke around for improvements, optimisations and new ideas!</h1>
+<div class="meta"><span class="catname">Work</span><span>by skywlkr</span><span>2026-09-16</span></div>
+<div class="body">Hi I&#39;m Dunk, and I&#39;m building https://fleetpass.vercel.app/ and https://apply-os-bice.vercel.app/ - I&#39;d like to use Jev to poke around for improvements, optimisations and new ideas!
+
+Linked projects:
+• Fleetpass — Your vehicle papers. One place. No missed renewals. — Upload your vehicle papers. Fleetpass reads the details and reminds you before they expire. (fleetpass.vercel.app)
+• ApplyOS — ApplyOS finds live roles you can plausibly get, tells you which are worth pursuing and why, and prepares each application. You read it and press Submit. (apply-os-bice.vercel.app)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549711316435079208</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://fleetpass.vercel.app/" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=fleetpass.vercel.app&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Fleetpass — Your vehicle papers. One place. No missed renewals.</span><span class="d">fleetpass.vercel.app</span><span class="x">Upload your vehicle papers. Fleetpass reads the details and reminds you before they expire.</span></span></a><a class="lnk" href="https://apply-os-bice.vercel.app/" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=apply-os-bice.vercel.app&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">ApplyOS</span><span class="d">apply-os-bice.vercel.app</span><span class="x">ApplyOS finds live roles you can plausibly get, tells you which are worth pursuing and why, and prepares each application. You read it and press Submit.</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://fleetpass.vercel.app/" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Work</h2><a href="./video-lead-scoring.html">Score inbound leads 0–1 and reply to the 98s first</a><a href="./video-support-routing.html">Route support inquiries to the right team instantly</a><a href="./discord-1550581784922554498.html">here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Hi I'm Dunk, and I'm building and - I'd like to use Jev to poke around for improvements, optimisations and new ideas!\n\nHi I'm Dunk, and I'm building https://fleetpass.vercel.app/ and https://apply-os-bice.vercel.app/ - I'd like to use Jev to poke around for improvements, optimisations and new ideas!\n\nLinked projects:\n• Fleetpass — Your vehicle papers. One place. No missed renewals. — Upload your vehicle papers. Fleetpass reads the details and reminds you before they expire. (fleetpass.vercel.app)\n• ApplyOS — ApplyOS finds live roles you can plausibly get, tells you which are worth pursuing and why, and prepares each application. You read it and press Submit. (apply-os-bice.vercel.app)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549711316435079208\n- Fleetpass — Your vehicle papers. One place. No missed renewals.: https://fleetpass.vercel.app/\n- ApplyOS: https://apply-os-bice.vercel.app/\n\nSource: https://fleetpass.vercel.app/";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

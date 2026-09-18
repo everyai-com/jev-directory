@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diogo reposted my Jev benchmark on X, so thought I’d share it here too! — Jev Directory</title>
+<meta name="description" content="Diogo reposted my Jev benchmark on X, so thought I’d share it here too! 👋 I tested Jev against two Gemini models on 1,565 German and English business emails ac">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Diogo reposted my Jev benchmark on X, so thought I’d share it here too!</h1>
+<div class="meta"><span class="catname">Admin</span><span>by parallax</span><span>2026-09-17</span></div>
+<div class="body">Diogo reposted my Jev benchmark on X, so thought I’d share it here too! 👋
+
+I tested Jev against two Gemini models on 1,565 German and English business emails across 10 categories.
+
+Jev came slightly behind on overall accuracy, but was 10–22× cheaper. The confidence scores were the standout: all 737 predictions at ≥99% confidence matched the reference labels, while mistakes clustered at low confidence.
+
+Charts in the thread (reference labels were AI-generated, not human-verified):
+https://x.com/CompleteSkeptic/status/2100655158992719907?s=20
+
+Curious how this compares with what others are seeing!
+
+Linked projects:
+• Post by @CompleteSkeptic — yay for private evals and calibrated confidence scores! 🥹 go automation! (x.com/CompleteSkeptic/status/2100655158992719907)
+• Post by @CompleteSkeptic — yay for private evals and calibrated confidence scores! 🥹 go automation! (twitter.com/CompleteSkeptic/status/2100655158992719907)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550231170044792852</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://x.com/CompleteSkeptic/status/2100655158992719907?s=20" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=x.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Post by @CompleteSkeptic</span><span class="d">x.com</span><span class="x">yay for private evals and calibrated confidence scores! 🥹 go automation!</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://x.com/CompleteSkeptic/status/2100655158992719907?s=20" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Diogo reposted my Jev benchmark on X, so thought I’d share it here too!\n\nDiogo reposted my Jev benchmark on X, so thought I’d share it here too! 👋\n\nI tested Jev against two Gemini models on 1,565 German and English business emails across 10 categories.\n\nJev came slightly behind on overall accuracy, but was 10–22× cheaper. The confidence scores were the standout: all 737 predictions at ≥99% confidence matched the reference labels, while mistakes clustered at low confidence.\n\nCharts in the thread (reference labels were AI-generated, not human-verified):\nhttps://x.com/CompleteSkeptic/status/2100655158992719907?s=20\n\nCurious how this compares with what others are seeing!\n\nLinked projects:\n• Post by @CompleteSkeptic — yay for private evals and calibrated confidence scores! 🥹 go automation! (x.com/CompleteSkeptic/status/2100655158992719907)\n• Post by @CompleteSkeptic — yay for private evals and calibrated confidence scores! 🥹 go automation! (twitter.com/CompleteSkeptic/status/2100655158992719907)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550231170044792852\n- Post by @CompleteSkeptic: https://x.com/CompleteSkeptic/status/2100655158992719907?s=20\n\nSource: https://x.com/CompleteSkeptic/status/2100655158992719907?s=20";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

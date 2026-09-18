@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hey everyone, built a lightweight, distraction-free Pomodoro web app called **focus-flow**. — Jev Directory</title>
+<meta name="description" content="Hey everyone, built a lightweight, distraction-free Pomodoro web app called **focus-flow**. Most focus timers I tried had cluttered UIs or unnecessary bloat, so">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Hey everyone, built a lightweight, distraction-free Pomodoro web app called **focus-flow**.</h1>
+<div class="meta"><span class="catname">Integrations</span><span>by w3ziqv</span><span>2026-09-16</span></div>
+<div class="body">Hey everyone, built a lightweight, distraction-free Pomodoro web app called **focus-flow**.
+
+Most focus timers I tried had cluttered UIs or unnecessary bloat, so I put together something minimal for my own workflow.
+
+**Features:**
+* Configurable session cycles (Focus, Short &amp; Long breaks, rounds tracking)
+* Fullscreen mode to kill tab distractions
+* Built-in ambient audio (rain, background noise)
+* Clean, modular ES modules structure under the hood
+
+**Repo:** https://github.com/w3ziqv/focus-flow
+
+Still fine-tuning the UX and code structure. Would appreciate any feedback on the implementation or ideas for features worth adding!
+
+Linked projects:
+• w3ziqv/focus-flow — Minimalist Pomodoro timer with focus mode, statistics, ambient sounds, and study tips. - w3ziqv/focus-flow (github.com/w3ziqv/focus-flow)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549774264733925436</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://github.com/w3ziqv/focus-flow" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">w3ziqv/focus-flow</span><span class="d">github.com</span><span class="x">Minimalist Pomodoro timer with focus mode, statistics, ambient sounds, and study tips. - w3ziqv/focus-flow</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://github.com/w3ziqv/focus-flow" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Integrations</h2><a href="./discord-1550586851343995032.html">Hi all. Been reading everything here since launch and lost track of what I&#39;d seen, so I made</a><a href="./discord-1550586432698187906.html">Instead of wiring every button to a specific screen, you register the components your app can show.</a><a href="./discord-1550581905005477918.html">Update with better ux, pipable jev command and traceable decisions</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Hey everyone, built a lightweight, distraction-free Pomodoro web app called **focus-flow**.\n\nHey everyone, built a lightweight, distraction-free Pomodoro web app called **focus-flow**.\n\nMost focus timers I tried had cluttered UIs or unnecessary bloat, so I put together something minimal for my own workflow.\n\n**Features:**\n* Configurable session cycles (Focus, Short & Long breaks, rounds tracking)\n* Fullscreen mode to kill tab distractions\n* Built-in ambient audio (rain, background noise)\n* Clean, modular ES modules structure under the hood\n\n**Repo:** https://github.com/w3ziqv/focus-flow\n\nStill fine-tuning the UX and code structure. Would appreciate any feedback on the implementation or ideas for features worth adding!\n\nLinked projects:\n• w3ziqv/focus-flow — Minimalist Pomodoro timer with focus mode, statistics, ambient sounds, and study tips. - w3ziqv/focus-flow (github.com/w3ziqv/focus-flow)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549774264733925436\n- w3ziqv/focus-flow: https://github.com/w3ziqv/focus-flow\n\nSource: https://github.com/w3ziqv/focus-flow";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

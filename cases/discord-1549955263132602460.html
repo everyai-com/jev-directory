@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yeah, with Jev, I do wonder if that kind of context engine feature I tried back... — Jev Directory</title>
+<meta name="description" content="Yeah, with Jev, I do wonder if that kind of context engine feature I tried back... It must be two years ago now... Whether it would become viable with Jev, and ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Yeah, with Jev, I do wonder if that kind of context engine feature I tried back...</h1>
+<div class="meta"><span class="catname">Home</span><span>by Dr. Fumes</span><span>2026-09-17</span></div>
+<div class="body">Yeah, with Jev, I do wonder if that kind of context engine feature I tried back... It must be two years ago now... Whether it would become viable with Jev, and actually worthwhile. That&#39;d need genuinely consistent, smart, cheap performance. Only question is whether Jev can understand all the minute nuances, coherently choosing what is worth including in the &quot;send to LLM turn&quot; bin.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549955263132602460" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Yeah, with Jev, I do wonder if that kind of context engine feature I tried back...\n\nYeah, with Jev, I do wonder if that kind of context engine feature I tried back... It must be two years ago now... Whether it would become viable with Jev, and actually worthwhile. That'd need genuinely consistent, smart, cheap performance. Only question is whether Jev can understand all the minute nuances, coherently choosing what is worth including in the \"send to LLM turn\" bin.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549955263132602460";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>We’re building a real-time decision engine for financial and prediction markets. — Jev Directory</title>
+<meta name="description" content="We’re building a real-time decision engine for financial and prediction markets. We’d like to test TypeSafe on low-latency, structured decisions such as whether">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>We’re building a real-time decision engine for financial and prediction markets.</h1>
+<div class="meta"><span class="catname">Shopping</span><span>by mmx</span><span>2026-09-18</span></div>
+<div class="body">We’re building a real-time decision engine for financial and prediction markets. We’d like to test TypeSafe on low-latency, structured decisions such as whether to enter, exit, hold, or cancel an order based on live market state, and benchmark it against general-purpose LLMs and quantitative models.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550374688327213079" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Shopping</h2><a href="./video-instant-matching.html">Match a service request to the best-fit company live</a><a href="./discord-1550565211616968727.html">thanks! this is what my gpt gave after seeing ur site Design it in a playful neo-brutalist style:</a><a href="./discord-1550526281488277585.html">Guys, stop watching Jev from the sidelines.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "We’re building a real-time decision engine for financial and prediction markets.\n\nWe’re building a real-time decision engine for financial and prediction markets. We’d like to test TypeSafe on low-latency, structured decisions such as whether to enter, exit, hold, or cancel an order based on live market state, and benchmark it against general-purpose LLMs and quantitative models.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550374688327213079";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

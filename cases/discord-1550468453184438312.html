@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I am actively developing and updating &quot;aidd-practice-guide,&quot; an operational framework that brings software engineering — Jev Directory</title>
+<meta name="description" content="I am actively developing and updating &quot;aidd-practice-guide,&quot; an operational framework that brings software engineering and Agile/Scrum disciplines into the LLM ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>I am actively developing and updating &quot;aidd-practice-guide,&quot; an operational framework that brings software engineering</h1>
+<div class="meta"><span class="catname">Home</span><span>by mryo0826</span><span>2026-09-18</span></div>
+<div class="body">I am actively developing and updating &quot;aidd-practice-guide,&quot; an operational framework that brings software engineering and Agile/Scrum disciplines into the LLM coding workflow: https://github.com/mryo0826/aidd-practice-guideIt acts as an &quot;orthopedic cast&quot; (矯正ギブス) to control uncertainty and keep human developers in the loop as the final arbitrators. The project is under heavy, active development with daily updates (including my private worklogs).The docs are currently in Japanese, so please drop them into a translation tool (like DeepL or Chrome Translate) to read through. I’d love to get your feedback on how we can entirely bypass the messy text-chat layer by leveraging TypeSafe’s deterministic decisions.
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550468453184438312</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://github.com/mryo0826/aidd-practice-guideIt" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">https://github.com/mryo0826/aidd-practice-guideIt</span><span class="d">github.com</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://github.com/mryo0826/aidd-practice-guideIt" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "I am actively developing and updating \"aidd-practice-guide,\" an operational framework that brings software engineering\n\nI am actively developing and updating \"aidd-practice-guide,\" an operational framework that brings software engineering and Agile/Scrum disciplines into the LLM coding workflow: https://github.com/mryo0826/aidd-practice-guideIt acts as an \"orthopedic cast\" (矯正ギブス) to control uncertainty and keep human developers in the loop as the final arbitrators. The project is under heavy, active development with daily updates (including my private worklogs).The docs are currently in Japanese, so please drop them into a translation tool (like DeepL or Chrome Translate) to read through. I’d love to get your feedback on how we can entirely bypass the messy text-chat layer by leveraging TypeSafe’s deterministic decisions.\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550468453184438312\n- https://github.com/mryo0826/aidd-practice-guideIt: https://github.com/mryo0826/aidd-practice-guideIt\n\nSource: https://github.com/mryo0826/aidd-practice-guideIt";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

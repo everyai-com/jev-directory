@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I&#39;ve got a hermes agent that plays a interactive Telegram game (lootgamebot), and I got tired of burning LLM calls — Jev Directory</title>
+<meta name="description" content="I&#39;ve got a hermes agent that plays a interactive Telegram game (lootgamebot), and I got tired of burning LLM calls (and tokens) on decisions that are really jus">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>I&#39;ve got a hermes agent that plays a interactive Telegram game (lootgamebot), and I got tired of burning LLM calls</h1>
+<div class="meta"><span class="catname">Travel</span><span>by casungo</span><span>2026-09-16</span></div>
+<div class="body">I&#39;ve got a hermes agent that plays a interactive Telegram game (lootgamebot), and I got tired of burning LLM calls (and tokens) on decisions that are really just yes/no questions with known rules. So I wired Jev in as the judgment layer.
+
+Instead of prompting an LLM and parsing free text, my Python code now composes the game state (inventory, coins, odds, history) plus typed questions, and gets back calibrated probabilities it can branch on directly.
+
+Examples from today&#39;s logs (since I got access today lol):
+- Dice minigame (one reroll): 5 Noul questions, &quot;keep die N?&quot; -&gt; {keep_1: 0.76, keep_2: 0.26, ...} -&gt; reroll positions 2, 4, 5. One API call, ~700ms.
+- Risky PvP inspection, historically 0/8 wins in this pool, costs 8k coins: accept: 0.19 -&gt; skip. 697ms.
+- Fragments: craft vs sell vs hold -&gt; Choice, craft with 0.71 confidence, matched the strategy I&#39;d hand-derived from two weeks of losses.
+
+The part I actually love is confidence gating. I made it so below 0.70 the code falls back to the hermes agent classic LLM instead of trusting Jev.
+
+Roughly 800ms per decision with 5 question</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549693064770097183" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Travel</h2><a href="./video-browser-flight.html">Pick a Zurich–London flight in 7.1 seconds of browser control</a><a href="./discord-1550488211317329960.html">yeah no I agree, it will need a lot of beforehand set up to work correctly, something with future support of</a><a href="./discord-1550462639425978400.html">Spent a day building tenet, a review gate for code that agents write.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "I've got a hermes agent that plays a interactive Telegram game (lootgamebot), and I got tired of burning LLM calls\n\nI've got a hermes agent that plays a interactive Telegram game (lootgamebot), and I got tired of burning LLM calls (and tokens) on decisions that are really just yes/no questions with known rules. So I wired Jev in as the judgment layer.\n\nInstead of prompting an LLM and parsing free text, my Python code now composes the game state (inventory, coins, odds, history) plus typed questions, and gets back calibrated probabilities it can branch on directly.\n\nExamples from today's logs (since I got access today lol):\n- Dice minigame (one reroll): 5 Noul questions, \"keep die N?\" -> {keep_1: 0.76, keep_2: 0.26, ...} -> reroll positions 2, 4, 5. One API call, ~700ms.\n- Risky PvP inspection, historically 0/8 wins in this pool, costs 8k coins: accept: 0.19 -> skip. 697ms.\n- Fragments: craft vs sell vs hold -> Choice, craft with 0.71 confidence, matched the strategy I'd hand-derived from two weeks of losses.\n\nThe part I actually love is confidence gating. I made it so below 0.70 the code falls back to the hermes agent classic LLM instead of trusting Jev.\n\nRoughly 800ms per decision with 5 question\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549693064770097183";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

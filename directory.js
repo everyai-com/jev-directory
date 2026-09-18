@@ -63,12 +63,19 @@ function briefOf(item) {
 }
 function buildCard(item, i) {
   var links = (item.l || []).map(function (l) {
-    return '<a href="' + esc(l.u) + '" target="_blank" rel="noopener"><span class="d">' +
-      esc(domainOf(l.u)) + '</span><span class="t">' + esc(l.t || l.u) + '</span></a>';
+    var dom = domainOf(l.u);
+    var visual = l.g
+      ? '<img class="th" src="' + esc(l.g) + '" alt="" loading="lazy" onerror="this.remove()">'
+      : '<img class="fv" src="https://www.google.com/s2/favicons?domain=' + esc(dom) + '&sz=32" alt="" loading="lazy" onerror="this.remove()">';
+    return '<a class="lnk" href="' + esc(l.u) + '" target="_blank" rel="noopener">' + visual +
+      '<span class="tt"><span class="t">' + esc(l.t || l.u) + '</span><span class="d">' + esc(dom) + '</span></span></a>';
   }).join('');
+  if (links) links = '<div class="llabel">Links</div>' + links;
+  var page = './cases/' + item.i + '.html';
   return '<article class="card" data-i="' + i + '"><div class="k"><span class="catname">' +
-    esc(item.c) + '</span><span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3>' +
-    esc(item.t) + '</h3><p class="desc">' + esc(item.d) + '</p><span class="more">read more +</span>' +
+    esc(item.c) + '</span><span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3><a href="' +
+    esc(page) + '">' + esc(item.t) + '</a></h3><p class="desc">' + esc(item.d) + '</p><a class="more" href="' +
+    esc(page) + '">read more +</a>' +
     (links ? '<div class="links">' + links + '</div>' : '') +
     '<div class="foot"><span class="by">by ' + esc(item.h || 'unknown') +
     ' · <a href="' + esc(item.u) + '" target="_blank" rel="noopener">source</a></span>' +
@@ -120,13 +127,6 @@ function renderBuilds() {
   });
 }
 function bindCards() {
-  document.querySelectorAll('#builds .card').forEach(function (card) {
-    var desc = card.querySelector('.desc');
-    var more = card.querySelector('.more');
-    function open() { card.classList.add('open'); }
-    if (desc) desc.addEventListener('click', open);
-    if (more) more.addEventListener('click', open);
-  });
   document.querySelectorAll('[data-brief]').forEach(function (btn) {
     btn.addEventListener('click', function (ev) {
       ev.stopPropagation();

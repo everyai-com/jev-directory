@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analyzing logical relationships between sentences without using an LLM: - sentence segmentation is done with — Jev Directory</title>
+<meta name="description" content="Analyzing logical relationships between sentences without using an LLM: - sentence segmentation is done with `Intl.Segmenter` in JS - determining the domain of ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Analyzing logical relationships between sentences without using an LLM: - sentence segmentation is done with</h1>
+<div class="meta"><span class="catname">Travel</span><span>by gunggme</span><span>2026-09-16</span></div>
+<div class="body">Analyzing logical relationships between sentences without using an LLM:
+
+- sentence segmentation is done with `Intl.Segmenter` in JS
+- determining the domain of the entire text, tagging sentence classes according to the domain, and connecting relationships between sentences are done with 3 calls to the Jev model.
+
+All of this takes 0.5 seconds (mostly network roundtrip) and the cost is nearly free.
+
+https://jev-demo.corca.ai/
+
+Linked projects:
+• Argument Mapper (jev-demo.corca.ai)
+• image.png — image/png · 218 KB (cdn.discordapp.com/attachments/1483217545040232493/1549694052662902784)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549694052805513310</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://jev-demo.corca.ai/" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=jev-demo.corca.ai&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Argument Mapper</span><span class="d">jev-demo.corca.ai</span></span></a><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1549694052662902784/image.png?ex=6aae438e&amp;is=6aacf20e&amp;hm=d143e07cf6dcf4c726b74ca6faba08eed0238e91617f6ad61af1a755286f15e1&amp;" target="_blank" rel="noopener"><img class="th" src="https://cdn.discordapp.com/attachments/1483217545040232493/1549694052662902784/image.png?ex=6aae438e&amp;is=6aacf20e&amp;hm=d143e07cf6dcf4c726b74ca6faba08eed0238e91617f6ad61af1a755286f15e1&amp;" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">image.png</span><span class="d">cdn.discordapp.com</span><span class="x">image/png · 218 KB</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://jev-demo.corca.ai/" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Travel</h2><a href="./video-browser-flight.html">Pick a Zurich–London flight in 7.1 seconds of browser control</a><a href="./discord-1550488211317329960.html">yeah no I agree, it will need a lot of beforehand set up to work correctly, something with future support of</a><a href="./discord-1550462639425978400.html">Spent a day building tenet, a review gate for code that agents write.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Analyzing logical relationships between sentences without using an LLM: - sentence segmentation is done with\n\nAnalyzing logical relationships between sentences without using an LLM:\n\n- sentence segmentation is done with `Intl.Segmenter` in JS\n- determining the domain of the entire text, tagging sentence classes according to the domain, and connecting relationships between sentences are done with 3 calls to the Jev model.\n\nAll of this takes 0.5 seconds (mostly network roundtrip) and the cost is nearly free.\n\nhttps://jev-demo.corca.ai/\n\nLinked projects:\n• Argument Mapper (jev-demo.corca.ai)\n• image.png — image/png · 218 KB (cdn.discordapp.com/attachments/1483217545040232493/1549694052662902784)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549694052805513310\n- Argument Mapper: https://jev-demo.corca.ai/\n- image.png: https://cdn.discordapp.com/attachments/1483217545040232493/1549694052662902784/image.png?ex=6aae438e&is=6aacf20e&hm=d143e07cf6dcf4c726b74ca6faba08eed0238e91617f6ad61af1a755286f15e1&\n\nSource: https://jev-demo.corca.ai/";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just got access to Jev last night, but have added it to one production app this morning. — Jev Directory</title>
+<meta name="description" content="Just got access to Jev last night, but have added it to one production app this morning. It is an app called LeadDemon, which is pure python. The app searches t">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Just got access to Jev last night, but have added it to one production app this morning.</h1>
+<div class="meta"><span class="catname">Admin</span><span>by nobleQuest</span><span>2026-09-17</span></div>
+<div class="body">Just got access to Jev last night, but have added it to one production app this morning.  It is an app called LeadDemon, which is pure python.  The app searches the web by region/industry, and then identifies companies with a very specific set of criteria. The results are added to an automated funnel (email and LinkedIn).  There is one step where we filter the results to eliminate &quot;non&quot; companies (institutions, individuals, support, etc).  My python code managed to filter 48% of them.  Using Jev with a noul type it caught 97%.  It will now be part of the automated production run at 10:30!  I will be digging through my other projects today, looking for more &quot;low hanging fruit&quot;.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550112189803790447" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Just got access to Jev last night, but have added it to one production app this morning.\n\nJust got access to Jev last night, but have added it to one production app this morning.  It is an app called LeadDemon, which is pure python.  The app searches the web by region/industry, and then identifies companies with a very specific set of criteria. The results are added to an automated funnel (email and LinkedIn).  There is one step where we filter the results to eliminate \"non\" companies (institutions, individuals, support, etc).  My python code managed to filter 48% of them.  Using Jev with a noul type it caught 97%.  It will now be part of the automated production run at 10:30!  I will be digging through my other projects today, looking for more \"low hanging fruit\".\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550112189803790447";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day job is software engineering. — Jev Directory</title>
+<meta name="description" content="Day job is software engineering. Simple Claude.md, memory system plugin, progressive disclose docs, Claude Code + desktop app, + GitHub linked + mobile app. I a">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Day job is software engineering.</h1>
+<div class="meta"><span class="catname">Fun</span><span>by TokenFires (Robert Ault)</span><span>2026-09-17</span></div>
+<div class="body">Day job is software engineering. Simple Claude.md, memory system plugin, progressive disclose docs, Claude Code + desktop app, + GitHub linked + mobile app. I already went overboard on skills and plugins/extensions but the token burn was too much so I pulled back. A strong prompt engineering game seems to work better than someone else’s workflow.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549936346263588925" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Fun</h2><a href="./video-clip-finder.html">Score 17 video moments in 3 seconds to find clips</a><a href="./discord-1550585292887425097.html">Good question, I haven&#39;t figured this out yet haha.</a><a href="./discord-1550580280841084959.html">JEV integrations so far 1.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Day job is software engineering.\n\nDay job is software engineering. Simple Claude.md, memory system plugin, progressive disclose docs, Claude Code + desktop app, + GitHub linked + mobile app. I already went overboard on skills and plugins/extensions but the token burn was too much so I pulled back. A strong prompt engineering game seems to work better than someone else’s workflow.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549936346263588925";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

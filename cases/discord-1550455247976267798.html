@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>exploring Jev for work - large-ish late-stage startup ~1k employees. — Jev Directory</title>
+<meta name="description" content="exploring Jev for work - large-ish late-stage startup ~1k employees. curious to see how Jev handles technical domain-specific choices 🤔 e.g. I have Gemini 3.5 ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>exploring Jev for work - large-ish late-stage startup ~1k employees.</h1>
+<div class="meta"><span class="catname">Admin</span><span>by j</span><span>2026-09-18</span></div>
+<div class="body">exploring Jev for work - large-ish late-stage startup ~1k employees.
+
+curious to see how Jev handles technical domain-specific choices 🤔 
+
+e.g. I have Gemini 3.5 Flash lite hooked up to a classification rubric won through evals for a business-specific use case, veeeeery curious to see the comparative on how Jev performs.
+
+Anyone else have anecdotes about plugging Jev into B2B enterprise SaaS?</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550455247976267798" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "exploring Jev for work - large-ish late-stage startup ~1k employees.\n\nexploring Jev for work - large-ish late-stage startup ~1k employees.\n\ncurious to see how Jev handles technical domain-specific choices 🤔 \n\ne.g. I have Gemini 3.5 Flash lite hooked up to a classification rubric won through evals for a business-specific use case, veeeeery curious to see the comparative on how Jev performs.\n\nAnyone else have anecdotes about plugging Jev into B2B enterprise SaaS?\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550455247976267798";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

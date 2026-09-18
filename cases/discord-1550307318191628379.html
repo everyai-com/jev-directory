@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spent the entire day building `tenet`: The review gate for code that agents write: rules in plain language, judged on — Jev Directory</title>
+<meta name="description" content="Spent the entire day building `tenet`: The review gate for code that agents write: rules in plain language, judged on every commit Your AGENTS.md says what a co">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Spent the entire day building `tenet`: The review gate for code that agents write: rules in plain language, judged on</h1>
+<div class="meta"><span class="catname">Evaluation</span><span>by timche</span><span>2026-09-18</span></div>
+<div class="body">Spent the entire day building `tenet`: The review gate for code that agents write: rules in plain language, judged on every commit
+
+Your AGENTS.md says what a comment is for and that a failure is raised rather than hidden; agents break those rules anyway, and nobody reads every line of a large diff. You write each tenet once in plain language in tenet.yml and every commit is judged against it, fast enough that the agent fixes its own findings before you see the diff.
+
+https://github.com/zoidsh/tenet
+
+Still in early stages, but I think this could be a great use case for Jev 🙂 Open for feedback!
+
+Linked projects:
+• zoidsh/tenet — The review gate for code that agents write: rules in plain language, judged on every commit - zoidsh/tenet (github.com/zoidsh/tenet)
+• Kapture_2026-09-18_at_01.27.18.mp4 — video/mp4 · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1550307317688569897)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550307318191628379</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://github.com/zoidsh/tenet" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">zoidsh/tenet</span><span class="d">github.com</span><span class="x">The review gate for code that agents write: rules in plain language, judged on every commit - zoidsh/tenet</span></span></a><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1550307317688569897/Kapture_2026-09-18_at_01.27.18.mp4?ex=6aae8473&amp;is=6aad32f3&amp;hm=27ee274f6eb926ba1307484e945cdce76a4ad138631d3f5a8221b20fb4d9934d&amp;" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=cdn.discordapp.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Kapture_2026-09-18_at_01.27.18.mp4</span><span class="d">cdn.discordapp.com</span><span class="x">video/mp4 · 3 MB</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://github.com/zoidsh/tenet" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Evaluation</h2><a href="./video-probabilities.html">Return probabilities, not labels — 80/10/10 beats &quot;orange&quot;</a><a href="./discord-1550583220318507041.html">I’m building Aurapunk, an open-source multi-agent IDE.</a><a href="./discord-1550544655148392610.html">Tested jev against deepseek v4.1 flash on norwegian text.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Spent the entire day building `tenet`: The review gate for code that agents write: rules in plain language, judged on\n\nSpent the entire day building `tenet`: The review gate for code that agents write: rules in plain language, judged on every commit\n\nYour AGENTS.md says what a comment is for and that a failure is raised rather than hidden; agents break those rules anyway, and nobody reads every line of a large diff. You write each tenet once in plain language in tenet.yml and every commit is judged against it, fast enough that the agent fixes its own findings before you see the diff.\n\nhttps://github.com/zoidsh/tenet\n\nStill in early stages, but I think this could be a great use case for Jev 🙂 Open for feedback!\n\nLinked projects:\n• zoidsh/tenet — The review gate for code that agents write: rules in plain language, judged on every commit - zoidsh/tenet (github.com/zoidsh/tenet)\n• Kapture_2026-09-18_at_01.27.18.mp4 — video/mp4 · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1550307317688569897)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550307318191628379\n- zoidsh/tenet: https://github.com/zoidsh/tenet\n- Kapture_2026-09-18_at_01.27.18.mp4: https://cdn.discordapp.com/attachments/1483217545040232493/1550307317688569897/Kapture_2026-09-18_at_01.27.18.mp4?ex=6aae8473&is=6aad32f3&hm=27ee274f6eb926ba1307484e945cdce76a4ad138631d3f5a8221b20fb4d9934d&\n\nSource: https://github.com/zoidsh/tenet";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

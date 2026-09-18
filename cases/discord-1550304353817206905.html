@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yup, and I have a lot more ideas with JEV, currently I’m working on a pretty niche use case FiveM cheaters using — Jev Directory</title>
+<meta name="description" content="Yup, and I have a lot more ideas with JEV, currently I’m working on a pretty niche use case FiveM cheaters using spoofers to bypass bans. I’m planning to use Je">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Yup, and I have a lot more ideas with JEV, currently I’m working on a pretty niche use case FiveM cheaters using</h1>
+<div class="meta"><span class="catname">Home</span><span>by ⧹⎝ΞＬＭΛＮＩ３３５⎠⧸</span><span>2026-09-18</span></div>
+<div class="body">Yup, and I have a lot more ideas with JEV, currently I’m working on a pretty niche use case FiveM cheaters using spoofers to bypass bans.
+I’m planning to use Jev as part of the decision engine to compare a player’s connecting identifiers against existing identity data and decide whether the identity looks legitimate, spoofed, or linked to a previously known user before allowing them access. 
+
+current decision engine can check 10 million user identifier from a DB (custom developped DB for the project, very specific but very fast on read operation), compare them, find similarities, decide if legit or not in between 20ms to 30ms, for a single player check req, 
+
+but when 200 player try to &quot;check-in&quot; at the same time, well it goes up to 800-1000ms per check
+let&#39;s see if JEV can help speed up some of it</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550304353817206905" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Yup, and I have a lot more ideas with JEV, currently I’m working on a pretty niche use case FiveM cheaters using\n\nYup, and I have a lot more ideas with JEV, currently I’m working on a pretty niche use case FiveM cheaters using spoofers to bypass bans.\nI’m planning to use Jev as part of the decision engine to compare a player’s connecting identifiers against existing identity data and decide whether the identity looks legitimate, spoofed, or linked to a previously known user before allowing them access. \n\ncurrent decision engine can check 10 million user identifier from a DB (custom developped DB for the project, very specific but very fast on read operation), compare them, find similarities, decide if legit or not in between 20ms to 30ms, for a single player check req, \n\nbut when 200 player try to \"check-in\" at the same time, well it goes up to 800-1000ms per check\nlet's see if JEV can help speed up some of it\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550304353817206905";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Typesafe AI is still inconsistent when it comes to dimensional reasoning. — Jev Directory</title>
+<meta name="description" content="Typesafe AI is still inconsistent when it comes to dimensional reasoning. &gt; from typesafe_sdk import Choice, Noul, Score, TypeSafeClient, RetryPolicy &gt; &gt; scenar">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Typesafe AI is still inconsistent when it comes to dimensional reasoning.</h1>
+<div class="meta"><span class="catname">Travel</span><span>by Dreamlight Glitter</span><span>2026-09-17</span></div>
+<div class="body">Typesafe AI is still inconsistent when it comes to dimensional reasoning.
+
+&gt; from typesafe_sdk import Choice, Noul, Score, TypeSafeClient, RetryPolicy
+&gt; 
+&gt; scenario = &quot;&quot;&quot;
+&gt; Imagine this. In the world where people have practically instant reflex and can dodge, the only way to hit the enemy is to saturate the battlefield with enough bullet such that there is nowhere to run. You can move in any direction.
+&gt; 
+&gt; Let C be a constant, a be defender acceleration, d be distance, v be bullet velocity, H be hitbox size.
+&gt; 
+&gt; Which equation most accurately describes the number of bullet required per hit?
+&gt; 
+&gt; &quot;&quot;&quot;
+&gt; 
+&gt; choices = &quot;&quot;&quot;
+&gt; Cad/vH
+&gt; C a^2 (d/v)^4/H
+&gt; C a^2 H (d/v)^2
+&gt; C a H d / v
+&gt; C a^2 (d/v)^3/H
+&gt; C a (d/v)^3/H
+&gt; C a (d/v)^4/H
+&gt; None of the above
+&gt; &quot;&quot;&quot;.strip().split(&quot;\n&quot;)
+&gt; 
+&gt; scenario = scenario.strip().replace(&quot;\n&quot;,&quot; &quot;)
+&gt; 
+&gt; with TypeSafeClient(retry=RetryPolicy(max_retries=3, backoff_max=0.2, timeout=1.0)) as client:
+&gt;     response = client.system_one(
+&gt;         state={&quot;Scenario&quot;: scenario},
+&gt;         questions = {&quot;Answer&quot;: Choice(instructions = &quot;Which equation most accurately des</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550103134053867543" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Travel</h2><a href="./video-browser-flight.html">Pick a Zurich–London flight in 7.1 seconds of browser control</a><a href="./discord-1550488211317329960.html">yeah no I agree, it will need a lot of beforehand set up to work correctly, something with future support of</a><a href="./discord-1550462639425978400.html">Spent a day building tenet, a review gate for code that agents write.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Typesafe AI is still inconsistent when it comes to dimensional reasoning.\n\nTypesafe AI is still inconsistent when it comes to dimensional reasoning.\n\n> from typesafe_sdk import Choice, Noul, Score, TypeSafeClient, RetryPolicy\n> \n> scenario = \"\"\"\n> Imagine this. In the world where people have practically instant reflex and can dodge, the only way to hit the enemy is to saturate the battlefield with enough bullet such that there is nowhere to run. You can move in any direction.\n> \n> Let C be a constant, a be defender acceleration, d be distance, v be bullet velocity, H be hitbox size.\n> \n> Which equation most accurately describes the number of bullet required per hit?\n> \n> \"\"\"\n> \n> choices = \"\"\"\n> Cad/vH\n> C a^2 (d/v)^4/H\n> C a^2 H (d/v)^2\n> C a H d / v\n> C a^2 (d/v)^3/H\n> C a (d/v)^3/H\n> C a (d/v)^4/H\n> None of the above\n> \"\"\".strip().split(\"\\n\")\n> \n> scenario = scenario.strip().replace(\"\\n\",\" \")\n> \n> with TypeSafeClient(retry=RetryPolicy(max_retries=3, backoff_max=0.2, timeout=1.0)) as client:\n>     response = client.system_one(\n>         state={\"Scenario\": scenario},\n>         questions = {\"Answer\": Choice(instructions = \"Which equation most accurately des\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550103134053867543";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>**Some findings from testing Jev , particularly Choice vs Noul and Choice labels** I&#39;ve been playing around with Jev — Jev Directory</title>
+<meta name="description" content="**Some findings from testing Jev , particularly Choice vs Noul and Choice labels** I&#39;ve been playing around with Jev 1.13.0 quite a bit and found some behavior ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>**Some findings from testing Jev , particularly Choice vs Noul and Choice labels** I&#39;ve been playing around with Jev</h1>
+<div class="meta"><span class="catname">Home</span><span>by ubhillutd</span><span>2026-09-17</span></div>
+<div class="body">**Some findings from testing Jev , particularly Choice vs Noul and Choice labels**
+
+I&#39;ve been playing around with Jev 1.13.0 quite a bit and found some behavior that I think is worth knowing if you&#39;re using its probabilities downstream.
+
+The biggest takeaway is very simple:
+
+The way you represent a question can substantially change the probability Jev returns, even when the underlying question and option descriptions stay semantically same.
+
+I started by repeatedly sending identical questions just to see how stable the outputs were. Jev is stochastic (shocker I know): identical calls don&#39;t necessarily return exactly the same probability. However, when I repeated questions many times, the average was generally very remarkably stable with very little standard deviation
+
+So there seems to be a useful distinction between:
+
+individual-call noise vs stable differences caused by changing the question representation + 
+
+TL;DR: Jev’s probabilities can be surprisingly sensitive to how you represent the exact same question. Noul and equivalent binary Choice questions can give substantially diff</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550105858988576839" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "**Some findings from testing Jev , particularly Choice vs Noul and Choice labels** I've been playing around with Jev\n\n**Some findings from testing Jev , particularly Choice vs Noul and Choice labels**\n\nI've been playing around with Jev 1.13.0 quite a bit and found some behavior that I think is worth knowing if you're using its probabilities downstream.\n\nThe biggest takeaway is very simple:\n\nThe way you represent a question can substantially change the probability Jev returns, even when the underlying question and option descriptions stay semantically same.\n\nI started by repeatedly sending identical questions just to see how stable the outputs were. Jev is stochastic (shocker I know): identical calls don't necessarily return exactly the same probability. However, when I repeated questions many times, the average was generally very remarkably stable with very little standard deviation\n\nSo there seems to be a useful distinction between:\n\nindividual-call noise vs stable differences caused by changing the question representation + \n\nTL;DR: Jev’s probabilities can be surprisingly sensitive to how you represent the exact same question. Noul and equivalent binary Choice questions can give substantially diff\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550105858988576839";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

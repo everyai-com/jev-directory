@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I built something similar but its just an election mapper. — Jev Directory</title>
+<meta name="description" content="I built something similar but its just an election mapper. Mapping state and federal elections is easy enough due to verified and easy to access sources. But de">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>I built something similar but its just an election mapper.</h1>
+<div class="meta"><span class="catname">Work</span><span>by PlatFailure</span><span>2026-09-18</span></div>
+<div class="body">I built something similar but its just an election mapper. Mapping state and federal elections is easy enough due to verified and easy to access sources. But determining confidence levels for local elections like municipal and county wide would be nice so I might try TypeSafe with my mapper too. I completely avoided adding those initially because of that</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550331551605203046" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Work</h2><a href="./video-lead-scoring.html">Score inbound leads 0–1 and reply to the 98s first</a><a href="./video-support-routing.html">Route support inquiries to the right team instantly</a><a href="./discord-1550581784922554498.html">here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "I built something similar but its just an election mapper.\n\nI built something similar but its just an election mapper. Mapping state and federal elections is easy enough due to verified and easy to access sources. But determining confidence levels for local elections like municipal and county wide would be nice so I might try TypeSafe with my mapper too. I completely avoided adding those initially because of that\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550331551605203046";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

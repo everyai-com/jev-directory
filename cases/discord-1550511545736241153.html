@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I’m building an AI-assisted chart-audit workflow for home-based care in Japan. — Jev Directory</title>
+<meta name="description" content="I’m building an AI-assisted chart-audit workflow for home-based care in Japan. One task I’d like to test with Jev is: given a Japanese clinical note, classify w">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>I’m building an AI-assisted chart-audit workflow for home-based care in Japan.</h1>
+<div class="meta"><span class="catname">Health</span><span>by 八森　淳</span><span>2026-09-18</span></div>
+<div class="body">I’m building an AI-assisted chart-audit workflow for home-based care in Japan.
+One task I’d like to test with Jev is: given a Japanese clinical note, classify whether there is a meaningful documentation gap or inconsistency, return calibrated confidence, and escalate uncertain cases to physician review.
+I’m especially interested in whether this can work reliably on real-world Japanese clinical text.
+
+Happy to share examples or a small synthetic test set if useful.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550511545736241153" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Health</h2><a href="./discord-1550561834149486652.html">Clinirise was my opensource project where I used jev for decisions with main llm -where I had used llm powered</a><a href="./discord-1549978624466362520.html">jev as the combat AI for ultima online.</a><a href="./discord-1549795162597752915.html">Hello at Lemma Ventures we build agentic compliance solutions and protocols.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "I’m building an AI-assisted chart-audit workflow for home-based care in Japan.\n\nI’m building an AI-assisted chart-audit workflow for home-based care in Japan.\nOne task I’d like to test with Jev is: given a Japanese clinical note, classify whether there is a meaningful documentation gap or inconsistency, return calibrated confidence, and escalate uncertain cases to physician review.\nI’m especially interested in whether this can work reliably on real-world Japanese clinical text.\n\nHappy to share examples or a small synthetic test set if useful.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550511545736241153";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

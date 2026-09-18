@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>State: ``` { &quot;text&quot;: &quot;\&quot;I would rather go back to the realm, than face Boston. — Jev Directory</title>
+<meta name="description" content="State: ``` { &quot;text&quot;: &quot;\&quot;I would rather go back to the realm, than face Boston. I can&#39;t imagine he would want to see me...\&quot; There is a tone in that sentence... ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>State: ``` { &quot;text&quot;: &quot;\&quot;I would rather go back to the realm, than face Boston.</h1>
+<div class="meta"><span class="catname">Family</span><span>by Scott O’Bryan</span><span>2026-09-17</span></div>
+<div class="body">State:
+```
+{
+  &quot;text&quot;: &quot;\&quot;I would rather go back to the realm, than face Boston. I can&#39;t imagine he would want to see me...\&quot; There is a tone in that sentence... That carries decades of shame.. \&quot;I was... A total failure as a brother and a coward...\&quot; \&quot;My apologies... I can&#39;t imagine you care about that.. with your fiance in danger.. I&#39;m so sorry.... I couldn&#39;t stop her. I wish I could have. - but I will help you however I can to make sure that you and your family are safe... And ending her... Will be my unlife goal. She&#39;s so dangerous..\&quot;&quot;
+}
+```
+
+Result:
+```
+level_of_post
+
+How good is this post from discord `text`
+Somewhat Detailed
+65%
+Simple Post
+30%
+Very Detailed
+5%
+Confidence: 47%
+}
+```
+
+This took me a fraction of the time and no training.  It shows a LOT of promise.  Well done.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550169183034024118" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Family</h2><a href="./discord-1550574397964951674.html">Auteur Intelligence is entering public beta in a few days.</a><a href="./discord-1549721698482520195.html">Built a tiny flood simulation with Jev 🌊 24 people, separate memories, family relationships, and limited sight/hearing.</a><a href="./discord-1549566309367283762.html">Hey folks! Working on Leviath, providing structure for agents (think old-school GBA VRAM layouts for the context window</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "State: ``` { \"text\": \"\\\"I would rather go back to the realm, than face Boston.\n\nState:\n```\n{\n  \"text\": \"\\\"I would rather go back to the realm, than face Boston. I can't imagine he would want to see me...\\\" There is a tone in that sentence... That carries decades of shame.. \\\"I was... A total failure as a brother and a coward...\\\" \\\"My apologies... I can't imagine you care about that.. with your fiance in danger.. I'm so sorry.... I couldn't stop her. I wish I could have. - but I will help you however I can to make sure that you and your family are safe... And ending her... Will be my unlife goal. She's so dangerous..\\\"\"\n}\n```\n\nResult:\n```\nlevel_of_post\n\nHow good is this post from discord `text`\nSomewhat Detailed\n65%\nSimple Post\n30%\nVery Detailed\n5%\nConfidence: 47%\n}\n```\n\nThis took me a fraction of the time and no training.  It shows a LOT of promise.  Well done.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550169183034024118";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

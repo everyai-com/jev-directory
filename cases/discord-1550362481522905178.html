@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discord/Slack analyzer before sending message. — Jev Directory</title>
+<meta name="description" content="Discord/Slack analyzer before sending message. &lt;0.1 sec. I added a delay to avoid making too many calls, it waits few ms once you stop typing to analyze and giv">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Discord/Slack analyzer before sending message.</h1>
+<div class="meta"><span class="catname">Integrations</span><span>by Patrick</span><span>2026-09-18</span></div>
+<div class="body">Discord/Slack analyzer before sending message. &lt;0.1 sec. I added a delay to avoid making too many calls, it waits few ms once you stop typing to analyze and give feedback
+
+Linked projects:
+• jev_discord_demo.mp4 — video/mp4 · 12 MB (cdn.discordapp.com/attachments/1483217545040232493/1550362480478257253)</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1550362480478257253/jev_discord_demo.mp4?ex=6aaeb7d3&amp;is=6aad6653&amp;hm=6469cc85578e37fb4a03f7b77c90a97881fde634bcb455b1539f257ae7cf4255&amp;" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=cdn.discordapp.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">jev_discord_demo.mp4</span><span class="d">cdn.discordapp.com</span><span class="x">video/mp4 · 12 MB</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550362481522905178" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Integrations</h2><a href="./discord-1550586851343995032.html">Hi all. Been reading everything here since launch and lost track of what I&#39;d seen, so I made</a><a href="./discord-1550586432698187906.html">Instead of wiring every button to a specific screen, you register the components your app can show.</a><a href="./discord-1550581905005477918.html">Update with better ux, pipable jev command and traceable decisions</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Discord/Slack analyzer before sending message.\n\nDiscord/Slack analyzer before sending message. <0.1 sec. I added a delay to avoid making too many calls, it waits few ms once you stop typing to analyze and give feedback\n\nLinked projects:\n• jev_discord_demo.mp4 — video/mp4 · 12 MB (cdn.discordapp.com/attachments/1483217545040232493/1550362480478257253)\n- jev_discord_demo.mp4: https://cdn.discordapp.com/attachments/1483217545040232493/1550362480478257253/jev_discord_demo.mp4?ex=6aaeb7d3&is=6aad6653&hm=6469cc85578e37fb4a03f7b77c90a97881fde634bcb455b1539f257ae7cf4255&\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550362481522905178";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

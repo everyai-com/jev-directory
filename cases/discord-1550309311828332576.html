@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round 2: Jev early-access evaluation — some reproducible findings I&#39;ve been running a preregistered synthetic — Jev Directory</title>
+<meta name="description" content="Round 2: Jev early-access evaluation — some reproducible findings I&#39;ve been running a preregistered synthetic evaluation of Jev for typed advisory-decision use.">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Round 2: Jev early-access evaluation — some reproducible findings I&#39;ve been running a preregistered synthetic</h1>
+<div class="meta"><span class="catname">Shopping</span><span>by CreditProQuo</span><span>2026-09-18</span></div>
+<div class="body">Round 2:
+Jev early-access evaluation — some reproducible findings
+
+I&#39;ve been running a preregistered synthetic evaluation of Jev for typed advisory-decision use. No proprietary/live data involved.
+
+Initial 32-case R1: 100% schema-valid; Choice 11/12 exact; Noul 9/10 at 0.50 with Brier 0.058; Score MAE 0.569.
+
+Follow-up adversarial testing surfaced a few behaviors that may be useful:
+
+1. Primitive/task framing matters. A state with exit_code=9 conflicting with positive &quot;success&quot; prose was classified correctly as failure under Choice, but an identical Noul escalation task consistently returned only ~42–46% true.
+
+2. Input-surface sensitivity exists near that boundary. Semantically equivalent Noul variants ranged from 36–62%, including field-order and irrelevant-field perturbations.
+
+3. Byte-identical calls were much more stable. Six identical Noul requests returned 42–46% with no threshold flips; six identical Score requests all returned exactly 4.98/5 at 99% confidence.
+
+4. Typing mattered materially. &quot;credential_exposure&quot;:&quot;NOT_CONFIRMED&quot; produced substantially more risk/escalation th</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550309311828332576" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Shopping</h2><a href="./video-instant-matching.html">Match a service request to the best-fit company live</a><a href="./discord-1550565211616968727.html">thanks! this is what my gpt gave after seeing ur site Design it in a playful neo-brutalist style:</a><a href="./discord-1550526281488277585.html">Guys, stop watching Jev from the sidelines.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Round 2: Jev early-access evaluation — some reproducible findings I've been running a preregistered synthetic\n\nRound 2:\nJev early-access evaluation — some reproducible findings\n\nI've been running a preregistered synthetic evaluation of Jev for typed advisory-decision use. No proprietary/live data involved.\n\nInitial 32-case R1: 100% schema-valid; Choice 11/12 exact; Noul 9/10 at 0.50 with Brier 0.058; Score MAE 0.569.\n\nFollow-up adversarial testing surfaced a few behaviors that may be useful:\n\n1. Primitive/task framing matters. A state with exit_code=9 conflicting with positive \"success\" prose was classified correctly as failure under Choice, but an identical Noul escalation task consistently returned only ~42–46% true.\n\n2. Input-surface sensitivity exists near that boundary. Semantically equivalent Noul variants ranged from 36–62%, including field-order and irrelevant-field perturbations.\n\n3. Byte-identical calls were much more stable. Six identical Noul requests returned 42–46% with no threshold flips; six identical Score requests all returned exactly 4.98/5 at 99% confidence.\n\n4. Typing mattered materially. \"credential_exposure\":\"NOT_CONFIRMED\" produced substantially more risk/escalation th\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550309311828332576";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

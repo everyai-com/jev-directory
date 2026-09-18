@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello everybody, my name is Lukas and I am currently CEO of Omnicado.com - we focus on integrating e-commerce sellers — Jev Directory</title>
+<meta name="description" content="Hello everybody, my name is Lukas and I am currently CEO of Omnicado.com - we focus on integrating e-commerce sellers onto marketplaces by providing them with f">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Hello everybody, my name is Lukas and I am currently CEO of Omnicado.com - we focus on integrating e-commerce sellers</h1>
+<div class="meta"><span class="catname">Home</span><span>by lkshnk</span><span>2026-09-16</span></div>
+<div class="body">Hello everybody, my name is Lukas and I am currently CEO of Omnicado.com - we focus on integrating e-commerce sellers onto marketplaces by providing them with full connection between their system and marketplace systems (Amazon, Bol, eBay etc.) - we are power users of LLM since GPT 3.5 - so we are very excited what Jev has for us in store.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549684381302661131" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Hello everybody, my name is Lukas and I am currently CEO of Omnicado.com - we focus on integrating e-commerce sellers\n\nHello everybody, my name is Lukas and I am currently CEO of Omnicado.com - we focus on integrating e-commerce sellers onto marketplaces by providing them with full connection between their system and marketplace systems (Amazon, Bol, eBay etc.) - we are power users of LLM since GPT 3.5 - so we are very excited what Jev has for us in store.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549684381302661131";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

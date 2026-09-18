@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>i was thinking of this too; my ideas were either: 1. — Jev Directory</title>
+<meta name="description" content="i was thinking of this too; my ideas were either: 1. fully throw jev at a navigation task end-to-end, but at the significant cost of it doing something disastro">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>i was thinking of this too; my ideas were either: 1.</h1>
+<div class="meta"><span class="catname">Work</span><span>by ᶻz ミ.◦ 𝔭𝑦𝔰𝔢𝔭𝔥 ◦. 彡</span><span>2026-09-17</span></div>
+<div class="body">i was thinking of this too; my ideas were either:
+1. fully throw jev at a navigation task end-to-end, but at the significant cost of it doing something disastrous or just not getting there correctly
+2. let an LLM tool-call jev to navigate sections at a time, but at that point you could also just have the LLM write out batching steps to execute a whole suite of actions in one go (e.g. LLM outputting &quot;move to px(50, 20), left-click for 200ms, move to px(200, 400)&quot;), and you&#39;d be getting the same end result
+
+maybe im missing something but i didnt end up figuring out a way to keep jev useful for long-horizon navigation tasks. especially since its intelligence is equivalent to 5.6-Terra non-reasoning, which is quite dumb and is what caused my worries for 1) xd</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549946001589149717" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Work</h2><a href="./video-lead-scoring.html">Score inbound leads 0–1 and reply to the 98s first</a><a href="./video-support-routing.html">Route support inquiries to the right team instantly</a><a href="./discord-1550581784922554498.html">here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "i was thinking of this too; my ideas were either: 1.\n\ni was thinking of this too; my ideas were either:\n1. fully throw jev at a navigation task end-to-end, but at the significant cost of it doing something disastrous or just not getting there correctly\n2. let an LLM tool-call jev to navigate sections at a time, but at that point you could also just have the LLM write out batching steps to execute a whole suite of actions in one go (e.g. LLM outputting \"move to px(50, 20), left-click for 200ms, move to px(200, 400)\"), and you'd be getting the same end result\n\nmaybe im missing something but i didnt end up figuring out a way to keep jev useful for long-horizon navigation tasks. especially since its intelligence is equivalent to 5.6-Terra non-reasoning, which is quite dumb and is what caused my worries for 1) xd\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549946001589149717";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

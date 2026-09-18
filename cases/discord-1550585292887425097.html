@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Good question, I haven&#39;t figured this out yet haha. — Jev Directory</title>
+<meta name="description" content="Good question, I haven&#39;t figured this out yet haha. My first attempt just now is trying to find what input is necessary to have it accurately estimate which gam">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Good question, I haven&#39;t figured this out yet haha.</h1>
+<div class="meta"><span class="catname">Fun</span><span>by Googolplex</span><span>2026-09-18</span></div>
+<div class="body">Good question, I haven&#39;t figured this out yet haha. My first attempt just now is trying to find what input is necessary to have it accurately estimate which game states are favorable from a list of options. 
+
+So far, passing in code samples of how the game works with game states as the input doesn&#39;t yield good results</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550585292887425097" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Fun</h2><a href="./video-clip-finder.html">Score 17 video moments in 3 seconds to find clips</a><a href="./discord-1550580280841084959.html">JEV integrations so far 1.</a><a href="./discord-1550547181180555334.html">I&#39;ve got Jev playing 9 classic arcade games simultaneously with a single API call for under $2 / h</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Good question, I haven't figured this out yet haha.\n\nGood question, I haven't figured this out yet haha. My first attempt just now is trying to find what input is necessary to have it accurately estimate which game states are favorable from a list of options. \n\nSo far, passing in code samples of how the game works with game states as the input doesn't yield good results\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550585292887425097";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piloted Jev for simple text classifications that I had been doing with a variety of other AI tools previously. — Jev Directory</title>
+<meta name="description" content="Piloted Jev for simple text classifications that I had been doing with a variety of other AI tools previously. Very happy with result. Jev equalled performance ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Piloted Jev for simple text classifications that I had been doing with a variety of other AI tools previously.</h1>
+<div class="meta"><span class="catname">Admin</span><span>by hbere</span><span>2026-09-17</span></div>
+<div class="body">Piloted Jev for simple text classifications that I had been doing with a variety of other AI tools previously.  Very happy with result.  Jev equalled performance in ~75% of the cases at high speed and lower cost.  In the other 25% of cases, Jev served as an accuracy-adding gate, calling in another AI tool for a second opinion.  Conclusion: better results for net less cost.  Awesome.  Very cool, TypeSafe team.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550017927791644672" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Piloted Jev for simple text classifications that I had been doing with a variety of other AI tools previously.\n\nPiloted Jev for simple text classifications that I had been doing with a variety of other AI tools previously.  Very happy with result.  Jev equalled performance in ~75% of the cases at high speed and lower cost.  In the other 25% of cases, Jev served as an accuracy-adding gate, calling in another AI tool for a second opinion.  Conclusion: better results for net less cost.  Awesome.  Very cool, TypeSafe team.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550017927791644672";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

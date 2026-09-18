@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>============================================================ [04:10:12.342] COGNITION Trigger: periodic Revision: 39 — Jev Directory</title>
+<meta name="description" content="============================================================ [04:10:12.342] COGNITION Trigger: periodic Revision: 39 Current situation: Health: 20/20 Hunger: 20">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>============================================================ [04:10:12.342] COGNITION Trigger: periodic Revision: 39</h1>
+<div class="meta"><span class="catname">Food</span><span>by Hyperion</span><span>2026-09-16</span></div>
+<div class="body">============================================================
+[04:10:12.342] COGNITION
+Trigger: periodic
+Revision: 39
+
+Current situation:
+  Health: 20/20
+  Hunger: 20/20
+  Current action: SEEK_SHELTER
+  Current goal: Explore the world while prioritizing your survival.
+  Nearby hostiles: 0
+  Nearest threat: None
+  Covered: No
+  Day/night: Day
+  Food available: No
+
+What changed:
+  No semantic wake event occurred; this is the scheduled periodic evaluation.
+
+Jev considered:
+  51%  SEEK_SHELTER
+  19%  COLLECT dropped dropped_item (dropped item, 3.3m) (3.3m)
+  15%  COLLECT dropped dropped_item (dropped item, 3.4m) (3.4m)
+   8%  COLLECT dropped dropped_item (dropped item, 4.8m) (4.8m)
+
+Decision:
+  SEEK_SHELTER
+
+Target:
+  NONE
+
+Confidence:
+  0.44
+
+Danger:
+  0 / 4 (Safe)
+
+Interrupt current action:
+  No / probability 0.30
+
+Readable interpretation:
+  With danger rated 0/4 and hostile conditions present, Jev selected navigating to a covered shelter candidate to minimize vulnerability.
+
+Execution:
+  Continuing ongoing SEEK_SHELTER action.
+===========================================================</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549635576700080239" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Food</h2><a href="./discord-1550586441036464140.html">Shared my first experiences with Jev in my newsletter here.</a><a href="./discord-1550560835838017666.html">hey guys was cooking this cli in rust to substitue my old gate checks, you can run in watch mode, so during dev is</a><a href="./discord-1550553630594170900.html">&gt; We benchmarked TypeSafe&#39;s Jev against our production LLM classifier — with real customer data and human ground truth.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "============================================================ [04:10:12.342] COGNITION Trigger: periodic Revision: 39\n\n============================================================\n[04:10:12.342] COGNITION\nTrigger: periodic\nRevision: 39\n\nCurrent situation:\n  Health: 20/20\n  Hunger: 20/20\n  Current action: SEEK_SHELTER\n  Current goal: Explore the world while prioritizing your survival.\n  Nearby hostiles: 0\n  Nearest threat: None\n  Covered: No\n  Day/night: Day\n  Food available: No\n\nWhat changed:\n  No semantic wake event occurred; this is the scheduled periodic evaluation.\n\nJev considered:\n  51%  SEEK_SHELTER\n  19%  COLLECT dropped dropped_item (dropped item, 3.3m) (3.3m)\n  15%  COLLECT dropped dropped_item (dropped item, 3.4m) (3.4m)\n   8%  COLLECT dropped dropped_item (dropped item, 4.8m) (4.8m)\n\nDecision:\n  SEEK_SHELTER\n\nTarget:\n  NONE\n\nConfidence:\n  0.44\n\nDanger:\n  0 / 4 (Safe)\n\nInterrupt current action:\n  No / probability 0.30\n\nReadable interpretation:\n  With danger rated 0/4 and hostile conditions present, Jev selected navigating to a covered shelter candidate to minimize vulnerability.\n\nExecution:\n  Continuing ongoing SEEK_SHELTER action.\n===========================================================\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549635576700080239";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

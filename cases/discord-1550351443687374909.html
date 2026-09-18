@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1 — Jev Directory</title>
+<meta name="description" content="It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1 Beat 2 Beat 3 Beat 4 Kick 1 0 1 0 1 2 2 0 0 1">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1</h1>
+<div class="meta"><span class="catname">Work</span><span>by stbenjam</span><span>2026-09-18</span></div>
+<div class="body">It generates a whole bar (all 16 steps at once for each drum - 96 choices)
+
+1 = hit, 2 = accent
+
+Example: 
+```
+             Beat 1    Beat 2    Beat 3    Beat 4
+  Kick       1 0 1 0   1 2 2 0   0 1 1 0   0 1 1 0
+  Snare      0 0 1 0   0 0 0 1   2 0 0 0   0 0 1 0
+  Clap       0 0 0 0   1 0 0 0   0 0 0 0   0 0 0 0
+  Closed hat 1 1 1 1   0 1 1 1   2 1 1 1   0 0 1 1
+  Open hat   0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+  Tom        0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+```</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550351443687374909" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Work</h2><a href="./video-lead-scoring.html">Score inbound leads 0–1 and reply to the 98s first</a><a href="./video-support-routing.html">Route support inquiries to the right team instantly</a><a href="./discord-1550581784922554498.html">here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1\n\nIt generates a whole bar (all 16 steps at once for each drum - 96 choices)\n\n1 = hit, 2 = accent\n\nExample: \n```\n             Beat 1    Beat 2    Beat 3    Beat 4\n  Kick       1 0 1 0   1 2 2 0   0 1 1 0   0 1 1 0\n  Snare      0 0 1 0   0 0 0 1   2 0 0 0   0 0 1 0\n  Clap       0 0 0 0   1 0 0 0   0 0 0 0   0 0 0 0\n  Closed hat 1 1 1 1   0 1 1 1   2 1 1 1   0 0 1 1\n  Open hat   0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0\n  Tom        0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0\n```\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550351443687374909";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

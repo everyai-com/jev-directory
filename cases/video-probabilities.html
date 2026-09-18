@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Return probabilities, not labels — 80/10/10 beats &quot;orange&quot; — Jev Directory</title>
+<meta name="description" content="Jev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or esca">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Return probabilities, not labels — 80/10/10 beats &quot;orange&quot;</h1>
+<div class="meta"><span class="catname">Evaluation</span><span>by Jev launch video</span><span>2026-09-18</span></div>
+<div class="body">Jev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or escalate on. Define choices in the schema; Jev scores them.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://youtu.be/4mTLpuQpB80" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Evaluation</h2><a href="./discord-1550583220318507041.html">I’m building Aurapunk, an open-source multi-agent IDE.</a><a href="./discord-1550544655148392610.html">Tested jev against deepseek v4.1 flash on norwegian text.</a><a href="./discord-1550542229263618090.html">made this quickly to test jev, very cool!</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Return probabilities, not labels — 80/10/10 beats \"orange\"\n\nJev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or escalate on. Define choices in the schema; Jev scores them.\n\nSource: https://youtu.be/4mTLpuQpB80";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

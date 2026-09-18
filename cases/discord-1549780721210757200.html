@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>👋 Hi all, Thomas from Belgium. — Jev Directory</title>
+<meta name="description" content="👋 Hi all, Thomas from Belgium. We&#39;re building Rosko: students upload their course material and get key concepts, flashcards, practice exams and a tutor that on">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>👋 Hi all, Thomas from Belgium.</h1>
+<div class="meta"><span class="catname">Work</span><span>by Mks</span><span>2026-09-16</span></div>
+<div class="body">👋 Hi all, Thomas from Belgium.
+
+We&#39;re building Rosko: students upload their course material and get key concepts, flashcards, practice exams and a tutor that only answers from their syllabus.
+
+Laravel + React, in production.
+
+Model switching is cheap for us
+Every AI call in Rosko is already typed by task (chat, flashcard verdict, grading, exam generation, course extraction… about 20 kinds). Each one is mapped to a model and effort level in config, switchable from the admin panel. Trying a new model on a single task costs us almost nothing.
+
+Where we&#39;d try Jev first: flashcard verdicts
+Today they run on Sonnet through a queue: a few seconds and some credits per card. It works, it&#39;s just not instant, and instant is the whole point of a flashcard.
+
+A wrong verdict there is visible and harmless, so it&#39;s a low-risk place to find out what Jev is actually good at. If it holds up, the next candidates are:
+
+- the &quot;is this covered by the
+
+Linked projects:
+• image.png — image/png · 105 KB (cdn.discordapp.com/attachments/1483217545040232493/1549780720787001384)</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1549780720787001384/image.png?ex=6aae9445&amp;is=6aad42c5&amp;hm=c77b059d82195dcbc3459d483ff25b8b3a74c19d63e78e91aec3938a61f8f412&amp;" target="_blank" rel="noopener"><img class="th" src="https://cdn.discordapp.com/attachments/1483217545040232493/1549780720787001384/image.png?ex=6aae9445&amp;is=6aad42c5&amp;hm=c77b059d82195dcbc3459d483ff25b8b3a74c19d63e78e91aec3938a61f8f412&amp;" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">image.png</span><span class="d">cdn.discordapp.com</span><span class="x">image/png · 105 KB</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549780721210757200" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Work</h2><a href="./video-lead-scoring.html">Score inbound leads 0–1 and reply to the 98s first</a><a href="./video-support-routing.html">Route support inquiries to the right team instantly</a><a href="./discord-1550581784922554498.html">here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "👋 Hi all, Thomas from Belgium.\n\n👋 Hi all, Thomas from Belgium.\n\nWe're building Rosko: students upload their course material and get key concepts, flashcards, practice exams and a tutor that only answers from their syllabus.\n\nLaravel + React, in production.\n\nModel switching is cheap for us\nEvery AI call in Rosko is already typed by task (chat, flashcard verdict, grading, exam generation, course extraction… about 20 kinds). Each one is mapped to a model and effort level in config, switchable from the admin panel. Trying a new model on a single task costs us almost nothing.\n\nWhere we'd try Jev first: flashcard verdicts\nToday they run on Sonnet through a queue: a few seconds and some credits per card. It works, it's just not instant, and instant is the whole point of a flashcard.\n\nA wrong verdict there is visible and harmless, so it's a low-risk place to find out what Jev is actually good at. If it holds up, the next candidates are:\n\n- the \"is this covered by the\n\nLinked projects:\n• image.png — image/png · 105 KB (cdn.discordapp.com/attachments/1483217545040232493/1549780720787001384)\n- image.png: https://cdn.discordapp.com/attachments/1483217545040232493/1549780720787001384/image.png?ex=6aae9445&is=6aad42c5&hm=c77b059d82195dcbc3459d483ff25b8b3a74c19d63e78e91aec3938a61f8f412&\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549780721210757200";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

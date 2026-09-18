@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&gt; Roughly 800ms per decision with 5 questions in one call, versus 10-30s of LLM round-trips before. — Jev Directory</title>
+<meta name="description" content="&gt; Roughly 800ms per decision with 5 questions in one call, versus 10-30s of LLM round-trips before. That&#39;s useful... I need that kind of speed, I&#39;ve tried the s">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>&gt; Roughly 800ms per decision with 5 questions in one call, versus 10-30s of LLM round-trips before.</h1>
+<div class="meta"><span class="catname">Travel</span><span>by redwood</span><span>2026-09-16</span></div>
+<div class="body">&gt; Roughly 800ms per decision with 5 questions in one call, versus 10-30s of LLM round-trips before.
+
+That&#39;s useful... I need that kind of speed, I&#39;ve tried the smaller models that have lower latency on openrouter, and the ones tied with cerebras, or groq, but those are all unstable... really hoping for jev to be better</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549693529545252895" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Travel</h2><a href="./video-browser-flight.html">Pick a Zurich–London flight in 7.1 seconds of browser control</a><a href="./discord-1550488211317329960.html">yeah no I agree, it will need a lot of beforehand set up to work correctly, something with future support of</a><a href="./discord-1550462639425978400.html">Spent a day building tenet, a review gate for code that agents write.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "> Roughly 800ms per decision with 5 questions in one call, versus 10-30s of LLM round-trips before.\n\n> Roughly 800ms per decision with 5 questions in one call, versus 10-30s of LLM round-trips before.\n\nThat's useful... I need that kind of speed, I've tried the smaller models that have lower latency on openrouter, and the ones tied with cerebras, or groq, but those are all unstable... really hoping for jev to be better\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549693529545252895";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

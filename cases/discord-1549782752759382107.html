@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fair question. Short version: quality, not loyalty, and the software is young. Why mostly Anthropic so far We&#39;ve — Jev Directory</title>
+<meta name="description" content="Fair question. Short version: quality, not loyalty, and the software is young. Why mostly Anthropic so far We&#39;ve only really tested OpenAI and Anthropic. Most o">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Fair question. Short version: quality, not loyalty, and the software is young. Why mostly Anthropic so far We&#39;ve</h1>
+<div class="meta"><span class="catname">Admin</span><span>by Mks</span><span>2026-09-16</span></div>
+<div class="body">Fair question. Short version: quality, not loyalty, and the software is young.
+
+Why mostly Anthropic so far
+We&#39;ve only really tested OpenAI and Anthropic. Most of the pipeline was built against Anthropic, and we haven&#39;t yet found a candidate that matches it on our content: French course material, structured outputs (JSON schemas for concepts, exams, verdicts), and long context on full lecture PDFs. When you&#39;re a two-person team, &quot;doesn&#39;t break the schema&quot; is worth more than price.
+
+It&#39;s not Sonnet everywhere
+The cheap tasks (chat, query rewriting) already run on Haiku, TTS is OpenAI, and SciSpace is coming in soon for essay writing and literature search.
+
+The backend isn&#39;t tied to one provider
+The per-task routing exists precisely so we can put any model on a single task and measure it. That&#39;s why Jev is interesting to us.
+
+So if something cheaper holds up on French course material and typed outputs, it goes in the config. Happy to hear what you&#39;d try.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549782752759382107" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Fair question. Short version: quality, not loyalty, and the software is young. Why mostly Anthropic so far We've\n\nFair question. Short version: quality, not loyalty, and the software is young.\n\nWhy mostly Anthropic so far\nWe've only really tested OpenAI and Anthropic. Most of the pipeline was built against Anthropic, and we haven't yet found a candidate that matches it on our content: French course material, structured outputs (JSON schemas for concepts, exams, verdicts), and long context on full lecture PDFs. When you're a two-person team, \"doesn't break the schema\" is worth more than price.\n\nIt's not Sonnet everywhere\nThe cheap tasks (chat, query rewriting) already run on Haiku, TTS is OpenAI, and SciSpace is coming in soon for essay writing and literature search.\n\nThe backend isn't tied to one provider\nThe per-task routing exists precisely so we can put any model on a single task and measure it. That's why Jev is interesting to us.\n\nSo if something cheaper holds up on French course material and typed outputs, it goes in the config. Happy to hear what you'd try.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549782752759382107";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc). — Jev Directory</title>
+<meta name="description" content="We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc). 230+ tool calls, What we measured: - Robustness i">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).</h1>
+<div class="meta"><span class="catname">Money</span><span>by Atanas</span><span>2026-09-18</span></div>
+<div class="body">We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc). 230+ tool calls,
+
+What we measured:
+
+- Robustness is where it shines. With typos, Jev alone picks the right tool 94% (EN) / 86% (BG) of the time. Our keyword rules: 28% / 34%. Reworded questions: 86% vs 15–25%.
+- It cannot fill open values — names, company IDs, free text. It has no primitive that produces one.
+So it now routes for Gemini 3.5 Flash-Lite: Jev picks the tool, Gemini fills only that tool&#39;s parameters. Same day, same 474 questions: parameters right 94.3% / 90.6% vs 83.0% / 77.4% for Gemini alone, with a 4x shorter prompt (3,697 vs 16,150 tokens) and ~0.2 s added median latency.
+-  Weak spot: Bulgarian typed in Latin letters (shliokatitsa) — 71% for Jev vs 94% for Gemini. When Jev is unsure, the question goes to Gemini with the full catalogue.
+
+Full results, method and decision history: https://naiasno.bg/chat/evals
+
+Linked projects:
+• Оценка на асистента | Наясно — Измервания на избора на инструменти и аргументи. Това не е оценка на фактическата точност на всеки отговор. (naiasno.bg/chat/evals)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550572592308428910</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://naiasno.bg/chat/evals" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=naiasno.bg&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Оценка на асистента | Наясно</span><span class="d">naiasno.bg</span><span class="x">Измервания на избора на инструменти и аргументи. Това не е оценка на фактическата точност на всеки отговор.</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://naiasno.bg/chat/evals" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Money</h2><a href="./discord-1550562000604504106.html">Umm, will gather better data when my OpenAI token budget resets tomorrow, had to tinker a bit.</a><a href="./discord-1550555547995209728.html">Hi everyone, I just wrote up a small experiment testing TypeSafe’s Jev as a trusted and cheaper monitor alternate for</a><a href="./discord-1550553704770310227.html">&gt; DeepSeek (prod) Jev &gt; 4-way accuracy 83.7% 80.6% &gt; signal-vs-noise 85.7% 83.7% &gt; recall on &quot;problem&quot; 86.0% 93.0% ← &gt;</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).\n\nWe integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc). 230+ tool calls,\n\nWhat we measured:\n\n- Robustness is where it shines. With typos, Jev alone picks the right tool 94% (EN) / 86% (BG) of the time. Our keyword rules: 28% / 34%. Reworded questions: 86% vs 15–25%.\n- It cannot fill open values — names, company IDs, free text. It has no primitive that produces one.\nSo it now routes for Gemini 3.5 Flash-Lite: Jev picks the tool, Gemini fills only that tool's parameters. Same day, same 474 questions: parameters right 94.3% / 90.6% vs 83.0% / 77.4% for Gemini alone, with a 4x shorter prompt (3,697 vs 16,150 tokens) and ~0.2 s added median latency.\n-  Weak spot: Bulgarian typed in Latin letters (shliokatitsa) — 71% for Jev vs 94% for Gemini. When Jev is unsure, the question goes to Gemini with the full catalogue.\n\nFull results, method and decision history: https://naiasno.bg/chat/evals\n\nLinked projects:\n• Оценка на асистента | Наясно — Измервания на избора на инструменти и аргументи. Това не е оценка на фактическата точност на всеки отговор. (naiasno.bg/chat/evals)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550572592308428910\n- Оценка на асистента | Наясно: https://naiasno.bg/chat/evals\n\nSource: https://naiasno.bg/chat/evals";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

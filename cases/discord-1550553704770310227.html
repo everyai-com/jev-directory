@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&gt; DeepSeek (prod) Jev &gt; 4-way accuracy 83.7% 80.6% &gt; signal-vs-noise 85.7% 83.7% &gt; recall on &quot;problem&quot; 86.0% 93.0% ← &gt; — Jev Directory</title>
+<meta name="description" content="&gt; DeepSeek (prod) Jev &gt; 4-way accuracy 83.7% 80.6% &gt; signal-vs-noise 85.7% 83.7% &gt; recall on &quot;problem&quot; 86.0% 93.0% ← &gt; noise precision 91.8% 100.0% ← &gt; avg late">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>&gt; DeepSeek (prod) Jev &gt; 4-way accuracy 83.7% 80.6% &gt; signal-vs-noise 85.7% 83.7% &gt; recall on &quot;problem&quot; 86.0% 93.0% ← &gt;</h1>
+<div class="meta"><span class="catname">Money</span><span>by Brian Ochoa</span><span>2026-09-18</span></div>
+<div class="body">&gt;                        DeepSeek (prod)    Jev
+&gt; 4-way accuracy              83.7%         80.6%
+&gt; signal-vs-noise               85.7%         83.7%
+&gt; recall on &quot;problem&quot;       86.0%         93.0%  ← 
+&gt; noise precision                91.8%        100.0%  ← 
+&gt; avg latency                      932ms         307ms
+&gt; tokens / item                    2,610          843
+&gt; agreement between them                  84.8%
+&gt; Same accuracy ballpark. 3x faster, 3x cheaper. But the interesting part is the error patterns are complementary:
+&gt; 🔸 Jev almost never loses a real problem (93% recall). Where our cheap classifier says &quot;noise 0.85, discard forever,&quot; Jev often finds the buried complaint — like the Trustpilot review that&#39;s 90% praise with one real grievance inside. That&#39;s the exact failure mode that hurts a product team most.
+&gt; 🔸 When Jev says &quot;noise,&quot; it&#39;s right (100% precision) — it just doesn&#39;t say it often enough to be the sole filter.
+&gt; So we&#39;re not replacing anything. We&#39;re wiring Jev as a second-opinion gate: every time the cheap classifier votes &quot;noise,&quot; Jev gets a look. If it disagr</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550553704770310227" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Money</h2><a href="./discord-1550572592308428910.html">We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).</a><a href="./discord-1550562000604504106.html">Umm, will gather better data when my OpenAI token budget resets tomorrow, had to tinker a bit.</a><a href="./discord-1550555547995209728.html">Hi everyone, I just wrote up a small experiment testing TypeSafe’s Jev as a trusted and cheaper monitor alternate for</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "> DeepSeek (prod) Jev > 4-way accuracy 83.7% 80.6% > signal-vs-noise 85.7% 83.7% > recall on \"problem\" 86.0% 93.0% ← >\n\n>                        DeepSeek (prod)    Jev\n> 4-way accuracy              83.7%         80.6%\n> signal-vs-noise               85.7%         83.7%\n> recall on \"problem\"       86.0%         93.0%  ← \n> noise precision                91.8%        100.0%  ← \n> avg latency                      932ms         307ms\n> tokens / item                    2,610          843\n> agreement between them                  84.8%\n> Same accuracy ballpark. 3x faster, 3x cheaper. But the interesting part is the error patterns are complementary:\n> 🔸 Jev almost never loses a real problem (93% recall). Where our cheap classifier says \"noise 0.85, discard forever,\" Jev often finds the buried complaint — like the Trustpilot review that's 90% praise with one real grievance inside. That's the exact failure mode that hurts a product team most.\n> 🔸 When Jev says \"noise,\" it's right (100% precision) — it just doesn't say it often enough to be the sole filter.\n> So we're not replacing anything. We're wiring Jev as a second-opinion gate: every time the cheap classifier votes \"noise,\" Jev gets a look. If it disagr\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550553704770310227";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

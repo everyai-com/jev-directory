@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>idk what Eliza is, this is my own WIP thing which consumes all the data you give it and classifies it as needs human — Jev Directory</title>
+<meta name="description" content="idk what Eliza is, this is my own WIP thing which consumes all the data you give it and classifies it as needs human input vs. ignore, then if the former, class">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>idk what Eliza is, this is my own WIP thing which consumes all the data you give it and classifies it as needs human</h1>
+<div class="meta"><span class="catname">Money</span><span>by Cleista</span><span>2026-09-16</span></div>
+<div class="body">idk what Eliza is, this is my own WIP thing which consumes all the data you give it and classifies it as needs human input vs. ignore, then if the former, classify into a category, then that is fed to a (relatively) more advanced LLM which generates the chip and decision actions to click on (and notifies you)
+
+The last part is cheap, because it&#39;s the equivalent of &lt;100 Luna/Sonnet calls a day, trivial cost. The expensive part is sifting through unfathomable amounts of garbage data of indeterminate format. Emails and chat messages aside it consumes raw sensor outputs from IoT/smart home devices, health/fitness trackers that have different APIs, location trackers for belongings/pets, banking, going through massive camera rolls 
+
+There are no standard APIs that cover all possible consumer data stream combinations and so this must be LLM-routed, which was always the most expensive part (with clear intelligence/cost tradeoffs) - until now</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549609407611142155" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Money</h2><a href="./discord-1550572592308428910.html">We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).</a><a href="./discord-1550562000604504106.html">Umm, will gather better data when my OpenAI token budget resets tomorrow, had to tinker a bit.</a><a href="./discord-1550555547995209728.html">Hi everyone, I just wrote up a small experiment testing TypeSafe’s Jev as a trusted and cheaper monitor alternate for</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "idk what Eliza is, this is my own WIP thing which consumes all the data you give it and classifies it as needs human\n\nidk what Eliza is, this is my own WIP thing which consumes all the data you give it and classifies it as needs human input vs. ignore, then if the former, classify into a category, then that is fed to a (relatively) more advanced LLM which generates the chip and decision actions to click on (and notifies you)\n\nThe last part is cheap, because it's the equivalent of <100 Luna/Sonnet calls a day, trivial cost. The expensive part is sifting through unfathomable amounts of garbage data of indeterminate format. Emails and chat messages aside it consumes raw sensor outputs from IoT/smart home devices, health/fitness trackers that have different APIs, location trackers for belongings/pets, banking, going through massive camera rolls \n\nThere are no standard APIs that cover all possible consumer data stream combinations and so this must be LLM-routed, which was always the most expensive part (with clear intelligence/cost tradeoffs) - until now\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549609407611142155";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

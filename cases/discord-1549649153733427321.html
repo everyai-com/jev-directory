@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>as far as i can tell, not yet? — Jev Directory</title>
+<meta name="description" content="as far as i can tell, not yet? you can peruse the docs but i don&#39;t think there&#39;s a public spec sheet https://docs.typesafe.ai Linked projects: • Introduction - ">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>as far as i can tell, not yet?</h1>
+<div class="meta"><span class="catname">Admin</span><span>by walter</span><span>2026-09-16</span></div>
+<div class="body">as far as i can tell, not yet? you can peruse the docs but i don&#39;t think there&#39;s a public spec sheet https://docs.typesafe.ai
+
+Linked projects:
+• Introduction - TypeSafe AI — Jev is TypeSafe&#39;s flagship model and the first System One model. Send state and typed questions; get structured answers your code can use directly. (docs.typesafe.ai)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549649153733427321</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://docs.typesafe.ai" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=docs.typesafe.ai&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Introduction - TypeSafe AI</span><span class="d">docs.typesafe.ai</span><span class="x">Jev is TypeSafe&amp;#x27;s flagship model and the first System One model. Send state and typed questions; get structured answers your code can use directly.</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://docs.typesafe.ai" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "as far as i can tell, not yet?\n\nas far as i can tell, not yet? you can peruse the docs but i don't think there's a public spec sheet https://docs.typesafe.ai\n\nLinked projects:\n• Introduction - TypeSafe AI — Jev is TypeSafe's flagship model and the first System One model. Send state and typed questions; get structured answers your code can use directly. (docs.typesafe.ai)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549649153733427321\n- Introduction - TypeSafe AI: https://docs.typesafe.ai\n\nSource: https://docs.typesafe.ai";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

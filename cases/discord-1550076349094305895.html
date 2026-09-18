@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>We just swapped a chunk of freeform LLM reasoning in our lead classification pipeline for Jev, and it&#39;s a clean — Jev Directory</title>
+<meta name="description" content="We just swapped a chunk of freeform LLM reasoning in our lead classification pipeline for Jev, and it&#39;s a clean pattern worth sharing. The old setup: a lead com">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>We just swapped a chunk of freeform LLM reasoning in our lead classification pipeline for Jev, and it&#39;s a clean</h1>
+<div class="meta"><span class="catname">Money</span><span>by fimparatta</span><span>2026-09-17</span></div>
+<div class="body">We just swapped a chunk of freeform LLM reasoning in our lead classification pipeline for Jev, and it&#39;s a clean pattern worth sharing.
+
+The old setup: a lead comes in with a raw signal (a hiring post, a funding raise, a shipping stall), and a subagent read a rubric and reasoned in prose to land on a fit band: vertical match, signal strength, geography fit, stage/budget fit, offer fit, then High/Medium/Low. It worked, but every lead cost a full agentic pass, and the reasoning was a paragraph you had to re-read to trust.
+
+Now the five dimensions go out as one Jev call: a Choice for vertical match, a Noul for &quot;is this signal actually fresh and specific,&quot; a Choice for geography fit, a Score for stage/budget fit, a Choice for offer fit. They run in parallel over the same state and come back typed, with probabilities:
+
+&quot;vertical_match&quot;: {&quot;choice&quot;: &quot;in_vertical&quot;, &quot;confidence&quot;: 0.94}
+&quot;signal_strength&quot;: {&quot;noul&quot;: 0.93}
+&quot;offer_fit&quot;: {&quot;choice&quot;: &quot;ai-demo-to-prod&quot;, &quot;confidence&quot;: 1.0}
+
+Code still owns the banding logic (weights, dealbreakers), and low-confidence answers fall back to a human read. T</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550076349094305895" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Money</h2><a href="./discord-1550572592308428910.html">We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).</a><a href="./discord-1550562000604504106.html">Umm, will gather better data when my OpenAI token budget resets tomorrow, had to tinker a bit.</a><a href="./discord-1550555547995209728.html">Hi everyone, I just wrote up a small experiment testing TypeSafe’s Jev as a trusted and cheaper monitor alternate for</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "We just swapped a chunk of freeform LLM reasoning in our lead classification pipeline for Jev, and it's a clean\n\nWe just swapped a chunk of freeform LLM reasoning in our lead classification pipeline for Jev, and it's a clean pattern worth sharing.\n\nThe old setup: a lead comes in with a raw signal (a hiring post, a funding raise, a shipping stall), and a subagent read a rubric and reasoned in prose to land on a fit band: vertical match, signal strength, geography fit, stage/budget fit, offer fit, then High/Medium/Low. It worked, but every lead cost a full agentic pass, and the reasoning was a paragraph you had to re-read to trust.\n\nNow the five dimensions go out as one Jev call: a Choice for vertical match, a Noul for \"is this signal actually fresh and specific,\" a Choice for geography fit, a Score for stage/budget fit, a Choice for offer fit. They run in parallel over the same state and come back typed, with probabilities:\n\n\"vertical_match\": {\"choice\": \"in_vertical\", \"confidence\": 0.94}\n\"signal_strength\": {\"noul\": 0.93}\n\"offer_fit\": {\"choice\": \"ai-demo-to-prod\", \"confidence\": 1.0}\n\nCode still owns the banding logic (weights, dealbreakers), and low-confidence answers fall back to a human read. T\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550076349094305895";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

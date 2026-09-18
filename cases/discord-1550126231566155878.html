@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My experience so far is that Jev is extremely fast and capable of avoiding immediate risks, but Luna makes better — Jev Directory</title>
+<meta name="description" content="My experience so far is that Jev is extremely fast and capable of avoiding immediate risks, but Luna makes better decisions when the consequences extend several">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>My experience so far is that Jev is extremely fast and capable of avoiding immediate risks, but Luna makes better</h1>
+<div class="meta"><span class="catname">Home</span><span>by Jayson</span><span>2026-09-17</span></div>
+<div class="body">My experience so far is that Jev is extremely fast and capable of avoiding immediate risks, but Luna makes better decisions when the consequences extend several moves into the future. I tested different prompt calibrations, from safety focused to more apple focused, while always giving both models the same prompt and context. Jev either became too cautious or pursued apples without anticipating later traps as consistently, whereas Luna more often balanced progress with the long-term shape of the snake. It was not perfect, but it appeared to reason further ahead, sometimes taking several seconds and using more reasoning tokens on difficult moves. This is only my experience from these experiments, but Jev’s long-horizon judgment still seems behind Luna and the expected Terra-level performance, despite its impressive speed. For a first-generation system, though, it is extremely impressive, and I’m excited to see how it improves as it becomes more refined for long-horizon decision tasks.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550126231566155878" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "My experience so far is that Jev is extremely fast and capable of avoiding immediate risks, but Luna makes better\n\nMy experience so far is that Jev is extremely fast and capable of avoiding immediate risks, but Luna makes better decisions when the consequences extend several moves into the future. I tested different prompt calibrations, from safety focused to more apple focused, while always giving both models the same prompt and context. Jev either became too cautious or pursued apples without anticipating later traps as consistently, whereas Luna more often balanced progress with the long-term shape of the snake. It was not perfect, but it appeared to reason further ahead, sometimes taking several seconds and using more reasoning tokens on difficult moves. This is only my experience from these experiments, but Jev’s long-horizon judgment still seems behind Luna and the expected Terra-level performance, despite its impressive speed. For a first-generation system, though, it is extremely impressive, and I’m excited to see how it improves as it becomes more refined for long-horizon decision tasks.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550126231566155878";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

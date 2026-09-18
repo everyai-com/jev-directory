@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I&#39;m excited for all the &quot;small software&quot; that these tools enable the creation of. — Jev Directory</title>
+<meta name="description" content="I&#39;m excited for all the &quot;small software&quot; that these tools enable the creation of. I can&#39;t wait to see how many projects along the lines of git will be created s">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>I&#39;m excited for all the &quot;small software&quot; that these tools enable the creation of.</h1>
+<div class="meta"><span class="catname">Work</span><span>by AN0099</span><span>2026-09-17</span></div>
+<div class="body">I&#39;m excited for all the &quot;small software&quot; that these tools enable the creation of. I can&#39;t wait to see how many projects along the lines of git will be created since someone wanted a program to do a specific task and then they built an actual artifact that they could export out of inference and run on their plain old CPU to do it forever.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549942334823604345" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Work</h2><a href="./video-lead-scoring.html">Score inbound leads 0–1 and reply to the 98s first</a><a href="./video-support-routing.html">Route support inquiries to the right team instantly</a><a href="./discord-1550581784922554498.html">here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "I'm excited for all the \"small software\" that these tools enable the creation of.\n\nI'm excited for all the \"small software\" that these tools enable the creation of. I can't wait to see how many projects along the lines of git will be created since someone wanted a program to do a specific task and then they built an actual artifact that they could export out of inference and run on their plain old CPU to do it forever.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549942334823604345";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

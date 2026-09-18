@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>It could still be a harness or prompting issue, which is part of what I’m testing. — Jev Directory</title>
+<meta name="description" content="It could still be a harness or prompting issue, which is part of what I’m testing. Each model chooses one relative action: `forward`, `left`, or `right`. Jev re">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>It could still be a harness or prompting issue, which is part of what I’m testing.</h1>
+<div class="meta"><span class="catname">Home</span><span>by Jayson</span><span>2026-09-17</span></div>
+<div class="body">It could still be a harness or prompting issue, which is part of what I’m testing.
+
+Each model chooses one relative action: `forward`, `left`, or `right`.
+
+Jev receives a TypeSafe Choice:
+
+```json
+{
+  &quot;type&quot;: &quot;choice&quot;,
+  &quot;criteria&quot;: {
+    &quot;forward&quot;: &quot;Continue in the current heading.&quot;,
+    &quot;left&quot;: &quot;Turn left.&quot;,
+    &quot;right&quot;: &quot;Turn right.&quot;
+  }
+}
+```
+
+Luna receives the same options through a strict JSON enum:
+
+```json
+{
+  &quot;action&quot;: {
+    &quot;type&quot;: &quot;string&quot;,
+    &quot;enum&quot;: [&quot;forward&quot;, &quot;left&quot;, &quot;right&quot;]
+  }
+}
+```
+
+Both receive the same prompt and game state. A shortened state example:
+
+```json
+{
+  &quot;board&quot;: {
+    &quot;width&quot;: 10,
+    &quot;height&quot;: 10,
+    &quot;map&quot;: [&quot;..........&quot;, &quot;...TBH.A..&quot;, &quot;..........&quot;]
+  },
+  &quot;heading&quot;: &quot;right&quot;,
+  &quot;apple&quot;: {&quot;x&quot;: 7, &quot;y&quot;: 1},
+  &quot;body_head_to_tail&quot;: [
+    {&quot;role&quot;: &quot;head&quot;, &quot;x&quot;: 5, &quot;y&quot;: 1},
+    {&quot;role&quot;: &quot;body&quot;, &quot;x&quot;: 4, &quot;y&quot;: 1},
+    {&quot;role&quot;: &quot;tail&quot;, &quot;x&quot;: 3, &quot;y&quot;: 1}
+  ],
+  &quot;moves&quot;: {
+    &quot;forward&quot;: {
+      &quot;next&quot;: {&quot;x&quot;: 6, &quot;y&quot;: 1},
+      &quot;collision&quot;: false,
+      &quot;apple_distance&quot;: 1,
+      &quot;safe_cells&quot;: 98
+    },
+    &quot;left&quot;: {
+      &quot;next&quot;: {&quot;x&quot;: 5, &quot;y&quot;: 0},
+      &quot;collision&quot;</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550121363488907379" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Home</h2><a href="./discord-1550558292621926532.html">I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable</a><a href="./discord-1550543777955840090.html">I made some CVSS classification scripts that use Jev to generate a CVSS vector for a given software vulnerability</a><a href="./discord-1550522293455683705.html">Jev can be used for profiling players, which is great for organizing playtests and checking balance changes across</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "It could still be a harness or prompting issue, which is part of what I’m testing.\n\nIt could still be a harness or prompting issue, which is part of what I’m testing.\n\nEach model chooses one relative action: `forward`, `left`, or `right`.\n\nJev receives a TypeSafe Choice:\n\n```json\n{\n  \"type\": \"choice\",\n  \"criteria\": {\n    \"forward\": \"Continue in the current heading.\",\n    \"left\": \"Turn left.\",\n    \"right\": \"Turn right.\"\n  }\n}\n```\n\nLuna receives the same options through a strict JSON enum:\n\n```json\n{\n  \"action\": {\n    \"type\": \"string\",\n    \"enum\": [\"forward\", \"left\", \"right\"]\n  }\n}\n```\n\nBoth receive the same prompt and game state. A shortened state example:\n\n```json\n{\n  \"board\": {\n    \"width\": 10,\n    \"height\": 10,\n    \"map\": [\"..........\", \"...TBH.A..\", \"..........\"]\n  },\n  \"heading\": \"right\",\n  \"apple\": {\"x\": 7, \"y\": 1},\n  \"body_head_to_tail\": [\n    {\"role\": \"head\", \"x\": 5, \"y\": 1},\n    {\"role\": \"body\", \"x\": 4, \"y\": 1},\n    {\"role\": \"tail\", \"x\": 3, \"y\": 1}\n  ],\n  \"moves\": {\n    \"forward\": {\n      \"next\": {\"x\": 6, \"y\": 1},\n      \"collision\": false,\n      \"apple_distance\": 1,\n      \"safe_cells\": 98\n    },\n    \"left\": {\n      \"next\": {\"x\": 5, \"y\": 0},\n      \"collision\"\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550121363488907379";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

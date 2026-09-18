@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Route support inquiries to the right team instantly — Jev Directory</title>
+<meta name="description" content="Incoming support requests get classified the moment they arrive — which product team owns it, how urgent it is — instead of sitting in a general queue. The AI-t">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Route support inquiries to the right team instantly</h1>
+<div class="meta"><span class="catname">Work</span><span>by Jev launch video</span><span>2026-09-18</span></div>
+<div class="body">Incoming support requests get classified the moment they arrive — which product team owns it, how urgent it is — instead of sitting in a general queue. The AI-traffic-cop pattern: decide in ~200ms, route, escalate, or auto-resolve.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://youtu.be/4mTLpuQpB80" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Work</h2><a href="./video-lead-scoring.html">Score inbound leads 0–1 and reply to the 98s first</a><a href="./discord-1550581784922554498.html">here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which</a><a href="./discord-1550579426264354847.html">lifelike.build is a small village that runs itself, streamed live to your browser.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Route support inquiries to the right team instantly\n\nIncoming support requests get classified the moment they arrive — which product team owns it, how urgent it is — instead of sitting in a general queue. The AI-traffic-cop pattern: decide in ~200ms, route, escalate, or auto-resolve.\n\nSource: https://youtu.be/4mTLpuQpB80";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

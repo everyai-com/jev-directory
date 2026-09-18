@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hi everyone! I’d like to share a project we’re building in Japan called ConsultingAI. ConsultingAI turns interviews and — Jev Directory</title>
+<meta name="description" content="Hi everyone! I’d like to share a project we’re building in Japan called ConsultingAI. ConsultingAI turns interviews and business-process descriptions into struc">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Hi everyone! I’d like to share a project we’re building in Japan called ConsultingAI. ConsultingAI turns interviews and</h1>
+<div class="meta"><span class="catname">Admin</span><span>by @takuya_mrvs</span><span>2026-09-18</span></div>
+<div class="body">Hi everyone! I’d like to share a project we’re building in Japan called ConsultingAI.
+
+ConsultingAI turns interviews and business-process descriptions into structured process flows, helping organizations visualize their operations and identify opportunities for improvement and automation.
+
+In one project, we used it to generate and analyze more than 500 business processes. I’m interested in exploring whether Jev could help us classify, prioritize, and route operational issues to the right improvement actions or AI agents—especially when the available information is incomplete or ambiguous.
+
+I’d love to hear any ideas or similar use cases from the community!</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550497703858012172" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Hi everyone! I’d like to share a project we’re building in Japan called ConsultingAI. ConsultingAI turns interviews and\n\nHi everyone! I’d like to share a project we’re building in Japan called ConsultingAI.\n\nConsultingAI turns interviews and business-process descriptions into structured process flows, helping organizations visualize their operations and identify opportunities for improvement and automation.\n\nIn one project, we used it to generate and analyze more than 500 business processes. I’m interested in exploring whether Jev could help us classify, prioritize, and route operational issues to the right improvement actions or AI agents—especially when the available information is incomplete or ambiguous.\n\nI’d love to hear any ideas or similar use cases from the community!\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550497703858012172";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

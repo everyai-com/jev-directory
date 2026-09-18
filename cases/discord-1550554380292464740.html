@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jev-powered trading bot. — Jev Directory</title>
+<meta name="description" content="Jev-powered trading bot. It actually connects to an actual trading account running on cTrader platform. Still a work in progress and definitely needs to be forw">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Jev-powered trading bot.</h1>
+<div class="meta"><span class="catname">Admin</span><span>by Celengan Babi</span><span>2026-09-18</span></div>
+<div class="body">Jev-powered trading bot.
+
+It actually connects to an actual trading account running on cTrader platform.
+Still a work in progress and definitely needs to be forward-tested.
+
+I&#39;m gonna leave this bot running for the next few days and only adjust when needed.
+
+Linked projects:
+• image.png — image/png · 214 KB (cdn.discordapp.com/attachments/1483217545040232493/1550554379319517284)
+• image.png — image/png · 91 KB (cdn.discordapp.com/attachments/1483217545040232493/1550554379810242670)</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1550554379319517284/image.png?ex=6aaec1cb&amp;is=6aad704b&amp;hm=0f6b092f4ff3a90dcde4ee3a133632685a3f04621dfda18eb6832e26b9d5ac0b&amp;" target="_blank" rel="noopener"><img class="th" src="https://cdn.discordapp.com/attachments/1483217545040232493/1550554379319517284/image.png?ex=6aaec1cb&amp;is=6aad704b&amp;hm=0f6b092f4ff3a90dcde4ee3a133632685a3f04621dfda18eb6832e26b9d5ac0b&amp;" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">image.png</span><span class="d">cdn.discordapp.com</span><span class="x">image/png · 214 KB</span></span></a><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1550554379810242670/image.png?ex=6aaec1cc&amp;is=6aad704c&amp;hm=3c5935d795297b631bbd7b5c8eb1e24e854d305304cce43f073caf4a4660ba55&amp;" target="_blank" rel="noopener"><img class="th" src="https://cdn.discordapp.com/attachments/1483217545040232493/1550554379810242670/image.png?ex=6aaec1cc&amp;is=6aad704c&amp;hm=3c5935d795297b631bbd7b5c8eb1e24e854d305304cce43f073caf4a4660ba55&amp;" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">image.png</span><span class="d">cdn.discordapp.com</span><span class="x">image/png · 91 KB</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550554380292464740" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Admin</h2><a href="./video-email-triage.html">Triage 1,700 emails for $0.18 with four verdicts each</a><a href="./discord-1550559595905163384.html">Sniff Test: a prose linter where Jev is the judge.</a><a href="./discord-1550558107086884955.html">γ: Memory χ: Choice Δ: Change φ: Emotional Focus λ: Logic ∑: Exception Handling κ: Correctness or Resolution η:</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Jev-powered trading bot.\n\nJev-powered trading bot.\n\nIt actually connects to an actual trading account running on cTrader platform.\nStill a work in progress and definitely needs to be forward-tested.\n\nI'm gonna leave this bot running for the next few days and only adjust when needed.\n\nLinked projects:\n• image.png — image/png · 214 KB (cdn.discordapp.com/attachments/1483217545040232493/1550554379319517284)\n• image.png — image/png · 91 KB (cdn.discordapp.com/attachments/1483217545040232493/1550554379810242670)\n- image.png: https://cdn.discordapp.com/attachments/1483217545040232493/1550554379319517284/image.png?ex=6aaec1cb&is=6aad704b&hm=0f6b092f4ff3a90dcde4ee3a133632685a3f04621dfda18eb6832e26b9d5ac0b&\n- image.png: https://cdn.discordapp.com/attachments/1483217545040232493/1550554379810242670/image.png?ex=6aaec1cc&is=6aad704c&hm=3c5935d795297b631bbd7b5c8eb1e24e854d305304cce43f073caf4a4660ba55&\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550554380292464740";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

@@ -99,11 +99,15 @@ const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;
 .card.open .desc{-webkit-line-clamp:unset;cursor:default}
 .card .more{font-family:var(--mono);font-size:11.5px;color:var(--faint);cursor:pointer;margin-top:5px;display:inline-block}
 .card.open .more{display:none}
-.card .links{margin:10px 0 0;display:flex;flex-direction:column;gap:5px}
-.card .links a{display:flex;gap:8px;align-items:baseline;font-size:12.5px;color:var(--text);text-decoration:none;border-top:1px dotted var(--line);padding-top:5px;min-width:0}
-.card .links a:hover .t{text-decoration:underline;text-underline-offset:3px}
-.card .links .d{font-family:var(--mono);font-size:10.5px;color:var(--faint);flex:none;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.card .links .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .links{margin:12px 0 0;display:flex;flex-direction:column;gap:7px;border-top:1px solid var(--line);padding-top:9px}
+.card .llabel{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.card .lnk{display:flex;gap:9px;align-items:center;font-size:12.5px;color:var(--text);text-decoration:none;min-width:0}
+.card .lnk:hover .t{text-decoration:underline;text-underline-offset:3px}
+.card .lnk img.th{width:62px;height:42px;object-fit:cover;border-radius:6px;flex:none;border:1px solid var(--line)}
+.card .lnk img.fv{width:14px;height:14px;flex:none;border-radius:3px}
+.card .lnk .tt{min-width:0;display:flex;flex-direction:column}
+.card .lnk .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .lnk .d{font-family:var(--mono);font-size:10.5px;color:var(--faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .card .foot{display:flex;align-items:center;gap:8px;margin-top:11px;padding-top:9px;border-top:1px solid var(--line);font-size:12px;color:var(--faint)}
 .card .foot .by{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
 .card .foot a{color:var(--faint)}
@@ -129,6 +133,24 @@ footer.site a{color:var(--dim)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (max-width:920px){.main{grid-template-columns:1fr}.side{position:static;max-height:none}.side .cats{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}.cat{border:1px solid var(--line2);border-radius:999px;white-space:nowrap}.cat.on{border-color:var(--accent)}.topbar .meta{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.casepage{max-width:760px;margin:0 auto;padding:34px 22px 64px}
+.casepage .back{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none}
+.casepage .back:hover{color:var(--accent)}
+.casepage h1{font-size:clamp(24px,3.6vw,33px);line-height:1.2;letter-spacing:-.015em;margin:14px 0 8px}
+.casepage .meta{display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--faint);margin-bottom:16px;flex-wrap:wrap}
+.casepage .meta .catname{color:var(--accent);text-transform:uppercase;letter-spacing:.09em}
+.casepage .body{white-space:pre-wrap;font-size:15.5px;line-height:1.7}
+.casepage .links{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.casepage .lnk{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.casepage .lnk img.th{width:120px;height:76px}
+.casepage .lnk .x{font-size:13px;color:var(--dim);margin-top:2px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.casepage .actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.casepage .more{margin-top:34px;border-top:1px solid var(--line);padding-top:16px}
+.casepage .more h2{font-size:16px;margin:0 0 10px}
+.casepage .more a{display:block;color:var(--text);text-decoration:none;padding:7px 0;border-bottom:1px dotted var(--line);font-size:14px}
+.casepage .more a:hover{color:var(--accent)}
+.card h3 a{color:inherit;text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-underline-offset:3px}
 `;
 
 const JS = `import { JEV_DIR } from './data.js';
@@ -196,12 +218,19 @@ function briefOf(item) {
 }
 function buildCard(item, i) {
   var links = (item.l || []).map(function (l) {
-    return '<a href="' + esc(l.u) + '" target="_blank" rel="noopener"><span class="d">' +
-      esc(domainOf(l.u)) + '</span><span class="t">' + esc(l.t || l.u) + '</span></a>';
+    var dom = domainOf(l.u);
+    var visual = l.g
+      ? '<img class="th" src="' + esc(l.g) + '" alt="" loading="lazy" onerror="this.remove()">'
+      : '<img class="fv" src="https://www.google.com/s2/favicons?domain=' + esc(dom) + '&sz=32" alt="" loading="lazy" onerror="this.remove()">';
+    return '<a class="lnk" href="' + esc(l.u) + '" target="_blank" rel="noopener">' + visual +
+      '<span class="tt"><span class="t">' + esc(l.t || l.u) + '</span><span class="d">' + esc(dom) + '</span></span></a>';
   }).join('');
+  if (links) links = '<div class="llabel">Links</div>' + links;
+  var page = './cases/' + item.i + '.html';
   return '<article class="card" data-i="' + i + '"><div class="k"><span class="catname">' +
-    esc(item.c) + '</span><span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3>' +
-    esc(item.t) + '</h3><p class="desc">' + esc(item.d) + '</p><span class="more">read more +</span>' +
+    esc(item.c) + '</span><span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3><a href="' +
+    esc(page) + '">' + esc(item.t) + '</a></h3><p class="desc">' + esc(item.d) + '</p><a class="more" href="' +
+    esc(page) + '">read more +</a>' +
     (links ? '<div class="links">' + links + '</div>' : '') +
     '<div class="foot"><span class="by">by ' + esc(item.h || 'unknown') +
     ' · <a href="' + esc(item.u) + '" target="_blank" rel="noopener">source</a></span>' +
@@ -253,13 +282,6 @@ function renderBuilds() {
   });
 }
 function bindCards() {
-  document.querySelectorAll('#builds .card').forEach(function (card) {
-    var desc = card.querySelector('.desc');
-    var more = card.querySelector('.more');
-    function open() { card.classList.add('open'); }
-    if (desc) desc.addEventListener('click', open);
-    if (more) more.addEventListener('click', open);
-  });
   document.querySelectorAll('[data-brief]').forEach(function (btn) {
     btn.addEventListener('click', function (ev) {
       ev.stopPropagation();
@@ -328,6 +350,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <a class="brand" href="#"><b>JEV</b>·DIRECTORY</a>
 <span class="meta">${buildCount} builds · ${evalCount} evals · updated ${generated}</span>
 <span class="sp"></span>
+<a class="btn" href="https://github.com/everyai-com/jev-directory">repo</a>
 <a class="btn" href="./capabilities.md">pack .md</a>
 <a class="btn" href="./capabilities.json">pack .json</a>
 <button class="btn solid" id="copySetup">copy setup prompt</button>
@@ -361,12 +384,111 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <div id="evals"></div>
 </div>
 </div>
-<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a></div></footer>
+<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
 <div class="toast" id="toast"></div>
 <script type="module" src="./directory.js"></script>
 </body>
 </html>
 `;
+}
+
+function escHtml(v) {
+  return String(v == null ? '' : v).replace(/[&<>'"]/g, ch => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[ch]));
+}
+
+function casePage(item, entry, generated) {
+  const desc = String(item.description || '');
+  const seen = new Set();
+  const links = [];
+  for (const u of [...(entry.urls || []), ...(entry.attachments || [])]) {
+    const key = linkKey(u);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const m = (entry.meta || {})[u] || {};
+    let g = m.img || null;
+    if (!g && m.kind === 'attachment' && /^image\//.test(m.desc || '')) g = u;
+    let dom = u;
+    try { dom = new URL(u).hostname.replace(/^www\./, ''); } catch {}
+    links.push({ u, t: (m.title || u).slice(0, 140), d: dom, x: (m.desc || '').slice(0, 220), g });
+  }
+  const brief = [item.title, '', desc, ...links.map(l => `- ${l.t}: ${l.u}`), '', 'Source: ' + item.sourceUrl].join('\n');
+  const rows = links.map(l => {
+    const visual = l.g
+      ? `<img class="th" src="${escHtml(l.g)}" alt="" loading="lazy" onerror="this.remove()">`
+      : `<img class="fv" src="https://www.google.com/s2/favicons?domain=${escHtml(l.d)}&sz=32" alt="" loading="lazy" onerror="this.remove()">`;
+    return `<a class="lnk" href="${escHtml(l.u)}" target="_blank" rel="noopener">${visual}<span class="tt"><span class="t">${escHtml(l.t)}</span><span class="d">${escHtml(l.d)}</span>${l.x ? `<span class="x">${escHtml(l.x)}</span>` : ''}</span></a>`;
+  }).join('');
+  return { html: `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escHtml(item.title)} — Jev Directory</title>
+<meta name="description" content="${escHtml(desc.replace(/\s+/g, ' ').trim().slice(0, 160))}">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>${escHtml(item.title)}</h1>
+<div class="meta"><span class="catname">${escHtml(item.category)}</span><span>by ${escHtml(item.handle || 'unknown')}</span><span>${escHtml((item.submittedAt || '').slice(0, 10))}</span></div>
+<div class="body">${escHtml(desc)}</div>
+${rows ? `<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links">${rows}</div>` : ''}
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="${escHtml(item.sourceUrl)}" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in ${escHtml(item.category)}</h2>__MORE__</div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = ${JSON.stringify(brief)};
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>`, links };
+}
+
+async function buildCasePages(candidates, linksById, generated) {
+  const { mkdir: mk } = await import('node:fs/promises');
+  await mk(join(OUT, 'cases'), { recursive: true });
+  const byCat = new Map();
+  candidates.forEach(a => {
+    if (!byCat.has(a.category)) byCat.set(a.category, []);
+    byCat.get(a.category).push(a);
+  });
+  const urls = ['index.html'];
+  for (const item of candidates) {
+    const entry = linksById[String(item.id).replace(/^discord-/, '')] || {};
+    const { html } = casePage(item, entry, generated);
+    const more = (byCat.get(item.category) || []).filter(a => a.id !== item.id).slice(0, 3)
+      .map(a => `<a href="./${a.id}.html">${escHtml(a.title)}</a>`).join('') || '<p class="sub">No others yet.</p>';
+    await writeFile(join(OUT, 'cases', `${item.id}.html`), html.replace('__MORE__', more));
+    urls.push(`cases/${item.id}.html`);
+  }
+  const NL = String.fromCharCode(10);
+  const sitemap = '<?xml version="1.0" encoding="UTF-8"?>' + NL +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + NL +
+    urls.map(u => `  <url><loc>./${u}</loc><lastmod>${generated}</lastmod></url>`).join(NL) +
+    NL + '</urlset>' + NL;
+  await writeFile(join(OUT, 'sitemap.xml'), sitemap);
+  return urls.length;
 }
 
 async function main() {
@@ -396,13 +518,16 @@ async function main() {
         if (seen.has(key)) continue;
         seen.add(key);
         const m = (entry.meta || {})[u] || {};
-        links.push({ t: (m.title || u).slice(0, 120), u });
+        var g = m.img || null;
+        if (!g && m.kind === 'attachment' && /^image\//.test(m.desc || '')) g = u;
+        links.push({ t: (m.title || u).slice(0, 120), u: u, g: g });
         if (links.length >= 4) break;
       }
       if (links.length) linkedProjects++;
       // Card links render as their own rows — drop the pack's linked block here.
       const blurb = String(item.description || '').split('\n\nLinked projects:')[0];
       return {
+        i: item.id,
         t: item.title,
         c: item.category,
         d: blurb.replace(/\s+/g, ' ').trim().slice(0, 600),
@@ -421,6 +546,8 @@ async function main() {
   await writeFile(join(OUT, 'directory.css'), CSS);
   await writeFile(join(OUT, 'index.html'),
     pageShell(generated, data.evals.length, data.community.length, linkedProjects, setupText));
+  const pages = await buildCasePages(candidates, linksById, generated);
+  console.log(`  case pages: ${pages - 1} + sitemap.xml`);
   console.log(`jev directory → ${OUT}/  (evals: ${data.evals.length}, builds: ${data.community.length}, linked: ${linkedProjects})`);
 }
 

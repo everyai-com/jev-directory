@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tried the **semantic-find cookbook** on supplier replies for Factory Twelve, an apparel sourcing platform, using — Jev Directory</title>
+<meta name="description" content="Tried the **semantic-find cookbook** on supplier replies for Factory Twelve, an apparel sourcing platform, using `jev-1.13.0`. Three questions over the same sta">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Tried the **semantic-find cookbook** on supplier replies for Factory Twelve, an apparel sourcing platform, using</h1>
+<div class="meta"><span class="catname">Food</span><span>by Jeff</span><span>2026-09-17</span></div>
+<div class="body">Tried the **semantic-find cookbook** on supplier replies for Factory Twelve, an apparel sourcing platform, using `jev-1.13.0`.
+
+Three questions over the same state in one System One request:
+
+- **Choice — `where`:** select the most relevant clause ID.
+- **Noul — `exists`:** probability the reply supplies at least one requested detail.
+- **Choice — `coverage`:** classify the answer as `complete`, `partial`, or `absent`.
+
+Existence is separate because clause Choice always produces a winner. Coverage is separate because Noul near 0.5 means uncertainty—not a partially complete answer.
+
+Code preserves source IDs, versions, hashes and character offsets, then copies the selected text verbatim. No generated quotations.
+
+**First run: 12 synthetic development cases**
+
+- Existence: **12/12** correct at a 0.5 threshold.
+- Clause selection: **8/8** on answer-bearing cases.
+- Highlights suppressed for all **4 absent cases**.
+- Coverage: **9/12** correct.
+- Mean latency: **455 ms/request**.
+- Usage: **9,742 input / 1,548 output tokens**.
+
+All three coverage errors selected the correct clause:
+
+- `$</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550128168437030983" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Food</h2><a href="./discord-1550586441036464140.html">Shared my first experiences with Jev in my newsletter here.</a><a href="./discord-1550560835838017666.html">hey guys was cooking this cli in rust to substitue my old gate checks, you can run in watch mode, so during dev is</a><a href="./discord-1550553630594170900.html">&gt; We benchmarked TypeSafe&#39;s Jev against our production LLM classifier — with real customer data and human ground truth.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Tried the **semantic-find cookbook** on supplier replies for Factory Twelve, an apparel sourcing platform, using\n\nTried the **semantic-find cookbook** on supplier replies for Factory Twelve, an apparel sourcing platform, using `jev-1.13.0`.\n\nThree questions over the same state in one System One request:\n\n- **Choice — `where`:** select the most relevant clause ID.\n- **Noul — `exists`:** probability the reply supplies at least one requested detail.\n- **Choice — `coverage`:** classify the answer as `complete`, `partial`, or `absent`.\n\nExistence is separate because clause Choice always produces a winner. Coverage is separate because Noul near 0.5 means uncertainty—not a partially complete answer.\n\nCode preserves source IDs, versions, hashes and character offsets, then copies the selected text verbatim. No generated quotations.\n\n**First run: 12 synthetic development cases**\n\n- Existence: **12/12** correct at a 0.5 threshold.\n- Clause selection: **8/8** on answer-bearing cases.\n- Highlights suppressed for all **4 absent cases**.\n- Coverage: **9/12** correct.\n- Mean latency: **455 ms/request**.\n- Usage: **9,742 input / 1,548 output tokens**.\n\nAll three coverage errors selected the correct clause:\n\n- `$\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1550128168437030983";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

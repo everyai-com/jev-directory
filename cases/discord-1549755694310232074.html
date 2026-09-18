@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I&#39;m building Gorgona: An open source guardrail engine that turns runaway AI agents to stone (zero dependencies) — Jev Directory</title>
+<meta name="description" content="I&#39;m building Gorgona: An open source guardrail engine that turns runaway AI agents to stone (zero dependencies) Running autonomous coding and marketing agents a">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>I&#39;m building Gorgona: An open source guardrail engine that turns runaway AI agents to stone (zero dependencies)</h1>
+<div class="meta"><span class="catname">Evaluation</span><span>by Adrian M. Peticila 🟡</span><span>2026-09-16</span></div>
+<div class="body">I&#39;m building Gorgona: An open source guardrail engine that turns runaway AI agents to stone (zero dependencies)
+Running autonomous coding and marketing agents as a solo founder sounds great until you wake up to an empty API balance, an agent stuck in a 50-step loop, or credentials dumped into a public directory.
+
+I built Gorgona to solve my own paranoia:
+
+- 100% Python standard library (no bloated packages, runs in milliseconds).
+
+- Halts execution immediately on hard violations: leaked keys, cross-project context leaks, recursive loops.
+
+- Mechanical linting against AI slop and synthetic writing markers.
+
+Repo: https://github.com/adrianpeticila/gorgona
+
+It&#39;s MIT licensed, fully tested, and ready to use in CI or local agent scripts. Any feedback or brutal critique is welcome.
+
+Linked projects:
+• adrianpeticila/gorgona — Turn runaway AI agents to stone. The deterministic guardrail engine, model router, and execution discipline for autonomous AI agents. - adrianpeticila/gorgona (github.com/adrianpeticila/gorgona)
+
+Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549755694310232074</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://github.com/adrianpeticila/gorgona" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">adrianpeticila/gorgona</span><span class="d">github.com</span><span class="x">Turn runaway AI agents to stone. The deterministic guardrail engine, model router, and execution discipline for autonomous AI agents. - adrianpeticila/gorgona</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://github.com/adrianpeticila/gorgona" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Evaluation</h2><a href="./video-probabilities.html">Return probabilities, not labels — 80/10/10 beats &quot;orange&quot;</a><a href="./discord-1550583220318507041.html">I’m building Aurapunk, an open-source multi-agent IDE.</a><a href="./discord-1550544655148392610.html">Tested jev against deepseek v4.1 flash on norwegian text.</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "I'm building Gorgona: An open source guardrail engine that turns runaway AI agents to stone (zero dependencies)\n\nI'm building Gorgona: An open source guardrail engine that turns runaway AI agents to stone (zero dependencies)\nRunning autonomous coding and marketing agents as a solo founder sounds great until you wake up to an empty API balance, an agent stuck in a 50-step loop, or credentials dumped into a public directory.\n\nI built Gorgona to solve my own paranoia:\n\n- 100% Python standard library (no bloated packages, runs in milliseconds).\n\n- Halts execution immediately on hard violations: leaked keys, cross-project context leaks, recursive loops.\n\n- Mechanical linting against AI slop and synthetic writing markers.\n\nRepo: https://github.com/adrianpeticila/gorgona\n\nIt's MIT licensed, fully tested, and ready to use in CI or local agent scripts. Any feedback or brutal critique is welcome.\n\nLinked projects:\n• adrianpeticila/gorgona — Turn runaway AI agents to stone. The deterministic guardrail engine, model router, and execution discipline for autonomous AI agents. - adrianpeticila/gorgona (github.com/adrianpeticila/gorgona)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549755694310232074\n- adrianpeticila/gorgona: https://github.com/adrianpeticila/gorgona\n\nSource: https://github.com/adrianpeticila/gorgona";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

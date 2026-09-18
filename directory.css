@@ -51,11 +51,15 @@
 .card.open .desc{-webkit-line-clamp:unset;cursor:default}
 .card .more{font-family:var(--mono);font-size:11.5px;color:var(--faint);cursor:pointer;margin-top:5px;display:inline-block}
 .card.open .more{display:none}
-.card .links{margin:10px 0 0;display:flex;flex-direction:column;gap:5px}
-.card .links a{display:flex;gap:8px;align-items:baseline;font-size:12.5px;color:var(--text);text-decoration:none;border-top:1px dotted var(--line);padding-top:5px;min-width:0}
-.card .links a:hover .t{text-decoration:underline;text-underline-offset:3px}
-.card .links .d{font-family:var(--mono);font-size:10.5px;color:var(--faint);flex:none;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.card .links .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .links{margin:12px 0 0;display:flex;flex-direction:column;gap:7px;border-top:1px solid var(--line);padding-top:9px}
+.card .llabel{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.card .lnk{display:flex;gap:9px;align-items:center;font-size:12.5px;color:var(--text);text-decoration:none;min-width:0}
+.card .lnk:hover .t{text-decoration:underline;text-underline-offset:3px}
+.card .lnk img.th{width:62px;height:42px;object-fit:cover;border-radius:6px;flex:none;border:1px solid var(--line)}
+.card .lnk img.fv{width:14px;height:14px;flex:none;border-radius:3px}
+.card .lnk .tt{min-width:0;display:flex;flex-direction:column}
+.card .lnk .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .lnk .d{font-family:var(--mono);font-size:10.5px;color:var(--faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .card .foot{display:flex;align-items:center;gap:8px;margin-top:11px;padding-top:9px;border-top:1px solid var(--line);font-size:12px;color:var(--faint)}
 .card .foot .by{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
 .card .foot a{color:var(--faint)}
@@ -81,3 +85,21 @@ footer.site a{color:var(--dim)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (max-width:920px){.main{grid-template-columns:1fr}.side{position:static;max-height:none}.side .cats{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}.cat{border:1px solid var(--line2);border-radius:999px;white-space:nowrap}.cat.on{border-color:var(--accent)}.topbar .meta{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.casepage{max-width:760px;margin:0 auto;padding:34px 22px 64px}
+.casepage .back{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none}
+.casepage .back:hover{color:var(--accent)}
+.casepage h1{font-size:clamp(24px,3.6vw,33px);line-height:1.2;letter-spacing:-.015em;margin:14px 0 8px}
+.casepage .meta{display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--faint);margin-bottom:16px;flex-wrap:wrap}
+.casepage .meta .catname{color:var(--accent);text-transform:uppercase;letter-spacing:.09em}
+.casepage .body{white-space:pre-wrap;font-size:15.5px;line-height:1.7}
+.casepage .links{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.casepage .lnk{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.casepage .lnk img.th{width:120px;height:76px}
+.casepage .lnk .x{font-size:13px;color:var(--dim);margin-top:2px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.casepage .actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.casepage .more{margin-top:34px;border-top:1px solid var(--line);padding-top:16px}
+.casepage .more h2{font-size:16px;margin:0 0 10px}
+.casepage .more a{display:block;color:var(--text);text-decoration:none;padding:7px 0;border-bottom:1px dotted var(--line);font-size:14px}
+.casepage .more a:hover{color:var(--accent)}
+.card h3 a{color:inherit;text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-underline-offset:3px}

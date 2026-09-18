@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jake, commercial GC in Texas. — Jev Directory</title>
+<meta name="description" content="Jake, commercial GC in Texas. Not an AI company, I build buildings. Caught the tail of the AMA today. The use case I care about is the Covey Law one, checking e">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Jake, commercial GC in Texas.</h1>
+<div class="meta"><span class="catname">Money</span><span>by Jake Mauldin</span><span>2026-09-16</span></div>
+<div class="body">Jake, commercial GC in Texas. Not an AI company, I build buildings.
+
+Caught the tail of the AMA today. The use case I care about is the Covey Law one, checking every turn an LLM produces against the source it came from. My agents summarize client calls and vendor bills, and a summary claiming a payment cleared when it didn&#39;t costs me real money.
+
+Built that check tonight on a cheap generic model, questions written in the System One format so it swaps to Jev when access opens. Would like to find out whether the confidence holds up on construction data.</div>
+
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1549598176833568922" target="_blank" rel="noopener">open source</a>
+</div>
+<div class="more"><h2>More in Money</h2><a href="./discord-1550572592308428910.html">We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).</a><a href="./discord-1550562000604504106.html">Umm, will gather better data when my OpenAI token budget resets tomorrow, had to tinker a bit.</a><a href="./discord-1550555547995209728.html">Hi everyone, I just wrote up a small experiment testing TypeSafe’s Jev as a trusted and cheaper monitor alternate for</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Jake, commercial GC in Texas.\n\nJake, commercial GC in Texas. Not an AI company, I build buildings.\n\nCaught the tail of the AMA today. The use case I care about is the Covey Law one, checking every turn an LLM produces against the source it came from. My agents summarize client calls and vendor bills, and a summary claiming a payment cleared when it didn't costs me real money.\n\nBuilt that check tonight on a cheap generic model, questions written in the System One format so it swaps to Jev when access opens. Would like to find out whether the confidence holds up on construction data.\n\nSource: https://discord.com/channels/1483217544214085663/1483217545040232493/1549598176833568922";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>
