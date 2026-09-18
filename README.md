@@ -27,7 +27,6 @@ resolved project links ────────┘
 | `capabilities.md` / `capabilities.json` / `setup.txt` | The agent pack: playbook, structured data, paste-into-agent prompt |
 | `data/use-case-candidates.json` | Every community build: title, category, description, links, source |
 | `data/links.json` | Per-message link index with resolved titles |
-| `data/messages-trimmed.json` | Full message archive (id, author, timestamp, content, urls) |
 | `data/jev-guide.js` | The 50 evals in Jev's question schema (boolean / choice / score) |
 | `scripts/build-jev-pack.mjs` | Regenerates the agent pack from `data/` |
 | `scripts/build-jev-directory.mjs` | Regenerates the directory from `data/` |
