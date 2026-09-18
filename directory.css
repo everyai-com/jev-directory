@@ -113,3 +113,55 @@ footer.site a{color:var(--dim)}
 .casepage .more a:hover{color:var(--accent)}
 .card h3 a{color:inherit;text-decoration:none}
 .card h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+.askfab{position:fixed;right:22px;bottom:22px;z-index:60;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;font-weight:700;background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:12px 18px;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.45)}
+.askfab:hover{filter:brightness(1.07)}
+.askpanel{position:fixed;top:0;right:0;bottom:0;z-index:60;width:min(400px,100vw);background:var(--panel);border-left:1px solid var(--line2);display:flex;flex-direction:column;transform:translateX(102%);transition:transform .22s ease}
+.askpanel.on{transform:none}
+.askhead{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.askhead b{display:block;font-size:14.5px}
+.askhead span{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.askmsgs{flex:1;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.msg{font-size:13.5px;line-height:1.6;border-radius:10px;padding:9px 12px;max-width:100%;overflow-wrap:break-word}
+.msg.user{background:var(--panel2);border:1px solid var(--line2);align-self:flex-end}
+.msg.bot{background:#08090b;border:1px solid var(--line);align-self:flex-start;width:100%}
+.msg a{color:var(--accent)}
+.msg pre{background:#000;border:1px solid var(--line);border-radius:7px;padding:9px;overflow:auto;font-size:12px;margin:8px 0}
+.msg code.ic{font-family:var(--mono);font-size:12px;background:var(--panel2);border-radius:4px;padding:1px 5px}
+.msg .err{color:#f26d6d}
+.typing{display:inline-flex;gap:5px;padding:4px 0}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--faint);animation:askblink 1s infinite}
+.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+@keyframes askblink{0%,100%{opacity:.25}50%{opacity:1}}
+.askchips{display:flex;flex-direction:column;gap:6px;padding:0 16px 10px}
+.askchips button{text-align:left;font-size:12.5px;background:none;border:1px solid var(--line2);color:var(--dim);border-radius:8px;padding:7px 11px;cursor:pointer}
+.askchips button:hover{color:var(--accent);border-color:var(--accent)}
+.askform{display:flex;gap:8px;padding:0 16px 8px}
+.askform input{flex:1;min-width:0;background:var(--panel2);border:1px solid var(--line2);border-radius:8px;color:var(--text);font-size:13.5px;padding:9px 11px;outline:0;font-family:var(--sans)}
+.askform input:focus{border-color:var(--accent)}
+.askform .btn{padding:8px 14px}
+.askfoot{font-family:var(--mono);font-size:10.5px;color:var(--faint);padding:0 16px 14px}
+@media (max-width:920px){.askfab{right:14px;bottom:14px}}
+@media (prefers-reduced-motion:reduce){.typing i{animation:none}}
+.navlink{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none;white-space:nowrap}
+.navlink:hover{color:var(--accent)}
+.newto{margin-top:12px;font-size:13.5px;color:var(--faint)}
+.newto a{color:var(--accent)}
+.guidepage{max-width:760px;margin:0 auto;padding:34px 22px 64px}
+.guidepage h1{font-size:clamp(26px,3.8vw,36px);letter-spacing:-.015em;margin:14px 0 8px;line-height:1.15}
+.guidepage h2{font-size:19px;margin:30px 0 8px}
+.guidepage p,.guidepage li{color:var(--dim);font-size:15.5px;line-height:1.7}
+.guidepage p b,.guidepage li b{color:var(--text)}
+.guidepage a{color:var(--accent)}
+.guidepage pre{background:#08090b;border:1px solid var(--line);border-radius:8px;padding:12px;overflow:auto;font-size:12.5px;line-height:1.6}
+.guidepage table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.guidepage th,.guidepage td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);color:var(--dim);vertical-align:top}
+.guidepage th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.guidepage td:first-child{font-family:var(--mono);font-size:13px;color:var(--text);white-space:nowrap}
+.guidepage .callout{background:var(--panel);border:1px solid var(--line2);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;margin:16px 0}
+.guidepage .steps{margin:12px 0;padding:0;list-style:none;counter-reset:st}
+.guidepage .steps li{counter-increment:st;position:relative;padding:10px 0 10px 44px;border-bottom:1px dotted var(--line)}
+.guidepage .steps li:before{content:counter(st,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:var(--mono);font-size:12px;color:var(--accent)}
+.guidepage .back{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none}
+.guidepage .back:hover{color:var(--accent)}
+.guidepage .site{margin:40px 0 0;padding:16px 0 0}
+@media (max-width:920px){.topbar .in{overflow-x:auto}}

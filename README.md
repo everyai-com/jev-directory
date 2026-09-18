@@ -24,6 +24,8 @@ resolved project links ────────┘
 | Piece | What it does |
 | --- | --- |
 | `index.html` / `directory.css` / `directory.js` / `data.js` | The directory. Search, categories, newest-first, copy-a-brief per card |
+| `ask.js` | Side chat: "what can Jev build?", answered from the directory with links |
+| `what-is-jev.html` / `jev-like-im-10.html` | Guide pages: the grown-up explainer and the 10-year-old version, linked from the topbar |
 | `capabilities.md` / `capabilities.json` / `setup.txt` | The agent pack: playbook, structured data, paste-into-agent prompt |
 | `data/use-case-candidates.json` | Every community build: title, category, description, links, source |
 | `data/links.json` | Per-message link index with resolved titles |
@@ -48,6 +50,26 @@ the pack URL inside matches: `node scripts/build-jev-pack.mjs --repo <owner>/<re
 
 Every directory card also has **copy brief** — title, description, links and source in one
 clipboard paste for the agent you're working with.
+
+## Side chat
+
+The floating **Ask about Jev** panel answers "what can Jev build?" from the
+directory itself, with links to the cited builds. Matching runs entirely in
+the browser against `data.js`; only the question plus the few matching
+entries go to the chat endpoint, which streams back a Workers AI
+(`@cf/zai-org/glm-5.3-flash`) answer — no API keys, usage bills to the
+worker's Cloudflare account. The widget defaults to the shared worker.
+Forks can deploy their own instead:
+the worker from the
+[muse-use-cases repo](https://github.com/everyai-com/muse-use-cases) with the
+`ZHIPU_API_KEY` secret set (free tier works), then point the widget at it:
+
+```js
+localStorage.setItem('everyai_jev_api', 'https://<your-worker>.workers.dev');
+```
+
+Without a configured endpoint the panel shows a disabled state instead of
+erroring — browsing and search always work offline.
 
 ## Regenerate
 

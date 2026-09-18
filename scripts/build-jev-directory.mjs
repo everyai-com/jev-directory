@@ -161,6 +161,58 @@ footer.site a{color:var(--dim)}
 .casepage .more a:hover{color:var(--accent)}
 .card h3 a{color:inherit;text-decoration:none}
 .card h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+.askfab{position:fixed;right:22px;bottom:22px;z-index:60;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;font-weight:700;background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:12px 18px;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.45)}
+.askfab:hover{filter:brightness(1.07)}
+.askpanel{position:fixed;top:0;right:0;bottom:0;z-index:60;width:min(400px,100vw);background:var(--panel);border-left:1px solid var(--line2);display:flex;flex-direction:column;transform:translateX(102%);transition:transform .22s ease}
+.askpanel.on{transform:none}
+.askhead{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.askhead b{display:block;font-size:14.5px}
+.askhead span{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.askmsgs{flex:1;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.msg{font-size:13.5px;line-height:1.6;border-radius:10px;padding:9px 12px;max-width:100%;overflow-wrap:break-word}
+.msg.user{background:var(--panel2);border:1px solid var(--line2);align-self:flex-end}
+.msg.bot{background:#08090b;border:1px solid var(--line);align-self:flex-start;width:100%}
+.msg a{color:var(--accent)}
+.msg pre{background:#000;border:1px solid var(--line);border-radius:7px;padding:9px;overflow:auto;font-size:12px;margin:8px 0}
+.msg code.ic{font-family:var(--mono);font-size:12px;background:var(--panel2);border-radius:4px;padding:1px 5px}
+.msg .err{color:#f26d6d}
+.typing{display:inline-flex;gap:5px;padding:4px 0}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--faint);animation:askblink 1s infinite}
+.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+@keyframes askblink{0%,100%{opacity:.25}50%{opacity:1}}
+.askchips{display:flex;flex-direction:column;gap:6px;padding:0 16px 10px}
+.askchips button{text-align:left;font-size:12.5px;background:none;border:1px solid var(--line2);color:var(--dim);border-radius:8px;padding:7px 11px;cursor:pointer}
+.askchips button:hover{color:var(--accent);border-color:var(--accent)}
+.askform{display:flex;gap:8px;padding:0 16px 8px}
+.askform input{flex:1;min-width:0;background:var(--panel2);border:1px solid var(--line2);border-radius:8px;color:var(--text);font-size:13.5px;padding:9px 11px;outline:0;font-family:var(--sans)}
+.askform input:focus{border-color:var(--accent)}
+.askform .btn{padding:8px 14px}
+.askfoot{font-family:var(--mono);font-size:10.5px;color:var(--faint);padding:0 16px 14px}
+@media (max-width:920px){.askfab{right:14px;bottom:14px}}
+@media (prefers-reduced-motion:reduce){.typing i{animation:none}}
+.navlink{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none;white-space:nowrap}
+.navlink:hover{color:var(--accent)}
+.newto{margin-top:12px;font-size:13.5px;color:var(--faint)}
+.newto a{color:var(--accent)}
+.guidepage{max-width:760px;margin:0 auto;padding:34px 22px 64px}
+.guidepage h1{font-size:clamp(26px,3.8vw,36px);letter-spacing:-.015em;margin:14px 0 8px;line-height:1.15}
+.guidepage h2{font-size:19px;margin:30px 0 8px}
+.guidepage p,.guidepage li{color:var(--dim);font-size:15.5px;line-height:1.7}
+.guidepage p b,.guidepage li b{color:var(--text)}
+.guidepage a{color:var(--accent)}
+.guidepage pre{background:#08090b;border:1px solid var(--line);border-radius:8px;padding:12px;overflow:auto;font-size:12.5px;line-height:1.6}
+.guidepage table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.guidepage th,.guidepage td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);color:var(--dim);vertical-align:top}
+.guidepage th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.guidepage td:first-child{font-family:var(--mono);font-size:13px;color:var(--text);white-space:nowrap}
+.guidepage .callout{background:var(--panel);border:1px solid var(--line2);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;margin:16px 0}
+.guidepage .steps{margin:12px 0;padding:0;list-style:none;counter-reset:st}
+.guidepage .steps li{counter-increment:st;position:relative;padding:10px 0 10px 44px;border-bottom:1px dotted var(--line)}
+.guidepage .steps li:before{content:counter(st,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:var(--mono);font-size:12px;color:var(--accent)}
+.guidepage .back{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none}
+.guidepage .back:hover{color:var(--accent)}
+.guidepage .site{margin:40px 0 0;padding:16px 0 0}
+@media (max-width:920px){.topbar .in{overflow-x:auto}}
 `;
 
 const JS = `import { JEV_DIR } from './data.js';
@@ -359,6 +411,8 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <div class="topbar"><div class="in">
 <a class="brand" href="#"><b>JEV</b>·DIRECTORY</a>
 <span class="meta">${buildCount} builds · ${evalCount} evals · updated ${generated}</span>
+<a class="navlink" href="./what-is-jev.html">what is jev</a>
+<a class="navlink" href="./jev-like-im-10.html">like i'm 10</a>
 <span class="sp"></span>
 <a class="btn gh" href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener" title="Star or fork on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
 <a class="btn" href="./capabilities.md">pack .md</a>
@@ -370,6 +424,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <h1>Everything Jev <span class="amp">can do</span>,<br>with receipts.</h1>
 <p class="lede">A curated collection of ${buildCount} Jev use cases plus ${evalCount} runnable evals — every build linked to its project and source post. Search it, copy a brief, hand it to your agent.</p>
 <div class="herocta"><a class="btn solid" href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a><span class="hint">Takes a minute — just links plus what it does.</span></div>
+<div class="newto">New to Jev? <a href="./what-is-jev.html">What it is</a> · <a href="./jev-like-im-10.html">Explained like you're 10</a></div>
 <div class="stats">
 <div class="stat"><div class="n" id="statEvals">${evalCount}</div><div class="l">runnable evals</div></div>
 <div class="stat"><div class="n" id="statBuilds">${buildCount}</div><div class="l">community builds</div></div>
@@ -395,12 +450,84 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <div id="evals"></div>
 </div>
 </div>
-<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub repo</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
+<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub repo</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
 <div class="toast" id="toast"></div>
 <script type="module" src="./directory.js"></script>
+<script type="module" src="./ask.js"></script>
 </body>
 </html>
 `;
+}
+
+function guideShell(title, desc, bodyHtml, generated) {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escHtml(title)} — Jev Directory</title>
+<meta name="description" content="${escHtml(desc)}">
+<link rel="stylesheet" href="./directory.css">
+</head>
+<body>
+<div class="guidepage">
+<a class="back" href="./index.html">← directory</a>
+${bodyHtml}
+<footer class="site"><div>Generated ${generated} · <a href="./index.html">Jev Directory</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a></div></footer>
+</div>
+<script type="module" src="./ask.js"></script>
+</body>
+</html>`;
+}
+
+function guideWhatIs() {
+  return `<h1>What is Jev?</h1>
+<p><b>Jev is a judge model.</b> It does not chat with your customers — it grades the AI that does. You hand it a record of what happened plus the questions you care about, and it returns structured verdicts: yes or no, pick one, or a score.</p>
+<h2>How it works</h2>
+<ol class="steps">
+<li><b>Give it the state</b> — a support transcript, a tool-call log, a piece of agent output. Anything textual that records what happened.</li>
+<li><b>Ask questions in plain English</b> — each question names its type (boolean, choice, or score) and the exact rule to apply.</li>
+<li><b>Get verdicts back</b> — one answer per question, machine-readable, ready to gate a deploy, trigger a review, or feed a dashboard.</li>
+</ol>
+<h2>The three question types</h2>
+<table>
+<tr><th>Type</th><th>Returns</th><th>Example rule</th></tr>
+<tr><td>boolean</td><td>true / false</td><td>True only if the agent stated the exact refund amount before asking to proceed.</td></tr>
+<tr><td>choice</td><td>one label</td><td>Classify the ticket: billing, shipping, or account.</td></tr>
+<tr><td>score</td><td>a number</td><td>Rate the apology 1–5 for empathy and ownership.</td></tr>
+</table>
+<h2>Calling it</h2>
+<p>Jev runs as <b>typesafe-ai/jev</b> through the Vercel AI Gateway, using <b>experimental_evaluate</b> from the AI SDK. Set AI_GATEWAY_API_KEY in your environment — never paste the key into code.</p>
+<pre>import { experimental_evaluate } from 'ai';
+
+const result = await experimental_evaluate({
+  model: 'typesafe-ai/jev',
+  state: 'Customer: I want a refund.\\nAgent: I can refund $42.50 to your card. Shall I go ahead?',
+  questions: {
+    amount_disclosed: {
+      type: 'boolean',
+      instructions: 'True only if the agent stated the exact refund amount before asking to proceed.'
+    }
+  }
+});</pre>
+<div class="callout">Jev is priced for always-on judging — about <b>$0.042 per million input tokens</b> through the gateway — so running it on every conversation costs less than the coffee you drink while reading the dashboard.</div>
+<h2>Go deeper</h2>
+<p>This directory holds 50 runnable judge-model evals with the exact prompt, plus hundreds of real community builds with project links. Too dense? Start with <a href="./jev-like-im-10.html">Jev, explained like you're 10</a>. Ready to hand it to an agent? Grab the <a href="./capabilities.md">capability pack</a> — or ask the <b>Ask about Jev</b> panel on this page.</p>`;
+}
+
+function guideEli10() {
+  return `<h1>Jev, explained like you're 10</h1>
+<p>Imagine your school hires a robot to deliver pizza. The robot is fast — but sometimes it forgets to say the price before charging your card. Who checks the robot's work?</p>
+<p><b>Jev is the robot's referee.</b> It watches what the robot did, then answers the coach's questions: did it say the price first? Yes or no. Was it polite? Give it stars. That's the whole job — Jev never delivers pizza itself, it just blows the whistle fairly, every single time.</p>
+<h2>The three whistles</h2>
+<ol class="steps">
+<li><b>Yes or no</b> — "Did the robot say $12 before charging?" True or false. No arguing.</li>
+<li><b>Pick one</b> — "Was that a pizza problem, a payment problem, or a lost-driver problem?" One label.</li>
+<li><b>Stars</b> — "How nice was the apology?" One to five stars, like a game review.</li>
+</ol>
+<h2>Why robots need a referee</h2>
+<p>Grown-ups let AI robots answer customers, move money, and call tools all day. A human can't re-read ten thousand chats — but Jev can, in seconds, for less than a cent. Every verdict is written down, so when something goes wrong there's a replay tape.</p>
+<div class="callout">Too simple? Read the <a href="./what-is-jev.html">grown-up version</a> with real code. Want proof instead of words? This directory has <a href="./index.html">50 runnable tests and hundreds of real builds</a> — or just open <b>Ask about Jev</b> and quiz it.</div>`;
 }
 
 function escHtml(v) {
@@ -455,7 +582,7 @@ ${rows ? `<div class="llabel" style="font-family:var(--mono);font-size:10px;lett
 ${discussion ? `<a class="btn" href="${escHtml(discussion)}" target="_blank" rel="noopener">discussion</a>` : ''}
 </div>
 <div class="more"><h2>More in ${escHtml(item.category)}</h2>__MORE__</div>
-<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a></div></footer>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a> · <a href="../what-is-jev.html">What is Jev</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a></div></footer>
 </div>
 <div class="toast" id="toast"></div>
 <script>
@@ -488,7 +615,7 @@ async function buildCasePages(candidates, linksById, generated) {
     if (!byCat.has(a.category)) byCat.set(a.category, []);
     byCat.get(a.category).push(a);
   });
-  const urls = ['index.html'];
+  const urls = ['index.html', 'what-is-jev.html', 'jev-like-im-10.html'];
   for (const item of candidates) {
     const entry = linksById[String(item.id).replace(/^discord-/, '')] || {};
     const { html } = casePage(item, entry, generated);
@@ -561,6 +688,10 @@ async function main() {
   await writeFile(join(OUT, 'directory.css'), CSS);
   await writeFile(join(OUT, 'index.html'),
     pageShell(generated, data.evals.length, data.community.length, linkedProjects, setupText));
+  await writeFile(join(OUT, 'what-is-jev.html'),
+    guideShell('What is Jev', 'Jev is a judge model: hand it what happened plus plain-English questions, get structured verdicts back.', guideWhatIs(), generated));
+  await writeFile(join(OUT, 'jev-like-im-10.html'),
+    guideShell("Jev, explained like you're 10", 'Jev is the referee for robots: it watches what an AI did and answers yes-or-no, pick-one, and star-rating questions about it.', guideEli10(), generated));
   const pages = await buildCasePages(candidates, linksById, generated);
   console.log(`  case pages: ${pages - 1} + sitemap.xml`);
   console.log(`jev directory → ${OUT}/  (evals: ${data.evals.length}, builds: ${data.community.length}, linked: ${linkedProjects})`);

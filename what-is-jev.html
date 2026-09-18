@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is Jev — Jev Directory</title>
+<meta name="description" content="Jev is a judge model: hand it what happened plus plain-English questions, get structured verdicts back.">
+<link rel="stylesheet" href="./directory.css">
+</head>
+<body>
+<div class="guidepage">
+<a class="back" href="./index.html">← directory</a>
+<h1>What is Jev?</h1>
+<p><b>Jev is a judge model.</b> It does not chat with your customers — it grades the AI that does. You hand it a record of what happened plus the questions you care about, and it returns structured verdicts: yes or no, pick one, or a score.</p>
+<h2>How it works</h2>
+<ol class="steps">
+<li><b>Give it the state</b> — a support transcript, a tool-call log, a piece of agent output. Anything textual that records what happened.</li>
+<li><b>Ask questions in plain English</b> — each question names its type (boolean, choice, or score) and the exact rule to apply.</li>
+<li><b>Get verdicts back</b> — one answer per question, machine-readable, ready to gate a deploy, trigger a review, or feed a dashboard.</li>
+</ol>
+<h2>The three question types</h2>
+<table>
+<tr><th>Type</th><th>Returns</th><th>Example rule</th></tr>
+<tr><td>boolean</td><td>true / false</td><td>True only if the agent stated the exact refund amount before asking to proceed.</td></tr>
+<tr><td>choice</td><td>one label</td><td>Classify the ticket: billing, shipping, or account.</td></tr>
+<tr><td>score</td><td>a number</td><td>Rate the apology 1–5 for empathy and ownership.</td></tr>
+</table>
+<h2>Calling it</h2>
+<p>Jev runs as <b>typesafe-ai/jev</b> through the Vercel AI Gateway, using <b>experimental_evaluate</b> from the AI SDK. Set AI_GATEWAY_API_KEY in your environment — never paste the key into code.</p>
+<pre>import { experimental_evaluate } from 'ai';
+
+const result = await experimental_evaluate({
+  model: 'typesafe-ai/jev',
+  state: 'Customer: I want a refund.\nAgent: I can refund $42.50 to your card. Shall I go ahead?',
+  questions: {
+    amount_disclosed: {
+      type: 'boolean',
+      instructions: 'True only if the agent stated the exact refund amount before asking to proceed.'
+    }
+  }
+});</pre>
+<div class="callout">Jev is priced for always-on judging — about <b>$0.042 per million input tokens</b> through the gateway — so running it on every conversation costs less than the coffee you drink while reading the dashboard.</div>
+<h2>Go deeper</h2>
+<p>This directory holds 50 runnable judge-model evals with the exact prompt, plus hundreds of real community builds with project links. Too dense? Start with <a href="./jev-like-im-10.html">Jev, explained like you're 10</a>. Ready to hand it to an agent? Grab the <a href="./capabilities.md">capability pack</a> — or ask the <b>Ask about Jev</b> panel on this page.</p>
+<footer class="site"><div>Generated 2026-09-18 · <a href="./index.html">Jev Directory</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a></div></footer>
+</div>
+<script type="module" src="./ask.js"></script>
+</body>
+</html>
