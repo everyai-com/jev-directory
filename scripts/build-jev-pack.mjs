@@ -145,6 +145,30 @@ async function main() {
   out.push('---');
   out.push('');
 
+  // ── Business playbook ──
+  out.push('## Business playbook: retag everything');
+  out.push('');
+  out.push('Field notes from operators running Jev on real business data. The headline run: 20,000 emails, ' +
+    'Slacks and transcripts sorted into 8 buckets (upsells, complaints, missed follow-ups, five more) in 7 minutes for $1.45.');
+  out.push('');
+  out.push('- **Jev is a tool for your models, not another model.** Claude or GPT does the thinking and works out ' +
+    'which questions are worth asking; Jev answers those questions across everything you have. It answers many ' +
+    'questions at once without losing accuracy, priced on input tokens with output free — so adding a fourth or ' +
+    'tenth question barely moves the bill.');
+  out.push('- **Retagging beats planning.** Tag what matters today. When the business changes — a new service, a new ' +
+    'question — retag all of history for a few dollars instead of predicting the right tags six months ahead. ' +
+    'You no longer have to be right the first time.');
+  out.push('- **Proactive second brain.** Everyone builds the reactive kind (ask anything, it searches). To flag things ' +
+    'without being asked, something must keep re-reading your data for what you care about. That loop is only ' +
+    'affordable when asking is nearly free.');
+  out.push('- **The hypothesis loop.** Hand the LLM transcripts plus outcomes; it proposes twenty hypotheses about what ' +
+    'actually drives results (used the prospect\u2019s name, mentioned a neighbour, gave a reason in ten seconds). ' +
+    'Point Jev at history, reclassify every record against all twenty, keep what correlates, repeat. A call centre ' +
+    'running hundreds of thousands of calls a day uses exactly this to test what a good call really looks like.');
+  out.push('');
+  out.push('---');
+  out.push('');
+
   // ── Runnable evals ──
   out.push(`## Runnable evals (${evals.length})`);
   out.push('');

@@ -11169,6 +11169,231 @@
    ],
    "sourceUrl": "https://discord.com/channels/1483217544214085663/1483217545040232493/1529621617393799281",
    "handle": "RM"
+  },
+  {
+   "title": "Claude session 1M to 86K tokens in 1 second with a Jev plugin",
+   "category": "Productivity",
+   "description": "This uses @typesafeai Jev model as a plugin in Claude to review all the unnecessary tool calls, and it takes 1s to run! Literally 1 second to take a Claude session from nearly 1M to 86K tokens. Install prompt: Install, and configure: https://github.com/tamaratran/fast-jev-compaction\n\n— @altryne (7.2K likes)\n\nLinked projects:\n• Post by @altryne — This is actually insane. This uses @typesafeai Jev model, as a plugin in Claude to review all the un-nesseasary tool calls, and it takes 1s to run! Like, literally, 1 second to take my Claude session from nearly 1M to .. (x.com/altryne/status/2100739055923425589)\n• tamaratran/fast-jev-compaction — Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim. — 3031★ · TypeScr (github.com/tamaratran/fast-jev-compaction)",
+   "links": [
+    {
+     "url": "https://x.com/altryne/status/2100739055923425589",
+     "title": "Post by @altryne",
+     "description": "This is actually insane. This uses @typesafeai Jev model, as a plugin in Claude to review all the un-nesseasary tool calls, and it takes 1s to run! Like, literally, 1 second to take my Claude session from nearly 1M to ... 86K tokens! 😮 Ask your claude to install it and be amazed Use this prompt ```"
+    },
+    {
+     "url": "https://github.com/tamaratran/fast-jev-compaction",
+     "title": "tamaratran/fast-jev-compaction",
+     "description": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim. — 3031★ · TypeScript"
+    }
+   ],
+   "sourceUrl": "https://x.com/altryne/status/2100739055923425589",
+   "handle": "@altryne"
+  },
+  {
+   "title": "Instant compaction: score every tool call, drop the irrelevant",
+   "category": "Productivity",
+   "description": "Found the perfect use case for @typesafeai Jev: instant compaction. In 2026, why is compaction still a summarization prompt? Jev can make it instant by scoring every tool call and dropping what is irrelevant.\n\n— @tamarajtran (9.4K likes)\n\nLinked projects:\n• Post by @tamarajtran — found the perfect use case for @typesafeai Jev: instant compaction in 2026, why is compaction still a summarization prompt? Jev can make it instant by scoring every tool call and dropping what’s irrelevant (x.com/tamarajtran/status/2100694549362553153)",
+   "links": [
+    {
+     "url": "https://x.com/tamarajtran/status/2100694549362553153",
+     "title": "Post by @tamarajtran",
+     "description": "found the perfect use case for @typesafeai Jev: instant compaction in 2026, why is compaction still a summarization prompt? Jev can make it instant by scoring every tool call and dropping what’s irrelevant"
+    }
+   ],
+   "sourceUrl": "https://x.com/tamarajtran/status/2100694549362553153",
+   "handle": "@tamarajtran"
+  },
+  {
+   "title": "Jev plays Subway Surfers superhuman, 50 games at once, under a cent",
+   "category": "Fun",
+   "description": "Jev playing subway surfers at super human speed, and also playing 50 games at once. Cost less than a cent to do this run. Jev does not replace LLMs like Astra or Fable, but opens up an entirely new world of capabilities.\n\n— @_MaxBlade (3.5K likes)\n\nLinked projects:\n• Post by @_MaxBlade — jev is insane 🤯 Here is Jev playing subway surfers at super human speed, and also playing 50 games at once. cost less than a cent to do this run. Jev does not replace llms like astra or fable, but opens up an entirely n (x.com/_MaxBlade/status/2100634359099232678)",
+   "links": [
+    {
+     "url": "https://x.com/_MaxBlade/status/2100634359099232678",
+     "title": "Post by @_MaxBlade",
+     "description": "jev is insane 🤯 Here is Jev playing subway surfers at super human speed, and also playing 50 games at once. cost less than a cent to do this run. Jev does not replace llms like astra or fable, but opens up an entirely new world of capabilities."
+    }
+   ],
+   "sourceUrl": "https://x.com/_MaxBlade/status/2100634359099232678",
+   "handle": "@_MaxBlade"
+  },
+  {
+   "title": "10 practical Jev repos: computer-use, trading, routers and more",
+   "category": "Work",
+   "description": "A roundup of practical, promising GitHub repos for Jev development: browser-use/jev-ultrafast, TheoLeeCJ/openjev, vinnylarouge/jevlike, jarrodwatts/jev-trader, Anil-matcha/awesome-jev-by-typesafe, awlevin/typesafe-computer-use, devagrawal09/jev-review, gargpratyush/jev-router, vlad-terin/jev-browser, droidrun/mobile-jev. Notes the Jev waitlist clears in about a day — or call typesafe-ai/jev directly via the Vercel AI Gateway.\n\n— @studio_yebisu (1.6K likes)\n\nLinked projects:\n• Post by @studio_yebisu — やぁ！兄弟たち！ Jevに関するGitHubの実用性と発展性がありそうなリポジトリをまとめたよ！ やはり、高速判断を要するComputerUseや完全自動トレードなんかに対しての活用が多い印象だね！ Jevは公式のウェイトリストも1日ほどで承認されるけど、待たなくてもVercel AI GatewayからModel: typesafe-ai/jevで直接呼び出せるってさ！ このGrok翻訳っぽい文章はわざわざタイピングしてるゾ！ 1.  (x.com/studio_yebisu/status/2100686990090047569)",
+   "links": [
+    {
+     "url": "https://x.com/studio_yebisu/status/2100686990090047569",
+     "title": "Post by @studio_yebisu",
+     "description": "やぁ！兄弟たち！ Jevに関するGitHubの実用性と発展性がありそうなリポジトリをまとめたよ！ やはり、高速判断を要するComputerUseや完全自動トレードなんかに対しての活用が多い印象だね！ Jevは公式のウェイトリストも1日ほどで承認されるけど、待たなくてもVercel AI GatewayからModel: typesafe-ai/jevで直接呼び出せるってさ！ このGrok翻訳っぽい文章はわざわざタイピングしてるゾ！ 1. browser-use/jev-ultrafast Jevがブラウザ自動操作と対象要素を選び、文字入力時のみ小型LLMを使うブラウザエージェント。 https:"
+    }
+   ],
+   "sourceUrl": "https://x.com/studio_yebisu/status/2100686990090047569",
+   "handle": "@studio_yebisu"
+  },
+  {
+   "title": "json-render + Jev: generative UI rendered in milliseconds",
+   "category": "Integrations",
+   "description": "New experiment: json-render + Jev. The future of generative UI is instant — your components, your actions, your design system, rendered in milliseconds. Try it: experimental_composeSpec, experimental_createEvaluator. https://github.com/vercel-labs/json-render\n\n— @ctatedev (2.5K likes)\n\nLinked projects:\n• Post by @ctatedev — New experiment: json-render + jev The future Generative UI is instant Your components, your actions, your design system Rendered in milliseconds (x.com/ctatedev/status/2101022101750571357)\n• vercel-labs/json-render — The Generative UI framework — 16335★ · TypeScript — Live: https://json-render.dev (github.com/vercel-labs/json-render)\n• Post by @ctatedev — Try it now and share your feedback: - experimental_composeSpec - experimental_createEvaluator https://github.com/vercel-labs/json-render (x.com/ctatedev/status/2101022105647157442)",
+   "links": [
+    {
+     "url": "https://x.com/ctatedev/status/2101022101750571357",
+     "title": "Post by @ctatedev",
+     "description": "New experiment: json-render + jev The future Generative UI is instant Your components, your actions, your design system Rendered in milliseconds"
+    },
+    {
+     "url": "https://github.com/vercel-labs/json-render",
+     "title": "vercel-labs/json-render",
+     "description": "The Generative UI framework — 16335★ · TypeScript — Live: https://json-render.dev"
+    },
+    {
+     "url": "https://x.com/ctatedev/status/2101022105647157442",
+     "title": "Post by @ctatedev",
+     "description": "Try it now and share your feedback: - experimental_composeSpec - experimental_createEvaluator https://github.com/vercel-labs/json-render"
+    }
+   ],
+   "sourceUrl": "https://x.com/ctatedev/status/2101022101750571357",
+   "handle": "@ctatedev"
+  },
+  {
+   "title": "jev-ultrafast: browser agent that only wakes an LLM for typing",
+   "category": "Integrations",
+   "description": "Jev automates browser operations and selects target elements, using a small LLM only for text input.\n\nLinked projects:\n• browser-use/jev-ultrafast — i. am. speed. Contribute to browser-use/jev-ultrafast development by creating an account on GitHub. (github.com/browser-use/jev-ultrafast)",
+   "links": [
+    {
+     "url": "https://github.com/browser-use/jev-ultrafast",
+     "title": "browser-use/jev-ultrafast",
+     "description": "i. am. speed. Contribute to browser-use/jev-ultrafast development by creating an account on GitHub."
+    }
+   ],
+   "sourceUrl": "https://github.com/browser-use/jev-ultrafast",
+   "handle": "@browser-use"
+  },
+  {
+   "title": "openjev: same Jev input/output patterns on open models, local GPUs",
+   "category": "Evaluation",
+   "description": "Not a reproduction of TypeSafe official private model — an independent project testing the same input/output patterns with open models. Runs on local GPUs.\n\nLinked projects:\n• TheoLeeCJ/SemIf — Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. — 1555★ · Python — Live: openjev.com (github.com/TheoLeeCJ/openjev)",
+   "links": [
+    {
+     "url": "https://github.com/TheoLeeCJ/openjev",
+     "title": "TheoLeeCJ/SemIf",
+     "description": "Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. — 1555★ · Python — Live: openjev.com"
+    }
+   ],
+   "sourceUrl": "https://github.com/TheoLeeCJ/openjev",
+   "handle": "@TheoLeeCJ"
+  },
+  {
+   "title": "jevlike: train a Jev-like picker on your own data",
+   "category": "Evaluation",
+   "description": "An independent project training a Jev-like model that picks one from changing text candidates, using your own data. Not the official TypeSafe model.\n\nLinked projects:\n• vinnylarouge/jevlike — 867★ · Python (github.com/vinnylarouge/jevlike)",
+   "links": [
+    {
+     "url": "https://github.com/vinnylarouge/jevlike",
+     "title": "vinnylarouge/jevlike",
+     "description": "867★ · Python"
+    }
+   ],
+   "sourceUrl": "https://github.com/vinnylarouge/jevlike",
+   "handle": "@vinnylarouge"
+  },
+  {
+   "title": "jev-trader: Jev buy/sell bot on Monad, dry-run by default",
+   "category": "Money",
+   "description": "A trading bot using Jev for buy/sell decisions targeting Kuru MON-USDC on Monad. Defaults to dry-run/mock mode; does not prove or guarantee profitability.\n\nLinked projects:\n• jarrodwatts/jev-trader — One AI trade decision every Monad block. Jev on Kuru MON-USDC. — 840★ · TypeScript (github.com/jarrodwatts/jev-trader)",
+   "links": [
+    {
+     "url": "https://github.com/jarrodwatts/jev-trader",
+     "title": "jarrodwatts/jev-trader",
+     "description": "One AI trade decision every Monad block. Jev on Kuru MON-USDC. — 840★ · TypeScript"
+    }
+   ],
+   "sourceUrl": "https://github.com/jarrodwatts/jev-trader",
+   "handle": "@jarrodwatts"
+  },
+  {
+   "title": "awesome-jev: community patterns, prompts and starter code",
+   "category": "Work",
+   "description": "A community roundup collecting ways to use TypeSafe Jev: patterns, prompts, starter code, examples and more.\n\nLinked projects:\n• Anil-matcha/awesome-jev-by-typesafe — Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One model for fast, typed, confidence-aware decisions in software. — 509★ · Python · agent-workflows, ai-api, ai-automation, clas (github.com/Anil-matcha/awesome-jev-by-typesafe)",
+   "links": [
+    {
+     "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
+     "title": "Anil-matcha/awesome-jev-by-typesafe",
+     "description": "Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One model for fast, typed, confidence-aware decisions in software. — 509★ · Python · agent-workflows, ai-api, ai-automation, classification, confidence-aware-ai — Live: https://typesafe.ai/"
+    }
+   ],
+   "sourceUrl": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
+   "handle": "@Anil-matcha"
+  },
+  {
+   "title": "Mac computer-use: OCR screen, Jev picks the next click",
+   "category": "Integrations",
+   "description": "A Mac implementation of computer-use that reads the screen via OCR and uses TypeSafe/Jev to select the next click operation.\n\nLinked projects:\n• awlevin/typesafe-computer-use — Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS. - awlevin/typesafe-computer-use (github.com/awlevin/typesafe-computer-use)",
+   "links": [
+    {
+     "url": "https://github.com/awlevin/typesafe-computer-use",
+     "title": "awlevin/typesafe-computer-use",
+     "description": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS. - awlevin/typesafe-computer-use"
+    }
+   ],
+   "sourceUrl": "https://github.com/awlevin/typesafe-computer-use",
+   "handle": "@awlevin"
+  },
+  {
+   "title": "jev-review: diff-by-diff code review for risk",
+   "category": "Work",
+   "description": "A code review workflow inspecting git diffs or codebases step-by-step, structuring accuracy, safety, reliability, compatibility and test risks.\n\nLinked projects:\n• devagrawal09/jev-review — A staged code-review workflow and local dashboard built with TypeSafe Jev. — 263★ · TypeScript · ai, code-review, jev, typesafe-ai, typescript (github.com/devagrawal09/jev-review)",
+   "links": [
+    {
+     "url": "https://github.com/devagrawal09/jev-review",
+     "title": "devagrawal09/jev-review",
+     "description": "A staged code-review workflow and local dashboard built with TypeSafe Jev. — 263★ · TypeScript · ai, code-review, jev, typesafe-ai, typescript"
+    }
+   ],
+   "sourceUrl": "https://github.com/devagrawal09/jev-review",
+   "handle": "@devagrawal09"
+  },
+  {
+   "title": "jev-router: route easy turns to fast models, hard ones up",
+   "category": "Productivity",
+   "description": "A router that, for each turn in Claude Code or OpenAI Codex, directs simple tasks to fast models and tough tasks to strong models.\n\nLinked projects:\n• gargpratyush/jev-router — Route to the cheapest model in claude code for your task using jev-router — 130★ · JavaScript (github.com/gargpratyush/jev-router)",
+   "links": [
+    {
+     "url": "https://github.com/gargpratyush/jev-router",
+     "title": "gargpratyush/jev-router",
+     "description": "Route to the cheapest model in claude code for your task using jev-router — 130★ · JavaScript"
+    }
+   ],
+   "sourceUrl": "https://github.com/gargpratyush/jev-router",
+   "handle": "@gargpratyush"
+  },
+  {
+   "title": "jev-browser: Jev runtime for existing browser tools",
+   "category": "Integrations",
+   "description": "An unofficial runtime/skill integrating Jev into existing browser automation tools, selecting targets via continuous observe-act-verify loops.\n\nLinked projects:\n• browser-use/jev-ultrafast — Possible match for moved/deleted link vlad-terin/jev-browser — i. am. speed. (5166★) (github.com/vlad-terin/jev-browser)",
+   "links": [
+    {
+     "url": "https://github.com/vlad-terin/jev-browser",
+     "title": "browser-use/jev-ultrafast",
+     "description": "Possible match for moved/deleted link vlad-terin/jev-browser — i. am. speed. (5166★)"
+    }
+   ],
+   "sourceUrl": "https://github.com/vlad-terin/jev-browser",
+   "handle": "@vlad-terin"
+  },
+  {
+   "title": "mobile-jev: drive real Android devices with Jev",
+   "category": "Integrations",
+   "description": "A mobile agent operating real Android devices with Jev. Live operation demos, CLI and execution traces included.\n\nLinked projects:\n• droidrun/mobile-jev — Contribute to droidrun/mobile-jev development by creating an account on GitHub. (github.com/droidrun/mobile-jev)",
+   "links": [
+    {
+     "url": "https://github.com/droidrun/mobile-jev",
+     "title": "droidrun/mobile-jev",
+     "description": "Contribute to droidrun/mobile-jev development by creating an account on GitHub."
+    }
+   ],
+   "sourceUrl": "https://github.com/droidrun/mobile-jev",
+   "handle": "@droidrun"
   }
  ]
 }

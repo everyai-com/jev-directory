@@ -1,6 +1,6 @@
 # Jev Capability Pack
 
-This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **706 real community builds** that use Jev in production, with project links.
+This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **721 real community builds** that use Jev in production, with project links.
 
 | | |
 | --- | --- |
@@ -9,7 +9,7 @@ This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge
 | Pricing | $0.042 per 1M input tokens |
 | Auth | `AI_GATEWAY_API_KEY` (vck_…) in the environment |
 | Evals | 50 runnable |
-| Community builds | 706 with links |
+| Community builds | 721 with links |
 | This file | https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md |
 | Directory + repo | https://github.com/everyai-com/jev-directory |
 
@@ -51,6 +51,17 @@ const result = await experimental_evaluate({
   questions: { passes: { type: 'boolean', instructions: 'True only if …' } },
 });
 ```
+
+---
+
+## Business playbook: retag everything
+
+Field notes from operators running Jev on real business data. The headline run: 20,000 emails, Slacks and transcripts sorted into 8 buckets (upsells, complaints, missed follow-ups, five more) in 7 minutes for $1.45.
+
+- **Jev is a tool for your models, not another model.** Claude or GPT does the thinking and works out which questions are worth asking; Jev answers those questions across everything you have. It answers many questions at once without losing accuracy, priced on input tokens with output free — so adding a fourth or tenth question barely moves the bill.
+- **Retagging beats planning.** Tag what matters today. When the business changes — a new service, a new question — retag all of history for a few dollars instead of predicting the right tags six months ahead. You no longer have to be right the first time.
+- **Proactive second brain.** Everyone builds the reactive kind (ask anything, it searches). To flag things without being asked, something must keep re-reading your data for what you care about. That loop is only affordable when asking is nearly free.
+- **The hypothesis loop.** Hand the LLM transcripts plus outcomes; it proposes twenty hypotheses about what actually drives results (used the prospect’s name, mentioned a neighbour, gave a reason in ten seconds). Point Jev at history, reclassify every record against all twenty, keep what correlates, repeat. A call centre running hundreds of thousands of calls a day uses exactly this to test what a good call really looks like.
 
 ---
 
@@ -1889,11 +1900,11 @@ console.log(JSON.stringify(result, null, 2));
 
 ---
 
-## Community builds (706)
+## Community builds (721)
 
 Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. Every entry links its project and its source post.
 
-### Work (248)
+### Work (251)
 
 1. **Score inbound leads 0–1 and reply to the 98s first**
    - A graphic design agency runs every contact-form submission through Jev as an is-good-lead score. A 98% lead gets an instant human reply; vague maybes get a slower touch. Same pattern fits any business with an expensive inbound queue.
@@ -3140,7 +3151,22 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1531525700085878895/image.png?ex=6aaebeb5&is=6aad6d35&hm=e998111b9c2b69c93932ef91c204d64e90fbe2e9db8af2a016805930b86fff99&)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1531525700316561500 (by RM)
 
-### Integrations (115)
+249. **10 practical Jev repos: computer-use, trading, routers and more**
+   - A roundup of practical, promising GitHub repos for Jev development: browser-use/jev-ultrafast, TheoLeeCJ/openjev, vinnylarouge/jevlike, jarrodwatts/jev-trader, Anil-matcha/awesome-jev-by-typesafe, awlevin/typesafe-computer-use, devagrawal09/jev-review, gargpratyush/jev-router, vlad-terin/jev-browser, droidrun/mobile-jev. Notes the Jev waitlist clears in about a day — or call typesafe-ai/jev directly via the Vercel AI Gateway. — @studio_yebisu (1.6K likes) Linked projects: • Post by @studio_yebisu — やぁ！兄弟たち！ Jevに関するGitHubの実用性と発展性がありそうなリポジトリをまとめたよ！ やはり、高速判断を要するComputerUseや完全自動トレードなんかに対しての活用が多い印象だね！ Jevは公式のウェイトリストも1日ほどで承認されるけど、待たなくてもVercel AI GatewayからModel: typesafe-ai/jevで直接呼び出せるってさ！ このGrok翻訳っぽい文章はわざわざタイピングしてるゾ！ 1. (x.com/studio_yebisu/status/2100686990090047569)
+   - [Post by @studio_yebisu](https://x.com/studio_yebisu/status/2100686990090047569)
+   - Source: https://x.com/studio_yebisu/status/2100686990090047569 (by @studio_yebisu)
+
+250. **awesome-jev: community patterns, prompts and starter code**
+   - A community roundup collecting ways to use TypeSafe Jev: patterns, prompts, starter code, examples and more. Linked projects: • Anil-matcha/awesome-jev-by-typesafe — Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One model for fast, typed, confidence-aware decisions in software. — 509★ · Python · agent-workflows, ai-api, ai-automation, clas (github.com/Anil-matcha/awesome-jev-by-typesafe)
+   - [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe)
+   - Source: https://github.com/Anil-matcha/awesome-jev-by-typesafe (by @Anil-matcha)
+
+251. **jev-review: diff-by-diff code review for risk**
+   - A code review workflow inspecting git diffs or codebases step-by-step, structuring accuracy, safety, reliability, compatibility and test risks. Linked projects: • devagrawal09/jev-review — A staged code-review workflow and local dashboard built with TypeSafe Jev. — 263★ · TypeScript · ai, code-review, jev, typesafe-ai, typescript (github.com/devagrawal09/jev-review)
+   - [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review)
+   - Source: https://github.com/devagrawal09/jev-review (by @devagrawal09)
+
+### Integrations (120)
 
 1. **Hi all. Been reading everything here since launch and lost track of what I'd seen, so I made**
    - Hi all. Been reading everything here since launch and lost track of what I'd seen, so I made a list. Went through about 400 Jev projects and kept 250 entries worth your time: https://github.com/valentynkit/awesome-jev-typesafe Grouped by what you'd install, with a short "know before you build" bit up top. If your project is in there and I got it wrong, tell me. If it's not, drop it below or PR it and I'll add it. Linked projects: • valentynkit/awesome-jev-typesafe — Typed decisions with TypeSafe's Jev, the first System One model - valentynkit/awesome-jev-typesafe (github.com/valentynkit/awesome-jev-typesafe) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550586851343995032
@@ -3755,7 +3781,34 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [robault/skilldoom](https://github.com/robault/skilldoom)
    - Source: https://github.com/robault/skilldoom (by TokenFires (Robert Ault))
 
-### Evaluation (80)
+116. **json-render + Jev: generative UI rendered in milliseconds**
+   - New experiment: json-render + Jev. The future of generative UI is instant — your components, your actions, your design system, rendered in milliseconds. Try it: experimental_composeSpec, experimental_createEvaluator. https://github.com/vercel-labs/json-render — @ctatedev (2.5K likes) Linked projects: • Post by @ctatedev — New experiment: json-render + jev The future Generative UI is instant Your components, your actions, your design system Rendered in milliseconds (x.com/ctatedev/status/2101022101750571357) • vercel-labs/json-render — The Generative UI framework — 16335★ · TypeScript — Live: https://json-render.dev (github.com/vercel-labs/json-render) • Post by @ctatedev — Try it now and share your feedback: - experimental_composeSpec - experimental_createEvaluator https://github.com/vercel-labs/json-render (x.com/ctatedev/status/2101022105647157442)
+   - [Post by @ctatedev](https://x.com/ctatedev/status/2101022101750571357)
+   - [vercel-labs/json-render](https://github.com/vercel-labs/json-render)
+   - [Post by @ctatedev](https://x.com/ctatedev/status/2101022105647157442)
+   - Source: https://x.com/ctatedev/status/2101022101750571357 (by @ctatedev)
+
+117. **jev-ultrafast: browser agent that only wakes an LLM for typing**
+   - Jev automates browser operations and selects target elements, using a small LLM only for text input. Linked projects: • browser-use/jev-ultrafast — i. am. speed. Contribute to browser-use/jev-ultrafast development by creating an account on GitHub. (github.com/browser-use/jev-ultrafast)
+   - [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast)
+   - Source: https://github.com/browser-use/jev-ultrafast (by @browser-use)
+
+118. **Mac computer-use: OCR screen, Jev picks the next click**
+   - A Mac implementation of computer-use that reads the screen via OCR and uses TypeSafe/Jev to select the next click operation. Linked projects: • awlevin/typesafe-computer-use — Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS. - awlevin/typesafe-computer-use (github.com/awlevin/typesafe-computer-use)
+   - [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use)
+   - Source: https://github.com/awlevin/typesafe-computer-use (by @awlevin)
+
+119. **jev-browser: Jev runtime for existing browser tools**
+   - An unofficial runtime/skill integrating Jev into existing browser automation tools, selecting targets via continuous observe-act-verify loops. Linked projects: • browser-use/jev-ultrafast — Possible match for moved/deleted link vlad-terin/jev-browser — i. am. speed. (5166★) (github.com/vlad-terin/jev-browser)
+   - [browser-use/jev-ultrafast](https://github.com/vlad-terin/jev-browser)
+   - Source: https://github.com/vlad-terin/jev-browser (by @vlad-terin)
+
+120. **mobile-jev: drive real Android devices with Jev**
+   - A mobile agent operating real Android devices with Jev. Live operation demos, CLI and execution traces included. Linked projects: • droidrun/mobile-jev — Contribute to droidrun/mobile-jev development by creating an account on GitHub. (github.com/droidrun/mobile-jev)
+   - [droidrun/mobile-jev](https://github.com/droidrun/mobile-jev)
+   - Source: https://github.com/droidrun/mobile-jev (by @droidrun)
+
+### Evaluation (82)
 
 1. **Return probabilities, not labels — 80/10/10 beats "orange"**
    - Jev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or escalate on. Define choices in the schema; Jev scores them.
@@ -4161,6 +4214,16 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 80. **Ohhhh, I *love* this!**
    - Ohhhh, I *love* this! To answer your question: I think this is an excellent example of the mental model! The way you're using separate nouls to validate that it's a yes/no question, plus another one that confirms if the signal you're looking for is in the story at all (assuming that's what `story_signal` is?) In fact that last bit is I think the real gem here, it's a great way of showing how nouls work particularly well for validation gates alongside using scores for granular signals. This is exactly the kind of demo we would build (and are building!) to help people understand how to think in cognition primitives. Bravo!
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1531362194996854885 (by AllieTheIcon)
+
+81. **openjev: same Jev input/output patterns on open models, local GPUs**
+   - Not a reproduction of TypeSafe official private model — an independent project testing the same input/output patterns with open models. Runs on local GPUs. Linked projects: • TheoLeeCJ/SemIf — Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. — 1555★ · Python — Live: openjev.com (github.com/TheoLeeCJ/openjev)
+   - [TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/openjev)
+   - Source: https://github.com/TheoLeeCJ/openjev (by @TheoLeeCJ)
+
+82. **jevlike: train a Jev-like picker on your own data**
+   - An independent project training a Jev-like model that picks one from changing text candidates, using your own data. Not the official TypeSafe model. Linked projects: • vinnylarouge/jevlike — 867★ · Python (github.com/vinnylarouge/jevlike)
+   - [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike)
+   - Source: https://github.com/vinnylarouge/jevlike (by @vinnylarouge)
 
 ### Home (62)
 
@@ -4740,7 +4803,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [MulmoServer](https://mulmoserver.web.app/shapes)
    - Source: https://mulmoserver.web.app/shapes (by Satoshi Nakajima)
 
-### Fun (44)
+### Fun (45)
 
 1. **Score 17 video moments in 3 seconds to find clips**
    - Drop in a long-form video: transcribe it word-level, pass the transcript to Jev with clip-worthiness questions, get 17 scored moments back in about 3 seconds (1.1M tokens). Ten minutes of work for a shorts pipeline.
@@ -4963,7 +5026,12 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - Ok enough memes for me. Im a senior ML engineer, started with sutton on ‘15 and contributed to Tensorflow on early days and went to quantitative finance on two sigma and then on my own. Transformers have no predictive power and fail utterly on real markets, so I always worked on research of alternative architectures. Last work was a World Model inspired on Biology and quite similar to the jev approach. First use case for me on finance since I have access to real infra and data to bench and do evals on it if got access. DM opens and happy to help (repo private cause finance is like that but will build in public this use cases)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549513634030424126 (by Arthur_88)
 
-### Money (28)
+45. **Jev plays Subway Surfers superhuman, 50 games at once, under a cent**
+   - Jev playing subway surfers at super human speed, and also playing 50 games at once. Cost less than a cent to do this run. Jev does not replace LLMs like Astra or Fable, but opens up an entirely new world of capabilities. — @_MaxBlade (3.5K likes) Linked projects: • Post by @_MaxBlade — jev is insane 🤯 Here is Jev playing subway surfers at super human speed, and also playing 50 games at once. cost less than a cent to do this run. Jev does not replace llms like astra or fable, but opens up an entirely n (x.com/_MaxBlade/status/2100634359099232678)
+   - [Post by @_MaxBlade](https://x.com/_MaxBlade/status/2100634359099232678)
+   - Source: https://x.com/_MaxBlade/status/2100634359099232678 (by @_MaxBlade)
+
+### Money (29)
 
 1. **We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).**
    - We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc). 230+ tool calls, What we measured: - Robustness is where it shines. With typos, Jev alone picks the right tool 94% (EN) / 86% (BG) of the time. Our keyword rules: 28% / 34%. Reworded questions: 86% vs 15–25%. - It cannot fill open values — names, company IDs, free text. It has no primitive that produces one. So it now routes for Gemini 3.5 Flash-Lite: Jev picks the tool, Gemini fills only that tool's parameters. Same day, same 474 questions: parameters right 94.3% / 90.6% vs 83.0% / 77.4% for Gemini alone, with a 4x shorter prompt (3,697 vs 16,150 tokens) and ~0.2 s added median latency. - Weak spot: Bulgarian typed in Latin letters (shliokatitsa) — 71% for Jev vs 94% for Gemini. When Jev is unsure, the question goes to Gemini with the full catalogue. Full results, method and de
@@ -5103,6 +5171,11 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 28. **I'm interested as I have newer project I started to get Claude to play a complicated MMO as a way to understand how**
    - I'm interested as I have newer project I started to get Claude to play a complicated MMO as a way to understand how LLMs "see" games in real time and experimenting with modeling that vision between humans and AI, as well as how to make instantaneous decisions in a 4d world (combat, movement, etc). I'm also interested in understanding how much better this sort of AI would perform for automated investment research and trading systems
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549513223374508163 (by Lord Vomitron)
+
+29. **jev-trader: Jev buy/sell bot on Monad, dry-run by default**
+   - A trading bot using Jev for buy/sell decisions targeting Kuru MON-USDC on Monad. Defaults to dry-run/mock mode; does not prove or guarantee profitability. Linked projects: • jarrodwatts/jev-trader — One AI trade decision every Monad block. Jev on Kuru MON-USDC. — 840★ · TypeScript (github.com/jarrodwatts/jev-trader)
+   - [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader)
+   - Source: https://github.com/jarrodwatts/jev-trader (by @jarrodwatts)
 
 ### Social (19)
 
@@ -5437,6 +5510,43 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [VidarFit](https://vidar.fit)
    - Source: https://vidar.fit (by VidarFit)
 
+### Productivity (7)
+
+1. **gotta stay focused on my day job, but i kicked off a claude dynamic workflow this morning, and 5 hours later i had**
+   - gotta stay focused on my day job, but i kicked off a claude dynamic workflow this morning, and 5 hours later i had this...will hack on it when i can... https://x.com/pj4533/status/2100624540938260919?s=20 Linked projects: • Post by @pj4533 — @typesafeai Well the one shot actually works...needs a lot of tweaking tho. Will work on it tonight/this weekend. Seems to get stuck quite a bit. (x.com/pj4533/status/2100624540938260919) • Post by @pj4533 — @typesafeai Well the one shot actually works...needs a lot of tweaking tho. Will work on it tonight/this weekend. Seems to get stuck quite a bit. (twitter.com/pj4533/status/2100624540938260919) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550184776970010676
+   - [Post by @pj4533](https://x.com/pj4533/status/2100624540938260919?s=20)
+   - Source: https://x.com/pj4533/status/2100624540938260919?s=20 (by pj4533)
+
+2. **Hi everyone, I’m Ashish, the maker of Shelvr.**
+   - Hi everyone, I’m Ashish, the maker of Shelvr. It’s an iPhone app that brings saved links, screenshots, and notes into one searchable library and organizes them into Spaces. I’m building with React Native + Expo and Convex, and using PostHog for product analytics. My focus is understanding whether people get from onboarding to their first useful save, then come back to find it. Shelvr Pro is required for new saves. The monthly plan bills immediately; the annual plan includes a 7-day free trial, then renews annually unless cancelled. Prices and terms are shown before purchase; existing saves remain readable after Pro expires. https://apps.apple.com/app/id6798143550 Glad to meet other people building and improving their products here! Linked projects: • Shelvr: Save & Organize Later App - App Store — Download Shelvr: Save & Organize Later by Ashish Huddar on the App Store. See screenshots, 
+   - [Shelvr: Save &amp; Organize Later App - App Store](https://apps.apple.com/app/id6798143550)
+   - Source: https://apps.apple.com/app/id6798143550 (by Ashish)
+
+3. **ahhhh yes of course, slop is just my shorthand in my chat; the actual questions are per symptom each a Noul with a**
+   - ahhhh yes of course, slop is just my shorthand in my chat; the actual questions are per symptom each a Noul with a concrete yes/no criteria: stub/placeholder where the task needs a working implementation, comments that restate the code, dead/duplicated code, hedging notes; for replies, wordy, assistant cliches, jargon. the steer to the agent names the symptom and the fix, not just slop the questions lives in src/guard.ts and src/prose.ts and there's like 22-case tuning set in slop-cases.mjs you guys might have a better criteria so PRs welcome
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549690907534688341 (by devmortimer24)
+
+4. **Hi all, I mostly mess around building my collaboration harness, that started out years ago as a TODO list and got**
+   - Hi all, I mostly mess around building my collaboration harness, that started out years ago as a TODO list and got badly, tragically carried away. https://www.visionflow.info Linked projects: • VisionFlow: Coordination Engineering — Federated coordination, self-sovereign data, formal reasoning, cryptographic provenance, human-in-the-loop governance. (visionflow.info) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549498502189555772
+   - [VisionFlow: Coordination Engineering](https://www.visionflow.info)
+   - Source: https://www.visionflow.info (by biscuits)
+
+5. **Claude session 1M to 86K tokens in 1 second with a Jev plugin**
+   - This uses @typesafeai Jev model as a plugin in Claude to review all the unnecessary tool calls, and it takes 1s to run! Literally 1 second to take a Claude session from nearly 1M to 86K tokens. Install prompt: Install, and configure: https://github.com/tamaratran/fast-jev-compaction — @altryne (7.2K likes) Linked projects: • Post by @altryne — This is actually insane. This uses @typesafeai Jev model, as a plugin in Claude to review all the un-nesseasary tool calls, and it takes 1s to run! Like, literally, 1 second to take my Claude session from nearly 1M to .. (x.com/altryne/status/2100739055923425589) • tamaratran/fast-jev-compaction — Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim. — 3031★ · TypeScr (github.com/tamaratran/fast-jev-co
+   - [Post by @altryne](https://x.com/altryne/status/2100739055923425589)
+   - [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction)
+   - Source: https://x.com/altryne/status/2100739055923425589 (by @altryne)
+
+6. **Instant compaction: score every tool call, drop the irrelevant**
+   - Found the perfect use case for @typesafeai Jev: instant compaction. In 2026, why is compaction still a summarization prompt? Jev can make it instant by scoring every tool call and dropping what is irrelevant. — @tamarajtran (9.4K likes) Linked projects: • Post by @tamarajtran — found the perfect use case for @typesafeai Jev: instant compaction in 2026, why is compaction still a summarization prompt? Jev can make it instant by scoring every tool call and dropping what’s irrelevant (x.com/tamarajtran/status/2100694549362553153)
+   - [Post by @tamarajtran](https://x.com/tamarajtran/status/2100694549362553153)
+   - Source: https://x.com/tamarajtran/status/2100694549362553153 (by @tamarajtran)
+
+7. **jev-router: route easy turns to fast models, hard ones up**
+   - A router that, for each turn in Claude Code or OpenAI Codex, directs simple tasks to fast models and tough tasks to strong models. Linked projects: • gargpratyush/jev-router — Route to the cheapest model in claude code for your task using jev-router — 130★ · JavaScript (github.com/gargpratyush/jev-router)
+   - [gargpratyush/jev-router](https://github.com/gargpratyush/jev-router)
+   - Source: https://github.com/gargpratyush/jev-router (by @gargpratyush)
+
 ### Family (5)
 
 1. **Auteur Intelligence is entering public beta in a few days.**
@@ -5489,27 +5599,6 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation](https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation)
    - Source: https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation (by Jon)
 
-### Productivity (4)
-
-1. **gotta stay focused on my day job, but i kicked off a claude dynamic workflow this morning, and 5 hours later i had**
-   - gotta stay focused on my day job, but i kicked off a claude dynamic workflow this morning, and 5 hours later i had this...will hack on it when i can... https://x.com/pj4533/status/2100624540938260919?s=20 Linked projects: • Post by @pj4533 — @typesafeai Well the one shot actually works...needs a lot of tweaking tho. Will work on it tonight/this weekend. Seems to get stuck quite a bit. (x.com/pj4533/status/2100624540938260919) • Post by @pj4533 — @typesafeai Well the one shot actually works...needs a lot of tweaking tho. Will work on it tonight/this weekend. Seems to get stuck quite a bit. (twitter.com/pj4533/status/2100624540938260919) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550184776970010676
-   - [Post by @pj4533](https://x.com/pj4533/status/2100624540938260919?s=20)
-   - Source: https://x.com/pj4533/status/2100624540938260919?s=20 (by pj4533)
-
-2. **Hi everyone, I’m Ashish, the maker of Shelvr.**
-   - Hi everyone, I’m Ashish, the maker of Shelvr. It’s an iPhone app that brings saved links, screenshots, and notes into one searchable library and organizes them into Spaces. I’m building with React Native + Expo and Convex, and using PostHog for product analytics. My focus is understanding whether people get from onboarding to their first useful save, then come back to find it. Shelvr Pro is required for new saves. The monthly plan bills immediately; the annual plan includes a 7-day free trial, then renews annually unless cancelled. Prices and terms are shown before purchase; existing saves remain readable after Pro expires. https://apps.apple.com/app/id6798143550 Glad to meet other people building and improving their products here! Linked projects: • Shelvr: Save & Organize Later App - App Store — Download Shelvr: Save & Organize Later by Ashish Huddar on the App Store. See screenshots, 
-   - [Shelvr: Save &amp; Organize Later App - App Store](https://apps.apple.com/app/id6798143550)
-   - Source: https://apps.apple.com/app/id6798143550 (by Ashish)
-
-3. **ahhhh yes of course, slop is just my shorthand in my chat; the actual questions are per symptom each a Noul with a**
-   - ahhhh yes of course, slop is just my shorthand in my chat; the actual questions are per symptom each a Noul with a concrete yes/no criteria: stub/placeholder where the task needs a working implementation, comments that restate the code, dead/duplicated code, hedging notes; for replies, wordy, assistant cliches, jargon. the steer to the agent names the symptom and the fix, not just slop the questions lives in src/guard.ts and src/prose.ts and there's like 22-case tuning set in slop-cases.mjs you guys might have a better criteria so PRs welcome
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549690907534688341 (by devmortimer24)
-
-4. **Hi all, I mostly mess around building my collaboration harness, that started out years ago as a TODO list and got**
-   - Hi all, I mostly mess around building my collaboration harness, that started out years ago as a TODO list and got badly, tragically carried away. https://www.visionflow.info Linked projects: • VisionFlow: Coordination Engineering — Federated coordination, self-sovereign data, formal reasoning, cryptographic provenance, human-in-the-loop governance. (visionflow.info) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549498502189555772
-   - [VisionFlow: Coordination Engineering](https://www.visionflow.info)
-   - Source: https://www.visionflow.info (by biscuits)
-
 ---
 
-Pack generated 2026-09-18 from the Jev evaluation guide and 706 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory
+Pack generated 2026-09-18 from the Jev evaluation guide and 721 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory

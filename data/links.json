@@ -18036,5 +18036,278 @@
     "desc": "video/mp4 · 2 MB"
    }
   }
+ },
+ {
+  "id": "x-altryne-2100739055923425589",
+  "author": "@altryne",
+  "timestamp": "2026-09-18T00:09:55+00:00",
+  "sourceUrl": "https://x.com/altryne/status/2100739055923425589",
+  "urls": [
+   "https://x.com/altryne/status/2100739055923425589",
+   "https://github.com/tamaratran/fast-jev-compaction"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/altryne/status/2100739055923425589": {
+    "kind": "x",
+    "title": "Post by @altryne",
+    "desc": "This is actually insane. This uses @typesafeai Jev model, as a plugin in Claude to review all the un-nesseasary tool calls, and it takes 1s to run! Like, literally, 1 second to take my Claude session from nearly 1M to ... 86K tokens! 😮 Ask your claude to install it and be amazed Use this prompt ``` Install, and configure : https://github.com/tamaratran/fast-jev-compaction ```"
+   },
+   "https://github.com/tamaratran/fast-jev-compaction": {
+    "kind": "github",
+    "title": "tamaratran/fast-jev-compaction",
+    "desc": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim. — 3031★ · TypeScript"
+   }
+  }
+ },
+ {
+  "id": "x-tamarajtran-2100694549362553153",
+  "author": "@tamarajtran",
+  "timestamp": "2026-09-17T21:13:04+00:00",
+  "sourceUrl": "https://x.com/tamarajtran/status/2100694549362553153",
+  "urls": [
+   "https://x.com/tamarajtran/status/2100694549362553153"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/tamarajtran/status/2100694549362553153": {
+    "kind": "x",
+    "title": "Post by @tamarajtran",
+    "desc": "found the perfect use case for @typesafeai Jev: instant compaction in 2026, why is compaction still a summarization prompt? Jev can make it instant by scoring every tool call and dropping what’s irrelevant"
+   }
+  }
+ },
+ {
+  "id": "x-MaxBlade-2100634359099232678",
+  "author": "@_MaxBlade",
+  "timestamp": "2026-09-17T17:13:53+00:00",
+  "sourceUrl": "https://x.com/_MaxBlade/status/2100634359099232678",
+  "urls": [
+   "https://x.com/_MaxBlade/status/2100634359099232678"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/_MaxBlade/status/2100634359099232678": {
+    "kind": "x",
+    "title": "Post by @_MaxBlade",
+    "desc": "jev is insane 🤯 Here is Jev playing subway surfers at super human speed, and also playing 50 games at once. cost less than a cent to do this run. Jev does not replace llms like astra or fable, but opens up an entirely new world of capabilities."
+   }
+  }
+ },
+ {
+  "id": "x-studioyebisu-2100686990090047569",
+  "author": "@studio_yebisu",
+  "timestamp": "2026-09-17T20:43:01+00:00",
+  "sourceUrl": "https://x.com/studio_yebisu/status/2100686990090047569",
+  "urls": [
+   "https://x.com/studio_yebisu/status/2100686990090047569"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/studio_yebisu/status/2100686990090047569": {
+    "kind": "x",
+    "title": "Post by @studio_yebisu",
+    "desc": "やぁ！兄弟たち！ Jevに関するGitHubの実用性と発展性がありそうなリポジトリをまとめたよ！ やはり、高速判断を要するComputerUseや完全自動トレードなんかに対しての活用が多い印象だね！ Jevは公式のウェイトリストも1日ほどで承認されるけど、待たなくてもVercel AI GatewayからModel: typesafe-ai/jevで直接呼び出せるってさ！ このGrok翻訳っぽい文章はわざわざタイピングしてるゾ！ 1. browser-use/jev-ultrafast Jevがブラウザ自動操作と対象要素を選び、文字入力時のみ小型LLMを使うブラウザエージェント。 https://github.com/browser-use/jev-ultrafast 2. TheoLeeCJ/openjev TypeSafe公式の非公開モデルを再現したものではなく、オープンモデルで同じ入出力パターンを試す独立プロジェクト。ローカルGPUで動かせます。 https://github.com/TheoLeeCJ/openjev 3. vinnylarouge/jevlike 変化するテキ"
+   }
+  }
+ },
+ {
+  "id": "x-ctatedev-2101022101750571357",
+  "author": "@ctatedev",
+  "timestamp": "2026-09-18T18:54:38+00:00",
+  "sourceUrl": "https://x.com/ctatedev/status/2101022101750571357",
+  "urls": [
+   "https://x.com/ctatedev/status/2101022101750571357",
+   "https://github.com/vercel-labs/json-render",
+   "https://x.com/ctatedev/status/2101022105647157442"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/ctatedev/status/2101022101750571357": {
+    "kind": "x",
+    "title": "Post by @ctatedev",
+    "desc": "New experiment: json-render + jev The future Generative UI is instant Your components, your actions, your design system Rendered in milliseconds"
+   },
+   "https://github.com/vercel-labs/json-render": {
+    "kind": "github",
+    "title": "vercel-labs/json-render",
+    "desc": "The Generative UI framework — 16335★ · TypeScript — Live: https://json-render.dev"
+   },
+   "https://x.com/ctatedev/status/2101022105647157442": {
+    "kind": "x",
+    "title": "Post by @ctatedev",
+    "desc": "Try it now and share your feedback: - experimental_composeSpec - experimental_createEvaluator https://github.com/vercel-labs/json-render"
+   }
+  }
+ },
+ {
+  "id": "gh-browser-use-jev-ultrafast",
+  "author": "@browser-use",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/browser-use/jev-ultrafast",
+  "urls": [
+   "https://github.com/browser-use/jev-ultrafast"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/browser-use/jev-ultrafast": {
+    "kind": "github",
+    "title": "browser-use/jev-ultrafast",
+    "desc": "i. am. speed. Contribute to browser-use/jev-ultrafast development by creating an account on GitHub."
+   }
+  }
+ },
+ {
+  "id": "gh-TheoLeeCJ-openjev",
+  "author": "@TheoLeeCJ",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/TheoLeeCJ/openjev",
+  "urls": [
+   "https://github.com/TheoLeeCJ/openjev"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/TheoLeeCJ/openjev": {
+    "kind": "github",
+    "title": "TheoLeeCJ/SemIf",
+    "desc": "Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. — 1555★ · Python — Live: openjev.com"
+   }
+  }
+ },
+ {
+  "id": "gh-vinnylarouge-jevlike",
+  "author": "@vinnylarouge",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/vinnylarouge/jevlike",
+  "urls": [
+   "https://github.com/vinnylarouge/jevlike"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/vinnylarouge/jevlike": {
+    "kind": "github",
+    "title": "vinnylarouge/jevlike",
+    "desc": "867★ · Python"
+   }
+  }
+ },
+ {
+  "id": "gh-jarrodwatts-jev-trader",
+  "author": "@jarrodwatts",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/jarrodwatts/jev-trader",
+  "urls": [
+   "https://github.com/jarrodwatts/jev-trader"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/jarrodwatts/jev-trader": {
+    "kind": "github",
+    "title": "jarrodwatts/jev-trader",
+    "desc": "One AI trade decision every Monad block. Jev on Kuru MON-USDC. — 840★ · TypeScript"
+   }
+  }
+ },
+ {
+  "id": "gh-Anil-matcha-awesome-jev-by-typesafe",
+  "author": "@Anil-matcha",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
+  "urls": [
+   "https://github.com/Anil-matcha/awesome-jev-by-typesafe"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/Anil-matcha/awesome-jev-by-typesafe": {
+    "kind": "github",
+    "title": "Anil-matcha/awesome-jev-by-typesafe",
+    "desc": "Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One model for fast, typed, confidence-aware decisions in software. — 509★ · Python · agent-workflows, ai-api, ai-automation, classification, confidence-aware-ai — Live: https://typesafe.ai/"
+   }
+  }
+ },
+ {
+  "id": "gh-awlevin-typesafe-computer-use",
+  "author": "@awlevin",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/awlevin/typesafe-computer-use",
+  "urls": [
+   "https://github.com/awlevin/typesafe-computer-use"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/awlevin/typesafe-computer-use": {
+    "kind": "github",
+    "title": "awlevin/typesafe-computer-use",
+    "desc": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS. - awlevin/typesafe-computer-use"
+   }
+  }
+ },
+ {
+  "id": "gh-devagrawal09-jev-review",
+  "author": "@devagrawal09",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/devagrawal09/jev-review",
+  "urls": [
+   "https://github.com/devagrawal09/jev-review"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/devagrawal09/jev-review": {
+    "kind": "github",
+    "title": "devagrawal09/jev-review",
+    "desc": "A staged code-review workflow and local dashboard built with TypeSafe Jev. — 263★ · TypeScript · ai, code-review, jev, typesafe-ai, typescript"
+   }
+  }
+ },
+ {
+  "id": "gh-gargpratyush-jev-router",
+  "author": "@gargpratyush",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/gargpratyush/jev-router",
+  "urls": [
+   "https://github.com/gargpratyush/jev-router"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/gargpratyush/jev-router": {
+    "kind": "github",
+    "title": "gargpratyush/jev-router",
+    "desc": "Route to the cheapest model in claude code for your task using jev-router — 130★ · JavaScript"
+   }
+  }
+ },
+ {
+  "id": "gh-vlad-terin-jev-browser",
+  "author": "@vlad-terin",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/vlad-terin/jev-browser",
+  "urls": [
+   "https://github.com/vlad-terin/jev-browser"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/vlad-terin/jev-browser": {
+    "kind": "github",
+    "title": "browser-use/jev-ultrafast",
+    "desc": "Possible match for moved/deleted link vlad-terin/jev-browser — i. am. speed. (5166★)"
+   }
+  }
+ },
+ {
+  "id": "gh-droidrun-mobile-jev",
+  "author": "@droidrun",
+  "timestamp": "2026-09-19T02:48:15+05:30",
+  "sourceUrl": "https://github.com/droidrun/mobile-jev",
+  "urls": [
+   "https://github.com/droidrun/mobile-jev"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/droidrun/mobile-jev": {
+    "kind": "github",
+    "title": "droidrun/mobile-jev",
+    "desc": "Contribute to droidrun/mobile-jev development by creating an account on GitHub."
+   }
+  }
  }
 ]
