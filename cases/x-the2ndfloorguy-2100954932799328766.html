@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Realtime LinkedIn filter removes cringe, clickbait and low-value posts with Jev — Jev Directory</title>
+<meta name="description" content="Pankaj built a realtime tool that filters cringe content out of LinkedIn with Jev. It checks every post, classifies it as cringe or non-cringe, and automaticall">
+<link rel="stylesheet" href="../directory.css">
+</head>
+<body>
+<div class="casepage">
+<a class="back" href="../index.html">← directory</a>
+<h1>Realtime LinkedIn filter removes cringe, clickbait and low-value posts with Jev</h1>
+<div class="meta"><span class="catname">Social</span><span>by @the2ndfloorguy</span><span>2026-09-18</span></div>
+<div class="body">Pankaj built a realtime tool that filters cringe content out of LinkedIn with Jev. It checks every post, classifies it as cringe or non-cringe, and automatically filters cringe, clickbait and low-value posts — it filtered out almost his entire LinkedIn feed. Next up: engagement-bait filters for YouTube and Twitter.
+
+— @the2ndfloorguy (86 likes)</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://x.com/the2ndfloorguy/status/2100954932799328766" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=x.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Post by @the2ndfloorguy</span><span class="d">x.com</span><span class="x">I built a realtime tool to filter out cringe content on linkedin with typesafe 🚨
+
+It checks every post and classifies as cringe content or non-cringe. automatically filters cringe, clickbait &amp; low-value posts. next filt</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://x.com/the2ndfloorguy/status/2100954932799328766" target="_blank" rel="noopener">open source</a>
+
+</div>
+<div class="more"><h2>More in Social</h2><a href="./discord-1550574613711290500.html">Hey, made a post on X listing best Jev projects</a><a href="./discord-1550470783795593237.html">I used Jev to power my Bookmark management App and got few more good ideas for use cases for this model</a><a href="./discord-1550467068279787560.html">Put together a walkthrough and dynamic simulation u can tinker with showing when to use Jev before, after, or instead</a></div>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a></div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Realtime LinkedIn filter removes cringe, clickbait and low-value posts with Jev\n\nPankaj built a realtime tool that filters cringe content out of LinkedIn with Jev. It checks every post, classifies it as cringe or non-cringe, and automatically filters cringe, clickbait and low-value posts — it filtered out almost his entire LinkedIn feed. Next up: engagement-bait filters for YouTube and Twitter.\n\n— @the2ndfloorguy (86 likes)\n- Post by @the2ndfloorguy: https://x.com/the2ndfloorguy/status/2100954932799328766\n\nSource: https://x.com/the2ndfloorguy/status/2100954932799328766";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

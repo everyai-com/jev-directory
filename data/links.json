@@ -18332,5 +18332,22 @@
     "desc": "Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust"
    }
   }
+ },
+ {
+  "id": "x-the2ndfloorguy-2100954932799328766",
+  "author": "@the2ndfloorguy",
+  "timestamp": "2026-09-18T14:27:44+00:00",
+  "sourceUrl": "https://x.com/the2ndfloorguy/status/2100954932799328766",
+  "urls": [
+   "https://x.com/the2ndfloorguy/status/2100954932799328766"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/the2ndfloorguy/status/2100954932799328766": {
+    "kind": "x",
+    "title": "Post by @the2ndfloorguy",
+    "desc": "I built a realtime tool to filter out cringe content on linkedin with typesafe 🚨\n\nIt checks every post and classifies as cringe content or non-cringe. automatically filters cringe, clickbait & low-value posts. next filter engagement baits on youtube + twitter.\n\nbtw, It filtered out almost my entire linkedIn feed 😭"
+   }
+  }
  }
 ]

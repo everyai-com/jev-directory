@@ -9384,5 +9384,18 @@
   "note": "Added from X",
   "submittedAt": "2026-09-18T21:34:26+00:00",
   "reviewedAt": "2026-09-18T21:47:48+00:00"
+ },
+ {
+  "id": "x-the2ndfloorguy-2100954932799328766",
+  "status": "approved",
+  "title": "Realtime LinkedIn filter removes cringe, clickbait and low-value posts with Jev",
+  "category": "Social",
+  "description": "Pankaj built a realtime tool that filters cringe content out of LinkedIn with Jev. It checks every post, classifies it as cringe or non-cringe, and automatically filters cringe, clickbait and low-value posts — it filtered out almost his entire LinkedIn feed. Next up: engagement-bait filters for YouTube and Twitter.\n\n— @the2ndfloorguy (86 likes)\n\nLinked projects:\n• Post by @the2ndfloorguy — I built a realtime tool to filter out cringe content on linkedin with typesafe. It checks every post and classifies as cringe content or non-cringe. automatically filters cringe, clickbait & low-value posts. (x.com/the2ndfloorguy/status/2100954932799328766)",
+  "prompt": "",
+  "handle": "@the2ndfloorguy",
+  "sourceUrl": "https://x.com/the2ndfloorguy/status/2100954932799328766",
+  "note": "Added from X",
+  "submittedAt": "2026-09-18T14:27:44+00:00",
+  "reviewedAt": "2026-09-18T22:06:03+00:00"
  }
 ]
