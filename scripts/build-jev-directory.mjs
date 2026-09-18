@@ -141,8 +141,14 @@ footer.site a{color:var(--dim)}
 .casepage .meta .catname{color:var(--accent);text-transform:uppercase;letter-spacing:.09em}
 .casepage .body{white-space:pre-wrap;font-size:15.5px;line-height:1.7}
 .casepage .links{margin-top:22px;display:flex;flex-direction:column;gap:10px}
-.casepage .lnk{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
-.casepage .lnk img.th{width:120px;height:76px}
+.casepage .lnk{display:flex;gap:12px;align-items:center;font-size:13.5px;color:var(--text);text-decoration:none;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.casepage .lnk:hover{border-color:var(--line2)}
+.casepage .lnk:hover .t{text-decoration:underline;text-underline-offset:3px}
+.casepage .lnk img.th{width:120px;height:76px;object-fit:cover;border-radius:6px;flex:none;border:1px solid var(--line)}
+.casepage .lnk img.fv{width:16px;height:16px;flex:none;border-radius:3px}
+.casepage .lnk .tt{min-width:0;display:flex;flex-direction:column}
+.casepage .lnk .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.casepage .lnk .d{font-family:var(--mono);font-size:11px;color:var(--faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .casepage .lnk .x{font-size:13px;color:var(--dim);margin-top:2px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .casepage .actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
 .casepage .more{margin-top:34px;border-top:1px solid var(--line);padding-top:16px}
@@ -376,7 +382,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <div>
 <div class="sechead"><h2>Community builds</h2><span class="count" id="buildCount"></span><span class="sp"></span>
 <select class="sortsel" id="sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="az">A–Z</option></select></div>
-<p class="sub">Real things people built with Jev. Click a card to expand, copy a brief to hand it to your agent.</p>
+<p class="sub">Real things people built with Jev. Open any build for its links, previews and an agent-ready brief.</p>
 <div class="grid" id="builds"></div>
 <div class="morewrap" id="moreWrap"></div>
 <div class="sechead"><h2>Runnable evals</h2><span class="count" id="evalCount"></span></div>
@@ -398,7 +404,10 @@ function escHtml(v) {
 }
 
 function casePage(item, entry, generated) {
-  const desc = String(item.description || '');
+  const rawDesc = String(item.description || '');
+  const discParts = rawDesc.split('\n\nDiscussion: ');
+  const discussion = discParts.length > 1 ? discParts.slice(1).join('\n\nDiscussion: ').trim().split(/\s+/)[0] : null;
+  const desc = discParts[0].split('\n\nLinked projects:')[0].trim();
   const seen = new Set();
   const links = [];
   for (const u of [...(entry.urls || []), ...(entry.attachments || [])]) {
@@ -438,6 +447,7 @@ ${rows ? `<div class="llabel" style="font-family:var(--mono);font-size:10px;lett
 <div class="actions">
 <button class="btn solid" id="copyBrief">copy brief for your agent</button>
 <a class="btn" href="${escHtml(item.sourceUrl)}" target="_blank" rel="noopener">open source</a>
+${discussion ? `<a class="btn" href="${escHtml(discussion)}" target="_blank" rel="noopener">discussion</a>` : ''}
 </div>
 <div class="more"><h2>More in ${escHtml(item.category)}</h2>__MORE__</div>
 <footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a></div></footer>

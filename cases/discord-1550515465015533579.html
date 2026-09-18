@@ -22,17 +22,12 @@ Obvious cases use deterministic rules; ambiguous free-text constraints use Jev.
 
 It defaults to shadow mode and fails open on uncertainty/errors.
 
-46/46 tests passing so far.
-
-Linked projects:
-• Nyarlathoteppppp/pi-heed — Runtime constraints for the pi coding agent: checks every side-effecting tool call against what you said, before it runs. Powered by TypeSafe Jev. - Nyarlathoteppppp/pi-heed (github.com/Nyarlathoteppppp/pi-heed)
-• image.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1550515464734507028)
-
-Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550515465015533579</div>
+46/46 tests passing so far.</div>
 <div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://github.com/Nyarlathoteppppp/pi-heed" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">Nyarlathoteppppp/pi-heed</span><span class="d">github.com</span><span class="x">Runtime constraints for the pi coding agent: checks every side-effecting tool call against what you said, before it runs. Powered by TypeSafe Jev. - Nyarlathoteppppp/pi-heed</span></span></a><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1550515464734507028/image.png?ex=6aae9d8d&amp;is=6aad4c0d&amp;hm=974131e2923853b23d6e2c6dc4faa25ead2a32207b6f041c318b315ccd616684&amp;" target="_blank" rel="noopener"><img class="th" src="https://cdn.discordapp.com/attachments/1483217545040232493/1550515464734507028/image.png?ex=6aae9d8d&amp;is=6aad4c0d&amp;hm=974131e2923853b23d6e2c6dc4faa25ead2a32207b6f041c318b315ccd616684&amp;" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">image.png</span><span class="d">cdn.discordapp.com</span><span class="x">image/png · 2 MB</span></span></a></div>
 <div class="actions">
 <button class="btn solid" id="copyBrief">copy brief for your agent</button>
 <a class="btn" href="https://github.com/Nyarlathoteppppp/pi-heed" target="_blank" rel="noopener">open source</a>
+<a class="btn" href="https://discord.com/channels/1483217544214085663/1483217545040232493/1550515465015533579" target="_blank" rel="noopener">discussion</a>
 </div>
 <div class="more"><h2>More in Evaluation</h2><a href="./video-probabilities.html">Return probabilities, not labels — 80/10/10 beats &quot;orange&quot;</a><a href="./discord-1550583220318507041.html">I’m building Aurapunk, an open-source multi-agent IDE.</a><a href="./discord-1550544655148392610.html">Tested jev against deepseek v4.1 flash on norwegian text.</a></div>
 <footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated 2026-09-18 · <a href="../index.html">Jev Directory</a></div></footer>
@@ -40,7 +35,7 @@ Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493
 <div class="toast" id="toast"></div>
 <script>
 document.getElementById('copyBrief').addEventListener('click', function () {
-  var text = "Hi guys, I built pi-heed for Pi: It keeps conversational constraints like “don’t modify files” or “never call\n\nHi guys, I built pi-heed for Pi:\n\nhttps://github.com/Nyarlathoteppppp/pi-heed\n\nIt keeps conversational constraints like “don’t modify files” or “never call production” as runtime state, then checks side-effecting tool calls before they execute.\n\nObvious cases use deterministic rules; ambiguous free-text constraints use Jev.\n\nIt defaults to shadow mode and fails open on uncertainty/errors.\n\n46/46 tests passing so far.\n\nLinked projects:\n• Nyarlathoteppppp/pi-heed — Runtime constraints for the pi coding agent: checks every side-effecting tool call against what you said, before it runs. Powered by TypeSafe Jev. - Nyarlathoteppppp/pi-heed (github.com/Nyarlathoteppppp/pi-heed)\n• image.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1550515464734507028)\n\nDiscussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550515465015533579\n- Nyarlathoteppppp/pi-heed: https://github.com/Nyarlathoteppppp/pi-heed\n- image.png: https://cdn.discordapp.com/attachments/1483217545040232493/1550515464734507028/image.png?ex=6aae9d8d&is=6aad4c0d&hm=974131e2923853b23d6e2c6dc4faa25ead2a32207b6f041c318b315ccd616684&\n\nSource: https://github.com/Nyarlathoteppppp/pi-heed";
+  var text = "Hi guys, I built pi-heed for Pi: It keeps conversational constraints like “don’t modify files” or “never call\n\nHi guys, I built pi-heed for Pi:\n\nhttps://github.com/Nyarlathoteppppp/pi-heed\n\nIt keeps conversational constraints like “don’t modify files” or “never call production” as runtime state, then checks side-effecting tool calls before they execute.\n\nObvious cases use deterministic rules; ambiguous free-text constraints use Jev.\n\nIt defaults to shadow mode and fails open on uncertainty/errors.\n\n46/46 tests passing so far.\n- Nyarlathoteppppp/pi-heed: https://github.com/Nyarlathoteppppp/pi-heed\n- image.png: https://cdn.discordapp.com/attachments/1483217545040232493/1550515464734507028/image.png?ex=6aae9d8d&is=6aad4c0d&hm=974131e2923853b23d6e2c6dc4faa25ead2a32207b6f041c318b315ccd616684&\n\nSource: https://github.com/Nyarlathoteppppp/pi-heed";
   function done() {
     var el = document.getElementById('toast');
     el.textContent = 'Brief copied — paste it into your agent';
