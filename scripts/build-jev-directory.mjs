@@ -59,6 +59,8 @@ const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;
 .btn.solid{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
 .btn.gh{display:inline-flex;align-items:center;gap:7px}
 .btn.gh svg{flex:none;display:block}
+.herocta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 0}
+.herocta .hint{font-size:13px;color:var(--faint)}
 .hero{max-width:1180px;margin:0 auto;padding:44px 22px 8px}
 .hero h1{margin:0;font-size:clamp(30px,4.6vw,46px);line-height:1.08;letter-spacing:-.02em;font-weight:750}
 .hero h1 .amp{color:var(--accent)}
@@ -367,6 +369,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <div class="hero">
 <h1>Everything Jev <span class="amp">can do</span>,<br>with receipts.</h1>
 <p class="lede">Runnable judge-model evals plus every real build from the TypeSafe AI community — each one linked to its project and source post. Search it, copy a brief, hand it to your agent.</p>
+<div class="herocta"><a class="btn solid" href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a><span class="hint">Takes a minute — just links plus what it does.</span></div>
 <div class="stats">
 <div class="stat"><div class="n" id="statEvals">${evalCount}</div><div class="l">runnable evals</div></div>
 <div class="stat"><div class="n" id="statBuilds">${buildCount}</div><div class="l">community builds</div></div>
@@ -392,7 +395,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <div id="evals"></div>
 </div>
 </div>
-<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub repo</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
+<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub repo</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
 <div class="toast" id="toast"></div>
 <script type="module" src="./directory.js"></script>
 </body>
@@ -452,7 +455,7 @@ ${rows ? `<div class="llabel" style="font-family:var(--mono);font-size:10px;lett
 ${discussion ? `<a class="btn" href="${escHtml(discussion)}" target="_blank" rel="noopener">discussion</a>` : ''}
 </div>
 <div class="more"><h2>More in ${escHtml(item.category)}</h2>__MORE__</div>
-<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a></div></footer>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a></div></footer>
 </div>
 <div class="toast" id="toast"></div>
 <script>

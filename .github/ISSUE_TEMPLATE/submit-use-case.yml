@@ -1,0 +1,66 @@
+name: Submit a use case
+description: Tell us what you built with Jev — we'll add it to the directory.
+title: "[build]: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for sharing! Fill in what you can — links are the most important part.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Short name for your build.
+      placeholder: e.g. Tocsin triages 22.8M log lines for $0.64
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you build?
+      description: What it does plus how Jev is used. Numbers help (cost, volume, time saved).
+      placeholder: e.g. Groups 22.8M log lines into 11,812 repeating patterns, asks Jev about each pattern once, pages only on the 123 that matter. 6 minutes, 64 cents.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Project repo, demo video, or the post where you shared it — one per line.
+      placeholder: |
+        https://github.com/you/project
+        https://x.com/you/status/123
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Pick the closest fit.
+      options:
+        - Work
+        - Integrations
+        - Evaluation
+        - Home
+        - Admin
+        - Fun
+        - Money
+        - Social
+        - Food
+        - Travel
+        - Shopping
+        - Health
+        - Productivity
+        - Family
+        - Events
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: handle
+    attributes:
+      label: Your handle
+      description: How should we credit you?
+      placeholder: "@you (X / Discord / GitHub)"
+    validations:
+      required: false

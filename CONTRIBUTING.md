@@ -2,6 +2,12 @@
 
 Two ways to grow the directory: add a runnable eval, or fix a community entry.
 
+## Submit without a PR (easiest)
+
+Built something with Jev? [Submit your build](https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml)
+— a short form asking for a title, what it does, and your links. A maintainer
+turns approved submissions into directory entries. No fork, no JSON, no build step.
+
 ## Add an eval by pull request
 
 An eval is one object in `data/jev-guide.js`. Copy the shape — a fixed `state`

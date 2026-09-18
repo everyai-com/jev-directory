@@ -7,6 +7,8 @@ and an **agent pack** you hand to any AI agent in a single paste so it knows the
 
 **Live site: [jev.magicteams.ai](https://jev.magicteams.ai)** — the directory, hosted. PRs welcome:
 fork, edit `data/*.json`, run the two commands under [Regenerate](#regenerate), open a PR.
+Built something with Jev? [Submit your build](https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml)
+— a short form, no PR needed.
 
 Open `index.html` in a browser, or serve this folder with any static host. No framework, no build
 step, no backend required.

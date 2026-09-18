@@ -11,6 +11,8 @@
 .btn.solid{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
 .btn.gh{display:inline-flex;align-items:center;gap:7px}
 .btn.gh svg{flex:none;display:block}
+.herocta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 0}
+.herocta .hint{font-size:13px;color:var(--faint)}
 .hero{max-width:1180px;margin:0 auto;padding:44px 22px 8px}
 .hero h1{margin:0;font-size:clamp(30px,4.6vw,46px);line-height:1.08;letter-spacing:-.02em;font-weight:750}
 .hero h1 .amp{color:var(--accent)}
