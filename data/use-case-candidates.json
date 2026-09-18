@@ -9371,5 +9371,18 @@
   "note": "Added from community roundup",
   "submittedAt": "2026-09-19T02:48:15+05:30",
   "reviewedAt": "2026-09-19T02:48:15+05:30"
+ },
+ {
+  "id": "x-TPateeq-2101062313516347491",
+  "status": "approved",
+  "title": "Tocsin triages 22.8M log lines to 123 pages for $0.64 with Jev",
+  "category": "Work",
+  "description": "Ateeq used Jev to solve a problem every agent eventually runs into: reading logs. Tocsin groups 22.8M log lines into 11,812 repeating patterns, then asks Jev about each pattern once — 6 minutes and 64 cents (vs $1,120 to run an LLM on every line), surfacing 123 patterns that actually needed a look. The paging policy is just a prompt: you tell it what should wake someone up at 3am and what's just another log line.\n\n— @TPateeq (3 likes)\n\nLinked projects:\n• Post by @TPateeq — I used Jev to solve a problem every agent eventually runs into: reading logs. 22.8M lines, and running an LLM on every one would've cost $1,120. Tocsin groups them into 11,812 repeating patterns, then asks Jev about each pattern once. (x.com/TPateeq/status/2101062313516347491)\n• TPAteeq/tocsin — Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust (github.com/TPAteeq/tocsin)",
+  "prompt": "",
+  "handle": "@TPateeq",
+  "sourceUrl": "https://x.com/TPateeq/status/2101062313516347491",
+  "note": "Added from X",
+  "submittedAt": "2026-09-18T21:34:26+00:00",
+  "reviewedAt": "2026-09-18T21:47:48+00:00"
  }
 ]

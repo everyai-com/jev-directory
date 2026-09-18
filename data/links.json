@@ -18309,5 +18309,28 @@
     "desc": "Contribute to droidrun/mobile-jev development by creating an account on GitHub."
    }
   }
+ },
+ {
+  "id": "x-TPateeq-2101062313516347491",
+  "author": "@TPateeq",
+  "timestamp": "2026-09-18T21:34:26+00:00",
+  "sourceUrl": "https://x.com/TPateeq/status/2101062313516347491",
+  "urls": [
+   "https://x.com/TPateeq/status/2101062313516347491",
+   "https://github.com/TPAteeq/tocsin"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://x.com/TPateeq/status/2101062313516347491": {
+    "kind": "x",
+    "title": "Post by @TPateeq",
+    "desc": "I used Jev to solve a problem every agent eventually runs into: reading logs.\n\n22.8M lines, and running an LLM on every one would've cost $1,120.\n\nTocsin groups them into 11,812 repeating patterns, then asks Jev about each pattern once.\n\n6 minutes, 64 cents, 123 patterns that actually needed to be looked at.\n\nhttps://github.com/TPAteeq/tocsin\n\nThe paging policy is just a prompt.\n\nYou tell it what should wake someone up at 3 am and what's just another log line."
+   },
+   "https://github.com/TPAteeq/tocsin": {
+    "kind": "github",
+    "title": "TPAteeq/tocsin",
+    "desc": "Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust"
+   }
+  }
  }
 ]
