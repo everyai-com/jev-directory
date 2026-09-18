@@ -57,6 +57,8 @@ const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;
 .btn{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line2);background:var(--panel);color:var(--text);border-radius:7px;padding:7px 12px;cursor:pointer;text-decoration:none;white-space:nowrap}
 .btn:hover{border-color:var(--accent)}
 .btn.solid{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.gh{display:inline-flex;align-items:center;gap:7px}
+.btn.gh svg{flex:none;display:block}
 .hero{max-width:1180px;margin:0 auto;padding:44px 22px 8px}
 .hero h1{margin:0;font-size:clamp(30px,4.6vw,46px);line-height:1.08;letter-spacing:-.02em;font-weight:750}
 .hero h1 .amp{color:var(--accent)}
@@ -356,7 +358,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <a class="brand" href="#"><b>JEV</b>·DIRECTORY</a>
 <span class="meta">${buildCount} builds · ${evalCount} evals · updated ${generated}</span>
 <span class="sp"></span>
-<a class="btn" href="https://github.com/everyai-com/jev-directory">repo</a>
+<a class="btn gh" href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener" title="Star or fork on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
 <a class="btn" href="./capabilities.md">pack .md</a>
 <a class="btn" href="./capabilities.json">pack .json</a>
 <button class="btn solid" id="copySetup">copy setup prompt</button>
@@ -390,7 +392,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <div id="evals"></div>
 </div>
 </div>
-<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
+<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub repo</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
 <div class="toast" id="toast"></div>
 <script type="module" src="./directory.js"></script>
 </body>
@@ -450,7 +452,7 @@ ${rows ? `<div class="llabel" style="font-family:var(--mono);font-size:10px;lett
 ${discussion ? `<a class="btn" href="${escHtml(discussion)}" target="_blank" rel="noopener">discussion</a>` : ''}
 </div>
 <div class="more"><h2>More in ${escHtml(item.category)}</h2>__MORE__</div>
-<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a></div></footer>
+<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a></div></footer>
 </div>
 <div class="toast" id="toast"></div>
 <script>
