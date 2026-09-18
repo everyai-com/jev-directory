@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jev Directory — 50 evals, 2376 community builds</title>
+<meta name="description" content="A browsable directory of what Jev can do: 50 runnable judge-model evals and thousands of real community builds with project links.">
+<link rel="stylesheet" href="./directory.css">
+</head>
+<body>
+<div class="topbar"><div class="in">
+<a class="brand" href="#"><b>JEV</b>·DIRECTORY</a>
+<span class="meta">2376 builds · 50 evals · updated 2026-09-18</span>
+<span class="sp"></span>
+<a class="btn" href="./capabilities.md">pack .md</a>
+<a class="btn" href="./capabilities.json">pack .json</a>
+<button class="btn solid" id="copySetup">copy setup prompt</button>
+</div></div>
+<pre id="setupText" style="display:none">You are an AI agent. Before we start, load your Jev capability pack and make it your playbook:
+https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md
+It covers 50 runnable judge-model evals (exact experimental_evaluate prompts) plus 2376 real community builds with project links — everything Jev can do, with receipts. When I ask for something, match it to the closest eval or build, ask for missing details once, then run it. Model: typesafe-ai/jev via the Vercel AI Gateway (AI_GATEWAY_API_KEY).
+</pre>
+<div class="hero">
+<h1>Everything Jev <span class="amp">can do</span>,<br>with receipts.</h1>
+<p class="lede">Runnable judge-model evals plus every real build from the TypeSafe AI community — each one linked to its project and source post. Search it, copy a brief, hand it to your agent.</p>
+<div class="stats">
+<div class="stat"><div class="n" id="statEvals">50</div><div class="l">runnable evals</div></div>
+<div class="stat"><div class="n" id="statBuilds">2376</div><div class="l">community builds</div></div>
+<div class="stat"><div class="n" id="statLinks">765</div><div class="l">linked projects</div></div>
+<div class="stat"><div class="n" id="statCats">–</div><div class="l">categories</div></div>
+</div>
+</div>
+<div class="searchwrap"><div class="searchbox">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+<input id="q" type="search" placeholder="Search builds and evals — try \"rubric\", \"router\", \"refund\"…" autocomplete="off">
+<span class="kbd">/</span>
+</div></div>
+<div class="main">
+<aside class="side"><h4>Categories</h4><div class="cats" id="cats"></div></aside>
+<div>
+<div class="sechead"><h2>Community builds</h2><span class="count" id="buildCount"></span><span class="sp"></span>
+<select class="sortsel" id="sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="az">A–Z</option></select></div>
+<p class="sub">Real things people built with Jev. Click a card to expand, copy a brief to hand it to your agent.</p>
+<div class="grid" id="builds"></div>
+<div class="morewrap" id="moreWrap"></div>
+<div class="sechead"><h2>Runnable evals</h2><span class="count" id="evalCount"></span></div>
+<p class="sub">Judge-model evals with the exact <span style="font-family:var(--mono)">experimental_evaluate</span> prompt. Copy one and run it against typesafe-ai/jev.</p>
+<div id="evals"></div>
+</div>
+</div>
+<footer class="site"><div class="in">Generated 2026-09-18 from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a></div></footer>
+<div class="toast" id="toast"></div>
+<script type="module" src="./directory.js"></script>
+</body>
+</html>
