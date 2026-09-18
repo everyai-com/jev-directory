@@ -352,7 +352,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jev Directory — ${evalCount} evals, ${buildCount} community builds</title>
-<meta name="description" content="A browsable directory of what Jev can do: 50 runnable judge-model evals and thousands of real community builds with project links.">
+<meta name="description" content="Curated Jev use cases: runnable judge-model evals plus real community builds, each linked to its project and source post.">
 <link rel="stylesheet" href="./directory.css">
 </head>
 <body>
@@ -368,7 +368,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <pre id="setupText" style="display:none">${setupText.replace(/[<>&]/g, ch => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[ch]))}</pre>
 <div class="hero">
 <h1>Everything Jev <span class="amp">can do</span>,<br>with receipts.</h1>
-<p class="lede">Runnable judge-model evals plus every real build from the TypeSafe AI community — each one linked to its project and source post. Search it, copy a brief, hand it to your agent.</p>
+<p class="lede">A curated collection of ${buildCount} Jev use cases plus ${evalCount} runnable evals — every build linked to its project and source post. Search it, copy a brief, hand it to your agent.</p>
 <div class="herocta"><a class="btn solid" href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a><span class="hint">Takes a minute — just links plus what it does.</span></div>
 <div class="stats">
 <div class="stat"><div class="n" id="statEvals">${evalCount}</div><div class="l">runnable evals</div></div>
