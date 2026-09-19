@@ -1,7 +1,7 @@
 # Jev Directory
 
 A browsable directory of what [Jev](https://github.com/typesafe-ai/jev) can do — **50 runnable
-judge-model evals** with the exact `experimental_evaluate` prompt, plus **700+ real community
+judge-model evals** with the exact `experimental_evaluate` prompt, plus **1,300+ real community
 builds** from the TypeSafe AI #show-and-tell channel, each linked to its project and source post —
 and an **agent pack** you hand to any AI agent in a single paste so it knows the whole landscape.
 
@@ -50,7 +50,7 @@ Hand it over with the setup prompt (`setup.txt`):
 
 > You are an AI agent. Before we start, load your Jev capability pack and make it your playbook:
 > `https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md`
-> It covers 50 runnable judge-model evals plus 700+ real community builds with project links …
+> It covers 50 runnable judge-model evals plus 1,300+ real community builds with project links …
 
 (Replace `everyai-com/jev-directory` with your fork if you publish your own copy, then rebuild so
 the pack URL inside matches: `node scripts/build-jev-pack.mjs --repo <owner>/<repo>`.)

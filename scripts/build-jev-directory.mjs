@@ -1039,6 +1039,11 @@ async function main() {
   ].join('\n');
   const perCat = {};
   data.spotlight = data.community
+    .filter(b => (b.l || []).length > 0
+      && /^[A-Z0-9"“]/.test(b.t || '')
+      && !/^(hey|hi|hello|yo|ok|so|just|update|day|build|part|week|thank|thanks|instead of|because|since|while|although|yeah|yep|yup|nope|no|yes)\b/i.test(b.t || '')
+      && !/so far \d/i.test(b.t || '')
+      && !/\[\[|\]\]/.test(b.t || ''))
     .map(b => ({
       b,
       s: (b.l || []).length * 3 + Math.min(String(b.d || '').length / 250, 2) + (b.h ? 0.5 : 0)
