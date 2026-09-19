@@ -1,6 +1,6 @@
 # Jev Capability Pack
 
-This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **1104 real community builds** that use Jev in production, with project links.
+This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **1118 real community builds** that use Jev in production, with project links.
 
 | | |
 | --- | --- |
@@ -10,7 +10,7 @@ This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge
 | Auth | `AI_GATEWAY_API_KEY` (vck_…) in the environment |
 | Evals | 50 runnable |
 | Eval manifest | rev `6d1f82b05fbea65e` · exact-match per question, every question must match |
-| Community builds | 1104 with links |
+| Community builds | 1118 with links |
 | This file | https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md |
 | Directory + repo | https://github.com/everyai-com/jev-directory |
 
@@ -2058,11 +2058,11 @@ console.log(JSON.stringify(result, null, 2));
 
 ---
 
-## Community builds (1104)
+## Community builds (1118)
 
 Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. Every entry links its project and its source post.
 
-### Work (253)
+### Work (256)
 
 1. **Score inbound leads 0–1 and reply to the 98s first**
    - A graphic design agency runs every contact-form submission through Jev as an is-good-lead score. A 98% lead gets an instant human reply; vague maybes get a slower touch. Same pattern fits any business with an expensive inbound queue.
@@ -3336,7 +3336,19 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - 10 Jev native products I’d build, ranked by how much fast, cheap decisions change the product: 1. Agent spend firewall Before every purchase, Jev returns approve/review/deny plus a confidence score based on price, vendor, user rules and purchase history. 2. Self-healing tool…
    - Source: https://x.com/gregisenberg/status/2101284640828915995 (by @gregisenberg)
 
-### Tools (158)
+254. **AI marketing with Jev (full course)**
+   - Article how to master AI marketing with Jev TypeSafe (full course) most of the decisions your next campaign needs are already sitting in tools you have open right now. customer notes carry the buying problem. ad results carry which proof moved someone. inbound...
+   - Source: https://x.com/knoxtwts/status/2101017790081806589 (by @knoxtwts)
+
+255. **Hyper-fast sorting for every choice**
+   - Founders will win big by embedding the frointier into consumer products. Jev is a great example! Quote Josh Elman @joshelman · Sep 18 Already Jev-pilled What really has me excited is the next wave of consumer startups that can build new smart things. Whenever faced with many options (travel ideas, books to read, …) you can now get hyper fast sorting of which may be the best fit!
+   - Source: https://x.com/kirbyman01/status/2101148352155107807 (by @kirbyman01)
+
+256. **SQA workflows should use Jev**
+   - This is extremely valuable. SQA workflows should implement this. Faster at driving the AUT and better at validation.
+   - Source: https://x.com/edtadros/status/2100401009105494400 (by @edtadros)
+
+### Tools (162)
 
 1. **Model router that picks the right LLM**
    - Jev scores which model fits the request, then the call is forwarded. Routing without a chatty middleman — just a typed pick.
@@ -3976,6 +3988,24 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - per some requests, here's the repo: GitHub - awlevin/typesafe-computer-use: Computer use for about $0.0002 a step: OCR the screen,... From github.com…
    - [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use)
    - Source: https://x.com/awlevin/status/2100281322208215297 (by @awlevin)
+
+159. **Laya-1: open-source model challenging Jev**
+   - An OpenAI co-founder spent 3 years quietly building Jev, only for someone to open source a better performing model in just 3 days. ​This is exactly why starting an AI company right now carries way too much risk. Quote CV.YH @0xCVYH · 12h Translated from Portuguese Laya is an open source from Jev that already came above him. it's getting faster and faster https://huggingface.co/convaiinnovati ons/laya …
+   - [huggingface.co/convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya)
+   - Source: https://x.com/jun_song/status/2101246204143366425 (by @jun_song)
+
+160. **Greedy inference on partial transcripts**
+   - Perfect demo. 10/10. Nothing to add. ... just kidding, I always have something to add (sorry). One of the things we do fairly often in Pipecat pipelines is "greedy inference." If you have partial transcriptions you can run the LLM on the partials and just throw away the output … Quote Pratim Bhosale @BhosalePratim · Sep 18 Played around with @typesafeai Jev today, mostly to understand what it does for tool calling. Instead of an LLM deciding what to do, I substituted that part with Jev. My learning is that we will be able to make the agent act before the user finishes the sentence. So far,…
+   - Source: https://x.com/kwindla/status/2101116667128426695 (by @kwindla)
+
+161. **jev-ultrafast: i. am. speed**
+   - GitHub - browser-use/jev-ultrafast: i. am. speed. From github.com…
+   - [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast)
+   - Source: https://x.com/gregpr07/status/2100411068426469552 (by @gregpr07)
+
+162. **Jev with browser-use DOM processor?**
+   - Can you do this with browser use's DOM processor?
+   - Source: https://x.com/gregpr07/status/2100306831579164802 (by @gregpr07)
 
 ### Integrations (121)
 
@@ -4626,7 +4656,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [JevRouter playground](https://hono-jev-router.yusuke.run)
    - Source: https://x.com/yusukebe/status/2100871075743859182 (by @yusukebe)
 
-### Evaluation (92)
+### Evaluation (93)
 
 1. **Return probabilities, not labels — 80/10/10 beats "orange"**
    - Jev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or escalate on. Define choices in the schema; Jev scores them.
@@ -5085,7 +5115,11 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - I burned $3.40 on Jev in 24 hours. It's not Jev vs current LLMs. It'll be Jev + LLMs. Here are all the goods and bads of Jev. 1. Jev or a Jev-like system will be integrated into all LLMs for automatic model routing, small decisions, if/else queries, retrieval, tool selection,…
    - Source: https://x.com/cjzafir/status/2100991512020725788 (by @cjzafir)
 
-### Agents (79)
+93. **Drift detection for agent harnesses**
+   - Jev’s best use case for agent harnesses isn’t model routing or tool checks. It’s drift detection. It’s like telling someone they’re getting off topic without telling them how to fix it. Works for people. Will work for agents. Jev is fast and cheap enough to run continuously.
+   - Source: https://x.com/JoshARosen/status/2101118276977758527 (by @JoshARosen)
+
+### Agents (80)
 
 1. **Live slide decisions while speaking**
    - Jev picks which slide to pull up in realtime as the speaker talks. Speed and cost unlock presentation loops that felt impossible before.
@@ -5406,6 +5440,10 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 79. **Building a Harness with Jev**
    - Article Building a Harness with Jev Agents run in a loop: an LLM decides what to do, a tool executes, a model evaluates the results, and then continues in that loop until the task is complete. Agents and LLMs were initially difficult to...
    - Source: https://x.com/sydneyrunkle/status/2100754364545761643 (by @sydneyrunkle)
+
+80. **How to master Jev (full guide)**
+   - Article How to master Jev (Full Guide) TypeSafe just released the strongest model, and it introduced a completely different way to put intelligence inside software... Jev is in a category of its own right now, not because it writes better...
+   - Source: https://x.com/chddaniel/status/2100925069765534024 (by @chddaniel)
 
 ### Games (79)
 
@@ -6308,7 +6346,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [MulmoServer](https://mulmoserver.web.app/shapes)
    - Source: https://mulmoserver.web.app/shapes (by Satoshi Nakajima)
 
-### Fun (46)
+### Fun (49)
 
 1. **Score 17 video moments in 3 seconds to find clips**
    - Drop in a long-form video: transcribe it word-level, pass the transcript to Jev with clip-worthiness questions, get 17 scored moments back in about 3 seconds (1.1M tokens). Ten minutes of work for a shorts pipeline.
@@ -6541,6 +6579,18 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [Post by @HugoDuprez](https://x.com/HugoDuprez/status/2100953089003921543)
    - Source: https://x.com/HugoDuprez/status/2100953089003921543 (by @HugoDuprez)
 
+47. **Local models to Jev wow moment**
+   - had my "wow" jev moment last night i'd been using some local models to try to achieve results like this, but it was really slow & inaccurate swapped in jev model and it just worked (plz don't steal my API key) TypeSafe AI…
+   - Source: https://x.com/jshchnz/status/2100993416675066280 (by @jshchnz)
+
+48. **The Jev use-case explosion**
+   - Boy! My mind is exploding from all the cool ideas people are coming up with @typesafeai Jev usecases. We are SO back!
+   - Source: https://x.com/_pi0_/status/2100879101129048504 (by @_pi0_)
+
+49. **Builder energy is back**
+   - with jev, it's nice to see builder energy back on X, reminiscent of the early days of building with LLMs (back when gpt_index/llama_index/langchain first started) before jev, most of the 2026 AI demo hype has revolved around the end-to-end capabilities of frontier models. The…
+   - Source: https://x.com/jerryjliu0/status/2101115989379428577 (by @jerryjliu0)
+
 ### Money (30)
 
 1. **We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).**
@@ -6691,7 +6741,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - I generated INR. 1.25L (~$1250) in extra sales last night by using JEV before sending out an email. Basically API money paid off for the next 1-2 years It worked wonders.
    - Source: https://x.com/iuditg/status/2101219429233332713 (by @iuditg)
 
-### Browser (29)
+### Browser (30)
 
 1. **YouTube sponsor skipper**
    - Chrome extension listens to YouTube audio, detects sponsor segments, and skips them live for about half a cent per video. Open source BYOK.
@@ -6812,6 +6862,10 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - Jev drives browse, click, and interact loops inside your Chrome tab via Vercel AI Gateway. Fast, cheap decision making for in browser agents.
    - [fx.sh](https://fx.sh/)
    - Source: https://x.com/razaanstha/status/2100645675591520612 (by @razaanstha)
+
+30. **Browser-use x Jev: Wikipedia game, cheap flights**
+   - super cool use case -- browser use w/ jev! would highly recommend following work from @ndrezn for great agent dev content Quote nathan drezner @ndrezn · 20h Browser use w/ @LangChain + @typesafeai's Jev! Really fun to build. ... I found it's excellent at playing the Wikipedia Game. (But, it's also great at "folding laundry" type tasks, like finding cheap flights.)…
+   - Source: https://x.com/sydneyrunkle/status/2101100271694905383 (by @sydneyrunkle)
 
 ### Generative UI (22)
 
@@ -7008,7 +7062,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [Post by @the2ndfloorguy](https://x.com/the2ndfloorguy/status/2100954932799328766)
    - Source: https://x.com/the2ndfloorguy/status/2100954932799328766 (by @the2ndfloorguy)
 
-### Food (14)
+### Food (15)
 
 1. **Shared my first experiences with Jev in my newsletter here.**
    - Shared my first experiences with Jev in my newsletter here. Some interesting findings and a proof for the origins of the Jev name. https://www.linkedin.com/pulse/sandbox-side-quest-1-jev-system-one-model-ryan-bruins-rpesc/ I replicated the "Line-by-line Search" cookbook example and benchmarked it against an LLM, proving the claimed performance gains, but also showing the massive input token count for using this search approach with the API. I tried a binary search approach (Branch & Bound), and sadly that took even more input tokens than the brute-force line-by-line for my use case. Anyone know of a more efficient approach that would result in significantly less input tokens? I would be happy to learn. 😁 Linked projects: • Sandbox Side Quest 1: Jev System One Model — Jev processed my document 23 times faster than a cheap LLM and caught a false positive the LLM missed. Then I looked at t
@@ -7081,6 +7135,10 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - https://allergenmeds.com/ If you have food allergies or religious dietary restrictions Linked projects: • AllergenMeds | Find out what’s in your medication — Did you know your medication could contain common food allergens? AllergenMeds checks any medication against 100+ allergens and dietary restrictions, in seconds. Free on the App Store and Google Play. (allergenmeds.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549612226875232328
    - [AllergenMeds | Find out what’s in your medication](https://allergenmeds.com/)
    - Source: https://allergenmeds.com/ (by Cure)
+
+15. **A FOR YOU tab for Zomato, via Jev**
+   - Jev + Zomato could actually led to more orders as users can more easily choose what's right for them. I've always wondered why there isn't a "FOR YOU" tab on Zomato. With Jev, you could make the FOR YOU tab 100x more useful by showing only those dishes that fit my input…
+   - Source: https://x.com/vaibhavbetter/status/2101136678090047728 (by @vaibhavbetter)
 
 ### Travel (13)
 
@@ -7332,4 +7390,4 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 
 ---
 
-Pack generated 2026-09-19 from the Jev evaluation guide and 1104 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory
+Pack generated 2026-09-19 from the Jev evaluation guide and 1118 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory

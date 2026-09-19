@@ -18737,5 +18737,37 @@
     "title": "awlevin/typesafe-computer-use"
    }
   }
+ },
+ {
+  "id": "xbm-2101246204143366425",
+  "author": "@jun_song",
+  "timestamp": "2026-09-19T09:45:08Z",
+  "sourceUrl": "https://x.com/jun_song/status/2101246204143366425",
+  "urls": [
+   "https://huggingface.co/convaiinnovations/laya"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://huggingface.co/convaiinnovations/laya": {
+    "kind": "link",
+    "title": "huggingface.co/convaiinnovations/laya"
+   }
+  }
+ },
+ {
+  "id": "xbm-2100411068426469552",
+  "author": "@gregpr07",
+  "timestamp": "2026-09-17T02:26:37Z",
+  "sourceUrl": "https://x.com/gregpr07/status/2100411068426469552",
+  "urls": [
+   "https://github.com/browser-use/jev-ultrafast"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/browser-use/jev-ultrafast": {
+    "kind": "link",
+    "title": "browser-use/jev-ultrafast"
+   }
+  }
  }
 ]
