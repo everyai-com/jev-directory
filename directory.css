@@ -62,7 +62,7 @@
 .card .k{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
 .card .catname{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
 .card .when{font-family:var(--mono);font-size:11px;color:var(--faint)}
-.card h3{margin:0;font-size:15.5px;line-height:1.42;font-weight:650;letter-spacing:-.005em}
+.card h3{margin:0;font-size:15.5px;line-height:1.42;font-weight:650;letter-spacing:-.005em;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .card .desc{margin:8px 0 0;color:var(--dim);font-size:13.5px;line-height:1.55;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;cursor:pointer}
 .card.open .desc{-webkit-line-clamp:unset;cursor:default}
 .card .more{font-family:var(--mono);font-size:11.5px;color:var(--faint);cursor:pointer;margin-top:5px;display:inline-block}
@@ -94,6 +94,15 @@ details.eval[open] summary{border-bottom:1px solid var(--line);border-radius:11p
 .empty{border:1px dashed var(--line2);border-radius:11px;padding:36px 20px;text-align:center;color:var(--dim)}
 .empty svg{opacity:.4;margin-bottom:8px}
 .empty .rst{margin-top:10px}
+.best{max-width:1180px;margin:0 auto;padding:30px 22px 0}
+.bestrow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;-webkit-overflow-scrolling:touch}
+.bestcard{scroll-snap-align:start;flex:0 0 272px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 16px 14px;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:7px;transition:border-color .15s ease}
+.bestcard:hover{border-color:var(--accent)}
+.bestcard .rank{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--faint)}
+.bestcard .bk{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+.bestcard b{font-size:14.5px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.bestcard .bd{font-size:13px;line-height:1.5;color:var(--dim);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:640px){.bestcard{flex-basis:240px}}
 footer.site{border-top:1px solid var(--line);margin-top:34px;padding:44px 22px 34px;color:var(--faint);font-size:13px;background:linear-gradient(180deg,transparent,rgba(18,20,24,.6))}
 footer.site .in{max-width:1180px;margin:0 auto}
 footer.site .fgrid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.15fr;gap:34px}

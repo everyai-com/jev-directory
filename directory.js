@@ -93,7 +93,22 @@ function evalBlock(item, i) {
 var currentBuilds = [];
 function words() { return norm($('q').value.trim()).split(/\s+/).filter(Boolean); }
 
+function renderBest() {
+  var host = $('bestRow');
+  var sec = $('best');
+  if (!host || !sec) return;
+  var filtering = words().length > 0 || activeCat !== 'All';
+  var list = JEV_DIR.spotlight || [];
+  sec.style.display = (!filtering && list.length) ? '' : 'none';
+  if (filtering || !list.length) return;
+  host.innerHTML = list.map(function (b, k) {
+    return '<a class="bestcard" href="./cases/' + b.i + '.html"><span class="rank">' +
+      String(k + 1).padStart(2, '0') + '</span><span class="bk">' + esc(b.c) +
+      '</span><b>' + esc(b.t) + '</b><span class="bd">' + esc(b.d) + '</span></a>';
+  }).join('');
+}
 function render() {
+  renderBest();
   var w = words();
   var evals = JEV_DIR.evals.filter(function (item) { return matchEval(item, w); });
   var builds = JEV_DIR.community.filter(function (item) { return matchBuild(item, w); });
@@ -124,7 +139,7 @@ function renderBuilds() {
   bindCards();
   var reset = $('resetBtn');
   if (reset) reset.addEventListener('click', function () {
-    $('q').value = ''; activeCat = 'All'; syncCats(); shown = PAGE_SIZE; render();
+    $('q').value = ''; activeCat = 'All'; syncCats(); shown = PAGE_SIZE; render(); syncParams();
   });
 }
 function bindCards() {
@@ -161,12 +176,35 @@ function buildCats() {
   }).join('');
   document.querySelectorAll('#cats .cat').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      activeCat = btn.dataset.cat; shown = PAGE_SIZE; syncCats(); render();
+      activeCat = btn.dataset.cat; shown = PAGE_SIZE; syncCats(); render(); syncParams();
     });
   });
 }
+var _pt = null;
+function syncParams() {
+  if (_pt) clearTimeout(_pt);
+  _pt = setTimeout(function () {
+    try {
+      var p = new URLSearchParams();
+      var q = $('q').value.trim();
+      if (q) p.set('q', q);
+      if (activeCat !== 'All') p.set('cat', activeCat);
+      var s = p.toString();
+      history.replaceState(null, '', location.pathname + (s ? '?' + s : ''));
+    } catch (e) {}
+  }, 250);
+}
 
-$('q').addEventListener('input', function () { shown = PAGE_SIZE; render(); });
+$('q').addEventListener('input', function () { shown = PAGE_SIZE; render(); syncParams(); });
+(function () {
+  try {
+    var p = new URLSearchParams(location.search);
+    var q = p.get('q');
+    if (q) $('q').value = q.slice(0, 200);
+    var c = p.get('cat');
+    if (c && JEV_DIR.community.some(function (i) { return i.c === c; })) activeCat = c;
+  } catch (e) {}
+})();
 $('sort').addEventListener('change', function () { sortMode = $('sort').value; shown = PAGE_SIZE; render(); });
 document.addEventListener('keydown', function (e) {
   if (e.key === '/' && document.activeElement !== $('q')) { e.preventDefault(); $('q').focus(); }
@@ -198,7 +236,11 @@ function renderProof() {
     var q = (e.r && e.r[0]) || [];
     var val = e.x ? e.x[q[0]] : null;
     var disp = val === true ? 'true' : (val === false ? 'false' : String(val));
-    var title = e.t.length > 32 ? e.t.slice(0, 32) + '...' : e.t;
+    var title = e.t;
+    if (title.length > 34) {
+      var cut = title.slice(0, 34).replace(/\S+$/, '').trim();
+      title = (cut.length > 12 ? cut : title.slice(0, 34)) + '…';
+    }
     return '<div class="pr"><span class="t">' + esc(title) + '</span><span class="v">' + esc(String(q[0] || '?')) + ' → ' + esc(disp) + ' ✓</span></div>';
   }).join('');
   host.innerHTML = '<div class="ph"><b>experimental_evaluate</b><span>typesafe-ai/jev</span></div>' +

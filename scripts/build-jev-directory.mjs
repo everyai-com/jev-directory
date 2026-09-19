@@ -46,6 +46,24 @@ function linkKey(u) {
   }
 }
 
+// Drop leading symbol-art / emoji-only lines (ASCII-art headers, kaomoji
+// dividers) and bare-URL openers so cards and case pages open on real
+// words. Falls back to the original text when every line is droppable.
+function cleanBlurb(s) {
+  const lines = String(s || '').split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const t = lines[i].trim();
+    if (!t) { i++; continue; }
+    if (/^https?:\/\/\S+$/.test(t)) { i++; continue; }
+    const alnum = t.replace(/[^a-z0-9]/gi, '').length / t.length;
+    if (alnum >= 0.3) break;
+    i++;
+  }
+  const out = lines.slice(i).join('\n').trim();
+  return out || String(s || '').trim();
+}
+
 async function readFirst(paths) {
   for (const p of paths) {
     try { return await readFile(p, 'utf8'); } catch { /* try next */ }
@@ -117,7 +135,7 @@ const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;
 .card .k{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
 .card .catname{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
 .card .when{font-family:var(--mono);font-size:11px;color:var(--faint)}
-.card h3{margin:0;font-size:15.5px;line-height:1.42;font-weight:650;letter-spacing:-.005em}
+.card h3{margin:0;font-size:15.5px;line-height:1.42;font-weight:650;letter-spacing:-.005em;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .card .desc{margin:8px 0 0;color:var(--dim);font-size:13.5px;line-height:1.55;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;cursor:pointer}
 .card.open .desc{-webkit-line-clamp:unset;cursor:default}
 .card .more{font-family:var(--mono);font-size:11.5px;color:var(--faint);cursor:pointer;margin-top:5px;display:inline-block}
@@ -149,6 +167,15 @@ details.eval[open] summary{border-bottom:1px solid var(--line);border-radius:11p
 .empty{border:1px dashed var(--line2);border-radius:11px;padding:36px 20px;text-align:center;color:var(--dim)}
 .empty svg{opacity:.4;margin-bottom:8px}
 .empty .rst{margin-top:10px}
+.best{max-width:1180px;margin:0 auto;padding:30px 22px 0}
+.bestrow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;-webkit-overflow-scrolling:touch}
+.bestcard{scroll-snap-align:start;flex:0 0 272px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 16px 14px;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:7px;transition:border-color .15s ease}
+.bestcard:hover{border-color:var(--accent)}
+.bestcard .rank{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--faint)}
+.bestcard .bk{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+.bestcard b{font-size:14.5px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.bestcard .bd{font-size:13px;line-height:1.5;color:var(--dim);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:640px){.bestcard{flex-basis:240px}}
 footer.site{border-top:1px solid var(--line);margin-top:34px;padding:44px 22px 34px;color:var(--faint);font-size:13px;background:linear-gradient(180deg,transparent,rgba(18,20,24,.6))}
 footer.site .in{max-width:1180px;margin:0 auto}
 footer.site .fgrid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.15fr;gap:34px}
@@ -404,7 +431,22 @@ function evalBlock(item, i) {
 var currentBuilds = [];
 function words() { return norm($('q').value.trim()).split(/\\s+/).filter(Boolean); }
 
+function renderBest() {
+  var host = $('bestRow');
+  var sec = $('best');
+  if (!host || !sec) return;
+  var filtering = words().length > 0 || activeCat !== 'All';
+  var list = JEV_DIR.spotlight || [];
+  sec.style.display = (!filtering && list.length) ? '' : 'none';
+  if (filtering || !list.length) return;
+  host.innerHTML = list.map(function (b, k) {
+    return '<a class="bestcard" href="./cases/' + b.i + '.html"><span class="rank">' +
+      String(k + 1).padStart(2, '0') + '</span><span class="bk">' + esc(b.c) +
+      '</span><b>' + esc(b.t) + '</b><span class="bd">' + esc(b.d) + '</span></a>';
+  }).join('');
+}
 function render() {
+  renderBest();
   var w = words();
   var evals = JEV_DIR.evals.filter(function (item) { return matchEval(item, w); });
   var builds = JEV_DIR.community.filter(function (item) { return matchBuild(item, w); });
@@ -435,7 +477,7 @@ function renderBuilds() {
   bindCards();
   var reset = $('resetBtn');
   if (reset) reset.addEventListener('click', function () {
-    $('q').value = ''; activeCat = 'All'; syncCats(); shown = PAGE_SIZE; render();
+    $('q').value = ''; activeCat = 'All'; syncCats(); shown = PAGE_SIZE; render(); syncParams();
   });
 }
 function bindCards() {
@@ -472,12 +514,35 @@ function buildCats() {
   }).join('');
   document.querySelectorAll('#cats .cat').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      activeCat = btn.dataset.cat; shown = PAGE_SIZE; syncCats(); render();
+      activeCat = btn.dataset.cat; shown = PAGE_SIZE; syncCats(); render(); syncParams();
     });
   });
 }
+var _pt = null;
+function syncParams() {
+  if (_pt) clearTimeout(_pt);
+  _pt = setTimeout(function () {
+    try {
+      var p = new URLSearchParams();
+      var q = $('q').value.trim();
+      if (q) p.set('q', q);
+      if (activeCat !== 'All') p.set('cat', activeCat);
+      var s = p.toString();
+      history.replaceState(null, '', location.pathname + (s ? '?' + s : ''));
+    } catch (e) {}
+  }, 250);
+}
 
-$('q').addEventListener('input', function () { shown = PAGE_SIZE; render(); });
+$('q').addEventListener('input', function () { shown = PAGE_SIZE; render(); syncParams(); });
+(function () {
+  try {
+    var p = new URLSearchParams(location.search);
+    var q = p.get('q');
+    if (q) $('q').value = q.slice(0, 200);
+    var c = p.get('cat');
+    if (c && JEV_DIR.community.some(function (i) { return i.c === c; })) activeCat = c;
+  } catch (e) {}
+})();
 $('sort').addEventListener('change', function () { sortMode = $('sort').value; shown = PAGE_SIZE; render(); });
 document.addEventListener('keydown', function (e) {
   if (e.key === '/' && document.activeElement !== $('q')) { e.preventDefault(); $('q').focus(); }
@@ -509,7 +574,11 @@ function renderProof() {
     var q = (e.r && e.r[0]) || [];
     var val = e.x ? e.x[q[0]] : null;
     var disp = val === true ? 'true' : (val === false ? 'false' : String(val));
-    var title = e.t.length > 32 ? e.t.slice(0, 32) + '...' : e.t;
+    var title = e.t;
+    if (title.length > 34) {
+      var cut = title.slice(0, 34).replace(/\\S+$/, '').trim();
+      title = (cut.length > 12 ? cut : title.slice(0, 34)) + '…';
+    }
     return '<div class="pr"><span class="t">' + esc(title) + '</span><span class="v">' + esc(String(q[0] || '?')) + ' → ' + esc(disp) + ' ✓</span></div>';
   }).join('');
   host.innerHTML = '<div class="ph"><b>experimental_evaluate</b><span>typesafe-ai/jev</span></div>' +
@@ -587,7 +656,13 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText, man
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jev Directory — everything Jev can do, with receipts">
 <meta property="og:description" content="Curated Jev use cases: runnable judge-model evals plus real community builds, each linked to its project and source post.">
-<meta name="twitter:card" content="summary">
+<meta property="og:url" content="https://jev.magicteams.ai/">
+<meta property="og:image" content="https://jev.magicteams.ai/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Jev Directory","url":"https://jev.magicteams.ai/","description":"Runnable Jev judge-model evals plus real community builds, each linked to its project and source post.","potentialAction":{"@type":"SearchAction","target":"https://jev.magicteams.ai/?q={query}","query-input":"required name=query"}}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="./directory.css">
 <link rel="describedby" href="./llms.txt">
@@ -619,6 +694,7 @@ ${topbar('', 'home')}
 <input id="q" type="search" placeholder="Search builds and evals — try \\"rubric\\", \\"router\\", \\"refund\\"…" autocomplete="off">
 <span class="kbd">/</span>
 </div></div>
+<section class="best" id="best" aria-label="Best of Jev"><div class="sechead"><h2>Best of Jev</h2><span class="count">the ten builds to start with</span></div><div class="bestrow" id="bestRow"></div></section>
 <div class="main">
 <aside class="side"><h4>Categories</h4><div class="cats" id="cats"></div></aside>
 <div>
@@ -682,6 +758,7 @@ ${siteFooter('', generated)}
 
 function guideShell(title, desc, bodyHtml, generated, current) {
   const mdAlternate = current === 'eli10' ? './jev-like-im-10.md' : './what-is-jev.md';
+  const pageUrl = current === 'eli10' ? 'https://jev.magicteams.ai/jev-like-im-10' : 'https://jev.magicteams.ai/what-is-jev';
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -689,6 +766,13 @@ function guideShell(title, desc, bodyHtml, generated, current) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escHtml(title)} — Jev Directory</title>
 <meta name="description" content="${escHtml(desc)}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${escHtml(title)} — Jev Directory">
+<meta property="og:description" content="${escHtml(desc)}">
+<meta property="og:url" content="${pageUrl}">
+<meta property="og:image" content="https://jev.magicteams.ai/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="./directory.css">
 <link rel="describedby" href="./llms.txt">
@@ -868,7 +952,7 @@ function casePage(item, entry, generated) {
   const rawDesc = String(item.description || '');
   const discParts = rawDesc.split('\n\nDiscussion: ');
   const discussion = discParts.length > 1 ? discParts.slice(1).join('\n\nDiscussion: ').trim().split(/\s+/)[0] : null;
-  const desc = discParts[0].split('\n\nLinked projects:')[0].trim();
+  const desc = cleanBlurb(discParts[0].split('\n\nLinked projects:')[0]);
   const seen = new Set();
   const links = [];
   for (const u of [...(entry.urls || []), ...(entry.attachments || [])]) {
@@ -896,6 +980,13 @@ function casePage(item, entry, generated) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escHtml(item.title)} — Jev Directory</title>
 <meta name="description" content="${escHtml(desc.replace(/\s+/g, ' ').trim().slice(0, 160))}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${escHtml(item.title)} — Jev Directory">
+<meta property="og:description" content="${escHtml(desc.replace(/\s+/g, ' ').trim().slice(0, 160))}">
+<meta property="og:url" content="https://jev.magicteams.ai/cases/${item.id}">
+<meta property="og:image" content="https://jev.magicteams.ai/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../directory.css">
 <link rel="describedby" href="../llms.txt">
@@ -1006,8 +1097,9 @@ async function main() {
         if (links.length >= 4) break;
       }
       if (links.length) linkedProjects++;
-      // Card links render as their own rows — drop the pack's linked block here.
-      const blurb = String(item.description || '').split('\n\nLinked projects:')[0];
+      // Card links render as their own rows — drop the pack's linked block
+      // and discussion footer here (link-less posts have no linked block).
+      const blurb = cleanBlurb(String(item.description || '').split('\n\nLinked projects:')[0].split('\n\nDiscussion: ')[0]);
       return {
         i: item.id,
         t: item.title,

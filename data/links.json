@@ -368,7 +368,13 @@
   "attachments": [
    "https://twitter.com/envystor/status/2101016575226617901"
   ],
-  "meta": {}
+  "meta": {
+   "https://twitter.com/envystor/status/2101016575226617901": {
+    "kind": "attachment",
+    "title": "2101016575226617901",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550576053334839486",
@@ -388,6 +394,11 @@
     "kind": "github",
     "title": "MithrilMan/your-signal",
     "desc": "Open-source BYOK Chrome extension for personal, reversible X timeline filters. - MithrilMan/your-signal"
+   },
+   "https://mithrilman.github.io/your-signal/artifacts/your-signal-demo-social.mp4": {
+    "kind": "attachment",
+    "title": "your-signal-demo-social.mp4",
+    "desc": "video/mp4"
    }
   }
  },
@@ -837,6 +848,11 @@
     "kind": "page",
     "title": "Satyabhan Bhadoriya — Systems, AI/ML &amp; Cloud Engineer",
     "desc": "8+ years bridging industrial automation, Linux infrastructure, and AI/ML engineering. Building production-depth curricula across AI/ML, Cloud &amp; DevOps, and Security."
+   },
+   "https://www.linkedin.com/in/satyabhan-bhadoriya-777b28239?utm_source=share_via&utm_content=profile&utm_medium=member_android": {
+    "kind": "attachment",
+    "title": "satyabhan-bhadoriya-777b28239",
+    "desc": "file"
    }
   }
  },
@@ -1017,6 +1033,11 @@
     "kind": "x",
     "title": "Post by @exploding_grad",
     "desc": "Trusted monitoring is the backbone of AI Control. LLMs as a monitor have been fairly accurate, but are quite expensive and inconsistent. When @typesafeai released Jev, I spent $1.09 dollars and ~15 hours analyzing it - a non-generative model as a monitor alternative for AI Control. Its only goal is to answer a yes/no question with a probability. My pilot findings show that: > it's a real first-pass monitor - 90% of backdoors caught at 2% audit budget (FPR) > but it can be selected against - lets"
+   },
+   "https://www.lesswrong.com/posts/d7pQicW8EhpPBDRqz/a-non-generative-model-as-a-trusted-monitor-for-ai-control": {
+    "kind": "attachment",
+    "title": "a-non-generative-model-as-a-trusted-monitor-for-ai-control",
+    "desc": "file"
    }
   }
  },
@@ -1756,7 +1777,13 @@
   "attachments": [
    "https://twitter.com/sarem_seitz/status/2100971430124953608?s=46"
   ],
-  "meta": {}
+  "meta": {
+   "https://twitter.com/sarem_seitz/status/2100971430124953608?s=46": {
+    "kind": "attachment",
+    "title": "2100971430124953608",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550530932430086186",
@@ -2960,7 +2987,13 @@
   "attachments": [
    "http://github.com/opaielsheikh/jev-polymarket-arb"
   ],
-  "meta": {}
+  "meta": {
+   "http://github.com/opaielsheikh/jev-polymarket-arb": {
+    "kind": "attachment",
+    "title": "jev-polymarket-arb",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550470783795593237",
@@ -4159,6 +4192,11 @@
     "kind": "page",
     "title": "Ahmar Ali — Full Stack Engineer & ML Developer",
     "desc": "Knock down the crates to explore my work. Full stack engineering, computer vision, and open-source communities with 2,500+ members."
+   },
+   "https://github.com/Ahmar004": {
+    "kind": "attachment",
+    "title": "Ahmar004",
+    "desc": "file"
    }
   }
  },
@@ -5493,7 +5531,13 @@
   "attachments": [
    "https://klipy.com/gifs/vigilante-peacemaker-1"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/vigilante-peacemaker-1": {
+    "kind": "attachment",
+    "title": "vigilante-peacemaker-1",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550314110489731153",
@@ -6163,7 +6207,13 @@
   "attachments": [
    "https://klipy.com/gifs/star-59"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/star-59": {
+    "kind": "attachment",
+    "title": "star-59",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550263875587416084",
@@ -8756,7 +8806,13 @@
   "attachments": [
    "https://klipy.com/gifs/bibi-impressed"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/bibi-impressed": {
+    "kind": "attachment",
+    "title": "bibi-impressed",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550151463454646402",
@@ -8827,7 +8883,13 @@
   "attachments": [
    "https://klipy.com/gifs/sunshine-rainbows-sunshine-lolipop"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/sunshine-rainbows-sunshine-lolipop": {
+    "kind": "attachment",
+    "title": "sunshine-rainbows-sunshine-lolipop",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550149600722165860",
@@ -9036,7 +9098,13 @@
   "attachments": [
    "https://klipy.com/gifs/drake-point-1"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/drake-point-1": {
+    "kind": "attachment",
+    "title": "drake-point-1",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550141550200234134",
@@ -10696,7 +10764,13 @@
   "attachments": [
    "https://klipy.com/gifs/so-much-faster-fast"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/so-much-faster-fast": {
+    "kind": "attachment",
+    "title": "so-much-faster-fast",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1550031246355341362",
@@ -11629,7 +11703,13 @@
   "attachments": [
    "https://klipy.com/gifs/write-that-down-taking-notes-1"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/write-that-down-taking-notes-1": {
+    "kind": "attachment",
+    "title": "write-that-down-taking-notes-1",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549984634584956998",
@@ -12558,7 +12638,13 @@
   "attachments": [
    "https://klipy.com/gifs/huh-intereasting"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/huh-intereasting": {
+    "kind": "attachment",
+    "title": "huh-intereasting",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549945266419793930",
@@ -13402,7 +13488,13 @@
   "attachments": [
    "https://klipy.com/gifs/steve-minecraft-minecraft-steve-sad"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/steve-minecraft-minecraft-steve-sad": {
+    "kind": "attachment",
+    "title": "steve-minecraft-minecraft-steve-sad",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549862654573678844",
@@ -13439,7 +13531,13 @@
   "attachments": [
    "https://git.sub-net.at/Sub-Net-Public/llm-benchmark/src/branch/main/typesafe-jev/report.pdf"
   ],
-  "meta": {}
+  "meta": {
+   "https://git.sub-net.at/Sub-Net-Public/llm-benchmark/src/branch/main/typesafe-jev/report.pdf": {
+    "kind": "attachment",
+    "title": "report.pdf",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549855132013957340",
@@ -14679,6 +14777,11 @@
     "kind": "page",
     "title": "Arandu :: Framework Go para aplicações web e APIs",
     "desc": "Desenvolva aplicações web e APIs em Go com Arandu: autorização tipada, views HTML compiladas, acesso a dados, filas e uma CLI para o dia a dia."
+   },
+   "https://github.com/arandu-io": {
+    "kind": "attachment",
+    "title": "arandu-io",
+    "desc": "file"
    }
   }
  },
@@ -15076,7 +15179,18 @@
    "https://exuvia-two.vercel.app/",
    "https://exuvia-two.vercel.app/api/docs"
   ],
-  "meta": {}
+  "meta": {
+   "https://exuvia-two.vercel.app/": {
+    "kind": "attachment",
+    "title": "",
+    "desc": "file"
+   },
+   "https://exuvia-two.vercel.app/api/docs": {
+    "kind": "attachment",
+    "title": "docs",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549714766052720712",
@@ -15282,7 +15396,13 @@
   "attachments": [
    "https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation"
   ],
-  "meta": {}
+  "meta": {
+   "https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation": {
+    "kind": "attachment",
+    "title": "typesafe-jev-mistral-gemini-event-validation",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549691464361967616",
@@ -15958,7 +16078,13 @@
   "attachments": [
    "https://klipy.com/gifs/junji-ito-amigara-fault-1"
   ],
-  "meta": {}
+  "meta": {
+   "https://klipy.com/gifs/junji-ito-amigara-fault-1": {
+    "kind": "attachment",
+    "title": "junji-ito-amigara-fault-1",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549647247925313646",
@@ -16390,7 +16516,13 @@
   "attachments": [
    "https://top.gg/bot/1150448986264698980"
   ],
-  "meta": {}
+  "meta": {
+   "https://top.gg/bot/1150448986264698980": {
+    "kind": "attachment",
+    "title": "1150448986264698980",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549612959498641501",
@@ -16632,7 +16764,13 @@
   "attachments": [
    "https://gyazo.com/b6762ae509ede5b6eaacec777782d610"
   ],
-  "meta": {}
+  "meta": {
+   "https://gyazo.com/b6762ae509ede5b6eaacec777782d610": {
+    "kind": "attachment",
+    "title": "b6762ae509ede5b6eaacec777782d610",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549596187907072101",
@@ -17753,7 +17891,13 @@
   "attachments": [
    "https://github.com/joaco05/"
   ],
-  "meta": {}
+  "meta": {
+   "https://github.com/joaco05/": {
+    "kind": "attachment",
+    "title": "",
+    "desc": "file"
+   }
+  }
  },
  {
   "id": "1549515191702523974",
@@ -18783,7 +18927,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550591122848350229/image.png?ex=6ab03584&is=6aaee404&hm=989bc51f977d6f4c77d80e2b64c70ae11386dffe5997155732906f6535f66157&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -18800,7 +18944,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550591448900960367/image0.jpg?ex=6ab035d2&is=6aaee452&hm=09949435b5ab825f105f49fdc7f268b0543de9e1b29093debd6d7e6692ef4a03&": {
     "kind": "attachment",
     "title": "image0.jpg",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -18817,7 +18961,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550592118643495013/image.png?ex=6ab03671&is=6aaee4f1&hm=5076e9afe238f24542a19683f9ab61640188a254bd532ac5c54711103e55f2aa&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -18851,7 +18995,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550627956366381176/image.png?ex=6ab057d2&is=6aaf0652&hm=589e6fbe98e63b253d1aca1f5960828cc0a96e0102df53c84f46ed74493abcf4&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -18940,12 +19084,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550629042548383815/Screenshot_2026-09-18_at_4.37.18_PM.png?ex=6ab058d5&is=6aaf0755&hm=4e1c905ca314630f5871af36733d6e44675764fc7518456d2bf16133e0219da0&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-18_at_4.37.18_PM.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550629042879725688/Screenshot_2026-09-18_at_4.45.51_PM.png?ex=6ab058d5&is=6aaf0755&hm=bd77e6f1296e46359ed2207e3d6f7483b279503f66f72db8930dad6dc3f186b6&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-18_at_4.45.51_PM.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -18962,7 +19106,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550630123273723924/image.png?ex=6aafb116&is=6aae5f96&hm=50e7bf33dbbabd1973cef740148b7719e128360410165a820f1d211bf9c73704&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19048,7 +19192,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550633861241765971/image.png?ex=6aafb491&is=6aae6311&hm=b0121aca562b83bbe9ccbc87ac79b23c24ec23e0b880e81207d4fe45b40ed3e6&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19312,7 +19456,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550659490544877599/BxACXXzop0ub40wAAAABJRU5ErkJggg.png?ex=6aafcc70&is=6aae7af0&hm=7d50590944860c60bee982775414421c25dd7030fae65ad36697d22b3f5aeea9&": {
     "kind": "attachment",
     "title": "BxACXXzop0ub40wAAAABJRU5ErkJggg.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19409,7 +19553,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550674313953280092/jev-sorts-wide.gif?ex=6aafda3e&is=6aae88be&hm=0ae52b6b82f2c536913ecf76a43487aea9abc4a4022ce1fed65ab8a070b9f49c&": {
     "kind": "attachment",
     "title": "jev-sorts-wide.gif",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19490,7 +19634,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550677938561884322/dsj.png?ex=6aafdd9e&is=6aae8c1e&hm=2b60c7ccb66e80a1259dc3a5fa5d79936f9b5c0b681b7ca46ca397b794819cb8&": {
     "kind": "attachment",
     "title": "dsj.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19578,7 +19722,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550687936079462400/image.png?ex=6aafe6ee&is=6aae956e&hm=c9305bd7d79bc21fdb3dbfefa02dd9b0393a68a7d767d662ddf68e8b627fac30&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19591,7 +19735,13 @@
   "attachments": [
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550691662857248768/image.png?ex=6aafea66&is=6aae98e6&hm=210beba7c99c0aeaecab80117be36811bff3679fb51208b9081ece2d13dc5ce7&"
   ],
-  "meta": {}
+  "meta": {
+   "https://cdn.discordapp.com/attachments/1483217545040232493/1550691662857248768/image.png?ex=6aafea66&is=6aae98e6&hm=210beba7c99c0aeaecab80117be36811bff3679fb51208b9081ece2d13dc5ce7&": {
+    "kind": "attachment",
+    "title": "image.png",
+    "desc": "image/png"
+   }
+  }
  },
  {
   "id": "1550696781547966474",
@@ -19606,7 +19756,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550696781325799555/Screenshot_2026-09-18_at_7.31.37_PM.png?ex=6aafef2b&is=6aae9dab&hm=be5c684c3fd11a849a5fec44dc98572b32336889dbb33411de21c8f7db65e28c&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-18_at_7.31.37_PM.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19636,7 +19786,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550698513183023204/jev_analysis.png?ex=6aaff0c8&is=6aae9f48&hm=37b719d19142dcf3e853f26b22bf1decfb23e35282ccd2ee6f173f42e2ab4561&": {
     "kind": "attachment",
     "title": "jev_analysis.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19712,7 +19862,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550707926665269268/agent-harness-jev-integration.png?ex=6aaff98c&is=6aaea80c&hm=9387ae35e53e0510d328f70e3c61f66b9961d022a2ef99f68e71f28ffd788c79&": {
     "kind": "attachment",
     "title": "agent-harness-jev-integration.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19729,7 +19879,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550707975365197834/Screenshot_2026-09-18_at_10.00.57_PM.png?ex=6aaff998&is=6aaea818&hm=41dae43a72c23817037fd531ea00316c8fc82fe4b5f93f7313c136687035b4d3&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-18_at_10.00.57_PM.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -19803,7 +19953,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550712254213787690/image.png?ex=6aaffd94&is=6aaeac14&hm=a6b2e231263453346254415e4c151b0fb69598500c69dd42e7d81d6c24d7a870&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20033,7 +20183,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550734615600439316/image.png?ex=6ab01267&is=6aaec0e7&hm=e25d4111a2c2dfcc7cd1549673a923ebbdabe97a904f061ede7211677567cc4e&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20108,7 +20258,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550735952631177246/Screenshot_2026-09-19_at_1.10.12_PM.png?ex=6ab013a6&is=6aaec226&hm=15fa78da195c5b318cc6c9dc765825484359264c48bfb5fadd3a33afddd279d6&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-19_at_1.10.12_PM.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20241,17 +20391,17 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550746565063479396/overclock-30195.png?ex=6ab01d88&is=6aaecc08&hm=2c104fb06298f246dcb6774dbb49142840787f6e399cf267a70dfbf76f60ba0c&": {
     "kind": "attachment",
     "title": "overclock-30195.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550746565637963889/overclock-30194.png?ex=6ab01d88&is=6aaecc08&hm=ce1475f4bad4c57e6d725415a7ae8574b467818b9d4c16001f810b343b275cc8&": {
     "kind": "attachment",
     "title": "overclock-30194.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550746566451789904/overclock-30193.png?ex=6ab01d88&is=6aaecc08&hm=c927c655fe1175c67da2a371b24f2a5e72fb83ef38a431336e36dd4dda1eecc5&": {
     "kind": "attachment",
     "title": "overclock-30193.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20275,7 +20425,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550746743631511592/Screenshot_2026-09-19_at_1.09.33_AM.png?ex=6ab01db3&is=6aaecc33&hm=f63e34494ec893b68a46047c407aef3398fe437d35128b93c809cf253f3ddce1&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-19_at_1.09.33_AM.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20292,7 +20442,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550747008476774400/Screenshot_2026-09-19_at_9.54.05_AM.png?ex=6ab01df2&is=6aaecc72&hm=d63409d13c4add32997fb1e4085399c3da857ee12516a7abf349839169396d4e&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-19_at_9.54.05_AM.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20505,7 +20655,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550775588229357608/image.png?ex=6ab03890&is=6aaee710&hm=3b6b30852e968e42676808868e8516743df2075e8927da2329f6198d07a6a6cf&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550775586962538536/quiz_handover.md?ex=6ab0388f&is=6aaee70f&hm=2597854d009bdae2819edf173095482aa7f0d73641d2751be3250b4e1e3d8b84&": {
     "kind": "attachment",
@@ -20574,7 +20724,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550794662867116062/demo.gif?ex=6ab04a53&is=6aaef8d3&hm=5591d523b6d7c98e43cfac7b6033c178b91f919b7bcea1945b68aad89b6fe67e&": {
     "kind": "attachment",
     "title": "demo.gif",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20591,7 +20741,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550798413296046100/17898090997950.png?ex=6ab04dd2&is=6aaefc52&hm=a67daea65602ae00391f66ae288ee0e82f34af5e87ba2ec4bbaf5206d467e7dd&": {
     "kind": "attachment",
     "title": "17898090997950.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20690,7 +20840,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550806954811858995/demo.gif?ex=6ab055c6&is=6aaf0446&hm=ed2821795d862dbfa596912a59aa4d27112497f9035046267c2bf55e797194a7&": {
     "kind": "attachment",
     "title": "demo.gif",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -20967,12 +21117,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550841995621302375/image.png?ex=6aafcda9&is=6aae7c29&hm=43aa95fc8571f0e86acc5abd4c486a5afb36bd6323e559cc0df9cfeb03253fbd&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550841996384673892/image.png?ex=6aafcda9&is=6aae7c29&hm=9c06ee8af0be8bd311fc9c4ff29b9884ba532ba455e166fdf215c69276ec5830&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21013,7 +21163,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550844280757682316/image.png?ex=6aafcfc9&is=6aae7e49&hm=ed6f00251e994d03e452c0ddb70a7cc939ea26b13ac0a5017f5270306ef561b2&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21030,7 +21180,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550844607909204119/image.png?ex=6aafd017&is=6aae7e97&hm=3442eb88fe59d7fa39ffbcebb9b2d4fd25abf5a2ca1b464a4e0d18e80696db7d&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21047,7 +21197,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550845068766744616/Screenshot_2026-09-19_174125.png?ex=6aafd085&is=6aae7f05&hm=4235b05e57e86bff6b11037c0de21775725c61d442956b39f21131b989fcbcde&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-19_174125.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21088,7 +21238,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550852865503928440/gallery.gif?ex=6aafd7c8&is=6aae8648&hm=2922e08d45d2fa6bd452f75b0d069649394ba683d53d4410e0262b50c7ff516f&": {
     "kind": "attachment",
     "title": "gallery.gif",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21164,7 +21314,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550881879086071909/image.png?ex=6aaff2cd&is=6aaea14d&hm=9f638b6b79f77f4f928864143e74b3483ddd254320e5e5c93d3049da1c784534&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21181,7 +21331,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550882971060412506/image.png?ex=6aaff3d2&is=6aaea252&hm=e57e856dd5040be6bf8f9d1b14dcf8d1aec51ae430e7f7230f17d852d2fc8690&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21198,7 +21348,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550883298388091030/image.png?ex=6aaff420&is=6aaea2a0&hm=57bc2de81f20881fd70777f943e3b6adb37debe9120978ad7b9cbd43066514e9&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21239,7 +21389,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550885232843165777/Screenshot_2026-09-19_at_18.00.19.png?ex=6aaff5ed&is=6aaea46d&hm=e25ecbca421ec6fb9e1458519a908262f531a2cb7456651bc24e0825979ff9cf&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-19_at_18.00.19.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21279,7 +21429,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550886064011608064/image.png?ex=6aaff6b3&is=6aaea533&hm=786a3abe5d17369007c6cee872e6ef11bbddb0383f912068c67a1bfad97f46a4&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21423,7 +21573,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550889269713698907/image.png?ex=6aaff9b0&is=6aaea830&hm=4c14c6a5d7a66fb13374f6c8e937463a1925074888a7c70a1da97e4519b2a93a&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21440,7 +21590,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550891366085558272/file-a76fdba8b67759768898f7c32c5dd09d.png?ex=6aaffba3&is=6aaeaa23&hm=51f98c930d1fdb6f9afbfebbdf06c28a1245d3d56c43ccb0310fd0796eac0346&": {
     "kind": "attachment",
     "title": "file-a76fdba8b67759768898f7c32c5dd09d.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21457,7 +21607,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550892399616598198/image.png?ex=6aaffc9a&is=6aaeab1a&hm=1998c3f90bca68b943bb3e096e703b989529512a899d46e39e32b2c36c905190&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21731,7 +21881,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550920652716904550/image.png?ex=6ab016ea&is=6aaec56a&hm=68e7cbc34e4d70cff118fa058803b7b0ec7f0078f5f3202f0120eb6233de7e33&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21829,7 +21979,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550927334977044490/image.png?ex=6ab01d23&is=6aaecba3&hm=a4754293de883274f87546fb48b4a66bc1ae5c5e1f907e9782753011b07f3114&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -21960,7 +22110,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550950482124472422/IMG_20260920_005226.jpg?ex=6ab032b2&is=6aaee132&hm=6082fd7a87241c938dfcbfa8472d1dea49ae3b517dde38f778acfb419255fb37&": {
     "kind": "attachment",
     "title": "IMG_20260920_005226.jpg",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22026,12 +22176,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550951399901102120/image0.jpg?ex=6ab0338d&is=6aaee20d&hm=eae28f522bcba41c73f2a7c296004968fc0ca3a7751f61d6a14f85932e58bf08&": {
     "kind": "attachment",
     "title": "image0.jpg",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550951400958328873/image1.jpg?ex=6ab0338d&is=6aaee20d&hm=034d7bb295b01eda0c1ed5c0e0b28ed68f20ee7906e59b2248b3f99434d8cec7&": {
     "kind": "attachment",
     "title": "image1.jpg",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22061,7 +22211,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550956859756646440/Screen_Recording_20260920_023139_Chrome_ezgif_com_video_to_gif_converter.gif?ex=6ab038a2&is=6aaee722&hm=4d844418952f69e9dcc269608d5fce59d2b909b6b673a41eed42d4a195ece9c0&": {
     "kind": "attachment",
     "title": "Screen_Recording_20260920_023139_Chrome_ezgif_com_video_to_gif_converter.gif",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22102,7 +22252,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550959603783565453/HSd4FCqbYAASQKL.png?ex=6ab03b30&is=6aaee9b0&hm=a470ed78335a725dcd3159904d354c25f9324a68d05479a0b2d750e2d1832fe4&": {
     "kind": "attachment",
     "title": "HSd4FCqbYAASQKL.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22167,12 +22317,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550966357091422329/bro.tsi.png?ex=6ab0417b&is=6aaeeffb&hm=e364a22cb1bc2d858264b21e120d84280474a74fbaef69609a72ba298b3b5b3b&": {
     "kind": "attachment",
     "title": "bro.tsi.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550966357091422329/bro.tsi.png": {
     "kind": "attachment",
     "title": "bro.tsi.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22229,27 +22379,27 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550968772633043036/01-flow.png?ex=6ab043bb&is=6aaef23b&hm=b44ecc5100924417be98a594e0ef3d56b8a00589ea5ab6cffbafe27cabfe758c&": {
     "kind": "attachment",
     "title": "01-flow.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550968773052338186/02-scores-clear.png?ex=6ab043bb&is=6aaef23b&hm=9884efbad5c923270cad06c57167ff6a15bbfd1286c44291f295ccb2bab6acb9&": {
     "kind": "attachment",
     "title": "02-scores-clear.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550968773505187972/03-scores-messy.png?ex=6ab043bb&is=6aaef23b&hm=4b0f155c10dde3a1a88946befb23e4a9e66e70cffb4936fd9af4b47742ff55a7&": {
     "kind": "attachment",
     "title": "03-scores-messy.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550968772633043036/01-flow.png": {
     "kind": "attachment",
     "title": "01-flow.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550968773052338186/02-scores-clear.png": {
     "kind": "attachment",
     "title": "02-scores-clear.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22267,12 +22417,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550970631993032804/image.png?ex=6ab04576&is=6aaef3f6&hm=69dfb4d33587a1633ae16a19d804037874b2b2685634c1821481130a284c9fd1&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550970631993032804/image.png": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22354,12 +22504,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550971725951533186/Screenshot_20260919_224619.png?ex=6ab0467b&is=6aaef4fb&hm=75469bb7b42864af21c0bed7bc17b9f8471309628e249893f7e6718e9955fbff&": {
     "kind": "attachment",
     "title": "Screenshot_20260919_224619.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550971725951533186/Screenshot_20260919_224619.png": {
     "kind": "attachment",
     "title": "Screenshot_20260919_224619.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22475,12 +22625,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550974536562769970/IMG_20260920_005226.png?ex=6ab04919&is=6aaef799&hm=405788880d74ff19ae9d6812437f805e2e95596f9e9b24192b72e774e0b5701c&": {
     "kind": "attachment",
     "title": "IMG_20260920_005226.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550974536562769970/IMG_20260920_005226.png": {
     "kind": "attachment",
     "title": "IMG_20260920_005226.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22544,12 +22694,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550975106220564692/image.png?ex=6ab049a1&is=6aaef821&hm=07cf3977312f2737c5d164449edccdaec2063745f378129752f27475e05caefd&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550975106220564692/image.png": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22649,22 +22799,22 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550978735262539826/image.png?ex=6ab04d02&is=6aaefb82&hm=9ff25dd3fbaab25af618da45b03752e793e77c0b0dddce6a07947ce918a30dc1&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550978736269164656/image.png?ex=6ab04d02&is=6aaefb82&hm=8cee56bfd8b9395ee0a48930273dda510cd052ef7ffc972165e77bb24b1bb870&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550978735262539826/image.png": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550978736269164656/image.png": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22712,12 +22862,12 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550982136226512956/Screenshot_2026-09-18_at_6.31.40_PM.png?ex=6ab0502d&is=6aaefead&hm=5fbe74d644c090e0378981003d245894b8e0b25db559b8a5393a637bab71018e&": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-18_at_6.31.40_PM.png",
-    "desc": "image"
+    "desc": "image/png"
    },
    "https://media.discordapp.net/attachments/1483217545040232493/1550982136226512956/Screenshot_2026-09-18_at_6.31.40_PM.png": {
     "kind": "attachment",
     "title": "Screenshot_2026-09-18_at_6.31.40_PM.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22734,7 +22884,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550986718709289011/image.png?ex=6ab05471&is=6aaf02f1&hm=8f7577296f7ec66f79b15f4d6c539cd54091e268e7ed3b8142d4176ce3b5bae6&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22774,7 +22924,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550989502510796942/image.png?ex=6ab05709&is=6aaf0589&hm=041eccaed4c633a7ea0af76c347d10bda2135cfb226c103f5c1de7b1e4ddfb9c&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
@@ -22791,7 +22941,7 @@
    "https://cdn.discordapp.com/attachments/1483217545040232493/1550991365536747650/image.png?ex=6ab058c5&is=6aaf0745&hm=a61303782797655b946220532a904ce8ac54c6d23838270ca0e28c9bc5a1b132&": {
     "kind": "attachment",
     "title": "image.png",
-    "desc": "image"
+    "desc": "image/png"
    }
   }
  },
