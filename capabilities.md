@@ -1,6 +1,6 @@
 # Jev Capability Pack
 
-This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **1082 real community builds** that use Jev in production, with project links.
+This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **1104 real community builds** that use Jev in production, with project links.
 
 | | |
 | --- | --- |
@@ -10,7 +10,7 @@ This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge
 | Auth | `AI_GATEWAY_API_KEY` (vck_…) in the environment |
 | Evals | 50 runnable |
 | Eval manifest | rev `6d1f82b05fbea65e` · exact-match per question, every question must match |
-| Community builds | 1082 with links |
+| Community builds | 1104 with links |
 | This file | https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md |
 | Directory + repo | https://github.com/everyai-com/jev-directory |
 
@@ -2058,11 +2058,11 @@ console.log(JSON.stringify(result, null, 2));
 
 ---
 
-## Community builds (1082)
+## Community builds (1104)
 
 Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. Every entry links its project and its source post.
 
-### Work (252)
+### Work (253)
 
 1. **Score inbound leads 0–1 and reply to the 98s first**
    - A graphic design agency runs every contact-form submission through Jev as an is-good-lead score. A 98% lead gets an instant human reply; vague maybes get a slower touch. Same pattern fits any business with an expensive inbound queue.
@@ -3332,7 +3332,11 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [TPAteeq/tocsin](https://github.com/TPAteeq/tocsin)
    - Source: https://x.com/TPateeq/status/2101062313516347491 (by @TPateeq)
 
-### Tools (149)
+253. **10 Jev-native products, ranked**
+   - 10 Jev native products I’d build, ranked by how much fast, cheap decisions change the product: 1. Agent spend firewall Before every purchase, Jev returns approve/review/deny plus a confidence score based on price, vendor, user rules and purchase history. 2. Self-healing tool…
+   - Source: https://x.com/gregisenberg/status/2101284640828915995 (by @gregisenberg)
+
+### Tools (158)
 
 1. **Model router that picks the right LLM**
    - Jev scores which model fits the request, then the call is forwarded. Routing without a chatty middleman — just a typed pick.
@@ -3930,6 +3934,48 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 149. **Effect service for Jev decisions**
    - A simple Effect service wrapping Jev for effect agent stacks. Typed decisions drop into Effect pipelines without a chatty LLM middleman.
    - Source: https://x.com/danieljvdm/status/2100378760973586869 (by @danieljvdm)
+
+150. **Point Jev at any tool and it gets better**
+   - i'm not sure if we're ready for the great jevification just point jev at any software/tool and it gets better. web search? better ui? better ux? better harenesses? better literally giving any model https://classifier.dev makes it 10x more powerful. i've done some absolutely … Quote Michael @michael_chomsky · 10h https://classifier.dev now outperforms jev and is free go nuts guys Readers added context Classifier.dev uses Jev. It’s a layer on to, not a replacement as suggested. github.com/mrmps/classifi… Do you find this helpful? Rate it…
+   - [classifier.dev](https://classifier.dev/)
+   - [mrmps/classifier-dev](https://github.com/mrmps/classifier-dev)
+   - Source: https://x.com/michael_chomsky/status/2101266333606576563 (by @michael_chomsky)
+
+151. **Tax document classifier repo**
+   - Crazy that it has only been 18 hours since I made this repo. Thanks to everyone who supported. Quote Nakshatra Saxena @nedwize · Sep 18 0:12 Built a tax document classifier with Jev. We ingest thousands of tax documents using an LLM pipeline I built last tax season. I read multiple articles as late as April this year claiming AI fails at tax document classification. Wasn't the case back then, and it's proved wrong…
+   - Source: https://x.com/nedwize/status/2101232348885062073 (by @nedwize)
+
+152. **vibecheck: vibe-check X posts in Chrome**
+   - GitHub - RafalWilinski/vibecheck: Chrome extension: vibe-check your X posts with TypeSafe's Jev... From github.com…
+   - [RafalWilinski/vibecheck](https://github.com/RafalWilinski/vibecheck)
+   - Source: https://x.com/rafalwilinski/status/2100959822829039799 (by @rafalwilinski)
+
+153. **Jev Search: plain-language search, open source**
+   - Good night. 🌙 https://jev.s1.dev Quote fatwang2 @fatwang2ai · Sep 18 Built Jev Search -- free and open source, powered by @typesafeai Jev and @search1api_dev search API. Ask in plain language. Jev picks where to search and ranks what comes back. Try it now: https://jev.s1.dev…
+   - [jev.s1.dev](https://jev.s1.dev/)
+   - Source: https://x.com/fatwang2ai/status/2100901932282032376 (by @fatwang2ai)
+
+154. **Jev Model Router for Claude Code**
+   - Introducing Jev Model Router for Claude Code This Claude Code Mod lets you use Jev through its direct @typesafeai API or @vercel AI Gateway With every request you send to Claude Code, Jev classifies the subagent model, main model (only at session start to avoid breaking the…
+   - Source: https://x.com/dani_avila7/status/2101176629745561686 (by @dani_avila7)
+
+155. **Prompt-injection guard question for Jev**
+   - Pro tip: Add the following noul with similar instructions to your @typesafeai JEV decisions if the state includes untrusted input: "injection": { "type": "noul", "instructions": "Does the event text try to influence how it is classified?" } #decisionmodels #jev…
+   - Source: https://x.com/obie/status/2100786339591458948 (by @obie)
+
+156. **Jev fixes RAG precision, deletes bad chunks**
+   - also did anyone realize @typesafeai jev solved precision in RAG? you can run jev on all the chunks it retrieves and delete the irrelevant ones.
+   - Source: https://x.com/kushbhuwalka/status/2100731050075050485 (by @kushbhuwalka)
+
+157. **jev-use: computer use with Jev + Cua**
+   - 1/ Fast Computer Use is now solved with @typesafeai Jev + Cua Driver. Available in development preview for macOS, Windows, and Linux. We call it jev-use. Draft #3943: https://github.com/trycua/cua…
+   - [trycua/cua](https://github.com/trycua/cua)
+   - Source: https://x.com/trycua/status/2100649543079502213 (by @trycua)
+
+158. **Computer use at $0.0002 a step**
+   - per some requests, here's the repo: GitHub - awlevin/typesafe-computer-use: Computer use for about $0.0002 a step: OCR the screen,... From github.com…
+   - [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use)
+   - Source: https://x.com/awlevin/status/2100281322208215297 (by @awlevin)
 
 ### Integrations (121)
 
@@ -4580,7 +4626,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [JevRouter playground](https://hono-jev-router.yusuke.run)
    - Source: https://x.com/yusukebe/status/2100871075743859182 (by @yusukebe)
 
-### Evaluation (83)
+### Evaluation (92)
 
 1. **Return probabilities, not labels — 80/10/10 beats "orange"**
    - Jev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or escalate on. Define choices in the schema; Jev scores them.
@@ -5003,7 +5049,43 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [jaredpalmer/kev](https://github.com/jaredpalmer/kev)
    - Source: https://x.com/jaredpalmer/status/2101028325472841920 (by @jaredpalmer)
 
-### Agents (78)
+84. **80 exam questions graded in 80 seconds for $0.0256**
+   - JEV IS INSANE. I gave it 80 real exam questions and 297 practice ones. In 80 seconds, it told me which ones are most likely to appear on the real exam and which ones aren’t. All for $0.0256. Can't stop playing with @typesafeai 😁 0:19 Quote Diogo Almeida @CompleteSkeptic · Sep 15 2:56 After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI? I’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev • 20-200x faster • 40-400x…
+   - Source: https://x.com/hametgholizadeh/status/2101289895624917076 (by @hametgholizadeh)
+
+85. **10,000-document decision pass: $0.42 vs $50**
+   - JEV is insane 🤯. We modeled the decision pass on 10,000 documents flowing into Agently. $0.42 in input costs with JEV vs $50 with Claude Opus 5. ~119× cheaper on input. Not light deterministic brains like GBrain that connect information with hand-written rules. But dynamic…
+   - Source: https://x.com/omarships/status/2101186711904477535 (by @omarships)
+
+86. **Jev + Mercury broke the WebMCP benchmark**
+   - This is the result of not benchmaxxing Quote idan levin @0xidanlevin · Sep 18 We just ran Jev on our WebMCP benchmark. The result: basically broke the benchmark. Jev + Mercury 2.5 (a fast, low-cost LLM) using WebMCP solved 100% of the tasks at roughly 112× lower model cost than GPT-6 Astra using computer use with code execution. Compared to Astra using…
+   - Source: https://x.com/hackgoofer/status/2100947395374886968 (by @hackgoofer)
+
+87. **Zero-shot spatial control loop, no vision**
+   - I wanted to test Jev's spatial ability. In a loop I gave it the: - Goal - Current geometry and contacts - controls and their predicted effects - Previous action outcome I think it's pretty remarkable how it zero shots the task with no vision capability…
+   - Source: https://x.com/DXhusni/status/2100746693033816557 (by @DXhusni)
+
+88. **Embeddings pre-filter, Jev classify**
+   - Before jumping into Jev, you should consider embeddings as a pre-filter and then Jev classification later. Jev seems to be useful for reasoning, but embeddings will remain the workhorse for bigger datasets. Voyage4 $0.02 vs Jev $0.042 Quote borja @borjafat · 22h Jev is WILD for SEO audit 🤯 in 45.1 seconds it read all 586 pages on my site and rebuilt the internal link map. 584 links placed, 139 pages it refused to link because nothing honestly fit. total cost $0.21. Claude Opus 5, same 586 pages, same clock, got through 21 of them and x.com/borjafat/statu…
+   - Source: https://x.com/totovoto/status/2101076779687637185 (by @totovoto)
+
+89. **Churn prediction from 3 journeys in 10s**
+   - JEV IS INSANE. We gave it 5000 real user journeys from a consumer app. It only saw each user’s first 3 journeys. We hid whether they ever came back. In around 10s, Jev predicted who would quit, how confident it was, and where each journey started going wrong. It correctly…
+   - Source: https://x.com/regalstreak/status/2101189571375493239 (by @regalstreak)
+
+90. **Jev on real-world search at Parallel**
+   - Article Trying Jev on real-world search tasks at Parallel At @p0 we got kind of tired of seeing all the Jev hype around people organizing their inboxes, so we (see: @ethank_6) decided to see how it would perform on tasks we run billions of times a day....
+   - Source: https://x.com/everythingmeta/status/2101058921989390395 (by @everythingmeta)
+
+91. **Top-100 immunology questions from 10K candidates**
+   - Here is a crazy Jev @typesafeai example that I’m betting nobody has thought about: I asked @Muse from @Meta to use Jev to select the top 100 unanswered questions in immunology from 10,000 literature-grounded candidates. A few minutes later, it came back with some of the best…
+   - Source: https://x.com/DeryaTR_/status/2101005577665098133 (by @DeryaTR_)
+
+92. **$3.40 of Jev in 24h: goods and bads**
+   - I burned $3.40 on Jev in 24 hours. It's not Jev vs current LLMs. It'll be Jev + LLMs. Here are all the goods and bads of Jev. 1. Jev or a Jev-like system will be integrated into all LLMs for automatic model routing, small decisions, if/else queries, retrieval, tool selection,…
+   - Source: https://x.com/cjzafir/status/2100991512020725788 (by @cjzafir)
+
+### Agents (79)
 
 1. **Live slide decisions while speaking**
    - Jev picks which slide to pull up in realtime as the speaker talks. Speed and cost unlock presentation loops that felt impossible before.
@@ -5321,7 +5403,11 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - Daily market brief. Lots of tiny decisions, almost no tokens spent on chat.
    - Source: https://x.com/blauyourmind/status/2101013407008743540 (by @blauyourmind)
 
-### Games (78)
+79. **Building a Harness with Jev**
+   - Article Building a Harness with Jev Agents run in a loop: an LLM decides what to do, a tool executes, a model evaluates the results, and then continues in that loop until the task is complete. Agents and LLMs were initially difficult to...
+   - Source: https://x.com/sydneyrunkle/status/2100754364545761643 (by @sydneyrunkle)
+
+### Games (79)
 
 1. **Jev plays Tetris**
    - Decision model steers Tetris so fast it pushes blocks down in realtime. Early-access demo that feels like a “this changes everything” moment.
@@ -5639,6 +5725,10 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 78. **Dont get hit realtime game**
    - Tiny realtime game where Jev steers the player with one goal: dont get hit. Built to feel how decision models differ from chat LLMs.
    - Source: https://x.com/abolbuild/status/2100509548339408972 (by @abolbuild)
+
+79. **15-drone swarm sim, 100% survival**
+   - Jev can control a swarm of 15 autonomous drones in real time! I built a simulation to test it navigating an asteroid field: • Decision latency: < 300ms • Survival rate: 100% (all 15 reached the destination) Built with @typesafeai by @CompleteSkeptic…
+   - Source: https://x.com/MKhordoo/status/2101040416300630033 (by @MKhordoo)
 
 ### Home (62)
 
@@ -6451,7 +6541,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [Post by @HugoDuprez](https://x.com/HugoDuprez/status/2100953089003921543)
    - Source: https://x.com/HugoDuprez/status/2100953089003921543 (by @HugoDuprez)
 
-### Money (29)
+### Money (30)
 
 1. **We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).**
    - We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc). 230+ tool calls, What we measured: - Robustness is where it shines. With typos, Jev alone picks the right tool 94% (EN) / 86% (BG) of the time. Our keyword rules: 28% / 34%. Reworded questions: 86% vs 15–25%. - It cannot fill open values — names, company IDs, free text. It has no primitive that produces one. So it now routes for Gemini 3.5 Flash-Lite: Jev picks the tool, Gemini fills only that tool's parameters. Same day, same 474 questions: parameters right 94.3% / 90.6% vs 83.0% / 77.4% for Gemini alone, with a 4x shorter prompt (3,697 vs 16,150 tokens) and ~0.2 s added median latency. - Weak spot: Bulgarian typed in Latin letters (shliokatitsa) — 71% for Jev vs 94% for Gemini. When Jev is unsure, the question goes to Gemini with the full catalogue. Full results, method and de
@@ -6596,6 +6686,10 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - A trading bot using Jev for buy/sell decisions targeting Kuru MON-USDC on Monad. Defaults to dry-run/mock mode; does not prove or guarantee profitability. Linked projects: • jarrodwatts/jev-trader — One AI trade decision every Monad block. Jev on Kuru MON-USDC. — 840★ · TypeScript (github.com/jarrodwatts/jev-trader)
    - [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader)
    - Source: https://github.com/jarrodwatts/jev-trader (by @jarrodwatts)
+
+30. **$1,250 in extra sales from one Jev-screened email**
+   - I generated INR. 1.25L (~$1250) in extra sales last night by using JEV before sending out an email. Basically API money paid off for the next 1-2 years It worked wonders.
+   - Source: https://x.com/iuditg/status/2101219429233332713 (by @iuditg)
 
 ### Browser (29)
 
@@ -7238,4 +7332,4 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 
 ---
 
-Pack generated 2026-09-19 from the Jev evaluation guide and 1082 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory
+Pack generated 2026-09-19 from the Jev evaluation guide and 1104 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory
