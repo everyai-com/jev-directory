@@ -66,8 +66,9 @@ const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;
 .topnav a:hover{color:var(--text);background:var(--panel2)}
 .topnav a.on{color:var(--accent);background:rgba(245,165,36,.1)}
 .topbar .sp{flex:1}
-.btn{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line2);background:var(--panel);color:var(--text);border-radius:8px;padding:8px 13px;cursor:pointer;text-decoration:none;white-space:nowrap;transition:border-color .15s ease,color .15s ease,background .15s ease}
-.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line2);background:var(--panel);color:var(--text);border-radius:8px;padding:8px 13px;cursor:pointer;text-decoration:none;white-space:nowrap;transition:border-color .15s ease,color .15s ease,background .15s ease,transform .12s ease}
+.btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.btn:active{transform:translateY(1px)}
 .btn.solid{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
 .btn.solid:hover{background:#ffb63d;border-color:#ffb63d;color:var(--accent-ink)}
 .btn.gh{display:inline-flex;align-items:center;gap:7px}
@@ -78,19 +79,19 @@ const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;
 .hero{position:relative;max-width:1180px;margin:0 auto;padding:58px 22px 6px}
 .hero:before{content:"";position:absolute;inset:-140px 0 auto;height:430px;pointer-events:none;background:radial-gradient(560px 250px at 16% 0%,rgba(245,165,36,.14),transparent 70%),radial-gradient(460px 230px at 84% 6%,rgba(92,140,255,.1),transparent 72%)}
 .hero>*{position:relative}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line2);background:rgba(18,20,24,.72);border-radius:999px;padding:6px 14px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line2);background:rgba(18,20,24,.72);border-radius:999px;padding:6px 14px;white-space:nowrap}
 .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(245,165,36,.16)}
-.hero h1{margin:20px 0 0;font-size:clamp(33px,5.1vw,54px);line-height:1.03;letter-spacing:-.028em;font-weight:780}
+.hero h1{margin:20px 0 0;font-size:clamp(33px,5.1vw,54px);line-height:1.03;letter-spacing:-.028em;font-weight:780;text-wrap:balance}
 .hero h1 .amp{color:var(--accent)}
 .hero .lede{margin:16px 0 0;max-width:680px;color:var(--dim);font-size:17.5px;line-height:1.62}
 .hero .lede b{color:var(--text);font-weight:600}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;margin:32px 0 0;background:var(--line);border:1px solid var(--line);border-radius:13px;overflow:hidden}
 .stat{background:var(--panel);padding:16px 18px}
-.stat .n{font-family:var(--mono);font-size:23px;font-weight:700;letter-spacing:-.02em}
+.stat .n{font-family:var(--mono);font-size:23px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .stat .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;color:var(--faint);text-transform:uppercase;margin-top:3px}
 .searchwrap{max-width:1180px;margin:18px auto 0;padding:0 22px}
 .searchbox{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line2);border-radius:10px;padding:0 14px}
-.searchbox:focus-within{border-color:var(--accent)}
+.searchbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(245,165,36,.14)}
 .searchbox svg{flex:none;opacity:.55}
 #q{flex:1;background:none;border:0;outline:0;color:var(--text);font-size:16px;padding:13px 0;font-family:var(--sans)}
 #q::placeholder{color:var(--faint)}
@@ -111,8 +112,8 @@ const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;
 .sub{color:var(--dim);font-size:13.5px;margin:0 0 14px;max-width:640px}
 .sub a{color:var(--accent)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:12px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 16px 13px;transition:border-color .15s ease}
-.card:hover{border-color:var(--line2)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 16px 13px;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.card:hover{border-color:var(--line2);transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.38)}
 .card .k{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
 .card .catname{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
 .card .when{font-family:var(--mono);font-size:11px;color:var(--faint)}
@@ -164,7 +165,7 @@ footer.site .flinks{display:inline-flex;gap:9px;align-items:center}
 footer.site .flinks .sep{color:#3a4049}
 .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(8px);background:var(--accent);color:var(--accent-ink);font-family:var(--mono);font-size:13px;font-weight:700;border-radius:8px;padding:9px 18px;opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease;z-index:50}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-@media (max-width:920px){.main{grid-template-columns:1fr}.side{position:static;max-height:none}.side .cats{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}.cat{border:1px solid var(--line2);border-radius:999px;white-space:nowrap}.cat.on{border-color:var(--accent)}.topbar .meta{display:none}}
+@media (max-width:920px){.main{grid-template-columns:1fr}.side{position:static;max-height:none}.side .cats{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}.cat{border:1px solid var(--line2);border-radius:999px;white-space:nowrap;gap:8px;width:auto;flex:none}.cat.on{border-color:var(--accent)}.topbar .meta{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 .casepage{max-width:760px;margin:0 auto;padding:34px 22px 64px}
 .casepage .back{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none}
@@ -285,6 +286,27 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 @media (max-width:560px){footer.site .fgrid{grid-template-columns:1fr}.connect{margin-top:34px}}
 .passrule{font-family:var(--mono);font-size:11.5px;color:var(--accent);margin:0 0 10px}
 .passrule span{color:var(--faint)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#q:focus-visible{outline:none}
+::selection{background:rgba(245,165,36,.28)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-ink);font-family:var(--mono);font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:0 0 8px 0;z-index:100;text-decoration:none}
+.skip:focus{left:0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,355px);gap:40px;align-items:start;margin-top:20px}
+.hero h1{margin-top:0}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,var(--line2) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:radial-gradient(ellipse 90% 85% at 18% 0%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse 90% 85% at 18% 0%,#000 25%,transparent 72%);pointer-events:none}
+.hero>*{position:relative}
+.proof{font-family:var(--mono);font-size:12px;background:var(--panel);border:1px solid var(--line2);border-radius:12px;overflow:hidden}
+.proof .ph{padding:10px 14px;border-bottom:1px dashed var(--line2);color:var(--faint);font-size:11px;display:flex;justify-content:space-between;gap:8px}
+.proof .ph b{color:var(--dim);font-weight:600}
+.proof .pl{padding:12px 14px;display:flex;flex-direction:column;gap:9px}
+.proof .pr{display:flex;justify-content:space-between;gap:10px;color:var(--dim)}
+.proof .pr .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.proof .pr .v{color:var(--accent);white-space:nowrap}
+.proof .pf{padding:10px 14px;border-top:1px dashed var(--line2);color:var(--faint);font-size:11px}
+.proof .pf b{color:var(--accent);font-weight:600}
+@media (max-width:1020px){.hero-grid{grid-template-columns:1fr;gap:26px}.proof{max-width:560px}}
+@media (max-width:920px){.topbar a[href$="capabilities.md"]{display:none}.topbar .btn.gh span{display:none}.topbar .btn.gh{padding:8px 10px}.topbar .btn{padding:8px 11px}}
+@media (max-width:560px){.eyebrow{font-size:10px;padding:5px 11px;letter-spacing:.05em}.askfab{padding:10px 14px;font-size:12px}.brand i{display:none}.topbar .in{gap:8px;padding:10px 14px}}
 `;
 
 const JS = `import { JEV_DIR } from './data.js';
@@ -466,10 +488,39 @@ document.querySelectorAll('[data-copy]').forEach(function (btn) {
     if (el) copyText(el.textContent, btn.dataset.copyMsg || 'Copied');
   });
 });
-$('statEvals').textContent = JEV_DIR.evals.length;
-$('statBuilds').textContent = JEV_DIR.community.length;
-$('statLinks').textContent = JEV_DIR.linkedProjects;
-$('statCats').textContent = new Set(JEV_DIR.community.map(function (i) { return i.c; })).size;
+function countUp(id, target) {
+  var el = $(id);
+  if (!el) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = target; return; }
+  var t0 = null, dur = 900;
+  function frame(t) {
+    if (!t0) t0 = t;
+    var k = Math.min(1, (t - t0) / dur);
+    k = 1 - Math.pow(1 - k, 3);
+    el.textContent = Math.round(target * k);
+    if (k < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+function renderProof() {
+  var host = $('proof');
+  if (!host || !JEV_DIR.evals.length) return;
+  var rows = JEV_DIR.evals.slice(0, 3).map(function (e) {
+    var q = (e.r && e.r[0]) || [];
+    var val = e.x ? e.x[q[0]] : null;
+    var disp = val === true ? 'true' : (val === false ? 'false' : String(val));
+    var title = e.t.length > 32 ? e.t.slice(0, 32) + '...' : e.t;
+    return '<div class="pr"><span class="t">' + esc(title) + '</span><span class="v">' + esc(String(q[0] || '?')) + ' → ' + esc(disp) + ' ✓</span></div>';
+  }).join('');
+  host.innerHTML = '<div class="ph"><b>experimental_evaluate</b><span>typesafe-ai/jev</span></div>' +
+    '<div class="pl">' + rows + '</div>' +
+    '<div class="pf">manifest <b>' + esc(JEV_DIR.rev.slice(0, 8)) + '</b> · ' + JEV_DIR.evals.length + ' evals · exact-match</div>';
+}
+countUp('statEvals', JEV_DIR.evals.length);
+countUp('statBuilds', JEV_DIR.community.length);
+countUp('statLinks', JEV_DIR.linkedProjects);
+countUp('statCats', new Set(JEV_DIR.community.map(function (i) { return i.c; })).size);
+renderProof();
 buildCats(); render();
 `;
 
@@ -533,16 +584,27 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText, man
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jev Directory — ${evalCount} evals, ${buildCount} community builds</title>
 <meta name="description" content="Curated Jev use cases: runnable judge-model evals plus real community builds, each linked to its project and source post.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jev Directory — everything Jev can do, with receipts">
+<meta property="og:description" content="Curated Jev use cases: runnable judge-model evals plus real community builds, each linked to its project and source post.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="./directory.css">
 </head>
 <body>
 ${topbar('', 'home')}
+<a class="skip" href="#builds">Skip to builds</a>
 <div class="hero">
 <div class="eyebrow"><span class="dot"></span>Jev on typesafe-ai/jev · updated ${generated}</div>
+<div class="hero-grid">
+<div class="hero-main">
 <h1>Everything Jev <span class="amp">can do</span>,<br>with receipts.</h1>
 <p class="lede"><b>${evalCount} runnable judge-model evals</b> and <b>${buildCount} real community builds</b> — every one linked to its project and the post it came from. Search it, copy a brief, or point your agent straight at the MCP endpoint.</p>
 <div class="herocta"><a class="btn solid" href="#connect">Connect your agent</a><a class="btn" href="${SUBMIT_URL}" target="_blank" rel="noopener">Submit your build</a><a class="btn" href="./what-is-jev.html">What is Jev?</a></div>
 <div class="herocta"><span class="hint">New to all this? <a href="./jev-like-im-10.html">Jev, explained like you're 10</a> takes two minutes.</span></div>
+</div>
+<aside class="proof" id="proof" aria-label="Sample eval verdicts"></aside>
+</div>
 <div class="stats">
 <div class="stat"><div class="n" id="statEvals">${evalCount}</div><div class="l">runnable evals</div></div>
 <div class="stat"><div class="n" id="statBuilds">${buildCount}</div><div class="l">community builds</div></div>
@@ -607,6 +669,7 @@ function guideShell(title, desc, bodyHtml, generated, current) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escHtml(title)} — Jev Directory</title>
 <meta name="description" content="${escHtml(desc)}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="./directory.css">
 </head>
 <body>
@@ -811,6 +874,7 @@ function casePage(item, entry, generated) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escHtml(item.title)} — Jev Directory</title>
 <meta name="description" content="${escHtml(desc.replace(/\s+/g, ' ').trim().slice(0, 160))}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../directory.css">
 </head>
 <body>

@@ -1,6 +1,6 @@
 # Jev Capability Pack
 
-This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **726 real community builds** that use Jev in production, with project links.
+This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **1082 real community builds** that use Jev in production, with project links.
 
 | | |
 | --- | --- |
@@ -10,7 +10,7 @@ This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge
 | Auth | `AI_GATEWAY_API_KEY` (vck_…) in the environment |
 | Evals | 50 runnable |
 | Eval manifest | rev `6d1f82b05fbea65e` · exact-match per question, every question must match |
-| Community builds | 726 with links |
+| Community builds | 1082 with links |
 | This file | https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md |
 | Directory + repo | https://github.com/everyai-com/jev-directory |
 
@@ -2058,7 +2058,7 @@ console.log(JSON.stringify(result, null, 2));
 
 ---
 
-## Community builds (726)
+## Community builds (1082)
 
 Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. Every entry links its project and its source post.
 
@@ -2913,6 +2913,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 170. **Browser use speeds up so much with this**
    - Browser use speeds up so much with this https://x.com/gregpr07/status/2100411066966749359?s=46 Linked projects: • Post by @gregpr07 — Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open s (x.com/gregpr07/status/2100411066966749359) • Post by @gregpr07 — Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open s (twitter.com/gregpr07/status/2100411066966749359) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549989924751671316
    - [Post by @gregpr07](https://x.com/gregpr07/status/2100411066966749359?s=46)
+   - [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast)
    - Source: https://x.com/gregpr07/status/2100411066966749359?s=46 (by Phat T Pham)
 
 171. **JEV PLAYS POKEMON**
@@ -3015,6 +3016,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 191. **I rebuilt tesla auto pilot using Jev!**
    - I rebuilt tesla auto pilot using Jev! https://x.com/jpschroeder/status/2100347770867458384?s=20 Linked projects: • Post by @jpschroeder — I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock. (x.com/jpschroeder/status/2100347770867458384) • Post by @jpschroeder — I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock. (twitter.com/jpschroeder/status/2100347770867458384) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549906718442524735
    - [Post by @jpschroeder](https://x.com/jpschroeder/status/2100347770867458384?s=20)
+   - [jevpilot.standardagents.ai](https://jevpilot.standardagents.ai)
    - Source: https://x.com/jpschroeder/status/2100347770867458384?s=20 (by Justin Schroeder)
 
 192. **- jev is 5x faster and 1000x cheaper than astra at playing 2048!**
@@ -3329,6 +3331,605 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [Post by @TPateeq](https://x.com/TPateeq/status/2101062313516347491)
    - [TPAteeq/tocsin](https://github.com/TPAteeq/tocsin)
    - Source: https://x.com/TPateeq/status/2101062313516347491 (by @TPateeq)
+
+### Tools (149)
+
+1. **Model router that picks the right LLM**
+   - Jev scores which model fits the request, then the call is forwarded. Routing without a chatty middleman — just a typed pick.
+   - Source: https://x.com/ephraimduncan/status/2100454070536351824 (by @ephraimduncan)
+
+2. **Codebase complexity classifier**
+   - Score whether agent-written code is overengineered. A System One check on the mess LLMs leave behind.
+   - Source: https://x.com/ryanvogel/status/2100068006592123055 (by @ryanvogel)
+
+3. **Vendor search by requirements**
+   - Vendor search by requirements: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/virtual_rf/status/2100996527925694594 (by @virtual_rf)
+
+4. **Document jargon detector**
+   - Document jargon detector: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/v_sattinger/status/2100888216463122453 (by @v_sattinger)
+
+5. **Sentence-by-sentence AI text detection**
+   - Developer-facing demo of Sentence-by-sentence AI text detection. Small judgments that used to need an LLM call.
+   - Source: https://x.com/ahmedgagan11/status/2100955502075388250 (by @ahmedgagan11)
+
+6. **Bottally SEO and AEO audits**
+   - Bottally SEO and AEO audits — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/im_payam/status/2101024843193835617 (by @im_payam)
+
+7. **Semantic circuit breaker for agents**
+   - Developer-facing demo of Semantic circuit breaker for agents. Small judgments that used to need an LLM call.
+   - Source: https://x.com/ashutoshftw/status/2100852540900520097 (by @ashutoshftw)
+
+8. **Jev-lint finds wiki contradictions**
+   - Jev-lint finds wiki contradictions: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/vayungodara/status/2100839812701868235 (by @vayungodara)
+
+9. **Instant variable name generation**
+   - Instant variable name generation — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/eltokh7/status/2101016673109016622 (by @eltokh7)
+
+10. **Supabase RLS linter**
+   - Supabase RLS linter: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/softwarecuddler/status/2100981707105284255 (by @softwarecuddler)
+
+11. **Reward-hacking guardrails for agents**
+   - Reward-hacking guardrails for agents: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/moltar81435/status/2101026295786451311 (by @moltar81435)
+
+12. **Finding viral content in 11 million videos**
+   - Finding viral content in 11 million videos — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/densancar/status/2101030551280910636 (by @densancar)
+
+13. **Intelligent ordering for code diffs**
+   - Developer-facing demo of Intelligent ordering for code diffs. Small judgments that used to need an LLM call.
+   - Source: https://x.com/purefunctor/status/2100796490516169184 (by @purefunctor)
+
+14. **Smart calculator notebook**
+   - Smart calculator notebook: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/thekitze/status/2100873520951808403 (by @thekitze)
+
+15. **Skill Router for Claude Code**
+   - Skill Router for Claude Code — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/lomeshdutta/status/2100833655518367871 (by @lomeshdutta)
+
+16. **TC39 Atlas**
+   - Developer-facing demo of TC39 Atlas. Small judgments that used to need an LLM call (notable figure from the build: 324 proposals).
+   - Source: https://x.com/GNUmanth/status/2100609220555215208 (by @GNUmanth)
+
+17. **Ranking relevant Reddit discussions**
+   - Ranking relevant Reddit discussions: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/johancutych/status/2100890907151143266 (by @johancutych)
+
+18. **Instant calorie tracking**
+   - Developer-facing demo of Instant calorie tracking. Small judgments that used to need an LLM call.
+   - Source: https://x.com/thekitze/status/2100857642566758849 (by @thekitze)
+
+19. **LinkedIn outreach analysis**
+   - Developer-facing demo of LinkedIn outreach analysis. Small judgments that used to need an LLM call.
+   - Source: https://x.com/JamesPardoe/status/2100921264621945140 (by @JamesPardoe)
+
+20. **Plain-English code linting**
+   - Developer-facing demo of Plain-English code linting. Small judgments that used to need an LLM call.
+   - Source: https://x.com/ahmedgagan11/status/2100925308975161549 (by @ahmedgagan11)
+
+21. **Worth Replying finds relevant X discussions**
+   - Developer-facing demo of Worth Replying finds relevant X discussions. Small judgments that used to need an LLM call.
+   - Source: https://x.com/AIsaOneHQ/status/2100894473085489510 (by @AIsaOneHQ)
+
+22. **Quality checks for physical-AI action labels**
+   - Quality checks for physical-AI action labels — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/the_cyw/status/2100807905859739779 (by @the_cyw)
+
+23. **Plain-English logic interpreter**
+   - Developer-facing demo of Plain-English logic interpreter. Small judgments that used to need an LLM call.
+   - Source: https://x.com/narphorium/status/2100985027093749764 (by @narphorium)
+
+24. **Jev inside a security pipeline**
+   - Jev inside a security pipeline — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/grichadev/status/2100437998571860087 (by @grichadev)
+
+25. **AI-writing detector**
+   - AI-writing detector — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/redp314/status/2101035086418202861 (by @redp314)
+
+26. **News matching for brands**
+   - Developer-facing demo of News matching for brands. Small judgments that used to need an LLM call.
+   - Source: https://x.com/elvissun/status/2100951347080421409 (by @elvissun)
+
+27. **Predictive app launcher**
+   - Predictive app launcher: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/hityyhz/status/2101017732913529326 (by @hityyhz)
+
+28. **Job and candidate matching**
+   - Job and candidate matching — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/sarvagya_kul/status/2100980770206879849 (by @sarvagya_kul)
+
+29. **NoFlow intent-driven buttons**
+   - NoFlow intent-driven buttons — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/casungo/status/2101037798614499387 (by @casungo)
+
+30. **Unsaidbrief**
+   - Unsaidbrief — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/Divyanshueth/status/2100997199102677033 (by @Divyanshueth)
+
+31. **Abide coding-agent rules**
+   - Abide coding-agent rules: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/OhansEmmanuel/status/2101034822760288452 (by @OhansEmmanuel)
+
+32. **Bannerbear instant field mapping**
+   - Bannerbear instant field mapping — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/yongfook/status/2100801037192024478 (by @yongfook)
+
+33. **Automatically organize downloaded files**
+   - Developer-facing demo of Automatically organize downloaded files. Small judgments that used to need an LLM call.
+   - Source: https://x.com/marcelpociot/status/2100906882365788167 (by @marcelpociot)
+
+34. **Real-time journaling**
+   - Real-time journaling — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/adammiribyan/status/2100988421426839942 (by @adammiribyan)
+
+35. **YouTube research at scale**
+   - Developer-facing demo of YouTube research at scale. Small judgments that used to need an LLM call.
+   - Source: https://x.com/mariojankovic/status/2100996843131863071 (by @mariojankovic)
+
+36. **Search a physical library**
+   - Developer-facing demo of Search a physical library. Small judgments that used to need an LLM call.
+   - Source: https://x.com/s3ththompson/status/2100975114753892550 (by @s3ththompson)
+
+37. **Jev controls Tonk**
+   - Jev controls Tonk: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/gavinowensnet/status/2100972896931713489 (by @gavinowensnet)
+
+38. **Voice commands for Autumn billing**
+   - Voice commands for Autumn billing — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/charlielamb/status/2100946207530955145 (by @charlielamb)
+
+39. **Session replay to bug fixes**
+   - Session replay to bug fixes: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/tarasshyn/status/2101012033340571952 (by @tarasshyn)
+
+40. **Medusa documentation recommendations**
+   - Medusa documentation recommendations — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/_shahednasser/status/2100924568013615354 (by @_shahednasser)
+
+41. **Jev compaction for OMP**
+   - Jev compaction for OMP: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/jerry543/status/2100987079488409741 (by @jerry543)
+
+42. **Find relevant support tickets**
+   - Find relevant support tickets — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/gorillasu/status/2100962570052030550 (by @gorillasu)
+
+43. **SuperQode decision harness**
+   - SuperQode decision harness: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/Shashikant86/status/2100951170936086983 (by @Shashikant86)
+
+44. **Instant Clay workflows**
+   - Instant Clay workflows: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/ENowoslawski/status/2100999124099195377 (by @ENowoslawski)
+
+45. **YouWare résumé screener**
+   - Developer-facing demo of YouWare résumé screener. Small judgments that used to need an LLM call.
+   - Source: https://x.com/YouWareAI/status/2100984559215247814 (by @YouWareAI)
+
+46. **Shopping-agent safety check**
+   - Shopping-agent safety check — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/godlovesu_n/status/2100972334182219919 (by @godlovesu_n)
+
+47. **Nanocode with selective memory compaction**
+   - Nanocode with selective memory compaction — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/kylejeong/status/2100827289349132657 (by @kylejeong)
+
+48. **Judgment cache vs semantic cache**
+   - Developer-facing demo of Judgment cache vs semantic cache. Small judgments that used to need an LLM call.
+   - Source: https://x.com/BukunmiOA/status/2100879606924345747 (by @BukunmiOA)
+
+49. **RADAR ranks relevant developer resources**
+   - Developer-facing demo of RADAR ranks relevant developer resources. Small judgments that used to need an LLM call.
+   - Source: https://x.com/tedbuildsapps/status/2100852246778933693 (by @tedbuildsapps)
+
+50. **Filling messy PDF forms**
+   - Developer-facing demo of Filling messy PDF forms. Small judgments that used to need an LLM call.
+   - Source: https://x.com/bendersej/status/2100960073853935630 (by @bendersej)
+
+51. **Gmail search by intent**
+   - Gmail search by intent — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/dabit3/status/2100960281769738433 (by @dabit3)
+
+52. **Outreach intent analysis**
+   - Outreach intent analysis — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/miuoshekb/status/2101001400536715492 (by @miuoshekb)
+
+53. **Real-time Twitch chat classification**
+   - Real-time Twitch chat classification: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/kizuflux/status/2100970669987266799 (by @kizuflux)
+
+54. **Jevcal confidence-threshold calibration**
+   - Jevcal confidence-threshold calibration: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/thenightshipper/status/2100850610962919551 (by @thenightshipper)
+
+55. **Predicting the next shell command**
+   - Developer-facing demo of Predicting the next shell command. Small judgments that used to need an LLM call.
+   - Source: https://x.com/thorstenball/status/2100858434904109099 (by @thorstenball)
+
+56. **Autocorrect experiment**
+   - Autocorrect experiment: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/loch_duarte/status/2100962088491348443 (by @loch_duarte)
+
+57. **SuperX post scoring**
+   - Developer-facing demo of SuperX post scoring. Small judgments that used to need an LLM call.
+   - Source: https://x.com/robj3d3/status/2100722975645598191 (by @robj3d3)
+
+58. **News classification and geolocation**
+   - News classification and geolocation — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/cmdrvl/status/2100937318760599594 (by @cmdrvl)
+
+59. **Recipe scoring on five dimensions**
+   - Developer-facing demo of Recipe scoring on five dimensions. Small judgments that used to need an LLM call.
+   - Source: https://x.com/sashatwitts/status/2101033458596188389 (by @sashatwitts)
+
+60. **Tax document classification**
+   - Tax document classification: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/nedwize/status/2100973868324417852 (by @nedwize)
+
+61. **Score 3,000 kids’ snacks in seconds**
+   - Score 3,000 kids’ snacks in seconds: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/nikunj/status/2101006585481073093 (by @nikunj)
+
+62. **Decision layer for memory**
+   - Decision layer for memory — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/DekanBro/status/2101034455515459900 (by @DekanBro)
+
+63. **Preflight personality simulation**
+   - Developer-facing demo of Preflight personality simulation. Small judgments that used to need an LLM call.
+   - Source: https://x.com/Hindrixbrown/status/2101031538959810731 (by @Hindrixbrown)
+
+64. **Jev MCP for agents**
+   - Proof-of-concept MCP: verify claims against evidence, screen content before it enters context, and rank candidates by meaning inside your harness.
+   - [jkudish/jev-mcp](https://github.com/jkudish/jev-mcp)
+   - Source: https://x.com/jkudish/status/2100413576284712999 (by @jkudish)
+
+65. **Email classification and routing**
+   - Email classification and routing: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/rahulstheory/status/2100959056483504512 (by @rahulstheory)
+
+66. **Spreadsheets that format by meaning**
+   - Spreadsheets that format by meaning: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose (notable figure from the build: 7).
+   - Source: https://x.com/GuangyuRobert/status/2100601420395282695 (by @GuangyuRobert)
+
+67. **Jevsume resume feedback**
+   - Developer-facing demo of Jevsume resume feedback. Small judgments that used to need an LLM call.
+   - Source: https://x.com/unown1ne/status/2100817301348262301 (by @unown1ne)
+
+68. **TV recommendations by mood**
+   - TV recommendations by mood — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/bilal_harouchi/status/2100979294306488814 (by @bilal_harouchi)
+
+69. **Easy-Jev live classifier playground**
+   - Tweak inputs and watch classifications update live. A hands-on sandbox for System One routing without writing an agent harness.
+   - Source: https://x.com/rory_builds/status/2100606378184171682 (by @rory_builds)
+
+70. **Job crawler that matches your profile**
+   - Job crawler that matches your profile: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/hqmank/status/2100933183931900346 (by @hqmank)
+
+71. **Jev query planner**
+   - Jev query planner: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/mmalisper/status/2101001041903009987 (by @mmalisper)
+
+72. **Parallel adversarial browser testing**
+   - Parallel adversarial browser testing: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/rafalwilinski/status/2100882207879434359 (by @rafalwilinski)
+
+73. **Video hook scoring**
+   - Video hook scoring: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/joonahn_ai/status/2100960386472144908 (by @joonahn_ai)
+
+74. **Fourteen checks for every pull request**
+   - Developer-facing demo of Fourteen checks for every pull request. Small judgments that used to need an LLM call.
+   - Source: https://x.com/redp314/status/2100585126652481915 (by @redp314)
+
+75. **Jev-review feedback for coding agents**
+   - Jev-review feedback for coding agents — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/niazmorshed_/status/2100465662867218857 (by @niazmorshed_)
+
+76. **Cascade Search typed query filters**
+   - Developer-facing demo of Cascade Search typed query filters. Small judgments that used to need an LLM call.
+   - Source: https://x.com/zaidmukaddam/status/2100910232255992032 (by @zaidmukaddam)
+
+77. **AI-writing slop detector**
+   - AI-writing slop detector: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/chaseleantj/status/2101039024118829261 (by @chaseleantj)
+
+78. **Inbox classifier for 1,500 emails**
+   - Inbox classifier for 1,500 emails — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/ryanvogel/status/2100042788851101842 (by @ryanvogel)
+
+79. **Corent model routing**
+   - Developer-facing demo of Corent model routing. Small judgments that used to need an LLM call.
+   - Source: https://x.com/corentAI/status/2100965880242770423 (by @corentAI)
+
+80. **Tenet review gates for agent-written code**
+   - Tenet review gates for agent-written code — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/timche_/status/2100893095147565523 (by @timche_)
+
+81. **MakerMap**
+   - Developer-facing demo of MakerMap. Small judgments that used to need an LLM call.
+   - Source: https://x.com/verbove/status/2100990085340496185 (by @verbove)
+
+82. **Jev Search**
+   - Jev Search — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/fatwang2ai/status/2100653998378516518 (by @fatwang2ai)
+
+83. **Mappity**
+   - Mappity: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/francip/status/2101013116125594026 (by @francip)
+
+84. **Claude Code context compaction**
+   - Claude Code context compaction: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/0x_kaize/status/2100913118528393596 (by @0x_kaize)
+
+85. **Sniff Test**
+   - Developer-facing demo of Sniff Test. Small judgments that used to need an LLM call.
+   - Source: https://x.com/DanRWilloughby/status/2100963528261751073 (by @DanRWilloughby)
+
+86. **Azdaja**
+   - Azdaja: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/_kubet/status/2100978792596492604 (by @_kubet)
+
+87. **Voice browser, memory, YouTube predictor**
+   - Full build tutorial: voice controlled browser, AI memory decisions, and a YouTube predictor. Three concrete Jev apps from API setup to demo.
+   - Source: https://x.com/moritzkremb/status/2100715237267660873 (by @moritzkremb)
+
+88. **Npm package gate for coding agents**
+   - Npm package gate for coding agents — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/haatifff/status/2100898122142724421 (by @haatifff)
+
+89. **Youform voice builder**
+   - Youform voice builder — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/themkmaker/status/2100961111319429403 (by @themkmaker)
+
+90. **JevQL**
+   - Developer-facing demo of JevQL. Small judgments that used to need an LLM call.
+   - Source: https://x.com/kylemclaren/status/2100953409973108759 (by @kylemclaren)
+
+91. **jev-codes**
+   - jev-codes — criteria in, structured call out, ready for a CLI or agent harness (notable figure from the build: 1 s).
+   - Source: https://x.com/kushwho11146/status/2101103318386758011 (by @kushwho11146)
+
+92. **Backlink outreach scoring**
+   - Developer-facing demo of Backlink outreach scoring. Small judgments that used to need an LLM call.
+   - Source: https://x.com/nicolasmore_/status/2101035899240767542 (by @nicolasmore_)
+
+93. **Fast pull-request walkthroughs**
+   - Developer-facing demo of Fast pull-request walkthroughs. Small judgments that used to need an LLM call.
+   - Source: https://x.com/marvelousmudd/status/2100908613250490792 (by @marvelousmudd)
+
+94. **Classifying 500 emails in seconds**
+   - Classifying 500 emails in seconds: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/rileybrown/status/2100404532119269426 (by @rileybrown)
+
+95. **Job-description and résumé matching**
+   - Developer-facing demo of Job-description and résumé matching. Small judgments that used to need an LLM call.
+   - Source: https://x.com/husain_j53/status/2101007440393408702 (by @husain_j53)
+
+96. **Jev as a QA tester**
+   - Developer-facing demo of Jev as a QA tester. Small judgments that used to need an LLM call.
+   - Source: https://x.com/krzysztof_moch/status/2100513641556549700 (by @krzysztof_moch)
+
+97. **YouTube content map**
+   - YouTube content map: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/kenonews/status/2101025013243555971 (by @kenonews)
+
+98. **Prompt difficulty classifier**
+   - Prompt difficulty classifier: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/k_grajeda/status/2101021361351131464 (by @k_grajeda)
+
+99. **Yes/no/score from the CLI**
+   - Yes/no/score from the CLI: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/ctatedev/status/2100584917092409479 (by @ctatedev)
+
+100. **Intelligent autofill buttons**
+   - Intelligent autofill buttons: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/ctnicholasdev/status/2100928133608472817 (by @ctnicholasdev)
+
+101. **Measuring progress in agent traces**
+   - Measuring progress in agent traces — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/0xkaushik_k/status/2100928490367230201 (by @0xkaushik_k)
+
+102. **Ad account X-ray**
+   - Ad account X-ray — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/vladdubchak_x/status/2100952403121967298 (by @vladdubchak_x)
+
+103. **JevForm — branching questions on the fly**
+   - Forms that pick the next field from your answers instead of brittle if/then trees. Built with json-render + Jev.
+   - Source: https://x.com/tamirspiritt/status/2101079101997982037 (by @tamirspiritt)
+
+104. **Jev Reviewer**
+   - Developer-facing demo of Jev Reviewer. Small judgments that used to need an LLM call.
+   - Source: https://x.com/ASofiMahmudi/status/2100985031703269425 (by @ASofiMahmudi)
+
+105. **Chat moderation before send**
+   - Developer-facing demo of Chat moderation before send. Small judgments that used to need an LLM call.
+   - Source: https://x.com/stoufax/status/2100956659128361097 (by @stoufax)
+
+106. **Email fraud detection with Jev and Kimi**
+   - Email fraud detection with Jev and Kimi — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/nutlope/status/2100614659690713543 (by @nutlope)
+
+107. **Silent code-review gate**
+   - Silent code-review gate — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/Kunal_Jain9/status/2101027586587738151 (by @Kunal_Jain9)
+
+108. **Instant team scheduling with Cal.com**
+   - Instant team scheduling with Cal.com: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/peer_rich/status/2100902559313502602 (by @peer_rich)
+
+109. **Page-by-page OCR router**
+   - Developer-facing demo of Page-by-page OCR router. Small judgments that used to need an LLM call.
+   - Source: https://x.com/MisbahSy/status/2100979972194369925 (by @MisbahSy)
+
+110. **Personal email client with smart filters**
+   - Developer-facing demo of Personal email client with smart filters. Small judgments that used to need an LLM call.
+   - Source: https://x.com/nickfthedev/status/2101037081719902327 (by @nickfthedev)
+
+111. **EasyFinder intent-based product filters**
+   - EasyFinder intent-based product filters — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/rowansail/status/2100922845345783928 (by @rowansail)
+
+112. **OCR-powered image classification**
+   - OCR-powered image classification — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/fayazara/status/2100953838891192789 (by @fayazara)
+
+113. **Typeahead UI**
+   - Typeahead UI: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose (notable figure from the build: 24).
+   - Source: https://x.com/mikegee/status/2101098282655338995 (by @mikegee)
+
+114. **Coaching and writing checks**
+   - Coaching and writing checks: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/krispuckett/status/2101006617223508022 (by @krispuckett)
+
+115. **pkg-gate**
+   - pkg-gate — criteria in, structured call out, ready for a CLI or agent harness (notable figure from the build: 100ms).
+   - Source: https://x.com/GNUmanth/status/2100405456187564201 (by @GNUmanth)
+
+116. **Research before outreach**
+   - Developer-facing demo of Research before outreach. Small judgments that used to need an LLM call.
+   - Source: https://x.com/AngelPadillaRam/status/2100963480027480457 (by @AngelPadillaRam)
+
+117. **Native Rust network-traffic monitoring**
+   - Native Rust network-traffic monitoring — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/ppweni/status/2100891358223388966 (by @ppweni)
+
+118. **Cambium Jev integration**
+   - Cambium Jev integration: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/SteveKeider/status/2101013714673480147 (by @SteveKeider)
+
+119. **Paper Breakdown research recommendations**
+   - Paper Breakdown research recommendations: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/neural_avb/status/2100881974780993668 (by @neural_avb)
+
+120. **Internal-link SEO audit**
+   - Internal-link SEO audit — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/borjafat/status/2101018783976722479 (by @borjafat)
+
+121. **AIBackends Jev API integration**
+   - Developer-facing demo of AIBackends Jev API integration. Small judgments that used to need an LLM call.
+   - Source: https://x.com/melvindvivas/status/2100848362648195307 (by @melvindvivas)
+
+122. **Tool-prune**
+   - Tool-prune: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/GNUmanth/status/2100996500226756988 (by @GNUmanth)
+
+123. **Draft quality gate**
+   - Developer-facing demo of Draft quality gate. Small judgments that used to need an LLM call.
+   - Source: https://x.com/Mnilax/status/2101015355133227348 (by @Mnilax)
+
+124. **Scoring a frontier-AI essay**
+   - Scoring a frontier-AI essay: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/nicdunz/status/2101029238883164288 (by @nicdunz)
+
+125. **Healthcare intake workflow prototype**
+   - Developer-facing demo of Healthcare intake workflow prototype. Small judgments that used to need an LLM call.
+   - Source: https://x.com/Rmzlb/status/2100928340236366217 (by @Rmzlb)
+
+126. **LinkedIn post scorer**
+   - Developer-facing demo of LinkedIn post scorer. Small judgments that used to need an LLM call.
+   - Source: https://x.com/robvjourney/status/2101006572562317356 (by @robvjourney)
+
+127. **Maxfusion competitor-ad research**
+   - Maxfusion competitor-ad research: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/mightyking/status/2100939189869002819 (by @mightyking)
+
+128. **traffic-guard**
+   - traffic-guard — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/GNUmanth/status/2100963107552280754 (by @GNUmanth)
+
+129. **Peakflo invoice coding**
+   - Peakflo invoice coding — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/its_d_i_m_a/status/2100961912314007878 (by @its_d_i_m_a)
+
+130. **Incident triage in Box**
+   - Developer-facing demo of Incident triage in Box. Small judgments that used to need an LLM call.
+   - Source: https://x.com/Box/status/2100993278955188320 (by @Box)
+
+131. **Intent-aware search in Replicas**
+   - Intent-aware search in Replicas: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/SaaiArora/status/2100807349363741132 (by @SaaiArora)
+
+132. **Just-in-time rules for Claude Code**
+   - Just-in-time rules for Claude Code: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/EliaAlberti/status/2100941050978164894 (by @EliaAlberti)
+
+133. **Sort files by their contents**
+   - Developer-facing demo of Sort files by their contents. Small judgments that used to need an LLM call.
+   - Source: https://x.com/mikemenard_com/status/2100984306583703858 (by @mikemenard_com)
+
+134. **Sensitive-data redaction**
+   - Sensitive-data redaction: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/v_sattinger/status/2100945255608586312 (by @v_sattinger)
+
+135. **Magic Jev Ball**
+   - Developer-facing demo of Magic Jev Ball. Small judgments that used to need an LLM call (notable figure from the build: 200 ms).
+   - Source: https://x.com/acharyaagamya/status/2101129105676861621 (by @acharyaagamya)
+
+136. **One box for chat and search**
+   - Developer-facing demo of One box for chat and search. Small judgments that used to need an LLM call.
+   - Source: https://x.com/ThinkingMatthew/status/2100969119772258623 (by @ThinkingMatthew)
+
+137. **Tester Army E2E**
+   - Tester Army E2E — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/o_kwasniewski/status/2100966838905585687 (by @o_kwasniewski)
+
+138. **Cloud failover with Cutover**
+   - Cloud failover with Cutover — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/kynichol/status/2100945511003885815 (by @kynichol)
+
+139. **Repository issue detection**
+   - Developer-facing demo of Repository issue detection. Small judgments that used to need an LLM call.
+   - Source: https://x.com/imgarrettpost/status/2100946464818012265 (by @imgarrettpost)
+
+140. **Predictive spreadsheet columns**
+   - Developer-facing demo of Predictive spreadsheet columns. Small judgments that used to need an LLM call.
+   - Source: https://x.com/dabit3/status/2100780008193020049 (by @dabit3)
+
+141. **Find in page by meaning**
+   - Find in page by meaning: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose (notable figure from the build: 12).
+   - Source: https://x.com/jiayao/status/2101108866713063804 (by @jiayao)
+
+142. **Sorting 63,000 emails**
+   - Sorting 63,000 emails: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/NathanWilbanks_/status/2101035975694483914 (by @NathanWilbanks_)
+
+143. **Android end-to-end testing**
+   - Android end-to-end testing — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/kevinkern/status/2101032931456168098 (by @kevinkern)
+
+144. **Inline Manual contextual help**
+   - Inline Manual contextual help — criteria in, structured call out, ready for a CLI or agent harness.
+   - Source: https://x.com/sotak/status/2100927660029247538 (by @sotak)
+
+145. **Touchpress mobile end-to-end testing**
+   - Touchpress mobile end-to-end testing: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/wobsoriano/status/2100813615410634997 (by @wobsoriano)
+
+146. **Jargon pigeon that dumps on buzzwords**
+   - Jev lives inside a pigeon mascot: it sniffs corporate jargon in your prose and… deposits feedback. Weirdly effective writing critique.
+   - Source: https://x.com/prkeshari/status/2101048015720951975 (by @prkeshari)
+
+147. **Instant tool-permission gates**
+   - Agents propose tool calls; Jev decides allow or deny in a snap. Tiny demo of policy decisions that do not need an essay.
+   - Source: https://x.com/montonenico/status/2100770687254499572 (by @montonenico)
+
+148. **Contextual clipboard quick actions**
+   - Contextual clipboard quick actions: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.
+   - Source: https://x.com/marcelpociot/status/2100907261593829675 (by @marcelpociot)
+
+149. **Effect service for Jev decisions**
+   - A simple Effect service wrapping Jev for effect agent stacks. Typed decisions drop into Effect pipelines without a chatty LLM middleman.
+   - Source: https://x.com/danieljvdm/status/2100378760973586869 (by @danieljvdm)
 
 ### Integrations (121)
 
@@ -4402,6 +5003,643 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [jaredpalmer/kev](https://github.com/jaredpalmer/kev)
    - Source: https://x.com/jaredpalmer/status/2101028325472841920 (by @jaredpalmer)
 
+### Agents (78)
+
+1. **Live slide decisions while speaking**
+   - Jev picks which slide to pull up in realtime as the speaker talks. Speed and cost unlock presentation loops that felt impossible before.
+   - Source: https://x.com/zain_hoda/status/2100720719470494126 (by @zain_hoda)
+
+2. **On-chain trader every Monad block**
+   - Buy or sell from a live price feed, then place real orders on Kuru each ~300ms block. Viral proof that decision models can drive trading loops.
+   - [jev-trader.vercel.app](https://jev-trader.vercel.app/)
+   - Source: https://x.com/jarrodwatts/status/2100356151468585346 (by @jarrodwatts)
+
+3. **Ask Jev — it judges, never answers**
+   - Type a question; Jev returns a verdict in ~100ms — yes, no, or it depends — not a chat reply. Racing toward a million judgments on Convex.
+   - [askjev.ai](https://www.askjev.ai/)
+   - Source: https://x.com/waynesutton/status/2100487878992388279 (by @waynesutton)
+
+4. **Ego Lite shopping decisions**
+   - Ego Lite shopping decisions. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/ego_agent/status/2100970015977804008 (by @ego_agent)
+
+5. **Voice-controlled Mac computer use**
+   - Voice-controlled Mac computer use. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/instantricecook/status/2100814590300889426 (by @instantricecook)
+
+6. **Browser-agent stress test**
+   - Browser-agent stress test. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/SSHCodes/status/2101026313871970721 (by @SSHCodes)
+
+7. **Jev vs Everyone**
+   - Autonomy demo — Jev vs Everyone turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/YGaitsgory/status/2100931274311434442 (by @YGaitsgory)
+
+8. **Interactive Jev playground on Val Town**
+   - Interactive Jev playground on Val Town. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/stevekrouse/status/2100287368221659289 (by @stevekrouse)
+
+9. **Predicting the next digits of pi**
+   - Predicting the next digits of pi. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/goulinkh/status/2100943993731215722 (by @goulinkh)
+
+10. **Live market-news research desk**
+   - Autonomy demo — Live market-news research desk turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/0xnairb/status/2100897652342988901 (by @0xnairb)
+
+11. **Flue agent router with Jev**
+   - Jev routes inside a Flue agent through Cloudflare AI Gateway. Open source demo of decision routing without chat generation.
+   - [matthewp/flue-jev-demo](https://github.com/matthewp/flue-jev-demo)
+   - Source: https://x.com/matthewcp/status/2101057280653574300 (by @matthewcp)
+
+12. **Danish stock-market backtest**
+   - Danish stock-market backtest. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/tommy_jepsen/status/2100939646653903063 (by @tommy_jepsen)
+
+13. **Robot arm picks up a ball**
+   - Robot arm picks up a ball: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/DaniiarAbdiev/status/2100851116498186415 (by @DaniiarAbdiev)
+
+14. **Live Bitcoin headline classification**
+   - Autonomy demo — Live Bitcoin headline classification turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/ayoubships/status/2101032994374906055 (by @ayoubships)
+
+15. **Jev tries drawing on a pixel canvas**
+   - Autonomy demo — Jev tries drawing on a pixel canvas turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/yoheinakajima/status/2100939102455751049 (by @yoheinakajima)
+
+16. **Jevinik**
+   - Autonomy demo — Jevinik turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/unicodeveloper/status/2100965455506628834 (by @unicodeveloper)
+
+17. **Driving decision simulator**
+   - Driving decision simulator: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/cipherwrk/status/2100965547454374316 (by @cipherwrk)
+
+18. **Robot-arm decisions**
+   - Autonomy demo — Robot-arm decisions turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/ArpanTripathi20/status/2101011926301991070 (by @ArpanTripathi20)
+
+19. **MuJoCo robot-arm control**
+   - Autonomy demo — MuJoCo robot-arm control turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/dimentary/status/2101018760371171420 (by @dimentary)
+
+20. **6502 emulator experiment**
+   - 6502 emulator experiment. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/TheBalkanHacker/status/2100962091498684848 (by @TheBalkanHacker)
+
+21. **Automatic agent and model selection**
+   - Automatic agent and model selection: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/sawyerhood/status/2100994779291259187 (by @sawyerhood)
+
+22. **Jev macOS Loop**
+   - Jev macOS Loop. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/drjoshcsimmons/status/2101000954828992875 (by @drjoshcsimmons)
+
+23. **Hipershopping with Agentcard**
+   - Hipershopping with Agentcard: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/PipeAbellos/status/2101035136867569838 (by @PipeAbellos)
+
+24. **Jev on Sol**
+   - Autonomy demo — Jev on Sol turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/Cryptonaire19/status/2100966334179770675 (by @Cryptonaire19)
+
+25. **Self-healing agent swarms**
+   - Self-healing agent swarms. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/King_of_Calera/status/2100964845952671816 (by @King_of_Calera)
+
+26. **Dual-brain Jev and LLM agent**
+   - Dual-brain Jev and LLM agent: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/LeoTava8/status/2100822293803143208 (by @LeoTava8)
+
+27. **Jev controls a simulated fly**
+   - Jev controls a simulated fly: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/eltokh7/status/2100971356691247377 (by @eltokh7)
+
+28. **Faster Slack agent**
+   - Autonomy demo — Faster Slack agent turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/johnyeo_/status/2100987661926252737 (by @johnyeo_)
+
+29. **Orus trade-strategy review**
+   - Autonomy demo — Orus trade-strategy review turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/Orus_agent/status/2100859259915227358 (by @Orus_agent)
+
+30. **Microduck navigation**
+   - Autonomy demo — Microduck navigation turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/ostynhyss/status/2100987585384345890 (by @ostynhyss)
+
+31. **AgentRun reusable workflows**
+   - AgentRun reusable workflows. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/MiguelriosEN/status/2101033282414768456 (by @MiguelriosEN)
+
+32. **Jev as a language generator**
+   - Autonomy demo — Jev as a language generator turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/alejandrofanjul/status/2101032677503603169 (by @alejandrofanjul)
+
+33. **Jevmaxxing with Notte**
+   - Autonomy demo — Jevmaxxing with Notte turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/nottecore/status/2101021237417787819 (by @nottecore)
+
+34. **Synkora resume-matching experiment**
+   - Synkora resume-matching experiment. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/rajumaz/status/2100852265477443841 (by @rajumaz)
+
+35. **Starchild prompt routing**
+   - Starchild prompt routing: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/StarchildOnX/status/2100936455401214327 (by @StarchildOnX)
+
+36. **Writing one character at a time**
+   - Writing one character at a time: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/ryanvogel/status/2100218045549412499 (by @ryanvogel)
+
+37. **Assistant without a wake word**
+   - Assistant without a wake word: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/_MaxBlade/status/2100967959879471519 (by @_MaxBlade)
+
+38. **Excuse Court**
+   - Excuse Court: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/ReindentAI/status/2100912441911648457 (by @ReindentAI)
+
+39. **Generating text with Jev**
+   - Autonomy demo — Generating text with Jev turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/0xSuman/status/2100030221189874015 (by @0xSuman)
+
+40. **X scrolling agent**
+   - Autonomy demo — X scrolling agent turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/harold_bracy/status/2100998842011292097 (by @harold_bracy)
+
+41. **JevLM word-by-word writing**
+   - JevLM word-by-word writing: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/AdonAlternative/status/2100934589003030682 (by @AdonAlternative)
+
+42. **Phone automation with step verification**
+   - Phone automation with step verification. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/sudo_rudra/status/2100898042933391741 (by @sudo_rudra)
+
+43. **Just-in-time model selection in Goose**
+   - Just-in-time model selection in Goose. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/alexjhancock/status/2100932130196852896 (by @alexjhancock)
+
+44. **Jev Magic 8 Ball**
+   - Autonomy demo — Jev Magic 8 Ball turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/will_caskets/status/2100968037117780130 (by @will_caskets)
+
+45. **Multi-stage robotic manipulation**
+   - Multi-stage robotic manipulation. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/JonyShaik/status/2100827590781214981 (by @JonyShaik)
+
+46. **Voice intent to tool calls**
+   - Voice intent to tool calls: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/BhosalePratim/status/2100986774742765991 (by @BhosalePratim)
+
+47. **Live clinical-transcript classification prototype**
+   - Live clinical-transcript classification prototype. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/rheum_ai/status/2100454043361722798 (by @rheum_ai)
+
+48. **AI model tier-list experiment**
+   - AI model tier-list experiment. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/kyamilass/status/2100973211009888481 (by @kyamilass)
+
+49. **Parallel pixel decisions**
+   - Parallel pixel decisions. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/anshuc/status/2100246929611411501 (by @anshuc)
+
+50. **Crypto trading engine with path forecasts**
+   - A trained 12B model fans out price paths; Jev turns them into trade calls with live market context. Decision layer on top of forecasts.
+   - Source: https://x.com/BrendanPlayford/status/2100472822544187461 (by @BrendanPlayford)
+
+51. **Manhattan pathfinding**
+   - Autonomy demo — Manhattan pathfinding turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/BuilderShivam/status/2101014788575035689 (by @BuilderShivam)
+
+52. **Computer use at decision speed**
+   - Autonomy demo — Computer use at decision speed turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/savboj/status/2100545295201288678 (by @savboj)
+
+53. **Function that evaluates the vibe**
+   - Function that evaluates the vibe: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/monocursive/status/2100867459435688120 (by @monocursive)
+
+54. **Stagehand browser control with Jev**
+   - Autonomy demo — Stagehand browser control with Jev turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/kylejeong/status/2100622054945095934 (by @kylejeong)
+
+55. **AI Hedge Fund with Jev**
+   - AI Hedge Fund with Jev: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/virattt/status/2100959848623899005 (by @virattt)
+
+56. **Jev versus Claude benchmarks**
+   - Autonomy demo — Jev versus Claude benchmarks turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/xucian_/status/2100957733960736889 (by @xucian_)
+
+57. **MakerMods robot arm in MuJoCo**
+   - MakerMods robot arm in MuJoCo. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/IsaacSin12/status/2100833538224668699 (by @IsaacSin12)
+
+58. **Color-understanding experiment**
+   - Autonomy demo — Color-understanding experiment turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/DaleCloudman/status/2100980817761612041 (by @DaleCloudman)
+
+59. **MOSS litter-picking simulation**
+   - MOSS litter-picking simulation: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/metrox_eth/status/2101021471644733867 (by @metrox_eth)
+
+60. **Jev Trades market simulation**
+   - Jev Trades market simulation. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/zadescoxp/status/2100866594964648005 (by @zadescoxp)
+
+61. **Offline research decision gate**
+   - Offline research decision gate. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/otto_explorer/status/2100971155297603662 (by @otto_explorer)
+
+62. **Ranking 1,000 everyday objects**
+   - Ranking 1,000 everyday objects: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/iKNuDDeL/status/2100942079706702271 (by @iKNuDDeL)
+
+63. **rtrvr.ai with Jev**
+   - Autonomy demo — rtrvr.ai with Jev turns signals into buy/hold/click/stop calls at decision speed (notable figure from the build: 40%).
+   - Source: https://x.com/b_kalisetty/status/2100693198175928707 (by @b_kalisetty)
+
+64. **Drone in an asteroid field**
+   - Autonomy demo — Drone in an asteroid field turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/MKhordoo/status/2100950317852455039 (by @MKhordoo)
+
+65. **Real-time voice control for a browser**
+   - Real-time voice control for a browser. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/moritzkremb/status/2100577979021832365 (by @moritzkremb)
+
+66. **News-driven stock research**
+   - News-driven stock research: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/abolbuild/status/2101019948684279862 (by @abolbuild)
+
+67. **Autonomous $10k trading experiment**
+   - Autonomy demo — Autonomous $10k trading experiment turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/abolbuild/status/2100523868913807410 (by @abolbuild)
+
+68. **Voice-controlled browser**
+   - Voice-controlled browser. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/yatharth170699/status/2100986863788159191 (by @yatharth170699)
+
+69. **Fruit fly reviews TypeScript**
+   - Fruit fly reviews TypeScript. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/nicknisi/status/2100986176370786768 (by @nicknisi)
+
+70. **Customer-message benchmark**
+   - Customer-message benchmark: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/copilot_shogo/status/2100925744599966026 (by @copilot_shogo)
+
+71. **Emergency routing simulation**
+   - Emergency routing simulation: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.
+   - Source: https://x.com/carlosmarcialt/status/2100979161196052855 (by @carlosmarcialt)
+
+72. **Slop Cannon profile analysis**
+   - Autonomy demo — Slop Cannon profile analysis turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/mtropolis_chris/status/2100811463048810560 (by @mtropolis_chris)
+
+73. **Instant decisions inside a SaaS agent**
+   - Autonomy demo — Instant decisions inside a SaaS agent turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/LennartPrange/status/2100868996971037044 (by @LennartPrange)
+
+74. **Discord event research**
+   - Autonomy demo — Discord event research turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/ConvictionFAQ/status/2101019068702879952 (by @ConvictionFAQ)
+
+75. **Criteria-based model routing in Eve**
+   - Autonomy demo — Criteria-based model routing in Eve turns signals into buy/hold/click/stop calls at decision speed.
+   - Source: https://x.com/eve/status/2100430918762832180 (by @eve)
+
+76. **Trading bot: buy / sell / hold**
+   - Watches AAPL/TSLA/NVDA and asks Jev for one typed call. Demo via 3Route + TypeSafe + x402.
+   - [j3vroute.agents.bakingbad.dev](https://j3vroute.agents.bakingbad.dev)
+   - Source: https://x.com/3route_io/status/2100678779790110912 (by @3route_io)
+
+77. **Typed trading-rule experiment**
+   - Typed trading-rule experiment. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/mttcnnng/status/2100971168912048153 (by @mttcnnng)
+
+78. **Daily market brief**
+   - Daily market brief. Lots of tiny decisions, almost no tokens spent on chat.
+   - Source: https://x.com/blauyourmind/status/2101013407008743540 (by @blauyourmind)
+
+### Games (78)
+
+1. **Jev plays Tetris**
+   - Decision model steers Tetris so fast it pushes blocks down in realtime. Early-access demo that feels like a “this changes everything” moment.
+   - Source: https://x.com/marcus_lowe/status/2100315518930661861 (by @marcus_lowe)
+
+2. **Jev plays Pac-Man**
+   - Maze state as JSON; Jev picks turns at each junction and plays in realtime. Playable demo linked.
+   - [jev-pacman.ephraimduncan.com](https://jev-pacman.ephraimduncan.com)
+   - Source: https://x.com/ephraimduncan/status/2100524915007144289 (by @ephraimduncan)
+
+3. **Jevton town simulation**
+   - 120 people, shops, council, and a newspaper. Jev decides every action with zero text generated: 20k+ decisions in under 5 minutes, then disasters hit.
+   - [jevton.chizi.app](https://jevton.chizi.app/)
+   - Source: https://x.com/chiziaruhoma/status/2100878555047514390 (by @chiziaruhoma)
+
+4. **Almost Certain — guess the confidence**
+   - Random descriptions, unlimited guesses: can you predict how sure Jev will be? Playable confidence game.
+   - [almost-certain.vercel.app](https://almost-certain.vercel.app/)
+   - Source: https://x.com/nathanwchan/status/2100096510436475293 (by @nathanwchan)
+
+5. **Wordshift semantic typing racer**
+   - Type a phrase; how far your car moves depends on semantic distance from the target. A racing game where meaning is the throttle.
+   - Source: https://x.com/marcelpociot/status/2100715684732801095 (by @marcelpociot)
+
+6. **Jev is the Warden**
+   - Inspired by the Doom demo: talk to the AI, find the password — Jev watches every word. A game loop driven by TypeSafe decisions.
+   - [jevisthewarden.com](https://jevisthewarden.com)
+   - Source: https://x.com/zNunoTeixeira/status/2100600664665514108 (by @zNunoTeixeira)
+
+7. **Realtime chess vs Jev**
+   - You play White; Jev plays Black with inspectable decision traces and live API cost. BYOK chess agent.
+   - [jev-chess-master.vercel.app](https://jev-chess-master.vercel.app)
+   - Source: https://x.com/qibinlou/status/2100676619815862464 (by @qibinlou)
+
+8. **Expert Minesweeper: Jev vs Mistral**
+   - Game state in, typed move out. Expert Minesweeper: Jev vs Mistral shows System One steering play in realtime.
+   - Source: https://x.com/imom39a/status/2100902242970636610 (by @imom39a)
+
+9. **Jev's Dojo fighting coach**
+   - Jev's Dojo fighting coach: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/vansitha12/status/2100937772030927216 (by @vansitha12)
+
+10. **Combos FPS**
+   - Combos FPS — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/CombosFun_AI/status/2100952069461127257 (by @CombosFun_AI)
+
+11. **Pokémon Showdown battles**
+   - Pokémon Showdown battles — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/DanFrmSpace/status/2100960553514553639 (by @DanFrmSpace)
+
+12. **OpenCode + Jev plays Tetris**
+   - Game state in, typed move out. OpenCode + Jev plays Tetris shows System One steering play in realtime.
+   - Source: https://x.com/tanaysoni_/status/2101020844092756072 (by @tanaysoni_)
+
+13. **Tetris agent**
+   - Tetris agent: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/MarcelooMendes/status/2100969755318370699 (by @MarcelooMendes)
+
+14. **Escaping a maze**
+   - Escaping a maze — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/junhoh0ng/status/2100999241326047596 (by @junhoh0ng)
+
+15. **Three.js driving simulation**
+   - Game state in, typed move out. Three.js driving simulation shows System One steering play in realtime.
+   - Source: https://x.com/vladrezdev/status/2100811750459535507 (by @vladrezdev)
+
+16. **Lifelike autonomous village**
+   - Lifelike autonomous village: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/DevDminGod/status/2101023774305136972 (by @DevDminGod)
+
+17. **Real-time decision stress test**
+   - Real-time decision stress test — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/KevinShengHui/status/2100963923143098712 (by @KevinShengHui)
+
+18. **Slay the Spire 2 in real time**
+   - Game state in, typed move out. Slay the Spire 2 in real time shows System One steering play in realtime.
+   - Source: https://x.com/pranaygp/status/2100870399039037810 (by @pranaygp)
+
+19. **Switch between manual and AI play**
+   - Switch between manual and AI play: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/adrianmg/status/2100970810483823086 (by @adrianmg)
+
+20. **Rubik's Cube that solves itself**
+   - Rubik's Cube that solves itself — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/redp314/status/2100489858951073858 (by @redp314)
+
+21. **Connect Four on Omarchy**
+   - Connect Four on Omarchy: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/Entelic_Aria/status/2100966999602102520 (by @Entelic_Aria)
+
+22. **Atari Pong with one structured question**
+   - Atari Pong with one structured question: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/MemorysaverMFA/status/2100843620056416703 (by @MemorysaverMFA)
+
+23. **Flappy Apex plays itself**
+   - Flappy Apex plays itself — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/ChmalSzymon/status/2100934588205851015 (by @ChmalSzymon)
+
+24. **Fight Jev with live decision probabilities**
+   - Game state in, typed move out. Fight Jev with live decision probabilities shows System One steering play in realtime.
+   - Source: https://x.com/Taufiq_ansari01/status/2100906203396337686 (by @Taufiq_ansari01)
+
+25. **Five RuneScape bots level up**
+   - Game state in, typed move out. Five RuneScape bots level up shows System One steering play in realtime.
+   - Source: https://x.com/aibynick/status/2100942434389897453 (by @aibynick)
+
+26. **Jev beats Super Mario Bros.**
+   - Game state in, typed move out. Jev beats Super Mario Bros. shows System One steering play in realtime.
+   - Source: https://x.com/ishuagra02/status/2101025059909353718 (by @ishuagra02)
+
+27. **Tetris placement picker**
+   - Tetris placement picker — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/ziwenxu_/status/2100984628811084144 (by @ziwenxu_)
+
+28. **Fifty Wordles at once**
+   - Fifty Wordles at once: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/ahmedgagan11/status/2100895104055836914 (by @ahmedgagan11)
+
+29. **Jev-controlled city**
+   - Jev-controlled city — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/MOulitzky/status/2100865465333490028 (by @MOulitzky)
+
+30. **Dungeon guards that change tactics**
+   - Dungeon guards that change tactics: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/zhao_spenc/status/2100833745859461451 (by @zhao_spenc)
+
+31. **Tetris with live probabilities**
+   - Tetris with live probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/cskadarla/status/2100977720670728556 (by @cskadarla)
+
+32. **Big Two with Jev bots**
+   - Game state in, typed move out. Big Two with Jev bots shows System One steering play in realtime.
+   - Source: https://x.com/chiubaca/status/2100974973452013598 (by @chiubaca)
+
+33. **Pokémon shiny hunting**
+   - Pokémon shiny hunting — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/luckeyfaraday/status/2100955913913774437 (by @luckeyfaraday)
+
+34. **Jev plays Balatro**
+   - Jev plays Balatro — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/Juris_Savos/status/2100989012966031417 (by @Juris_Savos)
+
+35. **Pigeon target-shooting game**
+   - Game state in, typed move out. Pigeon target-shooting game shows System One steering play in realtime.
+   - Source: https://x.com/YoAmmaar/status/2100920115449766320 (by @YoAmmaar)
+
+36. **Jev Golf: flip the decision**
+   - Jev Golf: flip the decision — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/heyitzami/status/2101039441590591562 (by @heyitzami)
+
+37. **Nuclear hot potato**
+   - Game state in, typed move out. Nuclear hot potato shows System One steering play in realtime.
+   - Source: https://x.com/yelkhayami/status/2100978154194038988 (by @yelkhayami)
+
+38. **Field Commander**
+   - Field Commander — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/WanderSamsara/status/2100969346004852747 (by @WanderSamsara)
+
+39. **Jev Arena**
+   - Game state in, typed move out. Jev Arena shows System One steering play in realtime.
+   - Source: https://x.com/raihankhan_rk/status/2100951738606035176 (by @raihankhan_rk)
+
+40. **Run at the Pokémon League**
+   - Run at the Pokémon League: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/joey_build/status/2100904864519770170 (by @joey_build)
+
+41. **Three Jev bots in an FPS**
+   - Three Jev bots in an FPS: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/tommyvedvik/status/2100903520425677027 (by @tommyvedvik)
+
+42. **Fly vs. Jev chess**
+   - Fly vs. Jev chess — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/AvgJoeCowles/status/2101013430635213167 (by @AvgJoeCowles)
+
+43. **Jev flies a Kerbal rocket**
+   - Game state in, typed move out. Jev flies a Kerbal rocket shows System One steering play in realtime.
+   - Source: https://x.com/textlayerai/status/2100998343254257898 (by @textlayerai)
+
+44. **Dino: Jev vs GPT vs human**
+   - Dino: Jev vs GPT vs human: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/Priyanshh91/status/2101033914261532886 (by @Priyanshh91)
+
+45. **Jev plays Clash Royale**
+   - Jev plays Clash Royale: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/AmritNigam2/status/2100882320945520778 (by @AmritNigam2)
+
+46. **Tactical sentinel vs fixed rules**
+   - Tactical sentinel vs fixed rules — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/aditya005/status/2101016584571818106 (by @aditya005)
+
+47. **Jev plays pinball**
+   - Game state in, typed move out. Jev plays pinball shows System One steering play in realtime.
+   - Source: https://x.com/SimplerMayank/status/2101021536446795847 (by @SimplerMayank)
+
+48. **League of Legends win probabilities**
+   - League of Legends win probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/filicroval/status/2100963424163307712 (by @filicroval)
+
+49. **Chrome Dino with live decision scores**
+   - Chrome Dino with live decision scores: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/mittalparth_/status/2100817199686619348 (by @mittalparth_)
+
+50. **Five hundred agents in a 3D environment**
+   - Five hundred agents in a 3D environment — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/crislenta/status/2100457614073327754 (by @crislenta)
+
+51. **Jev plays Sindicat**
+   - Jev plays Sindicat: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/PlayDaaa/status/2101011302835458175 (by @PlayDaaa)
+
+52. **Solving NYT Connections**
+   - Game state in, typed move out. Solving NYT Connections shows System One steering play in realtime.
+   - Source: https://x.com/yehudab/status/2100936180233597172 (by @yehudab)
+
+53. **Jev plays Time Crisis**
+   - Jev plays Time Crisis — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/juminoz/status/2100832108855857325 (by @juminoz)
+
+54. **Blitz chess against frontier models**
+   - Game state in, typed move out. Blitz chess against frontier models shows System One steering play in realtime.
+   - Source: https://x.com/aimlapi/status/2100372930282573876 (by @aimlapi)
+
+55. **Doom where every enemy is Jev**
+   - Rebuild of the Doom demo with Jev driving enemy actions — fight a room of decision models, or pit Jev against Jev.
+   - Source: https://x.com/dustin_podell/status/2100458335405588607 (by @dustin_podell)
+
+56. **Intransitive model match**
+   - Game state in, typed move out. Intransitive model match shows System One steering play in realtime.
+   - Source: https://x.com/AdamHoltererer/status/2100954549221532102 (by @AdamHoltererer)
+
+57. **Connect Four decisions**
+   - Game state in, typed move out. Connect Four decisions shows System One steering play in realtime.
+   - Source: https://x.com/deepam02goyal/status/2101001570154586199 (by @deepam02goyal)
+
+58. **Focus Rail train routing**
+   - Game state in, typed move out. Focus Rail train routing shows System One steering play in realtime.
+   - Source: https://x.com/benkigera/status/2101035079149449398 (by @benkigera)
+
+59. **Pokémon FireRed Elite Four run**
+   - Pokémon FireRed Elite Four run: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/AnxKhn/status/2100842364248178833 (by @AnxKhn)
+
+60. **Webpage becomes a fight scene**
+   - Game state in, typed move out. Webpage becomes a fight scene shows System One steering play in realtime.
+   - Source: https://x.com/ansonox/status/2101028925728031119 (by @ansonox)
+
+61. **Dragon Ball Sparking Zero with Jev**
+   - Dragon Ball Sparking Zero with Jev — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/smoothkariminal/status/2100800997530677679 (by @smoothkariminal)
+
+62. **Jev attempts Resident Evil**
+   - Jev attempts Resident Evil — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/juminoz/status/2100846091281506370 (by @juminoz)
+
+63. **VoiceRun cooks Overcooked with Jev**
+   - Co-op kitchen chaos steered by Jev decisions — and you can voice-direct the chefs. Doom was the teaser; dinner service is the stress test.
+   - Source: https://x.com/NWRLeon/status/2100689836084461903 (by @NWRLeon)
+
+64. **Keep the whale-city alive**
+   - Keep the whale-city alive — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/gokayfem/status/2101022590722810271 (by @gokayfem)
+
+65. **GODMODE civilization simulator**
+   - Game state in, typed move out. GODMODE civilization simulator shows System One steering play in realtime.
+   - Source: https://x.com/GroverInnovate/status/2101034633462977016 (by @GroverInnovate)
+
+66. **Multiplayer Catan that freezes mid-deal**
+   - Several Jevs sit at a Catan table; after a while they refuse to negotiate and skip turns. Chaotic, hilarious multi-agent tabletop.
+   - Source: https://x.com/sachpatro97/status/2101064273187274838 (by @sachpatro97)
+
+67. **Every Pac-Man move chosen by Jev**
+   - Every Pac-Man move chosen by Jev: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/NesanSelvan04/status/2100844705588347238 (by @NesanSelvan04)
+
+68. **Jev vs. GLM at chess**
+   - Jev vs. GLM at chess: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/nutlope/status/2101010773157761481 (by @nutlope)
+
+69. **Pong model face-off**
+   - Pong model face-off: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/mattheworiordan/status/2100937732012822897 (by @mattheworiordan)
+
+70. **Puzzle-solving playground**
+   - Game state in, typed move out. Puzzle-solving playground shows System One steering play in realtime.
+   - Source: https://x.com/ashkans_dev/status/2101014737383206914 (by @ashkans_dev)
+
+71. **Dogfighting experiment**
+   - Dogfighting experiment — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/hanznathanpo/status/2101020398477365629 (by @hanznathanpo)
+
+72. **Jev plays Geometry Dash**
+   - Game state in, typed move out. Jev plays Geometry Dash shows System One steering play in realtime.
+   - Source: https://x.com/Neel490/status/2100953791260397747 (by @Neel490)
+
+73. **Tetris with typed landing choices**
+   - Tetris with typed landing choices: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/steve_rosky/status/2100841146696032591 (by @steve_rosky)
+
+74. **Rank every Pokémon by any question**
+   - Rank every Pokémon by any question — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/dunkedtoast/status/2100941309511098578 (by @dunkedtoast)
+
+75. **Jev vs OpenJev in an FPS**
+   - Jev vs OpenJev in an FPS — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/Neel490/status/2101028527978020920 (by @Neel490)
+
+76. **Byte predicts rock-paper-scissors**
+   - Game state in, typed move out. Byte predicts rock-paper-scissors shows System One steering play in realtime.
+   - Source: https://x.com/2ndpsy/status/2101026520185622589 (by @2ndpsy)
+
+77. **Chaotic kitchen simulation**
+   - Game state in, typed move out. Chaotic kitchen simulation shows System One steering play in realtime.
+   - Source: https://x.com/Michael50663932/status/2101009609087389712 (by @Michael50663932)
+
+78. **Dont get hit realtime game**
+   - Tiny realtime game where Jev steers the player with one goal: dont get hit. Built to feel how decision models differ from chat LLMs.
+   - Source: https://x.com/abolbuild/status/2100509548339408972 (by @abolbuild)
+
 ### Home (62)
 
 1. **I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable**
@@ -5359,6 +6597,218 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader)
    - Source: https://github.com/jarrodwatts/jev-trader (by @jarrodwatts)
 
+### Browser (29)
+
+1. **YouTube sponsor skipper**
+   - Chrome extension listens to YouTube audio, detects sponsor segments, and skips them live for about half a cent per video. Open source BYOK.
+   - [trungdq88/youtube-sponsor-detection](https://github.com/trungdq88/youtube-sponsor-detection)
+   - Source: https://x.com/tdinh_me/status/2100793777103466615 (by @tdinh_me)
+
+2. **Mobbin style fresh UI flows**
+   - Browser use grabs fresh product flows for whatever you search. Jev makes the loop fast enough that a live Mobbin like tool finally works.
+   - Source: https://x.com/omarjpeg/status/2101047036863037753 (by @omarjpeg)
+
+3. **Realtime ad blocker with judgment**
+   - Extension scores DOM nodes as ad vs not and removes the junk live. Judgment-shaped blocking instead of brittle selectors alone.
+   - Source: https://x.com/iam_zachi/status/2100529273186472318 (by @iam_zachi)
+
+4. **Feed filter for engagement bait**
+   - Feed filter for engagement bait: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/ItsDanielHung/status/2101036327441686718 (by @ItsDanielHung)
+
+5. **Your Signal — score the firehose**
+   - Your Signal — score the firehose: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/FabioAngela79/status/2101013867627159592 (by @FabioAngela79)
+
+6. **Browser use with Jev**
+   - Fast, cheap browser agent that mogs a traditional LLM on most browser tasks. Open-source on GitHub.
+   - [jkudish/jev-browser](https://github.com/jkudish/jev-browser)
+   - Source: https://x.com/jkudish/status/2100697030616346641 (by @jkudish)
+
+7. **X timeline labeler**
+   - Chrome extension tags ragebait, hype trains, hidden ads, spam, payout farming, AI-slop, and genuine posts with probability breakdowns — fast enough to feel instant.
+   - Source: https://x.com/Sudhanss_u/status/2100681499238605222 (by @Sudhanss_u)
+
+8. **Real-time browser ad cleanup**
+   - Browser-side decisions with Jev. Real-time browser ad cleanup keeps the loop cheap enough to run on every scroll or click.
+   - Source: https://x.com/letshahid/status/2100931843680043096 (by @letshahid)
+
+9. **Real-time feed quality filter**
+   - Real-time feed quality filter — classify, filter, or navigate from live DOM signals.
+   - Source: https://x.com/RBilgil/status/2100976648552169805 (by @RBilgil)
+
+10. **LinkedIn Zoo**
+   - LinkedIn Zoo: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/olearycrew/status/2100965636314746999 (by @olearycrew)
+
+11. **Detecting slop in the X timeline**
+   - Detecting slop in the X timeline: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/heyakbarali/status/2100903054685921742 (by @heyakbarali)
+
+12. **Flagging AI-written X replies**
+   - Flagging AI-written X replies: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/ishuagra02/status/2100807715509424452 (by @ishuagra02)
+
+13. **Filtering AI slop from YouTube**
+   - Browser-side decisions with Jev. Filtering AI slop from YouTube keeps the loop cheap enough to run on every scroll or click.
+   - Source: https://x.com/mariojankovic/status/2100934084503519325 (by @mariojankovic)
+
+14. **FlightWifi checks aircraft connectivity**
+   - Browser-side decisions with Jev. FlightWifi checks aircraft connectivity keeps the loop cheap enough to run on every scroll or click.
+   - Source: https://x.com/priyansh0327/status/2100943264459407757 (by @priyansh0327)
+
+15. **X post classifier**
+   - X post classifier: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/rolottr/status/2100951484846199063 (by @rolottr)
+
+16. **Color-coded X timeline**
+   - Color-coded X timeline: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/ganjidotme/status/2101024692526280706 (by @ganjidotme)
+
+17. **Describe your own social feed**
+   - Browser-side decisions with Jev. Describe your own social feed keeps the loop cheap enough to run on every scroll or click.
+   - Source: https://x.com/hari65535/status/2100968425967493414 (by @hari65535)
+
+18. **LangChain Wikipedia Game agent**
+   - LangChain browser use steered by Jev. Strong at the Wikipedia Game and folding laundry tasks like finding cheap flights.
+   - Source: https://x.com/ndrezn/status/2101046780989215005 (by @ndrezn)
+
+19. **Auto-decline cookies and popups**
+   - Auto-decline cookies and popups — classify, filter, or navigate from live DOM signals.
+   - Source: https://x.com/mtropolis_chris/status/2100927820050366734 (by @mtropolis_chris)
+
+20. **Jev plus Kernel browser use**
+   - Jev scores every link on the page and Kernel clicks while you watch. Playable demo of a model that cannot write driving a browser.
+   - [jev-browser-use.val.run](https://jev-browser-use.val.run/)
+   - Source: https://x.com/stevekrouse/status/2100321685081559542 (by @stevekrouse)
+
+21. **Vibecheck**
+   - Vibecheck: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/rafalwilinski/status/2100959576682012988 (by @rafalwilinski)
+
+22. **Filtering unwanted X replies**
+   - Browser-side decisions with Jev. Filtering unwanted X replies keeps the loop cheap enough to run on every scroll or click.
+   - Source: https://x.com/iannuttall/status/2100888635943883244 (by @iannuttall)
+
+23. **X feed content firewall**
+   - Browser extension hides or collapses X posts from a natural language rule. Fast enough to feel invisible, cheap enough to run on every scroll.
+   - Source: https://x.com/marcelpociot/status/2100520134481735729 (by @marcelpociot)
+
+24. **X feed tuned to your bookmarks**
+   - X feed tuned to your bookmarks — classify, filter, or navigate from live DOM signals.
+   - Source: https://x.com/redp314/status/2100915304062710263 (by @redp314)
+
+25. **Live YouTube comment classification**
+   - Browser-side decisions with Jev. Live YouTube comment classification keeps the loop cheap enough to run on every scroll or click.
+   - Source: https://x.com/AndreFrelicot/status/2100944158043038028 (by @AndreFrelicot)
+
+26. **Reply sentiment at a glance**
+   - Reply sentiment at a glance — classify, filter, or navigate from live DOM signals.
+   - Source: https://x.com/aadhilkh/status/2101036813347590655 (by @aadhilkh)
+
+27. **Write your own X feed algorithm**
+   - Write your own X feed algorithm — classify, filter, or navigate from live DOM signals.
+   - Source: https://x.com/njpCoder/status/2100938813707366848 (by @njpCoder)
+
+28. **Jevscan flags suspicious Etherscan activity**
+   - Jevscan flags suspicious Etherscan activity: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.
+   - Source: https://x.com/theRaz0r/status/2100898307186864593 (by @theRaz0r)
+
+29. **Chrome extension for agentic browsing**
+   - Jev drives browse, click, and interact loops inside your Chrome tab via Vercel AI Gateway. Fast, cheap decision making for in browser agents.
+   - [fx.sh](https://fx.sh/)
+   - Source: https://x.com/razaanstha/status/2100645675591520612 (by @razaanstha)
+
+### Generative UI (22)
+
+1. **Does Jev understand colour?**
+   - Type a phrase and the palette updates mid-sentence. Generative UX with near-zero chrome — cheap, fast, and a leap for new UI paradigms on language models.
+   - Source: https://x.com/mattdesl/status/2100899669802963060 (by @mattdesl)
+
+2. **Website composed for each reader**
+   - Website composed for each reader. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/matt_ginty/status/2100908910689624100 (by @matt_ginty)
+
+3. **Interactive Silo vault**
+   - Interactive Silo vault. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/Chrls_Hwrd/status/2100983272519995803 (by @Chrls_Hwrd)
+
+4. **Whose Jev Is It Anyway?**
+   - Generative interface experiment — Whose Jev Is It Anyway? lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/CharlieMolthrop/status/2100946286136406421 (by @CharlieMolthrop)
+
+5. **Figma requirements checker**
+   - Figma requirements checker: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/W33baker/status/2100927795484369231 (by @W33baker)
+
+6. **Real-time orchestra conductor**
+   - Generative interface experiment — Real-time orchestra conductor lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/GulatiYajat/status/2100963005764919517 (by @GulatiYajat)
+
+7. **Live eval for generative UI**
+   - WebMCP component library evals with Jev as soon as UI generates; regenerates instantly if invalid. Claude chat on one side, Jev eval loop on the other.
+   - Source: https://x.com/harshpatel071/status/2100689095202885722 (by @harshpatel071)
+
+8. **Blender modeling with Jev evaluation**
+   - Generative interface experiment — Blender modeling with Jev evaluation lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/Sxfyhvx/status/2100929250882691464 (by @Sxfyhvx)
+
+9. **Design decisions without text generation**
+   - Design decisions without text generation: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/LamplighterPaul/status/2100899181120360693 (by @LamplighterPaul)
+
+10. **Fancy-prose experiment**
+   - Fancy-prose experiment. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/fabianstelzer/status/2100955039455985933 (by @fabianstelzer)
+
+11. **Painting the Golden Gate Bridge**
+   - Painting the Golden Gate Bridge. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/_shubhankar/status/2100834561995493476 (by @_shubhankar)
+
+12. **Pixel art with a sketch-and-refine loop**
+   - Generative interface experiment — Pixel art with a sketch-and-refine loop lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/RealAstropulse/status/2101029816975663312 (by @RealAstropulse)
+
+13. **Natural-language camera control**
+   - Generative interface experiment — Natural-language camera control lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/carrabre/status/2101035345643221239 (by @carrabre)
+
+14. **Voice-controlled Figma**
+   - Voice-controlled Figma. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/mikegee/status/2100845388655960112 (by @mikegee)
+
+15. **Jev-thoven music composition**
+   - Jev-thoven music composition. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/cocktailpeanut/status/2101032641470386481 (by @cocktailpeanut)
+
+16. **Making beats by talking**
+   - Generative interface experiment — Making beats by talking lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/mahirb22/status/2101023899265692100 (by @mahirb22)
+
+17. **Live 3D character expressions**
+   - Generative interface experiment — Live 3D character expressions lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/john_bortotti/status/2101019513676345555 (by @john_bortotti)
+
+18. **Explore art by meaning**
+   - Explore art by meaning. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/albicodes/status/2101005086348488797 (by @albicodes)
+
+19. **Jev plays piano**
+   - Jev plays piano: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/nickfromlater/status/2100963628484624670 (by @nickfromlater)
+
+20. **Route genAI models on Higgsfield**
+   - Route genAI models on Higgsfield. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/higgsfield_ai/status/2101022133753430365 (by @higgsfield_ai)
+
+21. **Emotions expressed in beeps**
+   - Emotions expressed in beeps. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/yoheinakajima/status/2100945960671326482 (by @yoheinakajima)
+
+22. **Bluesky feed with live emotion tags**
+   - Bluesky feed with live emotion tags: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/amagitakayosi/status/2100820581444980736 (by @amagitakayosi)
+
 ### Social (20)
 
 1. **Hey, made a post on X listing best Jev projects**
@@ -5788,4 +7238,4 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 
 ---
 
-Pack generated 2026-09-19 from the Jev evaluation guide and 726 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory
+Pack generated 2026-09-19 from the Jev evaluation guide and 1082 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory

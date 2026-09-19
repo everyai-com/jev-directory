@@ -177,8 +177,37 @@ document.querySelectorAll('[data-copy]').forEach(function (btn) {
     if (el) copyText(el.textContent, btn.dataset.copyMsg || 'Copied');
   });
 });
-$('statEvals').textContent = JEV_DIR.evals.length;
-$('statBuilds').textContent = JEV_DIR.community.length;
-$('statLinks').textContent = JEV_DIR.linkedProjects;
-$('statCats').textContent = new Set(JEV_DIR.community.map(function (i) { return i.c; })).size;
+function countUp(id, target) {
+  var el = $(id);
+  if (!el) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = target; return; }
+  var t0 = null, dur = 900;
+  function frame(t) {
+    if (!t0) t0 = t;
+    var k = Math.min(1, (t - t0) / dur);
+    k = 1 - Math.pow(1 - k, 3);
+    el.textContent = Math.round(target * k);
+    if (k < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+function renderProof() {
+  var host = $('proof');
+  if (!host || !JEV_DIR.evals.length) return;
+  var rows = JEV_DIR.evals.slice(0, 3).map(function (e) {
+    var q = (e.r && e.r[0]) || [];
+    var val = e.x ? e.x[q[0]] : null;
+    var disp = val === true ? 'true' : (val === false ? 'false' : String(val));
+    var title = e.t.length > 32 ? e.t.slice(0, 32) + '...' : e.t;
+    return '<div class="pr"><span class="t">' + esc(title) + '</span><span class="v">' + esc(String(q[0] || '?')) + ' → ' + esc(disp) + ' ✓</span></div>';
+  }).join('');
+  host.innerHTML = '<div class="ph"><b>experimental_evaluate</b><span>typesafe-ai/jev</span></div>' +
+    '<div class="pl">' + rows + '</div>' +
+    '<div class="pf">manifest <b>' + esc(JEV_DIR.rev.slice(0, 8)) + '</b> · ' + JEV_DIR.evals.length + ' evals · exact-match</div>';
+}
+countUp('statEvals', JEV_DIR.evals.length);
+countUp('statBuilds', JEV_DIR.community.length);
+countUp('statLinks', JEV_DIR.linkedProjects);
+countUp('statCats', new Set(JEV_DIR.community.map(function (i) { return i.c; })).size);
+renderProof();
 buildCats(); render();

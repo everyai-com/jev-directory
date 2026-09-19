@@ -7936,6 +7936,11 @@
      "url": "https://x.com/gregpr07/status/2100411066966749359?s=46",
      "title": "Post by @gregpr07",
      "description": "Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open source browser agent. try it below ↓"
+    },
+    {
+     "url": "https://github.com/browser-use/jev-ultrafast",
+     "title": "browser-use/jev-ultrafast",
+     "description": null
     }
    ],
    "sourceUrl": "https://x.com/gregpr07/status/2100411066966749359?s=46",
@@ -8683,6 +8688,11 @@
      "url": "https://x.com/jpschroeder/status/2100347770867458384?s=20",
      "title": "Post by @jpschroeder",
      "description": "I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock."
+    },
+    {
+     "url": "https://jevpilot.standardagents.ai",
+     "title": "jevpilot.standardagents.ai",
+     "description": null
     }
    ],
    "sourceUrl": "https://x.com/jpschroeder/status/2100347770867458384?s=20",
@@ -11874,6 +11884,2938 @@
    ],
    "sourceUrl": "https://x.com/HugoDuprez/status/2100953089003921543",
    "handle": "@HugoDuprez"
+  },
+  {
+   "title": "Live slide decisions while speaking",
+   "category": "Agents",
+   "description": "Jev picks which slide to pull up in realtime as the speaker talks. Speed and cost unlock presentation loops that felt impossible before.",
+   "links": [],
+   "sourceUrl": "https://x.com/zain_hoda/status/2100720719470494126",
+   "handle": "@zain_hoda"
+  },
+  {
+   "title": "On-chain trader every Monad block",
+   "category": "Agents",
+   "description": "Buy or sell from a live price feed, then place real orders on Kuru each ~300ms block. Viral proof that decision models can drive trading loops.",
+   "links": [
+    {
+     "url": "https://jev-trader.vercel.app/",
+     "title": "jev-trader.vercel.app",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/jarrodwatts/status/2100356151468585346",
+   "handle": "@jarrodwatts"
+  },
+  {
+   "title": "Jev plays Tetris",
+   "category": "Games",
+   "description": "Decision model steers Tetris so fast it pushes blocks down in realtime. Early-access demo that feels like a “this changes everything” moment.",
+   "links": [],
+   "sourceUrl": "https://x.com/marcus_lowe/status/2100315518930661861",
+   "handle": "@marcus_lowe"
+  },
+  {
+   "title": "Jev plays Pac-Man",
+   "category": "Games",
+   "description": "Maze state as JSON; Jev picks turns at each junction and plays in realtime. Playable demo linked.",
+   "links": [
+    {
+     "url": "https://jev-pacman.ephraimduncan.com",
+     "title": "jev-pacman.ephraimduncan.com",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/ephraimduncan/status/2100524915007144289",
+   "handle": "@ephraimduncan"
+  },
+  {
+   "title": "Does Jev understand colour?",
+   "category": "Generative UI",
+   "description": "Type a phrase and the palette updates mid-sentence. Generative UX with near-zero chrome — cheap, fast, and a leap for new UI paradigms on language models.",
+   "links": [],
+   "sourceUrl": "https://x.com/mattdesl/status/2100899669802963060",
+   "handle": "@mattdesl"
+  },
+  {
+   "title": "Ask Jev — it judges, never answers",
+   "category": "Agents",
+   "description": "Type a question; Jev returns a verdict in ~100ms — yes, no, or it depends — not a chat reply. Racing toward a million judgments on Convex.",
+   "links": [
+    {
+     "url": "https://www.askjev.ai/",
+     "title": "askjev.ai",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/waynesutton/status/2100487878992388279",
+   "handle": "@waynesutton"
+  },
+  {
+   "title": "Jevton town simulation",
+   "category": "Games",
+   "description": "120 people, shops, council, and a newspaper. Jev decides every action with zero text generated: 20k+ decisions in under 5 minutes, then disasters hit.",
+   "links": [
+    {
+     "url": "https://jevton.chizi.app/",
+     "title": "jevton.chizi.app",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/chiziaruhoma/status/2100878555047514390",
+   "handle": "@chiziaruhoma"
+  },
+  {
+   "title": "Model router that picks the right LLM",
+   "category": "Tools",
+   "description": "Jev scores which model fits the request, then the call is forwarded. Routing without a chatty middleman — just a typed pick.",
+   "links": [],
+   "sourceUrl": "https://x.com/ephraimduncan/status/2100454070536351824",
+   "handle": "@ephraimduncan"
+  },
+  {
+   "title": "Almost Certain — guess the confidence",
+   "category": "Games",
+   "description": "Random descriptions, unlimited guesses: can you predict how sure Jev will be? Playable confidence game.",
+   "links": [
+    {
+     "url": "https://almost-certain.vercel.app/",
+     "title": "almost-certain.vercel.app",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/nathanwchan/status/2100096510436475293",
+   "handle": "@nathanwchan"
+  },
+  {
+   "title": "Codebase complexity classifier",
+   "category": "Tools",
+   "description": "Score whether agent-written code is overengineered. A System One check on the mess LLMs leave behind.",
+   "links": [],
+   "sourceUrl": "https://x.com/ryanvogel/status/2100068006592123055",
+   "handle": "@ryanvogel"
+  },
+  {
+   "title": "Wordshift semantic typing racer",
+   "category": "Games",
+   "description": "Type a phrase; how far your car moves depends on semantic distance from the target. A racing game where meaning is the throttle.",
+   "links": [],
+   "sourceUrl": "https://x.com/marcelpociot/status/2100715684732801095",
+   "handle": "@marcelpociot"
+  },
+  {
+   "title": "Jev is the Warden",
+   "category": "Games",
+   "description": "Inspired by the Doom demo: talk to the AI, find the password — Jev watches every word. A game loop driven by TypeSafe decisions.",
+   "links": [
+    {
+     "url": "https://jevisthewarden.com",
+     "title": "jevisthewarden.com",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/zNunoTeixeira/status/2100600664665514108",
+   "handle": "@zNunoTeixeira"
+  },
+  {
+   "title": "Realtime chess vs Jev",
+   "category": "Games",
+   "description": "You play White; Jev plays Black with inspectable decision traces and live API cost. BYOK chess agent.",
+   "links": [
+    {
+     "url": "https://jev-chess-master.vercel.app",
+     "title": "jev-chess-master.vercel.app",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/qibinlou/status/2100676619815862464",
+   "handle": "@qibinlou"
+  },
+  {
+   "title": "YouTube sponsor skipper",
+   "category": "Browser",
+   "description": "Chrome extension listens to YouTube audio, detects sponsor segments, and skips them live for about half a cent per video. Open source BYOK.",
+   "links": [
+    {
+     "url": "https://github.com/trungdq88/youtube-sponsor-detection",
+     "title": "trungdq88/youtube-sponsor-detection",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/tdinh_me/status/2100793777103466615",
+   "handle": "@tdinh_me"
+  },
+  {
+   "title": "Mobbin style fresh UI flows",
+   "category": "Browser",
+   "description": "Browser use grabs fresh product flows for whatever you search. Jev makes the loop fast enough that a live Mobbin like tool finally works.",
+   "links": [],
+   "sourceUrl": "https://x.com/omarjpeg/status/2101047036863037753",
+   "handle": "@omarjpeg"
+  },
+  {
+   "title": "Realtime ad blocker with judgment",
+   "category": "Browser",
+   "description": "Extension scores DOM nodes as ad vs not and removes the junk live. Judgment-shaped blocking instead of brittle selectors alone.",
+   "links": [],
+   "sourceUrl": "https://x.com/iam_zachi/status/2100529273186472318",
+   "handle": "@iam_zachi"
+  },
+  {
+   "title": "Expert Minesweeper: Jev vs Mistral",
+   "category": "Games",
+   "description": "Game state in, typed move out. Expert Minesweeper: Jev vs Mistral shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/imom39a/status/2100902242970636610",
+   "handle": "@imom39a"
+  },
+  {
+   "title": "Website composed for each reader",
+   "category": "Generative UI",
+   "description": "Website composed for each reader. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/matt_ginty/status/2100908910689624100",
+   "handle": "@matt_ginty"
+  },
+  {
+   "title": "Feed filter for engagement bait",
+   "category": "Browser",
+   "description": "Feed filter for engagement bait: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/ItsDanielHung/status/2101036327441686718",
+   "handle": "@ItsDanielHung"
+  },
+  {
+   "title": "Vendor search by requirements",
+   "category": "Tools",
+   "description": "Vendor search by requirements: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/virtual_rf/status/2100996527925694594",
+   "handle": "@virtual_rf"
+  },
+  {
+   "title": "Ego Lite shopping decisions",
+   "category": "Agents",
+   "description": "Ego Lite shopping decisions. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/ego_agent/status/2100970015977804008",
+   "handle": "@ego_agent"
+  },
+  {
+   "title": "Jev's Dojo fighting coach",
+   "category": "Games",
+   "description": "Jev's Dojo fighting coach: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/vansitha12/status/2100937772030927216",
+   "handle": "@vansitha12"
+  },
+  {
+   "title": "Interactive Silo vault",
+   "category": "Generative UI",
+   "description": "Interactive Silo vault. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/Chrls_Hwrd/status/2100983272519995803",
+   "handle": "@Chrls_Hwrd"
+  },
+  {
+   "title": "Your Signal — score the firehose",
+   "category": "Browser",
+   "description": "Your Signal — score the firehose: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/FabioAngela79/status/2101013867627159592",
+   "handle": "@FabioAngela79"
+  },
+  {
+   "title": "Document jargon detector",
+   "category": "Tools",
+   "description": "Document jargon detector: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/v_sattinger/status/2100888216463122453",
+   "handle": "@v_sattinger"
+  },
+  {
+   "title": "Voice-controlled Mac computer use",
+   "category": "Agents",
+   "description": "Voice-controlled Mac computer use. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/instantricecook/status/2100814590300889426",
+   "handle": "@instantricecook"
+  },
+  {
+   "title": "Combos FPS",
+   "category": "Games",
+   "description": "Combos FPS — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/CombosFun_AI/status/2100952069461127257",
+   "handle": "@CombosFun_AI"
+  },
+  {
+   "title": "Whose Jev Is It Anyway?",
+   "category": "Generative UI",
+   "description": "Generative interface experiment — Whose Jev Is It Anyway? lets Jev pick what to show as you type or browse.",
+   "links": [],
+   "sourceUrl": "https://x.com/CharlieMolthrop/status/2100946286136406421",
+   "handle": "@CharlieMolthrop"
+  },
+  {
+   "title": "Browser use with Jev",
+   "category": "Browser",
+   "description": "Fast, cheap browser agent that mogs a traditional LLM on most browser tasks. Open-source on GitHub.",
+   "links": [
+    {
+     "url": "https://github.com/jkudish/jev-browser",
+     "title": "jkudish/jev-browser",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/jkudish/status/2100697030616346641",
+   "handle": "@jkudish"
+  },
+  {
+   "title": "Sentence-by-sentence AI text detection",
+   "category": "Tools",
+   "description": "Developer-facing demo of Sentence-by-sentence AI text detection. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/ahmedgagan11/status/2100955502075388250",
+   "handle": "@ahmedgagan11"
+  },
+  {
+   "title": "Browser-agent stress test",
+   "category": "Agents",
+   "description": "Browser-agent stress test. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/SSHCodes/status/2101026313871970721",
+   "handle": "@SSHCodes"
+  },
+  {
+   "title": "Pokémon Showdown battles",
+   "category": "Games",
+   "description": "Pokémon Showdown battles — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/DanFrmSpace/status/2100960553514553639",
+   "handle": "@DanFrmSpace"
+  },
+  {
+   "title": "Figma requirements checker",
+   "category": "Generative UI",
+   "description": "Figma requirements checker: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.",
+   "links": [],
+   "sourceUrl": "https://x.com/W33baker/status/2100927795484369231",
+   "handle": "@W33baker"
+  },
+  {
+   "title": "X timeline labeler",
+   "category": "Browser",
+   "description": "Chrome extension tags ragebait, hype trains, hidden ads, spam, payout farming, AI-slop, and genuine posts with probability breakdowns — fast enough to feel instant.",
+   "links": [],
+   "sourceUrl": "https://x.com/Sudhanss_u/status/2100681499238605222",
+   "handle": "@Sudhanss_u"
+  },
+  {
+   "title": "Bottally SEO and AEO audits",
+   "category": "Tools",
+   "description": "Bottally SEO and AEO audits — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/im_payam/status/2101024843193835617",
+   "handle": "@im_payam"
+  },
+  {
+   "title": "Jev vs Everyone",
+   "category": "Agents",
+   "description": "Autonomy demo — Jev vs Everyone turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/YGaitsgory/status/2100931274311434442",
+   "handle": "@YGaitsgory"
+  },
+  {
+   "title": "OpenCode + Jev plays Tetris",
+   "category": "Games",
+   "description": "Game state in, typed move out. OpenCode + Jev plays Tetris shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/tanaysoni_/status/2101020844092756072",
+   "handle": "@tanaysoni_"
+  },
+  {
+   "title": "Real-time orchestra conductor",
+   "category": "Generative UI",
+   "description": "Generative interface experiment — Real-time orchestra conductor lets Jev pick what to show as you type or browse.",
+   "links": [],
+   "sourceUrl": "https://x.com/GulatiYajat/status/2100963005764919517",
+   "handle": "@GulatiYajat"
+  },
+  {
+   "title": "Real-time browser ad cleanup",
+   "category": "Browser",
+   "description": "Browser-side decisions with Jev. Real-time browser ad cleanup keeps the loop cheap enough to run on every scroll or click.",
+   "links": [],
+   "sourceUrl": "https://x.com/letshahid/status/2100931843680043096",
+   "handle": "@letshahid"
+  },
+  {
+   "title": "Semantic circuit breaker for agents",
+   "category": "Tools",
+   "description": "Developer-facing demo of Semantic circuit breaker for agents. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/ashutoshftw/status/2100852540900520097",
+   "handle": "@ashutoshftw"
+  },
+  {
+   "title": "Interactive Jev playground on Val Town",
+   "category": "Agents",
+   "description": "Interactive Jev playground on Val Town. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/stevekrouse/status/2100287368221659289",
+   "handle": "@stevekrouse"
+  },
+  {
+   "title": "Tetris agent",
+   "category": "Games",
+   "description": "Tetris agent: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/MarcelooMendes/status/2100969755318370699",
+   "handle": "@MarcelooMendes"
+  },
+  {
+   "title": "Live eval for generative UI",
+   "category": "Generative UI",
+   "description": "WebMCP component library evals with Jev as soon as UI generates; regenerates instantly if invalid. Claude chat on one side, Jev eval loop on the other.",
+   "links": [],
+   "sourceUrl": "https://x.com/harshpatel071/status/2100689095202885722",
+   "handle": "@harshpatel071"
+  },
+  {
+   "title": "Real-time feed quality filter",
+   "category": "Browser",
+   "description": "Real-time feed quality filter — classify, filter, or navigate from live DOM signals.",
+   "links": [],
+   "sourceUrl": "https://x.com/RBilgil/status/2100976648552169805",
+   "handle": "@RBilgil"
+  },
+  {
+   "title": "Jev-lint finds wiki contradictions",
+   "category": "Tools",
+   "description": "Jev-lint finds wiki contradictions: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/vayungodara/status/2100839812701868235",
+   "handle": "@vayungodara"
+  },
+  {
+   "title": "Predicting the next digits of pi",
+   "category": "Agents",
+   "description": "Predicting the next digits of pi. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/goulinkh/status/2100943993731215722",
+   "handle": "@goulinkh"
+  },
+  {
+   "title": "Escaping a maze",
+   "category": "Games",
+   "description": "Escaping a maze — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/junhoh0ng/status/2100999241326047596",
+   "handle": "@junhoh0ng"
+  },
+  {
+   "title": "Blender modeling with Jev evaluation",
+   "category": "Generative UI",
+   "description": "Generative interface experiment — Blender modeling with Jev evaluation lets Jev pick what to show as you type or browse.",
+   "links": [],
+   "sourceUrl": "https://x.com/Sxfyhvx/status/2100929250882691464",
+   "handle": "@Sxfyhvx"
+  },
+  {
+   "title": "LinkedIn Zoo",
+   "category": "Browser",
+   "description": "LinkedIn Zoo: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/olearycrew/status/2100965636314746999",
+   "handle": "@olearycrew"
+  },
+  {
+   "title": "Instant variable name generation",
+   "category": "Tools",
+   "description": "Instant variable name generation — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/eltokh7/status/2101016673109016622",
+   "handle": "@eltokh7"
+  },
+  {
+   "title": "Live market-news research desk",
+   "category": "Agents",
+   "description": "Autonomy demo — Live market-news research desk turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/0xnairb/status/2100897652342988901",
+   "handle": "@0xnairb"
+  },
+  {
+   "title": "Three.js driving simulation",
+   "category": "Games",
+   "description": "Game state in, typed move out. Three.js driving simulation shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/vladrezdev/status/2100811750459535507",
+   "handle": "@vladrezdev"
+  },
+  {
+   "title": "Design decisions without text generation",
+   "category": "Generative UI",
+   "description": "Design decisions without text generation: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.",
+   "links": [],
+   "sourceUrl": "https://x.com/LamplighterPaul/status/2100899181120360693",
+   "handle": "@LamplighterPaul"
+  },
+  {
+   "title": "Detecting slop in the X timeline",
+   "category": "Browser",
+   "description": "Detecting slop in the X timeline: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/heyakbarali/status/2100903054685921742",
+   "handle": "@heyakbarali"
+  },
+  {
+   "title": "Supabase RLS linter",
+   "category": "Tools",
+   "description": "Supabase RLS linter: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/softwarecuddler/status/2100981707105284255",
+   "handle": "@softwarecuddler"
+  },
+  {
+   "title": "Flue agent router with Jev",
+   "category": "Agents",
+   "description": "Jev routes inside a Flue agent through Cloudflare AI Gateway. Open source demo of decision routing without chat generation.",
+   "links": [
+    {
+     "url": "https://github.com/matthewp/flue-jev-demo",
+     "title": "matthewp/flue-jev-demo",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/matthewcp/status/2101057280653574300",
+   "handle": "@matthewcp"
+  },
+  {
+   "title": "Lifelike autonomous village",
+   "category": "Games",
+   "description": "Lifelike autonomous village: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/DevDminGod/status/2101023774305136972",
+   "handle": "@DevDminGod"
+  },
+  {
+   "title": "Fancy-prose experiment",
+   "category": "Generative UI",
+   "description": "Fancy-prose experiment. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/fabianstelzer/status/2100955039455985933",
+   "handle": "@fabianstelzer"
+  },
+  {
+   "title": "Flagging AI-written X replies",
+   "category": "Browser",
+   "description": "Flagging AI-written X replies: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/ishuagra02/status/2100807715509424452",
+   "handle": "@ishuagra02"
+  },
+  {
+   "title": "Reward-hacking guardrails for agents",
+   "category": "Tools",
+   "description": "Reward-hacking guardrails for agents: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/moltar81435/status/2101026295786451311",
+   "handle": "@moltar81435"
+  },
+  {
+   "title": "Danish stock-market backtest",
+   "category": "Agents",
+   "description": "Danish stock-market backtest. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/tommy_jepsen/status/2100939646653903063",
+   "handle": "@tommy_jepsen"
+  },
+  {
+   "title": "Real-time decision stress test",
+   "category": "Games",
+   "description": "Real-time decision stress test — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/KevinShengHui/status/2100963923143098712",
+   "handle": "@KevinShengHui"
+  },
+  {
+   "title": "Painting the Golden Gate Bridge",
+   "category": "Generative UI",
+   "description": "Painting the Golden Gate Bridge. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/_shubhankar/status/2100834561995493476",
+   "handle": "@_shubhankar"
+  },
+  {
+   "title": "Filtering AI slop from YouTube",
+   "category": "Browser",
+   "description": "Browser-side decisions with Jev. Filtering AI slop from YouTube keeps the loop cheap enough to run on every scroll or click.",
+   "links": [],
+   "sourceUrl": "https://x.com/mariojankovic/status/2100934084503519325",
+   "handle": "@mariojankovic"
+  },
+  {
+   "title": "Finding viral content in 11 million videos",
+   "category": "Tools",
+   "description": "Finding viral content in 11 million videos — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/densancar/status/2101030551280910636",
+   "handle": "@densancar"
+  },
+  {
+   "title": "Robot arm picks up a ball",
+   "category": "Agents",
+   "description": "Robot arm picks up a ball: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/DaniiarAbdiev/status/2100851116498186415",
+   "handle": "@DaniiarAbdiev"
+  },
+  {
+   "title": "Slay the Spire 2 in real time",
+   "category": "Games",
+   "description": "Game state in, typed move out. Slay the Spire 2 in real time shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/pranaygp/status/2100870399039037810",
+   "handle": "@pranaygp"
+  },
+  {
+   "title": "Pixel art with a sketch-and-refine loop",
+   "category": "Generative UI",
+   "description": "Generative interface experiment — Pixel art with a sketch-and-refine loop lets Jev pick what to show as you type or browse.",
+   "links": [],
+   "sourceUrl": "https://x.com/RealAstropulse/status/2101029816975663312",
+   "handle": "@RealAstropulse"
+  },
+  {
+   "title": "FlightWifi checks aircraft connectivity",
+   "category": "Browser",
+   "description": "Browser-side decisions with Jev. FlightWifi checks aircraft connectivity keeps the loop cheap enough to run on every scroll or click.",
+   "links": [],
+   "sourceUrl": "https://x.com/priyansh0327/status/2100943264459407757",
+   "handle": "@priyansh0327"
+  },
+  {
+   "title": "Intelligent ordering for code diffs",
+   "category": "Tools",
+   "description": "Developer-facing demo of Intelligent ordering for code diffs. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/purefunctor/status/2100796490516169184",
+   "handle": "@purefunctor"
+  },
+  {
+   "title": "Live Bitcoin headline classification",
+   "category": "Agents",
+   "description": "Autonomy demo — Live Bitcoin headline classification turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/ayoubships/status/2101032994374906055",
+   "handle": "@ayoubships"
+  },
+  {
+   "title": "Switch between manual and AI play",
+   "category": "Games",
+   "description": "Switch between manual and AI play: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/adrianmg/status/2100970810483823086",
+   "handle": "@adrianmg"
+  },
+  {
+   "title": "Natural-language camera control",
+   "category": "Generative UI",
+   "description": "Generative interface experiment — Natural-language camera control lets Jev pick what to show as you type or browse.",
+   "links": [],
+   "sourceUrl": "https://x.com/carrabre/status/2101035345643221239",
+   "handle": "@carrabre"
+  },
+  {
+   "title": "X post classifier",
+   "category": "Browser",
+   "description": "X post classifier: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/rolottr/status/2100951484846199063",
+   "handle": "@rolottr"
+  },
+  {
+   "title": "Smart calculator notebook",
+   "category": "Tools",
+   "description": "Smart calculator notebook: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/thekitze/status/2100873520951808403",
+   "handle": "@thekitze"
+  },
+  {
+   "title": "Jev tries drawing on a pixel canvas",
+   "category": "Agents",
+   "description": "Autonomy demo — Jev tries drawing on a pixel canvas turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/yoheinakajima/status/2100939102455751049",
+   "handle": "@yoheinakajima"
+  },
+  {
+   "title": "Rubik's Cube that solves itself",
+   "category": "Games",
+   "description": "Rubik's Cube that solves itself — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/redp314/status/2100489858951073858",
+   "handle": "@redp314"
+  },
+  {
+   "title": "Voice-controlled Figma",
+   "category": "Generative UI",
+   "description": "Voice-controlled Figma. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/mikegee/status/2100845388655960112",
+   "handle": "@mikegee"
+  },
+  {
+   "title": "Color-coded X timeline",
+   "category": "Browser",
+   "description": "Color-coded X timeline: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/ganjidotme/status/2101024692526280706",
+   "handle": "@ganjidotme"
+  },
+  {
+   "title": "Skill Router for Claude Code",
+   "category": "Tools",
+   "description": "Skill Router for Claude Code — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/lomeshdutta/status/2100833655518367871",
+   "handle": "@lomeshdutta"
+  },
+  {
+   "title": "Jevinik",
+   "category": "Agents",
+   "description": "Autonomy demo — Jevinik turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/unicodeveloper/status/2100965455506628834",
+   "handle": "@unicodeveloper"
+  },
+  {
+   "title": "Connect Four on Omarchy",
+   "category": "Games",
+   "description": "Connect Four on Omarchy: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/Entelic_Aria/status/2100966999602102520",
+   "handle": "@Entelic_Aria"
+  },
+  {
+   "title": "Jev-thoven music composition",
+   "category": "Generative UI",
+   "description": "Jev-thoven music composition. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/cocktailpeanut/status/2101032641470386481",
+   "handle": "@cocktailpeanut"
+  },
+  {
+   "title": "Describe your own social feed",
+   "category": "Browser",
+   "description": "Browser-side decisions with Jev. Describe your own social feed keeps the loop cheap enough to run on every scroll or click.",
+   "links": [],
+   "sourceUrl": "https://x.com/hari65535/status/2100968425967493414",
+   "handle": "@hari65535"
+  },
+  {
+   "title": "TC39 Atlas",
+   "category": "Tools",
+   "description": "Developer-facing demo of TC39 Atlas. Small judgments that used to need an LLM call (notable figure from the build: 324 proposals).",
+   "links": [],
+   "sourceUrl": "https://x.com/GNUmanth/status/2100609220555215208",
+   "handle": "@GNUmanth"
+  },
+  {
+   "title": "Driving decision simulator",
+   "category": "Agents",
+   "description": "Driving decision simulator: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/cipherwrk/status/2100965547454374316",
+   "handle": "@cipherwrk"
+  },
+  {
+   "title": "Atari Pong with one structured question",
+   "category": "Games",
+   "description": "Atari Pong with one structured question: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/MemorysaverMFA/status/2100843620056416703",
+   "handle": "@MemorysaverMFA"
+  },
+  {
+   "title": "Making beats by talking",
+   "category": "Generative UI",
+   "description": "Generative interface experiment — Making beats by talking lets Jev pick what to show as you type or browse.",
+   "links": [],
+   "sourceUrl": "https://x.com/mahirb22/status/2101023899265692100",
+   "handle": "@mahirb22"
+  },
+  {
+   "title": "LangChain Wikipedia Game agent",
+   "category": "Browser",
+   "description": "LangChain browser use steered by Jev. Strong at the Wikipedia Game and folding laundry tasks like finding cheap flights.",
+   "links": [],
+   "sourceUrl": "https://x.com/ndrezn/status/2101046780989215005",
+   "handle": "@ndrezn"
+  },
+  {
+   "title": "Ranking relevant Reddit discussions",
+   "category": "Tools",
+   "description": "Ranking relevant Reddit discussions: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/johancutych/status/2100890907151143266",
+   "handle": "@johancutych"
+  },
+  {
+   "title": "Robot-arm decisions",
+   "category": "Agents",
+   "description": "Autonomy demo — Robot-arm decisions turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/ArpanTripathi20/status/2101011926301991070",
+   "handle": "@ArpanTripathi20"
+  },
+  {
+   "title": "Flappy Apex plays itself",
+   "category": "Games",
+   "description": "Flappy Apex plays itself — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/ChmalSzymon/status/2100934588205851015",
+   "handle": "@ChmalSzymon"
+  },
+  {
+   "title": "Live 3D character expressions",
+   "category": "Generative UI",
+   "description": "Generative interface experiment — Live 3D character expressions lets Jev pick what to show as you type or browse.",
+   "links": [],
+   "sourceUrl": "https://x.com/john_bortotti/status/2101019513676345555",
+   "handle": "@john_bortotti"
+  },
+  {
+   "title": "Auto-decline cookies and popups",
+   "category": "Browser",
+   "description": "Auto-decline cookies and popups — classify, filter, or navigate from live DOM signals.",
+   "links": [],
+   "sourceUrl": "https://x.com/mtropolis_chris/status/2100927820050366734",
+   "handle": "@mtropolis_chris"
+  },
+  {
+   "title": "Instant calorie tracking",
+   "category": "Tools",
+   "description": "Developer-facing demo of Instant calorie tracking. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/thekitze/status/2100857642566758849",
+   "handle": "@thekitze"
+  },
+  {
+   "title": "MuJoCo robot-arm control",
+   "category": "Agents",
+   "description": "Autonomy demo — MuJoCo robot-arm control turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/dimentary/status/2101018760371171420",
+   "handle": "@dimentary"
+  },
+  {
+   "title": "Fight Jev with live decision probabilities",
+   "category": "Games",
+   "description": "Game state in, typed move out. Fight Jev with live decision probabilities shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/Taufiq_ansari01/status/2100906203396337686",
+   "handle": "@Taufiq_ansari01"
+  },
+  {
+   "title": "Explore art by meaning",
+   "category": "Generative UI",
+   "description": "Explore art by meaning. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/albicodes/status/2101005086348488797",
+   "handle": "@albicodes"
+  },
+  {
+   "title": "Jev plus Kernel browser use",
+   "category": "Browser",
+   "description": "Jev scores every link on the page and Kernel clicks while you watch. Playable demo of a model that cannot write driving a browser.",
+   "links": [
+    {
+     "url": "https://jev-browser-use.val.run/",
+     "title": "jev-browser-use.val.run",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/stevekrouse/status/2100321685081559542",
+   "handle": "@stevekrouse"
+  },
+  {
+   "title": "LinkedIn outreach analysis",
+   "category": "Tools",
+   "description": "Developer-facing demo of LinkedIn outreach analysis. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/JamesPardoe/status/2100921264621945140",
+   "handle": "@JamesPardoe"
+  },
+  {
+   "title": "6502 emulator experiment",
+   "category": "Agents",
+   "description": "6502 emulator experiment. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/TheBalkanHacker/status/2100962091498684848",
+   "handle": "@TheBalkanHacker"
+  },
+  {
+   "title": "Jev plays piano",
+   "category": "Generative UI",
+   "description": "Jev plays piano: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.",
+   "links": [],
+   "sourceUrl": "https://x.com/nickfromlater/status/2100963628484624670",
+   "handle": "@nickfromlater"
+  },
+  {
+   "title": "Vibecheck",
+   "category": "Browser",
+   "description": "Vibecheck: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/rafalwilinski/status/2100959576682012988",
+   "handle": "@rafalwilinski"
+  },
+  {
+   "title": "Plain-English code linting",
+   "category": "Tools",
+   "description": "Developer-facing demo of Plain-English code linting. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/ahmedgagan11/status/2100925308975161549",
+   "handle": "@ahmedgagan11"
+  },
+  {
+   "title": "Automatic agent and model selection",
+   "category": "Agents",
+   "description": "Automatic agent and model selection: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/sawyerhood/status/2100994779291259187",
+   "handle": "@sawyerhood"
+  },
+  {
+   "title": "Five RuneScape bots level up",
+   "category": "Games",
+   "description": "Game state in, typed move out. Five RuneScape bots level up shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/aibynick/status/2100942434389897453",
+   "handle": "@aibynick"
+  },
+  {
+   "title": "Route genAI models on Higgsfield",
+   "category": "Generative UI",
+   "description": "Route genAI models on Higgsfield. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/higgsfield_ai/status/2101022133753430365",
+   "handle": "@higgsfield_ai"
+  },
+  {
+   "title": "Filtering unwanted X replies",
+   "category": "Browser",
+   "description": "Browser-side decisions with Jev. Filtering unwanted X replies keeps the loop cheap enough to run on every scroll or click.",
+   "links": [],
+   "sourceUrl": "https://x.com/iannuttall/status/2100888635943883244",
+   "handle": "@iannuttall"
+  },
+  {
+   "title": "Worth Replying finds relevant X discussions",
+   "category": "Tools",
+   "description": "Developer-facing demo of Worth Replying finds relevant X discussions. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/AIsaOneHQ/status/2100894473085489510",
+   "handle": "@AIsaOneHQ"
+  },
+  {
+   "title": "Jev macOS Loop",
+   "category": "Agents",
+   "description": "Jev macOS Loop. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/drjoshcsimmons/status/2101000954828992875",
+   "handle": "@drjoshcsimmons"
+  },
+  {
+   "title": "Jev beats Super Mario Bros.",
+   "category": "Games",
+   "description": "Game state in, typed move out. Jev beats Super Mario Bros. shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/ishuagra02/status/2101025059909353718",
+   "handle": "@ishuagra02"
+  },
+  {
+   "title": "Emotions expressed in beeps",
+   "category": "Generative UI",
+   "description": "Emotions expressed in beeps. Decision-shaped UI instead of another streaming paragraph.",
+   "links": [],
+   "sourceUrl": "https://x.com/yoheinakajima/status/2100945960671326482",
+   "handle": "@yoheinakajima"
+  },
+  {
+   "title": "X feed content firewall",
+   "category": "Browser",
+   "description": "Browser extension hides or collapses X posts from a natural language rule. Fast enough to feel invisible, cheap enough to run on every scroll.",
+   "links": [],
+   "sourceUrl": "https://x.com/marcelpociot/status/2100520134481735729",
+   "handle": "@marcelpociot"
+  },
+  {
+   "title": "Quality checks for physical-AI action labels",
+   "category": "Tools",
+   "description": "Quality checks for physical-AI action labels — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/the_cyw/status/2100807905859739779",
+   "handle": "@the_cyw"
+  },
+  {
+   "title": "Hipershopping with Agentcard",
+   "category": "Agents",
+   "description": "Hipershopping with Agentcard: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/PipeAbellos/status/2101035136867569838",
+   "handle": "@PipeAbellos"
+  },
+  {
+   "title": "Tetris placement picker",
+   "category": "Games",
+   "description": "Tetris placement picker — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/ziwenxu_/status/2100984628811084144",
+   "handle": "@ziwenxu_"
+  },
+  {
+   "title": "Bluesky feed with live emotion tags",
+   "category": "Generative UI",
+   "description": "Bluesky feed with live emotion tags: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.",
+   "links": [],
+   "sourceUrl": "https://x.com/amagitakayosi/status/2100820581444980736",
+   "handle": "@amagitakayosi"
+  },
+  {
+   "title": "X feed tuned to your bookmarks",
+   "category": "Browser",
+   "description": "X feed tuned to your bookmarks — classify, filter, or navigate from live DOM signals.",
+   "links": [],
+   "sourceUrl": "https://x.com/redp314/status/2100915304062710263",
+   "handle": "@redp314"
+  },
+  {
+   "title": "Plain-English logic interpreter",
+   "category": "Tools",
+   "description": "Developer-facing demo of Plain-English logic interpreter. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/narphorium/status/2100985027093749764",
+   "handle": "@narphorium"
+  },
+  {
+   "title": "Jev on Sol",
+   "category": "Agents",
+   "description": "Autonomy demo — Jev on Sol turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/Cryptonaire19/status/2100966334179770675",
+   "handle": "@Cryptonaire19"
+  },
+  {
+   "title": "Fifty Wordles at once",
+   "category": "Games",
+   "description": "Fifty Wordles at once: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/ahmedgagan11/status/2100895104055836914",
+   "handle": "@ahmedgagan11"
+  },
+  {
+   "title": "Jev inside a security pipeline",
+   "category": "Tools",
+   "description": "Jev inside a security pipeline — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/grichadev/status/2100437998571860087",
+   "handle": "@grichadev"
+  },
+  {
+   "title": "Self-healing agent swarms",
+   "category": "Agents",
+   "description": "Self-healing agent swarms. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/King_of_Calera/status/2100964845952671816",
+   "handle": "@King_of_Calera"
+  },
+  {
+   "title": "Jev-controlled city",
+   "category": "Games",
+   "description": "Jev-controlled city — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/MOulitzky/status/2100865465333490028",
+   "handle": "@MOulitzky"
+  },
+  {
+   "title": "Live YouTube comment classification",
+   "category": "Browser",
+   "description": "Browser-side decisions with Jev. Live YouTube comment classification keeps the loop cheap enough to run on every scroll or click.",
+   "links": [],
+   "sourceUrl": "https://x.com/AndreFrelicot/status/2100944158043038028",
+   "handle": "@AndreFrelicot"
+  },
+  {
+   "title": "AI-writing detector",
+   "category": "Tools",
+   "description": "AI-writing detector — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/redp314/status/2101035086418202861",
+   "handle": "@redp314"
+  },
+  {
+   "title": "Dungeon guards that change tactics",
+   "category": "Games",
+   "description": "Dungeon guards that change tactics: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/zhao_spenc/status/2100833745859461451",
+   "handle": "@zhao_spenc"
+  },
+  {
+   "title": "Reply sentiment at a glance",
+   "category": "Browser",
+   "description": "Reply sentiment at a glance — classify, filter, or navigate from live DOM signals.",
+   "links": [],
+   "sourceUrl": "https://x.com/aadhilkh/status/2101036813347590655",
+   "handle": "@aadhilkh"
+  },
+  {
+   "title": "News matching for brands",
+   "category": "Tools",
+   "description": "Developer-facing demo of News matching for brands. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/elvissun/status/2100951347080421409",
+   "handle": "@elvissun"
+  },
+  {
+   "title": "Dual-brain Jev and LLM agent",
+   "category": "Agents",
+   "description": "Dual-brain Jev and LLM agent: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/LeoTava8/status/2100822293803143208",
+   "handle": "@LeoTava8"
+  },
+  {
+   "title": "Tetris with live probabilities",
+   "category": "Games",
+   "description": "Tetris with live probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/cskadarla/status/2100977720670728556",
+   "handle": "@cskadarla"
+  },
+  {
+   "title": "Write your own X feed algorithm",
+   "category": "Browser",
+   "description": "Write your own X feed algorithm — classify, filter, or navigate from live DOM signals.",
+   "links": [],
+   "sourceUrl": "https://x.com/njpCoder/status/2100938813707366848",
+   "handle": "@njpCoder"
+  },
+  {
+   "title": "Predictive app launcher",
+   "category": "Tools",
+   "description": "Predictive app launcher: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/hityyhz/status/2101017732913529326",
+   "handle": "@hityyhz"
+  },
+  {
+   "title": "Big Two with Jev bots",
+   "category": "Games",
+   "description": "Game state in, typed move out. Big Two with Jev bots shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/chiubaca/status/2100974973452013598",
+   "handle": "@chiubaca"
+  },
+  {
+   "title": "Jevscan flags suspicious Etherscan activity",
+   "category": "Browser",
+   "description": "Jevscan flags suspicious Etherscan activity: page context scored on the fly so the agent (or extension) acts without waiting on a chat model.",
+   "links": [],
+   "sourceUrl": "https://x.com/theRaz0r/status/2100898307186864593",
+   "handle": "@theRaz0r"
+  },
+  {
+   "title": "Job and candidate matching",
+   "category": "Tools",
+   "description": "Job and candidate matching — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/sarvagya_kul/status/2100980770206879849",
+   "handle": "@sarvagya_kul"
+  },
+  {
+   "title": "Jev controls a simulated fly",
+   "category": "Agents",
+   "description": "Jev controls a simulated fly: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/eltokh7/status/2100971356691247377",
+   "handle": "@eltokh7"
+  },
+  {
+   "title": "Pokémon shiny hunting",
+   "category": "Games",
+   "description": "Pokémon shiny hunting — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/luckeyfaraday/status/2100955913913774437",
+   "handle": "@luckeyfaraday"
+  },
+  {
+   "title": "NoFlow intent-driven buttons",
+   "category": "Tools",
+   "description": "NoFlow intent-driven buttons — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/casungo/status/2101037798614499387",
+   "handle": "@casungo"
+  },
+  {
+   "title": "Faster Slack agent",
+   "category": "Agents",
+   "description": "Autonomy demo — Faster Slack agent turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/johnyeo_/status/2100987661926252737",
+   "handle": "@johnyeo_"
+  },
+  {
+   "title": "Jev plays Balatro",
+   "category": "Games",
+   "description": "Jev plays Balatro — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/Juris_Savos/status/2100989012966031417",
+   "handle": "@Juris_Savos"
+  },
+  {
+   "title": "Unsaidbrief",
+   "category": "Tools",
+   "description": "Unsaidbrief — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/Divyanshueth/status/2100997199102677033",
+   "handle": "@Divyanshueth"
+  },
+  {
+   "title": "Orus trade-strategy review",
+   "category": "Agents",
+   "description": "Autonomy demo — Orus trade-strategy review turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/Orus_agent/status/2100859259915227358",
+   "handle": "@Orus_agent"
+  },
+  {
+   "title": "Pigeon target-shooting game",
+   "category": "Games",
+   "description": "Game state in, typed move out. Pigeon target-shooting game shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/YoAmmaar/status/2100920115449766320",
+   "handle": "@YoAmmaar"
+  },
+  {
+   "title": "Abide coding-agent rules",
+   "category": "Tools",
+   "description": "Abide coding-agent rules: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/OhansEmmanuel/status/2101034822760288452",
+   "handle": "@OhansEmmanuel"
+  },
+  {
+   "title": "Microduck navigation",
+   "category": "Agents",
+   "description": "Autonomy demo — Microduck navigation turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/ostynhyss/status/2100987585384345890",
+   "handle": "@ostynhyss"
+  },
+  {
+   "title": "Jev Golf: flip the decision",
+   "category": "Games",
+   "description": "Jev Golf: flip the decision — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/heyitzami/status/2101039441590591562",
+   "handle": "@heyitzami"
+  },
+  {
+   "title": "Bannerbear instant field mapping",
+   "category": "Tools",
+   "description": "Bannerbear instant field mapping — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/yongfook/status/2100801037192024478",
+   "handle": "@yongfook"
+  },
+  {
+   "title": "AgentRun reusable workflows",
+   "category": "Agents",
+   "description": "AgentRun reusable workflows. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/MiguelriosEN/status/2101033282414768456",
+   "handle": "@MiguelriosEN"
+  },
+  {
+   "title": "Nuclear hot potato",
+   "category": "Games",
+   "description": "Game state in, typed move out. Nuclear hot potato shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/yelkhayami/status/2100978154194038988",
+   "handle": "@yelkhayami"
+  },
+  {
+   "title": "Automatically organize downloaded files",
+   "category": "Tools",
+   "description": "Developer-facing demo of Automatically organize downloaded files. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/marcelpociot/status/2100906882365788167",
+   "handle": "@marcelpociot"
+  },
+  {
+   "title": "Jev as a language generator",
+   "category": "Agents",
+   "description": "Autonomy demo — Jev as a language generator turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/alejandrofanjul/status/2101032677503603169",
+   "handle": "@alejandrofanjul"
+  },
+  {
+   "title": "Field Commander",
+   "category": "Games",
+   "description": "Field Commander — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/WanderSamsara/status/2100969346004852747",
+   "handle": "@WanderSamsara"
+  },
+  {
+   "title": "Real-time journaling",
+   "category": "Tools",
+   "description": "Real-time journaling — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/adammiribyan/status/2100988421426839942",
+   "handle": "@adammiribyan"
+  },
+  {
+   "title": "Jevmaxxing with Notte",
+   "category": "Agents",
+   "description": "Autonomy demo — Jevmaxxing with Notte turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/nottecore/status/2101021237417787819",
+   "handle": "@nottecore"
+  },
+  {
+   "title": "YouTube research at scale",
+   "category": "Tools",
+   "description": "Developer-facing demo of YouTube research at scale. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/mariojankovic/status/2100996843131863071",
+   "handle": "@mariojankovic"
+  },
+  {
+   "title": "Synkora resume-matching experiment",
+   "category": "Agents",
+   "description": "Synkora resume-matching experiment. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/rajumaz/status/2100852265477443841",
+   "handle": "@rajumaz"
+  },
+  {
+   "title": "Jev Arena",
+   "category": "Games",
+   "description": "Game state in, typed move out. Jev Arena shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/raihankhan_rk/status/2100951738606035176",
+   "handle": "@raihankhan_rk"
+  },
+  {
+   "title": "Search a physical library",
+   "category": "Tools",
+   "description": "Developer-facing demo of Search a physical library. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/s3ththompson/status/2100975114753892550",
+   "handle": "@s3ththompson"
+  },
+  {
+   "title": "Starchild prompt routing",
+   "category": "Agents",
+   "description": "Starchild prompt routing: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/StarchildOnX/status/2100936455401214327",
+   "handle": "@StarchildOnX"
+  },
+  {
+   "title": "Jev controls Tonk",
+   "category": "Tools",
+   "description": "Jev controls Tonk: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/gavinowensnet/status/2100972896931713489",
+   "handle": "@gavinowensnet"
+  },
+  {
+   "title": "Writing one character at a time",
+   "category": "Agents",
+   "description": "Writing one character at a time: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/ryanvogel/status/2100218045549412499",
+   "handle": "@ryanvogel"
+  },
+  {
+   "title": "Run at the Pokémon League",
+   "category": "Games",
+   "description": "Run at the Pokémon League: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/joey_build/status/2100904864519770170",
+   "handle": "@joey_build"
+  },
+  {
+   "title": "Voice commands for Autumn billing",
+   "category": "Tools",
+   "description": "Voice commands for Autumn billing — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/charlielamb/status/2100946207530955145",
+   "handle": "@charlielamb"
+  },
+  {
+   "title": "Assistant without a wake word",
+   "category": "Agents",
+   "description": "Assistant without a wake word: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/_MaxBlade/status/2100967959879471519",
+   "handle": "@_MaxBlade"
+  },
+  {
+   "title": "Three Jev bots in an FPS",
+   "category": "Games",
+   "description": "Three Jev bots in an FPS: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/tommyvedvik/status/2100903520425677027",
+   "handle": "@tommyvedvik"
+  },
+  {
+   "title": "Session replay to bug fixes",
+   "category": "Tools",
+   "description": "Session replay to bug fixes: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/tarasshyn/status/2101012033340571952",
+   "handle": "@tarasshyn"
+  },
+  {
+   "title": "Excuse Court",
+   "category": "Agents",
+   "description": "Excuse Court: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/ReindentAI/status/2100912441911648457",
+   "handle": "@ReindentAI"
+  },
+  {
+   "title": "Fly vs. Jev chess",
+   "category": "Games",
+   "description": "Fly vs. Jev chess — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/AvgJoeCowles/status/2101013430635213167",
+   "handle": "@AvgJoeCowles"
+  },
+  {
+   "title": "Medusa documentation recommendations",
+   "category": "Tools",
+   "description": "Medusa documentation recommendations — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/_shahednasser/status/2100924568013615354",
+   "handle": "@_shahednasser"
+  },
+  {
+   "title": "Generating text with Jev",
+   "category": "Agents",
+   "description": "Autonomy demo — Generating text with Jev turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/0xSuman/status/2100030221189874015",
+   "handle": "@0xSuman"
+  },
+  {
+   "title": "Jev flies a Kerbal rocket",
+   "category": "Games",
+   "description": "Game state in, typed move out. Jev flies a Kerbal rocket shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/textlayerai/status/2100998343254257898",
+   "handle": "@textlayerai"
+  },
+  {
+   "title": "Jev compaction for OMP",
+   "category": "Tools",
+   "description": "Jev compaction for OMP: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/jerry543/status/2100987079488409741",
+   "handle": "@jerry543"
+  },
+  {
+   "title": "X scrolling agent",
+   "category": "Agents",
+   "description": "Autonomy demo — X scrolling agent turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/harold_bracy/status/2100998842011292097",
+   "handle": "@harold_bracy"
+  },
+  {
+   "title": "Find relevant support tickets",
+   "category": "Tools",
+   "description": "Find relevant support tickets — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/gorillasu/status/2100962570052030550",
+   "handle": "@gorillasu"
+  },
+  {
+   "title": "JevLM word-by-word writing",
+   "category": "Agents",
+   "description": "JevLM word-by-word writing: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/AdonAlternative/status/2100934589003030682",
+   "handle": "@AdonAlternative"
+  },
+  {
+   "title": "Dino: Jev vs GPT vs human",
+   "category": "Games",
+   "description": "Dino: Jev vs GPT vs human: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/Priyanshh91/status/2101033914261532886",
+   "handle": "@Priyanshh91"
+  },
+  {
+   "title": "SuperQode decision harness",
+   "category": "Tools",
+   "description": "SuperQode decision harness: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/Shashikant86/status/2100951170936086983",
+   "handle": "@Shashikant86"
+  },
+  {
+   "title": "Phone automation with step verification",
+   "category": "Agents",
+   "description": "Phone automation with step verification. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/sudo_rudra/status/2100898042933391741",
+   "handle": "@sudo_rudra"
+  },
+  {
+   "title": "Jev plays Clash Royale",
+   "category": "Games",
+   "description": "Jev plays Clash Royale: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/AmritNigam2/status/2100882320945520778",
+   "handle": "@AmritNigam2"
+  },
+  {
+   "title": "Instant Clay workflows",
+   "category": "Tools",
+   "description": "Instant Clay workflows: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/ENowoslawski/status/2100999124099195377",
+   "handle": "@ENowoslawski"
+  },
+  {
+   "title": "Just-in-time model selection in Goose",
+   "category": "Agents",
+   "description": "Just-in-time model selection in Goose. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/alexjhancock/status/2100932130196852896",
+   "handle": "@alexjhancock"
+  },
+  {
+   "title": "Tactical sentinel vs fixed rules",
+   "category": "Games",
+   "description": "Tactical sentinel vs fixed rules — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/aditya005/status/2101016584571818106",
+   "handle": "@aditya005"
+  },
+  {
+   "title": "YouWare résumé screener",
+   "category": "Tools",
+   "description": "Developer-facing demo of YouWare résumé screener. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/YouWareAI/status/2100984559215247814",
+   "handle": "@YouWareAI"
+  },
+  {
+   "title": "Shopping-agent safety check",
+   "category": "Tools",
+   "description": "Shopping-agent safety check — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/godlovesu_n/status/2100972334182219919",
+   "handle": "@godlovesu_n"
+  },
+  {
+   "title": "Jev Magic 8 Ball",
+   "category": "Agents",
+   "description": "Autonomy demo — Jev Magic 8 Ball turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/will_caskets/status/2100968037117780130",
+   "handle": "@will_caskets"
+  },
+  {
+   "title": "Jev plays pinball",
+   "category": "Games",
+   "description": "Game state in, typed move out. Jev plays pinball shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/SimplerMayank/status/2101021536446795847",
+   "handle": "@SimplerMayank"
+  },
+  {
+   "title": "Nanocode with selective memory compaction",
+   "category": "Tools",
+   "description": "Nanocode with selective memory compaction — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/kylejeong/status/2100827289349132657",
+   "handle": "@kylejeong"
+  },
+  {
+   "title": "Multi-stage robotic manipulation",
+   "category": "Agents",
+   "description": "Multi-stage robotic manipulation. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/JonyShaik/status/2100827590781214981",
+   "handle": "@JonyShaik"
+  },
+  {
+   "title": "League of Legends win probabilities",
+   "category": "Games",
+   "description": "League of Legends win probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/filicroval/status/2100963424163307712",
+   "handle": "@filicroval"
+  },
+  {
+   "title": "Judgment cache vs semantic cache",
+   "category": "Tools",
+   "description": "Developer-facing demo of Judgment cache vs semantic cache. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/BukunmiOA/status/2100879606924345747",
+   "handle": "@BukunmiOA"
+  },
+  {
+   "title": "Voice intent to tool calls",
+   "category": "Agents",
+   "description": "Voice intent to tool calls: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/BhosalePratim/status/2100986774742765991",
+   "handle": "@BhosalePratim"
+  },
+  {
+   "title": "RADAR ranks relevant developer resources",
+   "category": "Tools",
+   "description": "Developer-facing demo of RADAR ranks relevant developer resources. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/tedbuildsapps/status/2100852246778933693",
+   "handle": "@tedbuildsapps"
+  },
+  {
+   "title": "Live clinical-transcript classification prototype",
+   "category": "Agents",
+   "description": "Live clinical-transcript classification prototype. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/rheum_ai/status/2100454043361722798",
+   "handle": "@rheum_ai"
+  },
+  {
+   "title": "Chrome Dino with live decision scores",
+   "category": "Games",
+   "description": "Chrome Dino with live decision scores: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/mittalparth_/status/2100817199686619348",
+   "handle": "@mittalparth_"
+  },
+  {
+   "title": "Filling messy PDF forms",
+   "category": "Tools",
+   "description": "Developer-facing demo of Filling messy PDF forms. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/bendersej/status/2100960073853935630",
+   "handle": "@bendersej"
+  },
+  {
+   "title": "AI model tier-list experiment",
+   "category": "Agents",
+   "description": "AI model tier-list experiment. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/kyamilass/status/2100973211009888481",
+   "handle": "@kyamilass"
+  },
+  {
+   "title": "Five hundred agents in a 3D environment",
+   "category": "Games",
+   "description": "Five hundred agents in a 3D environment — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/crislenta/status/2100457614073327754",
+   "handle": "@crislenta"
+  },
+  {
+   "title": "Gmail search by intent",
+   "category": "Tools",
+   "description": "Gmail search by intent — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/dabit3/status/2100960281769738433",
+   "handle": "@dabit3"
+  },
+  {
+   "title": "Jev plays Sindicat",
+   "category": "Games",
+   "description": "Jev plays Sindicat: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/PlayDaaa/status/2101011302835458175",
+   "handle": "@PlayDaaa"
+  },
+  {
+   "title": "Parallel pixel decisions",
+   "category": "Agents",
+   "description": "Parallel pixel decisions. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/anshuc/status/2100246929611411501",
+   "handle": "@anshuc"
+  },
+  {
+   "title": "Solving NYT Connections",
+   "category": "Games",
+   "description": "Game state in, typed move out. Solving NYT Connections shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/yehudab/status/2100936180233597172",
+   "handle": "@yehudab"
+  },
+  {
+   "title": "Crypto trading engine with path forecasts",
+   "category": "Agents",
+   "description": "A trained 12B model fans out price paths; Jev turns them into trade calls with live market context. Decision layer on top of forecasts.",
+   "links": [],
+   "sourceUrl": "https://x.com/BrendanPlayford/status/2100472822544187461",
+   "handle": "@BrendanPlayford"
+  },
+  {
+   "title": "Jev plays Time Crisis",
+   "category": "Games",
+   "description": "Jev plays Time Crisis — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/juminoz/status/2100832108855857325",
+   "handle": "@juminoz"
+  },
+  {
+   "title": "Outreach intent analysis",
+   "category": "Tools",
+   "description": "Outreach intent analysis — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/miuoshekb/status/2101001400536715492",
+   "handle": "@miuoshekb"
+  },
+  {
+   "title": "Manhattan pathfinding",
+   "category": "Agents",
+   "description": "Autonomy demo — Manhattan pathfinding turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/BuilderShivam/status/2101014788575035689",
+   "handle": "@BuilderShivam"
+  },
+  {
+   "title": "Real-time Twitch chat classification",
+   "category": "Tools",
+   "description": "Real-time Twitch chat classification: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/kizuflux/status/2100970669987266799",
+   "handle": "@kizuflux"
+  },
+  {
+   "title": "Computer use at decision speed",
+   "category": "Agents",
+   "description": "Autonomy demo — Computer use at decision speed turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/savboj/status/2100545295201288678",
+   "handle": "@savboj"
+  },
+  {
+   "title": "Blitz chess against frontier models",
+   "category": "Games",
+   "description": "Game state in, typed move out. Blitz chess against frontier models shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/aimlapi/status/2100372930282573876",
+   "handle": "@aimlapi"
+  },
+  {
+   "title": "Jevcal confidence-threshold calibration",
+   "category": "Tools",
+   "description": "Jevcal confidence-threshold calibration: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/thenightshipper/status/2100850610962919551",
+   "handle": "@thenightshipper"
+  },
+  {
+   "title": "Function that evaluates the vibe",
+   "category": "Agents",
+   "description": "Function that evaluates the vibe: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/monocursive/status/2100867459435688120",
+   "handle": "@monocursive"
+  },
+  {
+   "title": "Doom where every enemy is Jev",
+   "category": "Games",
+   "description": "Rebuild of the Doom demo with Jev driving enemy actions — fight a room of decision models, or pit Jev against Jev.",
+   "links": [],
+   "sourceUrl": "https://x.com/dustin_podell/status/2100458335405588607",
+   "handle": "@dustin_podell"
+  },
+  {
+   "title": "Predicting the next shell command",
+   "category": "Tools",
+   "description": "Developer-facing demo of Predicting the next shell command. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/thorstenball/status/2100858434904109099",
+   "handle": "@thorstenball"
+  },
+  {
+   "title": "Stagehand browser control with Jev",
+   "category": "Agents",
+   "description": "Autonomy demo — Stagehand browser control with Jev turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/kylejeong/status/2100622054945095934",
+   "handle": "@kylejeong"
+  },
+  {
+   "title": "Intransitive model match",
+   "category": "Games",
+   "description": "Game state in, typed move out. Intransitive model match shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/AdamHoltererer/status/2100954549221532102",
+   "handle": "@AdamHoltererer"
+  },
+  {
+   "title": "Autocorrect experiment",
+   "category": "Tools",
+   "description": "Autocorrect experiment: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/loch_duarte/status/2100962088491348443",
+   "handle": "@loch_duarte"
+  },
+  {
+   "title": "Connect Four decisions",
+   "category": "Games",
+   "description": "Game state in, typed move out. Connect Four decisions shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/deepam02goyal/status/2101001570154586199",
+   "handle": "@deepam02goyal"
+  },
+  {
+   "title": "SuperX post scoring",
+   "category": "Tools",
+   "description": "Developer-facing demo of SuperX post scoring. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/robj3d3/status/2100722975645598191",
+   "handle": "@robj3d3"
+  },
+  {
+   "title": "AI Hedge Fund with Jev",
+   "category": "Agents",
+   "description": "AI Hedge Fund with Jev: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/virattt/status/2100959848623899005",
+   "handle": "@virattt"
+  },
+  {
+   "title": "Focus Rail train routing",
+   "category": "Games",
+   "description": "Game state in, typed move out. Focus Rail train routing shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/benkigera/status/2101035079149449398",
+   "handle": "@benkigera"
+  },
+  {
+   "title": "News classification and geolocation",
+   "category": "Tools",
+   "description": "News classification and geolocation — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/cmdrvl/status/2100937318760599594",
+   "handle": "@cmdrvl"
+  },
+  {
+   "title": "Jev versus Claude benchmarks",
+   "category": "Agents",
+   "description": "Autonomy demo — Jev versus Claude benchmarks turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/xucian_/status/2100957733960736889",
+   "handle": "@xucian_"
+  },
+  {
+   "title": "Pokémon FireRed Elite Four run",
+   "category": "Games",
+   "description": "Pokémon FireRed Elite Four run: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/AnxKhn/status/2100842364248178833",
+   "handle": "@AnxKhn"
+  },
+  {
+   "title": "Recipe scoring on five dimensions",
+   "category": "Tools",
+   "description": "Developer-facing demo of Recipe scoring on five dimensions. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/sashatwitts/status/2101033458596188389",
+   "handle": "@sashatwitts"
+  },
+  {
+   "title": "Tax document classification",
+   "category": "Tools",
+   "description": "Tax document classification: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/nedwize/status/2100973868324417852",
+   "handle": "@nedwize"
+  },
+  {
+   "title": "MakerMods robot arm in MuJoCo",
+   "category": "Agents",
+   "description": "MakerMods robot arm in MuJoCo. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/IsaacSin12/status/2100833538224668699",
+   "handle": "@IsaacSin12"
+  },
+  {
+   "title": "Webpage becomes a fight scene",
+   "category": "Games",
+   "description": "Game state in, typed move out. Webpage becomes a fight scene shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/ansonox/status/2101028925728031119",
+   "handle": "@ansonox"
+  },
+  {
+   "title": "Score 3,000 kids’ snacks in seconds",
+   "category": "Tools",
+   "description": "Score 3,000 kids’ snacks in seconds: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/nikunj/status/2101006585481073093",
+   "handle": "@nikunj"
+  },
+  {
+   "title": "Color-understanding experiment",
+   "category": "Agents",
+   "description": "Autonomy demo — Color-understanding experiment turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/DaleCloudman/status/2100980817761612041",
+   "handle": "@DaleCloudman"
+  },
+  {
+   "title": "Dragon Ball Sparking Zero with Jev",
+   "category": "Games",
+   "description": "Dragon Ball Sparking Zero with Jev — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/smoothkariminal/status/2100800997530677679",
+   "handle": "@smoothkariminal"
+  },
+  {
+   "title": "Decision layer for memory",
+   "category": "Tools",
+   "description": "Decision layer for memory — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/DekanBro/status/2101034455515459900",
+   "handle": "@DekanBro"
+  },
+  {
+   "title": "MOSS litter-picking simulation",
+   "category": "Agents",
+   "description": "MOSS litter-picking simulation: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/metrox_eth/status/2101021471644733867",
+   "handle": "@metrox_eth"
+  },
+  {
+   "title": "Jev attempts Resident Evil",
+   "category": "Games",
+   "description": "Jev attempts Resident Evil — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/juminoz/status/2100846091281506370",
+   "handle": "@juminoz"
+  },
+  {
+   "title": "Preflight personality simulation",
+   "category": "Tools",
+   "description": "Developer-facing demo of Preflight personality simulation. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/Hindrixbrown/status/2101031538959810731",
+   "handle": "@Hindrixbrown"
+  },
+  {
+   "title": "Jev Trades market simulation",
+   "category": "Agents",
+   "description": "Jev Trades market simulation. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/zadescoxp/status/2100866594964648005",
+   "handle": "@zadescoxp"
+  },
+  {
+   "title": "VoiceRun cooks Overcooked with Jev",
+   "category": "Games",
+   "description": "Co-op kitchen chaos steered by Jev decisions — and you can voice-direct the chefs. Doom was the teaser; dinner service is the stress test.",
+   "links": [],
+   "sourceUrl": "https://x.com/NWRLeon/status/2100689836084461903",
+   "handle": "@NWRLeon"
+  },
+  {
+   "title": "Jev MCP for agents",
+   "category": "Tools",
+   "description": "Proof-of-concept MCP: verify claims against evidence, screen content before it enters context, and rank candidates by meaning inside your harness.",
+   "links": [
+    {
+     "url": "https://github.com/jkudish/jev-mcp",
+     "title": "jkudish/jev-mcp",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/jkudish/status/2100413576284712999",
+   "handle": "@jkudish"
+  },
+  {
+   "title": "Email classification and routing",
+   "category": "Tools",
+   "description": "Email classification and routing: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/rahulstheory/status/2100959056483504512",
+   "handle": "@rahulstheory"
+  },
+  {
+   "title": "Offline research decision gate",
+   "category": "Agents",
+   "description": "Offline research decision gate. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/otto_explorer/status/2100971155297603662",
+   "handle": "@otto_explorer"
+  },
+  {
+   "title": "Keep the whale-city alive",
+   "category": "Games",
+   "description": "Keep the whale-city alive — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/gokayfem/status/2101022590722810271",
+   "handle": "@gokayfem"
+  },
+  {
+   "title": "Spreadsheets that format by meaning",
+   "category": "Tools",
+   "description": "Spreadsheets that format by meaning: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose (notable figure from the build: 7).",
+   "links": [],
+   "sourceUrl": "https://x.com/GuangyuRobert/status/2100601420395282695",
+   "handle": "@GuangyuRobert"
+  },
+  {
+   "title": "Ranking 1,000 everyday objects",
+   "category": "Agents",
+   "description": "Ranking 1,000 everyday objects: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/iKNuDDeL/status/2100942079706702271",
+   "handle": "@iKNuDDeL"
+  },
+  {
+   "title": "GODMODE civilization simulator",
+   "category": "Games",
+   "description": "Game state in, typed move out. GODMODE civilization simulator shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/GroverInnovate/status/2101034633462977016",
+   "handle": "@GroverInnovate"
+  },
+  {
+   "title": "Jevsume resume feedback",
+   "category": "Tools",
+   "description": "Developer-facing demo of Jevsume resume feedback. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/unown1ne/status/2100817301348262301",
+   "handle": "@unown1ne"
+  },
+  {
+   "title": "rtrvr.ai with Jev",
+   "category": "Agents",
+   "description": "Autonomy demo — rtrvr.ai with Jev turns signals into buy/hold/click/stop calls at decision speed (notable figure from the build: 40%).",
+   "links": [],
+   "sourceUrl": "https://x.com/b_kalisetty/status/2100693198175928707",
+   "handle": "@b_kalisetty"
+  },
+  {
+   "title": "Multiplayer Catan that freezes mid-deal",
+   "category": "Games",
+   "description": "Several Jevs sit at a Catan table; after a while they refuse to negotiate and skip turns. Chaotic, hilarious multi-agent tabletop.",
+   "links": [],
+   "sourceUrl": "https://x.com/sachpatro97/status/2101064273187274838",
+   "handle": "@sachpatro97"
+  },
+  {
+   "title": "TV recommendations by mood",
+   "category": "Tools",
+   "description": "TV recommendations by mood — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/bilal_harouchi/status/2100979294306488814",
+   "handle": "@bilal_harouchi"
+  },
+  {
+   "title": "Drone in an asteroid field",
+   "category": "Agents",
+   "description": "Autonomy demo — Drone in an asteroid field turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/MKhordoo/status/2100950317852455039",
+   "handle": "@MKhordoo"
+  },
+  {
+   "title": "Every Pac-Man move chosen by Jev",
+   "category": "Games",
+   "description": "Every Pac-Man move chosen by Jev: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/NesanSelvan04/status/2100844705588347238",
+   "handle": "@NesanSelvan04"
+  },
+  {
+   "title": "Easy-Jev live classifier playground",
+   "category": "Tools",
+   "description": "Tweak inputs and watch classifications update live. A hands-on sandbox for System One routing without writing an agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/rory_builds/status/2100606378184171682",
+   "handle": "@rory_builds"
+  },
+  {
+   "title": "Real-time voice control for a browser",
+   "category": "Agents",
+   "description": "Real-time voice control for a browser. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/moritzkremb/status/2100577979021832365",
+   "handle": "@moritzkremb"
+  },
+  {
+   "title": "Jev vs. GLM at chess",
+   "category": "Games",
+   "description": "Jev vs. GLM at chess: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/nutlope/status/2101010773157761481",
+   "handle": "@nutlope"
+  },
+  {
+   "title": "Job crawler that matches your profile",
+   "category": "Tools",
+   "description": "Job crawler that matches your profile: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/hqmank/status/2100933183931900346",
+   "handle": "@hqmank"
+  },
+  {
+   "title": "News-driven stock research",
+   "category": "Agents",
+   "description": "News-driven stock research: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/abolbuild/status/2101019948684279862",
+   "handle": "@abolbuild"
+  },
+  {
+   "title": "Pong model face-off",
+   "category": "Games",
+   "description": "Pong model face-off: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/mattheworiordan/status/2100937732012822897",
+   "handle": "@mattheworiordan"
+  },
+  {
+   "title": "Jev query planner",
+   "category": "Tools",
+   "description": "Jev query planner: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/mmalisper/status/2101001041903009987",
+   "handle": "@mmalisper"
+  },
+  {
+   "title": "Autonomous $10k trading experiment",
+   "category": "Agents",
+   "description": "Autonomy demo — Autonomous $10k trading experiment turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/abolbuild/status/2100523868913807410",
+   "handle": "@abolbuild"
+  },
+  {
+   "title": "Puzzle-solving playground",
+   "category": "Games",
+   "description": "Game state in, typed move out. Puzzle-solving playground shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/ashkans_dev/status/2101014737383206914",
+   "handle": "@ashkans_dev"
+  },
+  {
+   "title": "Parallel adversarial browser testing",
+   "category": "Tools",
+   "description": "Parallel adversarial browser testing: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/rafalwilinski/status/2100882207879434359",
+   "handle": "@rafalwilinski"
+  },
+  {
+   "title": "Voice-controlled browser",
+   "category": "Agents",
+   "description": "Voice-controlled browser. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/yatharth170699/status/2100986863788159191",
+   "handle": "@yatharth170699"
+  },
+  {
+   "title": "Dogfighting experiment",
+   "category": "Games",
+   "description": "Dogfighting experiment — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/hanznathanpo/status/2101020398477365629",
+   "handle": "@hanznathanpo"
+  },
+  {
+   "title": "Video hook scoring",
+   "category": "Tools",
+   "description": "Video hook scoring: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/joonahn_ai/status/2100960386472144908",
+   "handle": "@joonahn_ai"
+  },
+  {
+   "title": "Fruit fly reviews TypeScript",
+   "category": "Agents",
+   "description": "Fruit fly reviews TypeScript. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/nicknisi/status/2100986176370786768",
+   "handle": "@nicknisi"
+  },
+  {
+   "title": "Jev plays Geometry Dash",
+   "category": "Games",
+   "description": "Game state in, typed move out. Jev plays Geometry Dash shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/Neel490/status/2100953791260397747",
+   "handle": "@Neel490"
+  },
+  {
+   "title": "Fourteen checks for every pull request",
+   "category": "Tools",
+   "description": "Developer-facing demo of Fourteen checks for every pull request. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/redp314/status/2100585126652481915",
+   "handle": "@redp314"
+  },
+  {
+   "title": "Customer-message benchmark",
+   "category": "Agents",
+   "description": "Customer-message benchmark: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/copilot_shogo/status/2100925744599966026",
+   "handle": "@copilot_shogo"
+  },
+  {
+   "title": "Tetris with typed landing choices",
+   "category": "Games",
+   "description": "Tetris with typed landing choices: a playable loop where Jev makes the call each tick — no chat, just decisions.",
+   "links": [],
+   "sourceUrl": "https://x.com/steve_rosky/status/2100841146696032591",
+   "handle": "@steve_rosky"
+  },
+  {
+   "title": "Jev-review feedback for coding agents",
+   "category": "Tools",
+   "description": "Jev-review feedback for coding agents — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/niazmorshed_/status/2100465662867218857",
+   "handle": "@niazmorshed_"
+  },
+  {
+   "title": "Emergency routing simulation",
+   "category": "Agents",
+   "description": "Emergency routing simulation: agent loop where Jev is the pre-cortex — pick the next action, skip the essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/carlosmarcialt/status/2100979161196052855",
+   "handle": "@carlosmarcialt"
+  },
+  {
+   "title": "Rank every Pokémon by any question",
+   "category": "Games",
+   "description": "Rank every Pokémon by any question — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/dunkedtoast/status/2100941309511098578",
+   "handle": "@dunkedtoast"
+  },
+  {
+   "title": "Cascade Search typed query filters",
+   "category": "Tools",
+   "description": "Developer-facing demo of Cascade Search typed query filters. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/zaidmukaddam/status/2100910232255992032",
+   "handle": "@zaidmukaddam"
+  },
+  {
+   "title": "Slop Cannon profile analysis",
+   "category": "Agents",
+   "description": "Autonomy demo — Slop Cannon profile analysis turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/mtropolis_chris/status/2100811463048810560",
+   "handle": "@mtropolis_chris"
+  },
+  {
+   "title": "Jev vs OpenJev in an FPS",
+   "category": "Games",
+   "description": "Jev vs OpenJev in an FPS — Jev owns the tactical picks so the engine can stay tight and fast.",
+   "links": [],
+   "sourceUrl": "https://x.com/Neel490/status/2101028527978020920",
+   "handle": "@Neel490"
+  },
+  {
+   "title": "AI-writing slop detector",
+   "category": "Tools",
+   "description": "AI-writing slop detector: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/chaseleantj/status/2101039024118829261",
+   "handle": "@chaseleantj"
+  },
+  {
+   "title": "Instant decisions inside a SaaS agent",
+   "category": "Agents",
+   "description": "Autonomy demo — Instant decisions inside a SaaS agent turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/LennartPrange/status/2100868996971037044",
+   "handle": "@LennartPrange"
+  },
+  {
+   "title": "Inbox classifier for 1,500 emails",
+   "category": "Tools",
+   "description": "Inbox classifier for 1,500 emails — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/ryanvogel/status/2100042788851101842",
+   "handle": "@ryanvogel"
+  },
+  {
+   "title": "Discord event research",
+   "category": "Agents",
+   "description": "Autonomy demo — Discord event research turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/ConvictionFAQ/status/2101019068702879952",
+   "handle": "@ConvictionFAQ"
+  },
+  {
+   "title": "Byte predicts rock-paper-scissors",
+   "category": "Games",
+   "description": "Game state in, typed move out. Byte predicts rock-paper-scissors shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/2ndpsy/status/2101026520185622589",
+   "handle": "@2ndpsy"
+  },
+  {
+   "title": "Corent model routing",
+   "category": "Tools",
+   "description": "Developer-facing demo of Corent model routing. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/corentAI/status/2100965880242770423",
+   "handle": "@corentAI"
+  },
+  {
+   "title": "Criteria-based model routing in Eve",
+   "category": "Agents",
+   "description": "Autonomy demo — Criteria-based model routing in Eve turns signals into buy/hold/click/stop calls at decision speed.",
+   "links": [],
+   "sourceUrl": "https://x.com/eve/status/2100430918762832180",
+   "handle": "@eve"
+  },
+  {
+   "title": "Chaotic kitchen simulation",
+   "category": "Games",
+   "description": "Game state in, typed move out. Chaotic kitchen simulation shows System One steering play in realtime.",
+   "links": [],
+   "sourceUrl": "https://x.com/Michael50663932/status/2101009609087389712",
+   "handle": "@Michael50663932"
+  },
+  {
+   "title": "Trading bot: buy / sell / hold",
+   "category": "Agents",
+   "description": "Watches AAPL/TSLA/NVDA and asks Jev for one typed call. Demo via 3Route + TypeSafe + x402.",
+   "links": [
+    {
+     "url": "https://j3vroute.agents.bakingbad.dev",
+     "title": "j3vroute.agents.bakingbad.dev",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/3route_io/status/2100678779790110912",
+   "handle": "@3route_io"
+  },
+  {
+   "title": "Tenet review gates for agent-written code",
+   "category": "Tools",
+   "description": "Tenet review gates for agent-written code — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/timche_/status/2100893095147565523",
+   "handle": "@timche_"
+  },
+  {
+   "title": "Typed trading-rule experiment",
+   "category": "Agents",
+   "description": "Typed trading-rule experiment. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/mttcnnng/status/2100971168912048153",
+   "handle": "@mttcnnng"
+  },
+  {
+   "title": "Daily market brief",
+   "category": "Agents",
+   "description": "Daily market brief. Lots of tiny decisions, almost no tokens spent on chat.",
+   "links": [],
+   "sourceUrl": "https://x.com/blauyourmind/status/2101013407008743540",
+   "handle": "@blauyourmind"
+  },
+  {
+   "title": "MakerMap",
+   "category": "Tools",
+   "description": "Developer-facing demo of MakerMap. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/verbove/status/2100990085340496185",
+   "handle": "@verbove"
+  },
+  {
+   "title": "Jev Search",
+   "category": "Tools",
+   "description": "Jev Search — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/fatwang2ai/status/2100653998378516518",
+   "handle": "@fatwang2ai"
+  },
+  {
+   "title": "Mappity",
+   "category": "Tools",
+   "description": "Mappity: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/francip/status/2101013116125594026",
+   "handle": "@francip"
+  },
+  {
+   "title": "Claude Code context compaction",
+   "category": "Tools",
+   "description": "Claude Code context compaction: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/0x_kaize/status/2100913118528393596",
+   "handle": "@0x_kaize"
+  },
+  {
+   "title": "Sniff Test",
+   "category": "Tools",
+   "description": "Developer-facing demo of Sniff Test. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/DanRWilloughby/status/2100963528261751073",
+   "handle": "@DanRWilloughby"
+  },
+  {
+   "title": "Azdaja",
+   "category": "Tools",
+   "description": "Azdaja: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/_kubet/status/2100978792596492604",
+   "handle": "@_kubet"
+  },
+  {
+   "title": "Voice browser, memory, YouTube predictor",
+   "category": "Tools",
+   "description": "Full build tutorial: voice controlled browser, AI memory decisions, and a YouTube predictor. Three concrete Jev apps from API setup to demo.",
+   "links": [],
+   "sourceUrl": "https://x.com/moritzkremb/status/2100715237267660873",
+   "handle": "@moritzkremb"
+  },
+  {
+   "title": "Npm package gate for coding agents",
+   "category": "Tools",
+   "description": "Npm package gate for coding agents — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/haatifff/status/2100898122142724421",
+   "handle": "@haatifff"
+  },
+  {
+   "title": "Youform voice builder",
+   "category": "Tools",
+   "description": "Youform voice builder — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/themkmaker/status/2100961111319429403",
+   "handle": "@themkmaker"
+  },
+  {
+   "title": "JevQL",
+   "category": "Tools",
+   "description": "Developer-facing demo of JevQL. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/kylemclaren/status/2100953409973108759",
+   "handle": "@kylemclaren"
+  },
+  {
+   "title": "jev-codes",
+   "category": "Tools",
+   "description": "jev-codes — criteria in, structured call out, ready for a CLI or agent harness (notable figure from the build: 1 s).",
+   "links": [],
+   "sourceUrl": "https://x.com/kushwho11146/status/2101103318386758011",
+   "handle": "@kushwho11146"
+  },
+  {
+   "title": "Backlink outreach scoring",
+   "category": "Tools",
+   "description": "Developer-facing demo of Backlink outreach scoring. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/nicolasmore_/status/2101035899240767542",
+   "handle": "@nicolasmore_"
+  },
+  {
+   "title": "Fast pull-request walkthroughs",
+   "category": "Tools",
+   "description": "Developer-facing demo of Fast pull-request walkthroughs. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/marvelousmudd/status/2100908613250490792",
+   "handle": "@marvelousmudd"
+  },
+  {
+   "title": "Classifying 500 emails in seconds",
+   "category": "Tools",
+   "description": "Classifying 500 emails in seconds: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/rileybrown/status/2100404532119269426",
+   "handle": "@rileybrown"
+  },
+  {
+   "title": "Job-description and résumé matching",
+   "category": "Tools",
+   "description": "Developer-facing demo of Job-description and résumé matching. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/husain_j53/status/2101007440393408702",
+   "handle": "@husain_j53"
+  },
+  {
+   "title": "Jev as a QA tester",
+   "category": "Tools",
+   "description": "Developer-facing demo of Jev as a QA tester. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/krzysztof_moch/status/2100513641556549700",
+   "handle": "@krzysztof_moch"
+  },
+  {
+   "title": "YouTube content map",
+   "category": "Tools",
+   "description": "YouTube content map: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/kenonews/status/2101025013243555971",
+   "handle": "@kenonews"
+  },
+  {
+   "title": "Prompt difficulty classifier",
+   "category": "Tools",
+   "description": "Prompt difficulty classifier: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/k_grajeda/status/2101021361351131464",
+   "handle": "@k_grajeda"
+  },
+  {
+   "title": "Yes/no/score from the CLI",
+   "category": "Tools",
+   "description": "Yes/no/score from the CLI: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/ctatedev/status/2100584917092409479",
+   "handle": "@ctatedev"
+  },
+  {
+   "title": "Intelligent autofill buttons",
+   "category": "Tools",
+   "description": "Intelligent autofill buttons: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/ctnicholasdev/status/2100928133608472817",
+   "handle": "@ctnicholasdev"
+  },
+  {
+   "title": "Measuring progress in agent traces",
+   "category": "Tools",
+   "description": "Measuring progress in agent traces — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/0xkaushik_k/status/2100928490367230201",
+   "handle": "@0xkaushik_k"
+  },
+  {
+   "title": "Ad account X-ray",
+   "category": "Tools",
+   "description": "Ad account X-ray — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/vladdubchak_x/status/2100952403121967298",
+   "handle": "@vladdubchak_x"
+  },
+  {
+   "title": "JevForm — branching questions on the fly",
+   "category": "Tools",
+   "description": "Forms that pick the next field from your answers instead of brittle if/then trees. Built with json-render + Jev.",
+   "links": [],
+   "sourceUrl": "https://x.com/tamirspiritt/status/2101079101997982037",
+   "handle": "@tamirspiritt"
+  },
+  {
+   "title": "Jev Reviewer",
+   "category": "Tools",
+   "description": "Developer-facing demo of Jev Reviewer. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/ASofiMahmudi/status/2100985031703269425",
+   "handle": "@ASofiMahmudi"
+  },
+  {
+   "title": "Chat moderation before send",
+   "category": "Tools",
+   "description": "Developer-facing demo of Chat moderation before send. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/stoufax/status/2100956659128361097",
+   "handle": "@stoufax"
+  },
+  {
+   "title": "Email fraud detection with Jev and Kimi",
+   "category": "Tools",
+   "description": "Email fraud detection with Jev and Kimi — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/nutlope/status/2100614659690713543",
+   "handle": "@nutlope"
+  },
+  {
+   "title": "Silent code-review gate",
+   "category": "Tools",
+   "description": "Silent code-review gate — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/Kunal_Jain9/status/2101027586587738151",
+   "handle": "@Kunal_Jain9"
+  },
+  {
+   "title": "Instant team scheduling with Cal.com",
+   "category": "Tools",
+   "description": "Instant team scheduling with Cal.com: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/peer_rich/status/2100902559313502602",
+   "handle": "@peer_rich"
+  },
+  {
+   "title": "Page-by-page OCR router",
+   "category": "Tools",
+   "description": "Developer-facing demo of Page-by-page OCR router. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/MisbahSy/status/2100979972194369925",
+   "handle": "@MisbahSy"
+  },
+  {
+   "title": "Personal email client with smart filters",
+   "category": "Tools",
+   "description": "Developer-facing demo of Personal email client with smart filters. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/nickfthedev/status/2101037081719902327",
+   "handle": "@nickfthedev"
+  },
+  {
+   "title": "EasyFinder intent-based product filters",
+   "category": "Tools",
+   "description": "EasyFinder intent-based product filters — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/rowansail/status/2100922845345783928",
+   "handle": "@rowansail"
+  },
+  {
+   "title": "OCR-powered image classification",
+   "category": "Tools",
+   "description": "OCR-powered image classification — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/fayazara/status/2100953838891192789",
+   "handle": "@fayazara"
+  },
+  {
+   "title": "Typeahead UI",
+   "category": "Tools",
+   "description": "Typeahead UI: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose (notable figure from the build: 24).",
+   "links": [],
+   "sourceUrl": "https://x.com/mikegee/status/2101098282655338995",
+   "handle": "@mikegee"
+  },
+  {
+   "title": "Coaching and writing checks",
+   "category": "Tools",
+   "description": "Coaching and writing checks: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/krispuckett/status/2101006617223508022",
+   "handle": "@krispuckett"
+  },
+  {
+   "title": "pkg-gate",
+   "category": "Tools",
+   "description": "pkg-gate — criteria in, structured call out, ready for a CLI or agent harness (notable figure from the build: 100ms).",
+   "links": [],
+   "sourceUrl": "https://x.com/GNUmanth/status/2100405456187564201",
+   "handle": "@GNUmanth"
+  },
+  {
+   "title": "Research before outreach",
+   "category": "Tools",
+   "description": "Developer-facing demo of Research before outreach. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/AngelPadillaRam/status/2100963480027480457",
+   "handle": "@AngelPadillaRam"
+  },
+  {
+   "title": "Native Rust network-traffic monitoring",
+   "category": "Tools",
+   "description": "Native Rust network-traffic monitoring — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/ppweni/status/2100891358223388966",
+   "handle": "@ppweni"
+  },
+  {
+   "title": "Cambium Jev integration",
+   "category": "Tools",
+   "description": "Cambium Jev integration: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/SteveKeider/status/2101013714673480147",
+   "handle": "@SteveKeider"
+  },
+  {
+   "title": "Paper Breakdown research recommendations",
+   "category": "Tools",
+   "description": "Paper Breakdown research recommendations: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/neural_avb/status/2100881974780993668",
+   "handle": "@neural_avb"
+  },
+  {
+   "title": "Internal-link SEO audit",
+   "category": "Tools",
+   "description": "Internal-link SEO audit — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/borjafat/status/2101018783976722479",
+   "handle": "@borjafat"
+  },
+  {
+   "title": "AIBackends Jev API integration",
+   "category": "Tools",
+   "description": "Developer-facing demo of AIBackends Jev API integration. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/melvindvivas/status/2100848362648195307",
+   "handle": "@melvindvivas"
+  },
+  {
+   "title": "Tool-prune",
+   "category": "Tools",
+   "description": "Tool-prune: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/GNUmanth/status/2100996500226756988",
+   "handle": "@GNUmanth"
+  },
+  {
+   "title": "Draft quality gate",
+   "category": "Tools",
+   "description": "Developer-facing demo of Draft quality gate. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/Mnilax/status/2101015355133227348",
+   "handle": "@Mnilax"
+  },
+  {
+   "title": "Scoring a frontier-AI essay",
+   "category": "Tools",
+   "description": "Scoring a frontier-AI essay: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/nicdunz/status/2101029238883164288",
+   "handle": "@nicdunz"
+  },
+  {
+   "title": "Healthcare intake workflow prototype",
+   "category": "Tools",
+   "description": "Developer-facing demo of Healthcare intake workflow prototype. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/Rmzlb/status/2100928340236366217",
+   "handle": "@Rmzlb"
+  },
+  {
+   "title": "LinkedIn post scorer",
+   "category": "Tools",
+   "description": "Developer-facing demo of LinkedIn post scorer. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/robvjourney/status/2101006572562317356",
+   "handle": "@robvjourney"
+  },
+  {
+   "title": "Maxfusion competitor-ad research",
+   "category": "Tools",
+   "description": "Maxfusion competitor-ad research: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/mightyking/status/2100939189869002819",
+   "handle": "@mightyking"
+  },
+  {
+   "title": "traffic-guard",
+   "category": "Tools",
+   "description": "traffic-guard — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/GNUmanth/status/2100963107552280754",
+   "handle": "@GNUmanth"
+  },
+  {
+   "title": "Peakflo invoice coding",
+   "category": "Tools",
+   "description": "Peakflo invoice coding — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/its_d_i_m_a/status/2100961912314007878",
+   "handle": "@its_d_i_m_a"
+  },
+  {
+   "title": "Incident triage in Box",
+   "category": "Tools",
+   "description": "Developer-facing demo of Incident triage in Box. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/Box/status/2100993278955188320",
+   "handle": "@Box"
+  },
+  {
+   "title": "Intent-aware search in Replicas",
+   "category": "Tools",
+   "description": "Intent-aware search in Replicas: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/SaaiArora/status/2100807349363741132",
+   "handle": "@SaaiArora"
+  },
+  {
+   "title": "Just-in-time rules for Claude Code",
+   "category": "Tools",
+   "description": "Just-in-time rules for Claude Code: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/EliaAlberti/status/2100941050978164894",
+   "handle": "@EliaAlberti"
+  },
+  {
+   "title": "Sort files by their contents",
+   "category": "Tools",
+   "description": "Developer-facing demo of Sort files by their contents. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/mikemenard_com/status/2100984306583703858",
+   "handle": "@mikemenard_com"
+  },
+  {
+   "title": "Sensitive-data redaction",
+   "category": "Tools",
+   "description": "Sensitive-data redaction: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/v_sattinger/status/2100945255608586312",
+   "handle": "@v_sattinger"
+  },
+  {
+   "title": "Magic Jev Ball",
+   "category": "Tools",
+   "description": "Developer-facing demo of Magic Jev Ball. Small judgments that used to need an LLM call (notable figure from the build: 200 ms).",
+   "links": [],
+   "sourceUrl": "https://x.com/acharyaagamya/status/2101129105676861621",
+   "handle": "@acharyaagamya"
+  },
+  {
+   "title": "One box for chat and search",
+   "category": "Tools",
+   "description": "Developer-facing demo of One box for chat and search. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/ThinkingMatthew/status/2100969119772258623",
+   "handle": "@ThinkingMatthew"
+  },
+  {
+   "title": "Tester Army E2E",
+   "category": "Tools",
+   "description": "Tester Army E2E — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/o_kwasniewski/status/2100966838905585687",
+   "handle": "@o_kwasniewski"
+  },
+  {
+   "title": "Cloud failover with Cutover",
+   "category": "Tools",
+   "description": "Cloud failover with Cutover — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/kynichol/status/2100945511003885815",
+   "handle": "@kynichol"
+  },
+  {
+   "title": "Repository issue detection",
+   "category": "Tools",
+   "description": "Developer-facing demo of Repository issue detection. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/imgarrettpost/status/2100946464818012265",
+   "handle": "@imgarrettpost"
+  },
+  {
+   "title": "Predictive spreadsheet columns",
+   "category": "Tools",
+   "description": "Developer-facing demo of Predictive spreadsheet columns. Small judgments that used to need an LLM call.",
+   "links": [],
+   "sourceUrl": "https://x.com/dabit3/status/2100780008193020049",
+   "handle": "@dabit3"
+  },
+  {
+   "title": "Find in page by meaning",
+   "category": "Tools",
+   "description": "Find in page by meaning: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose (notable figure from the build: 12).",
+   "links": [],
+   "sourceUrl": "https://x.com/jiayao/status/2101108866713063804",
+   "handle": "@jiayao"
+  },
+  {
+   "title": "Sorting 63,000 emails",
+   "category": "Tools",
+   "description": "Sorting 63,000 emails: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/NathanWilbanks_/status/2101035975694483914",
+   "handle": "@NathanWilbanks_"
+  },
+  {
+   "title": "Android end-to-end testing",
+   "category": "Tools",
+   "description": "Android end-to-end testing — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/kevinkern/status/2101032931456168098",
+   "handle": "@kevinkern"
+  },
+  {
+   "title": "Inline Manual contextual help",
+   "category": "Tools",
+   "description": "Inline Manual contextual help — criteria in, structured call out, ready for a CLI or agent harness.",
+   "links": [],
+   "sourceUrl": "https://x.com/sotak/status/2100927660029247538",
+   "handle": "@sotak"
+  },
+  {
+   "title": "Touchpress mobile end-to-end testing",
+   "category": "Tools",
+   "description": "Touchpress mobile end-to-end testing: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/wobsoriano/status/2100813615410634997",
+   "handle": "@wobsoriano"
+  },
+  {
+   "title": "Jargon pigeon that dumps on buzzwords",
+   "category": "Tools",
+   "description": "Jev lives inside a pigeon mascot: it sniffs corporate jargon in your prose and… deposits feedback. Weirdly effective writing critique.",
+   "links": [],
+   "sourceUrl": "https://x.com/prkeshari/status/2101048015720951975",
+   "handle": "@prkeshari"
+  },
+  {
+   "title": "Instant tool-permission gates",
+   "category": "Tools",
+   "description": "Agents propose tool calls; Jev decides allow or deny in a snap. Tiny demo of policy decisions that do not need an essay.",
+   "links": [],
+   "sourceUrl": "https://x.com/montonenico/status/2100770687254499572",
+   "handle": "@montonenico"
+  },
+  {
+   "title": "Contextual clipboard quick actions",
+   "category": "Tools",
+   "description": "Contextual clipboard quick actions: plug Jev into a workflow as a typed gate — choose, score, or filter without generating prose.",
+   "links": [],
+   "sourceUrl": "https://x.com/marcelpociot/status/2100907261593829675",
+   "handle": "@marcelpociot"
+  },
+  {
+   "title": "Chrome extension for agentic browsing",
+   "category": "Browser",
+   "description": "Jev drives browse, click, and interact loops inside your Chrome tab via Vercel AI Gateway. Fast, cheap decision making for in browser agents.",
+   "links": [
+    {
+     "url": "https://fx.sh/",
+     "title": "fx.sh",
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/razaanstha/status/2100645675591520612",
+   "handle": "@razaanstha"
+  },
+  {
+   "title": "Effect service for Jev decisions",
+   "category": "Tools",
+   "description": "A simple Effect service wrapping Jev for effect agent stacks. Typed decisions drop into Effect pipelines without a chatty LLM middleman.",
+   "links": [],
+   "sourceUrl": "https://x.com/danieljvdm/status/2100378760973586869",
+   "handle": "@danieljvdm"
+  },
+  {
+   "title": "Dont get hit realtime game",
+   "category": "Games",
+   "description": "Tiny realtime game where Jev steers the player with one goal: dont get hit. Built to feel how decision models differ from chat LLMs.",
+   "links": [],
+   "sourceUrl": "https://x.com/abolbuild/status/2100509548339408972",
+   "handle": "@abolbuild"
   }
  ]
 }

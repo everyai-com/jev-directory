@@ -11578,7 +11578,8 @@
   "timestamp": "2026-09-17T03:46:35.481000+00:00",
   "sourceUrl": "https://discord.com/channels/1483217544214085663/1483217545040232493/1549989924751671316",
   "urls": [
-   "https://x.com/gregpr07/status/2100411066966749359?s=46"
+   "https://x.com/gregpr07/status/2100411066966749359?s=46",
+   "https://github.com/browser-use/jev-ultrafast"
   ],
   "attachments": [
    "https://twitter.com/gregpr07/status/2100411066966749359?s=46"
@@ -11593,6 +11594,10 @@
     "kind": "x",
     "title": "Post by @gregpr07",
     "desc": "Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open source browser agent. try it below ↓"
+   },
+   "https://github.com/browser-use/jev-ultrafast": {
+    "kind": "link",
+    "title": "browser-use/jev-ultrafast"
    }
   }
  },
@@ -12933,7 +12938,8 @@
   "timestamp": "2026-09-16T22:15:57.551000+00:00",
   "sourceUrl": "https://discord.com/channels/1483217544214085663/1483217545040232493/1549906718442524735",
   "urls": [
-   "https://x.com/jpschroeder/status/2100347770867458384?s=20"
+   "https://x.com/jpschroeder/status/2100347770867458384?s=20",
+   "https://jevpilot.standardagents.ai"
   ],
   "attachments": [
    "https://twitter.com/jpschroeder/status/2100347770867458384?s=20"
@@ -12948,6 +12954,10 @@
     "kind": "x",
     "title": "Post by @jpschroeder",
     "desc": "I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock."
+   },
+   "https://jevpilot.standardagents.ai": {
+    "kind": "link",
+    "title": "jevpilot.standardagents.ai"
    }
   }
  },
@@ -18416,6 +18426,230 @@
     "kind": "x",
     "title": "Post by @HugoDuprez",
     "desc": "Jev can generate game levels in real time.\n\nFaster and cheaper structured output could be a big deal for game dev!"
+   }
+  }
+ },
+ {
+  "id": "jdemo-2",
+  "author": "@jarrodwatts",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/jarrodwatts/status/2100356151468585346",
+  "urls": [
+   "https://jev-trader.vercel.app/"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://jev-trader.vercel.app/": {
+    "kind": "link",
+    "title": "jev-trader.vercel.app"
+   }
+  }
+ },
+ {
+  "id": "jdemo-4",
+  "author": "@ephraimduncan",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/ephraimduncan/status/2100524915007144289",
+  "urls": [
+   "https://jev-pacman.ephraimduncan.com"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://jev-pacman.ephraimduncan.com": {
+    "kind": "link",
+    "title": "jev-pacman.ephraimduncan.com"
+   }
+  }
+ },
+ {
+  "id": "jdemo-6",
+  "author": "@waynesutton",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/waynesutton/status/2100487878992388279",
+  "urls": [
+   "https://www.askjev.ai/"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://www.askjev.ai/": {
+    "kind": "link",
+    "title": "askjev.ai"
+   }
+  }
+ },
+ {
+  "id": "jdemo-8",
+  "author": "@chiziaruhoma",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/chiziaruhoma/status/2100878555047514390",
+  "urls": [
+   "https://jevton.chizi.app/"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://jevton.chizi.app/": {
+    "kind": "link",
+    "title": "jevton.chizi.app"
+   }
+  }
+ },
+ {
+  "id": "jdemo-10",
+  "author": "@nathanwchan",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/nathanwchan/status/2100096510436475293",
+  "urls": [
+   "https://almost-certain.vercel.app/"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://almost-certain.vercel.app/": {
+    "kind": "link",
+    "title": "almost-certain.vercel.app"
+   }
+  }
+ },
+ {
+  "id": "jdemo-14",
+  "author": "@zNunoTeixeira",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/zNunoTeixeira/status/2100600664665514108",
+  "urls": [
+   "https://jevisthewarden.com"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://jevisthewarden.com": {
+    "kind": "link",
+    "title": "jevisthewarden.com"
+   }
+  }
+ },
+ {
+  "id": "jdemo-15",
+  "author": "@qibinlou",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/qibinlou/status/2100676619815862464",
+  "urls": [
+   "https://jev-chess-master.vercel.app"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://jev-chess-master.vercel.app": {
+    "kind": "link",
+    "title": "jev-chess-master.vercel.app"
+   }
+  }
+ },
+ {
+  "id": "jdemo-16",
+  "author": "@tdinh_me",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/tdinh_me/status/2100793777103466615",
+  "urls": [
+   "https://github.com/trungdq88/youtube-sponsor-detection"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/trungdq88/youtube-sponsor-detection": {
+    "kind": "link",
+    "title": "trungdq88/youtube-sponsor-detection"
+   }
+  }
+ },
+ {
+  "id": "jdemo-33",
+  "author": "@jkudish",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/jkudish/status/2100697030616346641",
+  "urls": [
+   "https://github.com/jkudish/jev-browser"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/jkudish/jev-browser": {
+    "kind": "link",
+    "title": "jkudish/jev-browser"
+   }
+  }
+ },
+ {
+  "id": "jdemo-60",
+  "author": "@matthewcp",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/matthewcp/status/2101057280653574300",
+  "urls": [
+   "https://github.com/matthewp/flue-jev-demo"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/matthewp/flue-jev-demo": {
+    "kind": "link",
+    "title": "matthewp/flue-jev-demo"
+   }
+  }
+ },
+ {
+  "id": "jdemo-103",
+  "author": "@stevekrouse",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/stevekrouse/status/2100321685081559542",
+  "urls": [
+   "https://jev-browser-use.val.run/"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://jev-browser-use.val.run/": {
+    "kind": "link",
+    "title": "jev-browser-use.val.run"
+   }
+  }
+ },
+ {
+  "id": "jdemo-259",
+  "author": "@jkudish",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/jkudish/status/2100413576284712999",
+  "urls": [
+   "https://github.com/jkudish/jev-mcp"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://github.com/jkudish/jev-mcp": {
+    "kind": "link",
+    "title": "jkudish/jev-mcp"
+   }
+  }
+ },
+ {
+  "id": "jdemo-308",
+  "author": "@3route_io",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/3route_io/status/2100678779790110912",
+  "urls": [
+   "https://j3vroute.agents.bakingbad.dev"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://j3vroute.agents.bakingbad.dev": {
+    "kind": "link",
+    "title": "j3vroute.agents.bakingbad.dev"
+   }
+  }
+ },
+ {
+  "id": "jdemo-383",
+  "author": "@razaanstha",
+  "timestamp": "2026-09-19T16:40:14Z",
+  "sourceUrl": "https://x.com/razaanstha/status/2100645675591520612",
+  "urls": [
+   "https://fx.sh/"
+  ],
+  "attachments": [],
+  "meta": {
+   "https://fx.sh/": {
+    "kind": "link",
+    "title": "fx.sh"
    }
   }
  }
