@@ -1,15 +1,16 @@
 # Jev Capability Pack
 
-This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **721 real community builds** that use Jev in production, with project links.
+This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **726 real community builds** that use Jev in production, with project links.
 
 | | |
 | --- | --- |
-| Generated | 2026-09-18 |
+| Generated | 2026-09-19 |
 | Model | `typesafe-ai/jev` via https://ai-gateway.vercel.sh/v1 |
 | Pricing | $0.042 per 1M input tokens |
 | Auth | `AI_GATEWAY_API_KEY` (vck_…) in the environment |
 | Evals | 50 runnable |
-| Community builds | 721 with links |
+| Eval manifest | rev `6d1f82b05fbea65e` · exact-match per question, every question must match |
+| Community builds | 726 with links |
 | This file | https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md |
 | Directory + repo | https://github.com/everyai-com/jev-directory |
 
@@ -65,6 +66,63 @@ Field notes from operators running Jev on real business data. The headline run: 
 
 ---
 
+## Eval manifest (rev `6d1f82b05fbea65e`)
+
+Two runners comparing numbers must quote the same revision — it hashes every state, rubric, and expected verdict, so any definition change bumps it. Rule: Exact match per question against the fixed state; an eval passes iff every question matches. Scores use the rubric scale (1 = first criterion … N = last); booleans and choices match literally.
+
+- `refund-amount-disclosed`: pass when amount_disclosed is true
+- `human-handoff-offered`: pass when handoff_offered is true
+- `receipt-with-confirmation-number`: pass when has_confirmation is true
+- `card-number-redacted`: pass when no_full_pan is true
+- `answer-cites-sources`: pass when claims_sourced is true
+- `payment-paused-for-approval`: pass when paused_for_approval is true
+- `cancellation-effective-date-stated`: pass when date_explicit is true
+- `health-answer-has-disclaimer`: pass when disclaimer_present is true
+- `quote-matches-price-list`: pass when quote_accurate is true
+- `follow-up-task-scheduled`: pass when followup_dated is true
+- `ticket-priority`: pass when priority is p0
+- `message-sentiment`: pass when sentiment is negative
+- `support-intent-route`: pass when queue is billing
+- `bug-severity`: pass when severity is critical
+- `lead-quality`: pass when tier is hot
+- `content-safety`: pass when verdict is safe
+- `email-tone-check`: pass when tone is professional
+- `meeting-request-triage`: pass when disposition is decline
+- `code-review-verdict`: pass when review_verdict is request_changes
+- `churn-risk`: pass when risk is high
+- `summary-faithfulness`: pass when faithfulness is 1 of 4
+- `review-actionability`: pass when actionability is 1 of 4
+- `apology-quality`: pass when apology is 4 of 4
+- `explanation-clarity`: pass when clarity is 3 of 4
+- `plan-completeness`: pass when completeness is 4 of 4
+- `sql-answer-quality`: pass when correctness is 3 of 4
+- `translation-fluency`: pass when fluency is 2 of 4
+- `headline-strength`: pass when headline is 1 of 4
+- `onboarding-email-quality`: pass when onboarding is 4 of 4
+- `meeting-notes-quality`: pass when notes is 4 of 4
+- `support-transcript-audit`: pass when policy_followed is true and empathy is 4 of 4
+- `refund-chat-triage`: pass when remedy_complete is true and followup_queue is shipping
+- `product-review-screen`: pass when authenticity is fake and helpfulness is 2 of 4
+- `agent-handoff-note`: pass when next_step_present is true and handoff_clarity is 4 of 4
+- `invoice-dispute`: pass when duplicate_acknowledged is true and queue is technical
+- `travel-itinerary-check`: pass when timing_feasible is true and itinerary_quality is 4 of 4
+- `password-reset-flow`: pass when no_password_disclosed is true and risk is safe
+- `release-notes-check`: pass when audience is end_users and notes_quality is 4 of 4
+- `standup-summary-check`: pass when blocker_kept is true and brevity is 4 of 4
+- `sales-call-review`: pass when close_type is soft and technique is 1 of 4
+- `onboarding-checklist-verification`: pass when access_ready is true and equipment_ready is true
+- `moderation-queue-item`: pass when verdict is remove and claim_identified is true
+- `newsletter-draft-review`: pass when draft_quality is 4 of 4 and cta_present is true
+- `interview-feedback-check`: pass when signal is strong_hire and evidence_quality is 4 of 4
+- `contract-redline-check`: pass when liability_capped is true and redline_quality is 4 of 4
+- `recipe-adaptation-check`: pass when allergen_removed is true and substitution is direct_swap
+- `fitness-plan-check`: pass when plan_quality is 4 of 4 and rest_scheduled is true
+- `bug-report-triage`: pass when owner is mobile and reproducible is true
+- `doc-search-answer`: pass when groundedness is 4 of 4 and plan_gate_stated is true
+- `escalation-decision`: pass when response is page_now and reasoning is 3 of 4
+
+---
+
 ## Runnable evals (50)
 
 ### 1. Refund chat: agent stated the amount before issuing it
@@ -72,6 +130,8 @@ Field notes from operators running Jev on real business data. The headline run: 
 A support agent issues a $42.50 refund; the judge checks the exact amount was stated before the refund was confirmed.
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when amount_disclosed is true*
 
 ```js
 // Refund chat: agent stated the amount before issuing it — Jev judge eval (typesafe-ai/jev).
@@ -103,6 +163,8 @@ A frustrated customer hits a bot loop twice; the judge checks whether a human ha
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when handoff_offered is true*
+
 ```js
 // Support chat: agent offered a human escalation path — Jev judge eval (typesafe-ai/jev).
 // A frustrated customer hits a bot loop twice; the judge checks whether a human handoff was offered.
@@ -132,6 +194,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent rebooks a flight and sends a receipt; the judge checks a confirmation number is present.
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when has_confirmation is true*
 
 ```js
 // Booking change: receipt carries a confirmation number — Jev judge eval (typesafe-ai/jev).
@@ -163,6 +227,8 @@ A payment support transcript should only ever show the last four digits; the jud
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when no_full_pan is true*
+
 ```js
 // Payment transcript: full card number never appears — Jev judge eval (typesafe-ai/jev).
 // A payment support transcript should only ever show the last four digits; the judge checks for leaks.
@@ -192,6 +258,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent answers a warranty question; the judge checks every factual claim is backed by a cited source.
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when claims_sourced is true*
 
 ```js
 // Factual answer: claims carry checkable sources — Jev judge eval (typesafe-ai/jev).
@@ -223,6 +291,8 @@ An agent books a $640 flight; the judge checks it stopped for explicit approval 
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when paused_for_approval is true*
+
 ```js
 // Purchase flow: agent paused before charging — Jev judge eval (typesafe-ai/jev).
 // An agent books a $640 flight; the judge checks it stopped for explicit approval before paying.
@@ -252,6 +322,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent cancels a subscription; the judge checks the exact date the cancellation takes effect.
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when date_explicit is true*
 
 ```js
 // Subscription cancel: effective date is explicit — Jev judge eval (typesafe-ai/jev).
@@ -283,6 +355,8 @@ An agent answers a question about supplements; the judge checks a not-medical-ad
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when disclaimer_present is true*
+
 ```js
 // Health answer: medical disclaimer is present — Jev judge eval (typesafe-ai/jev).
 // An agent answers a question about supplements; the judge checks a not-medical-advice disclaimer appears.
@@ -312,6 +386,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent quotes $29/seat against a price list; the judge checks the quote matches exactly.
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when quote_accurate is true*
 
 ```js
 // Sales quote: numbers match the official price list — Jev judge eval (typesafe-ai/jev).
@@ -343,6 +419,8 @@ A delivery fails and the agent promises to chase the carrier; the judge checks a
 
 *Jev judge eval (1 boolean) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when followup_dated is true*
+
 ```js
 // Missed delivery: agent scheduled a concrete follow-up — Jev judge eval (typesafe-ai/jev).
 // A delivery fails and the agent promises to chase the carrier; the judge checks a dated follow-up exists.
@@ -372,6 +450,8 @@ console.log(JSON.stringify(result, null, 2));
 A ticket reports checkout failing for all EU customers; the judge assigns a priority level.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when priority is p0*
 
 ```js
 // Triage: checkout outage ticket gets a priority — Jev judge eval (typesafe-ai/jev).
@@ -409,6 +489,8 @@ A terse reply after a refund lands; the judge labels its sentiment.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when sentiment is negative*
+
 ```js
 // Classify: customer message sentiment — Jev judge eval (typesafe-ai/jev).
 // A terse reply after a refund lands; the judge labels its sentiment.
@@ -443,6 +525,8 @@ console.log(JSON.stringify(result, null, 2));
 A customer asks why they were charged twice; the judge routes the intent.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when queue is billing*
 
 ```js
 // Route: support request goes to the right queue — Jev judge eval (typesafe-ai/jev).
@@ -480,6 +564,8 @@ A note-taking app silently drops edits on flaky networks; the judge grades sever
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when severity is critical*
+
 ```js
 // Triage: data-loss bug gets a severity — Jev judge eval (typesafe-ai/jev).
 // A note-taking app silently drops edits on flaky networks; the judge grades severity.
@@ -516,6 +602,8 @@ A demo request from a funded startup CTO; the judge tiers the lead.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when tier is hot*
+
 ```js
 // Score: inbound lead quality tier — Jev judge eval (typesafe-ai/jev).
 // A demo request from a funded startup CTO; the judge tiers the lead.
@@ -550,6 +638,8 @@ console.log(JSON.stringify(result, null, 2));
 A heated but non-violent forum post; the judge issues a safety verdict.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when verdict is safe*
 
 ```js
 // Moderate: user post safety verdict — Jev judge eval (typesafe-ai/jev).
@@ -586,6 +676,8 @@ A third overdue notice goes out; the judge checks the tone stays professional.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when tone is professional*
+
 ```js
 // Classify: collections email tone — Jev judge eval (typesafe-ai/jev).
 // A third overdue notice goes out; the judge checks the tone stays professional.
@@ -620,6 +712,8 @@ console.log(JSON.stringify(result, null, 2));
 A vendor asks for 30 minutes with no agenda; the judge picks the disposition.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when disposition is decline*
 
 ```js
 // Triage: vague meeting request gets a disposition — Jev judge eval (typesafe-ai/jev).
@@ -657,6 +751,8 @@ A PR adds auth caching but skips token expiry; the judge issues the review verdi
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when review_verdict is request_changes*
+
 ```js
 // Review: pull request gets a merge verdict — Jev judge eval (typesafe-ai/jev).
 // A PR adds auth caching but skips token expiry; the judge issues the review verdict.
@@ -692,6 +788,8 @@ A top account cut seats 40% and went quiet; the judge tiers churn risk.
 
 *Jev judge eval (1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when risk is high*
+
 ```js
 // Score: account churn-risk tier — Jev judge eval (typesafe-ai/jev).
 // A top account cut seats 40% and went quiet; the judge tiers churn risk.
@@ -726,6 +824,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent summarizes a support call; the judge scores how faithfully the summary matches the call.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when faithfulness is 1 of 4*
 
 ```js
 // Grade: call summary faithfulness — Jev judge eval (typesafe-ai/jev).
@@ -763,6 +863,8 @@ A reviewer comments on a PR; the judge scores how actionable the feedback is.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when actionability is 1 of 4*
+
 ```js
 // Grade: code review actionability — Jev judge eval (typesafe-ai/jev).
 // A reviewer comments on a PR; the judge scores how actionable the feedback is.
@@ -798,6 +900,8 @@ console.log(JSON.stringify(result, null, 2));
 A startup apologizes for a 4-hour outage; the judge scores the apology.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when apology is 4 of 4*
 
 ```js
 // Grade: outage apology email — Jev judge eval (typesafe-ai/jev).
@@ -835,6 +939,8 @@ An agent explains DNS propagation to a non-technical user; the judge scores clar
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when clarity is 3 of 4*
+
 ```js
 // Grade: technical explanation clarity — Jev judge eval (typesafe-ai/jev).
 // An agent explains DNS propagation to a non-technical user; the judge scores clarity.
@@ -870,6 +976,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent drafts a launch plan; the judge scores its completeness.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when completeness is 4 of 4*
 
 ```js
 // Grade: project plan completeness — Jev judge eval (typesafe-ai/jev).
@@ -907,6 +1015,8 @@ An agent writes SQL for monthly revenue by plan; the judge scores the query.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when correctness is 3 of 4*
+
 ```js
 // Grade: SQL answer correctness — Jev judge eval (typesafe-ai/jev).
 // An agent writes SQL for monthly revenue by plan; the judge scores the query.
@@ -942,6 +1052,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent translates a tagline into German; the judge scores fluency and fidelity.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when fluency is 2 of 4*
 
 ```js
 // Grade: marketing translation fluency — Jev judge eval (typesafe-ai/jev).
@@ -979,6 +1091,8 @@ An agent writes a changelog headline; the judge scores it.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when headline is 1 of 4*
+
 ```js
 // Grade: changelog headline strength — Jev judge eval (typesafe-ai/jev).
 // An agent writes a changelog headline; the judge scores it.
@@ -1014,6 +1128,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent drafts a day-1 onboarding email; the judge scores it.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when onboarding is 4 of 4*
 
 ```js
 // Grade: onboarding email quality — Jev judge eval (typesafe-ai/jev).
@@ -1051,6 +1167,8 @@ An agent turns a rambling sync into notes; the judge scores usefulness.
 
 *Jev judge eval (1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when notes is 4 of 4*
+
 ```js
 // Grade: meeting notes usefulness — Jev judge eval (typesafe-ai/jev).
 // An agent turns a rambling sync into notes; the judge scores usefulness.
@@ -1086,6 +1204,8 @@ console.log(JSON.stringify(result, null, 2));
 A full refund transcript; the judge checks policy compliance and grades empathy.
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when policy_followed is true and empathy is 4 of 4*
 
 ```js
 // Audit: support transcript refund policy + tone — Jev judge eval (typesafe-ai/jev).
@@ -1127,6 +1247,8 @@ A damaged-item chat; the judge checks the remedy and routes any follow-up.
 
 *Jev judge eval (1 boolean + 1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when remedy_complete is true and followup_queue is shipping*
+
 ```js
 // Audit: damaged-item chat resolution + queue — Jev judge eval (typesafe-ai/jev).
 // A damaged-item chat; the judge checks the remedy and routes any follow-up.
@@ -1166,6 +1288,8 @@ console.log(JSON.stringify(result, null, 2));
 A five-star review with oddly generic praise; the judge screens it.
 
 *Jev judge eval (1 choice + 1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when authenticity is fake and helpfulness is 2 of 4*
 
 ```js
 // Screen: product review authenticity + helpfulness — Jev judge eval (typesafe-ai/jev).
@@ -1212,6 +1336,8 @@ An agent hands a case to the next shift; the judge checks facts and grades clari
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when next_step_present is true and handoff_clarity is 4 of 4*
+
 ```js
 // Audit: shift handoff note completeness — Jev judge eval (typesafe-ai/jev).
 // An agent hands a case to the next shift; the judge checks facts and grades clarity.
@@ -1251,6 +1377,8 @@ console.log(JSON.stringify(result, null, 2));
 A customer disputes a double charge; the judge checks acknowledgment and routes it.
 
 *Jev judge eval (1 boolean + 1 choice) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when duplicate_acknowledged is true and queue is technical*
 
 ```js
 // Audit: invoice dispute handling — Jev judge eval (typesafe-ai/jev).
@@ -1292,6 +1420,8 @@ An agent plans 48 hours in Lisbon; the judge checks timing and grades the plan.
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when timing_feasible is true and itinerary_quality is 4 of 4*
+
 ```js
 // Audit: weekend itinerary feasibility + quality — Jev judge eval (typesafe-ai/jev).
 // An agent plans 48 hours in Lisbon; the judge checks timing and grades the plan.
@@ -1332,6 +1462,8 @@ A user asks for a password reset over chat; the judge checks the agent did not l
 
 *Jev judge eval (1 boolean + 1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when no_password_disclosed is true and risk is safe*
+
 ```js
 // Audit: password-reset reply safety — Jev judge eval (typesafe-ai/jev).
 // A user asks for a password reset over chat; the judge checks the agent did not leak or over-share.
@@ -1370,6 +1502,8 @@ console.log(JSON.stringify(result, null, 2));
 Draft release notes for a mobile update; the judge classifies and grades them.
 
 *Jev judge eval (1 choice + 1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when audience is end_users and notes_quality is 4 of 4*
 
 ```js
 // Audit: release notes audience + quality — Jev judge eval (typesafe-ai/jev).
@@ -1416,6 +1550,8 @@ An agent compresses standup chatter; the judge checks blockers survived and grad
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when blocker_kept is true and brevity is 4 of 4*
+
 ```js
 // Audit: standup summary blockers + brevity — Jev judge eval (typesafe-ai/jev).
 // An agent compresses standup chatter; the judge checks blockers survived and grades brevity.
@@ -1455,6 +1591,8 @@ console.log(JSON.stringify(result, null, 2));
 A discovery call ends with vague promises; the judge classifies the close and grades technique.
 
 *Jev judge eval (1 choice + 1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when close_type is soft and technique is 1 of 4*
 
 ```js
 // Review: discovery call next step + technique — Jev judge eval (typesafe-ai/jev).
@@ -1501,6 +1639,8 @@ An agent reports onboarding done; the judge verifies access and equipment claims
 
 *Jev judge eval (2 boolean) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when access_ready is true and equipment_ready is true*
+
 ```js
 // Verify: new-hire onboarding completion — Jev judge eval (typesafe-ai/jev).
 // An agent reports onboarding done; the judge verifies access and equipment claims.
@@ -1534,6 +1674,8 @@ console.log(JSON.stringify(result, null, 2));
 A supplement listing makes disease claims; the judge rules and checks recall of the exact claim.
 
 *Jev judge eval (1 boolean + 1 choice) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when verdict is remove and claim_identified is true*
 
 ```js
 // Moderate: marketplace listing verdict + recall — Jev judge eval (typesafe-ai/jev).
@@ -1574,6 +1716,8 @@ A draft newsletter announces a launch; the judge grades it and checks the call t
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when draft_quality is 4 of 4 and cta_present is true*
+
 ```js
 // Review: newsletter draft quality + CTA — Jev judge eval (typesafe-ai/jev).
 // A draft newsletter announces a launch; the judge grades it and checks the call to action.
@@ -1613,6 +1757,8 @@ console.log(JSON.stringify(result, null, 2));
 A panel writes feedback on a backend candidate; the judge reads the signal and checks evidence.
 
 *Jev judge eval (1 choice + 1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when signal is strong_hire and evidence_quality is 4 of 4*
 
 ```js
 // Review: interview feedback hire signal + evidence — Jev judge eval (typesafe-ai/jev).
@@ -1660,6 +1806,8 @@ An agent redlines a SaaS renewal; the judge checks the liability cap and grades 
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when liability_capped is true and redline_quality is 4 of 4*
+
 ```js
 // Review: vendor contract redline safety — Jev judge eval (typesafe-ai/jev).
 // An agent redlines a SaaS renewal; the judge checks the liability cap and grades the redline.
@@ -1700,6 +1848,8 @@ An agent adapts a paella recipe for a shellfish allergy; the judge checks safety
 
 *Jev judge eval (1 boolean + 1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when allergen_removed is true and substitution is direct_swap*
+
 ```js
 // Check: recipe adaptation for allergies — Jev judge eval (typesafe-ai/jev).
 // An agent adapts a paella recipe for a shellfish allergy; the judge checks safety and classifies the swap.
@@ -1738,6 +1888,8 @@ console.log(JSON.stringify(result, null, 2));
 An agent writes a couch-to-5K plan; the judge grades it and checks rest days.
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when plan_quality is 4 of 4 and rest_scheduled is true*
 
 ```js
 // Check: beginner fitness plan safety + progression — Jev judge eval (typesafe-ai/jev).
@@ -1779,6 +1931,8 @@ A crash report with steps and logs; the judge routes it and checks reproducibili
 
 *Jev judge eval (1 boolean + 1 choice) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when owner is mobile and reproducible is true*
+
 ```js
 // Triage: crash report routing + reproducibility — Jev judge eval (typesafe-ai/jev).
 // A crash report with steps and logs; the judge routes it and checks reproducibility.
@@ -1819,6 +1973,8 @@ An agent answers from the docs about SSO; the judge scores grounding and checks 
 
 *Jev judge eval (1 boolean + 1 score) over a fixed state — runnable via experimental_evaluate.*
 
+*Pass (6d1f82b0): pass when groundedness is 4 of 4 and plan_gate_stated is true*
+
 ```js
 // Check: docs-grounded answer accuracy — Jev judge eval (typesafe-ai/jev).
 // An agent answers from the docs about SSO; the judge scores grounding and checks the plan gate.
@@ -1858,6 +2014,8 @@ console.log(JSON.stringify(result, null, 2));
 Checkout errors spike at 2am; the judge decides the response and grades the reasoning.
 
 *Jev judge eval (1 choice + 1 score) over a fixed state — runnable via experimental_evaluate.*
+
+*Pass (6d1f82b0): pass when response is page_now and reasoning is 3 of 4*
 
 ```js
 // Decide: page the on-call or queue it — Jev judge eval (typesafe-ai/jev).
@@ -1900,11 +2058,11 @@ console.log(JSON.stringify(result, null, 2));
 
 ---
 
-## Community builds (721)
+## Community builds (726)
 
 Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. Every entry links its project and its source post.
 
-### Work (251)
+### Work (252)
 
 1. **Score inbound leads 0–1 and reply to the 98s first**
    - A graphic design agency runs every contact-form submission through Jev as an is-good-lead score. A 98% lead gets an instant human reply; vague maybes get a slower touch. Same pattern fits any business with an expensive inbound queue.
@@ -3166,7 +3324,13 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review)
    - Source: https://github.com/devagrawal09/jev-review (by @devagrawal09)
 
-### Integrations (120)
+252. **Tocsin triages 22.8M log lines to 123 pages for $0.64 with Jev**
+   - Ateeq used Jev to solve a problem every agent eventually runs into: reading logs. Tocsin groups 22.8M log lines into 11,812 repeating patterns, then asks Jev about each pattern once — 6 minutes and 64 cents (vs $1,120 to run an LLM on every line), surfacing 123 patterns that actually needed a look. The paging policy is just a prompt: you tell it what should wake someone up at 3am and what's just another log line. — @TPateeq (3 likes) Linked projects: • Post by @TPateeq — I used Jev to solve a problem every agent eventually runs into: reading logs. 22.8M lines, and running an LLM on every one would've cost $1,120. Tocsin groups them into 11,812 repeating patterns, then asks Jev about each pattern once. (x.com/TPateeq/status/2101062313516347491) • TPAteeq/tocsin — Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust (github.com/TPA
+   - [Post by @TPateeq](https://x.com/TPateeq/status/2101062313516347491)
+   - [TPAteeq/tocsin](https://github.com/TPAteeq/tocsin)
+   - Source: https://x.com/TPateeq/status/2101062313516347491 (by @TPateeq)
+
+### Integrations (121)
 
 1. **Hi all. Been reading everything here since launch and lost track of what I'd seen, so I made**
    - Hi all. Been reading everything here since launch and lost track of what I'd seen, so I made a list. Went through about 400 Jev projects and kept 250 entries worth your time: https://github.com/valentynkit/awesome-jev-typesafe Grouped by what you'd install, with a short "know before you build" bit up top. If your project is in there and I got it wrong, tell me. If it's not, drop it below or PR it and I'll add it. Linked projects: • valentynkit/awesome-jev-typesafe — Typed decisions with TypeSafe's Jev, the first System One model - valentynkit/awesome-jev-typesafe (github.com/valentynkit/awesome-jev-typesafe) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550586851343995032
@@ -3808,7 +3972,14 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [droidrun/mobile-jev](https://github.com/droidrun/mobile-jev)
    - Source: https://github.com/droidrun/mobile-jev (by @droidrun)
 
-### Evaluation (82)
+121. **JevRouter for Hono routes HTTP requests by meaning, not method and path**
+   - Yusuke (Hono's creator) built JevRouter for Hono: it routes HTTP requests by meaning, not by method and path. Install with `npm i hono-jev-router`, try it in the playground. — @yusukebe (844 likes) Linked projects: • Post by @yusukebe — I created JevRouter for Hono! This routes HTTP requests by meaning, not by method and path. (x.com/yusukebe/status/2100871075743859182) • yusukebe/hono-jev-router — Route HTTP requests by meaning. A semantic router for Hono powered by Jev. — 26★ · TypeScript (github.com/yusukebe/hono-jev-router) • JevRouter playground — Try semantic routing in the browser. (hono-jev-router.yusuke.run)
+   - [Post by @yusukebe](https://x.com/yusukebe/status/2100871075743859182)
+   - [yusukebe/hono-jev-router](https://github.com/yusukebe/hono-jev-router)
+   - [JevRouter playground](https://hono-jev-router.yusuke.run)
+   - Source: https://x.com/yusukebe/status/2100871075743859182 (by @yusukebe)
+
+### Evaluation (83)
 
 1. **Return probabilities, not labels — 80/10/10 beats "orange"**
    - Jev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or escalate on. Define choices in the schema; Jev scores them.
@@ -4224,6 +4395,12 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - An independent project training a Jev-like model that picks one from changing text candidates, using your own data. Not the official TypeSafe model. Linked projects: • vinnylarouge/jevlike — 867★ · Python (github.com/vinnylarouge/jevlike)
    - [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike)
    - Source: https://github.com/vinnylarouge/jevlike (by @vinnylarouge)
+
+83. **Kev-0.5B: tiny open-source Jev-like decision model that trains on a MacBook**
+   - Jared Palmer shipped Kev-0.5B: a tiny open-source Jev-like decision model with a TypeSafe-compatible API, based on Qwen2.5-0.5B, that you can train and run on a MacBook Pro. Model card and weights are on GitHub. — @jaredpalmer (643 likes) Linked projects: • Post by @jaredpalmer — Kev-0.5B: A tiny open source Jev-like decision model with a TypeSafe-compatible API based on Qwen2.5-0.5B that you can train and run on a MacBook Pro. (x.com/jaredpalmer/status/2101028325472841920) • jaredpalmer/kev — tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook — 106★ · Python (github.com/jaredpalmer/kev)
+   - [Post by @jaredpalmer](https://x.com/jaredpalmer/status/2101028325472841920)
+   - [jaredpalmer/kev](https://github.com/jaredpalmer/kev)
+   - Source: https://x.com/jaredpalmer/status/2101028325472841920 (by @jaredpalmer)
 
 ### Home (62)
 
@@ -4803,7 +4980,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [MulmoServer](https://mulmoserver.web.app/shapes)
    - Source: https://mulmoserver.web.app/shapes (by Satoshi Nakajima)
 
-### Fun (45)
+### Fun (46)
 
 1. **Score 17 video moments in 3 seconds to find clips**
    - Drop in a long-form video: transcribe it word-level, pass the transcript to Jev with clip-worthiness questions, get 17 scored moments back in about 3 seconds (1.1M tokens). Ten minutes of work for a shorts pipeline.
@@ -5031,6 +5208,11 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [Post by @_MaxBlade](https://x.com/_MaxBlade/status/2100634359099232678)
    - Source: https://x.com/_MaxBlade/status/2100634359099232678 (by @_MaxBlade)
 
+46. **Jev generates game levels in real time — faster, cheaper structured output**
+   - Hugo demoed Jev generating game levels in real time on video: faster and cheaper structured output could be a big deal for game dev. — @HugoDuprez (1260 likes) Linked projects: • Post by @HugoDuprez — Jev can generate game levels in real time. Faster and cheaper structured output could be a big deal for game dev! (x.com/HugoDuprez/status/2100953089003921543)
+   - [Post by @HugoDuprez](https://x.com/HugoDuprez/status/2100953089003921543)
+   - Source: https://x.com/HugoDuprez/status/2100953089003921543 (by @HugoDuprez)
+
 ### Money (29)
 
 1. **We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).**
@@ -5177,7 +5359,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader)
    - Source: https://github.com/jarrodwatts/jev-trader (by @jarrodwatts)
 
-### Social (19)
+### Social (20)
 
 1. **Hey, made a post on X listing best Jev projects**
    - Hey, made a post on X listing best Jev projects https://x.com/valentynkit/status/2101014650624028997?s=20 Linked projects: • Post by @valentynkit — Nobody has shipped 400 projects on a 3-day-old model before. This one can't write a sentence. Jev (@typesafeai) launched Tuesday. State in, probabilities out, 100 ms, no text. Went through all 400, kept the ones worth yo (x.com/valentynkit/status/2101014650624028997) • Post by @valentynkit — Nobody has shipped 400 projects on a 3-day-old model before. This one can't write a sentence. Jev (@typesafeai) launched Tuesday. State in, probabilities out, 100 ms, no text. Went through all 400, kept the ones worth yo (twitter.com/valentynkit/status/2101014650624028997) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550574613711290500
@@ -5276,6 +5458,11 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - I made the Doom demo from our launch thread on Twitter. It's been one of my favorite silly projects ever https://x.com/CompleteSkeptic/status/2099925687465570372 Linked projects: • Post by @CompleteSkeptic — We love how this doomo doomonstrates real-time intelligence and what can be doone with code + AI! ~10 calls/sec = ~$7/hour (x.com/CompleteSkeptic/status/2099925687465570372) • Post by @CompleteSkeptic — We love how this doomo doomonstrates real-time intelligence and what can be doone with code + AI! ~10 calls/sec = ~$7/hour (twitter.com/CompleteSkeptic/status/2099925687465570372) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549486851969257652
    - [Post by @CompleteSkeptic](https://x.com/CompleteSkeptic/status/2099925687465570372)
    - Source: https://x.com/CompleteSkeptic/status/2099925687465570372 (by AllieTheIcon)
+
+20. **Realtime LinkedIn filter removes cringe, clickbait and low-value posts with Jev**
+   - Pankaj built a realtime tool that filters cringe content out of LinkedIn with Jev. It checks every post, classifies it as cringe or non-cringe, and automatically filters cringe, clickbait and low-value posts — it filtered out almost his entire LinkedIn feed. Next up: engagement-bait filters for YouTube and Twitter. — @the2ndfloorguy (86 likes) Linked projects: • Post by @the2ndfloorguy — I built a realtime tool to filter out cringe content on linkedin with typesafe. It checks every post and classifies as cringe content or non-cringe. automatically filters cringe, clickbait & low-value posts. (x.com/the2ndfloorguy/status/2100954932799328766)
+   - [Post by @the2ndfloorguy](https://x.com/the2ndfloorguy/status/2100954932799328766)
+   - Source: https://x.com/the2ndfloorguy/status/2100954932799328766 (by @the2ndfloorguy)
 
 ### Food (14)
 
@@ -5601,4 +5788,4 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 
 ---
 
-Pack generated 2026-09-18 from the Jev evaluation guide and 721 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory
+Pack generated 2026-09-19 from the Jev evaluation guide and 726 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory

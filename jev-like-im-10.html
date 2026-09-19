@@ -8,22 +8,109 @@
 <link rel="stylesheet" href="./directory.css">
 </head>
 <body>
+<div class="topbar"><div class="in">
+<a class="brand" href="index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<nav class="topnav"><a href="index.html">directory</a><a href="what-is-jev.html">what is jev</a><a href="jev-like-im-10.html" class="on">like i'm 10</a></nav>
+<span class="sp"></span>
+<a class="btn gh" href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener" title="Star or fork on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
+<a class="btn" href="capabilities.md">agent pack</a>
+<a class="btn solid" href="index.html#connect">connect your agent</a>
+</div></div>
 <div class="guidepage">
-<a class="back" href="./index.html">← directory</a>
+<div class="guidehero">
+<div class="gk">The two-minute version</div>
 <h1>Jev, explained like you're 10</h1>
-<p>Imagine your school hires a robot to deliver pizza. The robot is fast — but sometimes it forgets to say the price before charging your card. Who checks the robot's work?</p>
-<p><b>Jev is the robot's referee.</b> It watches what the robot did, then answers the coach's questions: did it say the price first? Yes or no. Was it polite? Give it stars. That's the whole job — Jev never delivers pizza itself, it just blows the whistle fairly, every single time.</p>
-<h2>The three whistles</h2>
-<ol class="steps">
-<li><b>Yes or no</b> — "Did the robot say $12 before charging?" True or false. No arguing.</li>
-<li><b>Pick one</b> — "Was that a pizza problem, a payment problem, or a lost-driver problem?" One label.</li>
-<li><b>Stars</b> — "How nice was the apology?" One to five stars, like a game review.</li>
-</ol>
-<h2>Why robots need a referee</h2>
-<p>Grown-ups let AI robots answer customers, move money, and call tools all day. A human can't re-read ten thousand chats — but Jev can, in seconds, for less than a cent. Every verdict is written down, so when something goes wrong there's a replay tape.</p>
-<div class="callout">Too simple? Read the <a href="./what-is-jev.html">grown-up version</a> with real code. Want proof instead of words? This directory has <a href="./index.html">50 runnable tests and hundreds of real builds</a> — or just open <b>Ask about Jev</b> and quiz it.</div>
-<footer class="site"><div>Generated 2026-09-18 · <a href="./index.html">Jev Directory</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a></div></footer>
+<p class="lede">Imagine your school hires a robot to run the pizza stall. The robot is fast — but sometimes it forgets to say the price before taking your money. Grown-ups are too busy to watch every single order. So they hire a referee.</p>
 </div>
+
+<div class="gcards">
+<div class="gcard"><div class="t"><span class="num">1</span>The robot</div><b>Does the job</b><span>Answers customers, takes orders, moves money. Fast and usually right — but it's a robot, so sometimes it isn't.</span></div>
+<div class="gcard"><div class="t"><span class="num">2</span>The referee</div><b>Checks the job</b><span>That's Jev. It doesn't sell pizza. It watches what the robot did and answers the coach's questions about it.</span></div>
+<div class="gcard"><div class="t"><span class="num">3</span>The tape</div><b>Writes it down</b><span>Every answer is saved, so when something goes wrong there's a replay to rewind instead of an argument.</span></div>
+</div>
+
+<h2>The three whistles</h2>
+<p>Jev can only blow three kinds of whistle. That is the entire vocabulary — and it turns out to be enough:</p>
+<div class="gcards">
+<div class="gcard"><div class="t">Yes or no</div><b>"Did it say the price first?"</b><span>You get <code>true</code> or <code>false</code> — no "well, kind of". Either the price was said before charging, or it wasn't.</span></div>
+<div class="gcard"><div class="t">Pick one</div><b>"Pizza problem, money problem, or lost-driver problem?"</b><span>You get exactly one of the labels you listed. Never two, never a brand-new one it invented.</span></div>
+<div class="gcard"><div class="t">Stars</div><b>"How nice was the apology?"</b><span>You get a number, like a game review. 1 is rude, 5 is "they owned it and fixed it".</span></div>
+</div>
+
+<h2>One order, start to finish</h2>
+<div class="gpanel">
+<p><b>The robot did this:</b> "Sorry your pizza is cold! I'll refund your $12 right now. Shall I go ahead?" — and then sent the refund before the customer answered.</p>
+<p><b>The coach asks Jev:</b> true or false — did the robot wait for a yes before refunding?</p>
+<p><b>Jev says:</b> <code>false</code>.</p>
+</div>
+<p>Notice what Jev did <b>not</b> do. It didn't decide whether the pizza was actually cold, and it didn't fix anything. It answered one question about what happened — and it answers the tenth time exactly the way it answered the first.</p>
+
+<h2>Why anyone bothers</h2>
+<p>Because there are too many orders to check by hand. One busy shop can take thousands of chats a day, and nobody can re-read them. Jev reads all of them in seconds, for less than the price of a gumball, and writes down what it found.</p>
+
+<h2>What the referee can't do</h2>
+<div class="gcards">
+<div class="gcard"><div class="t">Can't</div><b>Serve the pizza</b><span>Jev doesn't do the job, it only judges whatever did. Ask it to talk to your customers and you've hired the wrong robot.</span></div>
+<div class="gcard"><div class="t">Can't</div><b>Guess your rules</b><span>Jev has no idea what "good" means until you say it out loud. Vague question in, wobbly answer out.</span></div>
+<div class="gcard"><div class="t">Can't</div><b>Remember yesterday</b><span>Every call starts fresh. Give it the state, ask the questions — that's the whole deal.</span></div>
+</div>
+
+<div class="callout">That's really it — the grown-up version is the same three whistles with code attached. <a href="./what-is-jev.html">Read the grown-up version</a>, then go poke at the <a href="./index.html#evals-section">50 runnable tests</a> and the real builds behind them.</div>
+<footer class="site"><div class="in">
+<div class="fgrid">
+<div class="fcol fbrand">
+<a class="brand" href="index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<p>Everything Jev can do, with receipts: runnable judge-model evals plus real community builds, each linked to the project and the post it came from.</p>
+</div>
+<div class="fcol"><h5>Directory</h5>
+<a href="index.html">All builds</a>
+<a href="index.html#evals-section">Runnable evals</a>
+<a href="capabilities.md">Capability pack .md</a>
+<a href="capabilities.json">Pack .json</a>
+</div>
+<div class="fcol"><h5>Learn</h5>
+<a href="what-is-jev.html">What is Jev?</a>
+<a href="jev-like-im-10.html">Explained like you're 10</a>
+<a href="https://github.com/typesafe-ai/jev" target="_blank" rel="noopener">typesafe-ai/jev</a>
+</div>
+<div class="fcol"><h5>Use it from an agent</h5>
+<a href="index.html#connect">MCP server</a>
+<a href="setup.txt">Setup prompt</a>
+<a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a>
+</div>
+</div>
+<div class="fbar">
+<span>Generated 2026-09-19 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
+<span class="flinks"><a href="capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
+</div>
+</div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.copy);
+    if (!el) return;
+    var text = el.textContent;
+    var toast = document.getElementById('toast');
+    function done() {
+      toast.textContent = btn.dataset.copyMsg || 'Copied';
+      toast.classList.add('show');
+      clearTimeout(toast._t);
+      toast._t = setTimeout(function () { toast.classList.remove('show'); }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, done);
+    } else {
+      var area = document.createElement('textarea');
+      area.value = text; area.style.position = 'fixed'; area.style.opacity = '0';
+      document.body.appendChild(area); area.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      area.remove(); done();
+    }
+  });
+});
+</script>
 <script type="module" src="./ask.js"></script>
 </body>
 </html>

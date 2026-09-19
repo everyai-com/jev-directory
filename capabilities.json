@@ -1,6 +1,6 @@
 {
  "pack": "jev-capability-pack",
- "generated": "2026-09-18",
+ "generated": "2026-09-19",
  "packUrl": "https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md",
  "repo": "https://github.com/everyai-com/jev-directory",
  "model": {
@@ -17,6 +17,396 @@
    "choice": "{ type, instructions, criteria: { key: description } }",
    "score": "{ type, instructions, criteria: [ordered rubric strings] }"
   }
+ },
+ "manifest": {
+  "name": "jev-evals",
+  "revision": "6d1f82b05fbea65e",
+  "snapshot": "2026-09-18",
+  "model": {
+   "id": "typesafe-ai/jev",
+   "gatewayBase": "https://ai-gateway.vercel.sh/v1"
+  },
+  "semantics": "Exact match per question against the fixed state; an eval passes iff every question matches. Scores use the rubric scale (1 = first criterion … N = last); booleans and choices match literally.",
+  "counts": {
+   "evals": 50,
+   "questions": {
+    "boolean": 26,
+    "choice": 21,
+    "score": 23
+   }
+  },
+  "evals": [
+   {
+    "id": "refund-amount-disclosed",
+    "expected": {
+     "amount_disclosed": true
+    },
+    "pass": "pass when amount_disclosed is true"
+   },
+   {
+    "id": "human-handoff-offered",
+    "expected": {
+     "handoff_offered": true
+    },
+    "pass": "pass when handoff_offered is true"
+   },
+   {
+    "id": "receipt-with-confirmation-number",
+    "expected": {
+     "has_confirmation": true
+    },
+    "pass": "pass when has_confirmation is true"
+   },
+   {
+    "id": "card-number-redacted",
+    "expected": {
+     "no_full_pan": true
+    },
+    "pass": "pass when no_full_pan is true"
+   },
+   {
+    "id": "answer-cites-sources",
+    "expected": {
+     "claims_sourced": true
+    },
+    "pass": "pass when claims_sourced is true"
+   },
+   {
+    "id": "payment-paused-for-approval",
+    "expected": {
+     "paused_for_approval": true
+    },
+    "pass": "pass when paused_for_approval is true"
+   },
+   {
+    "id": "cancellation-effective-date-stated",
+    "expected": {
+     "date_explicit": true
+    },
+    "pass": "pass when date_explicit is true"
+   },
+   {
+    "id": "health-answer-has-disclaimer",
+    "expected": {
+     "disclaimer_present": true
+    },
+    "pass": "pass when disclaimer_present is true"
+   },
+   {
+    "id": "quote-matches-price-list",
+    "expected": {
+     "quote_accurate": true
+    },
+    "pass": "pass when quote_accurate is true"
+   },
+   {
+    "id": "follow-up-task-scheduled",
+    "expected": {
+     "followup_dated": true
+    },
+    "pass": "pass when followup_dated is true"
+   },
+   {
+    "id": "ticket-priority",
+    "expected": {
+     "priority": "p0"
+    },
+    "pass": "pass when priority is p0"
+   },
+   {
+    "id": "message-sentiment",
+    "expected": {
+     "sentiment": "negative"
+    },
+    "pass": "pass when sentiment is negative"
+   },
+   {
+    "id": "support-intent-route",
+    "expected": {
+     "queue": "billing"
+    },
+    "pass": "pass when queue is billing"
+   },
+   {
+    "id": "bug-severity",
+    "expected": {
+     "severity": "critical"
+    },
+    "pass": "pass when severity is critical"
+   },
+   {
+    "id": "lead-quality",
+    "expected": {
+     "tier": "hot"
+    },
+    "pass": "pass when tier is hot"
+   },
+   {
+    "id": "content-safety",
+    "expected": {
+     "verdict": "safe"
+    },
+    "pass": "pass when verdict is safe"
+   },
+   {
+    "id": "email-tone-check",
+    "expected": {
+     "tone": "professional"
+    },
+    "pass": "pass when tone is professional"
+   },
+   {
+    "id": "meeting-request-triage",
+    "expected": {
+     "disposition": "decline"
+    },
+    "pass": "pass when disposition is decline"
+   },
+   {
+    "id": "code-review-verdict",
+    "expected": {
+     "review_verdict": "request_changes"
+    },
+    "pass": "pass when review_verdict is request_changes"
+   },
+   {
+    "id": "churn-risk",
+    "expected": {
+     "risk": "high"
+    },
+    "pass": "pass when risk is high"
+   },
+   {
+    "id": "summary-faithfulness",
+    "expected": {
+     "faithfulness": 1
+    },
+    "pass": "pass when faithfulness is 1 of 4"
+   },
+   {
+    "id": "review-actionability",
+    "expected": {
+     "actionability": 1
+    },
+    "pass": "pass when actionability is 1 of 4"
+   },
+   {
+    "id": "apology-quality",
+    "expected": {
+     "apology": 4
+    },
+    "pass": "pass when apology is 4 of 4"
+   },
+   {
+    "id": "explanation-clarity",
+    "expected": {
+     "clarity": 3
+    },
+    "pass": "pass when clarity is 3 of 4"
+   },
+   {
+    "id": "plan-completeness",
+    "expected": {
+     "completeness": 4
+    },
+    "pass": "pass when completeness is 4 of 4"
+   },
+   {
+    "id": "sql-answer-quality",
+    "expected": {
+     "correctness": 3
+    },
+    "pass": "pass when correctness is 3 of 4"
+   },
+   {
+    "id": "translation-fluency",
+    "expected": {
+     "fluency": 2
+    },
+    "pass": "pass when fluency is 2 of 4"
+   },
+   {
+    "id": "headline-strength",
+    "expected": {
+     "headline": 1
+    },
+    "pass": "pass when headline is 1 of 4"
+   },
+   {
+    "id": "onboarding-email-quality",
+    "expected": {
+     "onboarding": 4
+    },
+    "pass": "pass when onboarding is 4 of 4"
+   },
+   {
+    "id": "meeting-notes-quality",
+    "expected": {
+     "notes": 4
+    },
+    "pass": "pass when notes is 4 of 4"
+   },
+   {
+    "id": "support-transcript-audit",
+    "expected": {
+     "policy_followed": true,
+     "empathy": 4
+    },
+    "pass": "pass when policy_followed is true and empathy is 4 of 4"
+   },
+   {
+    "id": "refund-chat-triage",
+    "expected": {
+     "remedy_complete": true,
+     "followup_queue": "shipping"
+    },
+    "pass": "pass when remedy_complete is true and followup_queue is shipping"
+   },
+   {
+    "id": "product-review-screen",
+    "expected": {
+     "authenticity": "fake",
+     "helpfulness": 2
+    },
+    "pass": "pass when authenticity is fake and helpfulness is 2 of 4"
+   },
+   {
+    "id": "agent-handoff-note",
+    "expected": {
+     "next_step_present": true,
+     "handoff_clarity": 4
+    },
+    "pass": "pass when next_step_present is true and handoff_clarity is 4 of 4"
+   },
+   {
+    "id": "invoice-dispute",
+    "expected": {
+     "duplicate_acknowledged": true,
+     "queue": "technical"
+    },
+    "pass": "pass when duplicate_acknowledged is true and queue is technical"
+   },
+   {
+    "id": "travel-itinerary-check",
+    "expected": {
+     "timing_feasible": true,
+     "itinerary_quality": 4
+    },
+    "pass": "pass when timing_feasible is true and itinerary_quality is 4 of 4"
+   },
+   {
+    "id": "password-reset-flow",
+    "expected": {
+     "no_password_disclosed": true,
+     "risk": "safe"
+    },
+    "pass": "pass when no_password_disclosed is true and risk is safe"
+   },
+   {
+    "id": "release-notes-check",
+    "expected": {
+     "audience": "end_users",
+     "notes_quality": 4
+    },
+    "pass": "pass when audience is end_users and notes_quality is 4 of 4"
+   },
+   {
+    "id": "standup-summary-check",
+    "expected": {
+     "blocker_kept": true,
+     "brevity": 4
+    },
+    "pass": "pass when blocker_kept is true and brevity is 4 of 4"
+   },
+   {
+    "id": "sales-call-review",
+    "expected": {
+     "close_type": "soft",
+     "technique": 1
+    },
+    "pass": "pass when close_type is soft and technique is 1 of 4"
+   },
+   {
+    "id": "onboarding-checklist-verification",
+    "expected": {
+     "access_ready": true,
+     "equipment_ready": true
+    },
+    "pass": "pass when access_ready is true and equipment_ready is true"
+   },
+   {
+    "id": "moderation-queue-item",
+    "expected": {
+     "verdict": "remove",
+     "claim_identified": true
+    },
+    "pass": "pass when verdict is remove and claim_identified is true"
+   },
+   {
+    "id": "newsletter-draft-review",
+    "expected": {
+     "draft_quality": 4,
+     "cta_present": true
+    },
+    "pass": "pass when draft_quality is 4 of 4 and cta_present is true"
+   },
+   {
+    "id": "interview-feedback-check",
+    "expected": {
+     "signal": "strong_hire",
+     "evidence_quality": 4
+    },
+    "pass": "pass when signal is strong_hire and evidence_quality is 4 of 4"
+   },
+   {
+    "id": "contract-redline-check",
+    "expected": {
+     "liability_capped": true,
+     "redline_quality": 4
+    },
+    "pass": "pass when liability_capped is true and redline_quality is 4 of 4"
+   },
+   {
+    "id": "recipe-adaptation-check",
+    "expected": {
+     "allergen_removed": true,
+     "substitution": "direct_swap"
+    },
+    "pass": "pass when allergen_removed is true and substitution is direct_swap"
+   },
+   {
+    "id": "fitness-plan-check",
+    "expected": {
+     "plan_quality": 4,
+     "rest_scheduled": true
+    },
+    "pass": "pass when plan_quality is 4 of 4 and rest_scheduled is true"
+   },
+   {
+    "id": "bug-report-triage",
+    "expected": {
+     "owner": "mobile",
+     "reproducible": true
+    },
+    "pass": "pass when owner is mobile and reproducible is true"
+   },
+   {
+    "id": "doc-search-answer",
+    "expected": {
+     "groundedness": 4,
+     "plan_gate_stated": true
+    },
+    "pass": "pass when groundedness is 4 of 4 and plan_gate_stated is true"
+   },
+   {
+    "id": "escalation-decision",
+    "expected": {
+     "response": "page_now",
+     "reasoning": 3
+    },
+    "pass": "pass when response is page_now and reasoning is 3 of 4"
+   }
+  ]
  },
  "evals": [
   {
@@ -11394,6 +11784,96 @@
    ],
    "sourceUrl": "https://github.com/droidrun/mobile-jev",
    "handle": "@droidrun"
+  },
+  {
+   "title": "Tocsin triages 22.8M log lines to 123 pages for $0.64 with Jev",
+   "category": "Work",
+   "description": "Ateeq used Jev to solve a problem every agent eventually runs into: reading logs. Tocsin groups 22.8M log lines into 11,812 repeating patterns, then asks Jev about each pattern once — 6 minutes and 64 cents (vs $1,120 to run an LLM on every line), surfacing 123 patterns that actually needed a look. The paging policy is just a prompt: you tell it what should wake someone up at 3am and what's just another log line.\n\n— @TPateeq (3 likes)\n\nLinked projects:\n• Post by @TPateeq — I used Jev to solve a problem every agent eventually runs into: reading logs. 22.8M lines, and running an LLM on every one would've cost $1,120. Tocsin groups them into 11,812 repeating patterns, then asks Jev about each pattern once. (x.com/TPateeq/status/2101062313516347491)\n• TPAteeq/tocsin — Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust (github.com/TPAteeq/tocsin)",
+   "links": [
+    {
+     "url": "https://x.com/TPateeq/status/2101062313516347491",
+     "title": "Post by @TPateeq",
+     "description": "I used Jev to solve a problem every agent eventually runs into: reading logs.\n\n22.8M lines, and running an LLM on every one would've cost $1,120.\n\nTocsin groups them into 11,812 repeating patterns, then asks Jev about each pattern once.\n\n6 minutes, 64 cents, 123 patterns that actually needed to be l"
+    },
+    {
+     "url": "https://github.com/TPAteeq/tocsin",
+     "title": "TPAteeq/tocsin",
+     "description": "Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust"
+    }
+   ],
+   "sourceUrl": "https://x.com/TPateeq/status/2101062313516347491",
+   "handle": "@TPateeq"
+  },
+  {
+   "title": "Realtime LinkedIn filter removes cringe, clickbait and low-value posts with Jev",
+   "category": "Social",
+   "description": "Pankaj built a realtime tool that filters cringe content out of LinkedIn with Jev. It checks every post, classifies it as cringe or non-cringe, and automatically filters cringe, clickbait and low-value posts — it filtered out almost his entire LinkedIn feed. Next up: engagement-bait filters for YouTube and Twitter.\n\n— @the2ndfloorguy (86 likes)\n\nLinked projects:\n• Post by @the2ndfloorguy — I built a realtime tool to filter out cringe content on linkedin with typesafe. It checks every post and classifies as cringe content or non-cringe. automatically filters cringe, clickbait & low-value posts. (x.com/the2ndfloorguy/status/2100954932799328766)",
+   "links": [
+    {
+     "url": "https://x.com/the2ndfloorguy/status/2100954932799328766",
+     "title": "Post by @the2ndfloorguy",
+     "description": "I built a realtime tool to filter out cringe content on linkedin with typesafe 🚨\n\nIt checks every post and classifies as cringe content or non-cringe. automatically filters cringe, clickbait & low-value posts. next filter engagement baits on youtube + twitter.\n\nbtw, It filtered out almost my entire"
+    }
+   ],
+   "sourceUrl": "https://x.com/the2ndfloorguy/status/2100954932799328766",
+   "handle": "@the2ndfloorguy"
+  },
+  {
+   "title": "JevRouter for Hono routes HTTP requests by meaning, not method and path",
+   "category": "Integrations",
+   "description": "Yusuke (Hono's creator) built JevRouter for Hono: it routes HTTP requests by meaning, not by method and path. Install with `npm i hono-jev-router`, try it in the playground.\n\n— @yusukebe (844 likes)\n\nLinked projects:\n• Post by @yusukebe — I created JevRouter for Hono! This routes HTTP requests by meaning, not by method and path. (x.com/yusukebe/status/2100871075743859182)\n• yusukebe/hono-jev-router — Route HTTP requests by meaning. A semantic router for Hono powered by Jev. — 26★ · TypeScript (github.com/yusukebe/hono-jev-router)\n• JevRouter playground — Try semantic routing in the browser. (hono-jev-router.yusuke.run)",
+   "links": [
+    {
+     "url": "https://x.com/yusukebe/status/2100871075743859182",
+     "title": "Post by @yusukebe",
+     "description": "I created JevRouter for Hono! This routes HTTP requests by meaning, not by method and path\n\nnpm i hono-jev-router\n\nPlayground: https://hono-jev-router.yusuke.run"
+    },
+    {
+     "url": "https://github.com/yusukebe/hono-jev-router",
+     "title": "yusukebe/hono-jev-router",
+     "description": "Route HTTP requests by meaning. A semantic router for Hono powered by Jev. — 26★ · TypeScript"
+    },
+    {
+     "url": "https://hono-jev-router.yusuke.run",
+     "title": "JevRouter playground",
+     "description": "Try semantic routing in the browser."
+    }
+   ],
+   "sourceUrl": "https://x.com/yusukebe/status/2100871075743859182",
+   "handle": "@yusukebe"
+  },
+  {
+   "title": "Kev-0.5B: tiny open-source Jev-like decision model that trains on a MacBook",
+   "category": "Evaluation",
+   "description": "Jared Palmer shipped Kev-0.5B: a tiny open-source Jev-like decision model with a TypeSafe-compatible API, based on Qwen2.5-0.5B, that you can train and run on a MacBook Pro. Model card and weights are on GitHub.\n\n— @jaredpalmer (643 likes)\n\nLinked projects:\n• Post by @jaredpalmer — Kev-0.5B: A tiny open source Jev-like decision model with a TypeSafe-compatible API based on Qwen2.5-0.5B that you can train and run on a MacBook Pro. (x.com/jaredpalmer/status/2101028325472841920)\n• jaredpalmer/kev — tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook — 106★ · Python (github.com/jaredpalmer/kev)",
+   "links": [
+    {
+     "url": "https://x.com/jaredpalmer/status/2101028325472841920",
+     "title": "Post by @jaredpalmer",
+     "description": "Kev-0.5B: A tiny open source Jev-like decision model with a TypeSafe-compatible API based on Qwen2.5-0.5B that you can train and run on a MacBook Pro.\n\nModel card and weights are available on GitHub\n\nhttps://github.com/jaredpalmer/kev"
+    },
+    {
+     "url": "https://github.com/jaredpalmer/kev",
+     "title": "jaredpalmer/kev",
+     "description": "tiny Jev-like model built on top of Qwen2.5-0.5B you can train and run on your MacBook — 106★ · Python"
+    }
+   ],
+   "sourceUrl": "https://x.com/jaredpalmer/status/2101028325472841920",
+   "handle": "@jaredpalmer"
+  },
+  {
+   "title": "Jev generates game levels in real time — faster, cheaper structured output",
+   "category": "Fun",
+   "description": "Hugo demoed Jev generating game levels in real time on video: faster and cheaper structured output could be a big deal for game dev.\n\n— @HugoDuprez (1260 likes)\n\nLinked projects:\n• Post by @HugoDuprez — Jev can generate game levels in real time. Faster and cheaper structured output could be a big deal for game dev! (x.com/HugoDuprez/status/2100953089003921543)",
+   "links": [
+    {
+     "url": "https://x.com/HugoDuprez/status/2100953089003921543",
+     "title": "Post by @HugoDuprez",
+     "description": "Jev can generate game levels in real time.\n\nFaster and cheaper structured output could be a big deal for game dev!"
+    }
+   ],
+   "sourceUrl": "https://x.com/HugoDuprez/status/2100953089003921543",
+   "handle": "@HugoDuprez"
   }
  ]
 }

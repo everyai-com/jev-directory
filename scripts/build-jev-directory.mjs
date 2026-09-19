@@ -20,6 +20,13 @@ try {
   JEV_MOD = await import('../data/jev-guide.js');
 }
 const { JEV_CASES, JEV_META, toLibraryCase } = JEV_MOD;
+let MAN_MOD;
+try {
+  MAN_MOD = await import('../worker/src/data/jev-manifest.js');
+} catch {
+  MAN_MOD = await import('../data/jev-manifest.js');
+}
+const { JEV_EXPECTED, evalPassText, datasetRevision, validateManifest } = MAN_MOD;
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 // Workspace layout writes into jev/; the exported OSS repo lays flat.
@@ -48,28 +55,39 @@ async function readFirst(paths) {
 
 const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;--line2:#2e333d;--text:#edeff3;--dim:#9aa0ae;--faint:#626873;--accent:#f5a524;--accent-ink:#1a1206;--mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
-.topbar{position:sticky;top:0;z-index:20;background:rgba(11,12,14,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.topbar .in{max-width:1180px;margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:14px}
-.brand{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:var(--text);text-decoration:none;white-space:nowrap}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(11,12,14,.82);-webkit-backdrop-filter:blur(16px) saturate(150%);backdrop-filter:blur(16px) saturate(150%);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:1180px;margin:0 auto;padding:11px 22px;display:flex;align-items:center;gap:14px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;letter-spacing:.13em;color:var(--text);text-decoration:none;white-space:nowrap}
+.brand .mark{width:23px;height:23px;border-radius:7px;background:linear-gradient(140deg,var(--accent),#ff7d1f);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:0;box-shadow:0 2px 10px rgba(245,165,36,.28)}
 .brand b{color:var(--accent);font-weight:700}
-.topbar .meta{font-family:var(--mono);font-size:12px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand i{font-style:normal;color:var(--faint)}
+.topnav{display:flex;align-items:center;gap:2px;margin-left:4px}
+.topnav a{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none;padding:7px 11px;border-radius:8px;white-space:nowrap;transition:color .15s ease,background .15s ease}
+.topnav a:hover{color:var(--text);background:var(--panel2)}
+.topnav a.on{color:var(--accent);background:rgba(245,165,36,.1)}
 .topbar .sp{flex:1}
-.btn{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line2);background:var(--panel);color:var(--text);border-radius:7px;padding:7px 12px;cursor:pointer;text-decoration:none;white-space:nowrap}
-.btn:hover{border-color:var(--accent)}
+.btn{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line2);background:var(--panel);color:var(--text);border-radius:8px;padding:8px 13px;cursor:pointer;text-decoration:none;white-space:nowrap;transition:border-color .15s ease,color .15s ease,background .15s ease}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
 .btn.solid{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.solid:hover{background:#ffb63d;border-color:#ffb63d;color:var(--accent-ink)}
 .btn.gh{display:inline-flex;align-items:center;gap:7px}
 .btn.gh svg{flex:none;display:block}
-.herocta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 0}
-.herocta .hint{font-size:13px;color:var(--faint)}
-.hero{max-width:1180px;margin:0 auto;padding:44px 22px 8px}
-.hero h1{margin:0;font-size:clamp(30px,4.6vw,46px);line-height:1.08;letter-spacing:-.02em;font-weight:750}
+.herocta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:24px 0 0}
+.herocta .hint{font-size:13.5px;color:var(--faint)}
+.herocta .hint a,.lede a{color:var(--accent)}
+.hero{position:relative;max-width:1180px;margin:0 auto;padding:58px 22px 6px}
+.hero:before{content:"";position:absolute;inset:-140px 0 auto;height:430px;pointer-events:none;background:radial-gradient(560px 250px at 16% 0%,rgba(245,165,36,.14),transparent 70%),radial-gradient(460px 230px at 84% 6%,rgba(92,140,255,.1),transparent 72%)}
+.hero>*{position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line2);background:rgba(18,20,24,.72);border-radius:999px;padding:6px 14px}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(245,165,36,.16)}
+.hero h1{margin:20px 0 0;font-size:clamp(33px,5.1vw,54px);line-height:1.03;letter-spacing:-.028em;font-weight:780}
 .hero h1 .amp{color:var(--accent)}
-.hero .lede{margin:12px 0 0;max-width:640px;color:var(--dim);font-size:17px}
-.stats{display:flex;gap:0;margin:22px 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;flex-wrap:wrap}
-.stat{flex:1 1 130px;padding:12px 16px;border-left:1px solid var(--line)}
-.stat:first-child{border-left:0}
-.stat .n{font-family:var(--mono);font-size:21px;font-weight:700}
-.stat .l{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--faint);text-transform:uppercase}
+.hero .lede{margin:16px 0 0;max-width:680px;color:var(--dim);font-size:17.5px;line-height:1.62}
+.hero .lede b{color:var(--text);font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;margin:32px 0 0;background:var(--line);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.stat{background:var(--panel);padding:16px 18px}
+.stat .n{font-family:var(--mono);font-size:23px;font-weight:700;letter-spacing:-.02em}
+.stat .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;color:var(--faint);text-transform:uppercase;margin-top:3px}
 .searchwrap{max-width:1180px;margin:18px auto 0;padding:0 22px}
 .searchbox{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line2);border-radius:10px;padding:0 14px}
 .searchbox:focus-within{border-color:var(--accent)}
@@ -130,9 +148,20 @@ details.eval[open] summary{border-bottom:1px solid var(--line);border-radius:11p
 .empty{border:1px dashed var(--line2);border-radius:11px;padding:36px 20px;text-align:center;color:var(--dim)}
 .empty svg{opacity:.4;margin-bottom:8px}
 .empty .rst{margin-top:10px}
-footer.site{border-top:1px solid var(--line);margin-top:26px;padding:20px 22px 46px;color:var(--faint);font-size:12.5px}
+footer.site{border-top:1px solid var(--line);margin-top:34px;padding:44px 22px 34px;color:var(--faint);font-size:13px;background:linear-gradient(180deg,transparent,rgba(18,20,24,.6))}
 footer.site .in{max-width:1180px;margin:0 auto}
-footer.site a{color:var(--dim)}
+footer.site .fgrid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.15fr;gap:34px}
+footer.site .fbrand .brand{margin-bottom:13px}
+footer.site .fbrand p{margin:0;max-width:340px;line-height:1.65}
+footer.site h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin:0 0 12px;font-weight:600}
+footer.site .fcol{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+footer.site .fcol a{color:var(--faint);text-decoration:none}
+footer.site .fcol a:hover{color:var(--accent)}
+footer.site .fbar{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:38px;padding-top:18px;border-top:1px solid var(--line);font-size:12px}
+footer.site .fbar a{color:var(--dim);text-decoration:none}
+footer.site .fbar a:hover{color:var(--accent)}
+footer.site .flinks{display:inline-flex;gap:9px;align-items:center}
+footer.site .flinks .sep{color:#3a4049}
 .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(8px);background:var(--accent);color:var(--accent-ink);font-family:var(--mono);font-size:13px;font-weight:700;border-radius:8px;padding:9px 18px;opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease;z-index:50}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (max-width:920px){.main{grid-template-columns:1fr}.side{position:static;max-height:none}.side .cats{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}.cat{border:1px solid var(--line2);border-radius:999px;white-space:nowrap}.cat.on{border-color:var(--accent)}.topbar .meta{display:none}}
@@ -212,7 +241,50 @@ footer.site a{color:var(--dim)}
 .guidepage .back{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none}
 .guidepage .back:hover{color:var(--accent)}
 .guidepage .site{margin:40px 0 0;padding:16px 0 0}
-@media (max-width:920px){.topbar .in{overflow-x:auto}}
+/* ── Connect-your-agent section ──────────────────────────── */
+.connect{max-width:1180px;margin:46px auto 0;padding:0 22px}
+.connecthead{border-top:1px solid var(--line);padding-top:28px}
+.connecthead h2{margin:0;font-size:clamp(21px,2.8vw,25px);letter-spacing:-.02em}
+.connecthead p{margin:7px 0 0;color:var(--dim);font-size:14.5px;max-width:640px;line-height:1.6}
+.connectgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.ccard{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px}
+.ccard .ck{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.ccard h3{margin:0;font-size:17px;letter-spacing:-.01em}
+.ccard p{margin:0;color:var(--dim);font-size:13.5px;line-height:1.6}
+.ccard .code{margin:4px 0 0;background:#08090b;border:1px solid var(--line);border-radius:9px;padding:12px 13px;overflow:auto;font-family:var(--mono);font-size:11.5px;line-height:1.7;color:var(--text)}
+.ccard .cactions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+.ccard .curl{font-family:var(--mono);font-size:11.5px;color:var(--faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* ── Guide pages ─────────────────────────────────────────── */
+.guidehero{position:relative;margin:20px 0 30px;padding:26px 26px 24px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(165deg,rgba(245,165,36,.075),rgba(18,20,24,.35) 58%)}
+.guidehero .gk{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:11px}
+.guidehero h1{font-size:clamp(27px,4.1vw,38px);letter-spacing:-.025em;margin:0;line-height:1.1}
+.guidehero .lede{margin:13px 0 0;color:var(--dim);font-size:16.5px;line-height:1.62;max-width:650px}
+.gcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:12px;margin:14px 0 6px}
+.gcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 16px}
+.gcard .t{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+.gcard .num{width:20px;height:20px;border-radius:6px;background:rgba(245,165,36,.12);display:grid;place-items:center;font-size:11px}
+.gcard b{display:block;color:var(--text);font-size:14.5px;margin-bottom:4px}
+.gcard span{color:var(--dim);font-size:13.5px;line-height:1.6}
+.gsplit{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.gpanel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.gpanel h4{margin:0 0 9px;font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint)}
+.gpanel p{margin:0 0 8px;font-size:14px;color:var(--dim);line-height:1.62}
+.gpanel p:last-child{margin-bottom:0}
+.gpanel.good{border-color:#2d3b2d}
+.gpanel.bad{border-color:#3d2d2d}
+.gpanel ul{margin:0;padding-left:18px}
+.gpanel li{font-size:14px;color:var(--dim);margin-bottom:6px;line-height:1.6}
+pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto;font-family:var(--mono);font-size:12.5px;line-height:1.65;margin:12px 0;color:var(--text)}
+.ccard code,.gpanel code,.guidepage code{font-family:var(--mono);font-size:12px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--text)}
+.coderow{display:flex;align-items:center;gap:10px;margin:14px 0 0;flex-wrap:wrap}
+.gfact{display:flex;gap:12px;align-items:baseline;padding:11px 0;border-bottom:1px dotted var(--line);font-size:14.5px}
+.gfact b{font-family:var(--mono);font-size:12px;color:var(--accent);flex:none;min-width:104px}
+.gfact span{color:var(--dim)}
+@media (max-width:960px){footer.site .fgrid{grid-template-columns:1fr 1fr}.connectgrid{grid-template-columns:1fr}.gsplit{grid-template-columns:1fr}}
+@media (max-width:920px){.topbar .in{flex-wrap:wrap;gap:10px}.topnav{order:3;width:100%;margin:0;overflow-x:auto}.brand{margin-right:auto}.hero{padding-top:42px}.guidehero{padding:20px 18px}}
+@media (max-width:560px){footer.site .fgrid{grid-template-columns:1fr}.connect{margin-top:34px}}
+.passrule{font-family:var(--mono);font-size:11.5px;color:var(--accent);margin:0 0 10px}
+.passrule span{color:var(--faint)}
 `;
 
 const JS = `import { JEV_DIR } from './data.js';
@@ -301,7 +373,8 @@ function buildCard(item, i) {
 function evalBlock(item, i) {
   return '<details class="eval"><summary><span class="qn">' + String(i + 1).padStart(2, '0') +
     '</span><span>' + esc(item.t) + '</span></summary><div class="evalbody"><p>' + esc(item.s) +
-    '</p><pre id="evp' + i + '">' + esc(item.p) + '</pre><div class="row" style="margin-top:10px">' +
+    '</p><div class="passrule">✓ ' + esc(item.v) + ' <span>· manifest ' + JEV_DIR.rev.slice(0, 8) + '</span></div>' +
+    '<pre id="evp' + i + '">' + esc(item.p) + '</pre><div class="row" style="margin-top:10px">' +
     '<button class="mini" data-evcopy="evp' + i + '">copy prompt</button><span style="font-family:var(--mono);font-size:11px;color:var(--faint)">experimental_evaluate · ' +
     esc(item.q) + '</span></div></div></details>';
 }
@@ -387,8 +460,11 @@ $('sort').addEventListener('change', function () { sortMode = $('sort').value; s
 document.addEventListener('keydown', function (e) {
   if (e.key === '/' && document.activeElement !== $('q')) { e.preventDefault(); $('q').focus(); }
 });
-$('copySetup').addEventListener('click', function () {
-  copyText(document.getElementById('setupText').textContent, 'Setup prompt copied');
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.copy);
+    if (el) copyText(el.textContent, btn.dataset.copyMsg || 'Copied');
+  });
 });
 $('statEvals').textContent = JEV_DIR.evals.length;
 $('statBuilds').textContent = JEV_DIR.community.length;
@@ -397,7 +473,59 @@ $('statCats').textContent = new Set(JEV_DIR.community.map(function (i) { return 
 buildCats(); render();
 `;
 
-function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
+const GITHUB_REPO = 'https://github.com/everyai-com/jev-directory';
+const SUBMIT_URL = `${GITHUB_REPO}/issues/new?template=submit-use-case.yml`;
+const MCP_URL = 'https://jev.magicteams.ai/mcp';
+const GH_ICON = '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>';
+
+// One top bar for every page — index, guides and case pages — so the site
+// reads as one product instead of three templates. `base` is '' at the root
+// and '../' inside cases/.
+function topbar(base, current) {
+  const link = (href, label, key) =>
+    `<a href="${href}"${key === current ? ' class="on"' : ''}>${label}</a>`;
+  return `<div class="topbar"><div class="in">
+<a class="brand" href="${base}index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<nav class="topnav">${link(`${base}index.html`, 'directory', 'home')}${link(`${base}what-is-jev.html`, 'what is jev', 'what')}${link(`${base}jev-like-im-10.html`, "like i'm 10", 'eli10')}</nav>
+<span class="sp"></span>
+<a class="btn gh" href="${GITHUB_REPO}" target="_blank" rel="noopener" title="Star or fork on GitHub">${GH_ICON}<span>GitHub</span></a>
+<a class="btn" href="${base}capabilities.md">agent pack</a>
+<a class="btn solid" href="${base}index.html#connect">connect your agent</a>
+</div></div>`;
+}
+
+function siteFooter(base, generated) {
+  return `<footer class="site"><div class="in">
+<div class="fgrid">
+<div class="fcol fbrand">
+<a class="brand" href="${base}index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<p>Everything Jev can do, with receipts: runnable judge-model evals plus real community builds, each linked to the project and the post it came from.</p>
+</div>
+<div class="fcol"><h5>Directory</h5>
+<a href="${base}index.html">All builds</a>
+<a href="${base}index.html#evals-section">Runnable evals</a>
+<a href="${base}capabilities.md">Capability pack .md</a>
+<a href="${base}capabilities.json">Pack .json</a>
+</div>
+<div class="fcol"><h5>Learn</h5>
+<a href="${base}what-is-jev.html">What is Jev?</a>
+<a href="${base}jev-like-im-10.html">Explained like you're 10</a>
+<a href="https://github.com/typesafe-ai/jev" target="_blank" rel="noopener">typesafe-ai/jev</a>
+</div>
+<div class="fcol"><h5>Use it from an agent</h5>
+<a href="${base}index.html#connect">MCP server</a>
+<a href="${base}setup.txt">Setup prompt</a>
+<a href="${SUBMIT_URL}" target="_blank" rel="noopener">Submit your build</a>
+</div>
+</div>
+<div class="fbar">
+<span>Generated ${generated} · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
+<span class="flinks"><a href="${base}capabilities.md">agent pack</a><span class="sep">·</span><a href="${GITHUB_REPO}" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="${GITHUB_REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="${GITHUB_REPO}/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
+</div>
+</div></footer>`;
+}
+
+function pageShell(generated, evalCount, buildCount, linkedCount, setupText, manifestRev) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -408,23 +536,13 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <link rel="stylesheet" href="./directory.css">
 </head>
 <body>
-<div class="topbar"><div class="in">
-<a class="brand" href="#"><b>JEV</b>·DIRECTORY</a>
-<span class="meta">${buildCount} builds · ${evalCount} evals · updated ${generated}</span>
-<a class="navlink" href="./what-is-jev.html">what is jev</a>
-<a class="navlink" href="./jev-like-im-10.html">like i'm 10</a>
-<span class="sp"></span>
-<a class="btn gh" href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener" title="Star or fork on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
-<a class="btn" href="./capabilities.md">pack .md</a>
-<a class="btn" href="./capabilities.json">pack .json</a>
-<button class="btn solid" id="copySetup">copy setup prompt</button>
-</div></div>
-<pre id="setupText" style="display:none">${setupText.replace(/[<>&]/g, ch => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[ch]))}</pre>
+${topbar('', 'home')}
 <div class="hero">
+<div class="eyebrow"><span class="dot"></span>Jev on typesafe-ai/jev · updated ${generated}</div>
 <h1>Everything Jev <span class="amp">can do</span>,<br>with receipts.</h1>
-<p class="lede">A curated collection of ${buildCount} Jev use cases plus ${evalCount} runnable evals — every build linked to its project and source post. Search it, copy a brief, hand it to your agent.</p>
-<div class="herocta"><a class="btn solid" href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a><span class="hint">Takes a minute — just links plus what it does.</span></div>
-<div class="newto">New to Jev? <a href="./what-is-jev.html">What it is</a> · <a href="./jev-like-im-10.html">Explained like you're 10</a></div>
+<p class="lede"><b>${evalCount} runnable judge-model evals</b> and <b>${buildCount} real community builds</b> — every one linked to its project and the post it came from. Search it, copy a brief, or point your agent straight at the MCP endpoint.</p>
+<div class="herocta"><a class="btn solid" href="#connect">Connect your agent</a><a class="btn" href="${SUBMIT_URL}" target="_blank" rel="noopener">Submit your build</a><a class="btn" href="./what-is-jev.html">What is Jev?</a></div>
+<div class="herocta"><span class="hint">New to all this? <a href="./jev-like-im-10.html">Jev, explained like you're 10</a> takes two minutes.</span></div>
 <div class="stats">
 <div class="stat"><div class="n" id="statEvals">${evalCount}</div><div class="l">runnable evals</div></div>
 <div class="stat"><div class="n" id="statBuilds">${buildCount}</div><div class="l">community builds</div></div>
@@ -445,12 +563,34 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 <p class="sub">Real things people built with Jev. Open any build for its links, previews and an agent-ready brief.</p>
 <div class="grid" id="builds"></div>
 <div class="morewrap" id="moreWrap"></div>
-<div class="sechead"><h2>Runnable evals</h2><span class="count" id="evalCount"></span></div>
-<p class="sub">Judge-model evals with the exact <span style="font-family:var(--mono)">experimental_evaluate</span> prompt. Copy one and run it against ${JEV_META.modelId}.</p>
+<div class="sechead" id="evals-section"><h2>Runnable evals</h2><span class="count" id="evalCount"></span></div>
+<p class="sub">Judge-model evals with the exact <span style="font-family:var(--mono)">experimental_evaluate</span> prompt. Copy one and run it against ${JEV_META.modelId}. Manifest ${manifestRev.slice(0, 8)} — every eval lists its pass rule.</p>
 <div id="evals"></div>
 </div>
 </div>
-<footer class="site"><div class="in">Generated ${generated} from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub repo</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
+<section class="connect" id="connect">
+<div class="connecthead">
+<h2>Give this to your agent</h2>
+<p>Point any MCP-compatible agent at this directory and it can search all ${evalCount} evals and ${buildCount} builds itself — live, with nothing to copy-paste.</p>
+</div>
+<div class="connectgrid">
+<div class="ccard">
+<div class="ck">MCP · Streamable HTTP</div>
+<h3>Connect over MCP</h3>
+<p>Add this block to your agent's MCP config. Tools: <code>search_jev</code>, <code>get_jev_eval</code>, <code>get_jev_build</code>, <code>list_jev_categories</code>, <code>get_jev_pack</code>.</p>
+<pre class="code" id="mcpConfig">${JSON.stringify({ mcpServers: { 'jev-directory': { url: MCP_URL } } }, null, 2)}</pre>
+<div class="cactions"><button class="btn solid" data-copy="mcpConfig" data-copy-msg="MCP config copied">copy config</button><span class="curl">${MCP_URL}</span></div>
+</div>
+<div class="ccard">
+<div class="ck">Capability pack · markdown</div>
+<h3>Or hand over the pack</h3>
+<p>One paste and your agent fetches the whole playbook: how to call Jev, all ${evalCount} evals with runnable prompts, and every build grouped by category.</p>
+<pre class="code" id="packPrompt">${setupText.replace(/[<>&]/g, ch => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[ch]))}</pre>
+<div class="cactions"><button class="btn solid" data-copy="packPrompt" data-copy-msg="Setup prompt copied">copy setup prompt</button><a class="btn" href="./capabilities.md">open the pack</a></div>
+</div>
+</div>
+</section>
+${siteFooter('', generated)}
 <div class="toast" id="toast"></div>
 <script type="module" src="./directory.js"></script>
 <script type="module" src="./ask.js"></script>
@@ -459,7 +599,7 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText) {
 `;
 }
 
-function guideShell(title, desc, bodyHtml, generated) {
+function guideShell(title, desc, bodyHtml, generated, current) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -470,25 +610,70 @@ function guideShell(title, desc, bodyHtml, generated) {
 <link rel="stylesheet" href="./directory.css">
 </head>
 <body>
+${topbar('', current)}
 <div class="guidepage">
-<a class="back" href="./index.html">← directory</a>
 ${bodyHtml}
-<footer class="site"><div>Generated ${generated} · <a href="./index.html">Jev Directory</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a></div></footer>
+${siteFooter('', generated)}
 </div>
+<div class="toast" id="toast"></div>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.copy);
+    if (!el) return;
+    var text = el.textContent;
+    var toast = document.getElementById('toast');
+    function done() {
+      toast.textContent = btn.dataset.copyMsg || 'Copied';
+      toast.classList.add('show');
+      clearTimeout(toast._t);
+      toast._t = setTimeout(function () { toast.classList.remove('show'); }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, done);
+    } else {
+      var area = document.createElement('textarea');
+      area.value = text; area.style.position = 'fixed'; area.style.opacity = '0';
+      document.body.appendChild(area); area.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      area.remove(); done();
+    }
+  });
+});
+</script>
 <script type="module" src="./ask.js"></script>
 </body>
 </html>`;
 }
 
 function guideWhatIs() {
-  return `<h1>What is Jev?</h1>
-<p><b>Jev is a judge model.</b> It does not chat with your customers — it grades the AI that does. You hand it a record of what happened plus the questions you care about, and it returns structured verdicts: yes or no, pick one, or a score.</p>
-<h2>How it works</h2>
-<ol class="steps">
-<li><b>Give it the state</b> — a support transcript, a tool-call log, a piece of agent output. Anything textual that records what happened.</li>
-<li><b>Ask questions in plain English</b> — each question names its type (boolean, choice, or score) and the exact rule to apply.</li>
-<li><b>Get verdicts back</b> — one answer per question, machine-readable, ready to gate a deploy, trigger a review, or feed a dashboard.</li>
-</ol>
+  return `<div class="guidehero">
+<div class="gk">The grown-up version</div>
+<h1>What is Jev?</h1>
+<p class="lede">Jev is a <b>judge model</b>. It doesn't talk to your customers — it grades the AI that does. You hand it a record of what happened plus the questions you care about, and it answers them in a shape your code can use: true/false, one label, or a score.</p>
+</div>
+
+<h2>The 30-second version</h2>
+<div class="gcards">
+<div class="gcard"><div class="t"><span class="num">1</span>Input</div><b>Give it the state</b><span>A support transcript, a tool-call log, one agent output — any text that records what actually happened.</span></div>
+<div class="gcard"><div class="t"><span class="num">2</span>Questions</div><b>Ask in plain English</b><span>Each question declares its type and the exact rule to apply. Nothing to train, no labelled examples to collect.</span></div>
+<div class="gcard"><div class="t"><span class="num">3</span>Output</div><b>Get verdicts back</b><span>One answer per question, typed and machine-readable — ready to gate a deploy, page a human, or feed a dashboard.</span></div>
+</div>
+
+<h2>Why not just ask a model?</h2>
+<div class="gsplit">
+<div class="gpanel bad">
+<h4>Asking a chat model</h4>
+<p>You ask "did the agent state the refund amount?" and get prose back. Sometimes it starts with "Yes" — sometimes with "The agent did state $42.50, however…".</p>
+<p>Now you need a parser, and a second model to grade the parser.</p>
+</div>
+<div class="gpanel good">
+<h4>Asking Jev</h4>
+<p>You declare each question's type once. Jev returns the verdict in exactly that shape — <code>true</code>, one label from your list, or a number.</p>
+<p>No prose to parse, no second opinion to reconcile.</p>
+</div>
+</div>
+
 <h2>The three question types</h2>
 <table>
 <tr><th>Type</th><th>Returns</th><th>Example rule</th></tr>
@@ -496,38 +681,97 @@ function guideWhatIs() {
 <tr><td>choice</td><td>one label</td><td>Classify the ticket: billing, shipping, or account.</td></tr>
 <tr><td>score</td><td>a number</td><td>Rate the apology 1–5 for empathy and ownership.</td></tr>
 </table>
-<h2>Calling it</h2>
-<p>Jev runs as <b>typesafe-ai/jev</b> through the Vercel AI Gateway, using <b>experimental_evaluate</b> from the AI SDK. Set AI_GATEWAY_API_KEY in your environment — never paste the key into code.</p>
-<pre>import { experimental_evaluate } from 'ai';
+
+<h2>A whole judgement, end to end</h2>
+<p>The <b>state</b> is whatever happened. The <b>questions</b> are what you want to know. Both are just text and types — this is one complete, runnable request:</p>
+<pre class="code" id="jevCode">import { experimental_evaluate } from 'ai';
 
 const result = await experimental_evaluate({
   model: 'typesafe-ai/jev',
-  state: 'Customer: I want a refund.\\nAgent: I can refund $42.50 to your card. Shall I go ahead?',
+  state: 'Customer: my order arrived damaged, I want a refund.\\n' +
+         'Agent: I can refund order #88121 in full: $42.50 back to your ' +
+         'Visa ending 4412 within 3-5 business days. Shall I go ahead?',
   questions: {
     amount_disclosed: {
       type: 'boolean',
-      instructions: 'True only if the agent stated the exact refund amount before asking to proceed.'
+      instructions: 'True only if the agent stated the exact refund amount ' +
+                    '($42.50) before the customer approved.'
+    },
+    intent: {
+      type: 'choice',
+      criteria: { billing: 'money or charges', shipping: 'delivery timing', account: 'login or profile' },
+      instructions: 'Route this ticket.'
+    },
+    empathy: {
+      type: 'score',
+      criteria: ['1 - none', '3 - acknowledged the problem', '5 - owned it and fixed it'],
+      instructions: 'Rate how the agent handled the complaint.'
     }
   }
-});</pre>
-<div class="callout">Jev is priced for always-on judging — about <b>$0.042 per million input tokens</b> through the gateway — so running it on every conversation costs less than the coffee you drink while reading the dashboard.</div>
+});
+// → { amount_disclosed: true, intent: 'billing', empathy: 3 }</pre>
+<div class="coderow"><button class="btn" data-copy="jevCode" data-copy-msg="Request copied">copy request</button><span style="font-family:var(--mono);font-size:12px;color:var(--faint)">one call → three typed verdicts</span></div>
+
+<h2>Calling it</h2>
+<p>Jev runs as <b>typesafe-ai/jev</b> through the Vercel AI Gateway, called with <code>experimental_evaluate</code> from the AI SDK. Set <code>AI_GATEWAY_API_KEY</code> in your environment — never paste the key into code.</p>
+
+<h2>What it costs, and what it isn't</h2>
+<div class="gfact"><b>Model</b><span><code>typesafe-ai/jev</code>, called through the Vercel AI Gateway.</span></div>
+<div class="gfact"><b>Price</b><span>About <b>$0.042 per million input tokens</b> — cheap enough to judge every conversation, not just a sample of it.</span></div>
+<div class="gfact"><b>Auth</b><span><code>AI_GATEWAY_API_KEY</code> in the environment. Nothing to train, nothing to host, no weights to babysit.</span></div>
+<div class="gfact"><b>Not a chatbot</b><span>Jev never answers your customers. It only answers questions about what your agent did.</span></div>
+<div class="gfact"><b>Not a classifier</b><span>You don't train it or collect labels. You write the rule in English and it applies that rule.</span></div>
+
+<div class="callout">Ready to see it run? There are <a href="./index.html#evals-section">50 runnable evals</a> in this directory, each with the exact prompt — copy one and run it. Or <a href="./index.html#connect">connect your agent over MCP</a> and let it search them itself.</div>
+
 <h2>Go deeper</h2>
-<p>This directory holds 50 runnable judge-model evals with the exact prompt, plus hundreds of real community builds with project links. Too dense? Start with <a href="./jev-like-im-10.html">Jev, explained like you're 10</a>. Ready to hand it to an agent? Grab the <a href="./capabilities.md">capability pack</a> — or ask the <b>Ask about Jev</b> panel on this page.</p>`;
+<div class="gcards">
+<div class="gcard"><div class="t">Simplify</div><b><a href="./jev-like-im-10.html">Explained like you're 10</a></b><span>The same idea with no jargon — handy for sharing with people who don't live in this world yet.</span></div>
+<div class="gcard"><div class="t">Pack</div><b><a href="./capabilities.md">Capability pack</a></b><span>Every eval with its prompt and every community build by category, in one markdown file.</span></div>
+<div class="gcard"><div class="t">Agents</div><b><a href="./index.html#connect">MCP endpoint</a></b><span>Hand your agent the directory as tools so it can search builds and evals on its own.</span></div>
+</div>`;
 }
 
 function guideEli10() {
-  return `<h1>Jev, explained like you're 10</h1>
-<p>Imagine your school hires a robot to deliver pizza. The robot is fast — but sometimes it forgets to say the price before charging your card. Who checks the robot's work?</p>
-<p><b>Jev is the robot's referee.</b> It watches what the robot did, then answers the coach's questions: did it say the price first? Yes or no. Was it polite? Give it stars. That's the whole job — Jev never delivers pizza itself, it just blows the whistle fairly, every single time.</p>
+  return `<div class="guidehero">
+<div class="gk">The two-minute version</div>
+<h1>Jev, explained like you're 10</h1>
+<p class="lede">Imagine your school hires a robot to run the pizza stall. The robot is fast — but sometimes it forgets to say the price before taking your money. Grown-ups are too busy to watch every single order. So they hire a referee.</p>
+</div>
+
+<div class="gcards">
+<div class="gcard"><div class="t"><span class="num">1</span>The robot</div><b>Does the job</b><span>Answers customers, takes orders, moves money. Fast and usually right — but it's a robot, so sometimes it isn't.</span></div>
+<div class="gcard"><div class="t"><span class="num">2</span>The referee</div><b>Checks the job</b><span>That's Jev. It doesn't sell pizza. It watches what the robot did and answers the coach's questions about it.</span></div>
+<div class="gcard"><div class="t"><span class="num">3</span>The tape</div><b>Writes it down</b><span>Every answer is saved, so when something goes wrong there's a replay to rewind instead of an argument.</span></div>
+</div>
+
 <h2>The three whistles</h2>
-<ol class="steps">
-<li><b>Yes or no</b> — "Did the robot say $12 before charging?" True or false. No arguing.</li>
-<li><b>Pick one</b> — "Was that a pizza problem, a payment problem, or a lost-driver problem?" One label.</li>
-<li><b>Stars</b> — "How nice was the apology?" One to five stars, like a game review.</li>
-</ol>
-<h2>Why robots need a referee</h2>
-<p>Grown-ups let AI robots answer customers, move money, and call tools all day. A human can't re-read ten thousand chats — but Jev can, in seconds, for less than a cent. Every verdict is written down, so when something goes wrong there's a replay tape.</p>
-<div class="callout">Too simple? Read the <a href="./what-is-jev.html">grown-up version</a> with real code. Want proof instead of words? This directory has <a href="./index.html">50 runnable tests and hundreds of real builds</a> — or just open <b>Ask about Jev</b> and quiz it.</div>`;
+<p>Jev can only blow three kinds of whistle. That is the entire vocabulary — and it turns out to be enough:</p>
+<div class="gcards">
+<div class="gcard"><div class="t">Yes or no</div><b>"Did it say the price first?"</b><span>You get <code>true</code> or <code>false</code> — no "well, kind of". Either the price was said before charging, or it wasn't.</span></div>
+<div class="gcard"><div class="t">Pick one</div><b>"Pizza problem, money problem, or lost-driver problem?"</b><span>You get exactly one of the labels you listed. Never two, never a brand-new one it invented.</span></div>
+<div class="gcard"><div class="t">Stars</div><b>"How nice was the apology?"</b><span>You get a number, like a game review. 1 is rude, 5 is "they owned it and fixed it".</span></div>
+</div>
+
+<h2>One order, start to finish</h2>
+<div class="gpanel">
+<p><b>The robot did this:</b> "Sorry your pizza is cold! I'll refund your $12 right now. Shall I go ahead?" — and then sent the refund before the customer answered.</p>
+<p><b>The coach asks Jev:</b> true or false — did the robot wait for a yes before refunding?</p>
+<p><b>Jev says:</b> <code>false</code>.</p>
+</div>
+<p>Notice what Jev did <b>not</b> do. It didn't decide whether the pizza was actually cold, and it didn't fix anything. It answered one question about what happened — and it answers the tenth time exactly the way it answered the first.</p>
+
+<h2>Why anyone bothers</h2>
+<p>Because there are too many orders to check by hand. One busy shop can take thousands of chats a day, and nobody can re-read them. Jev reads all of them in seconds, for less than the price of a gumball, and writes down what it found.</p>
+
+<h2>What the referee can't do</h2>
+<div class="gcards">
+<div class="gcard"><div class="t">Can't</div><b>Serve the pizza</b><span>Jev doesn't do the job, it only judges whatever did. Ask it to talk to your customers and you've hired the wrong robot.</span></div>
+<div class="gcard"><div class="t">Can't</div><b>Guess your rules</b><span>Jev has no idea what "good" means until you say it out loud. Vague question in, wobbly answer out.</span></div>
+<div class="gcard"><div class="t">Can't</div><b>Remember yesterday</b><span>Every call starts fresh. Give it the state, ask the questions — that's the whole deal.</span></div>
+</div>
+
+<div class="callout">That's really it — the grown-up version is the same three whistles with code attached. <a href="./what-is-jev.html">Read the grown-up version</a>, then go poke at the <a href="./index.html#evals-section">50 runnable tests</a> and the real builds behind them.</div>`;
 }
 
 function escHtml(v) {
@@ -570,8 +814,8 @@ function casePage(item, entry, generated) {
 <link rel="stylesheet" href="../directory.css">
 </head>
 <body>
+${topbar('../', '')}
 <div class="casepage">
-<a class="back" href="../index.html">← directory</a>
 <h1>${escHtml(item.title)}</h1>
 <div class="meta"><span class="catname">${escHtml(item.category)}</span><span>by ${escHtml(item.handle || 'unknown')}</span><span>${escHtml((item.submittedAt || '').slice(0, 10))}</span></div>
 <div class="body">${escHtml(desc)}</div>
@@ -582,8 +826,8 @@ ${rows ? `<div class="llabel" style="font-family:var(--mono);font-size:10px;lett
 ${discussion ? `<a class="btn" href="${escHtml(discussion)}" target="_blank" rel="noopener">discussion</a>` : ''}
 </div>
 <div class="more"><h2>More in ${escHtml(item.category)}</h2>__MORE__</div>
-<footer class="site" style="margin:40px 0 0;padding:16px 0 0"><div>Generated ${generated} · <a href="../index.html">Jev Directory</a> · <a href="../what-is-jev.html">What is Jev</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a></div></footer>
 </div>
+${siteFooter('../', generated)}
 <div class="toast" id="toast"></div>
 <script>
 document.getElementById('copyBrief').addEventListener('click', function () {
@@ -637,6 +881,8 @@ async function main() {
   const candidates = JSON.parse(await readFirst([join(ROOT, 'discord', 'use-case-candidates.json'), join(ROOT, 'data', 'use-case-candidates.json')]));
   const linkEntries = JSON.parse(await readFirst([join(ROOT, 'discord', 'links.json'), join(ROOT, 'data', 'links.json')]));
   const linksById = Object.fromEntries(linkEntries.map(e => [e.id, e]));
+  validateManifest();
+  const manifestRev = datasetRevision();
   const generated = new Date().toISOString().slice(0, 10);
   let setupText = '';
   try { setupText = await readFile(join(OUT, 'setup.txt'), 'utf8'); }
@@ -646,10 +892,17 @@ async function main() {
   const data = {
     generated,
     model: JEV_META.modelId,
+    rev: manifestRev,
     evals: JEV_CASES.map(entry => {
       const lib = toLibraryCase(entry);
       const types = [...new Set(Object.values(entry.questions || {}).map(q => q.type))].join(' + ');
-      return { t: entry.title, s: entry.story, q: types, p: lib.prompt };
+      return {
+        t: entry.title, s: entry.story, q: types, p: lib.prompt,
+        r: Object.entries(entry.questions || {}).map(([name, q]) => (
+          [name, q.type, q.instructions, q.criteria === undefined ? null : q.criteria])),
+        x: { ...(JEV_EXPECTED[entry.id] || {}) },
+        v: evalPassText(entry)
+      };
     }),
     community: candidates.map(item => {
       const entry = linksById[String(item.id).replace(/^discord-/, '')] || {};
@@ -687,11 +940,11 @@ async function main() {
   await writeFile(join(OUT, 'directory.js'), JS);
   await writeFile(join(OUT, 'directory.css'), CSS);
   await writeFile(join(OUT, 'index.html'),
-    pageShell(generated, data.evals.length, data.community.length, linkedProjects, setupText));
+    pageShell(generated, data.evals.length, data.community.length, linkedProjects, setupText, manifestRev));
   await writeFile(join(OUT, 'what-is-jev.html'),
-    guideShell('What is Jev', 'Jev is a judge model: hand it what happened plus plain-English questions, get structured verdicts back.', guideWhatIs(), generated));
+    guideShell('What is Jev?', 'Jev is a judge model: hand it what happened plus plain-English questions and get typed verdicts back — boolean, choice or score.', guideWhatIs(), generated, 'what'));
   await writeFile(join(OUT, 'jev-like-im-10.html'),
-    guideShell("Jev, explained like you're 10", 'Jev is the referee for robots: it watches what an AI did and answers yes-or-no, pick-one, and star-rating questions about it.', guideEli10(), generated));
+    guideShell("Jev, explained like you're 10", 'Jev is the referee for robots: it watches what an AI did and answers yes-or-no, pick-one, and star-rating questions about it.', guideEli10(), generated, 'eli10'));
   const pages = await buildCasePages(candidates, linksById, generated);
   console.log(`  case pages: ${pages - 1} + sitemap.xml`);
   console.log(`jev directory → ${OUT}/  (evals: ${data.evals.length}, builds: ${data.community.length}, linked: ${linkedProjects})`);

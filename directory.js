@@ -84,7 +84,8 @@ function buildCard(item, i) {
 function evalBlock(item, i) {
   return '<details class="eval"><summary><span class="qn">' + String(i + 1).padStart(2, '0') +
     '</span><span>' + esc(item.t) + '</span></summary><div class="evalbody"><p>' + esc(item.s) +
-    '</p><pre id="evp' + i + '">' + esc(item.p) + '</pre><div class="row" style="margin-top:10px">' +
+    '</p><div class="passrule">✓ ' + esc(item.v) + ' <span>· manifest ' + JEV_DIR.rev.slice(0, 8) + '</span></div>' +
+    '<pre id="evp' + i + '">' + esc(item.p) + '</pre><div class="row" style="margin-top:10px">' +
     '<button class="mini" data-evcopy="evp' + i + '">copy prompt</button><span style="font-family:var(--mono);font-size:11px;color:var(--faint)">experimental_evaluate · ' +
     esc(item.q) + '</span></div></div></details>';
 }
@@ -170,8 +171,11 @@ $('sort').addEventListener('change', function () { sortMode = $('sort').value; s
 document.addEventListener('keydown', function (e) {
   if (e.key === '/' && document.activeElement !== $('q')) { e.preventDefault(); $('q').focus(); }
 });
-$('copySetup').addEventListener('click', function () {
-  copyText(document.getElementById('setupText').textContent, 'Setup prompt copied');
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.copy);
+    if (el) copyText(el.textContent, btn.dataset.copyMsg || 'Copied');
+  });
 });
 $('statEvals').textContent = JEV_DIR.evals.length;
 $('statBuilds').textContent = JEV_DIR.community.length;

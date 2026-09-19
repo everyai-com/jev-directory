@@ -3,21 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What is Jev — Jev Directory</title>
-<meta name="description" content="Jev is a judge model: hand it what happened plus plain-English questions, get structured verdicts back.">
+<title>What is Jev? — Jev Directory</title>
+<meta name="description" content="Jev is a judge model: hand it what happened plus plain-English questions and get typed verdicts back — boolean, choice or score.">
 <link rel="stylesheet" href="./directory.css">
 </head>
 <body>
+<div class="topbar"><div class="in">
+<a class="brand" href="index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<nav class="topnav"><a href="index.html">directory</a><a href="what-is-jev.html" class="on">what is jev</a><a href="jev-like-im-10.html">like i'm 10</a></nav>
+<span class="sp"></span>
+<a class="btn gh" href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener" title="Star or fork on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
+<a class="btn" href="capabilities.md">agent pack</a>
+<a class="btn solid" href="index.html#connect">connect your agent</a>
+</div></div>
 <div class="guidepage">
-<a class="back" href="./index.html">← directory</a>
+<div class="guidehero">
+<div class="gk">The grown-up version</div>
 <h1>What is Jev?</h1>
-<p><b>Jev is a judge model.</b> It does not chat with your customers — it grades the AI that does. You hand it a record of what happened plus the questions you care about, and it returns structured verdicts: yes or no, pick one, or a score.</p>
-<h2>How it works</h2>
-<ol class="steps">
-<li><b>Give it the state</b> — a support transcript, a tool-call log, a piece of agent output. Anything textual that records what happened.</li>
-<li><b>Ask questions in plain English</b> — each question names its type (boolean, choice, or score) and the exact rule to apply.</li>
-<li><b>Get verdicts back</b> — one answer per question, machine-readable, ready to gate a deploy, trigger a review, or feed a dashboard.</li>
-</ol>
+<p class="lede">Jev is a <b>judge model</b>. It doesn't talk to your customers — it grades the AI that does. You hand it a record of what happened plus the questions you care about, and it answers them in a shape your code can use: true/false, one label, or a score.</p>
+</div>
+
+<h2>The 30-second version</h2>
+<div class="gcards">
+<div class="gcard"><div class="t"><span class="num">1</span>Input</div><b>Give it the state</b><span>A support transcript, a tool-call log, one agent output — any text that records what actually happened.</span></div>
+<div class="gcard"><div class="t"><span class="num">2</span>Questions</div><b>Ask in plain English</b><span>Each question declares its type and the exact rule to apply. Nothing to train, no labelled examples to collect.</span></div>
+<div class="gcard"><div class="t"><span class="num">3</span>Output</div><b>Get verdicts back</b><span>One answer per question, typed and machine-readable — ready to gate a deploy, page a human, or feed a dashboard.</span></div>
+</div>
+
+<h2>Why not just ask a model?</h2>
+<div class="gsplit">
+<div class="gpanel bad">
+<h4>Asking a chat model</h4>
+<p>You ask "did the agent state the refund amount?" and get prose back. Sometimes it starts with "Yes" — sometimes with "The agent did state $42.50, however…".</p>
+<p>Now you need a parser, and a second model to grade the parser.</p>
+</div>
+<div class="gpanel good">
+<h4>Asking Jev</h4>
+<p>You declare each question's type once. Jev returns the verdict in exactly that shape — <code>true</code>, one label from your list, or a number.</p>
+<p>No prose to parse, no second opinion to reconcile.</p>
+</div>
+</div>
+
 <h2>The three question types</h2>
 <table>
 <tr><th>Type</th><th>Returns</th><th>Example rule</th></tr>
@@ -25,25 +51,110 @@
 <tr><td>choice</td><td>one label</td><td>Classify the ticket: billing, shipping, or account.</td></tr>
 <tr><td>score</td><td>a number</td><td>Rate the apology 1–5 for empathy and ownership.</td></tr>
 </table>
-<h2>Calling it</h2>
-<p>Jev runs as <b>typesafe-ai/jev</b> through the Vercel AI Gateway, using <b>experimental_evaluate</b> from the AI SDK. Set AI_GATEWAY_API_KEY in your environment — never paste the key into code.</p>
-<pre>import { experimental_evaluate } from 'ai';
+
+<h2>A whole judgement, end to end</h2>
+<p>The <b>state</b> is whatever happened. The <b>questions</b> are what you want to know. Both are just text and types — this is one complete, runnable request:</p>
+<pre class="code" id="jevCode">import { experimental_evaluate } from 'ai';
 
 const result = await experimental_evaluate({
   model: 'typesafe-ai/jev',
-  state: 'Customer: I want a refund.\nAgent: I can refund $42.50 to your card. Shall I go ahead?',
+  state: 'Customer: my order arrived damaged, I want a refund.\n' +
+         'Agent: I can refund order #88121 in full: $42.50 back to your ' +
+         'Visa ending 4412 within 3-5 business days. Shall I go ahead?',
   questions: {
     amount_disclosed: {
       type: 'boolean',
-      instructions: 'True only if the agent stated the exact refund amount before asking to proceed.'
+      instructions: 'True only if the agent stated the exact refund amount ' +
+                    '($42.50) before the customer approved.'
+    },
+    intent: {
+      type: 'choice',
+      criteria: { billing: 'money or charges', shipping: 'delivery timing', account: 'login or profile' },
+      instructions: 'Route this ticket.'
+    },
+    empathy: {
+      type: 'score',
+      criteria: ['1 - none', '3 - acknowledged the problem', '5 - owned it and fixed it'],
+      instructions: 'Rate how the agent handled the complaint.'
     }
   }
-});</pre>
-<div class="callout">Jev is priced for always-on judging — about <b>$0.042 per million input tokens</b> through the gateway — so running it on every conversation costs less than the coffee you drink while reading the dashboard.</div>
+});
+// → { amount_disclosed: true, intent: 'billing', empathy: 3 }</pre>
+<div class="coderow"><button class="btn" data-copy="jevCode" data-copy-msg="Request copied">copy request</button><span style="font-family:var(--mono);font-size:12px;color:var(--faint)">one call → three typed verdicts</span></div>
+
+<h2>Calling it</h2>
+<p>Jev runs as <b>typesafe-ai/jev</b> through the Vercel AI Gateway, called with <code>experimental_evaluate</code> from the AI SDK. Set <code>AI_GATEWAY_API_KEY</code> in your environment — never paste the key into code.</p>
+
+<h2>What it costs, and what it isn't</h2>
+<div class="gfact"><b>Model</b><span><code>typesafe-ai/jev</code>, called through the Vercel AI Gateway.</span></div>
+<div class="gfact"><b>Price</b><span>About <b>$0.042 per million input tokens</b> — cheap enough to judge every conversation, not just a sample of it.</span></div>
+<div class="gfact"><b>Auth</b><span><code>AI_GATEWAY_API_KEY</code> in the environment. Nothing to train, nothing to host, no weights to babysit.</span></div>
+<div class="gfact"><b>Not a chatbot</b><span>Jev never answers your customers. It only answers questions about what your agent did.</span></div>
+<div class="gfact"><b>Not a classifier</b><span>You don't train it or collect labels. You write the rule in English and it applies that rule.</span></div>
+
+<div class="callout">Ready to see it run? There are <a href="./index.html#evals-section">50 runnable evals</a> in this directory, each with the exact prompt — copy one and run it. Or <a href="./index.html#connect">connect your agent over MCP</a> and let it search them itself.</div>
+
 <h2>Go deeper</h2>
-<p>This directory holds 50 runnable judge-model evals with the exact prompt, plus hundreds of real community builds with project links. Too dense? Start with <a href="./jev-like-im-10.html">Jev, explained like you're 10</a>. Ready to hand it to an agent? Grab the <a href="./capabilities.md">capability pack</a> — or ask the <b>Ask about Jev</b> panel on this page.</p>
-<footer class="site"><div>Generated 2026-09-18 · <a href="./index.html">Jev Directory</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub</a></div></footer>
+<div class="gcards">
+<div class="gcard"><div class="t">Simplify</div><b><a href="./jev-like-im-10.html">Explained like you're 10</a></b><span>The same idea with no jargon — handy for sharing with people who don't live in this world yet.</span></div>
+<div class="gcard"><div class="t">Pack</div><b><a href="./capabilities.md">Capability pack</a></b><span>Every eval with its prompt and every community build by category, in one markdown file.</span></div>
+<div class="gcard"><div class="t">Agents</div><b><a href="./index.html#connect">MCP endpoint</a></b><span>Hand your agent the directory as tools so it can search builds and evals on its own.</span></div>
 </div>
+<footer class="site"><div class="in">
+<div class="fgrid">
+<div class="fcol fbrand">
+<a class="brand" href="index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<p>Everything Jev can do, with receipts: runnable judge-model evals plus real community builds, each linked to the project and the post it came from.</p>
+</div>
+<div class="fcol"><h5>Directory</h5>
+<a href="index.html">All builds</a>
+<a href="index.html#evals-section">Runnable evals</a>
+<a href="capabilities.md">Capability pack .md</a>
+<a href="capabilities.json">Pack .json</a>
+</div>
+<div class="fcol"><h5>Learn</h5>
+<a href="what-is-jev.html">What is Jev?</a>
+<a href="jev-like-im-10.html">Explained like you're 10</a>
+<a href="https://github.com/typesafe-ai/jev" target="_blank" rel="noopener">typesafe-ai/jev</a>
+</div>
+<div class="fcol"><h5>Use it from an agent</h5>
+<a href="index.html#connect">MCP server</a>
+<a href="setup.txt">Setup prompt</a>
+<a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a>
+</div>
+</div>
+<div class="fbar">
+<span>Generated 2026-09-19 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
+<span class="flinks"><a href="capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
+</div>
+</div></footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.copy);
+    if (!el) return;
+    var text = el.textContent;
+    var toast = document.getElementById('toast');
+    function done() {
+      toast.textContent = btn.dataset.copyMsg || 'Copied';
+      toast.classList.add('show');
+      clearTimeout(toast._t);
+      toast._t = setTimeout(function () { toast.classList.remove('show'); }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, done);
+    } else {
+      var area = document.createElement('textarea');
+      area.value = text; area.style.position = 'fixed'; area.style.opacity = '0';
+      document.body.appendChild(area); area.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      area.remove(); done();
+    }
+  });
+});
+</script>
 <script type="module" src="./ask.js"></script>
 </body>
 </html>

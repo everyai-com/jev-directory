@@ -9,25 +9,19 @@
 </head>
 <body>
 <div class="topbar"><div class="in">
-<a class="brand" href="#"><b>JEV</b>·DIRECTORY</a>
-<span class="meta">726 builds · 50 evals · updated 2026-09-18</span>
-<a class="navlink" href="./what-is-jev.html">what is jev</a>
-<a class="navlink" href="./jev-like-im-10.html">like i'm 10</a>
+<a class="brand" href="index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<nav class="topnav"><a href="index.html" class="on">directory</a><a href="what-is-jev.html">what is jev</a><a href="jev-like-im-10.html">like i'm 10</a></nav>
 <span class="sp"></span>
 <a class="btn gh" href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener" title="Star or fork on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
-<a class="btn" href="./capabilities.md">pack .md</a>
-<a class="btn" href="./capabilities.json">pack .json</a>
-<button class="btn solid" id="copySetup">copy setup prompt</button>
+<a class="btn" href="capabilities.md">agent pack</a>
+<a class="btn solid" href="index.html#connect">connect your agent</a>
 </div></div>
-<pre id="setupText" style="display:none">You are an AI agent. Before we start, load your Jev capability pack and make it your playbook:
-https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md
-It covers 50 runnable judge-model evals (exact experimental_evaluate prompts) plus 721 real community builds with project links — everything Jev can do, with receipts. When I ask for something, match it to the closest eval or build, ask for missing details once, then run it. Model: typesafe-ai/jev via the Vercel AI Gateway (AI_GATEWAY_API_KEY).
-</pre>
 <div class="hero">
+<div class="eyebrow"><span class="dot"></span>Jev on typesafe-ai/jev · updated 2026-09-19</div>
 <h1>Everything Jev <span class="amp">can do</span>,<br>with receipts.</h1>
-<p class="lede">A curated collection of 726 Jev use cases plus 50 runnable evals — every build linked to its project and source post. Search it, copy a brief, hand it to your agent.</p>
-<div class="herocta"><a class="btn solid" href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a><span class="hint">Takes a minute — just links plus what it does.</span></div>
-<div class="newto">New to Jev? <a href="./what-is-jev.html">What it is</a> · <a href="./jev-like-im-10.html">Explained like you're 10</a></div>
+<p class="lede"><b>50 runnable judge-model evals</b> and <b>726 real community builds</b> — every one linked to its project and the post it came from. Search it, copy a brief, or point your agent straight at the MCP endpoint.</p>
+<div class="herocta"><a class="btn solid" href="#connect">Connect your agent</a><a class="btn" href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a><a class="btn" href="./what-is-jev.html">What is Jev?</a></div>
+<div class="herocta"><span class="hint">New to all this? <a href="./jev-like-im-10.html">Jev, explained like you're 10</a> takes two minutes.</span></div>
 <div class="stats">
 <div class="stat"><div class="n" id="statEvals">50</div><div class="l">runnable evals</div></div>
 <div class="stat"><div class="n" id="statBuilds">726</div><div class="l">community builds</div></div>
@@ -48,12 +42,70 @@ It covers 50 runnable judge-model evals (exact experimental_evaluate prompts) pl
 <p class="sub">Real things people built with Jev. Open any build for its links, previews and an agent-ready brief.</p>
 <div class="grid" id="builds"></div>
 <div class="morewrap" id="moreWrap"></div>
-<div class="sechead"><h2>Runnable evals</h2><span class="count" id="evalCount"></span></div>
-<p class="sub">Judge-model evals with the exact <span style="font-family:var(--mono)">experimental_evaluate</span> prompt. Copy one and run it against typesafe-ai/jev.</p>
+<div class="sechead" id="evals-section"><h2>Runnable evals</h2><span class="count" id="evalCount"></span></div>
+<p class="sub">Judge-model evals with the exact <span style="font-family:var(--mono)">experimental_evaluate</span> prompt. Copy one and run it against typesafe-ai/jev. Manifest 6d1f82b0 — every eval lists its pass rule.</p>
 <div id="evals"></div>
 </div>
 </div>
-<footer class="site"><div class="in">Generated 2026-09-18 from the Jev evaluation guide and Discord community posts · Community content is user-generated — read before you run · Not affiliated with TypeSafe AI · <a href="./capabilities.md">Agent pack</a> · <a href="./what-is-jev.html">What is Jev</a> · <a href="./jev-like-im-10.html">Like I'm 10</a> · <a href="https://github.com/everyai-com/jev-directory">GitHub repo</a> · <a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml">Submit your build</a> · <a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md">Contribute a case or eval</a></div></footer>
+<section class="connect" id="connect">
+<div class="connecthead">
+<h2>Give this to your agent</h2>
+<p>Point any MCP-compatible agent at this directory and it can search all 50 evals and 726 builds itself — live, with nothing to copy-paste.</p>
+</div>
+<div class="connectgrid">
+<div class="ccard">
+<div class="ck">MCP · Streamable HTTP</div>
+<h3>Connect over MCP</h3>
+<p>Add this block to your agent's MCP config. Tools: <code>search_jev</code>, <code>get_jev_eval</code>, <code>get_jev_build</code>, <code>list_jev_categories</code>, <code>get_jev_pack</code>.</p>
+<pre class="code" id="mcpConfig">{
+  "mcpServers": {
+    "jev-directory": {
+      "url": "https://jev.magicteams.ai/mcp"
+    }
+  }
+}</pre>
+<div class="cactions"><button class="btn solid" data-copy="mcpConfig" data-copy-msg="MCP config copied">copy config</button><span class="curl">https://jev.magicteams.ai/mcp</span></div>
+</div>
+<div class="ccard">
+<div class="ck">Capability pack · markdown</div>
+<h3>Or hand over the pack</h3>
+<p>One paste and your agent fetches the whole playbook: how to call Jev, all 50 evals with runnable prompts, and every build grouped by category.</p>
+<pre class="code" id="packPrompt">You are an AI agent. Before we start, load your Jev capability pack and make it your playbook:
+https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md
+It covers 50 runnable judge-model evals (exact experimental_evaluate prompts) plus 726 real community builds with project links — everything Jev can do, with receipts. When I ask for something, match it to the closest eval or build, ask for missing details once, then run it. Model: typesafe-ai/jev via the Vercel AI Gateway (AI_GATEWAY_API_KEY).
+</pre>
+<div class="cactions"><button class="btn solid" data-copy="packPrompt" data-copy-msg="Setup prompt copied">copy setup prompt</button><a class="btn" href="./capabilities.md">open the pack</a></div>
+</div>
+</div>
+</section>
+<footer class="site"><div class="in">
+<div class="fgrid">
+<div class="fcol fbrand">
+<a class="brand" href="index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<p>Everything Jev can do, with receipts: runnable judge-model evals plus real community builds, each linked to the project and the post it came from.</p>
+</div>
+<div class="fcol"><h5>Directory</h5>
+<a href="index.html">All builds</a>
+<a href="index.html#evals-section">Runnable evals</a>
+<a href="capabilities.md">Capability pack .md</a>
+<a href="capabilities.json">Pack .json</a>
+</div>
+<div class="fcol"><h5>Learn</h5>
+<a href="what-is-jev.html">What is Jev?</a>
+<a href="jev-like-im-10.html">Explained like you're 10</a>
+<a href="https://github.com/typesafe-ai/jev" target="_blank" rel="noopener">typesafe-ai/jev</a>
+</div>
+<div class="fcol"><h5>Use it from an agent</h5>
+<a href="index.html#connect">MCP server</a>
+<a href="setup.txt">Setup prompt</a>
+<a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a>
+</div>
+</div>
+<div class="fbar">
+<span>Generated 2026-09-19 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
+<span class="flinks"><a href="capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
+</div>
+</div></footer>
 <div class="toast" id="toast"></div>
 <script type="module" src="./directory.js"></script>
 <script type="module" src="./ask.js"></script>

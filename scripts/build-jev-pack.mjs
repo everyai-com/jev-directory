@@ -21,6 +21,13 @@ try {
   JEV_MOD = await import('../data/jev-guide.js');
 }
 const { JEV_CASES, JEV_META, toLibraryCase } = JEV_MOD;
+let MAN_MOD;
+try {
+  MAN_MOD = await import('../worker/src/data/jev-manifest.js');
+} catch {
+  MAN_MOD = await import('../data/jev-manifest.js');
+}
+const { buildDatasetManifest } = MAN_MOD;
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 // Workspace layout writes into jev/; the exported OSS repo lays flat.
@@ -74,6 +81,7 @@ async function main() {
   const linksById = Object.fromEntries(linkEntries.map(e => [e.id, e]));
   const generated = new Date().toISOString().slice(0, 10);
   const evals = JEV_CASES.map(toLibraryCase);
+  const manifest = buildDatasetManifest();
 
   await mkdir(OUT, { recursive: true });
 
@@ -94,6 +102,7 @@ async function main() {
   out.push(`| Pricing | $${JEV_META.inputPricePerMillionTokens} per 1M input tokens |`);
   out.push(`| Auth | \`${JEV_META.apiKeyEnv}\` (${JEV_META.keyPrefix}…) in the environment |`);
   out.push(`| Evals | ${evals.length} runnable |`);
+  out.push(`| Eval manifest | rev \`${manifest.revision}\` · exact-match per question, every question must match |`);
   out.push(`| Community builds | ${candidates.length} with links |`);
   out.push(`| This file | ${PACK_URL} |`);
   out.push(`| Directory + repo | ${REPO_URL} |`);
@@ -169,6 +178,21 @@ async function main() {
   out.push('---');
   out.push('');
 
+  // ── Eval manifest ──
+  out.push(`## Eval manifest (rev \`${manifest.revision}\`)`);
+  out.push('');
+  out.push(
+    'Two runners comparing numbers must quote the same revision — it hashes every state, rubric, ' +
+    'and expected verdict, so any definition change bumps it. Rule: ' + manifest.semantics
+  );
+  out.push('');
+  manifest.evals.forEach(m => {
+    out.push(`- \`${m.id}\`: ${m.pass}`);
+  });
+  out.push('');
+  out.push('---');
+  out.push('');
+
   // ── Runnable evals ──
   out.push(`## Runnable evals (${evals.length})`);
   out.push('');
@@ -178,6 +202,8 @@ async function main() {
     if (item.story) out.push(`${item.story}`);
     out.push('');
     out.push(`*${item.description}*`);
+    out.push('');
+    out.push(`*Pass (${manifest.revision.slice(0, 8)}): ${manifest.evals[i].pass}*`);
     out.push('');
     const mark = fence(item.prompt);
     out.push(`${mark}js`);
@@ -248,6 +274,15 @@ async function main() {
         choice: '{ type, instructions, criteria: { key: description } }',
         score: '{ type, instructions, criteria: [ordered rubric strings] }'
       }
+    },
+    manifest: {
+      name: manifest.name,
+      revision: manifest.revision,
+      snapshot: manifest.snapshot,
+      model: manifest.model,
+      semantics: manifest.semantics,
+      counts: manifest.counts,
+      evals: manifest.evals.map(m => ({ id: m.id, expected: m.expected, pass: m.pass }))
     },
     evals: JEV_CASES.map(entry => {
       const lib = toLibraryCase(entry);

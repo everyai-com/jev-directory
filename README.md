@@ -25,11 +25,14 @@ resolved project links ────────┘
 | --- | --- |
 | `index.html` / `directory.css` / `directory.js` / `data.js` | The directory. Search, categories, newest-first, copy-a-brief per card |
 | `ask.js` | Side chat: "what can Jev build?", answered from the directory with links |
+| `_worker.js` | MCP server (Pages advanced-mode worker): the directory as agent tools at `/mcp` |
+| `_routes.json` | Scopes the worker to `/mcp` — every other path is a plain static asset |
 | `what-is-jev.html` / `jev-like-im-10.html` | Guide pages: the grown-up explainer and the 10-year-old version, linked from the topbar |
 | `capabilities.md` / `capabilities.json` / `setup.txt` | The agent pack: playbook, structured data, paste-into-agent prompt |
 | `data/use-case-candidates.json` | Every community build: title, category, description, links, source |
 | `data/links.json` | Per-message link index with resolved titles |
 | `data/jev-guide.js` | The 50 evals in Jev's question schema (boolean / choice / score) |
+| `data/jev-manifest.js` | Ground truth: expected verdicts, pass rules, dataset revision |
 | `scripts/build-jev-pack.mjs` | Regenerates the agent pack from `data/` |
 | `scripts/build-jev-directory.mjs` | Regenerates the directory from `data/` |
 
@@ -51,6 +54,21 @@ the pack URL inside matches: `node scripts/build-jev-pack.mjs --repo <owner>/<re
 Every directory card also has **copy brief** — title, description, links and source in one
 clipboard paste for the agent you're working with.
 
+## Eval manifest
+
+Every runnable eval pins its definition of success. `capabilities.json` carries a
+`manifest` block (and `capabilities.md` a matching section): a **revision** hash over
+every state, rubric, and expected verdict, plus the per-eval **expected** verdicts and
+**pass** rule. Two runners comparing numbers must quote the same revision.
+
+Rule: exact match per question; an eval passes iff every question matches. Scores use
+their rubric scale (1–4 throughout this dataset); booleans and choices match literally.
+The revision covers scoring content only — model and gateway travel as metadata, so
+re-pointing a runner can't silently change the rev.
+
+Ground truth lives in `data/jev-manifest.js` next to the dataset; both build scripts
+validate it before emitting anything, so an edit that forgets the manifest fails loudly.
+
 ## Side chat
 
 The floating **Ask about Jev** panel answers "what can Jev build?" from the
@@ -59,10 +77,9 @@ the browser against `data.js`; only the question plus the few matching
 entries go to the chat endpoint, which streams back a Workers AI
 (`@cf/zai-org/glm-5.3-flash`) answer — no API keys, usage bills to the
 worker's Cloudflare account. The widget defaults to the shared worker.
-Forks can deploy their own instead:
-the worker from the
-[muse-use-cases repo](https://github.com/everyai-com/muse-use-cases) with the
-`ZHIPU_API_KEY` secret set (free tier works), then point the widget at it:
+Forks can deploy their own instead: deploy the worker from the
+[muse-use-cases repo](https://github.com/everyai-com/muse-use-cases) — no secrets
+needed, the Workers AI binding bills to your account — then point the widget at it:
 
 ```js
 localStorage.setItem('everyai_jev_api', 'https://<your-worker>.workers.dev');
@@ -70,6 +87,45 @@ localStorage.setItem('everyai_jev_api', 'https://<your-worker>.workers.dev');
 
 Without a configured endpoint the panel shows a disabled state instead of
 erroring — browsing and search always work offline.
+
+## MCP server
+
+`/mcp` is a dependency-free Model Context Protocol endpoint (Streamable HTTP, plain JSON)
+served by a Cloudflare Pages advanced-mode worker (`_worker.js`, scoped to `/mcp` by
+`_routes.json`). Point any MCP-compatible agent at it once and it searches the live
+directory itself — always current, nothing to re-export:
+
+```json
+{
+  "mcpServers": {
+    "jev-directory": {
+      "url": "https://jev.magicteams.ai/mcp"
+    }
+  }
+}
+```
+
+| Tool | What it returns |
+| --- | --- |
+| `search_jev` | Matching evals and builds by keyword, category and kind |
+| `get_jev_eval` | One eval in full: state, questions, exact runnable prompt |
+| `get_jev_build` | One community build with its project links and source post |
+| `list_jev_categories` | Categories with counts for both collections |
+| `get_jev_pack` | Model, gateway, call shape, pack URL and the setup prompt |
+
+One resource, `jev://evals` — all 50 evals with their prompts as markdown.
+
+The function reads `/capabilities.json` and `/setup.txt` from the static assets beside it,
+so the endpoint can never disagree with what the page shows. No keys, no external
+services, no bindings — deploy the folder and it works. Smoke-test it with curl:
+
+```bash
+BASE=https://jev.magicteams.ai/mcp
+curl -s $BASE -H 'content-type: application/json' -d \
+  '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"curl","version":"0"}}}'
+curl -s $BASE -H 'content-type: application/json' -d \
+  '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"search_jev","arguments":{"query":"route support tickets","limit":3}}}'
+```
 
 ## Regenerate
 
