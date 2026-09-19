@@ -26,7 +26,7 @@ try {
 } catch {
   MAN_MOD = await import('../data/jev-manifest.js');
 }
-const { JEV_EXPECTED, evalPassText, datasetRevision, validateManifest } = MAN_MOD;
+const { JEV_EXPECTED, evalPassText, datasetRevision, validateManifest, EVAL_SEMANTICS } = MAN_MOD;
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 // Workspace layout writes into jev/; the exported OSS repo lays flat.
@@ -590,6 +590,8 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText, man
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="./directory.css">
+<link rel="describedby" href="./llms.txt">
+<link rel="alternate" type="text/markdown" href="./capabilities.md">
 </head>
 <body>
 ${topbar('', 'home')}
@@ -639,7 +641,7 @@ ${topbar('', 'home')}
 <div class="ccard">
 <div class="ck">MCP · Streamable HTTP</div>
 <h3>Connect over MCP</h3>
-<p>Add this block to your agent's MCP config. Tools: <code>search_jev</code>, <code>get_jev_eval</code>, <code>get_jev_build</code>, <code>list_jev_categories</code>, <code>get_jev_pack</code>.</p>
+<p>Add this block to your agent's MCP config — Streamable HTTP, no auth, read-only. Every tool is listed below.</p>
 <pre class="code" id="mcpConfig">${JSON.stringify({ mcpServers: { 'jev-directory': { url: MCP_URL } } }, null, 2)}</pre>
 <div class="cactions"><button class="btn solid" data-copy="mcpConfig" data-copy-msg="MCP config copied">copy config</button><span class="curl">${MCP_URL}</span></div>
 </div>
@@ -649,6 +651,23 @@ ${topbar('', 'home')}
 <p>One paste and your agent fetches the whole playbook: how to call Jev, all ${evalCount} evals with runnable prompts, and every build grouped by category.</p>
 <pre class="code" id="packPrompt">${setupText.replace(/[<>&]/g, ch => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[ch]))}</pre>
 <div class="cactions"><button class="btn solid" data-copy="packPrompt" data-copy-msg="Setup prompt copied">copy setup prompt</button><a class="btn" href="./capabilities.md">open the pack</a></div>
+</div>
+<div class="ccard" style="grid-column:1/-1">
+<div class="ck">MCP · 10 tools · 3 resources</div>
+<h3>What your agent can do</h3>
+<div class="gfact"><b>search_jev</b><span>Find evals + builds by keyword, category, kind.</span></div>
+<div class="gfact"><b>get_jev_eval</b><span>One eval in full: state, questions, exact runnable prompt.</span></div>
+<div class="gfact"><b>get_jev_build</b><span>One community build with project links + source post.</span></div>
+<div class="gfact"><b>list_jev_categories</b><span>Categories with counts for both collections.</span></div>
+<div class="gfact"><b>get_jev_pack</b><span>Model, gateway, call shape, pack URL, setup prompt.</span></div>
+<div class="gfact"><b>explain_jev</b><span>What Jev is/isn't, when to use it, question types, pricing.</span></div>
+<div class="gfact"><b>get_jev_integration_guide</b><span>Runnable SDK guide: calls, answers, ZDR, calibration, docs.</span></div>
+<div class="gfact"><b>list_jev_patterns</b><span>10 reusable decision patterns with eval + build proof.</span></div>
+<div class="gfact"><b>get_jev_eval_manifest</b><span>Dataset revision, scoring rule, per-eval pass rules.</span></div>
+<div class="gfact"><b>recommend_jev_use_cases</b><span>Given your product, how Jev can improve it — paste this into any tool call:</span></div>
+<pre class="code" id="mcpRecommend">{"product": "a support inbox where agents miss refund disclosures"}</pre>
+<p>Resources (markdown): <code>jev://evals</code> every eval with prompts · <code>jev://guide</code> what-is-Jev brief · <code>jev://playbook</code> operator playbook + patterns.</p>
+<div class="cactions"><button class="btn solid" data-copy="mcpRecommend" data-copy-msg="Example copied">copy example</button><a class="btn" href="./llms.txt">llms.txt</a><a class="btn" href="./capabilities.md">capability pack</a><a class="btn" href="./capabilities.json">pack .json</a></div>
 </div>
 </div>
 </section>
@@ -662,6 +681,7 @@ ${siteFooter('', generated)}
 }
 
 function guideShell(title, desc, bodyHtml, generated, current) {
+  const mdAlternate = current === 'eli10' ? './jev-like-im-10.md' : './what-is-jev.md';
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -671,6 +691,8 @@ function guideShell(title, desc, bodyHtml, generated, current) {
 <meta name="description" content="${escHtml(desc)}">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="./directory.css">
+<link rel="describedby" href="./llms.txt">
+<link rel="alternate" type="text/markdown" href="${mdAlternate}">
 </head>
 <body>
 ${topbar('', current)}
@@ -876,6 +898,7 @@ function casePage(item, entry, generated) {
 <meta name="description" content="${escHtml(desc.replace(/\s+/g, ' ').trim().slice(0, 160))}">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../directory.css">
+<link rel="describedby" href="../llms.txt">
 </head>
 <body>
 ${topbar('../', '')}
@@ -998,6 +1021,39 @@ async function main() {
     })
   };
   data.linkedProjects = linkedProjects;
+
+  // Ask-assistant knowledge: a compact "about Jev" digest plus a spotlight
+  // of the best builds, so the chat answers identity questions and "what
+  // can Jev build?" from the finest entries instead of random matches.
+  // Spotlight score favors linked projects and substantive write-ups, with
+  // a per-category cap so one category can't crowd the list out.
+  data.about = [
+    `Jev (${JEV_META.modelId}) is a judge model on the Vercel AI Gateway ` +
+    `($${JEV_META.inputPricePerMillionTokens}/1M input tokens, key: ${JEV_META.apiKeyEnv}), ` +
+    'called with `experimental_evaluate` and a state plus boolean / choice / score questions. ' +
+    'It grades agent behavior — refunds, escalations, tool calls, rubric grading — and never chats with end users.',
+    'Guides: what-is-jev.html (judge-model explainer, incl. pricing and the AI SDK call shape), ' +
+    "jev-like-im-10.html (the referee-for-robots analogy: yes-or-no, pick-one, star-rating questions).",
+    `Eval manifest rev ${manifestRev} (${data.evals.length} evals): ${EVAL_SEMANTICS} ` +
+    'Every eval ships its exact runnable prompt in the directory.'
+  ].join('\n');
+  const perCat = {};
+  data.spotlight = data.community
+    .map(b => ({
+      b,
+      s: (b.l || []).length * 3 + Math.min(String(b.d || '').length / 250, 2) + (b.h ? 0.5 : 0)
+    }))
+    .sort((a, b2) => b2.s - a.s)
+    .filter(r => {
+      if ((perCat[r.b.c] || 0) >= 2) return false;
+      perCat[r.b.c] = (perCat[r.b.c] || 0) + 1;
+      return true;
+    })
+    .slice(0, 10)
+    .map(r => ({
+      i: r.b.i, t: r.b.t, c: r.b.c,
+      d: String(r.b.d || '').replace(/\s+/g, ' ').trim().slice(0, 180)
+    }));
 
   await mkdir(OUT, { recursive: true });
   await writeFile(join(OUT, 'data.js'), `export const JEV_DIR = ${JSON.stringify(data)};\n`);

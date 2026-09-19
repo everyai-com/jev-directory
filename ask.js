@@ -12,7 +12,7 @@ import { JEV_DIR } from './data.js';
 
 var API = (localStorage.getItem('everyai_jev_api') || 'https://everyai-use-cases.everyai-com.workers.dev').replace(/\/+$/, '');
 var MAX_TURNS = 8;
-var MAX_CONTEXT = 6000;
+var MAX_CONTEXT = 9000;
 
 var STOP = {};
 ['what', 'with', 'about', 'does', 'have', 'from', 'that', 'this', 'they', 'them', 'then', 'there', 'their',
@@ -52,25 +52,30 @@ function topMatches(words, items, fieldsOf, n) {
     .slice(0, n);
 }
 
-// Compact context for the model: matched builds + evals plus the
-// category census so "what kinds of things" questions still land.
+// Compact context for the model: about-Jev digest, spotlight best
+// builds, matched builds + evals, and the category census so "what
+// kinds of things" questions still land.
 function contextOf(question) {
   var words = toks(question);
   var lines = [];
   lines.push('Directory: ' + JEV_DIR.evals.length + ' runnable evals, ' +
     JEV_DIR.community.length + ' community builds, ' + JEV_DIR.linkedProjects + ' linked projects.');
+  if (JEV_DIR.about) lines.push('About Jev: ' + JEV_DIR.about.replace(/\s+/g, ' '));
   var counts = {};
   JEV_DIR.community.forEach(function (b) { counts[b.c] = (counts[b.c] || 0) + 1; });
   lines.push('Categories: ' + Object.keys(counts).sort().map(function (c) {
     return c + ' (' + counts[c] + ')';
   }).join(', '));
+  (JEV_DIR.spotlight || []).forEach(function (b) {
+    lines.push('- [spotlight] "' + b.t + '" (' + b.c + ') — page: cases/' + b.i + '.html — ' + b.d);
+  });
 
   var builds = topMatches(words, JEV_DIR.community, function (b) {
     return [norm(b.t), norm(b.c), norm(b.d + ' ' + (b.l || []).map(function (l) { return l.t; }).join(' '))];
-  }, 6);
+  }, 8);
   var evals = topMatches(words, JEV_DIR.evals, function (e) {
     return [norm(e.t), '', norm(e.s)];
-  }, 3);
+  }, 4);
 
   builds.forEach(function (r) {
     var b = r.item;

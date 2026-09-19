@@ -1,0 +1,30 @@
+# Jev Directory
+
+> Everything Jev (typesafe-ai/jev) can do, with receipts: 50 runnable judge-model evals plus 1118 real community builds, each linked to its project and source post. Generated 2026-09-19.
+
+## Start here: agents
+
+- MCP server (preferred, always current): POST JSON-RPC 2.0 to https://jev.magicteams.ai/mcp — tools search_jev, get_jev_eval, get_jev_build, list_jev_categories, get_jev_pack, explain_jev, get_jev_integration_guide, list_jev_patterns, recommend_jev_use_cases, get_jev_eval_manifest; resources jev://evals, jev://guide, jev://playbook.
+- [Capability pack (full content)](./capabilities.md): the whole playbook — how to call Jev, all 50 evals with runnable prompts, every build by category.
+- [Setup prompt](./setup.txt): one paste that points an agent at the pack.
+- [Structured data](./capabilities.json): evals, builds, model facts, and the eval manifest (rev 6d1f82b05fbea65e).
+
+## Guides
+
+- [What is Jev?](./what-is-jev.html) ([markdown](./what-is-jev.md)): judge-model explainer with the exact AI SDK call shape.
+- [Jev, explained like you're 10](./jev-like-im-10.html) ([markdown](./jev-like-im-10.md)): the same idea with no jargon.
+
+## Directory
+
+- [Browse all builds](./index.html): search, categories, newest-first, copy-a-brief per card.
+- [Sitemap](./sitemap.xml): every build page URL (individual builds are HTML only — prefer MCP search_jev / get_jev_build over crawling them).
+
+## Key facts
+
+- Model: typesafe-ai/jev via the Vercel AI Gateway (https://ai-gateway.vercel.sh/v1); auth AI_GATEWAY_API_KEY (vck_…) in the environment.
+- Call: experimental_evaluate({ model, state, questions }) from the AI SDK; boolean / choice / score questions over one shared state.
+- Price: $0.042 per 1M input tokens; output free. Eval manifest rev 6d1f82b05fbea65e: Exact match per question against the fixed state; an eval passes iff every question matches. Scores use the rubric scale (1 = first criterion … N = last); booleans and choices match literally.
+
+## Contribute
+
+- [Repo](https://github.com/everyai-com/jev-directory): source of this directory; [submit a build](https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml).

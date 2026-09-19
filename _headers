@@ -1,0 +1,5 @@
+# Cloudflare Pages headers. Every page advertises the agent index
+# (llmstxt.org v2 discovery) as an HTTP Link header, mirroring the
+# <link rel="describedby"> tags in the HTML heads.
+/*
+  Link: </llms.txt>; rel="describedby"

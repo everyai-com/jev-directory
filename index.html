@@ -11,6 +11,8 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="./directory.css">
+<link rel="describedby" href="./llms.txt">
+<link rel="alternate" type="text/markdown" href="./capabilities.md">
 </head>
 <body>
 <div class="topbar"><div class="in">
@@ -67,7 +69,7 @@
 <div class="ccard">
 <div class="ck">MCP · Streamable HTTP</div>
 <h3>Connect over MCP</h3>
-<p>Add this block to your agent's MCP config. Tools: <code>search_jev</code>, <code>get_jev_eval</code>, <code>get_jev_build</code>, <code>list_jev_categories</code>, <code>get_jev_pack</code>.</p>
+<p>Add this block to your agent's MCP config — Streamable HTTP, no auth, read-only. Every tool is listed below.</p>
 <pre class="code" id="mcpConfig">{
   "mcpServers": {
     "jev-directory": {
@@ -86,6 +88,23 @@ https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md
 It covers 50 runnable judge-model evals (exact experimental_evaluate prompts) plus 1118 real community builds with project links — everything Jev can do, with receipts. When I ask for something, match it to the closest eval or build, ask for missing details once, then run it. Model: typesafe-ai/jev via the Vercel AI Gateway (AI_GATEWAY_API_KEY).
 </pre>
 <div class="cactions"><button class="btn solid" data-copy="packPrompt" data-copy-msg="Setup prompt copied">copy setup prompt</button><a class="btn" href="./capabilities.md">open the pack</a></div>
+</div>
+<div class="ccard" style="grid-column:1/-1">
+<div class="ck">MCP · 10 tools · 3 resources</div>
+<h3>What your agent can do</h3>
+<div class="gfact"><b>search_jev</b><span>Find evals + builds by keyword, category, kind.</span></div>
+<div class="gfact"><b>get_jev_eval</b><span>One eval in full: state, questions, exact runnable prompt.</span></div>
+<div class="gfact"><b>get_jev_build</b><span>One community build with project links + source post.</span></div>
+<div class="gfact"><b>list_jev_categories</b><span>Categories with counts for both collections.</span></div>
+<div class="gfact"><b>get_jev_pack</b><span>Model, gateway, call shape, pack URL, setup prompt.</span></div>
+<div class="gfact"><b>explain_jev</b><span>What Jev is/isn't, when to use it, question types, pricing.</span></div>
+<div class="gfact"><b>get_jev_integration_guide</b><span>Runnable SDK guide: calls, answers, ZDR, calibration, docs.</span></div>
+<div class="gfact"><b>list_jev_patterns</b><span>10 reusable decision patterns with eval + build proof.</span></div>
+<div class="gfact"><b>get_jev_eval_manifest</b><span>Dataset revision, scoring rule, per-eval pass rules.</span></div>
+<div class="gfact"><b>recommend_jev_use_cases</b><span>Given your product, how Jev can improve it — paste this into any tool call:</span></div>
+<pre class="code" id="mcpRecommend">{"product": "a support inbox where agents miss refund disclosures"}</pre>
+<p>Resources (markdown): <code>jev://evals</code> every eval with prompts · <code>jev://guide</code> what-is-Jev brief · <code>jev://playbook</code> operator playbook + patterns.</p>
+<div class="cactions"><button class="btn solid" data-copy="mcpRecommend" data-copy-msg="Example copied">copy example</button><a class="btn" href="./llms.txt">llms.txt</a><a class="btn" href="./capabilities.md">capability pack</a><a class="btn" href="./capabilities.json">pack .json</a></div>
 </div>
 </div>
 </section>

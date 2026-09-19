@@ -47,6 +47,7 @@ function arg(name, fallback) {
 const REPO = arg('--repo', process.env.JEV_REPO || 'everyai-com/jev-directory');
 const PACK_URL = `https://raw.githubusercontent.com/${REPO}/main/capabilities.md`;
 const REPO_URL = `https://github.com/${REPO}`;
+const SITE_URL = 'https://jev.magicteams.ai';
 
 function fence(text) {
   const longest = (String(text).match(/`+/g) || []).reduce((max, run) => Math.max(max, run.length), 0);
@@ -319,6 +320,43 @@ async function main() {
     `It covers ${evals.length} runnable judge-model evals (exact experimental_evaluate prompts) plus ${candidates.length} real community builds with project links — everything Jev can do, with receipts. ` +
     `When I ask for something, match it to the closest eval or build, ask for missing details once, then run it. ` +
     `Model: ${JEV_META.modelId} via the Vercel AI Gateway (${JEV_META.apiKeyEnv}).\n`);
+
+  // ── llms.txt (llmstxt.org v2) ── the agent index for the whole site.
+  // Small by design: it points at the MCP endpoint and the full pack
+  // rather than inlining them (capabilities.md IS the llms-full file).
+  const llms = [];
+  llms.push('# Jev Directory');
+  llms.push('');
+  llms.push(`> Everything Jev (${JEV_META.modelId}) can do, with receipts: ${evals.length} runnable judge-model evals plus ${candidates.length} real community builds, each linked to its project and source post. Generated ${generated}.`);
+  llms.push('');
+  llms.push('## Start here: agents');
+  llms.push('');
+  llms.push(`- MCP server (preferred, always current): POST JSON-RPC 2.0 to ${SITE_URL}/mcp — tools search_jev, get_jev_eval, get_jev_build, list_jev_categories, get_jev_pack, explain_jev, get_jev_integration_guide, list_jev_patterns, recommend_jev_use_cases, get_jev_eval_manifest; resources jev://evals, jev://guide, jev://playbook.`);
+  llms.push(`- [Capability pack (full content)](./capabilities.md): the whole playbook — how to call Jev, all ${evals.length} evals with runnable prompts, every build by category.`);
+  llms.push(`- [Setup prompt](./setup.txt): one paste that points an agent at the pack.`);
+  llms.push(`- [Structured data](./capabilities.json): evals, builds, model facts, and the eval manifest (rev ${manifest.revision}).`);
+  llms.push('');
+  llms.push('## Guides');
+  llms.push('');
+  llms.push('- [What is Jev?](./what-is-jev.html) ([markdown](./what-is-jev.md)): judge-model explainer with the exact AI SDK call shape.');
+  llms.push(`- [Jev, explained like you're 10](./jev-like-im-10.html) ([markdown](./jev-like-im-10.md)): the same idea with no jargon.`);
+  llms.push('');
+  llms.push('## Directory');
+  llms.push('');
+  llms.push(`- [Browse all builds](./index.html): search, categories, newest-first, copy-a-brief per card.`);
+  llms.push(`- [Sitemap](./sitemap.xml): every build page URL (individual builds are HTML only — prefer MCP search_jev / get_jev_build over crawling them).`);
+  llms.push('');
+  llms.push('## Key facts');
+  llms.push('');
+  llms.push(`- Model: ${JEV_META.modelId} via the Vercel AI Gateway (${JEV_META.gatewayBase}); auth ${JEV_META.apiKeyEnv} (${JEV_META.keyPrefix}…) in the environment.`);
+  llms.push(`- Call: experimental_evaluate({ model, state, questions }) from the AI SDK; boolean / choice / score questions over one shared state.`);
+  llms.push(`- Price: $${JEV_META.inputPricePerMillionTokens} per 1M input tokens; output free. Eval manifest rev ${manifest.revision}: ${manifest.semantics}`);
+  llms.push('');
+  llms.push('## Contribute');
+  llms.push('');
+  llms.push(`- [Repo](${REPO_URL}): source of this directory; [submit a build](${REPO_URL}/issues/new?template=submit-use-case.yml).`);
+  llms.push('');
+  await writeFile(join(OUT, 'llms.txt'), llms.join('\n'));
 
   console.log(`jev pack → ${OUT}/ (repo: ${REPO})`);
   console.log(`  evals: ${evals.length}, community: ${candidates.length}`);
