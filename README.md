@@ -1,17 +1,22 @@
 # Jev Directory
 
 A browsable directory of what [Jev](https://github.com/typesafe-ai/jev) can do — **50 runnable
-judge-model evals** with the exact `experimental_evaluate` prompt, plus **1,300+ real community
-builds** from the TypeSafe AI #show-and-tell channel, each linked to its project and source post —
-and an **agent pack** you hand to any AI agent in a single paste so it knows the whole landscape.
+judge-model evals** with the exact `experimental_evaluate` prompt, plus **1,100+ real community
+builds** from the TypeSafe AI #show-and-tell channel, each linked to its project and source post.
+
+Agents get the whole landscape three ways: a **capability pack** you hand over in a single paste,
+an **MCP server** (10 tools + 3 resources) they can query live, and an **`llms.txt`** index —
+see [Give this to your agent](https://jev.magicteams.ai/index.html#connect).
 
 **Live site: [jev.magicteams.ai](https://jev.magicteams.ai)** — the directory, hosted. PRs welcome:
-fork, edit `data/*.json`, run the two commands under [Regenerate](#regenerate), open a PR.
+fork, edit `data/use-case-candidates.json` (builds) or `data/jev-guide.js` + `data/jev-manifest.js`
+(evals, always in tandem), run the two commands under [Regenerate](#regenerate), open a PR.
 Built something with Jev? [Submit your build](https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml)
 — a short form, no PR needed.
 
 Open `index.html` in a browser, or serve this folder with any static host. No framework, no build
-step, no backend required.
+step, no backend required for browsing; the MCP endpoint just needs a Cloudflare Pages deploy
+(see [MCP server](#mcp-server)).
 
 ```
 Jev eval guide (50, runnable) ─┐
@@ -50,7 +55,7 @@ Hand it over with the setup prompt (`setup.txt`):
 
 > You are an AI agent. Before we start, load your Jev capability pack and make it your playbook:
 > `https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md`
-> It covers 50 runnable judge-model evals plus 1,300+ real community builds with project links …
+> It covers 50 runnable judge-model evals plus 1,100+ real community builds with project links …
 
 (Replace `everyai-com/jev-directory` with your fork if you publish your own copy, then rebuild so
 the pack URL inside matches: `node scripts/build-jev-pack.mjs --repo <owner>/<repo>`.)
