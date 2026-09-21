@@ -47,7 +47,7 @@ function copyText(text, msg) {
 function matchBuild(item, words) {
   if (activeCat !== 'All' && item.c !== activeCat) return false;
   if (!words.length) return true;
-  var hay = norm(item.t + ' ' + item.d + ' ' + (item.l || []).map(function (l) { return l.t + ' ' + l.u; }).join(' '));
+  var hay = norm(item.t + ' ' + item.d + ' ' + (item.k || '') + ' ' + (item.v || '') + ' ' + (item.l || []).map(function (l) { return l.t + ' ' + l.u; }).join(' '));
   return words.every(function (w) { return hay.indexOf(w) >= 0; });
 }
 function matchEval(item, words) {
@@ -57,6 +57,9 @@ function matchEval(item, words) {
 }
 function briefOf(item) {
   var lines = [item.t, '', item.d];
+  if (item.k) lines.push('', 'Claim: ' + item.k);
+  if (item.v) lines.push('Caveat: ' + item.v);
+  if (item.e) lines.push('Evidence: ' + item.e);
   (item.l || []).forEach(function (l) { lines.push('- ' + (l.t || l.u) + ': ' + l.u); });
   lines.push('', 'Source: ' + item.u);
   return lines.join('\n');
@@ -73,7 +76,7 @@ function buildCard(item, i) {
   if (links) links = '<div class="llabel">Links</div>' + links;
   var page = './cases/' + item.i + '.html';
   return '<article class="card" data-i="' + i + '"><div class="k"><span class="catname">' +
-    esc(item.c) + '</span><span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3><a href="' +
+    esc(item.c) + '</span>' + (item.e ? '<span class="evpill ev-' + item.e + '">' + esc(item.e) + '</span>' : '') + '<span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3><a href="' +
     esc(page) + '">' + esc(item.t) + '</a></h3><p class="desc">' + esc(item.d) + '</p><a class="more" href="' +
     esc(page) + '">read more +</a>' +
     (links ? '<div class="links">' + links + '</div>' : '') +

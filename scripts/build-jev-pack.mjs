@@ -218,7 +218,7 @@ async function main() {
   // ── Community builds ──
   out.push(`## Community builds (${candidates.length})`);
   out.push('');
-  out.push('Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. Every entry links its project and its source post.');
+  out.push('Real things people built with Jev — from the TypeSafe AI #show-and-tell channel, X posts, and the DAIR.AI Jev Field Notes collection. Every entry links its project and its source post. Entries with a claim/caveat pair carry the reporter\u2019s numbers plus the caveat to read before trusting them.');
   out.push('');
   for (const [category, items] of groupedByCategory(candidates)) {
     out.push(`### ${category} (${items.length})`);
@@ -227,6 +227,9 @@ async function main() {
       out.push(`${i + 1}. **${item.title}**`);
       const desc = String(item.description || '').replace(/\s+/g, ' ').trim().slice(0, 900);
       if (desc) out.push(`   - ${desc}`);
+      if (item.claim) out.push(`   - Claim: ${String(item.claim).replace(/\s+/g, ' ').trim().slice(0, 500)}`);
+      if (item.caveat) out.push(`   - Caveat: ${String(item.caveat).replace(/\s+/g, ' ').trim().slice(0, 500)}`);
+      if (item.evidence) out.push(`   - Evidence: ${item.evidence}`);
       const entry = linksById[String(item.id).replace(/^discord-/, '')] || {};
       const seen = new Set();
       const linkUrls = [];
@@ -248,7 +251,7 @@ async function main() {
   }
   out.push('---');
   out.push('');
-  out.push(`Pack generated ${generated} from the Jev evaluation guide and ${candidates.length} Discord community posts. ` +
+  out.push(`Pack generated ${generated} from the Jev evaluation guide and ${candidates.length} community posts (Discord #show-and-tell, X, DAIR.AI field notes). ` +
     `Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. ` +
     `Directory + data: ${REPO_URL}`);
   out.push('');
@@ -305,10 +308,17 @@ async function main() {
         links.push({ url: u, title: m.title || null, description: (m.desc || '').slice(0, 300) || null });
         if (links.length >= 8) break;
       }
-      return {
+      const build = {
         title: item.title, category: item.category, description: item.description,
         links, sourceUrl: item.sourceUrl, handle: item.handle || null
       };
+      // Field-notes imports carry the reporter's claim, its caveat, and the
+      // evidence level (measured / demo / proposal) — passed through so the
+      // MCP server and directory can render them.
+      if (item.claim) build.claim = item.claim;
+      if (item.caveat) build.caveat = item.caveat;
+      if (item.evidence) build.evidence = item.evidence;
+      return build;
     })
   };
   await writeFile(join(OUT, 'capabilities.json'), JSON.stringify(pack, null, 1));

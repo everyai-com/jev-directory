@@ -47,6 +47,8 @@ regenerate and confirm `git status` shows only the intended files.
   the manifest and fail loudly on drift. Quote the revision when comparing runs.
 - `use-case-candidates.json` entries need `id`, `title`, `category`,
   `description`, `sourceUrl`; links resolve from `links.json` by numeric id.
+  Optional `claim` / `caveat` / `evidence` (measured|demo|proposal) render as
+  case-page callouts, card pills, pack lines, and MCP answers.
 - Keep everything dependency-free ESM. No framework, no bundler, no test
   runner — verify with `node --check` and curl smoke tests (see README).
 
@@ -56,8 +58,9 @@ regenerate and confirm `git status` shows only the intended files.
   is a reserved Pages filename — never rename it, and it is never served as an
   asset.
 - Reads `/capabilities.json` + `/setup.txt` from sibling static assets
-  (memoised per isolate), so tools can never disagree with the site. Curated
-  guide/pattern texts live in the worker and are versioned with it
+  (loaded lazily for data methods only, pre-indexed, memoised per isolate),
+  so tools can never disagree with the site. Curated guide/pattern texts
+  live in the worker and are versioned with it
   (`SERVER_VERSION` — bump on tool/resource changes).
 - The JSON-RPC handler is pure (`handleMcp(body, dir)`); keep it that way so it
   stays testable without a runtime.

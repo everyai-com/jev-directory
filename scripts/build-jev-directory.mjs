@@ -334,6 +334,19 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 @media (max-width:1020px){.hero-grid{grid-template-columns:1fr;gap:26px}.proof{max-width:560px}}
 @media (max-width:920px){.topbar a[href$="capabilities.md"]{display:none}.topbar .btn.gh span{display:none}.topbar .btn.gh{padding:8px 10px}.topbar .btn{padding:8px 11px}}
 @media (max-width:560px){.eyebrow{font-size:10px;padding:5px 11px;letter-spacing:.05em}.askfab{padding:10px 14px;font-size:12px}.brand i{display:none}.topbar .in{gap:8px;padding:10px 14px}}
+/* ── Editorial pass (field-notes-inspired): serif display, evidence pills, claim/caveat ── */
+.hero h1,.card h3,.casepage h1,.guidepage h1,.guidehero h1{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.02em}
+.card h3{font-size:17px;line-height:1.35;font-weight:500}
+.card h3 a{text-wrap:balance}
+.evpill{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line2);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.ev-measured{color:#7ee2a8;border-color:#2d5b43;background:rgba(46,125,75,.12)}
+.ev-demo{color:var(--accent);border-color:#5b4a2d;background:rgba(245,165,36,.1)}
+.ev-proposal{color:var(--dim)}
+.claim{background:var(--panel);border:1px solid var(--line2);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;margin-top:18px;font-size:14.5px;line-height:1.65}
+.claim>span,.caveat>span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
+.caveat{margin-top:10px;font-size:13px;line-height:1.65;color:var(--dim)}
+.caveat>span{color:var(--faint)}
+.casepage .meta .evpill{margin-left:2px}
 `;
 
 const JS = `import { JEV_DIR } from './data.js';
@@ -385,7 +398,7 @@ function copyText(text, msg) {
 function matchBuild(item, words) {
   if (activeCat !== 'All' && item.c !== activeCat) return false;
   if (!words.length) return true;
-  var hay = norm(item.t + ' ' + item.d + ' ' + (item.l || []).map(function (l) { return l.t + ' ' + l.u; }).join(' '));
+  var hay = norm(item.t + ' ' + item.d + ' ' + (item.k || '') + ' ' + (item.v || '') + ' ' + (item.l || []).map(function (l) { return l.t + ' ' + l.u; }).join(' '));
   return words.every(function (w) { return hay.indexOf(w) >= 0; });
 }
 function matchEval(item, words) {
@@ -395,6 +408,9 @@ function matchEval(item, words) {
 }
 function briefOf(item) {
   var lines = [item.t, '', item.d];
+  if (item.k) lines.push('', 'Claim: ' + item.k);
+  if (item.v) lines.push('Caveat: ' + item.v);
+  if (item.e) lines.push('Evidence: ' + item.e);
   (item.l || []).forEach(function (l) { lines.push('- ' + (l.t || l.u) + ': ' + l.u); });
   lines.push('', 'Source: ' + item.u);
   return lines.join('\\n');
@@ -411,7 +427,7 @@ function buildCard(item, i) {
   if (links) links = '<div class="llabel">Links</div>' + links;
   var page = './cases/' + item.i + '.html';
   return '<article class="card" data-i="' + i + '"><div class="k"><span class="catname">' +
-    esc(item.c) + '</span><span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3><a href="' +
+    esc(item.c) + '</span>' + (item.e ? '<span class="evpill ev-' + item.e + '">' + esc(item.e) + '</span>' : '') + '<span class="when">' + esc(timeAgo(item.w)) + '</span></div><h3><a href="' +
     esc(page) + '">' + esc(item.t) + '</a></h3><p class="desc">' + esc(item.d) + '</p><a class="more" href="' +
     esc(page) + '">read more +</a>' +
     (links ? '<div class="links">' + links + '</div>' : '') +
@@ -966,7 +982,11 @@ function casePage(item, entry, generated) {
     try { dom = new URL(u).hostname.replace(/^www\./, ''); } catch {}
     links.push({ u, t: (m.title || u).slice(0, 140), d: dom, x: (m.desc || '').slice(0, 220), g });
   }
-  const brief = [item.title, '', desc, ...links.map(l => `- ${l.t}: ${l.u}`), '', 'Source: ' + item.sourceUrl].join('\n');
+  const briefLines = [item.title, '', desc];
+  if (item.claim) briefLines.push('', 'Claim: ' + item.claim);
+  if (item.caveat) briefLines.push('Caveat: ' + item.caveat);
+  if (item.evidence) briefLines.push('Evidence: ' + item.evidence);
+  const brief = [...briefLines, ...links.map(l => `- ${l.t}: ${l.u}`), '', 'Source: ' + item.sourceUrl].join('\n');
   const rows = links.map(l => {
     const visual = l.g
       ? `<img class="th" src="${escHtml(l.g)}" alt="" loading="lazy" onerror="this.remove()">`
@@ -995,8 +1015,10 @@ function casePage(item, entry, generated) {
 ${topbar('../', '')}
 <div class="casepage">
 <h1>${escHtml(item.title)}</h1>
-<div class="meta"><span class="catname">${escHtml(item.category)}</span><span>by ${escHtml(item.handle || 'unknown')}</span><span>${escHtml((item.submittedAt || '').slice(0, 10))}</span></div>
+<div class="meta"><span class="catname">${escHtml(item.category)}</span>${item.evidence ? `<span class="evpill ev-${item.evidence}">${item.evidence}</span>` : ''}<span>by ${escHtml(item.handle || 'unknown')}</span><span>${escHtml((item.submittedAt || '').slice(0, 10))}</span></div>
 <div class="body">${escHtml(desc)}</div>
+${item.claim ? `<div class="claim"><span>Claim · reported</span>${escHtml(item.claim)}</div>` : ''}
+${item.caveat ? `<div class="caveat"><span>Caveat</span>${escHtml(item.caveat)}</div>` : ''}
 ${rows ? `<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links">${rows}</div>` : ''}
 <div class="actions">
 <button class="btn solid" id="copyBrief">copy brief for your agent</button>
@@ -1108,7 +1130,11 @@ async function main() {
         u: item.sourceUrl,
         h: item.handle || null,
         w: item.submittedAt || null,
-        l: links
+        l: links,
+        // Field-notes imports: reporter's claim (k), caveat (v), evidence level (e).
+        ...(item.claim ? { k: String(item.claim).replace(/\s+/g, ' ').trim().slice(0, 400) } : null),
+        ...(item.caveat ? { v: String(item.caveat).replace(/\s+/g, ' ').trim().slice(0, 400) } : null),
+        ...(item.evidence ? { e: item.evidence } : null)
       };
     })
   };

@@ -1,6 +1,6 @@
 # Jev Directory
 
-> Everything Jev (typesafe-ai/jev) can do, with receipts: 50 runnable judge-model evals plus 1328 real community builds, each linked to its project and source post. Generated 2026-09-19.
+> Everything Jev (typesafe-ai/jev) can do, with receipts: 50 runnable judge-model evals plus 1362 real community builds, each linked to its project and source post. Generated 2026-09-21.
 
 ## Start here: agents
 

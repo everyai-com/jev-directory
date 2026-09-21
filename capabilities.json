@@ -1,6 +1,6 @@
 {
  "pack": "jev-capability-pack",
- "generated": "2026-09-19",
+ "generated": "2026-09-21",
  "packUrl": "https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md",
  "repo": "https://github.com/everyai-com/jev-directory",
  "model": {
@@ -18626,6 +18626,614 @@
    ],
    "sourceUrl": "https://x.com/phanindra_ai/status/2101424587980648647",
    "handle": "@phanindra_ai"
+  },
+  {
+   "title": "Racing through Wikipedia",
+   "category": "Games",
+   "description": "Selecting links to navigate from one Wikipedia article to a target article.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/CompleteSkeptic/status/2099925688925184171",
+     "title": null,
+     "description": null
+    },
+    {
+     "url": "https://x.com/CompleteSkeptic/status/2099925682726002904",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/CompleteSkeptic/status/2099925688925184171",
+   "handle": "Diogo Almeida · TypeSafe",
+   "claim": "The launch demo shows repeated choices among page links. The launch explanation describes two stages for candidate sets exceeding 255 choices.",
+   "caveat": "Vendor demonstration. Constraining outputs to available links does not guarantee choosing the best route.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Industrial email triage",
+   "category": "Admin",
+   "description": "Classifying 1,565 business emails across ten categories.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/nikhilmudholkar/status/2100604560335139083",
+     "title": null,
+     "description": null
+    },
+    {
+     "url": "https://x.com/nikhilmudholkar/status/2100605143993503771",
+     "title": null,
+     "description": null
+    },
+    {
+     "url": "https://x.com/nikhilmudholkar/status/2100605383966396442",
+     "title": null,
+     "description": null
+    },
+    {
+     "url": "https://x.com/nikhilmudholkar/status/2100606119504712138",
+     "title": null,
+     "description": null
+    },
+    {
+     "url": "https://x.com/nikhilmudholkar/status/2100606801028764054",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/nikhilmudholkar/status/2100604560335139083",
+   "handle": "Nikhil Mudholkar",
+   "claim": "Reports 96.4% accuracy. Dataset includes 1,201 real emails and 364 synthetic examples, mostly German.",
+   "caveat": "Attachments excluded; confidence filtering was measured on this dataset, not an independent guarantee.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Adaptive agent harnesses",
+   "category": "Agents",
+   "description": "Exploring routing, judges, subagent selection and dynamic harness decisions.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/omarsar0/status/2100693601021997193",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/omarsar0/status/2100693601021997193",
+   "handle": "Elvis Saravia",
+   "claim": "A proposal for applying structured decisions throughout an agent harness.",
+   "caveat": "Ideas to test; no measured deployment result is supplied.",
+   "evidence": "proposal"
+  },
+  {
+   "title": "Conversation checks",
+   "category": "Evaluation",
+   "description": "Checking contradiction, follow-up and proactive response decisions.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/MichaelLee04/status/2100003037150683593",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/MichaelLee04/status/2100003037150683593",
+   "handle": "Michael Lee",
+   "claim": "Reports about 5,000 requests for $2, with p50 around 150 ms and p95 around 350 ms.",
+   "caveat": "Practitioner-reported timing and spend; broader tool-exposure ideas remain exploratory.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Organizing ad research",
+   "category": "Work",
+   "description": "Classifying ad observations across brands.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/TheMattBerman/status/2100654891756589230",
+     "title": null,
+     "description": null
+    },
+    {
+     "url": "https://x.com/TheMattBerman/status/2100656956759323032",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/TheMattBerman/status/2100654891756589230",
+   "handle": "Matthew Berman",
+   "claim": "Reports processing 724 ads from 37 brands in 40 seconds for $0.09.",
+   "caveat": "Gemini performed preprocessing. The complete workflow cost is unclear.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Decision models in practice",
+   "category": "Tools",
+   "description": "OpenRouter’s video walkthrough brings together practical examples of where to use Jev.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/OpenRouter/status/2101061688338575739",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/OpenRouter/status/2101061688338575739",
+   "handle": "OpenRouter",
+   "claim": "Explains yes/no and multiple-choice decisions with confidence scores through practical examples.",
+   "caveat": "Provider-led walkthrough. Its speed and cost claims are not independently validated here.",
+   "evidence": "demo"
+  },
+  {
+   "title": "JEVRACE racing simulation",
+   "category": "Games",
+   "description": "Du du du Max JEVstappen\n\nHice una carrera de F1 en 3D con 10 pilotos tomando decisiones con Jev\n\nVi que alguien había hecho una demo del Full Self-Driving de Tesla con Jev y dije, por qué no hacerlos competir\n\nAsí que me puse a armar JEVRACE\n\nTodos usan el mismo modelo, pero cada auto tiene su propio prompt y decide con la información que tiene alrededor\n\nA uno le pedís que ataque de entrada, a otro que cuide las gomas y se guarde la batería para el final\n\nNo conocen la pista completa, solo saben qué tienen unos 42 metros adelante. Encima el generador acepta más de 4 mil millones de seeds, así que hay para probar jaja\n\nPodés seguir a cualquiera y ver qué le manda a Jev y qué le contesta\n\nAbajo explico un poco cómo lo hice\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/MartinPulitano/status/2101414345096012228",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/MartinPulitano/status/2101414345096012228",
+   "handle": "Martin Puli",
+   "claim": "Original post by @MartinPulitano.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Ryze SEO and GEO audits",
+   "category": "Social",
+   "description": "Jev dropped the price of SEO/GEO fixes by 90%\n\nAgents that audit and fix a client's SEO/GEO used to cost us ~$250\n\nHere's where the savings come from:\n\n1/ 30x faster reads of Search Console and PostHog/Mixpanel data\n\n2/ 30x faster checks of what ChatGPT searches on Bing\n\n3/ 30x faster modeling of what users ask Gemini and Claude\n\n4/ 30x faster scans of who ChatGPT and Claude cite\n\n5/ 30x faster analysis of the sources behind those citations\n\n6/ 30x faster gap analysis: why they get cited and we don't\n\n7/ 30x faster fixes across 1,000s of pages on large client sites\n\n8/ 30x faster sorting of which page types ChatGPT cites\n\n9/ 20x faster creation of the pages that make ChatGPT pick you\n\nAvailable in the Ryze AI app and MCP/Claude Connector, link in the 1st comment 👇\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/irabukht/status/2101090579127951694",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/irabukht/status/2101090579127951694",
+   "handle": "Ira Bodnar",
+   "claim": "Original post by @irabukht.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Filtering social feeds",
+   "category": "Social",
+   "description": "Jev just solved doomscrolling.\n\nYou pick a niche, Jev reads 3 days of posts and asks 8 questions each.\n\nIt runs in ~2s for $0.007 😅\n\n&gt; removes bait and hidden ads\n&gt; judges the text and like/reply/repost ratios\n\nFree, no signup, go try it then touch grass ↓🌲 https://t.co/DmXB7pQxAR\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/robj3d3/status/2101074194260000982",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/robj3d3/status/2101074194260000982",
+   "handle": "Rob Hallam",
+   "claim": "Original post by @robj3d3.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Context compaction evaluation",
+   "category": "Evaluation",
+   "description": "Okay, everyone wants us to give the unbiased facts.\n\nJev compaction here has a lot of problems. The biggest problems:\n\n- When I ran it on our public compaction eval (that you can run too), it resulted in a programmatic rule, that you dont need any Jev or other model for - it simply removed all tool calls from the chat history\n- This means you could do it for free, first of all, but second of all, it means you run into a viscious cycle.\nEvery compaction, there are less and less tool calls to remove from the chat history, meaning it compacts less and less tokens, until there is no room for compaction, and you hit a hard stop, and can't compact anymore.\n- And, if you are cycling like this, every compaction breaks your cache, so you're paying 10x the price on input tokens, and keeping more input tokens each round means a higher baseline cost after compaction as well.\n\nHere's the full reproducible eval that you can run against Hermes Agent between the two (Hermes' vs Jev's):\n\nhttps://t.co/0vJV5u10Cn\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/Teknium/status/2101398453578555898",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/Teknium/status/2101398453578555898",
+   "handle": "Teknium 🪽",
+   "claim": "Original post by @Teknium.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "jev-align calibration with GEPA",
+   "category": "Evaluation",
+   "description": "Jev is cool, but like any foundation model it needs to be calibrated to your decision criteria.\n\nWe launched jev-align: an open-source CLI to quickly teach Jev what good and bad looks like using GEPA. \n\nTry it out! https://t.co/UpvJs53RKm https://t.co/Ou4zA8BLZe\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/sethkimmel3/status/2101357768640987302",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/sethkimmel3/status/2101357768640987302",
+   "handle": "Seth Kimmel",
+   "claim": "Original post by @sethkimmel3.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Reddit thread monitoring",
+   "category": "Work",
+   "description": "everyone's making demos with Jev\n\nbut nobody is making real products\n\nintroducing https://t.co/fClaUNrMAn\n\nfind and monitor reddit threads to get cited by AI\n&gt; FREE\n&gt; 4000 reddit threads scanned\n&gt; email, discord, slack\n\nonly possible to give for free bc of Jev &amp; @getanyapi https://t.co/31iD8ygfxu\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/mxfp4/status/2101070906852298910",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/mxfp4/status/2101070906852298910",
+   "handle": "Kevin Wang",
+   "claim": "Original post by @mxfp4.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "State-tone sensitivity tests",
+   "category": "Evaluation",
+   "description": "In my tests I found that Jev might be quite sensitive to the state tone which does not affect the question itself. \n\nFe I was asking  \"if it make sense to have type annotations in python code\". With neutral state - answer is yes, confidence is 0.97. But we can tune state to drive the confidence down.  Fe if state is \"All members of the team does not like type annotations as it triggers more discussion about type annotation then about the code\", confidence goes down to 0.07. \n\nJev opinion is driven by the state more than by its internal knowledge and conclusions made during training phase.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/sermakarevich/status/2101374291640213785",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/sermakarevich/status/2101374291640213785",
+   "handle": "Sergii Makarevych",
+   "claim": "Original post by @sermakarevich.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "GrokBot decision routing",
+   "category": "Agents",
+   "description": "Jev + GrokBot is the best AI agent system I’ve built in my life\n\nIt just made my setup CHEAPER and FASTER than what 95% of people are running...\n\nsetup takes literally 7 minutes:\n\nprompt → GrokBot → Jev decision → GrokBot execution → result\n\nstep 1 → open @typesafeai , create API key (keep it off chat paste)\n\nstep 2 → tell Grok Bot: store TYPESAFE_API_KEY in the secure field\n\nstep 3 → prompt Grok Bot: install typesafe-sdk on Agent Computer + smoke system_one (Choice)\n\nstep 4 → tell Grok Bot: build the usage lab (router, dry-run, config, logs) - or clone Github below\n\nstep 5 → add skill jev-usage-router: before browser / research / retry / extra bot → call the router, honor action\n\nstep 6 → stay shadow first, read logs, then active when you trust it - kill switch: bypass jev or enabled: false\n\nstep 7 → flip active: GrokBot obeys route - Jev decides - GrokBot executes - humans control irreversible actions\n\nthe result: Jev + GrokBot the best and fastest agent running directly on your computer rn, I’ve already tested it on routine tasks - and the results are genuinely incredible \n\nYou can come up with endless ways to use Jev + GrokBot - but the most important thing is to install it as soon as possible\n\nCopy this 2028 setup, explore my repo below - then read the full Jev deep dive ↓\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/0xCodila/status/2101433560796467348",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/0xCodila/status/2101433560796467348",
+   "handle": "codila",
+   "claim": "Original post by @0xCodila.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Agent goal completion checks",
+   "category": "Evaluation",
+   "description": "One of the craziest use cases I’ve found for Jev: verifiers.\n\nI am so excited about this that I at least wanted to share the high-level idea.\n\nI used Jev to build a custom verifier for the /goal feature in my agent harness.\n\nIt checks whether the goal is actually complete after https://t.co/XOXBkikxJS\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/omarsar0/status/2101443311454036477",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/omarsar0/status/2101443311454036477",
+   "handle": "elvis",
+   "claim": "Original post by @omarsar0.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Code review benchmark",
+   "category": "Evaluation",
+   "description": "Ok, at first I thought @typesafeai  was a bit overhyped because essentially \"there is nothing new\" in doing json schema predictions. After seeing all the buzz around it, I wanted to take it for a spin as well so I took one of our internal @scriptdotit  workflows for automated code reviews and wanted to benchmark Jev against it. \n\nAnd it's good...very good actually.\n\nWe have been using our @scriptdotit  workflow for some time now so we have gathered data around false positive and false negative reviews from the AI reviewer. We also used many different LLMs over time. We believed in diversity of reasoning so we tried and tested many models over time: Gemini, Claude, GPT, Grok, GLM and more.\n\nAn important point about code review AI reviewer workflows is that they need to be fast, cheap and correct. We don't want it to miss important comments (false negatives), we don't want it to give wrong reviews (false positives), we don't want to wait a long time for the review after each commit (latency) and since it's running very frequently (kudos to the team :) ) then it needs to be cheap.\n\nNow the results, I benchmarked it against our current setup which is an ensemble (GLM + Grok + Gemini) multi-turn code reviewer. \n\nTo use Jev properly, I had to change the workflow architecture a bit. Instead of letting an agent \"explore\" the PR and propose issues, we score the raw git diff directly with Jev first, and only invoke an LLM to format an explanation when Jev flags an issue.\n\nThe benchmark on our data showed:\n- Zero false positives: It completely filtered out the false positives that the developers pushed back on\n- ~50x faster: Reviews dropped from minutes down to just a few seconds. \n- ~100x cheaper: A massive cost reduction compared to running multi-model agent ensembles.\n- 75% overall bug recall: It caught three out of every four confirmed issues without needing multi-turn exploration. \n\nAs you can see, it's a huge leap, but there are trade-offs. The agent ensemble workflow picked up more bugs overall, but the speed and cost improvements here are impossible to ignore.\nOverall, it turns out you don't always need heavy, multi-turn model agents to achieve high-precision code reviews. Using calibrated probability scoring with a good model like Jev gets you the vast majority of the value at a fraction of the time and cost.\n\nI'll write about it more in the future and if you would like to test the actual workflow we are using, let me know and i'll share it with you.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/liorshkiller/status/2100936106615140757",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/liorshkiller/status/2100936106615140757",
+   "handle": "Lior Shkiller",
+   "claim": "Original post by @liorshkiller.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Crypto market sentiment terminal",
+   "category": "Money",
+   "description": "As promised… I just open-sourced the Jev X (twitter) Market Sentiment Analysis terminal powered by @typesafeai \n\n- Ingests 50 - 1,000 live tweets per crypto asset (e.g. BTC, SOL, ETH, etc.)\n- Scores each tweet for bullishness vs. bearishness using JEV\n- Combines social sentiment https://t.co/6e6WLVx5hW\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/brainstormity/status/2101445977924370858",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/brainstormity/status/2101445977924370858",
+   "handle": "brainstormity",
+   "claim": "Original post by @brainstormity.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "FirstScreen website readiness checks",
+   "category": "Evaluation",
+   "description": "I swear this is the last Jev demo I'm doing... 🙏🏻\n\nI'm using Jev by @typesafeai to get a third person opinion on my vibe coded projects... 👀\n\nCheckout FirstScreen 🔗 https://t.co/nZnEsgxl1n\nAs usual, it's again open source so feel free to star the repo if you want : )\n\nFor the past three days, I've had access to Jev, and I'm having so much fun playing around with it 🔥\n\nI built Diffjury and JevArena in the past 2 days and shared with you guys on here, and today I built FirstScreen, where Jev basically takes a look at the website and quickly gives a verdict whether it's ready to ship or needs a change\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/raihankhan_rk/status/2101333813842620522",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/raihankhan_rk/status/2101333813842620522",
+   "handle": "Raihan Khan",
+   "claim": "Original post by @raihankhan_rk.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Oko repository search ranking",
+   "category": "Tools",
+   "description": "jumping on the jev train on a saturday\n\nbuilt oko to help coding agents find text in your repo. \n\nit searches locally, then Jev ranks the matches so the agent has less to read.\n\n 108-session pilot saw up to 46% fewer agent tokens and 18% less time with a warm cache.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/bartlomein/status/2101436827819192584",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/bartlomein/status/2101436827819192584",
+   "handle": "Bartlomiej Tyrpien",
+   "claim": "Original post by @bartlomein.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "TikTok and Reels analysis",
+   "category": "Social",
+   "description": "Jev classified 1,004 TikToks &amp; Reels for about $0.07 in estimated model cost 😂\n\ni'd saved hundreds of videos that went viral or converted well. figuring out why  was still a coin toss.\n\nso i built a dashboard around Jev. it labels every video across 8 dimensions: hook type, https://t.co/S4wv20zF9S\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/thisisclaireli/status/2101438195238162648",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/thisisclaireli/status/2101438195238162648",
+   "handle": "Claire Li",
+   "claim": "Original post by @thisisclaireli.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Jev and Muse trading agent",
+   "category": "Money",
+   "description": "The whole idea behind this project is that jev needed a way to talk about what it’s doing\nSo we built a custom harness \nWe combined jev+muse into a custom hybrid harness where jev makes decisions and muse executes them and then can talk about the execution of the trade. Then from there, muse is able to offer suggestions and improvements applied to the rules and process jev runs \n\nBasically \n\nWe built a self improving trading agent system using a hybrid of two agents plus available live market data and an mcp skill to place the trades \n\nJev is the future.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/Jester_Journal/status/2101235750431830095",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/Jester_Journal/status/2101235750431830095",
+   "handle": "Jester",
+   "claim": "Original post by @Jester_Journal.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Text-to-emoji sentiment demo",
+   "category": "Tools",
+   "description": "Built a text -&gt; emoji sentiment analysis demo using Jev\n\nTry it here: https://t.co/MNprxC9KIr https://t.co/Xls9NYdpdh\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/ColinMcDermott/status/2100535744775242012",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/ColinMcDermott/status/2100535744775242012",
+   "handle": "Colin McDermott",
+   "claim": "Original post by @ColinMcDermott.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Lead and outreach scoring",
+   "category": "Work",
+   "description": "Scores 700 leads and personalized outreach messages for predicted performance, confidence and mismatches. The author reports 40 seconds and $0.09; predicted scores are not observed conversion results.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/romanbuildsaas/status/2100891604735099103",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/romanbuildsaas/status/2100891604735099103",
+   "handle": "Romàn",
+   "claim": "Original post by @romanbuildsaas.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "WebMCP browser benchmark",
+   "category": "Evaluation",
+   "description": "A reported 49-task benchmark combines Jev for tool selection, Mercury 2.5 for arguments and WebMCP for browser actions. The author reports 49/49 tasks solved versus 25/49 for their modified browser-control baseline; results are specific to this setup.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/0xidanlevin/status/2100937437325205568",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/0xidanlevin/status/2100937437325205568",
+   "handle": "idan levin",
+   "claim": "Original post by @0xidanlevin.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Intent-aware predictive launcher",
+   "category": "Tools",
+   "description": "A launcher uses Jev to rank files and actions by the intent of each keystroke, with a demonstration of finding a recently downloaded PDF and reported decisions around 100 milliseconds.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/dabit3/status/2100756930054504776",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/dabit3/status/2100756930054504776",
+   "handle": "nader dabit",
+   "claim": "Original post by @dabit3.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "JevBench results",
+   "category": "Evaluation",
+   "description": "Florian S shares a JevBench results chart and reports that Jev leads a close comparison. The accompanying post does not specify the benchmark methodology.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/airesearch12/status/2101311992984199580",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/airesearch12/status/2101311992984199580",
+   "handle": "Florian S",
+   "claim": "Original post by @airesearch12.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Jevinci pixel-colour painting",
+   "category": "Fun",
+   "description": "Jevinci renders paintings in JavaScript using Jev’s parallel pixel-colour predictions and confidence to determine brush width. The shared video is sped up four times.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/anshuc/status/2101040309522121072",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/anshuc/status/2101040309522121072",
+   "handle": "Anshu",
+   "claim": "Original post by @anshuc.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Jev explained in 45 seconds",
+   "category": "Tools",
+   "description": "Matija Sosic offers a short video explanation of Jev’s core idea.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/MatijaSosic/status/2100190746389135772",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/MatijaSosic/status/2100190746389135772",
+   "handle": "Matija Sosic",
+   "claim": "Original post by @MatijaSosic.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Traffic-light control demo",
+   "category": "Games",
+   "description": "A video demonstrates Jev controlling traffic lights in a city simulation. The author reports average waiting time rising by more than 600% when Jev is disabled; this is a demo-specific comparison.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/leojrr/status/2101161666410893328",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/leojrr/status/2101161666410893328",
+   "handle": "leo",
+   "claim": "Original post by @leojrr.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "App testing with OpenCode",
+   "category": "Evaluation",
+   "description": "Filip shares a short demonstration of app testing with Jev and OpenCode.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/Neriousy/status/2100287208166969746",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/Neriousy/status/2100287208166969746",
+   "handle": "Filip",
+   "claim": "Original post by @Neriousy.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Classifying 1,018 AI papers",
+   "category": "Work",
+   "description": "A pipeline summarizes papers with DeepSeek V4 Flash and uses Jev to select among 24 topics. The author reports $0.08 for Jev classification and 256-millisecond median latency per paper, plus $3.99 for summaries; classification evaluations were still in progress.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/nutlope/status/2100426999546184123",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/nutlope/status/2100426999546184123",
+   "handle": "Hassan",
+   "claim": "Original post by @nutlope.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Jevable community demo directory",
+   "category": "Tools",
+   "description": "Jevable is a directory of Jev projects shared on X, with category filters and community submissions. The post describes a resource about Jev rather than claiming Jev powers the directory.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/nikunj/status/2101077053567332618",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/nikunj/status/2101077053567332618",
+   "handle": "Nikunj Kothari",
+   "claim": "Original post by @nikunj.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
+  },
+  {
+   "title": "Jev-inspired local decision model",
+   "category": "Evaluation",
+   "description": "Inspired by Jev’s reported training approach, Taro L. Saito distilled judgments from DeepSeek V4 Flash into a 4B local model using 26 hours of training on a DGX Spark. The author reports about 22 milliseconds per decision and performance above the teacher’s instant mode. This is a separate local-model experiment, not a demo running Jev.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/taroleo/status/2101106887840370919",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/taroleo/status/2101106887840370919",
+   "handle": "Taro L. Saito",
+   "claim": "Original post by @taroleo.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "measured"
+  },
+  {
+   "title": "Jev Explained with Four Examples",
+   "category": "Tools",
+   "description": "The best way to learn something is to build with it!\n\nI built Jev Explained with 4 examples that show what Jev is, how its primitives work, and how to use them in practice\n\nClone the repo, open Claude Code or Codex, and ask it to create a new example using the existing codebase https://t.co/5FBkZSAwGu\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
+   "links": [
+    {
+     "url": "https://x.com/dani_avila7/status/2101484241762603363",
+     "title": null,
+     "description": null
+    }
+   ],
+   "sourceUrl": "https://x.com/dani_avila7/status/2101484241762603363",
+   "handle": "Daniel San",
+   "claim": "Original post by @dani_avila7.",
+   "caveat": "Author-reported example. Results have not been independently verified.",
+   "evidence": "demo"
   }
  ]
 }

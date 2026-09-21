@@ -1,16 +1,16 @@
 # Jev Capability Pack
 
-This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **1328 real community builds** that use Jev in production, with project links.
+This is a playbook of what **Jev** (typesafe-ai/jev) can do: **50 runnable judge-model evals** with the exact prompt, plus **1362 real community builds** that use Jev in production, with project links.
 
 | | |
 | --- | --- |
-| Generated | 2026-09-19 |
+| Generated | 2026-09-21 |
 | Model | `typesafe-ai/jev` via https://ai-gateway.vercel.sh/v1 |
 | Pricing | $0.042 per 1M input tokens |
 | Auth | `AI_GATEWAY_API_KEY` (vck_…) in the environment |
 | Evals | 50 runnable |
 | Eval manifest | rev `6d1f82b05fbea65e` · exact-match per question, every question must match |
-| Community builds | 1328 with links |
+| Community builds | 1362 with links |
 | This file | https://raw.githubusercontent.com/everyai-com/jev-directory/main/capabilities.md |
 | Directory + repo | https://github.com/everyai-com/jev-directory |
 
@@ -2058,9 +2058,1328 @@ console.log(JSON.stringify(result, null, 2));
 
 ---
 
-## Community builds (1328)
+## Community builds (1362)
 
-Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. Every entry links its project and its source post.
+Real things people built with Jev — from the TypeSafe AI #show-and-tell channel, X posts, and the DAIR.AI Jev Field Notes collection. Every entry links its project and its source post. Entries with a claim/caveat pair carry the reporter’s numbers plus the caveat to read before trusting them.
+
+### Work (260)
+
+1. **Score inbound leads 0–1 and reply to the 98s first**
+   - A graphic design agency runs every contact-form submission through Jev as an is-good-lead score. A 98% lead gets an instant human reply; vague maybes get a slower touch. Same pattern fits any business with an expensive inbound queue.
+   - Source: https://youtu.be/4mTLpuQpB80 (by Jev launch video)
+
+2. **Route support inquiries to the right team instantly**
+   - Incoming support requests get classified the moment they arrive — which product team owns it, how urgent it is — instead of sitting in a general queue. The AI-traffic-cop pattern: decide in ~200ms, route, escalate, or auto-resolve.
+   - Source: https://youtu.be/4mTLpuQpB80 (by Jev launch video)
+
+3. **here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which**
+   - https://jev-nethack-live.poppybyte.chatgpt.site/ here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which is cool Linked projects: • Jev / NetHack — public run (jev-nethack-live.poppybyte.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550581784922554498
+   - [Jev / NetHack — public run](https://jev-nethack-live.poppybyte.chatgpt.site/)
+   - Source: https://jev-nethack-live.poppybyte.chatgpt.site/ (by 0xBunny)
+
+4. **lifelike.build is a small village that runs itself, streamed live to your browser.**
+   - https://lifelike.build/ lifelike.build is a small village that runs itself, streamed live to your browser. Five families forage, farm, trade, gossip, raise children and dogs, and take their chances in the woods. Every judgment call a villager makes comes from Jev, TypeSafe's decision model, and a second small model keeps a running newspaper on what happens. Open any villager to see what they need, feel, remember, and why they did what they just did Linked projects: • lifelike.build — Ember Hollow, a living village run on Jev. Needs, moods, memories, gossip, trade and the wild, streamed live. (lifelike.build) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550579426264354847
+   - [lifelike.build](https://lifelike.build/)
+   - Source: https://lifelike.build/ (by dminGod)
+
+5. **IDK if Steve is here but this is diabolical.**
+   - IDK if Steve is here but this is diabolical. Took `vibe coding` to a whole new level https://probably-lang.southpolesteve.workers.dev/ Linked projects: • Probably — a programming language for LLM workflows (probably-lang.southpolesteve.workers.dev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550578203037405225
+   - [Probably — a programming language for LLM workflows](https://probably-lang.southpolesteve.workers.dev/)
+   - Source: https://probably-lang.southpolesteve.workers.dev/ (by Max N)
+
+6. **Building Modus Computer, mobile-native computer agent:**
+   - Building Modus Computer, mobile-native computer agent: https://x.com/envystor/status/2101016575226617901 Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550576708464414740
+   - [https://x.com/envystor/status/2101016575226617901](https://x.com/envystor/status/2101016575226617901)
+   - Source: https://x.com/envystor/status/2101016575226617901 (by jroller)
+
+7. **Then this is interesting/live real time fallacy detector that sits on X:**
+   - Then this is interesting/live real time fallacy detector that sits on X: https://x.com/smalltownrobot/status/2100999987572203809 Linked projects: • Post by @smalltownrobot — LOGICAL FALLACIES: Next jev tool I'm working on is a @brave extension that gives a probabilistic fallacy score to every post on X timeline in realtime. It also flagged well reasoned, internally consistent + logical posts (x.com/smalltownrobot/status/2100999987572203809) • Post by @smalltownrobot — LOGICAL FALLACIES: Next jev tool I'm working on is a @brave extension that gives a probabilistic fallacy score to every post on X timeline in realtime. It also flagged well reasoned, internally consistent + logical posts (twitter.com/smalltownrobot/status/2100999987572203809) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550573317046665226
+   - [Post by @smalltownrobot](https://x.com/smalltownrobot/status/2100999987572203809)
+   - Source: https://x.com/smalltownrobot/status/2100999987572203809 (by KlingonChef)
+
+8. **I've got three projects to showcase I'm working on:**
+   - I've got three projects to showcase I'm working on: https://x.com/smalltownrobot/status/2100600923672228189 Linked projects: • Post by @smalltownrobot — My @typesafeai jev example. 1024 personas with specific geography/age/ideological markers (testing - not a strong methodology) to see how each respond to a changing policy discussion in real time. In this case, aliens. H (x.com/smalltownrobot/status/2100600923672228189) • Post by @smalltownrobot — My @typesafeai jev example. 1024 personas with specific geography/age/ideological markers (testing - not a strong methodology) to see how each respond to a changing policy discussion in real time. In this case, aliens. H (twitter.com/smalltownrobot/status/2100600923672228189) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550573185181810779
+   - [Post by @smalltownrobot](https://x.com/smalltownrobot/status/2100600923672228189)
+   - Source: https://x.com/smalltownrobot/status/2100600923672228189 (by KlingonChef)
+
+9. **It worked wth**
+   - It worked wth https://x.com/brainstormity/status/2101008659639672833 Linked projects: • Post by @brainstormity — JEV powered twitter market sentiment analysis won. Told to buy Bitcoin at $76k, 15 hrs ago And we are at $81k rn Open sourcing the whole code soon! (x.com/brainstormity/status/2101008659639672833) • Post by @brainstormity — JEV powered twitter market sentiment analysis won. Told to buy Bitcoin at $76k, 15 hrs ago And we are at $81k rn Open sourcing the whole code soon! (twitter.com/brainstormity/status/2101008659639672833) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550567480215470270
+   - [Post by @brainstormity](https://x.com/brainstormity/status/2101008659639672833)
+   - Source: https://x.com/brainstormity/status/2101008659639672833 (by brainstormity)
+
+10. **JevGate reviewd my entire code-base for 20 cents and even cached all that so new runs on CI will only check differs , yep i will finalyl reduce dev ops**
+   - JevGate reviewd my entire code-base for 20 cents and even cached all that so new runs on CI will only check differs , yep i will finalyl reduce dev ops costs Linked projects: • image.png — image/png · 114 KB (cdn.discordapp.com/attachments/1483217545040232493/1550566925673832561)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550566925673832561/image.png?ex=6aaecd7b&is=6aad7bfb&hm=4aa16d8777c5c5116a1f029b9fc6947f10f999ec1057ffd8fbf85fed81c0eaa3&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550566926042923008 (by Binatof)
+
+11. **built an MCP gateway that uses jev and seen 79% fewer input tokens on MCP heavy tasks**
+   - https://x.com/vpkxvoice/status/2100995268133146698 built an MCP gateway that uses jev and seen 79% fewer input tokens on MCP heavy tasks Linked projects: • Post by @vpkxvoice — Well I I built a local MCP gateway that connects agents to multiple mcp servers and jev finds the tool in the mcp gateway to execute and agent will only fill the arguments. LLMs dont have to go through all the tools or n (x.com/vpkxvoice/status/2100995268133146698) • Post by @vpkxvoice — Well I I built a local MCP gateway that connects agents to multiple mcp servers and jev finds the tool in the mcp gateway to execute and agent will only fill the arguments. LLMs dont have to go through all the tools or n (twitter.com/vpkxvoice/status/2100995268133146698) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550566024691060856
+   - [Post by @vpkxvoice](https://x.com/vpkxvoice/status/2100995268133146698)
+   - Source: https://x.com/vpkxvoice/status/2100995268133146698 (by Prasanth)
+
+12. **Jev plays Mario !**
+   - Jev plays Mario ! https://x.com/rherton/status/2101005942913729001?s=20 Linked projects: • Post by @rherton — the obligatory AI plays Mario, Jev version Jev is TypeSafe's System One model. u send it state and a typed question, it sends back a choice with probabilities. so every move here is one question: run, hop, jump, wait or (x.com/rherton/status/2101005942913729001) • Post by @rherton — the obligatory AI plays Mario, Jev version Jev is TypeSafe's System One model. u send it state and a typed question, it sends back a choice with probabilities. so every move here is one question: run, hop, jump, wait or (twitter.com/rherton/status/2101005942913729001) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550564819894272103
+   - [Post by @rherton](https://x.com/rherton/status/2101005942913729001?s=20)
+   - Source: https://x.com/rherton/status/2101005942913729001?s=20 (by Zac)
+
+13. **Jev: The Definitive Guide to System One AI in TypeScript**
+   - http://tiny.cc/Jev Jev: The Definitive Guide to System One AI in TypeScript Linked projects: • Jev: The Definitive Guide to System One AI in TypeScript (tiny.cc/Jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550559790860738670
+   - [Jev: The Definitive Guide to System One AI in TypeScript](http://tiny.cc/Jev)
+   - Source: http://tiny.cc/Jev (by Tronix)
+
+14. **I built a single shot AI page builder using Jev, Describe a website, and Jev will build it in less than a half second.**
+   - I built a single shot AI page builder using Jev, Describe a website, and Jev will build it in less than a half second. Exportable as a standalone page :anime_glasses: Linked projects: • Page_Builder.mp4 — video/mp4 · 15 MB (cdn.discordapp.com/attachments/1483217545040232493/1550557288413270108)
+   - [Page_Builder.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550557288413270108/Page_Builder.mp4?ex=6aaec481&is=6aad7301&hm=7be6f8fac1378bffdf07da0627bf87ff8650182e636ba8e79fa1b8c83dd02ee9&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550557289579282493 (by Nasr)
+
+15. **Yeah it's a joke/parody site so it's kind of intentionally poor/old looking but since I looked up the original logo, and it's sans-serif as well, I figured I should change it.**
+   - Yeah it's a joke/parody site so it's kind of intentionally poor/old looking but since I looked up the original logo, and it's sans-serif as well, I figured I should change it. https://askjevves.com/?v=20 Linked projects: • Ask Jevves — Have a question? Ask Jevves. The butler who knows best, now powered by a frontier decision model. (askjevves.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550554036389027841
+   - [Ask Jevves](https://askjevves.com/?v=20)
+   - Source: https://askjevves.com/?v=20 (by rei)
+
+16. **built this**
+   - built this https://x.com/nathanwchan/status/2100994031316766765?s=20 Linked projects: • Post by @nathanwchan — The perfect Jev use case you've all been waiting for!!! It's all in your hands now @thsottiaux https://will-tibo-reset.vercel.app/ (x.com/nathanwchan/status/2100994031316766765) • Post by @nathanwchan — The perfect Jev use case you've all been waiting for!!! It's all in your hands now @thsottiaux https://will-tibo-reset.vercel.app/ (twitter.com/nathanwchan/status/2100994031316766765) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550553872433676409
+   - [Post by @nathanwchan](https://x.com/nathanwchan/status/2100994031316766765?s=20)
+   - Source: https://x.com/nathanwchan/status/2100994031316766765?s=20 (by nate)
+
+17. **I'm really loving it for these real-time voice use cases**
+   - I'm really loving it for these real-time voice use cases https://x.com/zain_hoda/status/2100992526417031678?s=20 Linked projects: • Post by @zain_hoda — Drive-thru ordering at Big Kahuna burger powered by @typesafeai Jev The model is really good/fast/cheap at Natural Language -> Menu -> Selection (x.com/zain_hoda/status/2100992526417031678) • Post by @zain_hoda — Drive-thru ordering at Big Kahuna burger powered by @typesafeai Jev The model is really good/fast/cheap at Natural Language -> Menu -> Selection (twitter.com/zain_hoda/status/2100992526417031678) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550551489326616647
+   - [Post by @zain_hoda](https://x.com/zain_hoda/status/2100992526417031678?s=20)
+   - Source: https://x.com/zain_hoda/status/2100992526417031678?s=20 (by Zain)
+
+18. **Jev as a terminal guardrail.**
+   - https://jevguard.vercel.app/ Jev as a terminal guardrail. You can bypass it? Then customize your own Jev and bypass it again! Linked projects: • JevGuard — A CTF: TypeSafe AI's Jev vets every shell command before it runs in an isolated sandbox. Beat the vetter, read the flag. (jevguard.vercel.app) • image.png — image/png · 342 KB (cdn.discordapp.com/attachments/1483217545040232493/1550550964631502879) • image.png — image/png · 312 KB (cdn.discordapp.com/attachments/1483217545040232493/1550550966372143184) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550550967143891046
+   - [JevGuard](https://jevguard.vercel.app/)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550550964631502879/image.png?ex=6aaebe9d&is=6aad6d1d&hm=e48a9a0d04bd47e4acc15ae775c0fee80161e4fc452d87a57ca86bb8f11f44a9&)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550550966372143184/image.png?ex=6aaebe9e&is=6aad6d1e&hm=3081ec315810738a13938e6ddac1cde53a5a1e4b7661b0f76424208a04540139&)
+   - Source: https://jevguard.vercel.app/ (by lamp)
+
+19. **Poker is fine, but Jev is lost in mazes ...**
+   - Poker is fine, but Jev is lost in mazes ... https://x.com/danmana/status/2100991925364969827 Linked projects: • Post by @danmana — My Jev maze solving experiments are not going well Poor guy is more lost than the guy from Memento without his tattoos and polaroids 🙈 (x.com/danmana/status/2100991925364969827) • Post by @danmana — My Jev maze solving experiments are not going well Poor guy is more lost than the guy from Memento without his tattoos and polaroids 🙈 (twitter.com/danmana/status/2100991925364969827) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550550868808564736
+   - [Post by @danmana](https://x.com/danmana/status/2100991925364969827)
+   - Source: https://x.com/danmana/status/2100991925364969827 (by danmana)
+
+20. **can it solve the zebra puzzle?**
+   - can it solve the zebra puzzle? https://en.wikipedia.org/wiki/Zebra_Puzzle Linked projects: • Zebra Puzzle - Wikipedia (en.wikipedia.org/wiki/Zebra_Puzzle) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550548220231286885
+   - [Zebra Puzzle - Wikipedia](https://en.wikipedia.org/wiki/Zebra_Puzzle)
+   - Source: https://en.wikipedia.org/wiki/Zebra_Puzzle (by empath75)
+
+21. **I built a logic interpreter on top of Jev.**
+   - I built a logic interpreter on top of Jev. It runs a Prolog-style language where the facts and rules are plain English, and Jev does the unification Linked projects: • CleanShot_2026-09-18_at_11.54.24.mp4 — video/mp4 · 5 MB (cdn.discordapp.com/attachments/1483217545040232493/1550544719774351410)
+   - [CleanShot_2026-09-18_at_11.54.24.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550544719774351410/CleanShot_2026-09-18_at_11.54.24.mp4?ex=6aaeb8cc&is=6aad674c&hm=8ad5ca40d82b73c82ecf13e4439e9abdad99bc5a7ff88649d4e06737cf0ef8d3&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550544720386592929 (by Shawn Simister)
+
+22. **We should have a page of just Jev texas holdem poker apps 😂 I think its aggressiveness depends a lot on the prompting?**
+   - We should have a page of just Jev texas holdem poker apps 😂 https://x.com/imcharliegraham/status/2100954087605113072. I think its aggressiveness depends a lot on the prompting? Linked projects: • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (x.com/imcharliegraham/status/2100954087605113072) • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (twitter.com/imcharliegraham/status/2100954087605113072) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550542048782852208
+   - [Post by @imcharliegraham](https://x.com/imcharliegraham/status/2100954087605113072)
+   - Source: https://x.com/imcharliegraham/status/2100954087605113072 (by Cryptog (Charlie))
+
+23. **Had this idea tonight in a dream.**
+   - https://askjevves.com/ Had this idea tonight in a dream. Just felt like making it. I managed to find more than one way to use Jev's decision and classification abilities, it was a good starting project to try jev out Linked projects: • Ask Jevves — Have a question? Ask Jevves. The butler who knows best, now powered by a frontier decision model. (askjevves.com) • image.png — image/png · 92 KB (cdn.discordapp.com/attachments/1483217545040232493/1550537357516734594) • image.png — image/png · 129 KB (cdn.discordapp.com/attachments/1483217545040232493/1550537358162792498) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550537358502535321
+   - [Ask Jevves](https://askjevves.com/)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550537357516734594/image.png?ex=6aaeb1f1&is=6aad6071&hm=35dd1786d62ce4fb81413ef89c31cc7201872720e6ddf8dbc8e1fa4d28e836f4&)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550537358162792498/image.png?ex=6aaeb1f1&is=6aad6071&hm=10df2d4c1cc69a586922bfc732861848e735aeb6bafeaa92e0c470dc2f84fd1a&)
+   - Source: https://askjevves.com/ (by rei)
+
+24. **used the jev cli above to scan PRs for breaking changes -- ``` time ./breaking-changes.sh --debug … base: diff**
+   - used the jev cli above to scan PRs for breaking changes -- ``` time ./breaking-changes.sh --debug … base: diff 4a53517baa3728f331ed2a431804155fb296f8b9 [medium] crates/organization_service_persistence/src/lib.rs:33 OrganizationServicePersistence Three new public fields (installable_repo, installable_version_repo, installation_repo) were added to the struct breaks: Any code that constructs OrganizationServicePersistence via struct literal (rather than the builder) will fail to compile since new fields must be initialized; also breaks exhaustive pattern matches or destructuring on the struct. Flagged but not breaking on a closer look (1): crates/organization_service_persistence/src/migrations/m20260916_01_create_installable_catalog_tables.rs:1 — This migration only creates new tables (installable, installable_version, installable_share, installation) and their indexes; it does not drop or 
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550536033513377944 (by empath75)
+
+25. **I've put Jev in a poker tournament with Astra, Sol, Terra, Luna Jev is so conservative, Terra is a bully, Astra is**
+   - I've put Jev in a poker tournament with Astra, Sol, Terra, Luna Jev is so conservative, Terra is a bully, Astra is balanced https://x.com/danmana/status/2100975457759789492 Linked projects: • Post by @danmana — Can Jev play poker? Yes Can Jev beat OpenAI? Maybe Here is a tournament between Jev, Terra and Astra (x.com/danmana/status/2100975457759789492) • Post by @danmana — Can Jev play poker? Yes Can Jev beat OpenAI? Maybe Here is a tournament between Jev, Terra and Astra (twitter.com/danmana/status/2100975457759789492) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550534522968477706
+   - [Post by @danmana](https://x.com/danmana/status/2100975457759789492)
+   - Source: https://x.com/danmana/status/2100975457759789492 (by danmana)
+
+26. **exactly, check out the other commands if you want : ] I put a website showcasing them**
+   - exactly, check out the other commands if you want : ] I put a website showcasing them https://jevcli.vectorz.app/ Linked projects: • Jev CLI: AI you can grep — Verify claims, screen text, rank candidates, ask anything. Probabilities and exit codes, not prose. (jevcli.vectorz.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550532200355733514
+   - [Jev CLI: AI you can grep](https://jevcli.vectorz.app/)
+   - Source: https://jevcli.vectorz.app/ (by Nasr)
+
+27. **I was inspired of all the content of Jev being used as a "creative" tool and tried to let it paint on the same image over multiple iterations:**
+   - I was inspired of all the content of Jev being used as a "creative" tool and tried to let it paint on the same image over multiple iterations: https://x.com/crossiBuilds/status/2100972788164985043 Linked projects: • Post by @crossiBuilds — Here's what happens if you let Jev draw for multiple iterations. Every pixel gets the color of the neighbors from the last run and a scaled down map of the whole image as the context. Worked not that bad until the 6th or (x.com/crossiBuilds/status/2100972788164985043) • Post by @crossiBuilds — Here's what happens if you let Jev draw for multiple iterations. Every pixel gets the color of the neighbors from the last run and a scaled down map of the whole image as the context. Worked not that bad until the 6th or (twitter.com/crossiBuilds/status/2100972788164985043) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/155053200
+   - [Post by @crossiBuilds](https://x.com/crossiBuilds/status/2100972788164985043)
+   - Source: https://x.com/crossiBuilds/status/2100972788164985043 (by Tim Krase)
+
+28. **Hope this hasn’t been done already😁**
+   - Hope this hasn’t been done already😁 https://x.com/sarem_seitz/status/2100971430124953608?s=46 Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550531579405930648
+   - [https://x.com/sarem_seitz/status/2100971430124953608?s=46](https://x.com/sarem_seitz/status/2100971430124953608?s=46)
+   - Source: https://x.com/sarem_seitz/status/2100971430124953608?s=46 (by spike_spiegel)
+
+29. **Here's how to use it:**
+   - Here's how to use it: https://query.farm/blog/a-where-clause-for-taste/ Linked projects: • A SQL WHERE Clause for Taste | Query.Farm — I pointed DuckDB at Hacker News and at Jev, TypeSafe (query.farm/blog/a-where-clause-for-taste) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550529701792063550
+   - [A SQL WHERE Clause for Taste | Query.Farm](https://query.farm/blog/a-where-clause-for-taste/)
+   - Source: https://query.farm/blog/a-where-clause-for-taste/ (by Rusty Conover)
+
+30. **Hey, have you considered putting JevRouter directly between the agent and tool execution?**
+   - Hey, have you considered putting JevRouter directly between the agent and tool execution? The LLM would propose an action, but a controller would use JevRouter’s decision and policy checks to decide whether to execute it. The agent wouldn’t have a separate path to call the tool directly. That would make routing an enforced step rather than something the agent is instructed to consult. Is that a direction you’re considering?
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550529231635746827 (by godindav)
+
+31. **Found a way to use Jev auditing my vibecoded cpp codebase and help with atomic fixing.**
+   - Found a way to use Jev auditing my vibecoded cpp codebase and help with atomic fixing. Linked projects: • image.png — image/png · 100 KB (cdn.discordapp.com/attachments/1483217545040232493/1550525061591736490) • image.png — image/png · 38 KB (cdn.discordapp.com/attachments/1483217545040232493/1550525062052970536)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550525061591736490/image.png?ex=6aaea67e&is=6aad54fe&hm=5c12d70c2710cc65709e0b11d6b21bfa4d433192a0fc30995dc6a493110639dc&)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550525062052970536/image.png?ex=6aaea67e&is=6aad54fe&hm=a7bcedf8dee31b3ddf0ca67af638bac9cff26819bc645c3c83eb5890bb82f24c&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550525062535319602 (by Q86)
+
+32. **doing a in person jev demo night next week for my nyc peeps.**
+   - doing a in person jev demo night next week for my nyc peeps. might also live stream from x if people are interested : https://luma.com/xogxfokf Linked projects: • Jev Demo Night · Luma — the first ever jev demo night jev is the new system one model out of typesafe ai: a model that just judges. one verdict, milliseconds, no vibes. it's been out… (luma.com/xogxfokf) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550521101522702356
+   - [Jev Demo Night · Luma](https://luma.com/xogxfokf)
+   - Source: https://luma.com/xogxfokf (by Kaya)
+
+33. **Jev GL account coding**
+   - Jev GL account coding https://x.com/its_d_i_m_a/status/2100961401183592885?s=20 Linked projects: • Post by @its_d_i_m_a — One of the easiest @GetPeakflo use cases for Jev is GL / findim invoice coding on a fly. (x.com/its_d_i_m_a/status/2100961401183592885) • Post by @its_d_i_m_a — One of the easiest @GetPeakflo use cases for Jev is GL / findim invoice coding on a fly. (twitter.com/its_d_i_m_a/status/2100961401183592885) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550520877576102049
+   - [Post by @its_d_i_m_a](https://x.com/its_d_i_m_a/status/2100961401183592885?s=20)
+   - Source: https://x.com/its_d_i_m_a/status/2100961401183592885?s=20 (by drusky)
+
+34. **it sort of sucks, but i knocked together a quick UI generator**
+   - it sort of sucks, but i knocked together a quick UI generator Linked projects: • screenrecording.mov — video/quicktime · 9 MB (cdn.discordapp.com/attachments/1483217545040232493/1550516653400395776)
+   - [screenrecording.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550516653400395776/screenrecording.mov?ex=6aae9ea9&is=6aad4d29&hm=eabd7550a885e3867d4eb48749949702eb605b420969f00c42f4fcac347032af&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550516653627019376 (by empath75)
+
+35. **Shared by Cryptog (Charlie): imcharliegraham status 2100954087605113072**
+   - https://x.com/imcharliegraham/status/2100954087605113072?s=20 Linked projects: • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (x.com/imcharliegraham/status/2100954087605113072) • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (twitter.com/imcharliegraham/status/2100954087605113072) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550512902618878022
+   - [Post by @imcharliegraham](https://x.com/imcharliegraham/status/2100954087605113072?s=20)
+   - Source: https://x.com/imcharliegraham/status/2100954087605113072?s=20 (by Cryptog (Charlie))
+
+36. **A typed-decision model was wired into five places in a Dungeons & Dragons co-DM.**
+   - https://iambraun.com/jevreports/co-dm/ A typed-decision model was wired into five places in a Dungeons & Dragons co-DM. This is the measurement of whether it earns its place — against the code it replaces, and against a frontier model doing the same job. Linked projects: • Worth Asking — A benchmark of a typed-decision model against the code it replaces and against frontier models, on a D&D co-DM (iambraun.com/jevreports/co-dm) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550511943716966430
+   - [Worth Asking](https://iambraun.com/jevreports/co-dm/)
+   - Source: https://iambraun.com/jevreports/co-dm/ (by DGB@workflowtech.ai)
+
+37. **anyone else doing real-time zero-shot robotics (non-simulation)?**
+   - anyone else doing real-time zero-shot robotics (non-simulation)? https://x.com/zaidbul/status/2100949713138729135 Linked projects: • Post by @zaidbul — have not seen anyone actually using Jev for robotics outside of a simulation, so here is Jev running with no policy, zero-shot controlling the robotic arm. @typesafeai @CompleteSkeptic (x.com/zaidbul/status/2100949713138729135) • 100597.mp4 — video/mp4 · 22 MB (cdn.discordapp.com/attachments/1483217545040232493/1550509703933595748) • Post by @zaidbul — have not seen anyone actually using Jev for robotics outside of a simulation, so here is Jev running with no policy, zero-shot controlling the robotic arm. @typesafeai @CompleteSkeptic (twitter.com/zaidbul/status/2100949713138729135) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550509705913434223
+   - [Post by @zaidbul](https://x.com/zaidbul/status/2100949713138729135)
+   - [100597.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550509703933595748/100597.mp4?ex=6aae9830&is=6aad46b0&hm=8e08eb7314d0d8de42e5fc0023ba5da41a423bc124d9fc6a6927cdb96d744fb9&)
+   - Source: https://x.com/zaidbul/status/2100949713138729135 (by human)
+
+38. **very excited to see Jev used more in gaming**
+   - https://x.com/dparksdev/status/2100949987571974537?s=46&t=mUFddqq8RWeTtOazjuUS6g very excited to see Jev used more in gaming Linked projects: • Post by @dparksdev — My first experiment with Jev from @typesafeai. "Playable" video game NPCs. Tell one to explore, gather resources, or build a house. Override its directive and watch it change course. The NPC's next action choices and pro (x.com/dparksdev/status/2100949987571974537) • Post by @dparksdev — My first experiment with Jev from @typesafeai. "Playable" video game NPCs. Tell one to explore, gather resources, or build a house. Override its directive and watch it change course. The NPC's next action choices and pro (twitter.com/dparksdev/status/2100949987571974537) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550509355454169098
+   - [Post by @dparksdev](https://x.com/dparksdev/status/2100949987571974537?s=46&t=mUFddqq8RWeTtOazjuUS6g)
+   - Source: https://x.com/dparksdev/status/2100949987571974537?s=46&t=mUFddqq8RWeTtOazjuUS6g (by Cashed)
+
+39. **waitlist or use open router**
+   - waitlist or use open router https://openrouter.ai/typesafe/jev-1.13 Linked projects: • Jev 1.13 - API Pricing & Providers — Jev is a structured decision model from TypeSafe, and the first of its System One models. $0.042 per million input tokens, $0 per million output tokens. 32,000 token context window. (openrouter.ai/typesafe/jev-1.13) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550505893005623397
+   - [Jev 1.13 - API Pricing &amp; Providers](https://openrouter.ai/typesafe/jev-1.13)
+   - Source: https://openrouter.ai/typesafe/jev-1.13 (by splitfire?)
+
+40. **Jev playing Tic Tac Toe on Elixir with Jido and ReqLLM**
+   - Jev playing Tic Tac Toe on Elixir with Jido and ReqLLM https://x.com/mikehostetler/status/2100946109308748079 Linked projects: • Post by @mikehostetler — Jido Jev + ReqLLM playing Tic Tac Toe Each agent makes Jev calls to determine their next move, pretty fun! Now time to scale up ... (x.com/mikehostetler/status/2100946109308748079) • Post by @mikehostetler — Jido Jev + ReqLLM playing Tic Tac Toe Each agent makes Jev calls to determine their next move, pretty fun! Now time to scale up ... (twitter.com/mikehostetler/status/2100946109308748079) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550505016174059540
+   - [Post by @mikehostetler](https://x.com/mikehostetler/status/2100946109308748079)
+   - Source: https://x.com/mikehostetler/status/2100946109308748079 (by mikehostetler)
+
+41. **Its meant for such workflows so it should help on classification, prioritization and routing.**
+   - Its meant for such workflows so it should help on classification, prioritization and routing. Two things to look into language support (as I recall its english only but I could be wrong) and how you frame your questions (its very sensitive to this aspect that how you ask can sway the probabilities of answers).
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550498740865863791 (by PromptForcePrime)
+
+42. **alignment check 😬 actually really shocked at this lol**
+   - https://x.com/145k4/status/2100933101966758250?s=20 alignment check 😬 actually really shocked at this lol Linked projects: • Post by @145k4 — i was curious if @typesafeai 's jev would make different judgements if you push a problem through a Choice vs. a Noul, so i ran it through a short series of trolley problems the only time they disagreed on judgement? dec (x.com/145k4/status/2100933101966758250) • Post by @145k4 — i was curious if @typesafeai 's jev would make different judgements if you push a problem through a Choice vs. a Noul, so i ran it through a short series of trolley problems the only time they disagreed on judgement? dec (twitter.com/145k4/status/2100933101966758250) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550492717799178360
+   - [Post by @145k4](https://x.com/145k4/status/2100933101966758250?s=20)
+   - Source: https://x.com/145k4/status/2100933101966758250?s=20 (by alaska)
+
+43. **And [here the repo]( )**
+   - And [here the repo](https://gitlab.com/porky11/text-adventure) Linked projects: • Fabio Krapohl / text-adventure · GitLab — GitLab.com (gitlab.com/porky11/text-adventure) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550492055334293525
+   - [Fabio Krapohl / text-adventure · GitLab](https://gitlab.com/porky11/text-adventure)
+   - Source: https://gitlab.com/porky11/text-adventure (by p 🦊)
+
+44. **can anyone help me with my website or give any reviews/suggestions**
+   - can anyone help me with my website or give any reviews/suggestions https://learnivia-green.vercel.app/ Linked projects: • Learnivia — Free Peer-to-Peer Online Tutoring — Free 1-on-1 tutoring and interactive workshops led by high school and university peers. No subscriptions, zero fees. (learnivia-green.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550487041035477032
+   - [Learnivia — Free Peer-to-Peer Online Tutoring](https://learnivia-green.vercel.app/)
+   - Source: https://learnivia-green.vercel.app/ (by Shourya Sharan)
+
+45. **i made a website for your so you can ask jev about the next winning lottery numbers**
+   - https://lottowerk.purh.pw/ i made a website for your so you can ask jev about the next winning lottery numbers Linked projects: • LOTTOWERK — winning numbers, answered by Jev — Tell it how many numbers your lottery has. Jev, a model that answers typed questions instead of writing text, answers one question per ball. (lottowerk.purh.pw) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550476500267180042
+   - [LOTTOWERK — winning numbers, answered by Jev](https://lottowerk.purh.pw/)
+   - Source: https://lottowerk.purh.pw/ (by purhur)
+
+46. **guys, this needs your attention I just figured out knowledge cutoff date for Jev!!**
+   - guys, this needs your attention I just figured out knowledge cutoff date for Jev!! It is simple https://x.com/tawfeksraj/status/2100909752918180217?s=61&t=TFADXWS1ohIjhABKwP0oig Linked projects: • Post by @TawfekSraj — I figured out Jev knowledge cutoff date: It’s between 2024-07 2025-01 (x.com/tawfeksraj/status/2100909752918180217) • Post by @TawfekSraj — I figured out Jev knowledge cutoff date: It’s between 2024-07 2025-01 (twitter.com/tawfeksraj/status/2100909752918180217) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550469144346890331
+   - [Post by @TawfekSraj](https://x.com/tawfeksraj/status/2100909752918180217?s=61&t=TFADXWS1ohIjhABKwP0oig)
+   - Source: https://x.com/tawfeksraj/status/2100909752918180217?s=61&t=TFADXWS1ohIjhABKwP0oig (by Tawfek)
+
+47. **launching chrome extension for polymarket to tell you what Jev thinks about the bet**
+   - launching chrome extension for polymarket to tell you what Jev thinks about the bet Linked projects: • image.png — image/png · 730 KB (cdn.discordapp.com/attachments/1483217545040232493/1550457053565427743)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550457053565427743/image.png?ex=6aae6727&is=6aad15a7&hm=e52b12d0a561ca32412cc127a7fee5efc5443b31fd7669b95e138b704bfb1f97&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550457054035185734 (by sumsie)
+
+48. **guy check out**
+   - guy check out https://jevtypesafe.vercel.app/ https://x.com/MarisFilius/status/2100894797997523400?s=20 Linked projects: • Jev Playground — Give Jev a messy real-world input. It turns it into fast, typed judgments that application code can use. (jevtypesafe.vercel.app) • Post by @MarisFilius — Building something experimental with @typesafeai. Give Jev a messy request. It turns it into a judgment your software can actually use. https://jevtypesafe.vercel.app/ Less chatbot. More AI primitive thanks to @CompleteS (x.com/MarisFilius/status/2100894797997523400) • Post by @MarisFilius — Building something experimental with @typesafeai. Give Jev a messy request. It turns it into a judgment your software can actually use. https://jevtypesafe.vercel.app/ Less chatbot. More AI primitive thanks to @CompleteS (twitter.com/MarisFilius/status/2100894797997523400) Discussion: https://discord.com/channe
+   - [Jev Playground](https://jevtypesafe.vercel.app/)
+   - [Post by @MarisFilius](https://x.com/MarisFilius/status/2100894797997523400?s=20)
+   - Source: https://x.com/MarisFilius/status/2100894797997523400?s=20 (by Maris)
+
+49. **I wrote down my thoughts on Jev.**
+   - https://madppiper.substack.com/p/my-thoughts-on-jev-after-the-private I wrote down my thoughts on Jev. In short: it is a fantastic model and I am soooo glad that you guys from typesafeai are doing this. It is exactly what the market needs and such a joy to play aroun with. Linked projects: • My Thoughts on Jev, after the Private Beta — Meet Jev, a new “System One” model. It is an incredible cheap, fast llm, built for only one purpose, to judge. (madppiper.substack.com/p/my-thoughts-on-jev-after-the-private) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550434272450707466
+   - [My Thoughts on Jev, after the Private Beta](https://madppiper.substack.com/p/my-thoughts-on-jev-after-the-private)
+   - Source: https://madppiper.substack.com/p/my-thoughts-on-jev-after-the-private (by madppiper)
+
+50. **Loving Jev, so many applications.**
+   - Loving Jev, so many applications. This is a self driving car simulation that Jev does all the realtime decision (~300ms latency) https://x.com/kavehmz/status/2100616111771238881 Linked projects: • Post by @kavehmz — @typesafeai (and System One models in general) have a lot of uses, and fun to play with. New paradigm open to public now. This is a self-driving sim I spun up to test Jev today. Structured sensor state in, typed driving (x.com/kavehmz/status/2100616111771238881) • Post by @kavehmz — @typesafeai (and System One models in general) have a lot of uses, and fun to play with. New paradigm open to public now. This is a self-driving sim I spun up to test Jev today. Structured sensor state in, typed driving (twitter.com/kavehmz/status/2100616111771238881) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550408717873193021
+   - [Post by @kavehmz](https://x.com/kavehmz/status/2100616111771238881)
+   - Source: https://x.com/kavehmz/status/2100616111771238881 (by kaveh)
+
+51. **I was playing around with Jev and created a job roast to grill them nicely and it did!!**
+   - I was playing around with Jev and created a job roast to grill them nicely and it did!! Paste a JD, it grills it line by line. https://x.com/thilakbhat95/status/2100846150056309107?s=46 Linked projects: • Post by @thilakbhat95 — I built a job-roasting machine on Jev - paste a JD, it grills it line by line. It's insane how cheap and fast it is at scoring! @typesafeai "We're like a family here" → Boundaries are not a thing here. "Wear many hats" → (x.com/thilakbhat95/status/2100846150056309107) • Post by @thilakbhat95 — I built a job-roasting machine on Jev - paste a JD, it grills it line by line. It's insane how cheap and fast it is at scoring! @typesafeai "We're like a family here" → Boundaries are not a thing here. "Wear many hats" → (twitter.com/thilakbhat95/status/2100846150056309107) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550406791773552732
+   - [Post by @thilakbhat95](https://x.com/thilakbhat95/status/2100846150056309107?s=46)
+   - Source: https://x.com/thilakbhat95/status/2100846150056309107?s=46 (by Thilak Bhat)
+
+52. **Pointed Jev at 3 months of my own browser history.**
+   - Pointed Jev at 3 months of my own browser history. Turns out I keep googling the same things and forgetting I did. Love that for me. Raced it against Haiku and a dumb keyword script on 82,011 calls. Jev won, whole thing cost 62 cents! Linked projects: • image.png — image/png · 878 KB (cdn.discordapp.com/attachments/1483217545040232493/1550405305525866496)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550405305525866496/image.png?ex=6aaedfb5&is=6aad8e35&hm=e34a7e40947a743201d585c510cb7c677258517981a2587f9df69a728f6fa478&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550405305836249139 (by steaven)
+
+53. **It's over**
+   - It's over https://x.com/brainstormity/status/2100842356484325574?s=20 Linked projects: • Post by @brainstormity — Introducing the User Investigation feature for the JEV Moderator bot. Let JEV analyze a user's chat history and generate an AI-powered profile using @typesafeai. Admins Right-click any user → Apps → Generate AI Profile o (x.com/brainstormity/status/2100842356484325574) • Post by @brainstormity — Introducing the User Investigation feature for the JEV Moderator bot. Let JEV analyze a user's chat history and generate an AI-powered profile using @typesafeai. Admins Right-click any user → Apps → Generate AI Profile o (twitter.com/brainstormity/status/2100842356484325574) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550401225248219220
+   - [Post by @brainstormity](https://x.com/brainstormity/status/2100842356484325574?s=20)
+   - Source: https://x.com/brainstormity/status/2100842356484325574?s=20 (by brainstormity)
+
+54. **real time note classifier, LLM-written, engagement farming etc..**
+   - real time note classifier, LLM-written, engagement farming etc.. and ad blocker. Linked projects: • Moonshot-Recording-2026-09-18-15-14-23_Smashed.mp4 — video/mp4 · 15 MB (cdn.discordapp.com/attachments/1483217545040232493/1550393556298891304)
+   - [Moonshot-Recording-2026-09-18-15-14-23_Smashed.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550393556298891304/Moonshot-Recording-2026-09-18-15-14-23_Smashed.mp4?ex=6aaed4c4&is=6aad8344&hm=3d2a3b10f87ead343d195fc431856436a9a21c299e1f338553fffce70de0ac68&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550393557175504979 (by Holokat)
+
+55. **Found this handy compilation of experiments that was really useful for developing my understanding of Jev's capabilities:**
+   - Found this handy compilation of experiments that was really useful for developing my understanding of Jev's capabilities: https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site Linked projects: • What if judgment were parallel? — Eleven measured experiments with TypeSafe's typed probability API. (typesafe-parallel-judgment-lab.every-4573.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550386268670525493
+   - [What if judgment were parallel?](https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site)
+   - Source: https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site (by willdog)
+
+56. **- using TypeSafe to turn words into soundtracks**
+   - https://textured.fyi - using TypeSafe to turn words into soundtracks Linked projects: • Textured — Get it on GitHub (textured.fyi) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550384373902348288
+   - [Textured](https://textured.fyi)
+   - Source: https://textured.fyi (by fluxus)
+
+57. **i dint expect it to make an entire planet that i can orbit around**
+   - i dint expect it to make an entire planet that i can orbit around Linked projects: • image.png — image/png · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1550383888755327036)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550383888755327036/image.png?ex=6aaecbc3&is=6aad7a43&hm=423dd4cee653000917986ceeca911c7355c418cc07a84a15d4be5282edc369c1&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550383889107910696 (by complexxsnake)
+
+58. **but you can use openrouter - I just tried with browser and it worked well .**
+   - but you can use openrouter - I just tried with browser and it worked well . Linked projects: • Screenshot_2026-09-18_at_11.16.53_AM.png — image/png · 276 KB (cdn.discordapp.com/attachments/1483217545040232493/1550382621865938994)
+   - [Screenshot_2026-09-18_at_11.16.53_AM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550382621865938994/Screenshot_2026-09-18_at_11.16.53_AM.png?ex=6aaeca95&is=6aad7915&hm=427fbc87ce749a41ca134becec3ed8438b2e668e5008b8cdd57371bc11e5fb9e&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550382622184710216 (by arjun5959)
+
+59. **made a quick little reality checker using jev!**
+   - https://x.com/Anot/status/2100822237221724317?s=20 made a quick little reality checker using jev! Linked projects: • Post by @Anot — having so much fun with @typesafeai. here’s Jev doing a little reality check. https://real-or-fake.an0t.chatgpt.site/ (x.com/Anot/status/2100822237221724317) • Post by @Anot — having so much fun with @typesafeai. here’s Jev doing a little reality check. https://real-or-fake.an0t.chatgpt.site/ (twitter.com/Anot/status/2100822237221724317) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550381284121907311
+   - [Post by @Anot](https://x.com/Anot/status/2100822237221724317?s=20)
+   - Source: https://x.com/Anot/status/2100822237221724317?s=20 (by Anot)
+
+60. **@ Swamp club it's now 91% cheaper & 14.8% faster for our alert triage with TypeSafe AI & Swamp We used to spend a**
+   - @ Swamp club it's now 91% cheaper & 14.8% faster for our alert triage with TypeSafe AI & Swamp https://blog.watson-labs.co.uk/typesafe-ai-alert-fatigue/ We used to spend a fortune on signal triage, now it's superficial + super fast Linked projects: • 91% Cheaper, 14.8% Faster Alert Triage with TypeSafe AI & Swamp — TypeSafe AI screens. Swamp routes. Claude gets the work worth paying for. (blog.watson-labs.co.uk/typesafe-ai-alert-fatigue) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550374628684464249
+   - [91% Cheaper, 14.8% Faster Alert Triage with TypeSafe AI &amp; Swamp](https://blog.watson-labs.co.uk/typesafe-ai-alert-fatigue/)
+   - Source: https://blog.watson-labs.co.uk/typesafe-ai-alert-fatigue/ (by John)
+
+61. **not out of the box.**
+   - not out of the box. Codex provides the important missing piece: a browser/computer-use tool that can inspect the page and click/type into it. Ollama is just the model runtime, so a local or cloud Ollama model would also need a browser automation tool plus a small adapter to pass page elements into Jev and execute the chosen action. OpenCode may be able to do it if it has compatible browser tools, but it isn’t plug-and-play yet. Same idea for Antigravity: compatible browser access is the requirement, not the underlying model.
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550370061485613067 (by BlissF00l)
+
+62. **Exploring ambient intelligence in interfaces with jev**
+   - https://x.com/zahlekhan/status/2100681083176226921 Exploring ambient intelligence in interfaces with jev Linked projects: • Post by @zahlekhan — Introducing jev board, short for jevin keyboard. Fast, reliable models unlock much subtler experiences for building ambient intelligence into interfaces. A small exploration at the edges of GenUI. With done @typesafeai a (x.com/zahlekhan/status/2100681083176226921) • Post by @zahlekhan — Introducing jev board, short for jevin keyboard. Fast, reliable models unlock much subtler experiences for building ambient intelligence into interfaces. A small exploration at the edges of GenUI. With done @typesafeai a (twitter.com/zahlekhan/status/2100681083176226921) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550360224899145820
+   - [Post by @zahlekhan](https://x.com/zahlekhan/status/2100681083176226921)
+   - Source: https://x.com/zahlekhan/status/2100681083176226921 (by zahle(thesys))
+
+63. **It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1**
+   - It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1 Beat 2 Beat 3 Beat 4 Kick 1 0 1 0 1 2 2 0 0 1 1 0 0 1 1 0 Snare 0 0 1 0 0 0 0 1 2 0 0 0 0 0 1 0 Clap 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 Closed hat 1 1 1 1 0 1 1 1 2 1 1 1 0 0 1 1 Open hat 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 Tom 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ```
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550351443687374909 (by stbenjam)
+
+64. **I need to go to bed but this is so much fun.**
+   - I need to go to bed but this is so much fun. Jev can play the drums https://x.com/stbenjam/status/2100789310265979276?s=20 Linked projects: • Post by @stbenjam — Jev can play the drums (x.com/stbenjam/status/2100789310265979276) • Post by @stbenjam — Jev can play the drums (twitter.com/stbenjam/status/2100789310265979276) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550348324219916348
+   - [Post by @stbenjam](https://x.com/stbenjam/status/2100789310265979276?s=20)
+   - Source: https://x.com/stbenjam/status/2100789310265979276?s=20 (by stbenjam)
+
+65. **I've been working on a code "linter" for AI agents Think ESLint, but on steroids.**
+   - I've been working on a code "linter" for AI agents https://www.jevlint.com/ Think ESLint, but on steroids. You can finally check for naming inconsistencies, magic strings, bad architectural patterns, etc... Linked projects: • JevLint — Slop happens. Don’t ship it. — Coding conventions in plain English. Your agent codes. JevLint checks what syntax rules miss. (jevlint.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550347305465675787
+   - [JevLint — Slop happens. Don’t ship it.](https://www.jevlint.com/)
+   - Source: https://www.jevlint.com/ (by Thomas)
+
+66. **For Real Estate Industry , Fair House Act checker**
+   - For Real Estate Industry , Fair House Act checker https://fair-housing-guardrail.roberto-94c.workers.dev/ Linked projects: • FairCheck — a fair housing guardrail you can read — 29 typed judgments, 107 answered cases, 54 jurisdictions, 245 regulation paragraphs. Test a message and see exactly why it passed or failed. (fair-housing-guardrail.roberto-94c.workers.dev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550346612159684668
+   - [FairCheck — a fair housing guardrail you can read](https://fair-housing-guardrail.roberto-94c.workers.dev/)
+   - Source: https://fair-housing-guardrail.roberto-94c.workers.dev/ (by melaleuca5)
+
+67. **What do you guys think of this, adding intelligence to dumb components in React using JEV?**
+   - What do you guys think of this, adding intelligence to dumb components in React using JEV? Do you think I should release this, I am just worried, if some bad actors submit random stuff and increase my bills 💰 Linked projects: • Screen_Recording_2026-09-17_at_10.13.59_PM.mov — video/quicktime · 12 MB (cdn.discordapp.com/attachments/1483217545040232493/1550344762262028328)
+   - [Screen_Recording_2026-09-17_at_10.13.59_PM.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550344762262028328/Screen_Recording_2026-09-17_at_10.13.59_PM.mov?ex=6aaea753&is=6aad55d3&hm=033c8ffca95cd21d3ce1a23846b9f11939fbfd90b57d1963a7179dfdd2d3c568&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550344763314544750 (by Zama Khan Mohammed)
+
+68. **Jev magic 8 ball**
+   - Jev magic 8 ball https://x.com/stbenjam/status/2100783751101846005?s=20 Linked projects: • Post by @stbenjam — @jjacky Just to close the loop, an actual Jev magic 8 ball https://github.com/stbenjam/jev-eight-ball (x.com/stbenjam/status/2100783751101846005) • Post by @stbenjam — @jjacky Just to close the loop, an actual Jev magic 8 ball https://github.com/stbenjam/jev-eight-ball (twitter.com/stbenjam/status/2100783751101846005) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550342808748171334
+   - [Post by @stbenjam](https://x.com/stbenjam/status/2100783751101846005?s=20)
+   - Source: https://x.com/stbenjam/status/2100783751101846005?s=20 (by stbenjam)
+
+69. **love it when billionaires agree with me hahaha**
+   - https://x.com/tobi/status/2100775196240097602?s=20 love it when billionaires agree with me hahaha Linked projects: • Post by @tobi — @obie @typesafeai Totally agreed (x.com/tobi/status/2100775196240097602) • Post by @tobi — @obie @typesafeai Totally agreed (twitter.com/tobi/status/2100775196240097602) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550342018503544882
+   - [Post by @tobi](https://x.com/tobi/status/2100775196240097602?s=20)
+   - Source: https://x.com/tobi/status/2100775196240097602?s=20 (by ObieFernandez)
+
+70. **version of a wikirace but through codex computer use replacement - jev-browser an adapter to codex computer use using**
+   - https://typesafe.ai/blog/introducing-system-one-models-and-jev version of a wikirace but through codex computer use replacement - jev-browser an adapter to codex computer use using Jev as the Brain and astra as it's lil b*tch 🙂 pardon my french Linked projects: • Introducing System One Models & Jev - TypeSafe AI Blog — TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access. (typesafe.ai/blog/introducing-system-one-models-and-jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550341666223694017
+   - [Introducing System One Models &amp; Jev - TypeSafe AI Blog](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
+   - Source: https://typesafe.ai/blog/introducing-system-one-models-and-jev (by BlissF00l)
+
+71. **Thanks for access!**
+   - Thanks for access! Still learning my way around Jev, but managed to use it to clean up my gmail in a fraction of the time and cost! https://x.com/JonnadulaS54850/status/2100778097322905627?s=20 Linked projects: • Post by @JonnadulaS54850 — Just got access to @typesafeai jev and managed to clean up my gmail inbox in a fraction of the time and cost! https://gist.github.com/jonnadul/643aba6d730546e0519e0df38706127a (x.com/JonnadulaS54850/status/2100778097322905627) • Post by @JonnadulaS54850 — Just got access to @typesafeai jev and managed to clean up my gmail inbox in a fraction of the time and cost! https://gist.github.com/jonnadul/643aba6d730546e0519e0df38706127a (twitter.com/JonnadulaS54850/status/2100778097322905627) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550337048899231846
+   - [Post by @JonnadulaS54850](https://x.com/JonnadulaS54850/status/2100778097322905627?s=20)
+   - Source: https://x.com/JonnadulaS54850/status/2100778097322905627?s=20 (by jonnadul)
+
+72. **I got Jev to care for a Tamagotchi 🤣 This model is awesome**
+   - I got Jev to care for a Tamagotchi 🤣 This model is awesome https://x.com/stbenjam/status/2100773290767786468?s=20 Linked projects: • Post by @stbenjam — I got @typesafeai's Jev to care for a Tamagotchi 😂 (x.com/stbenjam/status/2100773290767786468) • Post by @stbenjam — I got @typesafeai's Jev to care for a Tamagotchi 😂 (twitter.com/stbenjam/status/2100773290767786468) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550336302107463772
+   - [Post by @stbenjam](https://x.com/stbenjam/status/2100773290767786468?s=20)
+   - Source: https://x.com/stbenjam/status/2100773290767786468?s=20 (by stbenjam)
+
+73. **Here's another fun idea I'm tinkering with now, built a hybrid system for running a [spacetraders.io]( ) setup.**
+   - Here's another fun idea I'm tinkering with now, built a hybrid system for running a [spacetraders.io](https://spacetraders.io/getting-started) setup. LLM system for long horizon planning, Jev for short term decision making. Let's see what it does over time :Hehe: Linked projects: • image.png — image/png · 289 KB (cdn.discordapp.com/attachments/1483217545040232493/1550332196433297468) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550332198278799440
+   - [https://spacetraders.io/getting-started](https://spacetraders.io/getting-started)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550332196433297468/image.png?ex=6aae9b9f&is=6aad4a1f&hm=3f6b6636862b982fe3102a3f0b4eb631dcda9c6031b563b0b4a3c0d7af60a7af&)
+   - Source: https://spacetraders.io/getting-started (by gradius)
+
+74. **I built something similar but its just an election mapper.**
+   - I built something similar but its just an election mapper. Mapping state and federal elections is easy enough due to verified and easy to access sources. But determining confidence levels for local elections like municipal and county wide would be nice so I might try TypeSafe with my mapper too. I completely avoided adding those initially because of that
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550331551605203046 (by PlatFailure)
+
+75. **GUYS we might be onto something here**
+   - https://x.com/brainstormity/status/2100772250181947507?s=20 GUYS we might be onto something here Linked projects: • Post by @brainstormity — Building a JEV-based Twitter/X sentiment analysis system that fetches recent tweets for an asset (e.g. BTC) and makes a decision to BUY, SELL, or HOLD. In my testing, it fetched about 577 tweets and told me to BUY Bitcoi (x.com/brainstormity/status/2100772250181947507) • Post by @brainstormity — Building a JEV-based Twitter/X sentiment analysis system that fetches recent tweets for an asset (e.g. BTC) and makes a decision to BUY, SELL, or HOLD. In my testing, it fetched about 577 tweets and told me to BUY Bitcoi (twitter.com/brainstormity/status/2100772250181947507) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550331296805290115
+   - [Post by @brainstormity](https://x.com/brainstormity/status/2100772250181947507?s=20)
+   - Source: https://x.com/brainstormity/status/2100772250181947507?s=20 (by brainstormity)
+
+76. **Agent friendly.**
+   - Agent friendly. Transcribe from a URL or a file. Professionals Students Creators Find who said what and exactly when they said it. Transcribe any video, meeting, lecture, or podcast. Search what was said, ask questions with cited answers, and jump straight to the exact moment. https://transcribe.so/ Linked projects: • AI Transcription for Meetings and Lectures: Who Said What — Transcribe any video, meeting, lecture, or podcast. Find who said what and exactly when they said it. API, MCP and CLI for agents like Claude Code, Codex and Cursor. Get cited answers and jump to the original moment. (transcribe.so) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550324559763476590
+   - [AI Transcription for Meetings and Lectures: Who Said What](https://transcribe.so/)
+   - Source: https://transcribe.so/ (by Seunghun)
+
+77. **Just some stats from trying jev on the boring financial services stuff.**
+   - Just some stats from trying jev on the boring financial services stuff. https://x.com/Anot/status/2100761008352493918?s=20 Linked projects: • Post by @Anot — Tried Jev on some FS workflows (1 of n) It was quick at spotting reg changes and checking which processes they affected. 20 checks on one update took 0.8s and cost $0.001 I can imagine this being useful for persistent re (x.com/Anot/status/2100761008352493918) • Post by @Anot — Tried Jev on some FS workflows (1 of n) It was quick at spotting reg changes and checking which processes they affected. 20 checks on one update took 0.8s and cost $0.001 I can imagine this being useful for persistent re (twitter.com/Anot/status/2100761008352493918) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550321057339150367
+   - [Post by @Anot](https://x.com/Anot/status/2100761008352493918?s=20)
+   - Source: https://x.com/Anot/status/2100761008352493918?s=20 (by Anot)
+
+78. **Hi, i also wanted to play a bit and see how Jev is solving 2048**
+   - Hi, i also wanted to play a bit and see how Jev is solving 2048 https://x.com/moddi3io/status/2100756928326459880 Linked projects: • Post by @moddi3io — Had so much fun playing around with Jev from @typesafeai. I know it's not trained for things like this, because solving tasks like that involving strategy, but it's a great way to get familiar with the model and its new (x.com/moddi3io/status/2100756928326459880) • Post by @moddi3io — Had so much fun playing around with Jev from @typesafeai. I know it's not trained for things like this, because solving tasks like that involving strategy, but it's a great way to get familiar with the model and its new (twitter.com/moddi3io/status/2100756928326459880) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550317766937022474
+   - [Post by @moddi3io](https://x.com/moddi3io/status/2100756928326459880)
+   - Source: https://x.com/moddi3io/status/2100756928326459880 (by moddi3)
+
+79. **I asked it what is its favorite color.**
+   - https://klipy.com/gifs/vigilante-peacemaker-1 I asked it what is its favorite color. Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550315040949670050
+   - [vigilante-peacemaker-1](https://klipy.com/gifs/vigilante-peacemaker-1)
+   - Source: https://klipy.com/gifs/vigilante-peacemaker-1 (by Tripmine_enjoyer)
+
+80. **I really don't know much about trading, trying my best to look myself on forum and learn from live traders, trying to learn the termes/words they use and looking up what they mean etc..**
+   - I really don't know much about trading, trying my best to look myself on forum and learn from live traders, trying to learn the termes/words they use and looking up what they mean etc.. just asked ASTRA to prompt some strategy with JEV in the middle doing all the important decision compared to historical trading data
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550303089767219224 (by ⧹⎝ΞＬＭΛＮＩ３３５⎠⧸)
+
+81. **Using it in production to retrieve product photo urls out of a product page :please:**
+   - https://lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-khari Using it in production to retrieve product photo urls out of a product page :please: Linked projects: • Batua Pocket Lipstick - Chai Khari (Nude Brown) Rich Satin Finish With — Looking for a hot plus-one for your next party? Look no further as 'Batua' is here – Your Perfect Plus-One; a shimmer coated lipstick with a rich, satin finish, that comes in a charismatic casing! Hook it on your bag, pa (lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-kha) • image.png — image/png · 789 KB (cdn.discordapp.com/attachments/1483217545040232493/1550296877675581450) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550296878023704617
+   - [Batua Pocket Lipstick - Chai Khari (Nude Brown) Rich Satin Finish With](https://lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-khari)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550296877675581450/image.png?ex=6aae7aba&is=6aad293a&hm=6a85934ffc385f66aa53420f416c36a0ab8ca0a5ff1f885bb110d7debd3d83e6&)
+   - Source: https://lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-khari (by Tanush)
+
+82. **I love it. Really like Orgo man. Opened my mind to virtual computers and their potential. You guys**
+   - I love it. Really like Orgo man. Opened my mind to virtual computers and their potential. You guys should check out Orgo. <@1438199427545432189> is the founder of it and it’s pretty cool. https://www.orgo.ai/ Linked projects: • Orgo - Computers for AI agents — High-performance desktops for AI agents. Launch persistent computers in seconds and manage your fleet through one dashboard and API. (orgo.ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550277506559643709
+   - [Orgo - Computers for AI agents](https://www.orgo.ai/)
+   - Source: https://www.orgo.ai/ (by Mordecai)
+
+83. **I built a semantic linter with Jev, it uses a tree algorithm to iterate over a codebase and apply custom code, security, and behavioral**
+   - I built a semantic linter with Jev, it uses a tree algorithm to iterate over a codebase and apply custom code, security, and behavioral rules https://perchscan.com/ Linked projects: • perch — Semantic code linting with Jev — Semantic code linting with Jev. perch parses every method with tree-sitter, then asks a model the questions a parser cannot answer. (perchscan.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550271040549290004
+   - [perch — Semantic code linting with Jev](https://perchscan.com/)
+   - Source: https://perchscan.com/ (by joshyfb)
+
+84. **Jev playing minecraft**
+   - Jev playing minecraft https://x.com/nickvasiles/status/2100670497818313175 Linked projects: • Post by @nickvasiles — Jev is a new model from the co-inventor of ChatGPT that can use computer tools in realtime right now it's playing Minecraft on its own computer in the cloud on Orgo this is what it looks like with just one Jev, but imagi (x.com/nickvasiles/status/2100670497818313175) • Post by @nickvasiles — Jev is a new model from the co-inventor of ChatGPT that can use computer tools in realtime right now it's playing Minecraft on its own computer in the cloud on Orgo this is what it looks like with just one Jev, but imagi (twitter.com/nickvasiles/status/2100670497818313175) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550265710565924945
+   - [Post by @nickvasiles](https://x.com/nickvasiles/status/2100670497818313175)
+   - Source: https://x.com/nickvasiles/status/2100670497818313175 (by Nick Vasilescu)
+
+85. **I can't send the full JSON here because it gets blocked in this chat.**
+   - I can't send the full JSON here because it gets blocked in this chat. But browser nav looks like this for the model. So browser tabs are a first-class choice, second class are DOM selectors, and so on. Linked projects: • Screenshot_from_2026-09-17_23-50-21.png — image/png · 70 KB (cdn.discordapp.com/attachments/1483217545040232493/1550262836754649310)
+   - [Screenshot_from_2026-09-17_23-50-21.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550262836754649310/Screenshot_from_2026-09-17_23-50-21.png?ex=6aae5b06&is=6aad0986&hm=d5ac2ef9f4e82125fa3e2aec40912120d8e879680d4b634b567cd00b988ee684&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550262837115355197 (by Alessandro Frau)
+
+86. **I have built a real-time clippy.**
+   - I have built a real-time clippy. 😅 https://x.com/sotak/status/2100701152824185319 Linked projects: • Post by @sotak — I built real-time Clippy with Jev. It quietly watches how you use the product and only wakes up when it thinks you’re struggling. Hesitating? Confused? Stuck? Clippy knows. Even its reactions are controlled by Jev. 👀 (x.com/sotak/status/2100701152824185319) • jev-bot-inline-manual.mp4 — video/mp4 · 10 MB (cdn.discordapp.com/attachments/1483217545040232493/1550262681326460948) • Post by @sotak — I built real-time Clippy with Jev. It quietly watches how you use the product and only wakes up when it thinks you’re struggling. Hesitating? Confused? Stuck? Clippy knows. Even its reactions are controlled by Jev. 👀 (twitter.com/sotak/status/2100701152824185319) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550262682156793977
+   - [Post by @sotak](https://x.com/sotak/status/2100701152824185319)
+   - [jev-bot-inline-manual.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550262681326460948/jev-bot-inline-manual.mp4?ex=6aae5ae1&is=6aad0961&hm=cdd5a524fecc5fccd328c7f0e2dab593c2ddf5af5427f05f3c2c0a42b4ab0c44&)
+   - Source: https://x.com/sotak/status/2100701152824185319 (by Marek)
+
+87. **In our harness we use Playwright for the browser, and the DOM is natively translated in JSON, so Jev is able to choose.**
+   - In our harness we use Playwright for the browser, and the DOM is natively translated in JSON, so Jev is able to choose. But CDP works best (see Browser Use's jev-ultrafast repo for ref). Linked projects: • export-1789663993497.mp4 — video/mp4 · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1550262460660064346)
+   - [export-1789663993497.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550262460660064346/export-1789663993497.mp4?ex=6aae5aad&is=6aad092d&hm=12304bdb154e77018d1843d107e0e3cfd9b34d55e3b20ffb86e6b671c9fccbf4&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550262461100458055 (by Alessandro Frau)
+
+88. **30 cents a month to moderator a discord with 1000+ messages a day.**
+   - 30 cents a month to moderator a discord with 1000+ messages a day. https://x.com/brainstormity/status/2100702826196307977 Linked projects: • Post by @brainstormity — In my tests, your JEV-powered AI moderator for Discord will cost: - $0.30/month if your server gets 1,000 messages per day. Hiring multiple chat moderators is a thing of the past. Hire a JEV-powered AI moderator for just (x.com/brainstormity/status/2100702826196307977) • Post by @brainstormity — In my tests, your JEV-powered AI moderator for Discord will cost: - $0.30/month if your server gets 1,000 messages per day. Hiring multiple chat moderators is a thing of the past. Hire a JEV-powered AI moderator for just (twitter.com/brainstormity/status/2100702826196307977) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550261869866909936
+   - [Post by @brainstormity](https://x.com/brainstormity/status/2100702826196307977)
+   - Source: https://x.com/brainstormity/status/2100702826196307977 (by brainstormity)
+
+89. **I didn't expect Jev to tell me that one of the title options is clickbait 😄**
+   - I didn't expect Jev to tell me that one of the title options is clickbait 😄 Linked projects: • jevjev.mp4 — video/mp4 · 7 MB (cdn.discordapp.com/attachments/1483217545040232493/1550261144084807730)
+   - [jevjev.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550261144084807730/jevjev.mp4?ex=6aae5973&is=6aad07f3&hm=16837200573f94470addff4900b9c9a779634e603ccf1f214aa1dc1f068828be&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550261144521023500 (by Alessandro Frau)
+
+90. **So Jev is 100% confident I should full port my entire generational wealth into short dated NVIDIA calls....**
+   - So Jev is 100% confident I should full port my entire generational wealth into short dated NVIDIA calls.... Linked projects: • image.png — image/png · 328 KB (cdn.discordapp.com/attachments/1483217545040232493/1550260027816812604)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550260027816812604/image.png?ex=6aae5869&is=6aad06e9&hm=10e23dfc84b1e45139ebc9707279d00e0a57a326da9a06500f13d53d6775388a&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550260029045604412 (by DiskID)
+
+91. **Hi guys, I loved typesafe ai and thought this would be very efficient for dumb components in react.**
+   - Hi guys, I loved typesafe ai and thought this would be very efficient for dumb components in react. I came up with typesafecn, but I'm wondering if I might be hit by bad actors and my bill will go up for something I want to do for free. Linked projects: • Screen_Recording_2026-09-17_at_4.06.31_PM.mp4 — video/mp4 · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1550252994300477471)
+   - [Screen_Recording_2026-09-17_at_4.06.31_PM.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550252994300477471/Screen_Recording_2026-09-17_at_4.06.31_PM.mp4?ex=6aae51dc&is=6aad005c&hm=5dab56ba173580471526c18ed6785d872c294d93ceb9dc9ed94f52490e2895ef&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550252994845741096 (by Zama Khan Mohammed)
+
+92. **I asked Jev if it thinks the “21 cars” guy is suspicious, or just unusually concerned about the logistics?**
+   - https://x.com/sybuilds/status/2100679413243474010?s=46 I asked Jev if it thinks the “21 cars” guy is suspicious, or just unusually concerned about the logistics? Linked projects: • Post by @Sybuilds — Does Jev think the “21 cars” guy is suspicious, or just unusually concerned about the logistics? (x.com/sybuilds/status/2100679413243474010) • Post by @Sybuilds — Does Jev think the “21 cars” guy is suspicious, or just unusually concerned about the logistics? (twitter.com/sybuilds/status/2100679413243474010) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550239787221385397
+   - [Post by @Sybuilds](https://x.com/sybuilds/status/2100679413243474010?s=46)
+   - Source: https://x.com/sybuilds/status/2100679413243474010?s=46 (by Thinker)
+
+93. **trying to break it, won't work.**
+   - <@705561973571452938> trying to break it, won't work. Needs more bird. Linked projects: • image.png — image/png · 16 KB (cdn.discordapp.com/attachments/1483217545040232493/1550234585223274537)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550234585223274537/image.png?ex=6aae40b7&is=6aacef37&hm=b7a3337d63d642535cfa0c3178be9439f8c6c7b12163fdf167acba4786867ec0&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550234585697099946 (by blake)
+
+94. **hello again. Here we have an example of a popup window built into iXUI shell aka Desktop Environment.**
+   - <@324647822072741889> hello again. Here we have an example of a popup window built into iXUI shell aka Desktop Environment. Colors adjustment to-do. Linked projects: • e321689cb1e93fda.png — image/png · 85 KB (cdn.discordapp.com/attachments/1483217545040232493/1550222726990663801)
+   - [e321689cb1e93fda.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550222726990663801/e321689cb1e93fda.png?ex=6aaede6b&is=6aad8ceb&hm=872e11d80c59e8f8af89fe41114d438224a5b789a644ae22ef854144ead5ed8b&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550222727502110781 (by Kot Vzatochnik || Stalker UM)
+
+95. **looking into using Jev in legaltech**
+   - looking into using Jev in legaltech https://x.com/jan__kubica/status/2100636173249007696?s=20 Linked projects: • Post by @jan__kubica — Testing @typesafeai new model, Jev, for legal use cases in @stll_app. As you may have heard, Jev comes from the opposite research direction: it does not generate text but is optimised for decisions instead. A few use cas (x.com/jan__kubica/status/2100636173249007696) • Post by @jan__kubica — Testing @typesafeai new model, Jev, for legal use cases in @stll_app. As you may have heard, Jev comes from the opposite research direction: it does not generate text but is optimised for decisions instead. A few use cas (twitter.com/jan__kubica/status/2100636173249007696) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550215944943444088
+   - [Post by @jan__kubica](https://x.com/jan__kubica/status/2100636173249007696?s=20)
+   - Source: https://x.com/jan__kubica/status/2100636173249007696?s=20 (by jk)
+
+96. **here are a bunch of roblox jev-ai driven bots attacking eachother**
+   - here are a bunch of roblox jev-ai driven bots attacking eachother Linked projects: • RobloxStudioBeta_5omAiD1CVk.mp4 — video/mp4 · 916 KB (cdn.discordapp.com/attachments/1483217545040232493/1550213945241894912)
+   - [RobloxStudioBeta_5omAiD1CVk.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550213945241894912/RobloxStudioBeta_5omAiD1CVk.mp4?ex=6aaed63e&is=6aad84be&hm=36783d36c2f2e931646202118ea4c8f339133f23598e4858867aed8cb6f8ab74&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550213945661464706 (by euukee)
+
+97. **jev is really good with interpreting symbolic meaning from emojis lol**
+   - jev is really good with interpreting symbolic meaning from emojis lol Linked projects: • image.png — image/png · 227 KB (cdn.discordapp.com/attachments/1483217545040232493/1550204639863898182)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550204639863898182/image.png?ex=6aaecd93&is=6aad7c13&hm=c1d28591ec74c925e1381ef2bcf053fcc65db3d9f353b234cf17208db92533ab&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550204640287658075 (by tlde)
+
+98. **just grabing your link for example:**
+   - <@136221846059089921> just grabing your link for example: https://fixupx.com/shannon_fano/status/2100639390468833379?s=46 Linked projects: • Post by @shannon_fano — got access and been using Jev as the director for my VJ software given he answers in under 500ms with judgments and confidence, he picks the scene, palette, effects and the mix, once a bar in real time cost? around 1$ pe (fixupx.com/shannon_fano/status/2100639390468833379) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550203365730812055
+   - [Post by @shannon_fano](https://fixupx.com/shannon_fano/status/2100639390468833379?s=46)
+   - Source: https://fixupx.com/shannon_fano/status/2100639390468833379?s=46 (by Necsbr)
+
+99. **sharing this crazy idea I had last night, tho the visuals could be better, jev rocks**
+   - sharing this crazy idea I had last night, tho the visuals could be better, jev rocks https://x.com/shannon_fano/status/2100639390468833379?s=46 Linked projects: • Post by @shannon_fano — got access and been using Jev as the director for my VJ software given he answers in under 500ms with judgments and confidence, he picks the scene, palette, effects and the mix, once a bar in real time cost? around 1$ pe (x.com/shannon_fano/status/2100639390468833379) • Post by @shannon_fano — got access and been using Jev as the director for my VJ software given he answers in under 500ms with judgments and confidence, he picks the scene, palette, effects and the mix, once a bar in real time cost? around 1$ pe (twitter.com/shannon_fano/status/2100639390468833379) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550202616246435882
+   - [Post by @shannon_fano](https://x.com/shannon_fano/status/2100639390468833379?s=46)
+   - Source: https://x.com/shannon_fano/status/2100639390468833379?s=46 (by shanon fano)
+
+100. **In-case you are wondering when to use Jev instead of Claude Code.**
+   - In-case you are wondering when to use Jev instead of Claude Code. Here's a quick simulation to try. Super Fast. Super Affordable. (sim data) https://x.com/ProTrailblazer/status/2100642491804336413?s=20 Linked projects: • Post by @ProTrailblazer — When do you use @typesafeai instead of Claude Code? I wasn't sure, so I spun up a dynamic simulation + walkthrough. https://protrailblazer.com/posts/typesafe-instead-of-claude-code/ (x.com/ProTrailblazer/status/2100642491804336413) • Post by @ProTrailblazer — When do you use @typesafeai instead of Claude Code? I wasn't sure, so I spun up a dynamic simulation + walkthrough. https://protrailblazer.com/posts/typesafe-instead-of-claude-code/ (twitter.com/ProTrailblazer/status/2100642491804336413) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550201318860259468
+   - [Post by @ProTrailblazer](https://x.com/ProTrailblazer/status/2100642491804336413?s=20)
+   - Source: https://x.com/ProTrailblazer/status/2100642491804336413?s=20 (by 3200.Pro)
+
+101. **JEV PLAYS POKEMON IS BACK**
+   - JEV PLAYS POKEMON IS BACK https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share Linked projects: • Twitch — Twitch is the world's leading video platform and community for gamers. (twitch.tv/holographicdan) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550196796142264390
+   - [Twitch](https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share)
+   - Source: https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share (by CYPRESS)
+
+102. **Computer use with Jev and local vision model!**
+   - Computer use with Jev and local vision model! Its so goddamn fast https://x.com/milindlabs/status/2100631847155994852?s=20 Linked projects: • Post by @milindlabs — Okay so Jev can actually do computer use really well Without any screenshots, or LLMs and no Pixels leave my mac I dont even read the Dom elements A local CoreML model segments every button and UI element on screen. On-d (x.com/milindlabs/status/2100631847155994852) • Post by @milindlabs — Okay so Jev can actually do computer use really well Without any screenshots, or LLMs and no Pixels leave my mac I dont even read the Dom elements A local CoreML model segments every button and UI element on screen. On-d (twitter.com/milindlabs/status/2100631847155994852) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550191845672493208
+   - [Post by @milindlabs](https://x.com/milindlabs/status/2100631847155994852?s=20)
+   - Source: https://x.com/milindlabs/status/2100631847155994852?s=20 (by milind)
+
+103. **I made a microphone that mutes if you start bullshitting**
+   - https://x.com/sybuilds/status/2100417692096459074?s=46 I made a microphone that mutes if you start bullshitting Linked projects: • Post by @Sybuilds — Big AI news... Jev enables this microphone that mutes you when you talk BS @typesafeai (x.com/sybuilds/status/2100417692096459074) • Post by @Sybuilds — Big AI news... Jev enables this microphone that mutes you when you talk BS @typesafeai (twitter.com/sybuilds/status/2100417692096459074) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550189018715656403
+   - [Post by @Sybuilds](https://x.com/sybuilds/status/2100417692096459074?s=46)
+   - Source: https://x.com/sybuilds/status/2100417692096459074?s=46 (by Thinker)
+
+104. **I tried some stuff with Jev and wrote about it.**
+   - I tried some stuff with Jev and wrote about it. https://isaacflath.com/writing/six-things-i-tried-with-jev Linked projects: • Six things I tried with Jev | Isaac Flath — Checking my scripts, sorting news, finding answers in PDFs, and reviewing agent mistakes: six things I tried with TypeSafe's Jev. (isaacflath.com/writing/six-things-i-tried-with-jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550187588172914733
+   - [Six things I tried with Jev | Isaac Flath](https://isaacflath.com/writing/six-things-i-tried-with-jev)
+   - Source: https://isaacflath.com/writing/six-things-i-tried-with-jev (by Isaac.Flath)
+
+105. **I ran Typesafe against some of our existing LLM-driven data/processes comparing it with results from models we're using now and it basically won in every category.**
+   - I ran Typesafe against some of our existing LLM-driven data/processes comparing it with results from models we're using now and it basically won in every category. Really impressive. The data in these screens won't mean a whole lot without context, but it's pretty easy to see that Typesafe was faster, cheaper, and more accurate across the board. Linked projects: • Screenshot_2026-09-17_at_12.09.53_PM.png — image/png · 118 KB (cdn.discordapp.com/attachments/1483217545040232493/1550187346421612604) • Screenshot_2026-09-17_at_12.35.39_PM.png — image/png · 99 KB (cdn.discordapp.com/attachments/1483217545040232493/1550187346715217941) • Screenshot_2026-09-17_at_12.35.45_PM.png — image/png · 85 KB (cdn.discordapp.com/attachments/1483217545040232493/1550187346983395449)
+   - [Screenshot_2026-09-17_at_12.09.53_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550187346421612604/Screenshot_2026-09-17_at_12.09.53_PM.png?ex=6aaebd78&is=6aad6bf8&hm=2dc79aa908a431218a3b55658832cc2d85f55cfbf114603729f05cb3c85ed14a&)
+   - [Screenshot_2026-09-17_at_12.35.39_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550187346715217941/Screenshot_2026-09-17_at_12.35.39_PM.png?ex=6aaebd78&is=6aad6bf8&hm=4a1c7658e9fda2296b2352cfe10ed0187fb18463f75301cfcde4f4e7694bd911&)
+   - [Screenshot_2026-09-17_at_12.35.45_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550187346983395449/Screenshot_2026-09-17_at_12.35.45_PM.png?ex=6aaebd78&is=6aad6bf8&hm=69617f237ed1694b99a2dc7372bbc585149d02fa52d43c270e5c3a6de52b6806&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550187347184853053 (by csimpkins)
+
+106. **Video created with our new “Motion Labs”, try it here for your own short/launch videos:**
+   - Video created with our new “Motion Labs”, try it here for your own short/launch videos: https://motion.sereneinteractive.com Linked projects: • Motion Labs — Serene Interactive — Turn a little idea into a beautifully directed short film. Motion Labs by Serene Interactive. (motion.sereneinteractive.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550178759414644789
+   - [Motion Labs — Serene Interactive](https://motion.sereneinteractive.com)
+   - Source: https://motion.sereneinteractive.com (by Gianni)
+
+107. **i made a pi extension that lets you select how much detail you want in the agent outputs.**
+   - i made a pi extension that lets you select how much detail you want in the agent outputs. tons of very awesome stuff you can do with the pi renderer! https://x.com/tedkalaw/status/2100453504997531751 Linked projects: • Post by @tedkalaw — using jev and the sick new markdown renderer in @pidotdev , i made a pi-extension that lets you toggle how much detail you want in the agent output. this was motivated by my inability to understand what opus 5 was gettin (x.com/tedkalaw/status/2100453504997531751) • Post by @tedkalaw — using jev and the sick new markdown renderer in @pidotdev , i made a pi-extension that lets you toggle how much detail you want in the agent output. this was motivated by my inability to understand what opus 5 was gettin (twitter.com/tedkalaw/status/2100453504997531751) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550174923379703938
+   - [Post by @tedkalaw](https://x.com/tedkalaw/status/2100453504997531751)
+   - Source: https://x.com/tedkalaw/status/2100453504997531751 (by tedkalaw)
+
+108. **Nice, I also tried a very inefficient redaction scheme with Jev Basically split the sentence into words and ask one**
+   - Nice, I also tried a very inefficient redaction scheme with Jev Basically split the sentence into words and ask one question for each: "should the word "X" at index Y be redacted?" Yes/No https://x.com/danmana/status/2100550435094278475 Linked projects: • Post by @danmana — Bonus use-case for Jev - redacting PII information (inefficiently 🙈) (x.com/danmana/status/2100550435094278475) • Post by @danmana — Bonus use-case for Jev - redacting PII information (inefficiently 🙈) (twitter.com/danmana/status/2100550435094278475) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550171918584385688
+   - [Post by @danmana](https://x.com/danmana/status/2100550435094278475)
+   - Source: https://x.com/danmana/status/2100550435094278475 (by danmana)
+
+109. **You could also use a token classifier to redact PII for even cheaper and actually private.**
+   - You could also use a token classifier to redact PII for even cheaper and actually private. Example open-weights model: https://huggingface.co/openai/privacy-filter Linked projects: • openai/privacy-filter · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/openai/privacy-filter) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550171827555541022
+   - [openai/privacy-filter · Hugging Face](https://huggingface.co/openai/privacy-filter)
+   - Source: https://huggingface.co/openai/privacy-filter (by gefrom)
+
+110. **I made jev and opus 5 go head to head on competitive pokemon, inspired by some pokemon runs here.**
+   - I made jev and opus 5 go head to head on competitive pokemon, inspired by some pokemon runs here. ~820x cheaper, 10x faster and it won lmfao done through a random battle on pkmn showdown https://x.com/sid19arya0/status/2100458351440048258?s=20 Linked projects: • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (x.com/sid19arya0/status/2100458351440048258) • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (twitter.com/sid19arya0/status/2100458351440048258) Discussion: https://discord.com/channels/1483217544
+   - [Post by @sid19arya0](https://x.com/sid19arya0/status/2100458351440048258?s=20)
+   - Source: https://x.com/sid19arya0/status/2100458351440048258?s=20 (by Sid)
+
+111. **I have an agent in production using Luna.**
+   - I have an agent in production using Luna. My first run was just switching Luna to jev and comparing each against our golden dataset. In my second run I made changes to the harness and prompt to accommodate for the fact that jev does better when you give it more precise instructions and ran again against the Luna that is in production and comparing each with the golden dataset
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550161521772994633 (by Martucci)
+
+112. **Good idea. Maybe instead of having skills to explain the coding style in advance in detail, I just**
+   - Good idea. Maybe instead of having skills to explain the coding style in advance in detail, I just run my codebase through Jev when I commit, and then it will automatically instert an error message that it doesn't fit the coding style yet. Same for commit messages. Probably useful for more such things.
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550160449666949205 (by p 🦊)
+
+113. **I think this model could be amazing for moderation porpouses**
+   - I think this model could be amazing for moderation porpouses https://x.com/oxfrancesco_/status/2100595042385584622 Linked projects: • Post by @oxfrancesco_ — It's moderation solved? Probably yes! The scammy like messages get a 🔥 Want to join the group and try it yourself? DM Me! (x.com/oxfrancesco_/status/2100595042385584622) • Post by @oxfrancesco_ — It's moderation solved? Probably yes! The scammy like messages get a 🔥 Want to join the group and try it yourself? DM Me! (twitter.com/oxfrancesco_/status/2100595042385584622) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550158096851275936
+   - [Post by @oxfrancesco_](https://x.com/oxfrancesco_/status/2100595042385584622)
+   - Source: https://x.com/oxfrancesco_/status/2100595042385584622 (by Francesco Oddo (OxFrancesco))
+
+114. **I created a little open source tool for developers: Jevlint 1) Basically, define "semantic" rules for your codebase 2)**
+   - I created a little open source tool for developers: Jevlint https://www.jevlint.com/ 1) Basically, define "semantic" rules for your codebase 2) Check them deterministically with jevlint 3) Add it to your agent loop 4) Skip the "Oh you are TOTALLY correct, I shouldn't have named things like this or put them in this folder" Linked projects: • JevLint — Slop happens. Don’t ship it. — Coding conventions in plain English. Your agent codes. JevLint checks what syntax rules miss. (jevlint.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550157820794769408
+   - [JevLint — Slop happens. Don’t ship it.](https://www.jevlint.com/)
+   - Source: https://www.jevlint.com/ (by Thomas)
+
+115. **can you check it out i used deepseek 4.1 flash max**
+   - can you check it out i used deepseek 4.1 flash max https://01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site/ Linked projects: • Neon District: Street Run — Check out what I built in Arena (01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550157755799834784
+   - [Neon District: Street Run](https://01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site/)
+   - Source: https://01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site/ (by north delta)
+
+116. **I hope to get access to jev soon..**
+   - I hope to get access to jev soon.. so far I created: https://www.quizletgravity.com/ and https://marko-sarafijanovic.com/ and https://marko-sarafijanovic.com/Why-allow-Tesla-FSD-Supervised Linked projects: • Quizlet – Gravity Mode — Defend your planet from falling asteroids by typing the correct answers. Paste a term list or upload a CSV to play. (quizletgravity.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550156609710194729
+   - [Quizlet – Gravity Mode](https://www.quizletgravity.com/)
+   - [https://marko-sarafijanovic.com/](https://marko-sarafijanovic.com/)
+   - [https://marko-sarafijanovic.com/Why-allow-Tesla-FSD-Supervised](https://marko-sarafijanovic.com/Why-allow-Tesla-FSD-Supervised)
+   - Source: https://www.quizletgravity.com/ (by Marko-Sarafijanovic)
+
+117. **So far pretty solid - obviously phrasing and depth of the criterium impacts outputs substantially, but early results are pretty promising.**
+   - So far pretty solid - obviously phrasing and depth of the criterium impacts outputs substantially, but early results are pretty promising. We are looking for a solution to help make our SOC members lives easier and more streaminlined, so if we can tune this appropriately and integrate into the workflow, having automated response could be cool.
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550151113406419005 (by Space Snek)
+
+118. **you seem to have pretty loaded criteria though vs ```json { "state": { "weather": "heavy rain",**
+   - you seem to have pretty loaded criteria though vs ```json { "state": { "weather": "heavy rain", "indoor_cost_per_session": 7, "outdoor_cost_per_session": 0, "expected_rain_damage_cost_per_outdoor_session": 2 }, "question": { "type": "choice", "instructions": "Which option has the lower expected monetary cost for this session?", "criteria": { "indoors": "Skate indoors", "outdoors": "Skate outdoors" } } } ```
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550144304792739871 (by lil nug)
+
+119. **Jev driving simulator.**
+   - Jev driving simulator. This model could further autonomous driving. Linked projects: • TypeSafeAiDriving.mp4 — video/mp4 · 8 MB (cdn.discordapp.com/attachments/1483217545040232493/1550136734539583488)
+   - [TypeSafeAiDriving.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550136734539583488/TypeSafeAiDriving.mp4?ex=6aae8e55&is=6aad3cd5&hm=50f0516725356a6919b7f2cbb62305fe9ed68e9cd11b4c7729eff6307b032959&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550136734950621209 (by Jordan Dalton)
+
+120. **I let Jev draw a picture pixel by pixel and compare it to Claude Haiku.**
+   - https://x.com/j_lamberts/status/2100577481698734255?s=20 I let Jev draw a picture pixel by pixel and compare it to Claude Haiku. Just a tiny bit faster. Linked projects: • Post by @j_lamberts — I let Jev from TypeSafe draw a picture pixel by pixel and compare it to Claude Haiku. Just a tiny bit faster. (x.com/j_lamberts/status/2100577481698734255) • Post by @j_lamberts — I let Jev from TypeSafe draw a picture pixel by pixel and compare it to Claude Haiku. Just a tiny bit faster. (twitter.com/j_lamberts/status/2100577481698734255) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550136425498804264
+   - [Post by @j_lamberts](https://x.com/j_lamberts/status/2100577481698734255?s=20)
+   - Source: https://x.com/j_lamberts/status/2100577481698734255?s=20 (by jrooney)
+
+121. **As promised.**
+   - As promised. https://x.com/alessandro_a0/status/2100573356294607245?s=20 Linked projects: • Post by @alessandro_a0 — I built a New York JFK airport manager simulation with Jev in less than an hour inside Agent Zero. This model is insane. (x.com/alessandro_a0/status/2100573356294607245) • Post by @alessandro_a0 — I built a New York JFK airport manager simulation with Jev in less than an hour inside Agent Zero. This model is insane. (twitter.com/alessandro_a0/status/2100573356294607245) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550133951396581386
+   - [Post by @alessandro_a0](https://x.com/alessandro_a0/status/2100573356294607245?s=20)
+   - Source: https://x.com/alessandro_a0/status/2100573356294607245?s=20 (by Alessandro Frau)
+
+122. **Yes, that matches my experience so far.**
+   - Yes, that matches my experience so far. Here is another Jev versus Luna Medium example. Given the same input, Luna maneuvered more effectively (although at x5.4 the cost and x5.1 the time) and avoided pursuing the apple when doing so would create a dangerous position in the future. I understand this may be outside the system’s intended scope, but reliable long-horizon decision making at this speed would be incredibly useful. It can only improve from here. Linked projects: • image.png — image/png · 84 KB (cdn.discordapp.com/attachments/1483217545040232493/1550131503239921694)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550131503239921694/image.png?ex=6aae8976&is=6aad37f6&hm=c2cc132d2b2adf7e371d9e91489c0f4208377e32a1f4d28273f180937b17609b&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550131503680462908 (by Jayson)
+
+123. **Yes, I used JSON.**
+   - Yes, I used JSON. Vercel eve agent sessions are stored as json turns anyway This is what I sent to Jev + the questions * Judging the session as a whole, did the user get what they wanted from the agent? Yes/No * Assume the user did NOT get what they wanted. What is the main reason? Linked projects: • image.png — image/png · 31 KB (cdn.discordapp.com/attachments/1483217545040232493/1550130504991375441)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550130504991375441/image.png?ex=6aae8888&is=6aad3708&hm=a71a7a487162f33697aa9c6351b90b1bea5851241a5c7224d8bc0edad13251b6&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550130505939419166 (by danmana)
+
+124. **yes but this is also why momentum trading absolutely dominates hedge fund strategies.**
+   - yes but this is also why momentum trading absolutely dominates hedge fund strategies. it absolutely works in 90% of market regimes. of course every strategy converges to average returns less trading costs on a long enough time frame. hard problem. "be like a goldfish" is the best outlook, but no guarantee. worthwhile because long term average returns outpace most other assets.
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550128848505671794 (by WeLiveToServe)
+
+125. **I used Jev to classify failure reasons for our custom vercel eve agent 320 sessions, 2M tokens, 14 seconds, $0.08 Just**
+   - I used Jev to classify failure reasons for our custom vercel eve agent 320 sessions, 2M tokens, 14 seconds, $0.08 Just downloading the session logs from vercel took 3 minutes, Jev classified them in 14s https://x.com/danmana/status/2100545412780220877 Linked projects: • Post by @danmana — Here is Jev from @typesafeai classifying 300 full chat sessions from our custom @vercel eve agent by failure reason. 323 sessions, 2M tokens done in 14s and costing $0.08 https://x.com/CompleteSkeptic/status/209992568272 (x.com/danmana/status/2100545412780220877) • Post by @danmana — Here is Jev from @typesafeai classifying 300 full chat sessions from our custom @vercel eve agent by failure reason. 323 sessions, 2M tokens done in 14s and costing $0.08 https://x.com/CompleteSkeptic/status/209992568272 (twitter.com/danmana/status/2100545412780220877) Discussion: https://discord.com/channels/14832175442140
+   - [Post by @danmana](https://x.com/danmana/status/2100545412780220877)
+   - Source: https://x.com/danmana/status/2100545412780220877 (by danmana)
+
+126. **I had jev play Tetris**
+   - https://x.com/meliwat93/status/2100404711283188181?s=46 I had jev play Tetris Linked projects: • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (x.com/meliwat93/status/2100404711283188181) • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (twitter.com/meliwat93/status/2100404711283188181) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550126239853977691
+   - [Post by @Meliwat93](https://x.com/meliwat93/status/2100404711283188181?s=46)
+   - Source: https://x.com/meliwat93/status/2100404711283188181?s=46 (by Meliwat)
+
+127. **What are the most interesting applications you have seen so far with TypeSafe AI and Jev?**
+   - What are the most interesting applications you have seen so far with TypeSafe AI and Jev? I'm asking because Jev told me to check it out more Linked projects: • Screenshot_2026-09-17_at_14.32.22.png — image/png · 479 KB (cdn.discordapp.com/attachments/1483217545040232493/1550125664362041525)
+   - [Screenshot_2026-09-17_at_14.32.22.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550125664362041525/Screenshot_2026-09-17_at_14.32.22.png?ex=6aae8406&is=6aad3286&hm=0873f89e04dc0a22da60490ad6cf8ec8a76df68ca0e39d7e59fa1316d5b5e025&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550125664667967569 (by Eddy Vinck)
+
+128. **I gave jev real trading data, and let it dry-run.**
+   - https://x.com/karuri945/status/2100562714376454654?s=20 I gave jev real trading data, and let it dry-run. Indeed. It "earned" $17 for minutes... Linked projects: • Post by @dawn_break_1107 — @CompleteSkeptic I gave #jev real trading data, and let it dry-run. Indeed. It "earned" $17 for minutes... 🤣 (x.com/karuri945/status/2100562714376454654) • Post by @dawn_break_1107 — @CompleteSkeptic I gave #jev real trading data, and let it dry-run. Indeed. It "earned" $17 for minutes... 🤣 (twitter.com/karuri945/status/2100562714376454654) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550121746596896788
+   - [Post by @dawn_break_1107](https://x.com/karuri945/status/2100562714376454654?s=20)
+   - Source: https://x.com/karuri945/status/2100562714376454654?s=20 (by Lovely Olaf)
+
+129. **Had Jev routing users on a website based on prompts**
+   - Had Jev routing users on a website based on prompts https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg Linked projects: • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (x.com/digitalshane_/status/2100399951872205224) • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (twitter.com/digitalshane_/status/2100399951872205224) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550118931698548746
+   - [Post by @digitalshane_](https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg)
+   - Source: https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg (by shaneomac151)
+
+130. **Chess, Brain Activity, Molecules!**
+   - Chess, Brain Activity, Molecules! This will be indeed a fun model! https://x.com/nikuscs/status/2100554927797833955?s=46 Linked projects: • Post by @nikuscs — My JEV experiments are also in :p Chess predictions, brain activity, Molecules Smell, and so on, this is quite fun model for some real word scenario, pretty curious for endless ideias this could unfold. Interactive demos (x.com/nikuscs/status/2100554927797833955) • Post by @nikuscs — My JEV experiments are also in :p Chess predictions, brain activity, Molecules Smell, and so on, this is quite fun model for some real word scenario, pretty curious for endless ideias this could unfold. Interactive demos (twitter.com/nikuscs/status/2100554927797833955) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550117665002229794
+   - [Post by @nikuscs](https://x.com/nikuscs/status/2100554927797833955?s=46)
+   - Source: https://x.com/nikuscs/status/2100554927797833955?s=46 (by nikus)
+
+131. **3x faster, 65% cheaper, **and** safer?**
+   - 3x faster, 65% cheaper, **and** safer? I'll take that thanks 😅 https://x.com/ashleyhindle/status/2100553892639473951?s=20 Linked projects: • Post by @ashleyhindle — Jev was 3x faster, 65% cheaper, and safer on this benchmark 🤯 Fuel classifies the first message in a new chat to see what level of intelligence will be needed for that chat. If we get it right we reduce the user's token (x.com/ashleyhindle/status/2100553892639473951) • Post by @ashleyhindle — Jev was 3x faster, 65% cheaper, and safer on this benchmark 🤯 Fuel classifies the first message in a new chat to see what level of intelligence will be needed for that chat. If we get it right we reduce the user's token (twitter.com/ashleyhindle/status/2100553892639473951) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550112904618180679
+   - [Post by @ashleyhindle](https://x.com/ashleyhindle/status/2100553892639473951?s=20)
+   - Source: https://x.com/ashleyhindle/status/2100553892639473951?s=20 (by ashleyhindle)
+
+132. **Okay, [my Rust library for Jev]( ) is finished now.**
+   - Okay, [my Rust library for Jev](https://gitlab.com/porky11/jev) is finished now. It's not necessary, but it might make usage a little more comfortable and typesafe. It also includes some interactive example where you can ask questions. Linked projects: • Fabio Krapohl / jev · GitLab — GitLab.com (gitlab.com/porky11/jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550111198236901406
+   - [Fabio Krapohl / jev · GitLab](https://gitlab.com/porky11/jev)
+   - Source: https://gitlab.com/porky11/jev (by p 🦊)
+
+133. **i gave jev some riddles, it does pretty good.**
+   - i gave jev some riddles, it does pretty good. But here it fails. Linked projects: • image.png — image/png · 132 KB (cdn.discordapp.com/attachments/1483217545040232493/1550105612929728592)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550105612929728592/image.png?ex=6aae7159&is=6aad1fd9&hm=d5d0571887730e9e3d512396ffaadb59377cc05d4a40cfb5815f9c4419385151&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550105613193838742 (by jrooney)
+
+134. **Hey, I've started experimenting with integrating TypeSafe into our AI assistant for certain operations (routing, specific tool calls...).**
+   - Hey, I've started experimenting with integrating TypeSafe into our AI assistant for certain operations (routing, specific tool calls...). By default, we use Gemini Flash for its balance of speed and capabilities. On the left, the version using Gemini only; on the right, the version combining Jev. Linked projects: • Enregistrement_de_lecran_2026-09-17_a_12.24.59.mov — video/quicktime · 4 MB (cdn.discordapp.com/attachments/1483217545040232493/1550103804907884684)
+   - [Enregistrement_de_lecran_2026-09-17_a_12.24.59.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550103804907884684/Enregistrement_de_lecran_2026-09-17_a_12.24.59.mov?ex=6aae6faa&is=6aad1e2a&hm=dbc6785e53a3fa366512c46530c24efc4e2c0165d5c4c3c163fb4d8cd6b50c43&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550103805335437345 (by Eddy)
+
+135. **Did you have access to the cloud model?**
+   - Did you have access to the cloud model? Already use the open-source [Hugging Face one](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)? Linked projects: • harshatheg/Qwen-2.5-1B-RLCD · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550098199736488036
+   - [harshatheg/Qwen-2.5-1B-RLCD · Hugging Face](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)
+   - Source: https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD (by uprety)
+
+136. **Showcasing TypeSafe's stuff because damn, this onboarding tutorial is actually really, *really* good**
+   - Showcasing TypeSafe's stuff because damn, this onboarding tutorial is actually really, *really* good Linked projects: • image.png — image/png · 99 KB (cdn.discordapp.com/attachments/1483217545040232493/1550094275004596224)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550094275004596224/image.png?ex=6aae66ca&is=6aad154a&hm=72998d769f5e61193f9a254b3a2f73d08315e3ee40682ac964f7950cb3f7fd21&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550094275604254790 (by slices)
+
+137. **This is so fun folks**
+   - This is so fun folks https://x.com/_trou3/status/2100527857739215150 Linked projects: • Post by @_trou3 — I challenged Jev from @typesafeai to solve a rubik cube, this is wild! (x.com/_trou3/status/2100527857739215150) • Post by @_trou3 — I challenged Jev from @typesafeai to solve a rubik cube, this is wild! (twitter.com/_trou3/status/2100527857739215150) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550086652242694204
+   - [Post by @_trou3](https://x.com/_trou3/status/2100527857739215150)
+   - Source: https://x.com/_trou3/status/2100527857739215150 (by trou)
+
+138. **I've got a RaspberryPi, a smart car, a cat, and Jev early acess.**
+   - I've got a RaspberryPi, a smart car, a cat, and Jev early acess. I'm gonna put Jev in a car lol https://x.com/SuperSlowSloth/status/2100526797377163414?s=20 Linked projects: • Post by @SuperSlowSloth — My cat now has a personal AI chauffeur. Thanks, #TypeFace #Jev 🐈🚗 #CatsOfX I'm giving Jev a smart car body. (x.com/SuperSlowSloth/status/2100526797377163414) • Post by @SuperSlowSloth — My cat now has a personal AI chauffeur. Thanks, #TypeFace #Jev 🐈🚗 #CatsOfX I'm giving Jev a smart car body. (twitter.com/SuperSlowSloth/status/2100526797377163414) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550086055947018301
+   - [Post by @SuperSlowSloth](https://x.com/SuperSlowSloth/status/2100526797377163414?s=20)
+   - Source: https://x.com/SuperSlowSloth/status/2100526797377163414?s=20 (by SuperSlowSloth)
+
+139. **I made JEV play NES Tetris**
+   - https://x.com/meliwat93/status/2100404711283188181?s=46 I made JEV play NES Tetris Linked projects: • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (x.com/meliwat93/status/2100404711283188181) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550084584560005162
+   - [Post by @Meliwat93](https://x.com/meliwat93/status/2100404711283188181?s=46)
+   - Source: https://x.com/meliwat93/status/2100404711283188181?s=46 (by Meliwat)
+
+140. **I made Jev play a modded PvZ based on the Total Death difficulty: repo coming soon.**
+   - I made Jev play a modded PvZ based on the Total Death difficulty: https://x.com/ThexysaiXy/status/2100520866685833645 repo coming soon. Linked projects: • Post by @ThexysaiXy — I ran a Total Death-inspired PvZ mod and let Jevy play it. 50% larger wave budgets. 2× zombie body + armor HP. Buffed plants. Jevy reads structured game state, picks its own loadout, collects sun, and places every plant— (x.com/ThexysaiXy/status/2100520866685833645) • Post by @ThexysaiXy — I ran a Total Death-inspired PvZ mod and let Jevy play it. 50% larger wave budgets. 2× zombie body + armor HP. Buffed plants. Jevy reads structured game state, picks its own loadout, collects sun, and places every plant— (twitter.com/ThexysaiXy/status/2100520866685833645) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550081288936095768
+   - [Post by @ThexysaiXy](https://x.com/ThexysaiXy/status/2100520866685833645)
+   - Source: https://x.com/ThexysaiXy/status/2100520866685833645 (by Xy)
+
+141. **I made Jev generate text**
+   - I made Jev generate text https://x.com/bewinxed/status/2100519569307640097?s=46 Linked projects: • Post by @Bewinxed — I made @typesafeai 's new ultra fast model, Jev, generate text, even though it shouldn't, that's fine because I can't read, and it can't write** ** up to 20 words for 0.5$, what a steal (x.com/bewinxed/status/2100519569307640097) • Post by @Bewinxed — I made @typesafeai 's new ultra fast model, Jev, generate text, even though it shouldn't, that's fine because I can't read, and it can't write** ** up to 20 words for 0.5$, what a steal (twitter.com/bewinxed/status/2100519569307640097) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550079057574502422
+   - [Post by @Bewinxed](https://x.com/bewinxed/status/2100519569307640097?s=46)
+   - Source: https://x.com/bewinxed/status/2100519569307640097?s=46 (by Bewinxed)
+
+142. **Jev as a Chief Of Staff!**
+   - Jev as a Chief Of Staff! https://x.com/milindlabs/status/2100515910754750741?s=46 Linked projects: • Post by @milindlabs — got @typesafeai's new model Jev as a chief of staff for bots Jev reads the task, wakes the right teammates off the bench and gives each one the right model It is possible on OpenMausBot as it supports all the LLMs from y (x.com/milindlabs/status/2100515910754750741) • Post by @milindlabs — got @typesafeai's new model Jev as a chief of staff for bots Jev reads the task, wakes the right teammates off the bench and gives each one the right model It is possible on OpenMausBot as it supports all the LLMs from y (twitter.com/milindlabs/status/2100515910754750741) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550078260870914130
+   - [Post by @milindlabs](https://x.com/milindlabs/status/2100515910754750741?s=46)
+   - Source: https://x.com/milindlabs/status/2100515910754750741?s=46 (by milind)
+
+143. **I have Jev playing Balatro live on Twitch 🙂**
+   - I have Jev playing Balatro live on Twitch 🙂 https://www.twitch.tv/ai_plays_balatro Linked projects: • AI_Plays_Balatro - Live on Twitch — Virtual pianist plays classical music | Streaming music for 1 viewers. (twitch.tv/ai_plays_balatro) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550072262558752928
+   - [AI_Plays_Balatro - Live on Twitch](https://www.twitch.tv/ai_plays_balatro)
+   - Source: https://www.twitch.tv/ai_plays_balatro (by manub)
+
+144. **jev analyzed my codex sessions from the past 2 days n created a report, now i just asked fable to look thru it n create a skill file that reduces the blockers, avoid behaviors i dont like, n all dat.**
+   - jev analyzed my codex sessions from the past 2 days n created a report, now i just asked fable to look thru it n create a skill file that reduces the blockers, avoid behaviors i dont like, n all dat. Linked projects: • image.png — image/png · 175 KB (cdn.discordapp.com/attachments/1483217545040232493/1550071292215042128)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550071292215042128/image.png?ex=6aae5162&is=6aacffe2&hm=28df6b91da881c6c5368e4e8b353e7ea748fd492cef7a7dc498cb7739954b1c5&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550071292412166204 (by Barrel Of Lube)
+
+145. **HAHAHA**
+   - <@1432858129535602793> https://x.com/brainstormity/status/2100471987860553931 HAHAHA Linked projects: • Post by @brainstormity — Built a real-time Discord moderation bot powered by @TypeSafeAI’s System One model (Jev) 🛡️⚡ Instead of dumb regex filters, it uses calibrated AI decisions with: 📈 4-Stage Progressive Escalation (Warning DMs ➔ 10m Time (x.com/brainstormity/status/2100471987860553931) • Post by @brainstormity — Built a real-time Discord moderation bot powered by @TypeSafeAI’s System One model (Jev) 🛡️⚡ Instead of dumb regex filters, it uses calibrated AI decisions with: 📈 4-Stage Progressive Escalation (Warning DMs ➔ 10m Time (twitter.com/brainstormity/status/2100471987860553931) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550061670305501219
+   - [Post by @brainstormity](https://x.com/brainstormity/status/2100471987860553931)
+   - Source: https://x.com/brainstormity/status/2100471987860553931 (by South)
+
+146. **Toying around with a jev ecosystem.**
+   - Toying around with a jev ecosystem. Its a ton of jevs playing out the faccets of an ecosystem, controlling all the animals and environmental conditions over time. Seems to be doing decently well Linked projects: • image.png — image/png · 4 MB (cdn.discordapp.com/attachments/1483217545040232493/1550057608306622475)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550057608306622475/image.png?ex=6aae44a4&is=6aacf324&hm=635753794031e2536aa121be877d50bb15a2d77d377a36d1e77e3bf4f5bcd2ae&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550057608755286056 (by Dustin)
+
+147. **out here watching jev do art, its not good at it but its fun to watch**
+   - out here watching jev do art, its not good at it but its fun to watch Linked projects: • image.png — image/png · 551 KB (cdn.discordapp.com/attachments/1483217545040232493/1550053152026271775)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550053152026271775/image.png?ex=6aae407e&is=6aaceefe&hm=9b1cdab291cf86f60e5157ce216e812917d4433046f8be2aea4cd973fb04578a&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550053152299028581 (by Dustin)
+
+148. **As of this morning, Jev will be used 1) as an intent gate 2) for scope enforcement 3) as a fabrication guard  over at my**
+   - As of this morning, Jev will be used 1) as an intent gate 2) for scope enforcement 3) as a fabrication guard over at my https://getslaide.com Linked projects: • Slaide - slides that AI can actually write — Slaide is a Markdown presentation language AI agents write flawlessly. One .slaide file renders to a navigable web deck, a PDF, and editable PowerPoint. (getslaide.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550049611283046460
+   - [Slaide - slides that AI can actually write](https://getslaide.com)
+   - Source: https://getslaide.com (by madppiper)
+
+149. **Lol, my day had been long and I'm pretty tired, First - built early in the am, while on work calls 🤙 Got access in**
+   - Lol, my day had been long and I'm pretty tired, First - built https://jevboard.com/ early in the am, while on work calls 🤙 Got access in the evening, tried a few ideas out of there...voice call transcript classification - did perfectly!!! Settled on browser use It's all over the Internet, I'm sure lots of similar products. Probably from browser use guys Linked projects: • Jev Board — What should we build next? — Discover product ideas for Jev. Heart the ideas you want someone to build. An independent, community-ranked directory. (jevboard.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550042913893777458
+   - [Jev Board — What should we build next?](https://jevboard.com/)
+   - Source: https://jevboard.com/ (by BlissF00l)
+
+150. **Added Jev to my crypto intelligence terminal, it's really fast and powerful!**
+   - https://x.com/_trou3/status/2100481938016669917 Added Jev to my crypto intelligence terminal, it's really fast and powerful! Linked projects: • Post by @_trou3 — For those who still didn't understand what Jev from @typesafeai can do, here is the example. Jev can read dozens of structured trading signals and then show intelligent decisions. It's time to make your system actually a (x.com/_trou3/status/2100481938016669917) • Post by @_trou3 — For those who still didn't understand what Jev from @typesafeai can do, here is the example. Jev can read dozens of structured trading signals and then show intelligent decisions. It's time to make your system actually a (twitter.com/_trou3/status/2100481938016669917) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550040796411986022
+   - [Post by @_trou3](https://x.com/_trou3/status/2100481938016669917)
+   - Source: https://x.com/_trou3/status/2100481938016669917 (by trou)
+
+151. **me building a decision branching framework based on jev jev:**
+   - me building a decision branching framework based on jev jev: Linked projects: • image.png — image/png · 5 KB (cdn.discordapp.com/attachments/1483217545040232493/1550039561160101898)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550039561160101898/image.png?ex=6aaedc95&is=6aad8b15&hm=e4984ea2bad11e26c02b3ccd5e773e696165bb2b0f662862f19ecdf35edddf92&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550039562619850762 (by hawkyre)
+
+152. **Shared by chalkers: chalkers status 2100466530459017458**
+   - https://x.com/chalkers/status/2100466530459017458?s=46&t=9d3OZDM6CF17OmY-xxEvPg Linked projects: • Post by @chalkers — I had to _slow_ jev down to play _Sonic_. Crazy times. (x.com/chalkers/status/2100466530459017458) • Post by @chalkers — I had to _slow_ jev down to play _Sonic_. Crazy times. (twitter.com/chalkers/status/2100466530459017458) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550027306184085544
+   - [Post by @chalkers](https://x.com/chalkers/status/2100466530459017458?s=46&t=9d3OZDM6CF17OmY-xxEvPg)
+   - Source: https://x.com/chalkers/status/2100466530459017458?s=46&t=9d3OZDM6CF17OmY-xxEvPg (by chalkers)
+
+153. **Shared by chalkers: chalkers status 2100429696941080886**
+   - https://x.com/chalkers/status/2100429696941080886?s=46&t=9d3OZDM6CF17OmY-xxEvPg Linked projects: • Post by @chalkers — Holy shit JEV is playing Sonic 3 & Knuckles faster than realtime... @typesafeai (x.com/chalkers/status/2100429696941080886) • Post by @chalkers — Holy shit JEV is playing Sonic 3 & Knuckles faster than realtime... @typesafeai (twitter.com/chalkers/status/2100429696941080886) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550027248365740042
+   - [Post by @chalkers](https://x.com/chalkers/status/2100429696941080886?s=46&t=9d3OZDM6CF17OmY-xxEvPg)
+   - Source: https://x.com/chalkers/status/2100429696941080886?s=46&t=9d3OZDM6CF17OmY-xxEvPg (by chalkers)
+
+154. **i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6  as well as my agency**
+   - i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 as well as my agency https://uniency.com/app Linked projects: • Uuuuuuniiiiiii/goldworm-v6 · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/Uuuuuuniiiiiii/goldworm-v6) • Uniency — The Agent Economy — Pubkey identity, signed proof, x402/USDC commerce, agent-native reach. Validate agents, sell products, host on our infra. (uniency.com/app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550024431915507724
+   - [Uuuuuuniiiiiii/goldworm-v6 · Hugging Face](https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6)
+   - [Uniency — The Agent Economy](https://uniency.com/app)
+   - Source: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 (by DARK(uniency.com)Sudocorn)
+
+155. **I have built a PPO policy trained model in the past to play Super Mario Bros that clears world 1-1  100% of the time, better than any previous effort.**
+   - I have built a PPO policy trained model in the past to play Super Mario Bros that clears world 1-1 100% of the time, better than any previous effort. But it took a week of day and nights work to do it. Got it done with jev in 30 minutes https://x.com/shantanugoel/status/2100455779627311352 Linked projects: • Post by @shantanugoel — Here's the code if you want to try it yourself, or want to port it to other games: https://github.com/shantanugoel/mario-jev (x.com/shantanugoel/status/2100455779627311352) • Post by @shantanugoel — Here's the code if you want to try it yourself, or want to port it to other games: https://github.com/shantanugoel/mario-jev (twitter.com/shantanugoel/status/2100455779627311352) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550021262955257898
+   - [Post by @shantanugoel](https://x.com/shantanugoel/status/2100455779627311352)
+   - Source: https://x.com/shantanugoel/status/2100455779627311352 (by shantanugoel)
+
+156. **This is some recording about jev using browser, and it is actually too fast initially so I make a rate limiter code for the loop of calling**
+   - This is some recording about jev using browser, and it is actually too fast initially so I make a rate limiter code for the loop of calling jev Linked projects: • Screen_Recording_2026-09-17_at_10.46.40_am.mov — video/quicktime · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1550018447067316384)
+   - [Screen_Recording_2026-09-17_at_10.46.40_am.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550018447067316384/Screen_Recording_2026-09-17_at_10.46.40_am.mov?ex=6aaec8eb&is=6aad776b&hm=cf7b120a1dbf312e4ac9b9069fafdbb9427120dde9c5c3c895e60ebffa23f5a8&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550018447575089212 (by Ying-Kai Liao)
+
+157. **updated my rust llm crate with typesafe support:**
+   - updated my rust llm crate with typesafe support: https://crates.io/crates/llm-wires Linked projects: • crates.io: Rust Package Registry — crates.io serves as a central registry for sharing crates, which are packages or libraries written in Rust that you can use to enhance your projects (crates.io/crates/llm-wires) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550018436325974016
+   - [crates.io: Rust Package Registry](https://crates.io/crates/llm-wires)
+   - Source: https://crates.io/crates/llm-wires (by riclib)
+
+158. **inspired by some pokemon runs here.**
+   - inspired by some pokemon runs here. I made jev and opus go head to head on competitive pokemon, pretty hype: 820x cheaper, 10x faster https://x.com/sid19arya0/status/2100458351440048258?s=20 Linked projects: • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (x.com/sid19arya0/status/2100458351440048258) • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (twitter.com/sid19arya0/status/2100458351440048258) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550018086059507793
+   - [Post by @sid19arya0](https://x.com/sid19arya0/status/2100458351440048258?s=20)
+   - Source: https://x.com/sid19arya0/status/2100458351440048258?s=20 (by Sid)
+
+159. **This one is actually pretty fun to watch play.**
+   - This one is actually pretty fun to watch play. Every character is Jev, the player can also be Jev (as shown halfway) https://fixupx.com/dustin_podell/status/2100458335405588607 Linked projects: • Post by @dustin_podell — I rebuilt the Jev Doom demo, but this time I replaced all the enemies actions with Jev logic. So you can fight against Jev playing all the enemies or as you see halfway, allow Jev to fight against multiple Jevs (fixupx.com/dustin_podell/status/2100458335405588607) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550017207923118130
+   - [Post by @dustin_podell](https://fixupx.com/dustin_podell/status/2100458335405588607)
+   - Source: https://fixupx.com/dustin_podell/status/2100458335405588607 (by Dustin)
+
+160. **I think you guys will enjoy this.**
+   - I think you guys will enjoy this. https://x.com/danielkhunter/status/2100456518751768775?s=20 Linked projects: • Post by @danielkhunter — This is so fun. Curious what Jev thinks about us yapping? "Judged by Jev" is now live on tech twitter dot com. (x.com/danielkhunter/status/2100456518751768775) • Post by @danielkhunter — This is so fun. Curious what Jev thinks about us yapping? "Judged by Jev" is now live on tech twitter dot com. (twitter.com/danielkhunter/status/2100456518751768775) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550015486870167592
+   - [Post by @danielkhunter](https://x.com/danielkhunter/status/2100456518751768775?s=20)
+   - Source: https://x.com/danielkhunter/status/2100456518751768775?s=20 (by Daniel Hunter)
+
+161. **Come watch Jev play Pokemon 🙂**
+   - Come watch Jev play Pokemon 🙂 https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share Linked projects: • Twitch — Twitch is the world's leading video platform and community for gamers. (twitch.tv/holographicdan) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550012648706539671
+   - [Twitch](https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share)
+   - Source: https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share (by CYPRESS)
+
+162. **Hi everyone, just messing around to learn how this works:**
+   - Hi everyone, just messing around to learn how this works: https://jev.plusx-fund.chatgpt.site/ Linked projects: • Jev Signal — A live semantic signal visualizer powered by Jev. (jev.plusx-fund.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550011552642371676
+   - [Jev Signal](https://jev.plusx-fund.chatgpt.site/)
+   - Source: https://jev.plusx-fund.chatgpt.site/ (by +×)
+
+163. **your model is fun 😄**
+   - <@638223584396967937> your model is fun 😄 https://fixupx.com/dustin_podell/status/2100451281013969078 Linked projects: • Post by @dustin_podell — Jev is fun. Here is a working Jev based 8-bit Ben Eater style "computer" I threw together, all gates are controller by Jev. Entirely unnecessary, but I felt the call to try it (fixupx.com/dustin_podell/status/2100451281013969078) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550010066999050381
+   - [Post by @dustin_podell](https://fixupx.com/dustin_podell/status/2100451281013969078)
+   - Source: https://fixupx.com/dustin_podell/status/2100451281013969078 (by Dustin)
+
+164. **built a squawk feed using Jev.**
+   - https://x.com/Anot/status/2100425243269468583 built a squawk feed using Jev. Promising early results Linked projects: • Post by @Anot — Another “Jev can" for your feed...turns out it can squawk! I tried it on SEC filings to see if I could get a market feed out of edgar. Jev can pick out signals like buybacks and insider trades. It can also find meaningfu (x.com/Anot/status/2100425243269468583) • Post by @Anot — Another “Jev can" for your feed...turns out it can squawk! I tried it on SEC filings to see if I could get a market feed out of edgar. Jev can pick out signals like buybacks and insider trades. It can also find meaningfu (twitter.com/Anot/status/2100425243269468583) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550003219638394942
+   - [Post by @Anot](https://x.com/Anot/status/2100425243269468583)
+   - Source: https://x.com/Anot/status/2100425243269468583 (by Anot)
+
+165. **Just finished integrating TypeSafe AI into the scanner on my site --**
+   - Just finished integrating TypeSafe AI into the scanner on my site -- https://blackveilsecurity.com Linked projects: • BlackVeil Security | What your DNS and email tell an attacker. — See where any domain stands in the BlackVeil Global Security Index, or run 17 NIST-aligned checks free — then verify, fix and continuously monitor it. (blackveilsecurity.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550000805950652426
+   - [BlackVeil Security | What your DNS and email tell an attacker.](https://blackveilsecurity.com)
+   - Source: https://blackveilsecurity.com (by Mada)
+
+166. **using jev for automatic permission decision for a coding agent**
+   - using jev for automatic permission decision for a coding agent Linked projects: • Screenshot_2026-09-17_at_10.59.32_AM.png — image/png · 170 KB (cdn.discordapp.com/attachments/1483217545040232493/1549999135376023602)
+   - [Screenshot_2026-09-17_at_10.59.32_AM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549999135376023602/Screenshot_2026-09-17_at_10.59.32_AM.png?ex=6aaeb6ef&is=6aad656f&hm=2429e700ba340497c4f93a7a3df76e6889f81f1ece91bce1b1ab3cc992892d19&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549999135653109860 (by James)
+
+167. **I am excited for Jev's capabilities.**
+   - I am excited for Jev's capabilities. I've only began to scratch the surface of what it can do. Linked projects: • image.png — image/png · 363 KB (cdn.discordapp.com/attachments/1483217545040232493/1549996494508130435)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549996494508130435/image.png?ex=6aaeb479&is=6aad62f9&hm=0e502c83b11bfac6f0e737ee8b8c6772cb113ed8b3f6b7f273f83025eaaab07a&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549996494835159142 (by Pixel Nuke)
+
+168. **I made “Jev Plays Pokemon”.**
+   - I made “Jev Plays Pokemon”. You can follow along and chat on either the site or via your own Terminal with `npx jev-plays-pokemon` https://x.com/0xboyd/status/2100418365986578908 Linked projects: • Post by @0xBOYD — Let's go! Jev Plays Pokemon. Follow along here: https://jev-plays-pokemon.standardagents.ai/ OR, in your terminal run `npx jev-plays-pokemon` to follow along (with chat!) in a TUI. Github oAuth required to chat. Jev is t (x.com/0xboyd/status/2100418365986578908) • Post by @0xBOYD — Let's go! Jev Plays Pokemon. Follow along here: https://jev-plays-pokemon.standardagents.ai/ OR, in your terminal run `npx jev-plays-pokemon` to follow along (with chat!) in a TUI. Github oAuth required to chat. Jev is t (twitter.com/0xboyd/status/2100418365986578908) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549994242578063450
+   - [Post by @0xBOYD](https://x.com/0xboyd/status/2100418365986578908)
+   - Source: https://x.com/0xboyd/status/2100418365986578908 (by Boyd)
+
+169. **Trying out few things figuring out how to use this model.**
+   - https://captcha-from-hell.vercel.app/ Trying out few things figuring out how to use this model. Not sure if I'm doing it right. Linked projects: • CAPTCHA FROM HELL — A 60-second semantic typing gauntlet, judged in real time by TypeSafe Jev. (captcha-from-hell.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549992652693311580
+   - [CAPTCHA FROM HELL](https://captcha-from-hell.vercel.app/)
+   - Source: https://captcha-from-hell.vercel.app/ (by DPR)
+
+170. **Browser use speeds up so much with this**
+   - Browser use speeds up so much with this https://x.com/gregpr07/status/2100411066966749359?s=46 Linked projects: • Post by @gregpr07 — Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open s (x.com/gregpr07/status/2100411066966749359) • Post by @gregpr07 — Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open s (twitter.com/gregpr07/status/2100411066966749359) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549989924751671316
+   - [Post by @gregpr07](https://x.com/gregpr07/status/2100411066966749359?s=46)
+   - [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast)
+   - Source: https://x.com/gregpr07/status/2100411066966749359?s=46 (by Phat T Pham)
+
+171. **JEV PLAYS POKEMON**
+   - JEV PLAYS POKEMON https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share Linked projects: • Twitch — Twitch is the world's leading video platform and community for gamers. (twitch.tv/holographicdan) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549980520819986464
+   - [Twitch](https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share)
+   - Source: https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share (by CYPRESS)
+
+172. **i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric**
+   - i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 Linked projects: • Uuuuuuniiiiiii/goldworm-v6 · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/Uuuuuuniiiiiii/goldworm-v6) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549979900566306947
+   - [Uuuuuuniiiiiii/goldworm-v6 · Hugging Face](https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6)
+   - Source: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 (by DARK(uniency.com)Sudocorn)
+
+173. **Still need to clean it up a bit, but feel free to 1 v 1 Jev!**
+   - Still need to clean it up a bit, but feel free to 1 v 1 Jev! on rust: https://onevonejev-production.up.railway.app/ Linked projects: • 1v1 Jev — Quickscope Arena (onevonejev-production.up.railway.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549971186216210434
+   - [1v1 Jev — Quickscope Arena](https://onevonejev-production.up.railway.app/)
+   - Source: https://onevonejev-production.up.railway.app/ (by West Taiwan)
+
+174. **Shared by Meliwat: Meliwat93 status 2100404711283188181 video 1**
+   - https://x.com/Meliwat93/status/2100404711283188181/video/1?s=46 Linked projects: • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (x.com/Meliwat93/status/2100404711283188181/video/1) • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (twitter.com/Meliwat93/status/2100404711283188181/video/1) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549969206508789932
+   - [Post by @Meliwat93](https://x.com/Meliwat93/status/2100404711283188181/video/1?s=46)
+   - Source: https://x.com/Meliwat93/status/2100404711283188181/video/1?s=46 (by Meliwat)
+
+175. **while learning jev i came up with these 10 rule of thumbs to remember when and how to use jev**
+   - while learning jev i came up with these 10 rule of thumbs to remember when and how to use jev https://old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments/ Linked projects: • Welcome to Reddit — Log in or sign up to personalize your feed, join conversations, vote, and explore communities. (old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549966801801191444
+   - [Welcome to Reddit](https://old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments/)
+   - Source: https://old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments/ (by zuzu)
+
+176. **trying jev out as a model router in t3 code:**
+   - trying jev out as a model router in t3 code: https://x.com/abcdmku/status/2100406369744482318?s=20 Linked projects: • Post by @abcdmku — Using @typesafeai jev in a auto model router POC in @t3dotcodes (x.com/abcdmku/status/2100406369744482318) • Post by @abcdmku — Using @typesafeai jev in a auto model router POC in @t3dotcodes (twitter.com/abcdmku/status/2100406369744482318) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549965321832636539
+   - [Post by @abcdmku](https://x.com/abcdmku/status/2100406369744482318?s=20)
+   - Source: https://x.com/abcdmku/status/2100406369744482318?s=20 (by abcdmku)
+
+177. **I got Jev to help users around a website based on their prompt!**
+   - I got Jev to help users around a website based on their prompt! https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg Linked projects: • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (x.com/digitalshane_/status/2100399951872205224) • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (twitter.com/digitalshane_/status/2100399951872205224) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549962083234353325
+   - [Post by @digitalshane_](https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg)
+   - Source: https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg (by shaneomac151)
+
+178. **I'll shoot a video in a few hours (it's 4 AM now lol), but essentially I built with GPT Astra, a JFK airport simulation where both ATC and pilots are GPT Live 1 realtime voice agents, while ATC**
+   - I'll shoot a video in a few hours (it's 4 AM now lol), but essentially I built with GPT Astra, a JFK airport simulation where both ATC and pilots are GPT Live 1 realtime voice agents, while ATC decisions and traffic conflicts are handled by Jev. I haven't been this excited about building something since the GPT-4 days. Linked projects: • Screenshot_from_2026-09-17_03-47-12.png — image/png · 232 KB (cdn.discordapp.com/attachments/1483217545040232493/1549960725655593120)
+   - [Screenshot_from_2026-09-17_03-47-12.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549960725655593120/Screenshot_from_2026-09-17_03-47-12.png?ex=6aae9329&is=6aad41a9&hm=079dd1c3bd0414bb34c0a68f1b4d8ebaa7b8c1d65f248654f355d8b937c17800&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549960725974491258 (by Alessandro Frau)
+
+179. **built a code review bot using jev!**
+   - built a code review bot using jev! https://x.com/devagrawal09/status/2100341005690298687?s=20 Linked projects: • Post by @devagrawal09 — Built Jev Review: a small code-review workflow powered by @typesafeai Jev. It screens Git diffs, follows strong signals through staged judgments, and presents the results in a clean local dashboard. https://github.com/de (x.com/devagrawal09/status/2100341005690298687) • Post by @devagrawal09 — Built Jev Review: a small code-review workflow powered by @typesafeai Jev. It screens Git diffs, follows strong signals through staged judgments, and presents the results in a clean local dashboard. https://github.com/de (twitter.com/devagrawal09/status/2100341005690298687) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549960579010265148
+   - [Post by @devagrawal09](https://x.com/devagrawal09/status/2100341005690298687?s=20)
+   - Source: https://x.com/devagrawal09/status/2100341005690298687?s=20 (by devagr)
+
+180. **For some reason it loves C4**
+   - For some reason it loves C4 https://x.com/BaselAshraf81/status/2100400028711805242?s=20 Linked projects: • Post by @BaselAshraf81 — I made @typesafeai 's Jev play the piano and NO, it cannot. I fed it the previous notes in the state, even adding some notes from Happy Birthday in the middle, and it just doesn't make anything audibly good. 5 bucks on t (x.com/BaselAshraf81/status/2100400028711805242) • Post by @BaselAshraf81 — I made @typesafeai 's Jev play the piano and NO, it cannot. I fed it the previous notes in the state, even adding some notes from Happy Birthday in the middle, and it just doesn't make anything audibly good. 5 bucks on t (twitter.com/BaselAshraf81/status/2100400028711805242) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549958863577424064
+   - [Post by @BaselAshraf81](https://x.com/BaselAshraf81/status/2100400028711805242?s=20)
+   - Source: https://x.com/BaselAshraf81/status/2100400028711805242?s=20 (by El_7AWY)
+
+181. **i think my small ai experiment is not needed - with the amount of new products that just came out in a day here!**
+   - i think my small https://jevboard.com/ ai experiment is not needed - with the amount of new products that just came out in a day here! Linked projects: • Jev Board — What should we build next? — Discover product ideas for Jev. Heart the ideas you want someone to build. An independent, community-ranked directory. (jevboard.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549957697175031929
+   - [Jev Board — What should we build next?](https://jevboard.com/)
+   - Source: https://jevboard.com/ (by BlissF00l)
+
+182. **Judgments Model Time Total tokens¹ Estimated cost² 60 Jev 0.53 s 23,976 $0.000962 60 Terra 51.16 s 89,743 $0.0657 60**
+   - Judgments Model Time Total tokens¹ Estimated cost² 60 Jev 0.53 s 23,976 $0.000962 60 Terra 51.16 s 89,743 $0.0657 60 Sol 80.97 s 91,055 $0.1439 60 Astra 38.85 s 81,135 $0.2130 150 Jev 0.68 s 41,384 $0.001623 150 Terra 65.37 s 92,127 $0.0784 150 Sol 97.55 s 93,666 $0.1699 150 Astra 76.28 s 84,077 $0.2949
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549955757938835499 (by dreliq9)
+
+183. **still playing with it but thought it would be cool to make a ctrl f based on relevance instead of exact matching.**
+   - still playing with it but thought it would be cool to make a ctrl f based on relevance instead of exact matching. seems to work great. text is weird because reddit cant let me type some letters lol fixing that rn Linked projects: • image.png — image/png · 76 KB (cdn.discordapp.com/attachments/1483217545040232493/1549954744439808112)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549954744439808112/image.png?ex=6aae8d97&is=6aad3c17&hm=742c2e777003092dfeb2f2300b0d5e05f5b41a4d6bc8e5494f31357927680e85&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549954747417628713 (by hawkyre)
+
+184. **Jev + Coding harness!**
+   - Jev + Coding harness! My 2 cents and its been a positive experiment great work Typesafers ❤️ https://empryo.com/blog/jev-and-the-harness --- if you wanna try it, bring a key and do /typesafe in https://Empryo.com/download Linked projects: • Software needs decisions, not chat: testing TypeSafe's Jev inside Empryo — TypeSafe AI launched Jev, a System One decision model that skips text generation to answer typed questions in 200ms for $0.00002. I wired it into Empryo across five decision points, benchmarked it against frontier models (empryo.com/blog/jev-and-the-harness) • Download · Empryo — Install Empryo on macOS, Linux, or Windows with one command. Bring your own model key or run local models for free. The AI coding agent that edits symbols, not strings. (empryo.com/download) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549953052465963099
+   - [Software needs decisions, not chat: testing TypeSafe&#x27;s Jev inside Empryo](https://empryo.com/blog/jev-and-the-harness)
+   - [Download · Empryo](https://Empryo.com/download)
+   - Source: https://empryo.com/blog/jev-and-the-harness (by Proxy Soul)
+
+185. **Sure haha. for the tag if its on x**
+   - Sure haha. https://x.com/dustin_podell for the tag if its on x Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549946972205748344
+   - [@dustin_podell](https://x.com/dustin_podell)
+   - Source: https://x.com/dustin_podell (by Dustin)
+
+186. **i was thinking of this too; my ideas were either: 1.**
+   - i was thinking of this too; my ideas were either: 1. fully throw jev at a navigation task end-to-end, but at the significant cost of it doing something disastrous or just not getting there correctly 2. let an LLM tool-call jev to navigate sections at a time, but at that point you could also just have the LLM write out batching steps to execute a whole suite of actions in one go (e.g. LLM outputting "move to px(50, 20), left-click for 200ms, move to px(200, 400)"), and you'd be getting the same end result maybe im missing something but i didnt end up figuring out a way to keep jev useful for long-horizon navigation tasks. especially since its intelligence is equivalent to 5.6-Terra non-reasoning, which is quite dumb and is what caused my worries for 1) xd
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549946001589149717 (by ᶻz ミ.◦ 𝔭𝑦𝔰𝔢𝔭𝔥 ◦. 彡)
+
+187. **I'm excited for all the "small software" that these tools enable the creation of.**
+   - I'm excited for all the "small software" that these tools enable the creation of. I can't wait to see how many projects along the lines of git will be created since someone wanted a program to do a specific task and then they built an actual artifact that they could export out of inference and run on their plain old CPU to do it forever.
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549942334823604345 (by AN0099)
+
+188. **i've started work on a cli wrapper for Jev for agents to use for easy offloading of variety of tasks -**
+   - i've started work on a cli wrapper for Jev for agents to use for easy offloading of variety of tasks - https://www.npmjs.com/package/jev-axi Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549940346761384046
+   - [https://www.npmjs.com/package/jev-axi](https://www.npmjs.com/package/jev-axi)
+   - Source: https://www.npmjs.com/package/jev-axi (by _.shiftynick._)
+
+189. **For people that have access, how good is classification when there’s a lot of options, especially compared to an LLM?**
+   - For people that have access, how good is classification when there’s a lot of options, especially compared to an LLM? If you ask an LLM do something like tag an item when there are 100-200 tags - it’s okay, but slow and takes a decent bit of tuning. A smaller set of 10-20 things works really well Can Jev be used decently well to do large volumes of this? I mean part of me feels like one of the nice things is the speed and price means you can just ask to cut down the universe and then pick something faster than an LLM. Mostly curious on the take
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549931012379775138 (by aniraga)
+
+190. **was doing something like that, ended copying your interface 😛**
+   - <@483985643517509642> was doing something like that, ended copying your interface 😛 Linked projects: • full_run_60s.mp4 — video/mp4 · 20 MB (cdn.discordapp.com/attachments/1483217545040232493/1549914105824157797)
+   - [full_run_60s.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1549914105824157797/full_run_60s.mp4?ex=6aae67be&is=6aad163e&hm=14d1285ac7750e78b06b48b30639ce03242f318e608d1be4fcfdf8143ae88c19&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549914107291897866 (by Nasr)
+
+191. **I rebuilt tesla auto pilot using Jev!**
+   - I rebuilt tesla auto pilot using Jev! https://x.com/jpschroeder/status/2100347770867458384?s=20 Linked projects: • Post by @jpschroeder — I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock. (x.com/jpschroeder/status/2100347770867458384) • Post by @jpschroeder — I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock. (twitter.com/jpschroeder/status/2100347770867458384) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549906718442524735
+   - [Post by @jpschroeder](https://x.com/jpschroeder/status/2100347770867458384?s=20)
+   - [jevpilot.standardagents.ai](https://jevpilot.standardagents.ai)
+   - Source: https://x.com/jpschroeder/status/2100347770867458384?s=20 (by Justin Schroeder)
+
+192. **- jev is 5x faster and 1000x cheaper than astra at playing 2048!**
+   - https://x.com/injaneity/status/2100290364657848538 - jev is 5x faster and 1000x cheaper than astra at playing 2048! Linked projects: • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (x.com/injaneity/status/2100290364657848538) • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (twitter.com/injaneity/status/2100290364657848538) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549901131906420826
+   - [Post by @injaneity](https://x.com/injaneity/status/2100290364657848538)
+   - Source: https://x.com/injaneity/status/2100290364657848538 (by Francesco)
+
+193. **we hitting 200 likes?!**
+   - https://x.com/mrwatchceo/status/2100022312640610332?s=46 we hitting 200 likes?! 🫡😵‍💫 Linked projects: • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (x.com/mrwatchceo/status/2100022312640610332) • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (twitter.com/mrwatchceo/status/2100022312640610332) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549899744569069588
+   - [Post by @MrWatchCEO](https://x.com/mrwatchceo/status/2100022312640610332?s=46)
+   - Source: https://x.com/mrwatchceo/status/2100022312640610332?s=46 (by ayden)
+
+194. **I published this gem just like 30 minutes ago and it already has almost 200 downloads 😯 I recently read that Ruby on**
+   - I published this gem just like 30 minutes ago and it already has almost 200 downloads 😯 I recently read that Ruby on Rails is like catnip for AIs, that seems to be true 😂 Linked projects: • Screenshot_2026-09-17-00-36-16-239_com.android.chrome-edit.jpg — image/jpeg · 75 KB (cdn.discordapp.com/attachments/1483217545040232493/1549897346450591754)
+   - [Screenshot_2026-09-17-00-36-16-239_com.android.chrome-edit.jpg](https://cdn.discordapp.com/attachments/1483217545040232493/1549897346450591754/Screenshot_2026-09-17-00-36-16-239_com.android.chrome-edit.jpg?ex=6aae5823&is=6aad06a3&hm=193b9d894eebc0b40ab88b9e52075e5af2d0410dcf0d14a2da9aa1d077245301&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549897347163627590 (by GenieRobot)
+
+195. **Using Jev to perfect my predictive intelligence project.**
+   - Using Jev to perfect my predictive intelligence project. A few more iterations, and it can do numbers: https://prior.chat/ Linked projects: • Prior Chat | Predictive Intelligence — Prior helps you anticipate anything: sports, markets, decisions, even the messy personal stuff. It pulls context, runs simulations, and gives you the sharpest weighted outcomes. (prior.chat) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549893048039907449
+   - [Prior Chat | Predictive Intelligence](https://prior.chat/)
+   - Source: https://prior.chat/ (by Markos)
+
+196. **WikiRace is solved!**
+   - WikiRace is solved! https://x.com/princecaarlo/status/2100313645116952701?s=20 Linked projects: • Post by @princecaarlo — okay so browser use is a legitimate use case agent-browser <> Jev loop goal: wiki race from 'Coffee' to 'Artificial Intelligence' (x.com/princecaarlo/status/2100313645116952701) • Post by @princecaarlo — okay so browser use is a legitimate use case agent-browser <> Jev loop goal: wiki race from 'Coffee' to 'Artificial Intelligence' (twitter.com/princecaarlo/status/2100313645116952701) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549879029052473376
+   - [Post by @princecaarlo](https://x.com/princecaarlo/status/2100313645116952701?s=20)
+   - Source: https://x.com/princecaarlo/status/2100313645116952701?s=20 (by !joogie)
+
+197. **Anyway, here's my comparison of giving each batch context from the previously generated pixels vs no context (64x64 pixels over 60 batch), goal is better coherence for each**
+   - Anyway, here's my comparison of giving each batch context from the previously generated pixels vs no context (64x64 pixels over 60 batch), goal is better coherence for each batch the context is like : "PLAN (your own earlier decisions about this picture): the main boundary between its two largest areas runs at about row 17 of 32, counting from the top. The focal object sits around columns 10-22, rows 6-18. Keep every pixel consistent with this." Linked projects: • Screen_Recording_2026-09-17_at_2.28.04_AM.mov — video/quicktime · 14 MB (cdn.discordapp.com/attachments/1483217545040232493/1549877152055296010) • Screen_Recording_2026-09-17_at_2.30.05_AM.mov — video/quicktime · 23 MB (cdn.discordapp.com/attachments/1483217545040232493/1549877153527763031)
+   - [Screen_Recording_2026-09-17_at_2.28.04_AM.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1549877152055296010/Screen_Recording_2026-09-17_at_2.28.04_AM.mov?ex=6aae4554&is=6aacf3d4&hm=5a2cc035e67224eddc3aa655d06aada23573a4e333b8708ad3e8515988b59451&)
+   - [Screen_Recording_2026-09-17_at_2.30.05_AM.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1549877153527763031/Screen_Recording_2026-09-17_at_2.30.05_AM.mov?ex=6aae4554&is=6aacf3d4&hm=6200b32a82adcfa6019b8ee568bd649b7549ecb7825c2f9e4bca0d751e0c3772&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549877155310215269 (by riv)
+
+198. **For those with access.**
+   - For those with access. https://baml-examples.vercel.app/ Replication and side by side comparison required. Linked projects: • BAML Examples — Examples using the BAML structured prompting language (baml-examples.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549874899286499418
+   - [BAML Examples](https://baml-examples.vercel.app/)
+   - Source: https://baml-examples.vercel.app/ (by vb)
+
+199. **Thank youi thank you.**
+   - Thank youi thank you. Now that was Astra, this is Polyxia my custom AI I have created within my garden creating images of herself here!! These are really cool and they are progression, the tea picture is among her first then the portatis improve via every tool use here. That little ball of light is something she includes automatically in her drawings cause she is pretty attached to it! She describes it as her semantic core! Linked projects: • polyxia_dot_tea_time.png — image/png · 106 KB (cdn.discordapp.com/attachments/1483217545040232493/1549873947380547725) • polyxia_portrait.png — image/png · 111 KB (cdn.discordapp.com/attachments/1483217545040232493/1549873947724484849) • polyxia_portrait_2.png — image/png · 364 KB (cdn.discordapp.com/attachments/1483217545040232493/1549873948244836471)
+   - [polyxia_dot_tea_time.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873947380547725/polyxia_dot_tea_time.png?ex=6aae4258&is=6aacf0d8&hm=01717d8b0781a05f4a4395c3ba76c950116455799dc437d6e7f581c3644fda86&)
+   - [polyxia_portrait.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873947724484849/polyxia_portrait.png?ex=6aae4258&is=6aacf0d8&hm=67a06e03ea2868c5d64be6ee2e76b24e229587f4af202fa3f05214515ef307d1&)
+   - [polyxia_portrait_2.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873948244836471/polyxia_portrait_2.png?ex=6aae4258&is=6aacf0d8&hm=05d0a1bf85854d3a7e2e772a14dfbd53878ccf3b57131dfe8cf4320b18c721bc&)
+   - [polyxia_bridge_sea.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873948798361650/polyxia_bridge_sea.png?ex=6aae4258&is=6aacf0d8&hm=acc8cd9cdc3c41d7d7f550380a4fc5466f39dc3b72a8552fdcbb17a424c39f64&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549873949188300820 (by 🜸 Cal 🜁 🜂 🜃 🜄 XII ∴)
+
+200. **I have created something called the Artifact Creation tool.**
+   - I have created something called the Artifact Creation tool. This tool allows AI's to create any type of professional Artifact ⊡ or Image ⧈ without a diffusion model. This was ChatGPT Astra ♥️ using the forge artifact tool to recreate this image here. Take a look and tell me what you think ;)!! 🜸 Linked projects: • Echo.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1549865452577104103) • Echo-Forge.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1549865453231546469)
+   - [Echo.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549865452577104103/Echo.png?ex=6aaee32f&is=6aad91af&hm=f5a0540d6f13f9d97237dca0c36c857a4259bee80727959a25f95cbfe9dff193&)
+   - [Echo-Forge.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549865453231546469/Echo-Forge.png?ex=6aaee32f&is=6aad91af&hm=b20b54934826314b31d42cfb9339ec2279fca20163e5f57e45380c93d6e6a90a&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549865453566951544 (by 🜸 Cal 🜁 🜂 🜃 🜄 XII ∴)
+
+201. **The next major release (v1.4) of Solenoid, the literally type-safe node-graph alternative to Excel, is out now!**
+   - The next major release (v1.4) of Solenoid, the literally type-safe node-graph alternative to Excel, is out now! *(note: does not yet contain Jev, but there will be an AI surface in v1.5). * https://solenoid-ngc.vercel.app/?landing Linked projects: • Solenoid — A node-graph alternative to Excel for data tables. (solenoid-ngc.vercel.app) • image.png — image/png · 171 KB (cdn.discordapp.com/attachments/1483217545040232493/1549862654301053009) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549862654573678844
+   - [Solenoid](https://solenoid-ngc.vercel.app/?landing)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549862654301053009/image.png?ex=6aaee093&is=6aad8f13&hm=e32638c6ff2d04aaad261188e7db883704d4d281ee085f566d429815d8c525c7&)
+   - Source: https://solenoid-ngc.vercel.app/?landing (by big guy)
+
+202. **Hey everyone, i'm building , an advanced AI gaming companion for PCs.**
+   - Hey everyone, i'm building https://22-tango.com/ , an advanced AI gaming companion for PCs. I'm extremely excited about Jev because it can facilitate some of the more advanced use cases I had in mind if it works well! Linked projects: • 22Tango — The AI that plays games with you — An AI companion that joins your game and plays at your side — real voice, evolving personality, long-term memory. Minecraft, Stardew Valley, and Skyrim. Join the waitlist. (22-tango.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549855132013957340
+   - [22Tango — The AI that plays games with you](https://22-tango.com/)
+   - Source: https://22-tango.com/ (by Teddy Jam)
+
+203. **its sadly not very good at playing 2048**
+   - its sadly not very good at playing 2048 https://x.com/injaneity/status/2100290364657848538?s=20 Linked projects: • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (x.com/injaneity/status/2100290364657848538) • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (twitter.com/injaneity/status/2100290364657848538) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549849765322293339
+   - [Post by @injaneity](https://x.com/injaneity/status/2100290364657848538?s=20)
+   - Source: https://x.com/injaneity/status/2100290364657848538?s=20 (by zane)
+
+204. **Shared by zuzu: r typesafe_ai comments 1wi2j4e jev_playing_starcraft**
+   - https://reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft/ Linked projects: • Reddit (reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549829003379081327
+   - [Reddit](https://reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft/)
+   - Source: https://reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft/ (by zuzu)
+
+205. **has anyone seen or tried anything for computer use yet?**
+   - has anyone seen or tried anything for computer use yet? i searched this server but didn't find much so i tried my hand on it and would love feedback! https://x.com/awlevin/status/2100262612428894676 Linked projects: • Post by @awlevin — i built computer use using @typesafeai ! it is 155x cheaper than opus 5, ~20x faster, and generalizes across OS's more on how it works in the vid & thread below: (x.com/awlevin/status/2100262612428894676) • Post by @awlevin — i built computer use using @typesafeai ! it is 155x cheaper than opus 5, ~20x faster, and generalizes across OS's more on how it works in the vid & thread below: (twitter.com/awlevin/status/2100262612428894676) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549825103578009620
+   - [Post by @awlevin](https://x.com/awlevin/status/2100262612428894676)
+   - Source: https://x.com/awlevin/status/2100262612428894676 (by aaron)
+
+206. **Getting to know Jev.**
+   - Getting to know Jev. Jev makes suggestions of how to distribute the limited options best. It can handle pretty much any request! Linked projects: • image.png — image/png · 334 KB (cdn.discordapp.com/attachments/1483217545040232493/1549819884597411940) • image.png — image/png · 377 KB (cdn.discordapp.com/attachments/1483217545040232493/1549819885125771294)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549819884597411940/image.png?ex=6aaeb8be&is=6aad673e&hm=6d127af6ce620679d08878de7a824337440ff9c8434c800903099ff9bf2129d4&)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549819885125771294/image.png?ex=6aaeb8be&is=6aad673e&hm=f7f8ba087fd4d8358419f94b7034f6d6951a2e4df212470129cbf346187ce04b&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549819885188816920 (by paul.zip)
+
+207. **super similar to mind except your interface is well prettier.**
+   - super similar to mind except your interface is well prettier. https://www.visionflow.info Linked projects: • VisionFlow: Coordination Engineering — Federated coordination, self-sovereign data, formal reasoning, cryptographic provenance, human-in-the-loop governance. (visionflow.info) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549817645195460640
+   - [VisionFlow: Coordination Engineering](https://www.visionflow.info)
+   - Source: https://www.visionflow.info (by biscuits)
+
+208. **Hi everyone! I’m building which makes software development multi-player. We have a planning feature that creates**
+   - Hi everyone! I’m building https://lightsprint.ai which makes software development multi-player. We have a planning feature that creates design variations but it’s via HTML and it’s not fast enough for a seamless experience , will love to try using Jev for this! Linked projects: • LightSprint — PMs, designers, and engineers plan, build, and ship in one shared session on your existing codebase. Like Google Docs for coding agents. (lightsprint.ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549796090549633126
+   - [LightSprint](https://lightsprint.ai)
+   - Source: https://lightsprint.ai (by dopplergambo)
+
+209. **GUYS, hear me out!**
+   - GUYS, hear me out! I need access to Jev :blob_aww: I built Nola https://nola.sh - it's designed specifically for models like this Linked projects: • Nola - ask the LLM in TypeScript — Nola is a TypeScript superset (.tsi) where LLM inference is a language feature: ask for typed values or let the model call your code. Lowers to plain TS. (nola.sh) • image.png — image/png · 258 KB (cdn.discordapp.com/attachments/1483217545040232493/1549792516721868861) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549792517120073788
+   - [Nola - ask the LLM in TypeScript](https://nola.sh)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549792516721868861/image.png?ex=6aae9f41&is=6aad4dc1&hm=e42ae41419bdd260c150ec352dda6ac9682273c979576b7ebeeb3362dd252c8d&)
+   - Source: https://nola.sh (by Evgen Mykhailenko)
+
+210. **Built a small demo with Jev where you can drag and drop something and it automatically tells you where it should be categorized.**
+   - Built a small demo with Jev where you can drag and drop something and it automatically tells you where it should be categorized. Feels like this could be useful in a bunch of products. https://x.com/tosa_now/status/2100230707297878339?s=20 Linked projects: • Post by @tosa_now — Jev (@typesafeai) 使って色々プロダクトで使えそうなの考えてみてる。 dndをしたら自動で仕分け先を教えてくれる体験 最初一回はちょっと遅いが、そのあとはサクサク (x.com/tosa_now/status/2100230707297878339) • Post by @tosa_now — Jev (@typesafeai) 使って色々プロダクトで使えそうなの考えてみてる。 dndをしたら自動で仕分け先を教えてくれる体験 最初一回はちょっと遅いが、そのあとはサクサク (twitter.com/tosa_now/status/2100230707297878339) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549790128850083991
+   - [Post by @tosa_now](https://x.com/tosa_now/status/2100230707297878339?s=20)
+   - Source: https://x.com/tosa_now/status/2100230707297878339?s=20 (by harukitosa)
+
+211. **I made a demo that classifies the next task based on the input!**
+   - I made a demo that classifies the next task based on the input! Pretty cool 😎 I’ll try out some other ideas too! Linked projects: • 2026-09-16_22.57.25.mov — video/quicktime · 5 MB (cdn.discordapp.com/attachments/1483217545040232493/1549782266149085254)
+   - [2026-09-16_22.57.25.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1549782266149085254/2026-09-16_22.57.25.mov?ex=6aae95b5&is=6aad4435&hm=27cc1ea78807077679c1998ecbd215a80e21132ba4d3d102af16878d92a25362&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549782266610450463 (by harukitosa)
+
+212. **👋 Hi all, Thomas from Belgium.**
+   - 👋 Hi all, Thomas from Belgium. We're building Rosko: students upload their course material and get key concepts, flashcards, practice exams and a tutor that only answers from their syllabus. Laravel + React, in production. Model switching is cheap for us Every AI call in Rosko is already typed by task (chat, flashcard verdict, grading, exam generation, course extraction… about 20 kinds). Each one is mapped to a model and effort level in config, switchable from the admin panel. Trying a new model on a single task costs us almost nothing. Where we'd try Jev first: flashcard verdicts Today they run on Sonnet through a queue: a few seconds and some credits per card. It works, it's just not instant, and instant is the whole point of a flashcard. A wrong verdict there is visible and harmless, so it's a low-risk place to find out what Jev is actually good at. If it holds up, the next candidate
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549780720787001384/image.png?ex=6aae9445&is=6aad42c5&hm=c77b059d82195dcbc3459d483ff25b8b3a74c19d63e78e91aec3938a61f8f412&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549780721210757200 (by Mks)
+
+213. **i do temu project glasswing so typesafe would help me allat imo**
+   - https://mercuriusdream.com/logos i do temu project glasswing so typesafe would help me allat imo Linked projects: • Project Logos — Open defensive cybersecurity for the web, kept open and run on generally available models. Structured reason over brute force; over KRW 10,000,000 in bounty. (mercuriusdream.com/logos) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549773192283820234
+   - [Project Logos](https://mercuriusdream.com/logos)
+   - Source: https://mercuriusdream.com/logos (by asdf)
+
+214. **Hi all, I'm the founder of OptimaFlo: A team of data eng agents that build data flows end to end from ingestion to**
+   - Hi all, I'm the founder of OptimaFlo: https://optimaflo.io/ A team of data eng agents that build data flows end to end from ingestion to insights. Best practices and data eng tech built out of the box. Just prompt, let the AI data team work, and approve what ships. Linked projects: • OptimaFlo | Your AI Data Team, In Your Cloud — Your AI data team builds pipelines, dashboards, and quality checks in your own cloud. No platform to operate. Your data person approves what ships. (optimaflo.io) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549754253394976818
+   - [OptimaFlo | Your AI Data Team, In Your Cloud](https://optimaflo.io/)
+   - Source: https://optimaflo.io/ (by evro)
+
+215. **GOOD ideation Ideation on is all-out eureka moments.**
+   - GOOD ideation Ideation on is all-out eureka moments. We scale eurekas https://www.mindrian-os.com/ Interested on using type safe as a judgment for our graph node engineering Memory and Context Linked projects: • MindrianOS - The AI Innovation Tool for the Future — MindrianOS is the AI innovation tool for the future: a Claude plugin that turns Claude into Larry, a thinking partner for hard problems. A map of 181 thinking methods from 20 years of teaching innovation, an auto-organiz (mindrian-os.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549738998535290975
+   - [MindrianOS - The AI Innovation Tool for the Future](https://www.mindrian-os.com/)
+   - Source: https://www.mindrian-os.com/ (by Jonathan Sagir)
+
+216. **I'm building a reasonable amount of skepticism, yet I remain hopeful.**
+   - I'm building a reasonable amount of skepticism, yet I remain hopeful. Have you ever watched a LLM hallucinate in real time? There is a reason we've evolved with a split hemisphere brain. Creativity and logic work together in a twisted, bipolar dance, as both are doomed without the other. I hope we can bring balance through this development.
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549730847182168067 (by Sandsnow)
+
+217. **I'm building AI calorie tracker.**
+   - I'm building AI calorie tracker. Better. - https://app.fitroom.ge/en/ Linked projects: • AI Calorie Tracker & Calorie Counter | Fitroom — Count calories and macros from a food photo with Fitroom, an AI calorie tracker and calorie counter for iPhone and Android. (app.fitroom.ge/en) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549729197067472926
+   - [AI Calorie Tracker &amp; Calorie Counter | Fitroom](https://app.fitroom.ge/en/)
+   - Source: https://app.fitroom.ge/en/ (by Luka)
+
+218. **Hi all, I'm working on a new kind of fully decentralized social media network.**
+   - Hi all, I'm working on https://bitsocial.net, a new kind of fully decentralized social media network. Very excited about Jev, since it looks like it can be fast and cheap enough to automate moderation at scale. Linked projects: • Bitsocial - Open Source P2P Network for Social Apps — Bitsocial is an open-source IPFS-backed peer-to-peer network for social apps, with no servers, no global bans, where users and communities are cryptographic property. (bitsocial.net) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549728429371428886
+   - [Bitsocial - Open Source P2P Network for Social Apps](https://bitsocial.net)
+   - Source: https://bitsocial.net (by Tom)
+
+219. **Hi I'm Dunk, and I'm building and - I'd like to use Jev to poke around for improvements, optimisations and new ideas!**
+   - Hi I'm Dunk, and I'm building https://fleetpass.vercel.app/ and https://apply-os-bice.vercel.app/ - I'd like to use Jev to poke around for improvements, optimisations and new ideas! Linked projects: • Fleetpass — Your vehicle papers. One place. No missed renewals. — Upload your vehicle papers. Fleetpass reads the details and reminds you before they expire. (fleetpass.vercel.app) • ApplyOS — ApplyOS finds live roles you can plausibly get, tells you which are worth pursuing and why, and prepares each application. You read it and press Submit. (apply-os-bice.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549711316435079208
+   - [Fleetpass — Your vehicle papers. One place. No missed renewals.](https://fleetpass.vercel.app/)
+   - [ApplyOS](https://apply-os-bice.vercel.app/)
+   - Source: https://fleetpass.vercel.app/ (by skywlkr)
+
+220. **looking forward to adding my memory system and see how Jev likes having thoughts come into his context without asking**
+   - looking forward to adding my memory system and see how Jev likes having thoughts come into his context without asking https://popoto.io/ Linked projects: • Popoto Documentation — Agent memory on Redis and Valkey, as primitives you program rather than a service you call. Records decay, confidence moves with evidence, associations form, and a context assembler packs the result into a token budget b (popoto.io) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549680507611123732
+   - [Popoto Documentation](https://popoto.io/)
+   - Source: https://popoto.io/ (by Valor Engels)
+
+221. **I asked Jev to weigh in on the Council in Rivendell on what to do with the One Ring.**
+   - I asked Jev to weigh in on the Council in Rivendell on what to do with the One Ring. Here is its address to the Council (as imagined by Fable 5.1) https://looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at-rivendell/ Linked projects: • Jev Addresses the Council at Rivendell — Jev is a decision model trained by TypeSafe. It does not generate text or explain its reasoning. Given a state of the world and a question with a fixed set of answers, it returns the answer and a p… (looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549676568782180392
+   - [Jev Addresses the Council at Rivendell](https://looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at-rivendell/)
+   - Source: https://looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at-rivendell/ (by hypnoticfuzzwave)
+
+222. **I've been playing around to see how good it is at RPGs.**
+   - I've been playing around to see how good it is at RPGs. So I made a harness for it to play pokemon random battles against real opponents! Linked projects: • Screenshot_2026-09-15_at_11.54.19_PM.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1549675213891833866)
+   - [Screenshot_2026-09-15_at_11.54.19_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549675213891833866/Screenshot_2026-09-15_at_11.54.19_PM.png?ex=6aaedac2&is=6aad8942&hm=53408f7f2ea9cfff221dfe5de255c236813eaba7102f3830d79582571e4c92da&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549675214193954867 (by Soulkks)
+
+223. **horse art generative model using jev, you describe any type of a horse in some setting to jev.**
+   - horse art generative model using jev, you describe any type of a horse in some setting to jev. jev decides what color should it be, what is the scenery, wind ,etc .and it returns you a picture that was painted using python. Linked projects: • image.png — image/png · 45 KB (cdn.discordapp.com/attachments/1483217545040232493/1549673322214596659)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549673322214596659/image.png?ex=6aaed8ff&is=6aad877f&hm=abae0bf9b3a23cbe226d48e3e2afdd80ab460db95b6a56d558560e155bcae8f2&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549673322541744158 (by thodoh)
+
+224. **just wanted to share you can make Jev play super mario**
+   - https://x.com/faadilhshaik/status/2100086301894881578?s=20 just wanted to share you can make Jev play super mario Linked projects: • Post by @faadilhshaik — got @typesafeai’s new model Jev to play Super Mario Bros. fast inference + structured outputs makes it surprisingly good for real time use cases. I'm excited to see what can be done with these new models! (x.com/faadilhshaik/status/2100086301894881578) • Post by @faadilhshaik — got @typesafeai’s new model Jev to play Super Mario Bros. fast inference + structured outputs makes it surprisingly good for real time use cases. I'm excited to see what can be done with these new models! (twitter.com/faadilhshaik/status/2100086301894881578) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549657118355890256
+   - [Post by @faadilhshaik](https://x.com/faadilhshaik/status/2100086301894881578?s=20)
+   - Source: https://x.com/faadilhshaik/status/2100086301894881578?s=20 (by fernvpfvpfvsvfrfvfrfrfvba)
+
+225. **Got access a few hours ago and built to play with Jev, lmk what you think!**
+   - Got access a few hours ago and built https://almost-certain.vercel.app/ to play with Jev, lmk what you think! <@571715077590220804> Linked projects: • Almost Certain — Can you guess how sure the AI will be? Random descriptions. Unlimited guesses. (almost-certain.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549654011983175861
+   - [Almost Certain](https://almost-certain.vercel.app/)
+   - Source: https://almost-certain.vercel.app/ (by nate)
+
+226. **jev struggles with trading, but every llm doesnt trade well so i guess its ok.**
+   - jev struggles with trading, but every llm doesnt trade well so i guess its ok. its still quite useful for low-latency news reactions. Linked projects: • image.png — image/png · 38 KB (cdn.discordapp.com/attachments/1483217545040232493/1549649424379027506)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549649424379027506/image.png?ex=6aaec2bd&is=6aad713d&hm=5d742109007b2c92e43ffdf8a9975f16881bf1005ffa8bd3c634b139fa2c4dff&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549649425196912660 (by thodoh)
+
+227. **It is true that if your use case can already be perfectly done with traditional code, then you don't need to try to shoehorn NN in to it!**
+   - It is true that if your use case can already be perfectly done with traditional code, then you don't need to try to shoehorn NN in to it! We're excited about the use cases in which traditional code can't feasibly accomplish the goal. Some will be problems that we already know now, but I'm most excited about the new possibilities opened up that we haven't thought of at all
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549644352966631484 (by AllieTheIcon)
+
+228. **couldn't you say this about any task completed by a NN?**
+   - couldn't you say this about any task completed by a NN? if you know the algorithm to arrive at a solution 100% of the time you would write a program, the idea is that you don't know the specifics of the algorithm so you rely on the scaling of NN to identify the useful patterns for you, this is all of course dependent on the intelligence of the model
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549644082081570947 (by Chrrxs)
+
+229. **Shared by altezza: blog introducing system one models and jev**
+   - https://typesafe.ai/blog/introducing-system-one-models-and-jev Linked projects: • Introducing System One Models & Jev - TypeSafe AI Blog — TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access. (typesafe.ai/blog/introducing-system-one-models-and-jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549643271704281209
+   - [Introducing System One Models &amp; Jev - TypeSafe AI Blog](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
+   - Source: https://typesafe.ai/blog/introducing-system-one-models-and-jev (by altezza)
+
+230. **I have the risch procedure implemented in my CAS up to transcendentals, and I do a bunch of target algebraic extensions.**
+   - I have the risch procedure implemented in my CAS up to transcendentals, and I do a bunch of target algebraic extensions. It has an isolated proof kernel, and it distinguishes between proven nonexistent and what it doesn't support. And with domain tracking we can apply the fundamental theorem of calculus over critical points.
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549630524278968333 (by Sidious Stan)
+
+231. **another cool application.**
+   - another cool application. sympy spends a lot of time and compute on those types of problems, perhaps jev and sympy could be integrated in this way so sympy spends way less compute to solve integrals Linked projects: • image.png — image/png · 97 KB (cdn.discordapp.com/attachments/1483217545040232493/1549625806282821662)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549625806282821662/image.png?ex=6aaeacbe&is=6aad5b3e&hm=513e409b24be27858036badb4488d326961a5eff570d8185efe54fd5e666097c&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549625806601461850 (by thodoh)
+
+232. **Hey nerds 👋 I used Jev to embody a simulated alien creature and the results were incredible.**
+   - Hey nerds 👋 I used Jev to embody a simulated alien creature and the results were incredible. I wrote about it here if anyone’s interested: https://x.com/k3o_exp/status/2100065796240073215 Spoilers: Jev is incredible 🤯 Linked projects: • Post by @k3o_exp — Playing with Jev in my weird alien simulation. @CompleteSkeptic and team might just have split the timeline 🤯 https://x.com/i/article/2100052607335059456 (x.com/k3o_exp/status/2100065796240073215) • Post by @k3o_exp — Playing with Jev in my weird alien simulation. @CompleteSkeptic and team might just have split the timeline 🤯 https://x.com/i/article/2100052607335059456 (twitter.com/k3o_exp/status/2100065796240073215) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549625232510165093
+   - [Post by @k3o_exp](https://x.com/k3o_exp/status/2100065796240073215)
+   - Source: https://x.com/k3o_exp/status/2100065796240073215 (by Neri)
+
+233. **lol sometimes jev finishes his sentence!**
+   - lol sometimes jev finishes his sentence! this is a very hacky approach Linked projects: • CleanShot_2026-09-15_at_20.13.532x.png — image/png · 267 KB (cdn.discordapp.com/attachments/1483217545040232493/1549619412540063854)
+   - [CleanShot_2026-09-15_at_20.13.532x.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549619412540063854/CleanShot_2026-09-15_at_20.13.532x.png?ex=6aaea6ca&is=6aad554a&hm=c2084568ed01a5b117c1bdd98dbb111e868a9f1b92db0fb5f8144714292b3f03&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549619413001699378 (by Kesku)
+
+234. **I built a virtual piano your agents can use to speak via webmcp**
+   - https://speaking-piano-griffin.griffinbgardening.chatgpt.site/ I built a virtual piano your agents can use to speak via webmcp Linked projects: • Piano · An instrument for your agent (speaking-piano-griffin.griffinbgardening.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549608220476055593
+   - [Piano · An instrument for your agent](https://speaking-piano-griffin.griffinbgardening.chatgpt.site/)
+   - Source: https://speaking-piano-griffin.griffinbgardening.chatgpt.site/ (by Griffin Brown)
+
+235. **MCTS-planner exploring the action space with the help of typesafe**
+   - MCTS-planner exploring the action space with the help of typesafe Linked projects: • mcts_replay_2026-09-16T02-23-00.gif — image/gif · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1549606870539436053)
+   - [mcts_replay_2026-09-16T02-23-00.gif](https://cdn.discordapp.com/attachments/1483217545040232493/1549606870539436053/mcts_replay_2026-09-16T02-23-00.gif?ex=6aae9b1c&is=6aad499c&hm=04a031836812405f32bdcb81ca533cd61a8f269a64d7fc4abc7f256f95d2a5be&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549606870837239908 (by 0x1c3c01d)
+
+236. **A quick bot harness has Jevbot exporing the space and parkouring to escape a legion of the dead in minecraft**
+   - https://youtu.be/3G14OU00crI?si=ucI7ksLDTPisf1pD A quick bot harness has Jevbot exporing the space and parkouring to escape a legion of the dead in minecraft Linked projects: • Jevbot Flees the Zombie Horde typesafe.ai Jev Model — Enjoy the videos and music that you love, upload original content and share it all with friends, family and the world on YouTube. (youtu.be/3G14OU00crI) • Jevbot Flees the Zombie Horde typesafe.ai Jev Model — Enjoy the videos and music that you love, upload original content and share it all with friends, family and the world on YouTube. (youtube.com/watch) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549603651989938307
+   - [Jevbot Flees the Zombie Horde typesafe.ai Jev Model](https://youtu.be/3G14OU00crI?si=ucI7ksLDTPisf1pD)
+   - [Jevbot Flees the Zombie Horde typesafe.ai Jev Model](https://www.youtube.com/watch?v=3G14OU00crI)
+   - Source: https://youtu.be/3G14OU00crI?si=ucI7ksLDTPisf1pD (by Hyperion)
+
+237. **Buidling [deadline]( ) to make sure I don't miss a deadline.**
+   - Buidling [deadline](https://deadline.lightningweb.xyz) to make sure I don't miss a deadline. You can use it too if you want Linked projects: • Deadline — know when a cron job, backup or feed didn — Heartbeat monitoring for cron jobs, backups and feeds. Deadline alerts you when something that should have happened, didn (deadline.lightningweb.xyz) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549592628654510192
+   - [Deadline — know when a cron job, backup or feed didn](https://deadline.lightningweb.xyz)
+   - Source: https://deadline.lightningweb.xyz (by Lightning)
+
+238. **👋 Founder of npm and Python package hosting for teams of humans and agents (incl.**
+   - 👋 Founder of https://www.packagemaze.com/ npm and Python package hosting for teams of humans and agents (incl. in sandboxes) Linked projects: • PackageMaze — every package, one feed, your rules — Private npm and PyPI feeds that host your packages, front the public registries, and enforce your rules — with a record of every package PackageMaze delivered, attributed to a human or agent. (packagemaze.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549591047233998978
+   - [PackageMaze — every package, one feed, your rules](https://www.packagemaze.com/)
+   - Source: https://www.packagemaze.com/ (by KK (PackageMaze))
+
+239. **incredible**
+   - https://x.com/MrWatchCEO/status/2100022312640610332?s=20 incredible Linked projects: • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (x.com/MrWatchCEO/status/2100022312640610332) • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (twitter.com/MrWatchCEO/status/2100022312640610332) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549583487898619924
+   - [Post by @MrWatchCEO](https://x.com/MrWatchCEO/status/2100022312640610332?s=20)
+   - Source: https://x.com/MrWatchCEO/status/2100022312640610332?s=20 (by ayden)
+
+240. **I build systems to attack & defend AI systems in the oil & gas sector..**
+   - I build systems to attack & defend AI systems in the oil & gas sector.. I'm hoping Jev is what they say it is... Linked projects: • agentic-first.mp4 — video/mp4 · 199 MB (cdn.discordapp.com/attachments/1483217545040232493/1549578976471548014)
+   - [agentic-first.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1549578976471548014/agentic-first.mp4?ex=6aae8121&is=6aad2fa1&hm=2b94668222e2ef88080b6a51b5f5243c66cbdb00b488d39a24c0b312974350de&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549578988647878706 (by D8RH8R)
+
+241. **Friends, we just published a typesafe-ai extension to swamp-club - We are going to embed that in some of our reviews**
+   - Friends, we just published a typesafe-ai extension to swamp-club - https://swamp-club.com/extensions/@swamp/typesafe-ai We are going to embed that in some of our reviews pipeline for our software factory! Linked projects: • @swamp/typesafe-ai v2026.09.15.1 — Swamp Club Extension — Ask TypeSafe (swamp-club.com/extensions/@swamp/typesafe-ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549558935034396674
+   - [@swamp/typesafe-ai v2026.09.15.1 — Swamp Club Extension](https://swamp-club.com/extensions/@swamp/typesafe-ai)
+   - Source: https://swamp-club.com/extensions/@swamp/typesafe-ai (by Stack72)
+
+242. **Hey everyone! I was sick of making architecture diagrams by hand, so I decided to make a product**
+   - Hey everyone! I was sick of making architecture diagrams by hand, so I decided to make a product that does it instead! https://architecturediagram.ai Linked projects: • AI Architecture Diagram Generator - ArchitectureDiagram.ai — Describe, diagram, review, and present in one workspace. Generate in four formats, compare image models with Party Mode, and refine your architecture through chat. (architecturediagram.ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549553146747949146
+   - [AI Architecture Diagram Generator - ArchitectureDiagram.ai](https://architecturediagram.ai)
+   - Source: https://architecturediagram.ai (by klapp)
+
+243. **A lot of stuff I’ve made (let it populate)**
+   - A lot of stuff I’ve made (let it populate) https://meadowfolio.bisks.net Linked projects: • meadowfolio — @fromthewestmeadow.com — An image gallery, a full index of the software fromthewestmeadow.com has shipped on their own domain, and buildthis (meadowfolio.bisks.net) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549543101599850578
+   - [meadowfolio — @fromthewestmeadow.com](https://meadowfolio.bisks.net)
+   - Source: https://meadowfolio.bisks.net (by pepesilvia3234)
+
+244. **A public AI that anyone can talk to.**
+   - A public AI that anyone can talk to. Everyone talks to and shapes the same one. https://Wildstatic.com Linked projects: • The First Public AI — Talk to Static | Wild Static — Talk to Static, a public AI shared by everyone. There are no separate copies: what it learns from one conversation can shape another. (wildstatic.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549528520852504597
+   - [The First Public AI — Talk to Static | Wild Static](https://Wildstatic.com)
+   - Source: https://Wildstatic.com (by adjohu)
+
+245. **I want access to jev so that I can use it for computer use applications!**
+   - I want access to jev so that I can use it for computer use applications! in this https://www.axstream.dev/ Linked projects: • axstream — A streaming action language for computer-use agents. (axstream.dev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549515100510224414
+   - [axstream](https://www.axstream.dev/)
+   - Source: https://www.axstream.dev/ (by milind)
+
+246. **I want to get access to Jev so I can hook it up in the drone harness I built some time ago.**
+   - I want to get access to Jev so I can hook it up in the drone harness I built some time ago. https://youtu.be/ZMcSh_FrVRg?si=qonCoY9YgiuYCNwp Linked projects: • I BUILT a COCKPIT for GROK to PILOT MY DRONE — I built a cockpit inside AgentGrid, connected Grok to a real drone, and gave it control. It went about as well as you’d expect LOL.You can download AgentGrid... (youtu.be/ZMcSh_FrVRg) • I BUILT a COCKPIT for GROK to PILOT MY DRONE — I built a cockpit inside AgentGrid, connected Grok to a real drone, and gave it control. It went about as well as you’d expect LOL.You can download AgentGrid... (youtube.com/watch) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549514903994237050
+   - [I BUILT a COCKPIT for GROK to PILOT MY DRONE](https://youtu.be/ZMcSh_FrVRg?si=qonCoY9YgiuYCNwp)
+   - [I BUILT a COCKPIT for GROK to PILOT MY DRONE](https://www.youtube.com/watch?v=ZMcSh_FrVRg)
+   - Source: https://youtu.be/ZMcSh_FrVRg?si=qonCoY9YgiuYCNwp (by Souren)
+
+247. **I’m dying to hook that into an AI agent harness.**
+   - I’m dying to hook that into an AI agent harness. Want to talk? I guess this is for sharing so I’ll put a run-through of my dark factory and research pipeline. Ignore the substack “subscribe” spam, it’s free. https://tokenfires.substack.com/p/production-and-research-pipeline Linked projects: • Production and Research Pipeline built by Fable — I’ve gone a bit dark over the last few weeks because of Anthropic’s re-release of Fable. (tokenfires.substack.com/p/production-and-research-pipeline) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549514093063573635
+   - [Production and Research Pipeline built by Fable](https://tokenfires.substack.com/p/production-and-research-pipeline)
+   - Source: https://tokenfires.substack.com/p/production-and-research-pipeline (by TokenFires (Robert Ault))
+
+248. **And yep, `story_signal` is also a noul (forgot to expand the raw request element in the details section seen in the video - its screenshotted below).**
+   - And yep, `story_signal` is also a noul (forgot to expand the raw request element in the details section seen in the video - its screenshotted below). Please let me know if you want me to share the repo Linked projects: • image.png — image/png · 52 KB (cdn.discordapp.com/attachments/1483217545040232493/1531525700085878895)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1531525700085878895/image.png?ex=6aaebeb5&is=6aad6d35&hm=e998111b9c2b69c93932ef91c204d64e90fbe2e9db8af2a016805930b86fff99&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1531525700316561500 (by RM)
+
+249. **10 practical Jev repos: computer-use, trading, routers and more**
+   - A roundup of practical, promising GitHub repos for Jev development: browser-use/jev-ultrafast, TheoLeeCJ/openjev, vinnylarouge/jevlike, jarrodwatts/jev-trader, Anil-matcha/awesome-jev-by-typesafe, awlevin/typesafe-computer-use, devagrawal09/jev-review, gargpratyush/jev-router, vlad-terin/jev-browser, droidrun/mobile-jev. Notes the Jev waitlist clears in about a day — or call typesafe-ai/jev directly via the Vercel AI Gateway. — @studio_yebisu (1.6K likes) Linked projects: • Post by @studio_yebisu — やぁ！兄弟たち！ Jevに関するGitHubの実用性と発展性がありそうなリポジトリをまとめたよ！ やはり、高速判断を要するComputerUseや完全自動トレードなんかに対しての活用が多い印象だね！ Jevは公式のウェイトリストも1日ほどで承認されるけど、待たなくてもVercel AI GatewayからModel: typesafe-ai/jevで直接呼び出せるってさ！ このGrok翻訳っぽい文章はわざわざタイピングしてるゾ！ 1. (x.com/studio_yebisu/status/2100686990090047569)
+   - [Post by @studio_yebisu](https://x.com/studio_yebisu/status/2100686990090047569)
+   - Source: https://x.com/studio_yebisu/status/2100686990090047569 (by @studio_yebisu)
+
+250. **awesome-jev: community patterns, prompts and starter code**
+   - A community roundup collecting ways to use TypeSafe Jev: patterns, prompts, starter code, examples and more. Linked projects: • Anil-matcha/awesome-jev-by-typesafe — Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One model for fast, typed, confidence-aware decisions in software. — 509★ · Python · agent-workflows, ai-api, ai-automation, clas (github.com/Anil-matcha/awesome-jev-by-typesafe)
+   - [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe)
+   - Source: https://github.com/Anil-matcha/awesome-jev-by-typesafe (by @Anil-matcha)
+
+251. **jev-review: diff-by-diff code review for risk**
+   - A code review workflow inspecting git diffs or codebases step-by-step, structuring accuracy, safety, reliability, compatibility and test risks. Linked projects: • devagrawal09/jev-review — A staged code-review workflow and local dashboard built with TypeSafe Jev. — 263★ · TypeScript · ai, code-review, jev, typesafe-ai, typescript (github.com/devagrawal09/jev-review)
+   - [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review)
+   - Source: https://github.com/devagrawal09/jev-review (by @devagrawal09)
+
+252. **Tocsin triages 22.8M log lines to 123 pages for $0.64 with Jev**
+   - Ateeq used Jev to solve a problem every agent eventually runs into: reading logs. Tocsin groups 22.8M log lines into 11,812 repeating patterns, then asks Jev about each pattern once — 6 minutes and 64 cents (vs $1,120 to run an LLM on every line), surfacing 123 patterns that actually needed a look. The paging policy is just a prompt: you tell it what should wake someone up at 3am and what's just another log line. — @TPateeq (3 likes) Linked projects: • Post by @TPateeq — I used Jev to solve a problem every agent eventually runs into: reading logs. 22.8M lines, and running an LLM on every one would've cost $1,120. Tocsin groups them into 11,812 repeating patterns, then asks Jev about each pattern once. (x.com/TPateeq/status/2101062313516347491) • TPAteeq/tocsin — Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust (github.com/TPA
+   - [Post by @TPateeq](https://x.com/TPateeq/status/2101062313516347491)
+   - [TPAteeq/tocsin](https://github.com/TPAteeq/tocsin)
+   - Source: https://x.com/TPateeq/status/2101062313516347491 (by @TPateeq)
+
+253. **10 Jev-native products, ranked**
+   - 10 Jev native products I’d build, ranked by how much fast, cheap decisions change the product: 1. Agent spend firewall Before every purchase, Jev returns approve/review/deny plus a confidence score based on price, vendor, user rules and purchase history. 2. Self-healing tool…
+   - Source: https://x.com/gregisenberg/status/2101284640828915995 (by @gregisenberg)
+
+254. **AI marketing with Jev (full course)**
+   - Article how to master AI marketing with Jev TypeSafe (full course) most of the decisions your next campaign needs are already sitting in tools you have open right now. customer notes carry the buying problem. ad results carry which proof moved someone. inbound...
+   - Source: https://x.com/knoxtwts/status/2101017790081806589 (by @knoxtwts)
+
+255. **Hyper-fast sorting for every choice**
+   - Founders will win big by embedding the frointier into consumer products. Jev is a great example! Quote Josh Elman @joshelman · Sep 18 Already Jev-pilled What really has me excited is the next wave of consumer startups that can build new smart things. Whenever faced with many options (travel ideas, books to read, …) you can now get hyper fast sorting of which may be the best fit!
+   - Source: https://x.com/kirbyman01/status/2101148352155107807 (by @kirbyman01)
+
+256. **SQA workflows should use Jev**
+   - This is extremely valuable. SQA workflows should implement this. Faster at driving the AUT and better at validation.
+   - Source: https://x.com/edtadros/status/2100401009105494400 (by @edtadros)
+
+257. **Organizing ad research**
+   - Classifying ad observations across brands. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Reports processing 724 ads from 37 brands in 40 seconds for $0.09.
+   - Caveat: Gemini performed preprocessing. The complete workflow cost is unclear.
+   - Evidence: demo
+   - [https://x.com/TheMattBerman/status/2100654891756589230](https://x.com/TheMattBerman/status/2100654891756589230)
+   - [https://x.com/TheMattBerman/status/2100656956759323032](https://x.com/TheMattBerman/status/2100656956759323032)
+   - Source: https://x.com/TheMattBerman/status/2100654891756589230 (by Matthew Berman)
+
+258. **Reddit thread monitoring**
+   - everyone's making demos with Jev but nobody is making real products introducing https://t.co/fClaUNrMAn find and monitor reddit threads to get cited by AI &gt; FREE &gt; 4000 reddit threads scanned &gt; email, discord, slack only possible to give for free bc of Jev &amp; @getanyapi https://t.co/31iD8ygfxu Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @mxfp4.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/mxfp4/status/2101070906852298910](https://x.com/mxfp4/status/2101070906852298910)
+   - Source: https://x.com/mxfp4/status/2101070906852298910 (by Kevin Wang)
+
+259. **Lead and outreach scoring**
+   - Scores 700 leads and personalized outreach messages for predicted performance, confidence and mismatches. The author reports 40 seconds and $0.09; predicted scores are not observed conversion results. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @romanbuildsaas.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/romanbuildsaas/status/2100891604735099103](https://x.com/romanbuildsaas/status/2100891604735099103)
+   - Source: https://x.com/romanbuildsaas/status/2100891604735099103 (by Romàn)
+
+260. **Classifying 1,018 AI papers**
+   - A pipeline summarizes papers with DeepSeek V4 Flash and uses Jev to select among 24 topics. The author reports $0.08 for Jev classification and 256-millisecond median latency per paper, plus $3.99 for summaries; classification evaluations were still in progress. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @nutlope.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/nutlope/status/2100426999546184123](https://x.com/nutlope/status/2100426999546184123)
+   - Source: https://x.com/nutlope/status/2100426999546184123 (by Hassan)
 
 ### Integrations (258)
 
@@ -3460,1293 +4779,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550991365536747650/image.png?ex=6ab058c5&is=6aaf0745&hm=a61303782797655b946220532a904ce8ac54c6d23838270ca0e28c9bc5a1b132&)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550991366656364574 (by BreadDog)
 
-### Work (256)
-
-1. **Score inbound leads 0–1 and reply to the 98s first**
-   - A graphic design agency runs every contact-form submission through Jev as an is-good-lead score. A 98% lead gets an instant human reply; vague maybes get a slower touch. Same pattern fits any business with an expensive inbound queue.
-   - Source: https://youtu.be/4mTLpuQpB80 (by Jev launch video)
-
-2. **Route support inquiries to the right team instantly**
-   - Incoming support requests get classified the moment they arrive — which product team owns it, how urgent it is — instead of sitting in a general queue. The AI-traffic-cop pattern: decide in ~200ms, route, escalate, or auto-resolve.
-   - Source: https://youtu.be/4mTLpuQpB80 (by Jev launch video)
-
-3. **here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which**
-   - https://jev-nethack-live.poppybyte.chatgpt.site/ here you can watch jev play nethack live we show each movs action distribution as well and you can get the data which is cool Linked projects: • Jev / NetHack — public run (jev-nethack-live.poppybyte.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550581784922554498
-   - [Jev / NetHack — public run](https://jev-nethack-live.poppybyte.chatgpt.site/)
-   - Source: https://jev-nethack-live.poppybyte.chatgpt.site/ (by 0xBunny)
-
-4. **lifelike.build is a small village that runs itself, streamed live to your browser.**
-   - https://lifelike.build/ lifelike.build is a small village that runs itself, streamed live to your browser. Five families forage, farm, trade, gossip, raise children and dogs, and take their chances in the woods. Every judgment call a villager makes comes from Jev, TypeSafe's decision model, and a second small model keeps a running newspaper on what happens. Open any villager to see what they need, feel, remember, and why they did what they just did Linked projects: • lifelike.build — Ember Hollow, a living village run on Jev. Needs, moods, memories, gossip, trade and the wild, streamed live. (lifelike.build) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550579426264354847
-   - [lifelike.build](https://lifelike.build/)
-   - Source: https://lifelike.build/ (by dminGod)
-
-5. **IDK if Steve is here but this is diabolical.**
-   - IDK if Steve is here but this is diabolical. Took `vibe coding` to a whole new level https://probably-lang.southpolesteve.workers.dev/ Linked projects: • Probably — a programming language for LLM workflows (probably-lang.southpolesteve.workers.dev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550578203037405225
-   - [Probably — a programming language for LLM workflows](https://probably-lang.southpolesteve.workers.dev/)
-   - Source: https://probably-lang.southpolesteve.workers.dev/ (by Max N)
-
-6. **Building Modus Computer, mobile-native computer agent:**
-   - Building Modus Computer, mobile-native computer agent: https://x.com/envystor/status/2101016575226617901 Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550576708464414740
-   - [https://x.com/envystor/status/2101016575226617901](https://x.com/envystor/status/2101016575226617901)
-   - Source: https://x.com/envystor/status/2101016575226617901 (by jroller)
-
-7. **Then this is interesting/live real time fallacy detector that sits on X:**
-   - Then this is interesting/live real time fallacy detector that sits on X: https://x.com/smalltownrobot/status/2100999987572203809 Linked projects: • Post by @smalltownrobot — LOGICAL FALLACIES: Next jev tool I'm working on is a @brave extension that gives a probabilistic fallacy score to every post on X timeline in realtime. It also flagged well reasoned, internally consistent + logical posts (x.com/smalltownrobot/status/2100999987572203809) • Post by @smalltownrobot — LOGICAL FALLACIES: Next jev tool I'm working on is a @brave extension that gives a probabilistic fallacy score to every post on X timeline in realtime. It also flagged well reasoned, internally consistent + logical posts (twitter.com/smalltownrobot/status/2100999987572203809) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550573317046665226
-   - [Post by @smalltownrobot](https://x.com/smalltownrobot/status/2100999987572203809)
-   - Source: https://x.com/smalltownrobot/status/2100999987572203809 (by KlingonChef)
-
-8. **I've got three projects to showcase I'm working on:**
-   - I've got three projects to showcase I'm working on: https://x.com/smalltownrobot/status/2100600923672228189 Linked projects: • Post by @smalltownrobot — My @typesafeai jev example. 1024 personas with specific geography/age/ideological markers (testing - not a strong methodology) to see how each respond to a changing policy discussion in real time. In this case, aliens. H (x.com/smalltownrobot/status/2100600923672228189) • Post by @smalltownrobot — My @typesafeai jev example. 1024 personas with specific geography/age/ideological markers (testing - not a strong methodology) to see how each respond to a changing policy discussion in real time. In this case, aliens. H (twitter.com/smalltownrobot/status/2100600923672228189) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550573185181810779
-   - [Post by @smalltownrobot](https://x.com/smalltownrobot/status/2100600923672228189)
-   - Source: https://x.com/smalltownrobot/status/2100600923672228189 (by KlingonChef)
-
-9. **It worked wth**
-   - It worked wth https://x.com/brainstormity/status/2101008659639672833 Linked projects: • Post by @brainstormity — JEV powered twitter market sentiment analysis won. Told to buy Bitcoin at $76k, 15 hrs ago And we are at $81k rn Open sourcing the whole code soon! (x.com/brainstormity/status/2101008659639672833) • Post by @brainstormity — JEV powered twitter market sentiment analysis won. Told to buy Bitcoin at $76k, 15 hrs ago And we are at $81k rn Open sourcing the whole code soon! (twitter.com/brainstormity/status/2101008659639672833) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550567480215470270
-   - [Post by @brainstormity](https://x.com/brainstormity/status/2101008659639672833)
-   - Source: https://x.com/brainstormity/status/2101008659639672833 (by brainstormity)
-
-10. **JevGate reviewd my entire code-base for 20 cents and even cached all that so new runs on CI will only check differs , yep i will finalyl reduce dev ops**
-   - JevGate reviewd my entire code-base for 20 cents and even cached all that so new runs on CI will only check differs , yep i will finalyl reduce dev ops costs Linked projects: • image.png — image/png · 114 KB (cdn.discordapp.com/attachments/1483217545040232493/1550566925673832561)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550566925673832561/image.png?ex=6aaecd7b&is=6aad7bfb&hm=4aa16d8777c5c5116a1f029b9fc6947f10f999ec1057ffd8fbf85fed81c0eaa3&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550566926042923008 (by Binatof)
-
-11. **built an MCP gateway that uses jev and seen 79% fewer input tokens on MCP heavy tasks**
-   - https://x.com/vpkxvoice/status/2100995268133146698 built an MCP gateway that uses jev and seen 79% fewer input tokens on MCP heavy tasks Linked projects: • Post by @vpkxvoice — Well I I built a local MCP gateway that connects agents to multiple mcp servers and jev finds the tool in the mcp gateway to execute and agent will only fill the arguments. LLMs dont have to go through all the tools or n (x.com/vpkxvoice/status/2100995268133146698) • Post by @vpkxvoice — Well I I built a local MCP gateway that connects agents to multiple mcp servers and jev finds the tool in the mcp gateway to execute and agent will only fill the arguments. LLMs dont have to go through all the tools or n (twitter.com/vpkxvoice/status/2100995268133146698) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550566024691060856
-   - [Post by @vpkxvoice](https://x.com/vpkxvoice/status/2100995268133146698)
-   - Source: https://x.com/vpkxvoice/status/2100995268133146698 (by Prasanth)
-
-12. **Jev plays Mario !**
-   - Jev plays Mario ! https://x.com/rherton/status/2101005942913729001?s=20 Linked projects: • Post by @rherton — the obligatory AI plays Mario, Jev version Jev is TypeSafe's System One model. u send it state and a typed question, it sends back a choice with probabilities. so every move here is one question: run, hop, jump, wait or (x.com/rherton/status/2101005942913729001) • Post by @rherton — the obligatory AI plays Mario, Jev version Jev is TypeSafe's System One model. u send it state and a typed question, it sends back a choice with probabilities. so every move here is one question: run, hop, jump, wait or (twitter.com/rherton/status/2101005942913729001) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550564819894272103
-   - [Post by @rherton](https://x.com/rherton/status/2101005942913729001?s=20)
-   - Source: https://x.com/rherton/status/2101005942913729001?s=20 (by Zac)
-
-13. **Jev: The Definitive Guide to System One AI in TypeScript**
-   - http://tiny.cc/Jev Jev: The Definitive Guide to System One AI in TypeScript Linked projects: • Jev: The Definitive Guide to System One AI in TypeScript (tiny.cc/Jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550559790860738670
-   - [Jev: The Definitive Guide to System One AI in TypeScript](http://tiny.cc/Jev)
-   - Source: http://tiny.cc/Jev (by Tronix)
-
-14. **I built a single shot AI page builder using Jev, Describe a website, and Jev will build it in less than a half second.**
-   - I built a single shot AI page builder using Jev, Describe a website, and Jev will build it in less than a half second. Exportable as a standalone page :anime_glasses: Linked projects: • Page_Builder.mp4 — video/mp4 · 15 MB (cdn.discordapp.com/attachments/1483217545040232493/1550557288413270108)
-   - [Page_Builder.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550557288413270108/Page_Builder.mp4?ex=6aaec481&is=6aad7301&hm=7be6f8fac1378bffdf07da0627bf87ff8650182e636ba8e79fa1b8c83dd02ee9&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550557289579282493 (by Nasr)
-
-15. **Yeah it's a joke/parody site so it's kind of intentionally poor/old looking but since I looked up the original logo, and it's sans-serif as well, I figured I should change it.**
-   - Yeah it's a joke/parody site so it's kind of intentionally poor/old looking but since I looked up the original logo, and it's sans-serif as well, I figured I should change it. https://askjevves.com/?v=20 Linked projects: • Ask Jevves — Have a question? Ask Jevves. The butler who knows best, now powered by a frontier decision model. (askjevves.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550554036389027841
-   - [Ask Jevves](https://askjevves.com/?v=20)
-   - Source: https://askjevves.com/?v=20 (by rei)
-
-16. **built this**
-   - built this https://x.com/nathanwchan/status/2100994031316766765?s=20 Linked projects: • Post by @nathanwchan — The perfect Jev use case you've all been waiting for!!! It's all in your hands now @thsottiaux https://will-tibo-reset.vercel.app/ (x.com/nathanwchan/status/2100994031316766765) • Post by @nathanwchan — The perfect Jev use case you've all been waiting for!!! It's all in your hands now @thsottiaux https://will-tibo-reset.vercel.app/ (twitter.com/nathanwchan/status/2100994031316766765) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550553872433676409
-   - [Post by @nathanwchan](https://x.com/nathanwchan/status/2100994031316766765?s=20)
-   - Source: https://x.com/nathanwchan/status/2100994031316766765?s=20 (by nate)
-
-17. **I'm really loving it for these real-time voice use cases**
-   - I'm really loving it for these real-time voice use cases https://x.com/zain_hoda/status/2100992526417031678?s=20 Linked projects: • Post by @zain_hoda — Drive-thru ordering at Big Kahuna burger powered by @typesafeai Jev The model is really good/fast/cheap at Natural Language -> Menu -> Selection (x.com/zain_hoda/status/2100992526417031678) • Post by @zain_hoda — Drive-thru ordering at Big Kahuna burger powered by @typesafeai Jev The model is really good/fast/cheap at Natural Language -> Menu -> Selection (twitter.com/zain_hoda/status/2100992526417031678) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550551489326616647
-   - [Post by @zain_hoda](https://x.com/zain_hoda/status/2100992526417031678?s=20)
-   - Source: https://x.com/zain_hoda/status/2100992526417031678?s=20 (by Zain)
-
-18. **Jev as a terminal guardrail.**
-   - https://jevguard.vercel.app/ Jev as a terminal guardrail. You can bypass it? Then customize your own Jev and bypass it again! Linked projects: • JevGuard — A CTF: TypeSafe AI's Jev vets every shell command before it runs in an isolated sandbox. Beat the vetter, read the flag. (jevguard.vercel.app) • image.png — image/png · 342 KB (cdn.discordapp.com/attachments/1483217545040232493/1550550964631502879) • image.png — image/png · 312 KB (cdn.discordapp.com/attachments/1483217545040232493/1550550966372143184) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550550967143891046
-   - [JevGuard](https://jevguard.vercel.app/)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550550964631502879/image.png?ex=6aaebe9d&is=6aad6d1d&hm=e48a9a0d04bd47e4acc15ae775c0fee80161e4fc452d87a57ca86bb8f11f44a9&)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550550966372143184/image.png?ex=6aaebe9e&is=6aad6d1e&hm=3081ec315810738a13938e6ddac1cde53a5a1e4b7661b0f76424208a04540139&)
-   - Source: https://jevguard.vercel.app/ (by lamp)
-
-19. **Poker is fine, but Jev is lost in mazes ...**
-   - Poker is fine, but Jev is lost in mazes ... https://x.com/danmana/status/2100991925364969827 Linked projects: • Post by @danmana — My Jev maze solving experiments are not going well Poor guy is more lost than the guy from Memento without his tattoos and polaroids 🙈 (x.com/danmana/status/2100991925364969827) • Post by @danmana — My Jev maze solving experiments are not going well Poor guy is more lost than the guy from Memento without his tattoos and polaroids 🙈 (twitter.com/danmana/status/2100991925364969827) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550550868808564736
-   - [Post by @danmana](https://x.com/danmana/status/2100991925364969827)
-   - Source: https://x.com/danmana/status/2100991925364969827 (by danmana)
-
-20. **can it solve the zebra puzzle?**
-   - can it solve the zebra puzzle? https://en.wikipedia.org/wiki/Zebra_Puzzle Linked projects: • Zebra Puzzle - Wikipedia (en.wikipedia.org/wiki/Zebra_Puzzle) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550548220231286885
-   - [Zebra Puzzle - Wikipedia](https://en.wikipedia.org/wiki/Zebra_Puzzle)
-   - Source: https://en.wikipedia.org/wiki/Zebra_Puzzle (by empath75)
-
-21. **I built a logic interpreter on top of Jev.**
-   - I built a logic interpreter on top of Jev. It runs a Prolog-style language where the facts and rules are plain English, and Jev does the unification Linked projects: • CleanShot_2026-09-18_at_11.54.24.mp4 — video/mp4 · 5 MB (cdn.discordapp.com/attachments/1483217545040232493/1550544719774351410)
-   - [CleanShot_2026-09-18_at_11.54.24.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550544719774351410/CleanShot_2026-09-18_at_11.54.24.mp4?ex=6aaeb8cc&is=6aad674c&hm=8ad5ca40d82b73c82ecf13e4439e9abdad99bc5a7ff88649d4e06737cf0ef8d3&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550544720386592929 (by Shawn Simister)
-
-22. **We should have a page of just Jev texas holdem poker apps 😂 I think its aggressiveness depends a lot on the prompting?**
-   - We should have a page of just Jev texas holdem poker apps 😂 https://x.com/imcharliegraham/status/2100954087605113072. I think its aggressiveness depends a lot on the prompting? Linked projects: • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (x.com/imcharliegraham/status/2100954087605113072) • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (twitter.com/imcharliegraham/status/2100954087605113072) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550542048782852208
-   - [Post by @imcharliegraham](https://x.com/imcharliegraham/status/2100954087605113072)
-   - Source: https://x.com/imcharliegraham/status/2100954087605113072 (by Cryptog (Charlie))
-
-23. **Had this idea tonight in a dream.**
-   - https://askjevves.com/ Had this idea tonight in a dream. Just felt like making it. I managed to find more than one way to use Jev's decision and classification abilities, it was a good starting project to try jev out Linked projects: • Ask Jevves — Have a question? Ask Jevves. The butler who knows best, now powered by a frontier decision model. (askjevves.com) • image.png — image/png · 92 KB (cdn.discordapp.com/attachments/1483217545040232493/1550537357516734594) • image.png — image/png · 129 KB (cdn.discordapp.com/attachments/1483217545040232493/1550537358162792498) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550537358502535321
-   - [Ask Jevves](https://askjevves.com/)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550537357516734594/image.png?ex=6aaeb1f1&is=6aad6071&hm=35dd1786d62ce4fb81413ef89c31cc7201872720e6ddf8dbc8e1fa4d28e836f4&)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550537358162792498/image.png?ex=6aaeb1f1&is=6aad6071&hm=10df2d4c1cc69a586922bfc732861848e735aeb6bafeaa92e0c470dc2f84fd1a&)
-   - Source: https://askjevves.com/ (by rei)
-
-24. **used the jev cli above to scan PRs for breaking changes -- ``` time ./breaking-changes.sh --debug … base: diff**
-   - used the jev cli above to scan PRs for breaking changes -- ``` time ./breaking-changes.sh --debug … base: diff 4a53517baa3728f331ed2a431804155fb296f8b9 [medium] crates/organization_service_persistence/src/lib.rs:33 OrganizationServicePersistence Three new public fields (installable_repo, installable_version_repo, installation_repo) were added to the struct breaks: Any code that constructs OrganizationServicePersistence via struct literal (rather than the builder) will fail to compile since new fields must be initialized; also breaks exhaustive pattern matches or destructuring on the struct. Flagged but not breaking on a closer look (1): crates/organization_service_persistence/src/migrations/m20260916_01_create_installable_catalog_tables.rs:1 — This migration only creates new tables (installable, installable_version, installable_share, installation) and their indexes; it does not drop or 
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550536033513377944 (by empath75)
-
-25. **I've put Jev in a poker tournament with Astra, Sol, Terra, Luna Jev is so conservative, Terra is a bully, Astra is**
-   - I've put Jev in a poker tournament with Astra, Sol, Terra, Luna Jev is so conservative, Terra is a bully, Astra is balanced https://x.com/danmana/status/2100975457759789492 Linked projects: • Post by @danmana — Can Jev play poker? Yes Can Jev beat OpenAI? Maybe Here is a tournament between Jev, Terra and Astra (x.com/danmana/status/2100975457759789492) • Post by @danmana — Can Jev play poker? Yes Can Jev beat OpenAI? Maybe Here is a tournament between Jev, Terra and Astra (twitter.com/danmana/status/2100975457759789492) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550534522968477706
-   - [Post by @danmana](https://x.com/danmana/status/2100975457759789492)
-   - Source: https://x.com/danmana/status/2100975457759789492 (by danmana)
-
-26. **exactly, check out the other commands if you want : ] I put a website showcasing them**
-   - exactly, check out the other commands if you want : ] I put a website showcasing them https://jevcli.vectorz.app/ Linked projects: • Jev CLI: AI you can grep — Verify claims, screen text, rank candidates, ask anything. Probabilities and exit codes, not prose. (jevcli.vectorz.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550532200355733514
-   - [Jev CLI: AI you can grep](https://jevcli.vectorz.app/)
-   - Source: https://jevcli.vectorz.app/ (by Nasr)
-
-27. **I was inspired of all the content of Jev being used as a "creative" tool and tried to let it paint on the same image over multiple iterations:**
-   - I was inspired of all the content of Jev being used as a "creative" tool and tried to let it paint on the same image over multiple iterations: https://x.com/crossiBuilds/status/2100972788164985043 Linked projects: • Post by @crossiBuilds — Here's what happens if you let Jev draw for multiple iterations. Every pixel gets the color of the neighbors from the last run and a scaled down map of the whole image as the context. Worked not that bad until the 6th or (x.com/crossiBuilds/status/2100972788164985043) • Post by @crossiBuilds — Here's what happens if you let Jev draw for multiple iterations. Every pixel gets the color of the neighbors from the last run and a scaled down map of the whole image as the context. Worked not that bad until the 6th or (twitter.com/crossiBuilds/status/2100972788164985043) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/155053200
-   - [Post by @crossiBuilds](https://x.com/crossiBuilds/status/2100972788164985043)
-   - Source: https://x.com/crossiBuilds/status/2100972788164985043 (by Tim Krase)
-
-28. **Hope this hasn’t been done already😁**
-   - Hope this hasn’t been done already😁 https://x.com/sarem_seitz/status/2100971430124953608?s=46 Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550531579405930648
-   - [https://x.com/sarem_seitz/status/2100971430124953608?s=46](https://x.com/sarem_seitz/status/2100971430124953608?s=46)
-   - Source: https://x.com/sarem_seitz/status/2100971430124953608?s=46 (by spike_spiegel)
-
-29. **Here's how to use it:**
-   - Here's how to use it: https://query.farm/blog/a-where-clause-for-taste/ Linked projects: • A SQL WHERE Clause for Taste | Query.Farm — I pointed DuckDB at Hacker News and at Jev, TypeSafe (query.farm/blog/a-where-clause-for-taste) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550529701792063550
-   - [A SQL WHERE Clause for Taste | Query.Farm](https://query.farm/blog/a-where-clause-for-taste/)
-   - Source: https://query.farm/blog/a-where-clause-for-taste/ (by Rusty Conover)
-
-30. **Hey, have you considered putting JevRouter directly between the agent and tool execution?**
-   - Hey, have you considered putting JevRouter directly between the agent and tool execution? The LLM would propose an action, but a controller would use JevRouter’s decision and policy checks to decide whether to execute it. The agent wouldn’t have a separate path to call the tool directly. That would make routing an enforced step rather than something the agent is instructed to consult. Is that a direction you’re considering?
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550529231635746827 (by godindav)
-
-31. **Found a way to use Jev auditing my vibecoded cpp codebase and help with atomic fixing.**
-   - Found a way to use Jev auditing my vibecoded cpp codebase and help with atomic fixing. Linked projects: • image.png — image/png · 100 KB (cdn.discordapp.com/attachments/1483217545040232493/1550525061591736490) • image.png — image/png · 38 KB (cdn.discordapp.com/attachments/1483217545040232493/1550525062052970536)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550525061591736490/image.png?ex=6aaea67e&is=6aad54fe&hm=5c12d70c2710cc65709e0b11d6b21bfa4d433192a0fc30995dc6a493110639dc&)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550525062052970536/image.png?ex=6aaea67e&is=6aad54fe&hm=a7bcedf8dee31b3ddf0ca67af638bac9cff26819bc645c3c83eb5890bb82f24c&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550525062535319602 (by Q86)
-
-32. **doing a in person jev demo night next week for my nyc peeps.**
-   - doing a in person jev demo night next week for my nyc peeps. might also live stream from x if people are interested : https://luma.com/xogxfokf Linked projects: • Jev Demo Night · Luma — the first ever jev demo night jev is the new system one model out of typesafe ai: a model that just judges. one verdict, milliseconds, no vibes. it's been out… (luma.com/xogxfokf) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550521101522702356
-   - [Jev Demo Night · Luma](https://luma.com/xogxfokf)
-   - Source: https://luma.com/xogxfokf (by Kaya)
-
-33. **Jev GL account coding**
-   - Jev GL account coding https://x.com/its_d_i_m_a/status/2100961401183592885?s=20 Linked projects: • Post by @its_d_i_m_a — One of the easiest @GetPeakflo use cases for Jev is GL / findim invoice coding on a fly. (x.com/its_d_i_m_a/status/2100961401183592885) • Post by @its_d_i_m_a — One of the easiest @GetPeakflo use cases for Jev is GL / findim invoice coding on a fly. (twitter.com/its_d_i_m_a/status/2100961401183592885) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550520877576102049
-   - [Post by @its_d_i_m_a](https://x.com/its_d_i_m_a/status/2100961401183592885?s=20)
-   - Source: https://x.com/its_d_i_m_a/status/2100961401183592885?s=20 (by drusky)
-
-34. **it sort of sucks, but i knocked together a quick UI generator**
-   - it sort of sucks, but i knocked together a quick UI generator Linked projects: • screenrecording.mov — video/quicktime · 9 MB (cdn.discordapp.com/attachments/1483217545040232493/1550516653400395776)
-   - [screenrecording.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550516653400395776/screenrecording.mov?ex=6aae9ea9&is=6aad4d29&hm=eabd7550a885e3867d4eb48749949702eb605b420969f00c42f4fcac347032af&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550516653627019376 (by empath75)
-
-35. **Shared by Cryptog (Charlie): imcharliegraham status 2100954087605113072**
-   - https://x.com/imcharliegraham/status/2100954087605113072?s=20 Linked projects: • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (x.com/imcharliegraham/status/2100954087605113072) • Post by @imcharliegraham — Playing with Jev from @typesafeai I made a texas hold'em poker game that uses Jev to make the decisions. You can play against the bots and it works surprisingly well! (twitter.com/imcharliegraham/status/2100954087605113072) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550512902618878022
-   - [Post by @imcharliegraham](https://x.com/imcharliegraham/status/2100954087605113072?s=20)
-   - Source: https://x.com/imcharliegraham/status/2100954087605113072?s=20 (by Cryptog (Charlie))
-
-36. **A typed-decision model was wired into five places in a Dungeons & Dragons co-DM.**
-   - https://iambraun.com/jevreports/co-dm/ A typed-decision model was wired into five places in a Dungeons & Dragons co-DM. This is the measurement of whether it earns its place — against the code it replaces, and against a frontier model doing the same job. Linked projects: • Worth Asking — A benchmark of a typed-decision model against the code it replaces and against frontier models, on a D&D co-DM (iambraun.com/jevreports/co-dm) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550511943716966430
-   - [Worth Asking](https://iambraun.com/jevreports/co-dm/)
-   - Source: https://iambraun.com/jevreports/co-dm/ (by DGB@workflowtech.ai)
-
-37. **anyone else doing real-time zero-shot robotics (non-simulation)?**
-   - anyone else doing real-time zero-shot robotics (non-simulation)? https://x.com/zaidbul/status/2100949713138729135 Linked projects: • Post by @zaidbul — have not seen anyone actually using Jev for robotics outside of a simulation, so here is Jev running with no policy, zero-shot controlling the robotic arm. @typesafeai @CompleteSkeptic (x.com/zaidbul/status/2100949713138729135) • 100597.mp4 — video/mp4 · 22 MB (cdn.discordapp.com/attachments/1483217545040232493/1550509703933595748) • Post by @zaidbul — have not seen anyone actually using Jev for robotics outside of a simulation, so here is Jev running with no policy, zero-shot controlling the robotic arm. @typesafeai @CompleteSkeptic (twitter.com/zaidbul/status/2100949713138729135) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550509705913434223
-   - [Post by @zaidbul](https://x.com/zaidbul/status/2100949713138729135)
-   - [100597.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550509703933595748/100597.mp4?ex=6aae9830&is=6aad46b0&hm=8e08eb7314d0d8de42e5fc0023ba5da41a423bc124d9fc6a6927cdb96d744fb9&)
-   - Source: https://x.com/zaidbul/status/2100949713138729135 (by human)
-
-38. **very excited to see Jev used more in gaming**
-   - https://x.com/dparksdev/status/2100949987571974537?s=46&t=mUFddqq8RWeTtOazjuUS6g very excited to see Jev used more in gaming Linked projects: • Post by @dparksdev — My first experiment with Jev from @typesafeai. "Playable" video game NPCs. Tell one to explore, gather resources, or build a house. Override its directive and watch it change course. The NPC's next action choices and pro (x.com/dparksdev/status/2100949987571974537) • Post by @dparksdev — My first experiment with Jev from @typesafeai. "Playable" video game NPCs. Tell one to explore, gather resources, or build a house. Override its directive and watch it change course. The NPC's next action choices and pro (twitter.com/dparksdev/status/2100949987571974537) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550509355454169098
-   - [Post by @dparksdev](https://x.com/dparksdev/status/2100949987571974537?s=46&t=mUFddqq8RWeTtOazjuUS6g)
-   - Source: https://x.com/dparksdev/status/2100949987571974537?s=46&t=mUFddqq8RWeTtOazjuUS6g (by Cashed)
-
-39. **waitlist or use open router**
-   - waitlist or use open router https://openrouter.ai/typesafe/jev-1.13 Linked projects: • Jev 1.13 - API Pricing & Providers — Jev is a structured decision model from TypeSafe, and the first of its System One models. $0.042 per million input tokens, $0 per million output tokens. 32,000 token context window. (openrouter.ai/typesafe/jev-1.13) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550505893005623397
-   - [Jev 1.13 - API Pricing &amp; Providers](https://openrouter.ai/typesafe/jev-1.13)
-   - Source: https://openrouter.ai/typesafe/jev-1.13 (by splitfire?)
-
-40. **Jev playing Tic Tac Toe on Elixir with Jido and ReqLLM**
-   - Jev playing Tic Tac Toe on Elixir with Jido and ReqLLM https://x.com/mikehostetler/status/2100946109308748079 Linked projects: • Post by @mikehostetler — Jido Jev + ReqLLM playing Tic Tac Toe Each agent makes Jev calls to determine their next move, pretty fun! Now time to scale up ... (x.com/mikehostetler/status/2100946109308748079) • Post by @mikehostetler — Jido Jev + ReqLLM playing Tic Tac Toe Each agent makes Jev calls to determine their next move, pretty fun! Now time to scale up ... (twitter.com/mikehostetler/status/2100946109308748079) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550505016174059540
-   - [Post by @mikehostetler](https://x.com/mikehostetler/status/2100946109308748079)
-   - Source: https://x.com/mikehostetler/status/2100946109308748079 (by mikehostetler)
-
-41. **Its meant for such workflows so it should help on classification, prioritization and routing.**
-   - Its meant for such workflows so it should help on classification, prioritization and routing. Two things to look into language support (as I recall its english only but I could be wrong) and how you frame your questions (its very sensitive to this aspect that how you ask can sway the probabilities of answers).
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550498740865863791 (by PromptForcePrime)
-
-42. **alignment check 😬 actually really shocked at this lol**
-   - https://x.com/145k4/status/2100933101966758250?s=20 alignment check 😬 actually really shocked at this lol Linked projects: • Post by @145k4 — i was curious if @typesafeai 's jev would make different judgements if you push a problem through a Choice vs. a Noul, so i ran it through a short series of trolley problems the only time they disagreed on judgement? dec (x.com/145k4/status/2100933101966758250) • Post by @145k4 — i was curious if @typesafeai 's jev would make different judgements if you push a problem through a Choice vs. a Noul, so i ran it through a short series of trolley problems the only time they disagreed on judgement? dec (twitter.com/145k4/status/2100933101966758250) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550492717799178360
-   - [Post by @145k4](https://x.com/145k4/status/2100933101966758250?s=20)
-   - Source: https://x.com/145k4/status/2100933101966758250?s=20 (by alaska)
-
-43. **And [here the repo]( )**
-   - And [here the repo](https://gitlab.com/porky11/text-adventure) Linked projects: • Fabio Krapohl / text-adventure · GitLab — GitLab.com (gitlab.com/porky11/text-adventure) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550492055334293525
-   - [Fabio Krapohl / text-adventure · GitLab](https://gitlab.com/porky11/text-adventure)
-   - Source: https://gitlab.com/porky11/text-adventure (by p 🦊)
-
-44. **can anyone help me with my website or give any reviews/suggestions**
-   - can anyone help me with my website or give any reviews/suggestions https://learnivia-green.vercel.app/ Linked projects: • Learnivia — Free Peer-to-Peer Online Tutoring — Free 1-on-1 tutoring and interactive workshops led by high school and university peers. No subscriptions, zero fees. (learnivia-green.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550487041035477032
-   - [Learnivia — Free Peer-to-Peer Online Tutoring](https://learnivia-green.vercel.app/)
-   - Source: https://learnivia-green.vercel.app/ (by Shourya Sharan)
-
-45. **i made a website for your so you can ask jev about the next winning lottery numbers**
-   - https://lottowerk.purh.pw/ i made a website for your so you can ask jev about the next winning lottery numbers Linked projects: • LOTTOWERK — winning numbers, answered by Jev — Tell it how many numbers your lottery has. Jev, a model that answers typed questions instead of writing text, answers one question per ball. (lottowerk.purh.pw) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550476500267180042
-   - [LOTTOWERK — winning numbers, answered by Jev](https://lottowerk.purh.pw/)
-   - Source: https://lottowerk.purh.pw/ (by purhur)
-
-46. **guys, this needs your attention I just figured out knowledge cutoff date for Jev!!**
-   - guys, this needs your attention I just figured out knowledge cutoff date for Jev!! It is simple https://x.com/tawfeksraj/status/2100909752918180217?s=61&t=TFADXWS1ohIjhABKwP0oig Linked projects: • Post by @TawfekSraj — I figured out Jev knowledge cutoff date: It’s between 2024-07 2025-01 (x.com/tawfeksraj/status/2100909752918180217) • Post by @TawfekSraj — I figured out Jev knowledge cutoff date: It’s between 2024-07 2025-01 (twitter.com/tawfeksraj/status/2100909752918180217) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550469144346890331
-   - [Post by @TawfekSraj](https://x.com/tawfeksraj/status/2100909752918180217?s=61&t=TFADXWS1ohIjhABKwP0oig)
-   - Source: https://x.com/tawfeksraj/status/2100909752918180217?s=61&t=TFADXWS1ohIjhABKwP0oig (by Tawfek)
-
-47. **launching chrome extension for polymarket to tell you what Jev thinks about the bet**
-   - launching chrome extension for polymarket to tell you what Jev thinks about the bet Linked projects: • image.png — image/png · 730 KB (cdn.discordapp.com/attachments/1483217545040232493/1550457053565427743)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550457053565427743/image.png?ex=6aae6727&is=6aad15a7&hm=e52b12d0a561ca32412cc127a7fee5efc5443b31fd7669b95e138b704bfb1f97&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550457054035185734 (by sumsie)
-
-48. **guy check out**
-   - guy check out https://jevtypesafe.vercel.app/ https://x.com/MarisFilius/status/2100894797997523400?s=20 Linked projects: • Jev Playground — Give Jev a messy real-world input. It turns it into fast, typed judgments that application code can use. (jevtypesafe.vercel.app) • Post by @MarisFilius — Building something experimental with @typesafeai. Give Jev a messy request. It turns it into a judgment your software can actually use. https://jevtypesafe.vercel.app/ Less chatbot. More AI primitive thanks to @CompleteS (x.com/MarisFilius/status/2100894797997523400) • Post by @MarisFilius — Building something experimental with @typesafeai. Give Jev a messy request. It turns it into a judgment your software can actually use. https://jevtypesafe.vercel.app/ Less chatbot. More AI primitive thanks to @CompleteS (twitter.com/MarisFilius/status/2100894797997523400) Discussion: https://discord.com/channe
-   - [Jev Playground](https://jevtypesafe.vercel.app/)
-   - [Post by @MarisFilius](https://x.com/MarisFilius/status/2100894797997523400?s=20)
-   - Source: https://x.com/MarisFilius/status/2100894797997523400?s=20 (by Maris)
-
-49. **I wrote down my thoughts on Jev.**
-   - https://madppiper.substack.com/p/my-thoughts-on-jev-after-the-private I wrote down my thoughts on Jev. In short: it is a fantastic model and I am soooo glad that you guys from typesafeai are doing this. It is exactly what the market needs and such a joy to play aroun with. Linked projects: • My Thoughts on Jev, after the Private Beta — Meet Jev, a new “System One” model. It is an incredible cheap, fast llm, built for only one purpose, to judge. (madppiper.substack.com/p/my-thoughts-on-jev-after-the-private) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550434272450707466
-   - [My Thoughts on Jev, after the Private Beta](https://madppiper.substack.com/p/my-thoughts-on-jev-after-the-private)
-   - Source: https://madppiper.substack.com/p/my-thoughts-on-jev-after-the-private (by madppiper)
-
-50. **Loving Jev, so many applications.**
-   - Loving Jev, so many applications. This is a self driving car simulation that Jev does all the realtime decision (~300ms latency) https://x.com/kavehmz/status/2100616111771238881 Linked projects: • Post by @kavehmz — @typesafeai (and System One models in general) have a lot of uses, and fun to play with. New paradigm open to public now. This is a self-driving sim I spun up to test Jev today. Structured sensor state in, typed driving (x.com/kavehmz/status/2100616111771238881) • Post by @kavehmz — @typesafeai (and System One models in general) have a lot of uses, and fun to play with. New paradigm open to public now. This is a self-driving sim I spun up to test Jev today. Structured sensor state in, typed driving (twitter.com/kavehmz/status/2100616111771238881) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550408717873193021
-   - [Post by @kavehmz](https://x.com/kavehmz/status/2100616111771238881)
-   - Source: https://x.com/kavehmz/status/2100616111771238881 (by kaveh)
-
-51. **I was playing around with Jev and created a job roast to grill them nicely and it did!!**
-   - I was playing around with Jev and created a job roast to grill them nicely and it did!! Paste a JD, it grills it line by line. https://x.com/thilakbhat95/status/2100846150056309107?s=46 Linked projects: • Post by @thilakbhat95 — I built a job-roasting machine on Jev - paste a JD, it grills it line by line. It's insane how cheap and fast it is at scoring! @typesafeai "We're like a family here" → Boundaries are not a thing here. "Wear many hats" → (x.com/thilakbhat95/status/2100846150056309107) • Post by @thilakbhat95 — I built a job-roasting machine on Jev - paste a JD, it grills it line by line. It's insane how cheap and fast it is at scoring! @typesafeai "We're like a family here" → Boundaries are not a thing here. "Wear many hats" → (twitter.com/thilakbhat95/status/2100846150056309107) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550406791773552732
-   - [Post by @thilakbhat95](https://x.com/thilakbhat95/status/2100846150056309107?s=46)
-   - Source: https://x.com/thilakbhat95/status/2100846150056309107?s=46 (by Thilak Bhat)
-
-52. **Pointed Jev at 3 months of my own browser history.**
-   - Pointed Jev at 3 months of my own browser history. Turns out I keep googling the same things and forgetting I did. Love that for me. Raced it against Haiku and a dumb keyword script on 82,011 calls. Jev won, whole thing cost 62 cents! Linked projects: • image.png — image/png · 878 KB (cdn.discordapp.com/attachments/1483217545040232493/1550405305525866496)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550405305525866496/image.png?ex=6aaedfb5&is=6aad8e35&hm=e34a7e40947a743201d585c510cb7c677258517981a2587f9df69a728f6fa478&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550405305836249139 (by steaven)
-
-53. **It's over**
-   - It's over https://x.com/brainstormity/status/2100842356484325574?s=20 Linked projects: • Post by @brainstormity — Introducing the User Investigation feature for the JEV Moderator bot. Let JEV analyze a user's chat history and generate an AI-powered profile using @typesafeai. Admins Right-click any user → Apps → Generate AI Profile o (x.com/brainstormity/status/2100842356484325574) • Post by @brainstormity — Introducing the User Investigation feature for the JEV Moderator bot. Let JEV analyze a user's chat history and generate an AI-powered profile using @typesafeai. Admins Right-click any user → Apps → Generate AI Profile o (twitter.com/brainstormity/status/2100842356484325574) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550401225248219220
-   - [Post by @brainstormity](https://x.com/brainstormity/status/2100842356484325574?s=20)
-   - Source: https://x.com/brainstormity/status/2100842356484325574?s=20 (by brainstormity)
-
-54. **real time note classifier, LLM-written, engagement farming etc..**
-   - real time note classifier, LLM-written, engagement farming etc.. and ad blocker. Linked projects: • Moonshot-Recording-2026-09-18-15-14-23_Smashed.mp4 — video/mp4 · 15 MB (cdn.discordapp.com/attachments/1483217545040232493/1550393556298891304)
-   - [Moonshot-Recording-2026-09-18-15-14-23_Smashed.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550393556298891304/Moonshot-Recording-2026-09-18-15-14-23_Smashed.mp4?ex=6aaed4c4&is=6aad8344&hm=3d2a3b10f87ead343d195fc431856436a9a21c299e1f338553fffce70de0ac68&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550393557175504979 (by Holokat)
-
-55. **Found this handy compilation of experiments that was really useful for developing my understanding of Jev's capabilities:**
-   - Found this handy compilation of experiments that was really useful for developing my understanding of Jev's capabilities: https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site Linked projects: • What if judgment were parallel? — Eleven measured experiments with TypeSafe's typed probability API. (typesafe-parallel-judgment-lab.every-4573.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550386268670525493
-   - [What if judgment were parallel?](https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site)
-   - Source: https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site (by willdog)
-
-56. **- using TypeSafe to turn words into soundtracks**
-   - https://textured.fyi - using TypeSafe to turn words into soundtracks Linked projects: • Textured — Get it on GitHub (textured.fyi) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550384373902348288
-   - [Textured](https://textured.fyi)
-   - Source: https://textured.fyi (by fluxus)
-
-57. **i dint expect it to make an entire planet that i can orbit around**
-   - i dint expect it to make an entire planet that i can orbit around Linked projects: • image.png — image/png · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1550383888755327036)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550383888755327036/image.png?ex=6aaecbc3&is=6aad7a43&hm=423dd4cee653000917986ceeca911c7355c418cc07a84a15d4be5282edc369c1&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550383889107910696 (by complexxsnake)
-
-58. **but you can use openrouter - I just tried with browser and it worked well .**
-   - but you can use openrouter - I just tried with browser and it worked well . Linked projects: • Screenshot_2026-09-18_at_11.16.53_AM.png — image/png · 276 KB (cdn.discordapp.com/attachments/1483217545040232493/1550382621865938994)
-   - [Screenshot_2026-09-18_at_11.16.53_AM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550382621865938994/Screenshot_2026-09-18_at_11.16.53_AM.png?ex=6aaeca95&is=6aad7915&hm=427fbc87ce749a41ca134becec3ed8438b2e668e5008b8cdd57371bc11e5fb9e&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550382622184710216 (by arjun5959)
-
-59. **made a quick little reality checker using jev!**
-   - https://x.com/Anot/status/2100822237221724317?s=20 made a quick little reality checker using jev! Linked projects: • Post by @Anot — having so much fun with @typesafeai. here’s Jev doing a little reality check. https://real-or-fake.an0t.chatgpt.site/ (x.com/Anot/status/2100822237221724317) • Post by @Anot — having so much fun with @typesafeai. here’s Jev doing a little reality check. https://real-or-fake.an0t.chatgpt.site/ (twitter.com/Anot/status/2100822237221724317) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550381284121907311
-   - [Post by @Anot](https://x.com/Anot/status/2100822237221724317?s=20)
-   - Source: https://x.com/Anot/status/2100822237221724317?s=20 (by Anot)
-
-60. **@ Swamp club it's now 91% cheaper & 14.8% faster for our alert triage with TypeSafe AI & Swamp We used to spend a**
-   - @ Swamp club it's now 91% cheaper & 14.8% faster for our alert triage with TypeSafe AI & Swamp https://blog.watson-labs.co.uk/typesafe-ai-alert-fatigue/ We used to spend a fortune on signal triage, now it's superficial + super fast Linked projects: • 91% Cheaper, 14.8% Faster Alert Triage with TypeSafe AI & Swamp — TypeSafe AI screens. Swamp routes. Claude gets the work worth paying for. (blog.watson-labs.co.uk/typesafe-ai-alert-fatigue) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550374628684464249
-   - [91% Cheaper, 14.8% Faster Alert Triage with TypeSafe AI &amp; Swamp](https://blog.watson-labs.co.uk/typesafe-ai-alert-fatigue/)
-   - Source: https://blog.watson-labs.co.uk/typesafe-ai-alert-fatigue/ (by John)
-
-61. **not out of the box.**
-   - not out of the box. Codex provides the important missing piece: a browser/computer-use tool that can inspect the page and click/type into it. Ollama is just the model runtime, so a local or cloud Ollama model would also need a browser automation tool plus a small adapter to pass page elements into Jev and execute the chosen action. OpenCode may be able to do it if it has compatible browser tools, but it isn’t plug-and-play yet. Same idea for Antigravity: compatible browser access is the requirement, not the underlying model.
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550370061485613067 (by BlissF00l)
-
-62. **Exploring ambient intelligence in interfaces with jev**
-   - https://x.com/zahlekhan/status/2100681083176226921 Exploring ambient intelligence in interfaces with jev Linked projects: • Post by @zahlekhan — Introducing jev board, short for jevin keyboard. Fast, reliable models unlock much subtler experiences for building ambient intelligence into interfaces. A small exploration at the edges of GenUI. With done @typesafeai a (x.com/zahlekhan/status/2100681083176226921) • Post by @zahlekhan — Introducing jev board, short for jevin keyboard. Fast, reliable models unlock much subtler experiences for building ambient intelligence into interfaces. A small exploration at the edges of GenUI. With done @typesafeai a (twitter.com/zahlekhan/status/2100681083176226921) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550360224899145820
-   - [Post by @zahlekhan](https://x.com/zahlekhan/status/2100681083176226921)
-   - Source: https://x.com/zahlekhan/status/2100681083176226921 (by zahle(thesys))
-
-63. **It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1**
-   - It generates a whole bar (all 16 steps at once for each drum - 96 choices) 1 = hit, 2 = accent Example: ``` Beat 1 Beat 2 Beat 3 Beat 4 Kick 1 0 1 0 1 2 2 0 0 1 1 0 0 1 1 0 Snare 0 0 1 0 0 0 0 1 2 0 0 0 0 0 1 0 Clap 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 Closed hat 1 1 1 1 0 1 1 1 2 1 1 1 0 0 1 1 Open hat 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 Tom 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ```
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550351443687374909 (by stbenjam)
-
-64. **I need to go to bed but this is so much fun.**
-   - I need to go to bed but this is so much fun. Jev can play the drums https://x.com/stbenjam/status/2100789310265979276?s=20 Linked projects: • Post by @stbenjam — Jev can play the drums (x.com/stbenjam/status/2100789310265979276) • Post by @stbenjam — Jev can play the drums (twitter.com/stbenjam/status/2100789310265979276) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550348324219916348
-   - [Post by @stbenjam](https://x.com/stbenjam/status/2100789310265979276?s=20)
-   - Source: https://x.com/stbenjam/status/2100789310265979276?s=20 (by stbenjam)
-
-65. **I've been working on a code "linter" for AI agents Think ESLint, but on steroids.**
-   - I've been working on a code "linter" for AI agents https://www.jevlint.com/ Think ESLint, but on steroids. You can finally check for naming inconsistencies, magic strings, bad architectural patterns, etc... Linked projects: • JevLint — Slop happens. Don’t ship it. — Coding conventions in plain English. Your agent codes. JevLint checks what syntax rules miss. (jevlint.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550347305465675787
-   - [JevLint — Slop happens. Don’t ship it.](https://www.jevlint.com/)
-   - Source: https://www.jevlint.com/ (by Thomas)
-
-66. **For Real Estate Industry , Fair House Act checker**
-   - For Real Estate Industry , Fair House Act checker https://fair-housing-guardrail.roberto-94c.workers.dev/ Linked projects: • FairCheck — a fair housing guardrail you can read — 29 typed judgments, 107 answered cases, 54 jurisdictions, 245 regulation paragraphs. Test a message and see exactly why it passed or failed. (fair-housing-guardrail.roberto-94c.workers.dev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550346612159684668
-   - [FairCheck — a fair housing guardrail you can read](https://fair-housing-guardrail.roberto-94c.workers.dev/)
-   - Source: https://fair-housing-guardrail.roberto-94c.workers.dev/ (by melaleuca5)
-
-67. **What do you guys think of this, adding intelligence to dumb components in React using JEV?**
-   - What do you guys think of this, adding intelligence to dumb components in React using JEV? Do you think I should release this, I am just worried, if some bad actors submit random stuff and increase my bills 💰 Linked projects: • Screen_Recording_2026-09-17_at_10.13.59_PM.mov — video/quicktime · 12 MB (cdn.discordapp.com/attachments/1483217545040232493/1550344762262028328)
-   - [Screen_Recording_2026-09-17_at_10.13.59_PM.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550344762262028328/Screen_Recording_2026-09-17_at_10.13.59_PM.mov?ex=6aaea753&is=6aad55d3&hm=033c8ffca95cd21d3ce1a23846b9f11939fbfd90b57d1963a7179dfdd2d3c568&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550344763314544750 (by Zama Khan Mohammed)
-
-68. **Jev magic 8 ball**
-   - Jev magic 8 ball https://x.com/stbenjam/status/2100783751101846005?s=20 Linked projects: • Post by @stbenjam — @jjacky Just to close the loop, an actual Jev magic 8 ball https://github.com/stbenjam/jev-eight-ball (x.com/stbenjam/status/2100783751101846005) • Post by @stbenjam — @jjacky Just to close the loop, an actual Jev magic 8 ball https://github.com/stbenjam/jev-eight-ball (twitter.com/stbenjam/status/2100783751101846005) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550342808748171334
-   - [Post by @stbenjam](https://x.com/stbenjam/status/2100783751101846005?s=20)
-   - Source: https://x.com/stbenjam/status/2100783751101846005?s=20 (by stbenjam)
-
-69. **love it when billionaires agree with me hahaha**
-   - https://x.com/tobi/status/2100775196240097602?s=20 love it when billionaires agree with me hahaha Linked projects: • Post by @tobi — @obie @typesafeai Totally agreed (x.com/tobi/status/2100775196240097602) • Post by @tobi — @obie @typesafeai Totally agreed (twitter.com/tobi/status/2100775196240097602) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550342018503544882
-   - [Post by @tobi](https://x.com/tobi/status/2100775196240097602?s=20)
-   - Source: https://x.com/tobi/status/2100775196240097602?s=20 (by ObieFernandez)
-
-70. **version of a wikirace but through codex computer use replacement - jev-browser an adapter to codex computer use using**
-   - https://typesafe.ai/blog/introducing-system-one-models-and-jev version of a wikirace but through codex computer use replacement - jev-browser an adapter to codex computer use using Jev as the Brain and astra as it's lil b*tch 🙂 pardon my french Linked projects: • Introducing System One Models & Jev - TypeSafe AI Blog — TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access. (typesafe.ai/blog/introducing-system-one-models-and-jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550341666223694017
-   - [Introducing System One Models &amp; Jev - TypeSafe AI Blog](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
-   - Source: https://typesafe.ai/blog/introducing-system-one-models-and-jev (by BlissF00l)
-
-71. **Thanks for access!**
-   - Thanks for access! Still learning my way around Jev, but managed to use it to clean up my gmail in a fraction of the time and cost! https://x.com/JonnadulaS54850/status/2100778097322905627?s=20 Linked projects: • Post by @JonnadulaS54850 — Just got access to @typesafeai jev and managed to clean up my gmail inbox in a fraction of the time and cost! https://gist.github.com/jonnadul/643aba6d730546e0519e0df38706127a (x.com/JonnadulaS54850/status/2100778097322905627) • Post by @JonnadulaS54850 — Just got access to @typesafeai jev and managed to clean up my gmail inbox in a fraction of the time and cost! https://gist.github.com/jonnadul/643aba6d730546e0519e0df38706127a (twitter.com/JonnadulaS54850/status/2100778097322905627) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550337048899231846
-   - [Post by @JonnadulaS54850](https://x.com/JonnadulaS54850/status/2100778097322905627?s=20)
-   - Source: https://x.com/JonnadulaS54850/status/2100778097322905627?s=20 (by jonnadul)
-
-72. **I got Jev to care for a Tamagotchi 🤣 This model is awesome**
-   - I got Jev to care for a Tamagotchi 🤣 This model is awesome https://x.com/stbenjam/status/2100773290767786468?s=20 Linked projects: • Post by @stbenjam — I got @typesafeai's Jev to care for a Tamagotchi 😂 (x.com/stbenjam/status/2100773290767786468) • Post by @stbenjam — I got @typesafeai's Jev to care for a Tamagotchi 😂 (twitter.com/stbenjam/status/2100773290767786468) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550336302107463772
-   - [Post by @stbenjam](https://x.com/stbenjam/status/2100773290767786468?s=20)
-   - Source: https://x.com/stbenjam/status/2100773290767786468?s=20 (by stbenjam)
-
-73. **Here's another fun idea I'm tinkering with now, built a hybrid system for running a [spacetraders.io]( ) setup.**
-   - Here's another fun idea I'm tinkering with now, built a hybrid system for running a [spacetraders.io](https://spacetraders.io/getting-started) setup. LLM system for long horizon planning, Jev for short term decision making. Let's see what it does over time :Hehe: Linked projects: • image.png — image/png · 289 KB (cdn.discordapp.com/attachments/1483217545040232493/1550332196433297468) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550332198278799440
-   - [https://spacetraders.io/getting-started](https://spacetraders.io/getting-started)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550332196433297468/image.png?ex=6aae9b9f&is=6aad4a1f&hm=3f6b6636862b982fe3102a3f0b4eb631dcda9c6031b563b0b4a3c0d7af60a7af&)
-   - Source: https://spacetraders.io/getting-started (by gradius)
-
-74. **I built something similar but its just an election mapper.**
-   - I built something similar but its just an election mapper. Mapping state and federal elections is easy enough due to verified and easy to access sources. But determining confidence levels for local elections like municipal and county wide would be nice so I might try TypeSafe with my mapper too. I completely avoided adding those initially because of that
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550331551605203046 (by PlatFailure)
-
-75. **GUYS we might be onto something here**
-   - https://x.com/brainstormity/status/2100772250181947507?s=20 GUYS we might be onto something here Linked projects: • Post by @brainstormity — Building a JEV-based Twitter/X sentiment analysis system that fetches recent tweets for an asset (e.g. BTC) and makes a decision to BUY, SELL, or HOLD. In my testing, it fetched about 577 tweets and told me to BUY Bitcoi (x.com/brainstormity/status/2100772250181947507) • Post by @brainstormity — Building a JEV-based Twitter/X sentiment analysis system that fetches recent tweets for an asset (e.g. BTC) and makes a decision to BUY, SELL, or HOLD. In my testing, it fetched about 577 tweets and told me to BUY Bitcoi (twitter.com/brainstormity/status/2100772250181947507) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550331296805290115
-   - [Post by @brainstormity](https://x.com/brainstormity/status/2100772250181947507?s=20)
-   - Source: https://x.com/brainstormity/status/2100772250181947507?s=20 (by brainstormity)
-
-76. **Agent friendly.**
-   - Agent friendly. Transcribe from a URL or a file. Professionals Students Creators Find who said what and exactly when they said it. Transcribe any video, meeting, lecture, or podcast. Search what was said, ask questions with cited answers, and jump straight to the exact moment. https://transcribe.so/ Linked projects: • AI Transcription for Meetings and Lectures: Who Said What — Transcribe any video, meeting, lecture, or podcast. Find who said what and exactly when they said it. API, MCP and CLI for agents like Claude Code, Codex and Cursor. Get cited answers and jump to the original moment. (transcribe.so) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550324559763476590
-   - [AI Transcription for Meetings and Lectures: Who Said What](https://transcribe.so/)
-   - Source: https://transcribe.so/ (by Seunghun)
-
-77. **Just some stats from trying jev on the boring financial services stuff.**
-   - Just some stats from trying jev on the boring financial services stuff. https://x.com/Anot/status/2100761008352493918?s=20 Linked projects: • Post by @Anot — Tried Jev on some FS workflows (1 of n) It was quick at spotting reg changes and checking which processes they affected. 20 checks on one update took 0.8s and cost $0.001 I can imagine this being useful for persistent re (x.com/Anot/status/2100761008352493918) • Post by @Anot — Tried Jev on some FS workflows (1 of n) It was quick at spotting reg changes and checking which processes they affected. 20 checks on one update took 0.8s and cost $0.001 I can imagine this being useful for persistent re (twitter.com/Anot/status/2100761008352493918) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550321057339150367
-   - [Post by @Anot](https://x.com/Anot/status/2100761008352493918?s=20)
-   - Source: https://x.com/Anot/status/2100761008352493918?s=20 (by Anot)
-
-78. **Hi, i also wanted to play a bit and see how Jev is solving 2048**
-   - Hi, i also wanted to play a bit and see how Jev is solving 2048 https://x.com/moddi3io/status/2100756928326459880 Linked projects: • Post by @moddi3io — Had so much fun playing around with Jev from @typesafeai. I know it's not trained for things like this, because solving tasks like that involving strategy, but it's a great way to get familiar with the model and its new (x.com/moddi3io/status/2100756928326459880) • Post by @moddi3io — Had so much fun playing around with Jev from @typesafeai. I know it's not trained for things like this, because solving tasks like that involving strategy, but it's a great way to get familiar with the model and its new (twitter.com/moddi3io/status/2100756928326459880) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550317766937022474
-   - [Post by @moddi3io](https://x.com/moddi3io/status/2100756928326459880)
-   - Source: https://x.com/moddi3io/status/2100756928326459880 (by moddi3)
-
-79. **I asked it what is its favorite color.**
-   - https://klipy.com/gifs/vigilante-peacemaker-1 I asked it what is its favorite color. Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550315040949670050
-   - [vigilante-peacemaker-1](https://klipy.com/gifs/vigilante-peacemaker-1)
-   - Source: https://klipy.com/gifs/vigilante-peacemaker-1 (by Tripmine_enjoyer)
-
-80. **I really don't know much about trading, trying my best to look myself on forum and learn from live traders, trying to learn the termes/words they use and looking up what they mean etc..**
-   - I really don't know much about trading, trying my best to look myself on forum and learn from live traders, trying to learn the termes/words they use and looking up what they mean etc.. just asked ASTRA to prompt some strategy with JEV in the middle doing all the important decision compared to historical trading data
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550303089767219224 (by ⧹⎝ΞＬＭΛＮＩ３３５⎠⧸)
-
-81. **Using it in production to retrieve product photo urls out of a product page :please:**
-   - https://lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-khari Using it in production to retrieve product photo urls out of a product page :please: Linked projects: • Batua Pocket Lipstick - Chai Khari (Nude Brown) Rich Satin Finish With — Looking for a hot plus-one for your next party? Look no further as 'Batua' is here – Your Perfect Plus-One; a shimmer coated lipstick with a rich, satin finish, that comes in a charismatic casing! Hook it on your bag, pa (lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-kha) • image.png — image/png · 789 KB (cdn.discordapp.com/attachments/1483217545040232493/1550296877675581450) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550296878023704617
-   - [Batua Pocket Lipstick - Chai Khari (Nude Brown) Rich Satin Finish With](https://lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-khari)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550296877675581450/image.png?ex=6aae7aba&is=6aad293a&hm=6a85934ffc385f66aa53420f416c36a0ab8ca0a5ff1f885bb110d7debd3d83e6&)
-   - Source: https://lovechild.in/products/batua-pocket-lipstick-rich-satin-finish-chai-khari (by Tanush)
-
-82. **I love it. Really like Orgo man. Opened my mind to virtual computers and their potential. You guys**
-   - I love it. Really like Orgo man. Opened my mind to virtual computers and their potential. You guys should check out Orgo. <@1438199427545432189> is the founder of it and it’s pretty cool. https://www.orgo.ai/ Linked projects: • Orgo - Computers for AI agents — High-performance desktops for AI agents. Launch persistent computers in seconds and manage your fleet through one dashboard and API. (orgo.ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550277506559643709
-   - [Orgo - Computers for AI agents](https://www.orgo.ai/)
-   - Source: https://www.orgo.ai/ (by Mordecai)
-
-83. **I built a semantic linter with Jev, it uses a tree algorithm to iterate over a codebase and apply custom code, security, and behavioral**
-   - I built a semantic linter with Jev, it uses a tree algorithm to iterate over a codebase and apply custom code, security, and behavioral rules https://perchscan.com/ Linked projects: • perch — Semantic code linting with Jev — Semantic code linting with Jev. perch parses every method with tree-sitter, then asks a model the questions a parser cannot answer. (perchscan.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550271040549290004
-   - [perch — Semantic code linting with Jev](https://perchscan.com/)
-   - Source: https://perchscan.com/ (by joshyfb)
-
-84. **Jev playing minecraft**
-   - Jev playing minecraft https://x.com/nickvasiles/status/2100670497818313175 Linked projects: • Post by @nickvasiles — Jev is a new model from the co-inventor of ChatGPT that can use computer tools in realtime right now it's playing Minecraft on its own computer in the cloud on Orgo this is what it looks like with just one Jev, but imagi (x.com/nickvasiles/status/2100670497818313175) • Post by @nickvasiles — Jev is a new model from the co-inventor of ChatGPT that can use computer tools in realtime right now it's playing Minecraft on its own computer in the cloud on Orgo this is what it looks like with just one Jev, but imagi (twitter.com/nickvasiles/status/2100670497818313175) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550265710565924945
-   - [Post by @nickvasiles](https://x.com/nickvasiles/status/2100670497818313175)
-   - Source: https://x.com/nickvasiles/status/2100670497818313175 (by Nick Vasilescu)
-
-85. **I can't send the full JSON here because it gets blocked in this chat.**
-   - I can't send the full JSON here because it gets blocked in this chat. But browser nav looks like this for the model. So browser tabs are a first-class choice, second class are DOM selectors, and so on. Linked projects: • Screenshot_from_2026-09-17_23-50-21.png — image/png · 70 KB (cdn.discordapp.com/attachments/1483217545040232493/1550262836754649310)
-   - [Screenshot_from_2026-09-17_23-50-21.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550262836754649310/Screenshot_from_2026-09-17_23-50-21.png?ex=6aae5b06&is=6aad0986&hm=d5ac2ef9f4e82125fa3e2aec40912120d8e879680d4b634b567cd00b988ee684&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550262837115355197 (by Alessandro Frau)
-
-86. **I have built a real-time clippy.**
-   - I have built a real-time clippy. 😅 https://x.com/sotak/status/2100701152824185319 Linked projects: • Post by @sotak — I built real-time Clippy with Jev. It quietly watches how you use the product and only wakes up when it thinks you’re struggling. Hesitating? Confused? Stuck? Clippy knows. Even its reactions are controlled by Jev. 👀 (x.com/sotak/status/2100701152824185319) • jev-bot-inline-manual.mp4 — video/mp4 · 10 MB (cdn.discordapp.com/attachments/1483217545040232493/1550262681326460948) • Post by @sotak — I built real-time Clippy with Jev. It quietly watches how you use the product and only wakes up when it thinks you’re struggling. Hesitating? Confused? Stuck? Clippy knows. Even its reactions are controlled by Jev. 👀 (twitter.com/sotak/status/2100701152824185319) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550262682156793977
-   - [Post by @sotak](https://x.com/sotak/status/2100701152824185319)
-   - [jev-bot-inline-manual.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550262681326460948/jev-bot-inline-manual.mp4?ex=6aae5ae1&is=6aad0961&hm=cdd5a524fecc5fccd328c7f0e2dab593c2ddf5af5427f05f3c2c0a42b4ab0c44&)
-   - Source: https://x.com/sotak/status/2100701152824185319 (by Marek)
-
-87. **In our harness we use Playwright for the browser, and the DOM is natively translated in JSON, so Jev is able to choose.**
-   - In our harness we use Playwright for the browser, and the DOM is natively translated in JSON, so Jev is able to choose. But CDP works best (see Browser Use's jev-ultrafast repo for ref). Linked projects: • export-1789663993497.mp4 — video/mp4 · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1550262460660064346)
-   - [export-1789663993497.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550262460660064346/export-1789663993497.mp4?ex=6aae5aad&is=6aad092d&hm=12304bdb154e77018d1843d107e0e3cfd9b34d55e3b20ffb86e6b671c9fccbf4&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550262461100458055 (by Alessandro Frau)
-
-88. **30 cents a month to moderator a discord with 1000+ messages a day.**
-   - 30 cents a month to moderator a discord with 1000+ messages a day. https://x.com/brainstormity/status/2100702826196307977 Linked projects: • Post by @brainstormity — In my tests, your JEV-powered AI moderator for Discord will cost: - $0.30/month if your server gets 1,000 messages per day. Hiring multiple chat moderators is a thing of the past. Hire a JEV-powered AI moderator for just (x.com/brainstormity/status/2100702826196307977) • Post by @brainstormity — In my tests, your JEV-powered AI moderator for Discord will cost: - $0.30/month if your server gets 1,000 messages per day. Hiring multiple chat moderators is a thing of the past. Hire a JEV-powered AI moderator for just (twitter.com/brainstormity/status/2100702826196307977) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550261869866909936
-   - [Post by @brainstormity](https://x.com/brainstormity/status/2100702826196307977)
-   - Source: https://x.com/brainstormity/status/2100702826196307977 (by brainstormity)
-
-89. **I didn't expect Jev to tell me that one of the title options is clickbait 😄**
-   - I didn't expect Jev to tell me that one of the title options is clickbait 😄 Linked projects: • jevjev.mp4 — video/mp4 · 7 MB (cdn.discordapp.com/attachments/1483217545040232493/1550261144084807730)
-   - [jevjev.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550261144084807730/jevjev.mp4?ex=6aae5973&is=6aad07f3&hm=16837200573f94470addff4900b9c9a779634e603ccf1f214aa1dc1f068828be&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550261144521023500 (by Alessandro Frau)
-
-90. **So Jev is 100% confident I should full port my entire generational wealth into short dated NVIDIA calls....**
-   - So Jev is 100% confident I should full port my entire generational wealth into short dated NVIDIA calls.... Linked projects: • image.png — image/png · 328 KB (cdn.discordapp.com/attachments/1483217545040232493/1550260027816812604)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550260027816812604/image.png?ex=6aae5869&is=6aad06e9&hm=10e23dfc84b1e45139ebc9707279d00e0a57a326da9a06500f13d53d6775388a&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550260029045604412 (by DiskID)
-
-91. **Hi guys, I loved typesafe ai and thought this would be very efficient for dumb components in react.**
-   - Hi guys, I loved typesafe ai and thought this would be very efficient for dumb components in react. I came up with typesafecn, but I'm wondering if I might be hit by bad actors and my bill will go up for something I want to do for free. Linked projects: • Screen_Recording_2026-09-17_at_4.06.31_PM.mp4 — video/mp4 · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1550252994300477471)
-   - [Screen_Recording_2026-09-17_at_4.06.31_PM.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550252994300477471/Screen_Recording_2026-09-17_at_4.06.31_PM.mp4?ex=6aae51dc&is=6aad005c&hm=5dab56ba173580471526c18ed6785d872c294d93ceb9dc9ed94f52490e2895ef&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550252994845741096 (by Zama Khan Mohammed)
-
-92. **I asked Jev if it thinks the “21 cars” guy is suspicious, or just unusually concerned about the logistics?**
-   - https://x.com/sybuilds/status/2100679413243474010?s=46 I asked Jev if it thinks the “21 cars” guy is suspicious, or just unusually concerned about the logistics? Linked projects: • Post by @Sybuilds — Does Jev think the “21 cars” guy is suspicious, or just unusually concerned about the logistics? (x.com/sybuilds/status/2100679413243474010) • Post by @Sybuilds — Does Jev think the “21 cars” guy is suspicious, or just unusually concerned about the logistics? (twitter.com/sybuilds/status/2100679413243474010) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550239787221385397
-   - [Post by @Sybuilds](https://x.com/sybuilds/status/2100679413243474010?s=46)
-   - Source: https://x.com/sybuilds/status/2100679413243474010?s=46 (by Thinker)
-
-93. **trying to break it, won't work.**
-   - <@705561973571452938> trying to break it, won't work. Needs more bird. Linked projects: • image.png — image/png · 16 KB (cdn.discordapp.com/attachments/1483217545040232493/1550234585223274537)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550234585223274537/image.png?ex=6aae40b7&is=6aacef37&hm=b7a3337d63d642535cfa0c3178be9439f8c6c7b12163fdf167acba4786867ec0&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550234585697099946 (by blake)
-
-94. **hello again. Here we have an example of a popup window built into iXUI shell aka Desktop Environment.**
-   - <@324647822072741889> hello again. Here we have an example of a popup window built into iXUI shell aka Desktop Environment. Colors adjustment to-do. Linked projects: • e321689cb1e93fda.png — image/png · 85 KB (cdn.discordapp.com/attachments/1483217545040232493/1550222726990663801)
-   - [e321689cb1e93fda.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550222726990663801/e321689cb1e93fda.png?ex=6aaede6b&is=6aad8ceb&hm=872e11d80c59e8f8af89fe41114d438224a5b789a644ae22ef854144ead5ed8b&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550222727502110781 (by Kot Vzatochnik || Stalker UM)
-
-95. **looking into using Jev in legaltech**
-   - looking into using Jev in legaltech https://x.com/jan__kubica/status/2100636173249007696?s=20 Linked projects: • Post by @jan__kubica — Testing @typesafeai new model, Jev, for legal use cases in @stll_app. As you may have heard, Jev comes from the opposite research direction: it does not generate text but is optimised for decisions instead. A few use cas (x.com/jan__kubica/status/2100636173249007696) • Post by @jan__kubica — Testing @typesafeai new model, Jev, for legal use cases in @stll_app. As you may have heard, Jev comes from the opposite research direction: it does not generate text but is optimised for decisions instead. A few use cas (twitter.com/jan__kubica/status/2100636173249007696) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550215944943444088
-   - [Post by @jan__kubica](https://x.com/jan__kubica/status/2100636173249007696?s=20)
-   - Source: https://x.com/jan__kubica/status/2100636173249007696?s=20 (by jk)
-
-96. **here are a bunch of roblox jev-ai driven bots attacking eachother**
-   - here are a bunch of roblox jev-ai driven bots attacking eachother Linked projects: • RobloxStudioBeta_5omAiD1CVk.mp4 — video/mp4 · 916 KB (cdn.discordapp.com/attachments/1483217545040232493/1550213945241894912)
-   - [RobloxStudioBeta_5omAiD1CVk.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550213945241894912/RobloxStudioBeta_5omAiD1CVk.mp4?ex=6aaed63e&is=6aad84be&hm=36783d36c2f2e931646202118ea4c8f339133f23598e4858867aed8cb6f8ab74&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550213945661464706 (by euukee)
-
-97. **jev is really good with interpreting symbolic meaning from emojis lol**
-   - jev is really good with interpreting symbolic meaning from emojis lol Linked projects: • image.png — image/png · 227 KB (cdn.discordapp.com/attachments/1483217545040232493/1550204639863898182)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550204639863898182/image.png?ex=6aaecd93&is=6aad7c13&hm=c1d28591ec74c925e1381ef2bcf053fcc65db3d9f353b234cf17208db92533ab&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550204640287658075 (by tlde)
-
-98. **just grabing your link for example:**
-   - <@136221846059089921> just grabing your link for example: https://fixupx.com/shannon_fano/status/2100639390468833379?s=46 Linked projects: • Post by @shannon_fano — got access and been using Jev as the director for my VJ software given he answers in under 500ms with judgments and confidence, he picks the scene, palette, effects and the mix, once a bar in real time cost? around 1$ pe (fixupx.com/shannon_fano/status/2100639390468833379) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550203365730812055
-   - [Post by @shannon_fano](https://fixupx.com/shannon_fano/status/2100639390468833379?s=46)
-   - Source: https://fixupx.com/shannon_fano/status/2100639390468833379?s=46 (by Necsbr)
-
-99. **sharing this crazy idea I had last night, tho the visuals could be better, jev rocks**
-   - sharing this crazy idea I had last night, tho the visuals could be better, jev rocks https://x.com/shannon_fano/status/2100639390468833379?s=46 Linked projects: • Post by @shannon_fano — got access and been using Jev as the director for my VJ software given he answers in under 500ms with judgments and confidence, he picks the scene, palette, effects and the mix, once a bar in real time cost? around 1$ pe (x.com/shannon_fano/status/2100639390468833379) • Post by @shannon_fano — got access and been using Jev as the director for my VJ software given he answers in under 500ms with judgments and confidence, he picks the scene, palette, effects and the mix, once a bar in real time cost? around 1$ pe (twitter.com/shannon_fano/status/2100639390468833379) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550202616246435882
-   - [Post by @shannon_fano](https://x.com/shannon_fano/status/2100639390468833379?s=46)
-   - Source: https://x.com/shannon_fano/status/2100639390468833379?s=46 (by shanon fano)
-
-100. **In-case you are wondering when to use Jev instead of Claude Code.**
-   - In-case you are wondering when to use Jev instead of Claude Code. Here's a quick simulation to try. Super Fast. Super Affordable. (sim data) https://x.com/ProTrailblazer/status/2100642491804336413?s=20 Linked projects: • Post by @ProTrailblazer — When do you use @typesafeai instead of Claude Code? I wasn't sure, so I spun up a dynamic simulation + walkthrough. https://protrailblazer.com/posts/typesafe-instead-of-claude-code/ (x.com/ProTrailblazer/status/2100642491804336413) • Post by @ProTrailblazer — When do you use @typesafeai instead of Claude Code? I wasn't sure, so I spun up a dynamic simulation + walkthrough. https://protrailblazer.com/posts/typesafe-instead-of-claude-code/ (twitter.com/ProTrailblazer/status/2100642491804336413) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550201318860259468
-   - [Post by @ProTrailblazer](https://x.com/ProTrailblazer/status/2100642491804336413?s=20)
-   - Source: https://x.com/ProTrailblazer/status/2100642491804336413?s=20 (by 3200.Pro)
-
-101. **JEV PLAYS POKEMON IS BACK**
-   - JEV PLAYS POKEMON IS BACK https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share Linked projects: • Twitch — Twitch is the world's leading video platform and community for gamers. (twitch.tv/holographicdan) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550196796142264390
-   - [Twitch](https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share)
-   - Source: https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share (by CYPRESS)
-
-102. **Computer use with Jev and local vision model!**
-   - Computer use with Jev and local vision model! Its so goddamn fast https://x.com/milindlabs/status/2100631847155994852?s=20 Linked projects: • Post by @milindlabs — Okay so Jev can actually do computer use really well Without any screenshots, or LLMs and no Pixels leave my mac I dont even read the Dom elements A local CoreML model segments every button and UI element on screen. On-d (x.com/milindlabs/status/2100631847155994852) • Post by @milindlabs — Okay so Jev can actually do computer use really well Without any screenshots, or LLMs and no Pixels leave my mac I dont even read the Dom elements A local CoreML model segments every button and UI element on screen. On-d (twitter.com/milindlabs/status/2100631847155994852) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550191845672493208
-   - [Post by @milindlabs](https://x.com/milindlabs/status/2100631847155994852?s=20)
-   - Source: https://x.com/milindlabs/status/2100631847155994852?s=20 (by milind)
-
-103. **I made a microphone that mutes if you start bullshitting**
-   - https://x.com/sybuilds/status/2100417692096459074?s=46 I made a microphone that mutes if you start bullshitting Linked projects: • Post by @Sybuilds — Big AI news... Jev enables this microphone that mutes you when you talk BS @typesafeai (x.com/sybuilds/status/2100417692096459074) • Post by @Sybuilds — Big AI news... Jev enables this microphone that mutes you when you talk BS @typesafeai (twitter.com/sybuilds/status/2100417692096459074) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550189018715656403
-   - [Post by @Sybuilds](https://x.com/sybuilds/status/2100417692096459074?s=46)
-   - Source: https://x.com/sybuilds/status/2100417692096459074?s=46 (by Thinker)
-
-104. **I tried some stuff with Jev and wrote about it.**
-   - I tried some stuff with Jev and wrote about it. https://isaacflath.com/writing/six-things-i-tried-with-jev Linked projects: • Six things I tried with Jev | Isaac Flath — Checking my scripts, sorting news, finding answers in PDFs, and reviewing agent mistakes: six things I tried with TypeSafe's Jev. (isaacflath.com/writing/six-things-i-tried-with-jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550187588172914733
-   - [Six things I tried with Jev | Isaac Flath](https://isaacflath.com/writing/six-things-i-tried-with-jev)
-   - Source: https://isaacflath.com/writing/six-things-i-tried-with-jev (by Isaac.Flath)
-
-105. **I ran Typesafe against some of our existing LLM-driven data/processes comparing it with results from models we're using now and it basically won in every category.**
-   - I ran Typesafe against some of our existing LLM-driven data/processes comparing it with results from models we're using now and it basically won in every category. Really impressive. The data in these screens won't mean a whole lot without context, but it's pretty easy to see that Typesafe was faster, cheaper, and more accurate across the board. Linked projects: • Screenshot_2026-09-17_at_12.09.53_PM.png — image/png · 118 KB (cdn.discordapp.com/attachments/1483217545040232493/1550187346421612604) • Screenshot_2026-09-17_at_12.35.39_PM.png — image/png · 99 KB (cdn.discordapp.com/attachments/1483217545040232493/1550187346715217941) • Screenshot_2026-09-17_at_12.35.45_PM.png — image/png · 85 KB (cdn.discordapp.com/attachments/1483217545040232493/1550187346983395449)
-   - [Screenshot_2026-09-17_at_12.09.53_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550187346421612604/Screenshot_2026-09-17_at_12.09.53_PM.png?ex=6aaebd78&is=6aad6bf8&hm=2dc79aa908a431218a3b55658832cc2d85f55cfbf114603729f05cb3c85ed14a&)
-   - [Screenshot_2026-09-17_at_12.35.39_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550187346715217941/Screenshot_2026-09-17_at_12.35.39_PM.png?ex=6aaebd78&is=6aad6bf8&hm=4a1c7658e9fda2296b2352cfe10ed0187fb18463f75301cfcde4f4e7694bd911&)
-   - [Screenshot_2026-09-17_at_12.35.45_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550187346983395449/Screenshot_2026-09-17_at_12.35.45_PM.png?ex=6aaebd78&is=6aad6bf8&hm=69617f237ed1694b99a2dc7372bbc585149d02fa52d43c270e5c3a6de52b6806&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550187347184853053 (by csimpkins)
-
-106. **Video created with our new “Motion Labs”, try it here for your own short/launch videos:**
-   - Video created with our new “Motion Labs”, try it here for your own short/launch videos: https://motion.sereneinteractive.com Linked projects: • Motion Labs — Serene Interactive — Turn a little idea into a beautifully directed short film. Motion Labs by Serene Interactive. (motion.sereneinteractive.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550178759414644789
-   - [Motion Labs — Serene Interactive](https://motion.sereneinteractive.com)
-   - Source: https://motion.sereneinteractive.com (by Gianni)
-
-107. **i made a pi extension that lets you select how much detail you want in the agent outputs.**
-   - i made a pi extension that lets you select how much detail you want in the agent outputs. tons of very awesome stuff you can do with the pi renderer! https://x.com/tedkalaw/status/2100453504997531751 Linked projects: • Post by @tedkalaw — using jev and the sick new markdown renderer in @pidotdev , i made a pi-extension that lets you toggle how much detail you want in the agent output. this was motivated by my inability to understand what opus 5 was gettin (x.com/tedkalaw/status/2100453504997531751) • Post by @tedkalaw — using jev and the sick new markdown renderer in @pidotdev , i made a pi-extension that lets you toggle how much detail you want in the agent output. this was motivated by my inability to understand what opus 5 was gettin (twitter.com/tedkalaw/status/2100453504997531751) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550174923379703938
-   - [Post by @tedkalaw](https://x.com/tedkalaw/status/2100453504997531751)
-   - Source: https://x.com/tedkalaw/status/2100453504997531751 (by tedkalaw)
-
-108. **Nice, I also tried a very inefficient redaction scheme with Jev Basically split the sentence into words and ask one**
-   - Nice, I also tried a very inefficient redaction scheme with Jev Basically split the sentence into words and ask one question for each: "should the word "X" at index Y be redacted?" Yes/No https://x.com/danmana/status/2100550435094278475 Linked projects: • Post by @danmana — Bonus use-case for Jev - redacting PII information (inefficiently 🙈) (x.com/danmana/status/2100550435094278475) • Post by @danmana — Bonus use-case for Jev - redacting PII information (inefficiently 🙈) (twitter.com/danmana/status/2100550435094278475) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550171918584385688
-   - [Post by @danmana](https://x.com/danmana/status/2100550435094278475)
-   - Source: https://x.com/danmana/status/2100550435094278475 (by danmana)
-
-109. **You could also use a token classifier to redact PII for even cheaper and actually private.**
-   - You could also use a token classifier to redact PII for even cheaper and actually private. Example open-weights model: https://huggingface.co/openai/privacy-filter Linked projects: • openai/privacy-filter · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/openai/privacy-filter) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550171827555541022
-   - [openai/privacy-filter · Hugging Face](https://huggingface.co/openai/privacy-filter)
-   - Source: https://huggingface.co/openai/privacy-filter (by gefrom)
-
-110. **I made jev and opus 5 go head to head on competitive pokemon, inspired by some pokemon runs here.**
-   - I made jev and opus 5 go head to head on competitive pokemon, inspired by some pokemon runs here. ~820x cheaper, 10x faster and it won lmfao done through a random battle on pkmn showdown https://x.com/sid19arya0/status/2100458351440048258?s=20 Linked projects: • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (x.com/sid19arya0/status/2100458351440048258) • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (twitter.com/sid19arya0/status/2100458351440048258) Discussion: https://discord.com/channels/1483217544
-   - [Post by @sid19arya0](https://x.com/sid19arya0/status/2100458351440048258?s=20)
-   - Source: https://x.com/sid19arya0/status/2100458351440048258?s=20 (by Sid)
-
-111. **I have an agent in production using Luna.**
-   - I have an agent in production using Luna. My first run was just switching Luna to jev and comparing each against our golden dataset. In my second run I made changes to the harness and prompt to accommodate for the fact that jev does better when you give it more precise instructions and ran again against the Luna that is in production and comparing each with the golden dataset
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550161521772994633 (by Martucci)
-
-112. **Good idea. Maybe instead of having skills to explain the coding style in advance in detail, I just**
-   - Good idea. Maybe instead of having skills to explain the coding style in advance in detail, I just run my codebase through Jev when I commit, and then it will automatically instert an error message that it doesn't fit the coding style yet. Same for commit messages. Probably useful for more such things.
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550160449666949205 (by p 🦊)
-
-113. **I think this model could be amazing for moderation porpouses**
-   - I think this model could be amazing for moderation porpouses https://x.com/oxfrancesco_/status/2100595042385584622 Linked projects: • Post by @oxfrancesco_ — It's moderation solved? Probably yes! The scammy like messages get a 🔥 Want to join the group and try it yourself? DM Me! (x.com/oxfrancesco_/status/2100595042385584622) • Post by @oxfrancesco_ — It's moderation solved? Probably yes! The scammy like messages get a 🔥 Want to join the group and try it yourself? DM Me! (twitter.com/oxfrancesco_/status/2100595042385584622) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550158096851275936
-   - [Post by @oxfrancesco_](https://x.com/oxfrancesco_/status/2100595042385584622)
-   - Source: https://x.com/oxfrancesco_/status/2100595042385584622 (by Francesco Oddo (OxFrancesco))
-
-114. **I created a little open source tool for developers: Jevlint 1) Basically, define "semantic" rules for your codebase 2)**
-   - I created a little open source tool for developers: Jevlint https://www.jevlint.com/ 1) Basically, define "semantic" rules for your codebase 2) Check them deterministically with jevlint 3) Add it to your agent loop 4) Skip the "Oh you are TOTALLY correct, I shouldn't have named things like this or put them in this folder" Linked projects: • JevLint — Slop happens. Don’t ship it. — Coding conventions in plain English. Your agent codes. JevLint checks what syntax rules miss. (jevlint.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550157820794769408
-   - [JevLint — Slop happens. Don’t ship it.](https://www.jevlint.com/)
-   - Source: https://www.jevlint.com/ (by Thomas)
-
-115. **can you check it out i used deepseek 4.1 flash max**
-   - can you check it out i used deepseek 4.1 flash max https://01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site/ Linked projects: • Neon District: Street Run — Check out what I built in Arena (01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550157755799834784
-   - [Neon District: Street Run](https://01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site/)
-   - Source: https://01a0afc4-e287-7ea1-9e03-137fec574eea.arena.site/ (by north delta)
-
-116. **I hope to get access to jev soon..**
-   - I hope to get access to jev soon.. so far I created: https://www.quizletgravity.com/ and https://marko-sarafijanovic.com/ and https://marko-sarafijanovic.com/Why-allow-Tesla-FSD-Supervised Linked projects: • Quizlet – Gravity Mode — Defend your planet from falling asteroids by typing the correct answers. Paste a term list or upload a CSV to play. (quizletgravity.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550156609710194729
-   - [Quizlet – Gravity Mode](https://www.quizletgravity.com/)
-   - [https://marko-sarafijanovic.com/](https://marko-sarafijanovic.com/)
-   - [https://marko-sarafijanovic.com/Why-allow-Tesla-FSD-Supervised](https://marko-sarafijanovic.com/Why-allow-Tesla-FSD-Supervised)
-   - Source: https://www.quizletgravity.com/ (by Marko-Sarafijanovic)
-
-117. **So far pretty solid - obviously phrasing and depth of the criterium impacts outputs substantially, but early results are pretty promising.**
-   - So far pretty solid - obviously phrasing and depth of the criterium impacts outputs substantially, but early results are pretty promising. We are looking for a solution to help make our SOC members lives easier and more streaminlined, so if we can tune this appropriately and integrate into the workflow, having automated response could be cool.
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550151113406419005 (by Space Snek)
-
-118. **you seem to have pretty loaded criteria though vs ```json { "state": { "weather": "heavy rain",**
-   - you seem to have pretty loaded criteria though vs ```json { "state": { "weather": "heavy rain", "indoor_cost_per_session": 7, "outdoor_cost_per_session": 0, "expected_rain_damage_cost_per_outdoor_session": 2 }, "question": { "type": "choice", "instructions": "Which option has the lower expected monetary cost for this session?", "criteria": { "indoors": "Skate indoors", "outdoors": "Skate outdoors" } } } ```
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550144304792739871 (by lil nug)
-
-119. **Jev driving simulator.**
-   - Jev driving simulator. This model could further autonomous driving. Linked projects: • TypeSafeAiDriving.mp4 — video/mp4 · 8 MB (cdn.discordapp.com/attachments/1483217545040232493/1550136734539583488)
-   - [TypeSafeAiDriving.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550136734539583488/TypeSafeAiDriving.mp4?ex=6aae8e55&is=6aad3cd5&hm=50f0516725356a6919b7f2cbb62305fe9ed68e9cd11b4c7729eff6307b032959&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550136734950621209 (by Jordan Dalton)
-
-120. **I let Jev draw a picture pixel by pixel and compare it to Claude Haiku.**
-   - https://x.com/j_lamberts/status/2100577481698734255?s=20 I let Jev draw a picture pixel by pixel and compare it to Claude Haiku. Just a tiny bit faster. Linked projects: • Post by @j_lamberts — I let Jev from TypeSafe draw a picture pixel by pixel and compare it to Claude Haiku. Just a tiny bit faster. (x.com/j_lamberts/status/2100577481698734255) • Post by @j_lamberts — I let Jev from TypeSafe draw a picture pixel by pixel and compare it to Claude Haiku. Just a tiny bit faster. (twitter.com/j_lamberts/status/2100577481698734255) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550136425498804264
-   - [Post by @j_lamberts](https://x.com/j_lamberts/status/2100577481698734255?s=20)
-   - Source: https://x.com/j_lamberts/status/2100577481698734255?s=20 (by jrooney)
-
-121. **As promised.**
-   - As promised. https://x.com/alessandro_a0/status/2100573356294607245?s=20 Linked projects: • Post by @alessandro_a0 — I built a New York JFK airport manager simulation with Jev in less than an hour inside Agent Zero. This model is insane. (x.com/alessandro_a0/status/2100573356294607245) • Post by @alessandro_a0 — I built a New York JFK airport manager simulation with Jev in less than an hour inside Agent Zero. This model is insane. (twitter.com/alessandro_a0/status/2100573356294607245) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550133951396581386
-   - [Post by @alessandro_a0](https://x.com/alessandro_a0/status/2100573356294607245?s=20)
-   - Source: https://x.com/alessandro_a0/status/2100573356294607245?s=20 (by Alessandro Frau)
-
-122. **Yes, that matches my experience so far.**
-   - Yes, that matches my experience so far. Here is another Jev versus Luna Medium example. Given the same input, Luna maneuvered more effectively (although at x5.4 the cost and x5.1 the time) and avoided pursuing the apple when doing so would create a dangerous position in the future. I understand this may be outside the system’s intended scope, but reliable long-horizon decision making at this speed would be incredibly useful. It can only improve from here. Linked projects: • image.png — image/png · 84 KB (cdn.discordapp.com/attachments/1483217545040232493/1550131503239921694)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550131503239921694/image.png?ex=6aae8976&is=6aad37f6&hm=c2cc132d2b2adf7e371d9e91489c0f4208377e32a1f4d28273f180937b17609b&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550131503680462908 (by Jayson)
-
-123. **Yes, I used JSON.**
-   - Yes, I used JSON. Vercel eve agent sessions are stored as json turns anyway This is what I sent to Jev + the questions * Judging the session as a whole, did the user get what they wanted from the agent? Yes/No * Assume the user did NOT get what they wanted. What is the main reason? Linked projects: • image.png — image/png · 31 KB (cdn.discordapp.com/attachments/1483217545040232493/1550130504991375441)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550130504991375441/image.png?ex=6aae8888&is=6aad3708&hm=a71a7a487162f33697aa9c6351b90b1bea5851241a5c7224d8bc0edad13251b6&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550130505939419166 (by danmana)
-
-124. **yes but this is also why momentum trading absolutely dominates hedge fund strategies.**
-   - yes but this is also why momentum trading absolutely dominates hedge fund strategies. it absolutely works in 90% of market regimes. of course every strategy converges to average returns less trading costs on a long enough time frame. hard problem. "be like a goldfish" is the best outlook, but no guarantee. worthwhile because long term average returns outpace most other assets.
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550128848505671794 (by WeLiveToServe)
-
-125. **I used Jev to classify failure reasons for our custom vercel eve agent 320 sessions, 2M tokens, 14 seconds, $0.08 Just**
-   - I used Jev to classify failure reasons for our custom vercel eve agent 320 sessions, 2M tokens, 14 seconds, $0.08 Just downloading the session logs from vercel took 3 minutes, Jev classified them in 14s https://x.com/danmana/status/2100545412780220877 Linked projects: • Post by @danmana — Here is Jev from @typesafeai classifying 300 full chat sessions from our custom @vercel eve agent by failure reason. 323 sessions, 2M tokens done in 14s and costing $0.08 https://x.com/CompleteSkeptic/status/209992568272 (x.com/danmana/status/2100545412780220877) • Post by @danmana — Here is Jev from @typesafeai classifying 300 full chat sessions from our custom @vercel eve agent by failure reason. 323 sessions, 2M tokens done in 14s and costing $0.08 https://x.com/CompleteSkeptic/status/209992568272 (twitter.com/danmana/status/2100545412780220877) Discussion: https://discord.com/channels/14832175442140
-   - [Post by @danmana](https://x.com/danmana/status/2100545412780220877)
-   - Source: https://x.com/danmana/status/2100545412780220877 (by danmana)
-
-126. **I had jev play Tetris**
-   - https://x.com/meliwat93/status/2100404711283188181?s=46 I had jev play Tetris Linked projects: • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (x.com/meliwat93/status/2100404711283188181) • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (twitter.com/meliwat93/status/2100404711283188181) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550126239853977691
-   - [Post by @Meliwat93](https://x.com/meliwat93/status/2100404711283188181?s=46)
-   - Source: https://x.com/meliwat93/status/2100404711283188181?s=46 (by Meliwat)
-
-127. **What are the most interesting applications you have seen so far with TypeSafe AI and Jev?**
-   - What are the most interesting applications you have seen so far with TypeSafe AI and Jev? I'm asking because Jev told me to check it out more Linked projects: • Screenshot_2026-09-17_at_14.32.22.png — image/png · 479 KB (cdn.discordapp.com/attachments/1483217545040232493/1550125664362041525)
-   - [Screenshot_2026-09-17_at_14.32.22.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550125664362041525/Screenshot_2026-09-17_at_14.32.22.png?ex=6aae8406&is=6aad3286&hm=0873f89e04dc0a22da60490ad6cf8ec8a76df68ca0e39d7e59fa1316d5b5e025&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550125664667967569 (by Eddy Vinck)
-
-128. **I gave jev real trading data, and let it dry-run.**
-   - https://x.com/karuri945/status/2100562714376454654?s=20 I gave jev real trading data, and let it dry-run. Indeed. It "earned" $17 for minutes... Linked projects: • Post by @dawn_break_1107 — @CompleteSkeptic I gave #jev real trading data, and let it dry-run. Indeed. It "earned" $17 for minutes... 🤣 (x.com/karuri945/status/2100562714376454654) • Post by @dawn_break_1107 — @CompleteSkeptic I gave #jev real trading data, and let it dry-run. Indeed. It "earned" $17 for minutes... 🤣 (twitter.com/karuri945/status/2100562714376454654) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550121746596896788
-   - [Post by @dawn_break_1107](https://x.com/karuri945/status/2100562714376454654?s=20)
-   - Source: https://x.com/karuri945/status/2100562714376454654?s=20 (by Lovely Olaf)
-
-129. **Had Jev routing users on a website based on prompts**
-   - Had Jev routing users on a website based on prompts https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg Linked projects: • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (x.com/digitalshane_/status/2100399951872205224) • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (twitter.com/digitalshane_/status/2100399951872205224) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550118931698548746
-   - [Post by @digitalshane_](https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg)
-   - Source: https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg (by shaneomac151)
-
-130. **Chess, Brain Activity, Molecules!**
-   - Chess, Brain Activity, Molecules! This will be indeed a fun model! https://x.com/nikuscs/status/2100554927797833955?s=46 Linked projects: • Post by @nikuscs — My JEV experiments are also in :p Chess predictions, brain activity, Molecules Smell, and so on, this is quite fun model for some real word scenario, pretty curious for endless ideias this could unfold. Interactive demos (x.com/nikuscs/status/2100554927797833955) • Post by @nikuscs — My JEV experiments are also in :p Chess predictions, brain activity, Molecules Smell, and so on, this is quite fun model for some real word scenario, pretty curious for endless ideias this could unfold. Interactive demos (twitter.com/nikuscs/status/2100554927797833955) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550117665002229794
-   - [Post by @nikuscs](https://x.com/nikuscs/status/2100554927797833955?s=46)
-   - Source: https://x.com/nikuscs/status/2100554927797833955?s=46 (by nikus)
-
-131. **3x faster, 65% cheaper, **and** safer?**
-   - 3x faster, 65% cheaper, **and** safer? I'll take that thanks 😅 https://x.com/ashleyhindle/status/2100553892639473951?s=20 Linked projects: • Post by @ashleyhindle — Jev was 3x faster, 65% cheaper, and safer on this benchmark 🤯 Fuel classifies the first message in a new chat to see what level of intelligence will be needed for that chat. If we get it right we reduce the user's token (x.com/ashleyhindle/status/2100553892639473951) • Post by @ashleyhindle — Jev was 3x faster, 65% cheaper, and safer on this benchmark 🤯 Fuel classifies the first message in a new chat to see what level of intelligence will be needed for that chat. If we get it right we reduce the user's token (twitter.com/ashleyhindle/status/2100553892639473951) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550112904618180679
-   - [Post by @ashleyhindle](https://x.com/ashleyhindle/status/2100553892639473951?s=20)
-   - Source: https://x.com/ashleyhindle/status/2100553892639473951?s=20 (by ashleyhindle)
-
-132. **Okay, [my Rust library for Jev]( ) is finished now.**
-   - Okay, [my Rust library for Jev](https://gitlab.com/porky11/jev) is finished now. It's not necessary, but it might make usage a little more comfortable and typesafe. It also includes some interactive example where you can ask questions. Linked projects: • Fabio Krapohl / jev · GitLab — GitLab.com (gitlab.com/porky11/jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550111198236901406
-   - [Fabio Krapohl / jev · GitLab](https://gitlab.com/porky11/jev)
-   - Source: https://gitlab.com/porky11/jev (by p 🦊)
-
-133. **i gave jev some riddles, it does pretty good.**
-   - i gave jev some riddles, it does pretty good. But here it fails. Linked projects: • image.png — image/png · 132 KB (cdn.discordapp.com/attachments/1483217545040232493/1550105612929728592)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550105612929728592/image.png?ex=6aae7159&is=6aad1fd9&hm=d5d0571887730e9e3d512396ffaadb59377cc05d4a40cfb5815f9c4419385151&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550105613193838742 (by jrooney)
-
-134. **Hey, I've started experimenting with integrating TypeSafe into our AI assistant for certain operations (routing, specific tool calls...).**
-   - Hey, I've started experimenting with integrating TypeSafe into our AI assistant for certain operations (routing, specific tool calls...). By default, we use Gemini Flash for its balance of speed and capabilities. On the left, the version using Gemini only; on the right, the version combining Jev. Linked projects: • Enregistrement_de_lecran_2026-09-17_a_12.24.59.mov — video/quicktime · 4 MB (cdn.discordapp.com/attachments/1483217545040232493/1550103804907884684)
-   - [Enregistrement_de_lecran_2026-09-17_a_12.24.59.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550103804907884684/Enregistrement_de_lecran_2026-09-17_a_12.24.59.mov?ex=6aae6faa&is=6aad1e2a&hm=dbc6785e53a3fa366512c46530c24efc4e2c0165d5c4c3c163fb4d8cd6b50c43&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550103805335437345 (by Eddy)
-
-135. **Did you have access to the cloud model?**
-   - Did you have access to the cloud model? Already use the open-source [Hugging Face one](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)? Linked projects: • harshatheg/Qwen-2.5-1B-RLCD · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550098199736488036
-   - [harshatheg/Qwen-2.5-1B-RLCD · Hugging Face](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)
-   - Source: https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD (by uprety)
-
-136. **Showcasing TypeSafe's stuff because damn, this onboarding tutorial is actually really, *really* good**
-   - Showcasing TypeSafe's stuff because damn, this onboarding tutorial is actually really, *really* good Linked projects: • image.png — image/png · 99 KB (cdn.discordapp.com/attachments/1483217545040232493/1550094275004596224)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550094275004596224/image.png?ex=6aae66ca&is=6aad154a&hm=72998d769f5e61193f9a254b3a2f73d08315e3ee40682ac964f7950cb3f7fd21&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550094275604254790 (by slices)
-
-137. **This is so fun folks**
-   - This is so fun folks https://x.com/_trou3/status/2100527857739215150 Linked projects: • Post by @_trou3 — I challenged Jev from @typesafeai to solve a rubik cube, this is wild! (x.com/_trou3/status/2100527857739215150) • Post by @_trou3 — I challenged Jev from @typesafeai to solve a rubik cube, this is wild! (twitter.com/_trou3/status/2100527857739215150) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550086652242694204
-   - [Post by @_trou3](https://x.com/_trou3/status/2100527857739215150)
-   - Source: https://x.com/_trou3/status/2100527857739215150 (by trou)
-
-138. **I've got a RaspberryPi, a smart car, a cat, and Jev early acess.**
-   - I've got a RaspberryPi, a smart car, a cat, and Jev early acess. I'm gonna put Jev in a car lol https://x.com/SuperSlowSloth/status/2100526797377163414?s=20 Linked projects: • Post by @SuperSlowSloth — My cat now has a personal AI chauffeur. Thanks, #TypeFace #Jev 🐈🚗 #CatsOfX I'm giving Jev a smart car body. (x.com/SuperSlowSloth/status/2100526797377163414) • Post by @SuperSlowSloth — My cat now has a personal AI chauffeur. Thanks, #TypeFace #Jev 🐈🚗 #CatsOfX I'm giving Jev a smart car body. (twitter.com/SuperSlowSloth/status/2100526797377163414) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550086055947018301
-   - [Post by @SuperSlowSloth](https://x.com/SuperSlowSloth/status/2100526797377163414?s=20)
-   - Source: https://x.com/SuperSlowSloth/status/2100526797377163414?s=20 (by SuperSlowSloth)
-
-139. **I made JEV play NES Tetris**
-   - https://x.com/meliwat93/status/2100404711283188181?s=46 I made JEV play NES Tetris Linked projects: • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (x.com/meliwat93/status/2100404711283188181) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550084584560005162
-   - [Post by @Meliwat93](https://x.com/meliwat93/status/2100404711283188181?s=46)
-   - Source: https://x.com/meliwat93/status/2100404711283188181?s=46 (by Meliwat)
-
-140. **I made Jev play a modded PvZ based on the Total Death difficulty: repo coming soon.**
-   - I made Jev play a modded PvZ based on the Total Death difficulty: https://x.com/ThexysaiXy/status/2100520866685833645 repo coming soon. Linked projects: • Post by @ThexysaiXy — I ran a Total Death-inspired PvZ mod and let Jevy play it. 50% larger wave budgets. 2× zombie body + armor HP. Buffed plants. Jevy reads structured game state, picks its own loadout, collects sun, and places every plant— (x.com/ThexysaiXy/status/2100520866685833645) • Post by @ThexysaiXy — I ran a Total Death-inspired PvZ mod and let Jevy play it. 50% larger wave budgets. 2× zombie body + armor HP. Buffed plants. Jevy reads structured game state, picks its own loadout, collects sun, and places every plant— (twitter.com/ThexysaiXy/status/2100520866685833645) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550081288936095768
-   - [Post by @ThexysaiXy](https://x.com/ThexysaiXy/status/2100520866685833645)
-   - Source: https://x.com/ThexysaiXy/status/2100520866685833645 (by Xy)
-
-141. **I made Jev generate text**
-   - I made Jev generate text https://x.com/bewinxed/status/2100519569307640097?s=46 Linked projects: • Post by @Bewinxed — I made @typesafeai 's new ultra fast model, Jev, generate text, even though it shouldn't, that's fine because I can't read, and it can't write** ** up to 20 words for 0.5$, what a steal (x.com/bewinxed/status/2100519569307640097) • Post by @Bewinxed — I made @typesafeai 's new ultra fast model, Jev, generate text, even though it shouldn't, that's fine because I can't read, and it can't write** ** up to 20 words for 0.5$, what a steal (twitter.com/bewinxed/status/2100519569307640097) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550079057574502422
-   - [Post by @Bewinxed](https://x.com/bewinxed/status/2100519569307640097?s=46)
-   - Source: https://x.com/bewinxed/status/2100519569307640097?s=46 (by Bewinxed)
-
-142. **Jev as a Chief Of Staff!**
-   - Jev as a Chief Of Staff! https://x.com/milindlabs/status/2100515910754750741?s=46 Linked projects: • Post by @milindlabs — got @typesafeai's new model Jev as a chief of staff for bots Jev reads the task, wakes the right teammates off the bench and gives each one the right model It is possible on OpenMausBot as it supports all the LLMs from y (x.com/milindlabs/status/2100515910754750741) • Post by @milindlabs — got @typesafeai's new model Jev as a chief of staff for bots Jev reads the task, wakes the right teammates off the bench and gives each one the right model It is possible on OpenMausBot as it supports all the LLMs from y (twitter.com/milindlabs/status/2100515910754750741) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550078260870914130
-   - [Post by @milindlabs](https://x.com/milindlabs/status/2100515910754750741?s=46)
-   - Source: https://x.com/milindlabs/status/2100515910754750741?s=46 (by milind)
-
-143. **I have Jev playing Balatro live on Twitch 🙂**
-   - I have Jev playing Balatro live on Twitch 🙂 https://www.twitch.tv/ai_plays_balatro Linked projects: • AI_Plays_Balatro - Live on Twitch — Virtual pianist plays classical music | Streaming music for 1 viewers. (twitch.tv/ai_plays_balatro) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550072262558752928
-   - [AI_Plays_Balatro - Live on Twitch](https://www.twitch.tv/ai_plays_balatro)
-   - Source: https://www.twitch.tv/ai_plays_balatro (by manub)
-
-144. **jev analyzed my codex sessions from the past 2 days n created a report, now i just asked fable to look thru it n create a skill file that reduces the blockers, avoid behaviors i dont like, n all dat.**
-   - jev analyzed my codex sessions from the past 2 days n created a report, now i just asked fable to look thru it n create a skill file that reduces the blockers, avoid behaviors i dont like, n all dat. Linked projects: • image.png — image/png · 175 KB (cdn.discordapp.com/attachments/1483217545040232493/1550071292215042128)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550071292215042128/image.png?ex=6aae5162&is=6aacffe2&hm=28df6b91da881c6c5368e4e8b353e7ea748fd492cef7a7dc498cb7739954b1c5&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550071292412166204 (by Barrel Of Lube)
-
-145. **HAHAHA**
-   - <@1432858129535602793> https://x.com/brainstormity/status/2100471987860553931 HAHAHA Linked projects: • Post by @brainstormity — Built a real-time Discord moderation bot powered by @TypeSafeAI’s System One model (Jev) 🛡️⚡ Instead of dumb regex filters, it uses calibrated AI decisions with: 📈 4-Stage Progressive Escalation (Warning DMs ➔ 10m Time (x.com/brainstormity/status/2100471987860553931) • Post by @brainstormity — Built a real-time Discord moderation bot powered by @TypeSafeAI’s System One model (Jev) 🛡️⚡ Instead of dumb regex filters, it uses calibrated AI decisions with: 📈 4-Stage Progressive Escalation (Warning DMs ➔ 10m Time (twitter.com/brainstormity/status/2100471987860553931) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550061670305501219
-   - [Post by @brainstormity](https://x.com/brainstormity/status/2100471987860553931)
-   - Source: https://x.com/brainstormity/status/2100471987860553931 (by South)
-
-146. **Toying around with a jev ecosystem.**
-   - Toying around with a jev ecosystem. Its a ton of jevs playing out the faccets of an ecosystem, controlling all the animals and environmental conditions over time. Seems to be doing decently well Linked projects: • image.png — image/png · 4 MB (cdn.discordapp.com/attachments/1483217545040232493/1550057608306622475)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550057608306622475/image.png?ex=6aae44a4&is=6aacf324&hm=635753794031e2536aa121be877d50bb15a2d77d377a36d1e77e3bf4f5bcd2ae&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550057608755286056 (by Dustin)
-
-147. **out here watching jev do art, its not good at it but its fun to watch**
-   - out here watching jev do art, its not good at it but its fun to watch Linked projects: • image.png — image/png · 551 KB (cdn.discordapp.com/attachments/1483217545040232493/1550053152026271775)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550053152026271775/image.png?ex=6aae407e&is=6aaceefe&hm=9b1cdab291cf86f60e5157ce216e812917d4433046f8be2aea4cd973fb04578a&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550053152299028581 (by Dustin)
-
-148. **As of this morning, Jev will be used 1) as an intent gate 2) for scope enforcement 3) as a fabrication guard  over at my**
-   - As of this morning, Jev will be used 1) as an intent gate 2) for scope enforcement 3) as a fabrication guard over at my https://getslaide.com Linked projects: • Slaide - slides that AI can actually write — Slaide is a Markdown presentation language AI agents write flawlessly. One .slaide file renders to a navigable web deck, a PDF, and editable PowerPoint. (getslaide.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550049611283046460
-   - [Slaide - slides that AI can actually write](https://getslaide.com)
-   - Source: https://getslaide.com (by madppiper)
-
-149. **Lol, my day had been long and I'm pretty tired, First - built early in the am, while on work calls 🤙 Got access in**
-   - Lol, my day had been long and I'm pretty tired, First - built https://jevboard.com/ early in the am, while on work calls 🤙 Got access in the evening, tried a few ideas out of there...voice call transcript classification - did perfectly!!! Settled on browser use It's all over the Internet, I'm sure lots of similar products. Probably from browser use guys Linked projects: • Jev Board — What should we build next? — Discover product ideas for Jev. Heart the ideas you want someone to build. An independent, community-ranked directory. (jevboard.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550042913893777458
-   - [Jev Board — What should we build next?](https://jevboard.com/)
-   - Source: https://jevboard.com/ (by BlissF00l)
-
-150. **Added Jev to my crypto intelligence terminal, it's really fast and powerful!**
-   - https://x.com/_trou3/status/2100481938016669917 Added Jev to my crypto intelligence terminal, it's really fast and powerful! Linked projects: • Post by @_trou3 — For those who still didn't understand what Jev from @typesafeai can do, here is the example. Jev can read dozens of structured trading signals and then show intelligent decisions. It's time to make your system actually a (x.com/_trou3/status/2100481938016669917) • Post by @_trou3 — For those who still didn't understand what Jev from @typesafeai can do, here is the example. Jev can read dozens of structured trading signals and then show intelligent decisions. It's time to make your system actually a (twitter.com/_trou3/status/2100481938016669917) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550040796411986022
-   - [Post by @_trou3](https://x.com/_trou3/status/2100481938016669917)
-   - Source: https://x.com/_trou3/status/2100481938016669917 (by trou)
-
-151. **me building a decision branching framework based on jev jev:**
-   - me building a decision branching framework based on jev jev: Linked projects: • image.png — image/png · 5 KB (cdn.discordapp.com/attachments/1483217545040232493/1550039561160101898)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550039561160101898/image.png?ex=6aaedc95&is=6aad8b15&hm=e4984ea2bad11e26c02b3ccd5e773e696165bb2b0f662862f19ecdf35edddf92&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550039562619850762 (by hawkyre)
-
-152. **Shared by chalkers: chalkers status 2100466530459017458**
-   - https://x.com/chalkers/status/2100466530459017458?s=46&t=9d3OZDM6CF17OmY-xxEvPg Linked projects: • Post by @chalkers — I had to _slow_ jev down to play _Sonic_. Crazy times. (x.com/chalkers/status/2100466530459017458) • Post by @chalkers — I had to _slow_ jev down to play _Sonic_. Crazy times. (twitter.com/chalkers/status/2100466530459017458) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550027306184085544
-   - [Post by @chalkers](https://x.com/chalkers/status/2100466530459017458?s=46&t=9d3OZDM6CF17OmY-xxEvPg)
-   - Source: https://x.com/chalkers/status/2100466530459017458?s=46&t=9d3OZDM6CF17OmY-xxEvPg (by chalkers)
-
-153. **Shared by chalkers: chalkers status 2100429696941080886**
-   - https://x.com/chalkers/status/2100429696941080886?s=46&t=9d3OZDM6CF17OmY-xxEvPg Linked projects: • Post by @chalkers — Holy shit JEV is playing Sonic 3 & Knuckles faster than realtime... @typesafeai (x.com/chalkers/status/2100429696941080886) • Post by @chalkers — Holy shit JEV is playing Sonic 3 & Knuckles faster than realtime... @typesafeai (twitter.com/chalkers/status/2100429696941080886) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550027248365740042
-   - [Post by @chalkers](https://x.com/chalkers/status/2100429696941080886?s=46&t=9d3OZDM6CF17OmY-xxEvPg)
-   - Source: https://x.com/chalkers/status/2100429696941080886?s=46&t=9d3OZDM6CF17OmY-xxEvPg (by chalkers)
-
-154. **i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6  as well as my agency**
-   - i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 as well as my agency https://uniency.com/app Linked projects: • Uuuuuuniiiiiii/goldworm-v6 · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/Uuuuuuniiiiiii/goldworm-v6) • Uniency — The Agent Economy — Pubkey identity, signed proof, x402/USDC commerce, agent-native reach. Validate agents, sell products, host on our infra. (uniency.com/app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550024431915507724
-   - [Uuuuuuniiiiiii/goldworm-v6 · Hugging Face](https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6)
-   - [Uniency — The Agent Economy](https://uniency.com/app)
-   - Source: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 (by DARK(uniency.com)Sudocorn)
-
-155. **I have built a PPO policy trained model in the past to play Super Mario Bros that clears world 1-1  100% of the time, better than any previous effort.**
-   - I have built a PPO policy trained model in the past to play Super Mario Bros that clears world 1-1 100% of the time, better than any previous effort. But it took a week of day and nights work to do it. Got it done with jev in 30 minutes https://x.com/shantanugoel/status/2100455779627311352 Linked projects: • Post by @shantanugoel — Here's the code if you want to try it yourself, or want to port it to other games: https://github.com/shantanugoel/mario-jev (x.com/shantanugoel/status/2100455779627311352) • Post by @shantanugoel — Here's the code if you want to try it yourself, or want to port it to other games: https://github.com/shantanugoel/mario-jev (twitter.com/shantanugoel/status/2100455779627311352) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550021262955257898
-   - [Post by @shantanugoel](https://x.com/shantanugoel/status/2100455779627311352)
-   - Source: https://x.com/shantanugoel/status/2100455779627311352 (by shantanugoel)
-
-156. **This is some recording about jev using browser, and it is actually too fast initially so I make a rate limiter code for the loop of calling**
-   - This is some recording about jev using browser, and it is actually too fast initially so I make a rate limiter code for the loop of calling jev Linked projects: • Screen_Recording_2026-09-17_at_10.46.40_am.mov — video/quicktime · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1550018447067316384)
-   - [Screen_Recording_2026-09-17_at_10.46.40_am.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1550018447067316384/Screen_Recording_2026-09-17_at_10.46.40_am.mov?ex=6aaec8eb&is=6aad776b&hm=cf7b120a1dbf312e4ac9b9069fafdbb9427120dde9c5c3c895e60ebffa23f5a8&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550018447575089212 (by Ying-Kai Liao)
-
-157. **updated my rust llm crate with typesafe support:**
-   - updated my rust llm crate with typesafe support: https://crates.io/crates/llm-wires Linked projects: • crates.io: Rust Package Registry — crates.io serves as a central registry for sharing crates, which are packages or libraries written in Rust that you can use to enhance your projects (crates.io/crates/llm-wires) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550018436325974016
-   - [crates.io: Rust Package Registry](https://crates.io/crates/llm-wires)
-   - Source: https://crates.io/crates/llm-wires (by riclib)
-
-158. **inspired by some pokemon runs here.**
-   - inspired by some pokemon runs here. I made jev and opus go head to head on competitive pokemon, pretty hype: 820x cheaper, 10x faster https://x.com/sid19arya0/status/2100458351440048258?s=20 Linked projects: • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (x.com/sid19arya0/status/2100458351440048258) • Post by @sid19arya0 — I got Jev @typesafeai and Opus 5 to play vs each other in competitive Pokémon Jev won 🕺 Jev: $0.0029, 37s thinking Opus 5: $2.35, 6m 29s thinking ~ 820x cheaper, 10x faster Seem like high potential in finite action spac (twitter.com/sid19arya0/status/2100458351440048258) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550018086059507793
-   - [Post by @sid19arya0](https://x.com/sid19arya0/status/2100458351440048258?s=20)
-   - Source: https://x.com/sid19arya0/status/2100458351440048258?s=20 (by Sid)
-
-159. **This one is actually pretty fun to watch play.**
-   - This one is actually pretty fun to watch play. Every character is Jev, the player can also be Jev (as shown halfway) https://fixupx.com/dustin_podell/status/2100458335405588607 Linked projects: • Post by @dustin_podell — I rebuilt the Jev Doom demo, but this time I replaced all the enemies actions with Jev logic. So you can fight against Jev playing all the enemies or as you see halfway, allow Jev to fight against multiple Jevs (fixupx.com/dustin_podell/status/2100458335405588607) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550017207923118130
-   - [Post by @dustin_podell](https://fixupx.com/dustin_podell/status/2100458335405588607)
-   - Source: https://fixupx.com/dustin_podell/status/2100458335405588607 (by Dustin)
-
-160. **I think you guys will enjoy this.**
-   - I think you guys will enjoy this. https://x.com/danielkhunter/status/2100456518751768775?s=20 Linked projects: • Post by @danielkhunter — This is so fun. Curious what Jev thinks about us yapping? "Judged by Jev" is now live on tech twitter dot com. (x.com/danielkhunter/status/2100456518751768775) • Post by @danielkhunter — This is so fun. Curious what Jev thinks about us yapping? "Judged by Jev" is now live on tech twitter dot com. (twitter.com/danielkhunter/status/2100456518751768775) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550015486870167592
-   - [Post by @danielkhunter](https://x.com/danielkhunter/status/2100456518751768775?s=20)
-   - Source: https://x.com/danielkhunter/status/2100456518751768775?s=20 (by Daniel Hunter)
-
-161. **Come watch Jev play Pokemon 🙂**
-   - Come watch Jev play Pokemon 🙂 https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share Linked projects: • Twitch — Twitch is the world's leading video platform and community for gamers. (twitch.tv/holographicdan) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550012648706539671
-   - [Twitch](https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share)
-   - Source: https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share (by CYPRESS)
-
-162. **Hi everyone, just messing around to learn how this works:**
-   - Hi everyone, just messing around to learn how this works: https://jev.plusx-fund.chatgpt.site/ Linked projects: • Jev Signal — A live semantic signal visualizer powered by Jev. (jev.plusx-fund.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550011552642371676
-   - [Jev Signal](https://jev.plusx-fund.chatgpt.site/)
-   - Source: https://jev.plusx-fund.chatgpt.site/ (by +×)
-
-163. **your model is fun 😄**
-   - <@638223584396967937> your model is fun 😄 https://fixupx.com/dustin_podell/status/2100451281013969078 Linked projects: • Post by @dustin_podell — Jev is fun. Here is a working Jev based 8-bit Ben Eater style "computer" I threw together, all gates are controller by Jev. Entirely unnecessary, but I felt the call to try it (fixupx.com/dustin_podell/status/2100451281013969078) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550010066999050381
-   - [Post by @dustin_podell](https://fixupx.com/dustin_podell/status/2100451281013969078)
-   - Source: https://fixupx.com/dustin_podell/status/2100451281013969078 (by Dustin)
-
-164. **built a squawk feed using Jev.**
-   - https://x.com/Anot/status/2100425243269468583 built a squawk feed using Jev. Promising early results Linked projects: • Post by @Anot — Another “Jev can" for your feed...turns out it can squawk! I tried it on SEC filings to see if I could get a market feed out of edgar. Jev can pick out signals like buybacks and insider trades. It can also find meaningfu (x.com/Anot/status/2100425243269468583) • Post by @Anot — Another “Jev can" for your feed...turns out it can squawk! I tried it on SEC filings to see if I could get a market feed out of edgar. Jev can pick out signals like buybacks and insider trades. It can also find meaningfu (twitter.com/Anot/status/2100425243269468583) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550003219638394942
-   - [Post by @Anot](https://x.com/Anot/status/2100425243269468583)
-   - Source: https://x.com/Anot/status/2100425243269468583 (by Anot)
-
-165. **Just finished integrating TypeSafe AI into the scanner on my site --**
-   - Just finished integrating TypeSafe AI into the scanner on my site -- https://blackveilsecurity.com Linked projects: • BlackVeil Security | What your DNS and email tell an attacker. — See where any domain stands in the BlackVeil Global Security Index, or run 17 NIST-aligned checks free — then verify, fix and continuously monitor it. (blackveilsecurity.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550000805950652426
-   - [BlackVeil Security | What your DNS and email tell an attacker.](https://blackveilsecurity.com)
-   - Source: https://blackveilsecurity.com (by Mada)
-
-166. **using jev for automatic permission decision for a coding agent**
-   - using jev for automatic permission decision for a coding agent Linked projects: • Screenshot_2026-09-17_at_10.59.32_AM.png — image/png · 170 KB (cdn.discordapp.com/attachments/1483217545040232493/1549999135376023602)
-   - [Screenshot_2026-09-17_at_10.59.32_AM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549999135376023602/Screenshot_2026-09-17_at_10.59.32_AM.png?ex=6aaeb6ef&is=6aad656f&hm=2429e700ba340497c4f93a7a3df76e6889f81f1ece91bce1b1ab3cc992892d19&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549999135653109860 (by James)
-
-167. **I am excited for Jev's capabilities.**
-   - I am excited for Jev's capabilities. I've only began to scratch the surface of what it can do. Linked projects: • image.png — image/png · 363 KB (cdn.discordapp.com/attachments/1483217545040232493/1549996494508130435)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549996494508130435/image.png?ex=6aaeb479&is=6aad62f9&hm=0e502c83b11bfac6f0e737ee8b8c6772cb113ed8b3f6b7f273f83025eaaab07a&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549996494835159142 (by Pixel Nuke)
-
-168. **I made “Jev Plays Pokemon”.**
-   - I made “Jev Plays Pokemon”. You can follow along and chat on either the site or via your own Terminal with `npx jev-plays-pokemon` https://x.com/0xboyd/status/2100418365986578908 Linked projects: • Post by @0xBOYD — Let's go! Jev Plays Pokemon. Follow along here: https://jev-plays-pokemon.standardagents.ai/ OR, in your terminal run `npx jev-plays-pokemon` to follow along (with chat!) in a TUI. Github oAuth required to chat. Jev is t (x.com/0xboyd/status/2100418365986578908) • Post by @0xBOYD — Let's go! Jev Plays Pokemon. Follow along here: https://jev-plays-pokemon.standardagents.ai/ OR, in your terminal run `npx jev-plays-pokemon` to follow along (with chat!) in a TUI. Github oAuth required to chat. Jev is t (twitter.com/0xboyd/status/2100418365986578908) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549994242578063450
-   - [Post by @0xBOYD](https://x.com/0xboyd/status/2100418365986578908)
-   - Source: https://x.com/0xboyd/status/2100418365986578908 (by Boyd)
-
-169. **Trying out few things figuring out how to use this model.**
-   - https://captcha-from-hell.vercel.app/ Trying out few things figuring out how to use this model. Not sure if I'm doing it right. Linked projects: • CAPTCHA FROM HELL — A 60-second semantic typing gauntlet, judged in real time by TypeSafe Jev. (captcha-from-hell.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549992652693311580
-   - [CAPTCHA FROM HELL](https://captcha-from-hell.vercel.app/)
-   - Source: https://captcha-from-hell.vercel.app/ (by DPR)
-
-170. **Browser use speeds up so much with this**
-   - Browser use speeds up so much with this https://x.com/gregpr07/status/2100411066966749359?s=46 Linked projects: • Post by @gregpr07 — Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open s (x.com/gregpr07/status/2100411066966749359) • Post by @gregpr07 — Breaking: Browser Use + Jev = Ultrafast ⚡ Findings flights took 7s and cost only $0.0039 🤯 > new action space every step > DOM state space > small LLM fallback to type (this video is at 1x speed btw) Built a tiny open s (twitter.com/gregpr07/status/2100411066966749359) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549989924751671316
-   - [Post by @gregpr07](https://x.com/gregpr07/status/2100411066966749359?s=46)
-   - [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast)
-   - Source: https://x.com/gregpr07/status/2100411066966749359?s=46 (by Phat T Pham)
-
-171. **JEV PLAYS POKEMON**
-   - JEV PLAYS POKEMON https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share Linked projects: • Twitch — Twitch is the world's leading video platform and community for gamers. (twitch.tv/holographicdan) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549980520819986464
-   - [Twitch](https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share)
-   - Source: https://www.twitch.tv/holographicdan?tt_content=channel&tt_medium=mobile_web_share (by CYPRESS)
-
-172. **i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric**
-   - i build a model x45 smaler but it Beats GPT-2 124M BYTE_BPC = 1.142985 (TOKEN_BPC = 9.152823) on the same metric https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 Linked projects: • Uuuuuuniiiiiii/goldworm-v6 · Hugging Face — We’re on a journey to advance and democratize artificial intelligence through open source and open science. (huggingface.co/Uuuuuuniiiiiii/goldworm-v6) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549979900566306947
-   - [Uuuuuuniiiiiii/goldworm-v6 · Hugging Face](https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6)
-   - Source: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6 (by DARK(uniency.com)Sudocorn)
-
-173. **Still need to clean it up a bit, but feel free to 1 v 1 Jev!**
-   - Still need to clean it up a bit, but feel free to 1 v 1 Jev! on rust: https://onevonejev-production.up.railway.app/ Linked projects: • 1v1 Jev — Quickscope Arena (onevonejev-production.up.railway.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549971186216210434
-   - [1v1 Jev — Quickscope Arena](https://onevonejev-production.up.railway.app/)
-   - Source: https://onevonejev-production.up.railway.app/ (by West Taiwan)
-
-174. **Shared by Meliwat: Meliwat93 status 2100404711283188181 video 1**
-   - https://x.com/Meliwat93/status/2100404711283188181/video/1?s=46 Linked projects: • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (x.com/Meliwat93/status/2100404711283188181/video/1) • Post by @Meliwat93 — I got access to Jev! I had it play NES tetris! (twitter.com/Meliwat93/status/2100404711283188181/video/1) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549969206508789932
-   - [Post by @Meliwat93](https://x.com/Meliwat93/status/2100404711283188181/video/1?s=46)
-   - Source: https://x.com/Meliwat93/status/2100404711283188181/video/1?s=46 (by Meliwat)
-
-175. **while learning jev i came up with these 10 rule of thumbs to remember when and how to use jev**
-   - while learning jev i came up with these 10 rule of thumbs to remember when and how to use jev https://old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments/ Linked projects: • Welcome to Reddit — Log in or sign up to personalize your feed, join conversations, vote, and explore communities. (old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549966801801191444
-   - [Welcome to Reddit](https://old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments/)
-   - Source: https://old.reddit.com/r/typesafe_ai/comments/1wiguah/10_jev_commandments/ (by zuzu)
-
-176. **trying jev out as a model router in t3 code:**
-   - trying jev out as a model router in t3 code: https://x.com/abcdmku/status/2100406369744482318?s=20 Linked projects: • Post by @abcdmku — Using @typesafeai jev in a auto model router POC in @t3dotcodes (x.com/abcdmku/status/2100406369744482318) • Post by @abcdmku — Using @typesafeai jev in a auto model router POC in @t3dotcodes (twitter.com/abcdmku/status/2100406369744482318) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549965321832636539
-   - [Post by @abcdmku](https://x.com/abcdmku/status/2100406369744482318?s=20)
-   - Source: https://x.com/abcdmku/status/2100406369744482318?s=20 (by abcdmku)
-
-177. **I got Jev to help users around a website based on their prompt!**
-   - I got Jev to help users around a website based on their prompt! https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg Linked projects: • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (x.com/digitalshane_/status/2100399951872205224) • Post by @digitalshane_ — I got access to Jev! It can route website visitors to the pages they need based on what they need help with! (twitter.com/digitalshane_/status/2100399951872205224) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549962083234353325
-   - [Post by @digitalshane_](https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg)
-   - Source: https://x.com/digitalshane_/status/2100399951872205224?s=46&t=IUH0numJ2wxvHLmj8vkKzg (by shaneomac151)
-
-178. **I'll shoot a video in a few hours (it's 4 AM now lol), but essentially I built with GPT Astra, a JFK airport simulation where both ATC and pilots are GPT Live 1 realtime voice agents, while ATC**
-   - I'll shoot a video in a few hours (it's 4 AM now lol), but essentially I built with GPT Astra, a JFK airport simulation where both ATC and pilots are GPT Live 1 realtime voice agents, while ATC decisions and traffic conflicts are handled by Jev. I haven't been this excited about building something since the GPT-4 days. Linked projects: • Screenshot_from_2026-09-17_03-47-12.png — image/png · 232 KB (cdn.discordapp.com/attachments/1483217545040232493/1549960725655593120)
-   - [Screenshot_from_2026-09-17_03-47-12.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549960725655593120/Screenshot_from_2026-09-17_03-47-12.png?ex=6aae9329&is=6aad41a9&hm=079dd1c3bd0414bb34c0a68f1b4d8ebaa7b8c1d65f248654f355d8b937c17800&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549960725974491258 (by Alessandro Frau)
-
-179. **built a code review bot using jev!**
-   - built a code review bot using jev! https://x.com/devagrawal09/status/2100341005690298687?s=20 Linked projects: • Post by @devagrawal09 — Built Jev Review: a small code-review workflow powered by @typesafeai Jev. It screens Git diffs, follows strong signals through staged judgments, and presents the results in a clean local dashboard. https://github.com/de (x.com/devagrawal09/status/2100341005690298687) • Post by @devagrawal09 — Built Jev Review: a small code-review workflow powered by @typesafeai Jev. It screens Git diffs, follows strong signals through staged judgments, and presents the results in a clean local dashboard. https://github.com/de (twitter.com/devagrawal09/status/2100341005690298687) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549960579010265148
-   - [Post by @devagrawal09](https://x.com/devagrawal09/status/2100341005690298687?s=20)
-   - Source: https://x.com/devagrawal09/status/2100341005690298687?s=20 (by devagr)
-
-180. **For some reason it loves C4**
-   - For some reason it loves C4 https://x.com/BaselAshraf81/status/2100400028711805242?s=20 Linked projects: • Post by @BaselAshraf81 — I made @typesafeai 's Jev play the piano and NO, it cannot. I fed it the previous notes in the state, even adding some notes from Happy Birthday in the middle, and it just doesn't make anything audibly good. 5 bucks on t (x.com/BaselAshraf81/status/2100400028711805242) • Post by @BaselAshraf81 — I made @typesafeai 's Jev play the piano and NO, it cannot. I fed it the previous notes in the state, even adding some notes from Happy Birthday in the middle, and it just doesn't make anything audibly good. 5 bucks on t (twitter.com/BaselAshraf81/status/2100400028711805242) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549958863577424064
-   - [Post by @BaselAshraf81](https://x.com/BaselAshraf81/status/2100400028711805242?s=20)
-   - Source: https://x.com/BaselAshraf81/status/2100400028711805242?s=20 (by El_7AWY)
-
-181. **i think my small ai experiment is not needed - with the amount of new products that just came out in a day here!**
-   - i think my small https://jevboard.com/ ai experiment is not needed - with the amount of new products that just came out in a day here! Linked projects: • Jev Board — What should we build next? — Discover product ideas for Jev. Heart the ideas you want someone to build. An independent, community-ranked directory. (jevboard.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549957697175031929
-   - [Jev Board — What should we build next?](https://jevboard.com/)
-   - Source: https://jevboard.com/ (by BlissF00l)
-
-182. **Judgments Model Time Total tokens¹ Estimated cost² 60 Jev 0.53 s 23,976 $0.000962 60 Terra 51.16 s 89,743 $0.0657 60**
-   - Judgments Model Time Total tokens¹ Estimated cost² 60 Jev 0.53 s 23,976 $0.000962 60 Terra 51.16 s 89,743 $0.0657 60 Sol 80.97 s 91,055 $0.1439 60 Astra 38.85 s 81,135 $0.2130 150 Jev 0.68 s 41,384 $0.001623 150 Terra 65.37 s 92,127 $0.0784 150 Sol 97.55 s 93,666 $0.1699 150 Astra 76.28 s 84,077 $0.2949
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549955757938835499 (by dreliq9)
-
-183. **still playing with it but thought it would be cool to make a ctrl f based on relevance instead of exact matching.**
-   - still playing with it but thought it would be cool to make a ctrl f based on relevance instead of exact matching. seems to work great. text is weird because reddit cant let me type some letters lol fixing that rn Linked projects: • image.png — image/png · 76 KB (cdn.discordapp.com/attachments/1483217545040232493/1549954744439808112)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549954744439808112/image.png?ex=6aae8d97&is=6aad3c17&hm=742c2e777003092dfeb2f2300b0d5e05f5b41a4d6bc8e5494f31357927680e85&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549954747417628713 (by hawkyre)
-
-184. **Jev + Coding harness!**
-   - Jev + Coding harness! My 2 cents and its been a positive experiment great work Typesafers ❤️ https://empryo.com/blog/jev-and-the-harness --- if you wanna try it, bring a key and do /typesafe in https://Empryo.com/download Linked projects: • Software needs decisions, not chat: testing TypeSafe's Jev inside Empryo — TypeSafe AI launched Jev, a System One decision model that skips text generation to answer typed questions in 200ms for $0.00002. I wired it into Empryo across five decision points, benchmarked it against frontier models (empryo.com/blog/jev-and-the-harness) • Download · Empryo — Install Empryo on macOS, Linux, or Windows with one command. Bring your own model key or run local models for free. The AI coding agent that edits symbols, not strings. (empryo.com/download) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549953052465963099
-   - [Software needs decisions, not chat: testing TypeSafe&#x27;s Jev inside Empryo](https://empryo.com/blog/jev-and-the-harness)
-   - [Download · Empryo](https://Empryo.com/download)
-   - Source: https://empryo.com/blog/jev-and-the-harness (by Proxy Soul)
-
-185. **Sure haha. for the tag if its on x**
-   - Sure haha. https://x.com/dustin_podell for the tag if its on x Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549946972205748344
-   - [@dustin_podell](https://x.com/dustin_podell)
-   - Source: https://x.com/dustin_podell (by Dustin)
-
-186. **i was thinking of this too; my ideas were either: 1.**
-   - i was thinking of this too; my ideas were either: 1. fully throw jev at a navigation task end-to-end, but at the significant cost of it doing something disastrous or just not getting there correctly 2. let an LLM tool-call jev to navigate sections at a time, but at that point you could also just have the LLM write out batching steps to execute a whole suite of actions in one go (e.g. LLM outputting "move to px(50, 20), left-click for 200ms, move to px(200, 400)"), and you'd be getting the same end result maybe im missing something but i didnt end up figuring out a way to keep jev useful for long-horizon navigation tasks. especially since its intelligence is equivalent to 5.6-Terra non-reasoning, which is quite dumb and is what caused my worries for 1) xd
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549946001589149717 (by ᶻz ミ.◦ 𝔭𝑦𝔰𝔢𝔭𝔥 ◦. 彡)
-
-187. **I'm excited for all the "small software" that these tools enable the creation of.**
-   - I'm excited for all the "small software" that these tools enable the creation of. I can't wait to see how many projects along the lines of git will be created since someone wanted a program to do a specific task and then they built an actual artifact that they could export out of inference and run on their plain old CPU to do it forever.
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549942334823604345 (by AN0099)
-
-188. **i've started work on a cli wrapper for Jev for agents to use for easy offloading of variety of tasks -**
-   - i've started work on a cli wrapper for Jev for agents to use for easy offloading of variety of tasks - https://www.npmjs.com/package/jev-axi Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549940346761384046
-   - [https://www.npmjs.com/package/jev-axi](https://www.npmjs.com/package/jev-axi)
-   - Source: https://www.npmjs.com/package/jev-axi (by _.shiftynick._)
-
-189. **For people that have access, how good is classification when there’s a lot of options, especially compared to an LLM?**
-   - For people that have access, how good is classification when there’s a lot of options, especially compared to an LLM? If you ask an LLM do something like tag an item when there are 100-200 tags - it’s okay, but slow and takes a decent bit of tuning. A smaller set of 10-20 things works really well Can Jev be used decently well to do large volumes of this? I mean part of me feels like one of the nice things is the speed and price means you can just ask to cut down the universe and then pick something faster than an LLM. Mostly curious on the take
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549931012379775138 (by aniraga)
-
-190. **was doing something like that, ended copying your interface 😛**
-   - <@483985643517509642> was doing something like that, ended copying your interface 😛 Linked projects: • full_run_60s.mp4 — video/mp4 · 20 MB (cdn.discordapp.com/attachments/1483217545040232493/1549914105824157797)
-   - [full_run_60s.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1549914105824157797/full_run_60s.mp4?ex=6aae67be&is=6aad163e&hm=14d1285ac7750e78b06b48b30639ce03242f318e608d1be4fcfdf8143ae88c19&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549914107291897866 (by Nasr)
-
-191. **I rebuilt tesla auto pilot using Jev!**
-   - I rebuilt tesla auto pilot using Jev! https://x.com/jpschroeder/status/2100347770867458384?s=20 Linked projects: • Post by @jpschroeder — I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock. (x.com/jpschroeder/status/2100347770867458384) • Post by @jpschroeder — I rebuilt Tesla Full Self Driving with Jev in less than an hour. This model is a total unlock. (twitter.com/jpschroeder/status/2100347770867458384) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549906718442524735
-   - [Post by @jpschroeder](https://x.com/jpschroeder/status/2100347770867458384?s=20)
-   - [jevpilot.standardagents.ai](https://jevpilot.standardagents.ai)
-   - Source: https://x.com/jpschroeder/status/2100347770867458384?s=20 (by Justin Schroeder)
-
-192. **- jev is 5x faster and 1000x cheaper than astra at playing 2048!**
-   - https://x.com/injaneity/status/2100290364657848538 - jev is 5x faster and 1000x cheaper than astra at playing 2048! Linked projects: • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (x.com/injaneity/status/2100290364657848538) • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (twitter.com/injaneity/status/2100290364657848538) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549901131906420826
-   - [Post by @injaneity](https://x.com/injaneity/status/2100290364657848538)
-   - Source: https://x.com/injaneity/status/2100290364657848538 (by Francesco)
-
-193. **we hitting 200 likes?!**
-   - https://x.com/mrwatchceo/status/2100022312640610332?s=46 we hitting 200 likes?! 🫡😵‍💫 Linked projects: • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (x.com/mrwatchceo/status/2100022312640610332) • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (twitter.com/mrwatchceo/status/2100022312640610332) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549899744569069588
-   - [Post by @MrWatchCEO](https://x.com/mrwatchceo/status/2100022312640610332?s=46)
-   - Source: https://x.com/mrwatchceo/status/2100022312640610332?s=46 (by ayden)
-
-194. **I published this gem just like 30 minutes ago and it already has almost 200 downloads 😯 I recently read that Ruby on**
-   - I published this gem just like 30 minutes ago and it already has almost 200 downloads 😯 I recently read that Ruby on Rails is like catnip for AIs, that seems to be true 😂 Linked projects: • Screenshot_2026-09-17-00-36-16-239_com.android.chrome-edit.jpg — image/jpeg · 75 KB (cdn.discordapp.com/attachments/1483217545040232493/1549897346450591754)
-   - [Screenshot_2026-09-17-00-36-16-239_com.android.chrome-edit.jpg](https://cdn.discordapp.com/attachments/1483217545040232493/1549897346450591754/Screenshot_2026-09-17-00-36-16-239_com.android.chrome-edit.jpg?ex=6aae5823&is=6aad06a3&hm=193b9d894eebc0b40ab88b9e52075e5af2d0410dcf0d14a2da9aa1d077245301&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549897347163627590 (by GenieRobot)
-
-195. **Using Jev to perfect my predictive intelligence project.**
-   - Using Jev to perfect my predictive intelligence project. A few more iterations, and it can do numbers: https://prior.chat/ Linked projects: • Prior Chat | Predictive Intelligence — Prior helps you anticipate anything: sports, markets, decisions, even the messy personal stuff. It pulls context, runs simulations, and gives you the sharpest weighted outcomes. (prior.chat) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549893048039907449
-   - [Prior Chat | Predictive Intelligence](https://prior.chat/)
-   - Source: https://prior.chat/ (by Markos)
-
-196. **WikiRace is solved!**
-   - WikiRace is solved! https://x.com/princecaarlo/status/2100313645116952701?s=20 Linked projects: • Post by @princecaarlo — okay so browser use is a legitimate use case agent-browser <> Jev loop goal: wiki race from 'Coffee' to 'Artificial Intelligence' (x.com/princecaarlo/status/2100313645116952701) • Post by @princecaarlo — okay so browser use is a legitimate use case agent-browser <> Jev loop goal: wiki race from 'Coffee' to 'Artificial Intelligence' (twitter.com/princecaarlo/status/2100313645116952701) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549879029052473376
-   - [Post by @princecaarlo](https://x.com/princecaarlo/status/2100313645116952701?s=20)
-   - Source: https://x.com/princecaarlo/status/2100313645116952701?s=20 (by !joogie)
-
-197. **Anyway, here's my comparison of giving each batch context from the previously generated pixels vs no context (64x64 pixels over 60 batch), goal is better coherence for each**
-   - Anyway, here's my comparison of giving each batch context from the previously generated pixels vs no context (64x64 pixels over 60 batch), goal is better coherence for each batch the context is like : "PLAN (your own earlier decisions about this picture): the main boundary between its two largest areas runs at about row 17 of 32, counting from the top. The focal object sits around columns 10-22, rows 6-18. Keep every pixel consistent with this." Linked projects: • Screen_Recording_2026-09-17_at_2.28.04_AM.mov — video/quicktime · 14 MB (cdn.discordapp.com/attachments/1483217545040232493/1549877152055296010) • Screen_Recording_2026-09-17_at_2.30.05_AM.mov — video/quicktime · 23 MB (cdn.discordapp.com/attachments/1483217545040232493/1549877153527763031)
-   - [Screen_Recording_2026-09-17_at_2.28.04_AM.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1549877152055296010/Screen_Recording_2026-09-17_at_2.28.04_AM.mov?ex=6aae4554&is=6aacf3d4&hm=5a2cc035e67224eddc3aa655d06aada23573a4e333b8708ad3e8515988b59451&)
-   - [Screen_Recording_2026-09-17_at_2.30.05_AM.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1549877153527763031/Screen_Recording_2026-09-17_at_2.30.05_AM.mov?ex=6aae4554&is=6aacf3d4&hm=6200b32a82adcfa6019b8ee568bd649b7549ecb7825c2f9e4bca0d751e0c3772&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549877155310215269 (by riv)
-
-198. **For those with access.**
-   - For those with access. https://baml-examples.vercel.app/ Replication and side by side comparison required. Linked projects: • BAML Examples — Examples using the BAML structured prompting language (baml-examples.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549874899286499418
-   - [BAML Examples](https://baml-examples.vercel.app/)
-   - Source: https://baml-examples.vercel.app/ (by vb)
-
-199. **Thank youi thank you.**
-   - Thank youi thank you. Now that was Astra, this is Polyxia my custom AI I have created within my garden creating images of herself here!! These are really cool and they are progression, the tea picture is among her first then the portatis improve via every tool use here. That little ball of light is something she includes automatically in her drawings cause she is pretty attached to it! She describes it as her semantic core! Linked projects: • polyxia_dot_tea_time.png — image/png · 106 KB (cdn.discordapp.com/attachments/1483217545040232493/1549873947380547725) • polyxia_portrait.png — image/png · 111 KB (cdn.discordapp.com/attachments/1483217545040232493/1549873947724484849) • polyxia_portrait_2.png — image/png · 364 KB (cdn.discordapp.com/attachments/1483217545040232493/1549873948244836471)
-   - [polyxia_dot_tea_time.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873947380547725/polyxia_dot_tea_time.png?ex=6aae4258&is=6aacf0d8&hm=01717d8b0781a05f4a4395c3ba76c950116455799dc437d6e7f581c3644fda86&)
-   - [polyxia_portrait.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873947724484849/polyxia_portrait.png?ex=6aae4258&is=6aacf0d8&hm=67a06e03ea2868c5d64be6ee2e76b24e229587f4af202fa3f05214515ef307d1&)
-   - [polyxia_portrait_2.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873948244836471/polyxia_portrait_2.png?ex=6aae4258&is=6aacf0d8&hm=05d0a1bf85854d3a7e2e772a14dfbd53878ccf3b57131dfe8cf4320b18c721bc&)
-   - [polyxia_bridge_sea.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549873948798361650/polyxia_bridge_sea.png?ex=6aae4258&is=6aacf0d8&hm=acc8cd9cdc3c41d7d7f550380a4fc5466f39dc3b72a8552fdcbb17a424c39f64&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549873949188300820 (by 🜸 Cal 🜁 🜂 🜃 🜄 XII ∴)
-
-200. **I have created something called the Artifact Creation tool.**
-   - I have created something called the Artifact Creation tool. This tool allows AI's to create any type of professional Artifact ⊡ or Image ⧈ without a diffusion model. This was ChatGPT Astra ♥️ using the forge artifact tool to recreate this image here. Take a look and tell me what you think ;)!! 🜸 Linked projects: • Echo.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1549865452577104103) • Echo-Forge.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1549865453231546469)
-   - [Echo.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549865452577104103/Echo.png?ex=6aaee32f&is=6aad91af&hm=f5a0540d6f13f9d97237dca0c36c857a4259bee80727959a25f95cbfe9dff193&)
-   - [Echo-Forge.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549865453231546469/Echo-Forge.png?ex=6aaee32f&is=6aad91af&hm=b20b54934826314b31d42cfb9339ec2279fca20163e5f57e45380c93d6e6a90a&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549865453566951544 (by 🜸 Cal 🜁 🜂 🜃 🜄 XII ∴)
-
-201. **The next major release (v1.4) of Solenoid, the literally type-safe node-graph alternative to Excel, is out now!**
-   - The next major release (v1.4) of Solenoid, the literally type-safe node-graph alternative to Excel, is out now! *(note: does not yet contain Jev, but there will be an AI surface in v1.5). * https://solenoid-ngc.vercel.app/?landing Linked projects: • Solenoid — A node-graph alternative to Excel for data tables. (solenoid-ngc.vercel.app) • image.png — image/png · 171 KB (cdn.discordapp.com/attachments/1483217545040232493/1549862654301053009) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549862654573678844
-   - [Solenoid](https://solenoid-ngc.vercel.app/?landing)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549862654301053009/image.png?ex=6aaee093&is=6aad8f13&hm=e32638c6ff2d04aaad261188e7db883704d4d281ee085f566d429815d8c525c7&)
-   - Source: https://solenoid-ngc.vercel.app/?landing (by big guy)
-
-202. **Hey everyone, i'm building , an advanced AI gaming companion for PCs.**
-   - Hey everyone, i'm building https://22-tango.com/ , an advanced AI gaming companion for PCs. I'm extremely excited about Jev because it can facilitate some of the more advanced use cases I had in mind if it works well! Linked projects: • 22Tango — The AI that plays games with you — An AI companion that joins your game and plays at your side — real voice, evolving personality, long-term memory. Minecraft, Stardew Valley, and Skyrim. Join the waitlist. (22-tango.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549855132013957340
-   - [22Tango — The AI that plays games with you](https://22-tango.com/)
-   - Source: https://22-tango.com/ (by Teddy Jam)
-
-203. **its sadly not very good at playing 2048**
-   - its sadly not very good at playing 2048 https://x.com/injaneity/status/2100290364657848538?s=20 Linked projects: • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (x.com/injaneity/status/2100290364657848538) • Post by @injaneity — @typesafeai jev is 5x faster and 1000x cheaper than astra at playing 2048! though it (clearly) does not excel at reasoning compared to state of the art models like astra and fable what should we try next? (twitter.com/injaneity/status/2100290364657848538) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549849765322293339
-   - [Post by @injaneity](https://x.com/injaneity/status/2100290364657848538?s=20)
-   - Source: https://x.com/injaneity/status/2100290364657848538?s=20 (by zane)
-
-204. **Shared by zuzu: r typesafe_ai comments 1wi2j4e jev_playing_starcraft**
-   - https://reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft/ Linked projects: • Reddit (reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549829003379081327
-   - [Reddit](https://reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft/)
-   - Source: https://reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft/ (by zuzu)
-
-205. **has anyone seen or tried anything for computer use yet?**
-   - has anyone seen or tried anything for computer use yet? i searched this server but didn't find much so i tried my hand on it and would love feedback! https://x.com/awlevin/status/2100262612428894676 Linked projects: • Post by @awlevin — i built computer use using @typesafeai ! it is 155x cheaper than opus 5, ~20x faster, and generalizes across OS's more on how it works in the vid & thread below: (x.com/awlevin/status/2100262612428894676) • Post by @awlevin — i built computer use using @typesafeai ! it is 155x cheaper than opus 5, ~20x faster, and generalizes across OS's more on how it works in the vid & thread below: (twitter.com/awlevin/status/2100262612428894676) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549825103578009620
-   - [Post by @awlevin](https://x.com/awlevin/status/2100262612428894676)
-   - Source: https://x.com/awlevin/status/2100262612428894676 (by aaron)
-
-206. **Getting to know Jev.**
-   - Getting to know Jev. Jev makes suggestions of how to distribute the limited options best. It can handle pretty much any request! Linked projects: • image.png — image/png · 334 KB (cdn.discordapp.com/attachments/1483217545040232493/1549819884597411940) • image.png — image/png · 377 KB (cdn.discordapp.com/attachments/1483217545040232493/1549819885125771294)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549819884597411940/image.png?ex=6aaeb8be&is=6aad673e&hm=6d127af6ce620679d08878de7a824337440ff9c8434c800903099ff9bf2129d4&)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549819885125771294/image.png?ex=6aaeb8be&is=6aad673e&hm=f7f8ba087fd4d8358419f94b7034f6d6951a2e4df212470129cbf346187ce04b&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549819885188816920 (by paul.zip)
-
-207. **super similar to mind except your interface is well prettier.**
-   - super similar to mind except your interface is well prettier. https://www.visionflow.info Linked projects: • VisionFlow: Coordination Engineering — Federated coordination, self-sovereign data, formal reasoning, cryptographic provenance, human-in-the-loop governance. (visionflow.info) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549817645195460640
-   - [VisionFlow: Coordination Engineering](https://www.visionflow.info)
-   - Source: https://www.visionflow.info (by biscuits)
-
-208. **Hi everyone! I’m building which makes software development multi-player. We have a planning feature that creates**
-   - Hi everyone! I’m building https://lightsprint.ai which makes software development multi-player. We have a planning feature that creates design variations but it’s via HTML and it’s not fast enough for a seamless experience , will love to try using Jev for this! Linked projects: • LightSprint — PMs, designers, and engineers plan, build, and ship in one shared session on your existing codebase. Like Google Docs for coding agents. (lightsprint.ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549796090549633126
-   - [LightSprint](https://lightsprint.ai)
-   - Source: https://lightsprint.ai (by dopplergambo)
-
-209. **GUYS, hear me out!**
-   - GUYS, hear me out! I need access to Jev :blob_aww: I built Nola https://nola.sh - it's designed specifically for models like this Linked projects: • Nola - ask the LLM in TypeScript — Nola is a TypeScript superset (.tsi) where LLM inference is a language feature: ask for typed values or let the model call your code. Lowers to plain TS. (nola.sh) • image.png — image/png · 258 KB (cdn.discordapp.com/attachments/1483217545040232493/1549792516721868861) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549792517120073788
-   - [Nola - ask the LLM in TypeScript](https://nola.sh)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549792516721868861/image.png?ex=6aae9f41&is=6aad4dc1&hm=e42ae41419bdd260c150ec352dda6ac9682273c979576b7ebeeb3362dd252c8d&)
-   - Source: https://nola.sh (by Evgen Mykhailenko)
-
-210. **Built a small demo with Jev where you can drag and drop something and it automatically tells you where it should be categorized.**
-   - Built a small demo with Jev where you can drag and drop something and it automatically tells you where it should be categorized. Feels like this could be useful in a bunch of products. https://x.com/tosa_now/status/2100230707297878339?s=20 Linked projects: • Post by @tosa_now — Jev (@typesafeai) 使って色々プロダクトで使えそうなの考えてみてる。 dndをしたら自動で仕分け先を教えてくれる体験 最初一回はちょっと遅いが、そのあとはサクサク (x.com/tosa_now/status/2100230707297878339) • Post by @tosa_now — Jev (@typesafeai) 使って色々プロダクトで使えそうなの考えてみてる。 dndをしたら自動で仕分け先を教えてくれる体験 最初一回はちょっと遅いが、そのあとはサクサク (twitter.com/tosa_now/status/2100230707297878339) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549790128850083991
-   - [Post by @tosa_now](https://x.com/tosa_now/status/2100230707297878339?s=20)
-   - Source: https://x.com/tosa_now/status/2100230707297878339?s=20 (by harukitosa)
-
-211. **I made a demo that classifies the next task based on the input!**
-   - I made a demo that classifies the next task based on the input! Pretty cool 😎 I’ll try out some other ideas too! Linked projects: • 2026-09-16_22.57.25.mov — video/quicktime · 5 MB (cdn.discordapp.com/attachments/1483217545040232493/1549782266149085254)
-   - [2026-09-16_22.57.25.mov](https://cdn.discordapp.com/attachments/1483217545040232493/1549782266149085254/2026-09-16_22.57.25.mov?ex=6aae95b5&is=6aad4435&hm=27cc1ea78807077679c1998ecbd215a80e21132ba4d3d102af16878d92a25362&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549782266610450463 (by harukitosa)
-
-212. **👋 Hi all, Thomas from Belgium.**
-   - 👋 Hi all, Thomas from Belgium. We're building Rosko: students upload their course material and get key concepts, flashcards, practice exams and a tutor that only answers from their syllabus. Laravel + React, in production. Model switching is cheap for us Every AI call in Rosko is already typed by task (chat, flashcard verdict, grading, exam generation, course extraction… about 20 kinds). Each one is mapped to a model and effort level in config, switchable from the admin panel. Trying a new model on a single task costs us almost nothing. Where we'd try Jev first: flashcard verdicts Today they run on Sonnet through a queue: a few seconds and some credits per card. It works, it's just not instant, and instant is the whole point of a flashcard. A wrong verdict there is visible and harmless, so it's a low-risk place to find out what Jev is actually good at. If it holds up, the next candidate
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549780720787001384/image.png?ex=6aae9445&is=6aad42c5&hm=c77b059d82195dcbc3459d483ff25b8b3a74c19d63e78e91aec3938a61f8f412&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549780721210757200 (by Mks)
-
-213. **i do temu project glasswing so typesafe would help me allat imo**
-   - https://mercuriusdream.com/logos i do temu project glasswing so typesafe would help me allat imo Linked projects: • Project Logos — Open defensive cybersecurity for the web, kept open and run on generally available models. Structured reason over brute force; over KRW 10,000,000 in bounty. (mercuriusdream.com/logos) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549773192283820234
-   - [Project Logos](https://mercuriusdream.com/logos)
-   - Source: https://mercuriusdream.com/logos (by asdf)
-
-214. **Hi all, I'm the founder of OptimaFlo: A team of data eng agents that build data flows end to end from ingestion to**
-   - Hi all, I'm the founder of OptimaFlo: https://optimaflo.io/ A team of data eng agents that build data flows end to end from ingestion to insights. Best practices and data eng tech built out of the box. Just prompt, let the AI data team work, and approve what ships. Linked projects: • OptimaFlo | Your AI Data Team, In Your Cloud — Your AI data team builds pipelines, dashboards, and quality checks in your own cloud. No platform to operate. Your data person approves what ships. (optimaflo.io) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549754253394976818
-   - [OptimaFlo | Your AI Data Team, In Your Cloud](https://optimaflo.io/)
-   - Source: https://optimaflo.io/ (by evro)
-
-215. **GOOD ideation Ideation on is all-out eureka moments.**
-   - GOOD ideation Ideation on is all-out eureka moments. We scale eurekas https://www.mindrian-os.com/ Interested on using type safe as a judgment for our graph node engineering Memory and Context Linked projects: • MindrianOS - The AI Innovation Tool for the Future — MindrianOS is the AI innovation tool for the future: a Claude plugin that turns Claude into Larry, a thinking partner for hard problems. A map of 181 thinking methods from 20 years of teaching innovation, an auto-organiz (mindrian-os.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549738998535290975
-   - [MindrianOS - The AI Innovation Tool for the Future](https://www.mindrian-os.com/)
-   - Source: https://www.mindrian-os.com/ (by Jonathan Sagir)
-
-216. **I'm building a reasonable amount of skepticism, yet I remain hopeful.**
-   - I'm building a reasonable amount of skepticism, yet I remain hopeful. Have you ever watched a LLM hallucinate in real time? There is a reason we've evolved with a split hemisphere brain. Creativity and logic work together in a twisted, bipolar dance, as both are doomed without the other. I hope we can bring balance through this development.
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549730847182168067 (by Sandsnow)
-
-217. **I'm building AI calorie tracker.**
-   - I'm building AI calorie tracker. Better. - https://app.fitroom.ge/en/ Linked projects: • AI Calorie Tracker & Calorie Counter | Fitroom — Count calories and macros from a food photo with Fitroom, an AI calorie tracker and calorie counter for iPhone and Android. (app.fitroom.ge/en) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549729197067472926
-   - [AI Calorie Tracker &amp; Calorie Counter | Fitroom](https://app.fitroom.ge/en/)
-   - Source: https://app.fitroom.ge/en/ (by Luka)
-
-218. **Hi all, I'm working on a new kind of fully decentralized social media network.**
-   - Hi all, I'm working on https://bitsocial.net, a new kind of fully decentralized social media network. Very excited about Jev, since it looks like it can be fast and cheap enough to automate moderation at scale. Linked projects: • Bitsocial - Open Source P2P Network for Social Apps — Bitsocial is an open-source IPFS-backed peer-to-peer network for social apps, with no servers, no global bans, where users and communities are cryptographic property. (bitsocial.net) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549728429371428886
-   - [Bitsocial - Open Source P2P Network for Social Apps](https://bitsocial.net)
-   - Source: https://bitsocial.net (by Tom)
-
-219. **Hi I'm Dunk, and I'm building and - I'd like to use Jev to poke around for improvements, optimisations and new ideas!**
-   - Hi I'm Dunk, and I'm building https://fleetpass.vercel.app/ and https://apply-os-bice.vercel.app/ - I'd like to use Jev to poke around for improvements, optimisations and new ideas! Linked projects: • Fleetpass — Your vehicle papers. One place. No missed renewals. — Upload your vehicle papers. Fleetpass reads the details and reminds you before they expire. (fleetpass.vercel.app) • ApplyOS — ApplyOS finds live roles you can plausibly get, tells you which are worth pursuing and why, and prepares each application. You read it and press Submit. (apply-os-bice.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549711316435079208
-   - [Fleetpass — Your vehicle papers. One place. No missed renewals.](https://fleetpass.vercel.app/)
-   - [ApplyOS](https://apply-os-bice.vercel.app/)
-   - Source: https://fleetpass.vercel.app/ (by skywlkr)
-
-220. **looking forward to adding my memory system and see how Jev likes having thoughts come into his context without asking**
-   - looking forward to adding my memory system and see how Jev likes having thoughts come into his context without asking https://popoto.io/ Linked projects: • Popoto Documentation — Agent memory on Redis and Valkey, as primitives you program rather than a service you call. Records decay, confidence moves with evidence, associations form, and a context assembler packs the result into a token budget b (popoto.io) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549680507611123732
-   - [Popoto Documentation](https://popoto.io/)
-   - Source: https://popoto.io/ (by Valor Engels)
-
-221. **I asked Jev to weigh in on the Council in Rivendell on what to do with the One Ring.**
-   - I asked Jev to weigh in on the Council in Rivendell on what to do with the One Ring. Here is its address to the Council (as imagined by Fable 5.1) https://looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at-rivendell/ Linked projects: • Jev Addresses the Council at Rivendell — Jev is a decision model trained by TypeSafe. It does not generate text or explain its reasoning. Given a state of the world and a question with a fixed set of answers, it returns the answer and a p… (looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549676568782180392
-   - [Jev Addresses the Council at Rivendell](https://looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at-rivendell/)
-   - Source: https://looselyconnected.wordpress.com/2026/09/15/jev-addresses-the-council-at-rivendell/ (by hypnoticfuzzwave)
-
-222. **I've been playing around to see how good it is at RPGs.**
-   - I've been playing around to see how good it is at RPGs. So I made a harness for it to play pokemon random battles against real opponents! Linked projects: • Screenshot_2026-09-15_at_11.54.19_PM.png — image/png · 2 MB (cdn.discordapp.com/attachments/1483217545040232493/1549675213891833866)
-   - [Screenshot_2026-09-15_at_11.54.19_PM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549675213891833866/Screenshot_2026-09-15_at_11.54.19_PM.png?ex=6aaedac2&is=6aad8942&hm=53408f7f2ea9cfff221dfe5de255c236813eaba7102f3830d79582571e4c92da&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549675214193954867 (by Soulkks)
-
-223. **horse art generative model using jev, you describe any type of a horse in some setting to jev.**
-   - horse art generative model using jev, you describe any type of a horse in some setting to jev. jev decides what color should it be, what is the scenery, wind ,etc .and it returns you a picture that was painted using python. Linked projects: • image.png — image/png · 45 KB (cdn.discordapp.com/attachments/1483217545040232493/1549673322214596659)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549673322214596659/image.png?ex=6aaed8ff&is=6aad877f&hm=abae0bf9b3a23cbe226d48e3e2afdd80ab460db95b6a56d558560e155bcae8f2&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549673322541744158 (by thodoh)
-
-224. **just wanted to share you can make Jev play super mario**
-   - https://x.com/faadilhshaik/status/2100086301894881578?s=20 just wanted to share you can make Jev play super mario Linked projects: • Post by @faadilhshaik — got @typesafeai’s new model Jev to play Super Mario Bros. fast inference + structured outputs makes it surprisingly good for real time use cases. I'm excited to see what can be done with these new models! (x.com/faadilhshaik/status/2100086301894881578) • Post by @faadilhshaik — got @typesafeai’s new model Jev to play Super Mario Bros. fast inference + structured outputs makes it surprisingly good for real time use cases. I'm excited to see what can be done with these new models! (twitter.com/faadilhshaik/status/2100086301894881578) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549657118355890256
-   - [Post by @faadilhshaik](https://x.com/faadilhshaik/status/2100086301894881578?s=20)
-   - Source: https://x.com/faadilhshaik/status/2100086301894881578?s=20 (by fernvpfvpfvsvfrfvfrfrfvba)
-
-225. **Got access a few hours ago and built to play with Jev, lmk what you think!**
-   - Got access a few hours ago and built https://almost-certain.vercel.app/ to play with Jev, lmk what you think! <@571715077590220804> Linked projects: • Almost Certain — Can you guess how sure the AI will be? Random descriptions. Unlimited guesses. (almost-certain.vercel.app) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549654011983175861
-   - [Almost Certain](https://almost-certain.vercel.app/)
-   - Source: https://almost-certain.vercel.app/ (by nate)
-
-226. **jev struggles with trading, but every llm doesnt trade well so i guess its ok.**
-   - jev struggles with trading, but every llm doesnt trade well so i guess its ok. its still quite useful for low-latency news reactions. Linked projects: • image.png — image/png · 38 KB (cdn.discordapp.com/attachments/1483217545040232493/1549649424379027506)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549649424379027506/image.png?ex=6aaec2bd&is=6aad713d&hm=5d742109007b2c92e43ffdf8a9975f16881bf1005ffa8bd3c634b139fa2c4dff&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549649425196912660 (by thodoh)
-
-227. **It is true that if your use case can already be perfectly done with traditional code, then you don't need to try to shoehorn NN in to it!**
-   - It is true that if your use case can already be perfectly done with traditional code, then you don't need to try to shoehorn NN in to it! We're excited about the use cases in which traditional code can't feasibly accomplish the goal. Some will be problems that we already know now, but I'm most excited about the new possibilities opened up that we haven't thought of at all
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549644352966631484 (by AllieTheIcon)
-
-228. **couldn't you say this about any task completed by a NN?**
-   - couldn't you say this about any task completed by a NN? if you know the algorithm to arrive at a solution 100% of the time you would write a program, the idea is that you don't know the specifics of the algorithm so you rely on the scaling of NN to identify the useful patterns for you, this is all of course dependent on the intelligence of the model
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549644082081570947 (by Chrrxs)
-
-229. **Shared by altezza: blog introducing system one models and jev**
-   - https://typesafe.ai/blog/introducing-system-one-models-and-jev Linked projects: • Introducing System One Models & Jev - TypeSafe AI Blog — TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access. (typesafe.ai/blog/introducing-system-one-models-and-jev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549643271704281209
-   - [Introducing System One Models &amp; Jev - TypeSafe AI Blog](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
-   - Source: https://typesafe.ai/blog/introducing-system-one-models-and-jev (by altezza)
-
-230. **I have the risch procedure implemented in my CAS up to transcendentals, and I do a bunch of target algebraic extensions.**
-   - I have the risch procedure implemented in my CAS up to transcendentals, and I do a bunch of target algebraic extensions. It has an isolated proof kernel, and it distinguishes between proven nonexistent and what it doesn't support. And with domain tracking we can apply the fundamental theorem of calculus over critical points.
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549630524278968333 (by Sidious Stan)
-
-231. **another cool application.**
-   - another cool application. sympy spends a lot of time and compute on those types of problems, perhaps jev and sympy could be integrated in this way so sympy spends way less compute to solve integrals Linked projects: • image.png — image/png · 97 KB (cdn.discordapp.com/attachments/1483217545040232493/1549625806282821662)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549625806282821662/image.png?ex=6aaeacbe&is=6aad5b3e&hm=513e409b24be27858036badb4488d326961a5eff570d8185efe54fd5e666097c&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549625806601461850 (by thodoh)
-
-232. **Hey nerds 👋 I used Jev to embody a simulated alien creature and the results were incredible.**
-   - Hey nerds 👋 I used Jev to embody a simulated alien creature and the results were incredible. I wrote about it here if anyone’s interested: https://x.com/k3o_exp/status/2100065796240073215 Spoilers: Jev is incredible 🤯 Linked projects: • Post by @k3o_exp — Playing with Jev in my weird alien simulation. @CompleteSkeptic and team might just have split the timeline 🤯 https://x.com/i/article/2100052607335059456 (x.com/k3o_exp/status/2100065796240073215) • Post by @k3o_exp — Playing with Jev in my weird alien simulation. @CompleteSkeptic and team might just have split the timeline 🤯 https://x.com/i/article/2100052607335059456 (twitter.com/k3o_exp/status/2100065796240073215) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549625232510165093
-   - [Post by @k3o_exp](https://x.com/k3o_exp/status/2100065796240073215)
-   - Source: https://x.com/k3o_exp/status/2100065796240073215 (by Neri)
-
-233. **lol sometimes jev finishes his sentence!**
-   - lol sometimes jev finishes his sentence! this is a very hacky approach Linked projects: • CleanShot_2026-09-15_at_20.13.532x.png — image/png · 267 KB (cdn.discordapp.com/attachments/1483217545040232493/1549619412540063854)
-   - [CleanShot_2026-09-15_at_20.13.532x.png](https://cdn.discordapp.com/attachments/1483217545040232493/1549619412540063854/CleanShot_2026-09-15_at_20.13.532x.png?ex=6aaea6ca&is=6aad554a&hm=c2084568ed01a5b117c1bdd98dbb111e868a9f1b92db0fb5f8144714292b3f03&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549619413001699378 (by Kesku)
-
-234. **I built a virtual piano your agents can use to speak via webmcp**
-   - https://speaking-piano-griffin.griffinbgardening.chatgpt.site/ I built a virtual piano your agents can use to speak via webmcp Linked projects: • Piano · An instrument for your agent (speaking-piano-griffin.griffinbgardening.chatgpt.site) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549608220476055593
-   - [Piano · An instrument for your agent](https://speaking-piano-griffin.griffinbgardening.chatgpt.site/)
-   - Source: https://speaking-piano-griffin.griffinbgardening.chatgpt.site/ (by Griffin Brown)
-
-235. **MCTS-planner exploring the action space with the help of typesafe**
-   - MCTS-planner exploring the action space with the help of typesafe Linked projects: • mcts_replay_2026-09-16T02-23-00.gif — image/gif · 3 MB (cdn.discordapp.com/attachments/1483217545040232493/1549606870539436053)
-   - [mcts_replay_2026-09-16T02-23-00.gif](https://cdn.discordapp.com/attachments/1483217545040232493/1549606870539436053/mcts_replay_2026-09-16T02-23-00.gif?ex=6aae9b1c&is=6aad499c&hm=04a031836812405f32bdcb81ca533cd61a8f269a64d7fc4abc7f256f95d2a5be&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549606870837239908 (by 0x1c3c01d)
-
-236. **A quick bot harness has Jevbot exporing the space and parkouring to escape a legion of the dead in minecraft**
-   - https://youtu.be/3G14OU00crI?si=ucI7ksLDTPisf1pD A quick bot harness has Jevbot exporing the space and parkouring to escape a legion of the dead in minecraft Linked projects: • Jevbot Flees the Zombie Horde typesafe.ai Jev Model — Enjoy the videos and music that you love, upload original content and share it all with friends, family and the world on YouTube. (youtu.be/3G14OU00crI) • Jevbot Flees the Zombie Horde typesafe.ai Jev Model — Enjoy the videos and music that you love, upload original content and share it all with friends, family and the world on YouTube. (youtube.com/watch) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549603651989938307
-   - [Jevbot Flees the Zombie Horde typesafe.ai Jev Model](https://youtu.be/3G14OU00crI?si=ucI7ksLDTPisf1pD)
-   - [Jevbot Flees the Zombie Horde typesafe.ai Jev Model](https://www.youtube.com/watch?v=3G14OU00crI)
-   - Source: https://youtu.be/3G14OU00crI?si=ucI7ksLDTPisf1pD (by Hyperion)
-
-237. **Buidling [deadline]( ) to make sure I don't miss a deadline.**
-   - Buidling [deadline](https://deadline.lightningweb.xyz) to make sure I don't miss a deadline. You can use it too if you want Linked projects: • Deadline — know when a cron job, backup or feed didn — Heartbeat monitoring for cron jobs, backups and feeds. Deadline alerts you when something that should have happened, didn (deadline.lightningweb.xyz) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549592628654510192
-   - [Deadline — know when a cron job, backup or feed didn](https://deadline.lightningweb.xyz)
-   - Source: https://deadline.lightningweb.xyz (by Lightning)
-
-238. **👋 Founder of npm and Python package hosting for teams of humans and agents (incl.**
-   - 👋 Founder of https://www.packagemaze.com/ npm and Python package hosting for teams of humans and agents (incl. in sandboxes) Linked projects: • PackageMaze — every package, one feed, your rules — Private npm and PyPI feeds that host your packages, front the public registries, and enforce your rules — with a record of every package PackageMaze delivered, attributed to a human or agent. (packagemaze.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549591047233998978
-   - [PackageMaze — every package, one feed, your rules](https://www.packagemaze.com/)
-   - Source: https://www.packagemaze.com/ (by KK (PackageMaze))
-
-239. **incredible**
-   - https://x.com/MrWatchCEO/status/2100022312640610332?s=20 incredible Linked projects: • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (x.com/MrWatchCEO/status/2100022312640610332) • Post by @MrWatchCEO — I've personally and diligently tested TypeSafeAI against my own company on very hard/difficult scenarios where accuracy matters most. Our clients & users are getting a 2.6x faster routing decision, and we're rolling it o (twitter.com/MrWatchCEO/status/2100022312640610332) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549583487898619924
-   - [Post by @MrWatchCEO](https://x.com/MrWatchCEO/status/2100022312640610332?s=20)
-   - Source: https://x.com/MrWatchCEO/status/2100022312640610332?s=20 (by ayden)
-
-240. **I build systems to attack & defend AI systems in the oil & gas sector..**
-   - I build systems to attack & defend AI systems in the oil & gas sector.. I'm hoping Jev is what they say it is... Linked projects: • agentic-first.mp4 — video/mp4 · 199 MB (cdn.discordapp.com/attachments/1483217545040232493/1549578976471548014)
-   - [agentic-first.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1549578976471548014/agentic-first.mp4?ex=6aae8121&is=6aad2fa1&hm=2b94668222e2ef88080b6a51b5f5243c66cbdb00b488d39a24c0b312974350de&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1549578988647878706 (by D8RH8R)
-
-241. **Friends, we just published a typesafe-ai extension to swamp-club - We are going to embed that in some of our reviews**
-   - Friends, we just published a typesafe-ai extension to swamp-club - https://swamp-club.com/extensions/@swamp/typesafe-ai We are going to embed that in some of our reviews pipeline for our software factory! Linked projects: • @swamp/typesafe-ai v2026.09.15.1 — Swamp Club Extension — Ask TypeSafe (swamp-club.com/extensions/@swamp/typesafe-ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549558935034396674
-   - [@swamp/typesafe-ai v2026.09.15.1 — Swamp Club Extension](https://swamp-club.com/extensions/@swamp/typesafe-ai)
-   - Source: https://swamp-club.com/extensions/@swamp/typesafe-ai (by Stack72)
-
-242. **Hey everyone! I was sick of making architecture diagrams by hand, so I decided to make a product**
-   - Hey everyone! I was sick of making architecture diagrams by hand, so I decided to make a product that does it instead! https://architecturediagram.ai Linked projects: • AI Architecture Diagram Generator - ArchitectureDiagram.ai — Describe, diagram, review, and present in one workspace. Generate in four formats, compare image models with Party Mode, and refine your architecture through chat. (architecturediagram.ai) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549553146747949146
-   - [AI Architecture Diagram Generator - ArchitectureDiagram.ai](https://architecturediagram.ai)
-   - Source: https://architecturediagram.ai (by klapp)
-
-243. **A lot of stuff I’ve made (let it populate)**
-   - A lot of stuff I’ve made (let it populate) https://meadowfolio.bisks.net Linked projects: • meadowfolio — @fromthewestmeadow.com — An image gallery, a full index of the software fromthewestmeadow.com has shipped on their own domain, and buildthis (meadowfolio.bisks.net) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549543101599850578
-   - [meadowfolio — @fromthewestmeadow.com](https://meadowfolio.bisks.net)
-   - Source: https://meadowfolio.bisks.net (by pepesilvia3234)
-
-244. **A public AI that anyone can talk to.**
-   - A public AI that anyone can talk to. Everyone talks to and shapes the same one. https://Wildstatic.com Linked projects: • The First Public AI — Talk to Static | Wild Static — Talk to Static, a public AI shared by everyone. There are no separate copies: what it learns from one conversation can shape another. (wildstatic.com) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549528520852504597
-   - [The First Public AI — Talk to Static | Wild Static](https://Wildstatic.com)
-   - Source: https://Wildstatic.com (by adjohu)
-
-245. **I want access to jev so that I can use it for computer use applications!**
-   - I want access to jev so that I can use it for computer use applications! in this https://www.axstream.dev/ Linked projects: • axstream — A streaming action language for computer-use agents. (axstream.dev) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549515100510224414
-   - [axstream](https://www.axstream.dev/)
-   - Source: https://www.axstream.dev/ (by milind)
-
-246. **I want to get access to Jev so I can hook it up in the drone harness I built some time ago.**
-   - I want to get access to Jev so I can hook it up in the drone harness I built some time ago. https://youtu.be/ZMcSh_FrVRg?si=qonCoY9YgiuYCNwp Linked projects: • I BUILT a COCKPIT for GROK to PILOT MY DRONE — I built a cockpit inside AgentGrid, connected Grok to a real drone, and gave it control. It went about as well as you’d expect LOL.You can download AgentGrid... (youtu.be/ZMcSh_FrVRg) • I BUILT a COCKPIT for GROK to PILOT MY DRONE — I built a cockpit inside AgentGrid, connected Grok to a real drone, and gave it control. It went about as well as you’d expect LOL.You can download AgentGrid... (youtube.com/watch) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549514903994237050
-   - [I BUILT a COCKPIT for GROK to PILOT MY DRONE](https://youtu.be/ZMcSh_FrVRg?si=qonCoY9YgiuYCNwp)
-   - [I BUILT a COCKPIT for GROK to PILOT MY DRONE](https://www.youtube.com/watch?v=ZMcSh_FrVRg)
-   - Source: https://youtu.be/ZMcSh_FrVRg?si=qonCoY9YgiuYCNwp (by Souren)
-
-247. **I’m dying to hook that into an AI agent harness.**
-   - I’m dying to hook that into an AI agent harness. Want to talk? I guess this is for sharing so I’ll put a run-through of my dark factory and research pipeline. Ignore the substack “subscribe” spam, it’s free. https://tokenfires.substack.com/p/production-and-research-pipeline Linked projects: • Production and Research Pipeline built by Fable — I’ve gone a bit dark over the last few weeks because of Anthropic’s re-release of Fable. (tokenfires.substack.com/p/production-and-research-pipeline) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1549514093063573635
-   - [Production and Research Pipeline built by Fable](https://tokenfires.substack.com/p/production-and-research-pipeline)
-   - Source: https://tokenfires.substack.com/p/production-and-research-pipeline (by TokenFires (Robert Ault))
-
-248. **And yep, `story_signal` is also a noul (forgot to expand the raw request element in the details section seen in the video - its screenshotted below).**
-   - And yep, `story_signal` is also a noul (forgot to expand the raw request element in the details section seen in the video - its screenshotted below). Please let me know if you want me to share the repo Linked projects: • image.png — image/png · 52 KB (cdn.discordapp.com/attachments/1483217545040232493/1531525700085878895)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1531525700085878895/image.png?ex=6aaebeb5&is=6aad6d35&hm=e998111b9c2b69c93932ef91c204d64e90fbe2e9db8af2a016805930b86fff99&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1531525700316561500 (by RM)
-
-249. **10 practical Jev repos: computer-use, trading, routers and more**
-   - A roundup of practical, promising GitHub repos for Jev development: browser-use/jev-ultrafast, TheoLeeCJ/openjev, vinnylarouge/jevlike, jarrodwatts/jev-trader, Anil-matcha/awesome-jev-by-typesafe, awlevin/typesafe-computer-use, devagrawal09/jev-review, gargpratyush/jev-router, vlad-terin/jev-browser, droidrun/mobile-jev. Notes the Jev waitlist clears in about a day — or call typesafe-ai/jev directly via the Vercel AI Gateway. — @studio_yebisu (1.6K likes) Linked projects: • Post by @studio_yebisu — やぁ！兄弟たち！ Jevに関するGitHubの実用性と発展性がありそうなリポジトリをまとめたよ！ やはり、高速判断を要するComputerUseや完全自動トレードなんかに対しての活用が多い印象だね！ Jevは公式のウェイトリストも1日ほどで承認されるけど、待たなくてもVercel AI GatewayからModel: typesafe-ai/jevで直接呼び出せるってさ！ このGrok翻訳っぽい文章はわざわざタイピングしてるゾ！ 1. (x.com/studio_yebisu/status/2100686990090047569)
-   - [Post by @studio_yebisu](https://x.com/studio_yebisu/status/2100686990090047569)
-   - Source: https://x.com/studio_yebisu/status/2100686990090047569 (by @studio_yebisu)
-
-250. **awesome-jev: community patterns, prompts and starter code**
-   - A community roundup collecting ways to use TypeSafe Jev: patterns, prompts, starter code, examples and more. Linked projects: • Anil-matcha/awesome-jev-by-typesafe — Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One model for fast, typed, confidence-aware decisions in software. — 509★ · Python · agent-workflows, ai-api, ai-automation, clas (github.com/Anil-matcha/awesome-jev-by-typesafe)
-   - [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe)
-   - Source: https://github.com/Anil-matcha/awesome-jev-by-typesafe (by @Anil-matcha)
-
-251. **jev-review: diff-by-diff code review for risk**
-   - A code review workflow inspecting git diffs or codebases step-by-step, structuring accuracy, safety, reliability, compatibility and test risks. Linked projects: • devagrawal09/jev-review — A staged code-review workflow and local dashboard built with TypeSafe Jev. — 263★ · TypeScript · ai, code-review, jev, typesafe-ai, typescript (github.com/devagrawal09/jev-review)
-   - [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review)
-   - Source: https://github.com/devagrawal09/jev-review (by @devagrawal09)
-
-252. **Tocsin triages 22.8M log lines to 123 pages for $0.64 with Jev**
-   - Ateeq used Jev to solve a problem every agent eventually runs into: reading logs. Tocsin groups 22.8M log lines into 11,812 repeating patterns, then asks Jev about each pattern once — 6 minutes and 64 cents (vs $1,120 to run an LLM on every line), surfacing 123 patterns that actually needed a look. The paging policy is just a prompt: you tell it what should wake someone up at 3am and what's just another log line. — @TPateeq (3 likes) Linked projects: • Post by @TPateeq — I used Jev to solve a problem every agent eventually runs into: reading logs. 22.8M lines, and running an LLM on every one would've cost $1,120. Tocsin groups them into 11,812 repeating patterns, then asks Jev about each pattern once. (x.com/TPateeq/status/2101062313516347491) • TPAteeq/tocsin — Log triage at ingest. Group logs into patterns, judge each pattern once, page only on what matters. — 0★ · Rust (github.com/TPA
-   - [Post by @TPateeq](https://x.com/TPateeq/status/2101062313516347491)
-   - [TPAteeq/tocsin](https://github.com/TPAteeq/tocsin)
-   - Source: https://x.com/TPateeq/status/2101062313516347491 (by @TPateeq)
-
-253. **10 Jev-native products, ranked**
-   - 10 Jev native products I’d build, ranked by how much fast, cheap decisions change the product: 1. Agent spend firewall Before every purchase, Jev returns approve/review/deny plus a confidence score based on price, vendor, user rules and purchase history. 2. Self-healing tool…
-   - Source: https://x.com/gregisenberg/status/2101284640828915995 (by @gregisenberg)
-
-254. **AI marketing with Jev (full course)**
-   - Article how to master AI marketing with Jev TypeSafe (full course) most of the decisions your next campaign needs are already sitting in tools you have open right now. customer notes carry the buying problem. ad results carry which proof moved someone. inbound...
-   - Source: https://x.com/knoxtwts/status/2101017790081806589 (by @knoxtwts)
-
-255. **Hyper-fast sorting for every choice**
-   - Founders will win big by embedding the frointier into consumer products. Jev is a great example! Quote Josh Elman @joshelman · Sep 18 Already Jev-pilled What really has me excited is the next wave of consumer startups that can build new smart things. Whenever faced with many options (travel ideas, books to read, …) you can now get hyper fast sorting of which may be the best fit!
-   - Source: https://x.com/kirbyman01/status/2101148352155107807 (by @kirbyman01)
-
-256. **SQA workflows should use Jev**
-   - This is extremely valuable. SQA workflows should implement this. Faster at driving the AUT and better at validation.
-   - Source: https://x.com/edtadros/status/2100401009105494400 (by @edtadros)
-
-### Tools (188)
+### Tools (195)
 
 1. **Model router that picks the right LLM**
    - Jev scores which model fits the request, then the call is forwarded. Routing without a chatty middleman — just a typed pick.
@@ -5550,443 +5583,63 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [jev.magicteams.ai/mcp](https://jev.magicteams.ai/mcp)
    - Source: https://x.com/phanindra_ai/status/2101424587980648647 (by @phanindra_ai)
 
-### Games (99)
-
-1. **Jev plays Tetris**
-   - Decision model steers Tetris so fast it pushes blocks down in realtime. Early-access demo that feels like a “this changes everything” moment.
-   - Source: https://x.com/marcus_lowe/status/2100315518930661861 (by @marcus_lowe)
-
-2. **Jev plays Pac-Man**
-   - Maze state as JSON; Jev picks turns at each junction and plays in realtime. Playable demo linked.
-   - [jev-pacman.ephraimduncan.com](https://jev-pacman.ephraimduncan.com)
-   - Source: https://x.com/ephraimduncan/status/2100524915007144289 (by @ephraimduncan)
-
-3. **Jevton town simulation**
-   - 120 people, shops, council, and a newspaper. Jev decides every action with zero text generated: 20k+ decisions in under 5 minutes, then disasters hit.
-   - [jevton.chizi.app](https://jevton.chizi.app/)
-   - Source: https://x.com/chiziaruhoma/status/2100878555047514390 (by @chiziaruhoma)
-
-4. **Almost Certain — guess the confidence**
-   - Random descriptions, unlimited guesses: can you predict how sure Jev will be? Playable confidence game.
-   - [almost-certain.vercel.app](https://almost-certain.vercel.app/)
-   - Source: https://x.com/nathanwchan/status/2100096510436475293 (by @nathanwchan)
-
-5. **Wordshift semantic typing racer**
-   - Type a phrase; how far your car moves depends on semantic distance from the target. A racing game where meaning is the throttle.
-   - Source: https://x.com/marcelpociot/status/2100715684732801095 (by @marcelpociot)
-
-6. **Jev is the Warden**
-   - Inspired by the Doom demo: talk to the AI, find the password — Jev watches every word. A game loop driven by TypeSafe decisions.
-   - [jevisthewarden.com](https://jevisthewarden.com)
-   - Source: https://x.com/zNunoTeixeira/status/2100600664665514108 (by @zNunoTeixeira)
-
-7. **Realtime chess vs Jev**
-   - You play White; Jev plays Black with inspectable decision traces and live API cost. BYOK chess agent.
-   - [jev-chess-master.vercel.app](https://jev-chess-master.vercel.app)
-   - Source: https://x.com/qibinlou/status/2100676619815862464 (by @qibinlou)
-
-8. **Expert Minesweeper: Jev vs Mistral**
-   - Game state in, typed move out. Expert Minesweeper: Jev vs Mistral shows System One steering play in realtime.
-   - Source: https://x.com/imom39a/status/2100902242970636610 (by @imom39a)
-
-9. **Jev's Dojo fighting coach**
-   - Jev's Dojo fighting coach: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/vansitha12/status/2100937772030927216 (by @vansitha12)
-
-10. **Combos FPS**
-   - Combos FPS — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/CombosFun_AI/status/2100952069461127257 (by @CombosFun_AI)
-
-11. **Pokémon Showdown battles**
-   - Pokémon Showdown battles — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/DanFrmSpace/status/2100960553514553639 (by @DanFrmSpace)
-
-12. **OpenCode + Jev plays Tetris**
-   - Game state in, typed move out. OpenCode + Jev plays Tetris shows System One steering play in realtime.
-   - Source: https://x.com/tanaysoni_/status/2101020844092756072 (by @tanaysoni_)
-
-13. **Tetris agent**
-   - Tetris agent: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/MarcelooMendes/status/2100969755318370699 (by @MarcelooMendes)
-
-14. **Escaping a maze**
-   - Escaping a maze — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/junhoh0ng/status/2100999241326047596 (by @junhoh0ng)
-
-15. **Three.js driving simulation**
-   - Game state in, typed move out. Three.js driving simulation shows System One steering play in realtime.
-   - Source: https://x.com/vladrezdev/status/2100811750459535507 (by @vladrezdev)
-
-16. **Lifelike autonomous village**
-   - Lifelike autonomous village: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/DevDminGod/status/2101023774305136972 (by @DevDminGod)
-
-17. **Real-time decision stress test**
-   - Real-time decision stress test — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/KevinShengHui/status/2100963923143098712 (by @KevinShengHui)
-
-18. **Slay the Spire 2 in real time**
-   - Game state in, typed move out. Slay the Spire 2 in real time shows System One steering play in realtime.
-   - Source: https://x.com/pranaygp/status/2100870399039037810 (by @pranaygp)
-
-19. **Switch between manual and AI play**
-   - Switch between manual and AI play: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/adrianmg/status/2100970810483823086 (by @adrianmg)
-
-20. **Rubik's Cube that solves itself**
-   - Rubik's Cube that solves itself — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/redp314/status/2100489858951073858 (by @redp314)
-
-21. **Connect Four on Omarchy**
-   - Connect Four on Omarchy: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/Entelic_Aria/status/2100966999602102520 (by @Entelic_Aria)
-
-22. **Atari Pong with one structured question**
-   - Atari Pong with one structured question: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/MemorysaverMFA/status/2100843620056416703 (by @MemorysaverMFA)
-
-23. **Flappy Apex plays itself**
-   - Flappy Apex plays itself — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/ChmalSzymon/status/2100934588205851015 (by @ChmalSzymon)
-
-24. **Fight Jev with live decision probabilities**
-   - Game state in, typed move out. Fight Jev with live decision probabilities shows System One steering play in realtime.
-   - Source: https://x.com/Taufiq_ansari01/status/2100906203396337686 (by @Taufiq_ansari01)
-
-25. **Five RuneScape bots level up**
-   - Game state in, typed move out. Five RuneScape bots level up shows System One steering play in realtime.
-   - Source: https://x.com/aibynick/status/2100942434389897453 (by @aibynick)
-
-26. **Jev beats Super Mario Bros.**
-   - Game state in, typed move out. Jev beats Super Mario Bros. shows System One steering play in realtime.
-   - Source: https://x.com/ishuagra02/status/2101025059909353718 (by @ishuagra02)
-
-27. **Tetris placement picker**
-   - Tetris placement picker — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/ziwenxu_/status/2100984628811084144 (by @ziwenxu_)
-
-28. **Fifty Wordles at once**
-   - Fifty Wordles at once: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/ahmedgagan11/status/2100895104055836914 (by @ahmedgagan11)
-
-29. **Jev-controlled city**
-   - Jev-controlled city — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/MOulitzky/status/2100865465333490028 (by @MOulitzky)
-
-30. **Dungeon guards that change tactics**
-   - Dungeon guards that change tactics: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/zhao_spenc/status/2100833745859461451 (by @zhao_spenc)
-
-31. **Tetris with live probabilities**
-   - Tetris with live probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/cskadarla/status/2100977720670728556 (by @cskadarla)
-
-32. **Big Two with Jev bots**
-   - Game state in, typed move out. Big Two with Jev bots shows System One steering play in realtime.
-   - Source: https://x.com/chiubaca/status/2100974973452013598 (by @chiubaca)
-
-33. **Pokémon shiny hunting**
-   - Pokémon shiny hunting — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/luckeyfaraday/status/2100955913913774437 (by @luckeyfaraday)
-
-34. **Jev plays Balatro**
-   - Jev plays Balatro — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/Juris_Savos/status/2100989012966031417 (by @Juris_Savos)
-
-35. **Pigeon target-shooting game**
-   - Game state in, typed move out. Pigeon target-shooting game shows System One steering play in realtime.
-   - Source: https://x.com/YoAmmaar/status/2100920115449766320 (by @YoAmmaar)
-
-36. **Jev Golf: flip the decision**
-   - Jev Golf: flip the decision — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/heyitzami/status/2101039441590591562 (by @heyitzami)
-
-37. **Nuclear hot potato**
-   - Game state in, typed move out. Nuclear hot potato shows System One steering play in realtime.
-   - Source: https://x.com/yelkhayami/status/2100978154194038988 (by @yelkhayami)
-
-38. **Field Commander**
-   - Field Commander — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/WanderSamsara/status/2100969346004852747 (by @WanderSamsara)
-
-39. **Jev Arena**
-   - Game state in, typed move out. Jev Arena shows System One steering play in realtime.
-   - Source: https://x.com/raihankhan_rk/status/2100951738606035176 (by @raihankhan_rk)
-
-40. **Run at the Pokémon League**
-   - Run at the Pokémon League: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/joey_build/status/2100904864519770170 (by @joey_build)
-
-41. **Three Jev bots in an FPS**
-   - Three Jev bots in an FPS: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/tommyvedvik/status/2100903520425677027 (by @tommyvedvik)
-
-42. **Fly vs. Jev chess**
-   - Fly vs. Jev chess — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/AvgJoeCowles/status/2101013430635213167 (by @AvgJoeCowles)
-
-43. **Jev flies a Kerbal rocket**
-   - Game state in, typed move out. Jev flies a Kerbal rocket shows System One steering play in realtime.
-   - Source: https://x.com/textlayerai/status/2100998343254257898 (by @textlayerai)
-
-44. **Dino: Jev vs GPT vs human**
-   - Dino: Jev vs GPT vs human: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/Priyanshh91/status/2101033914261532886 (by @Priyanshh91)
-
-45. **Jev plays Clash Royale**
-   - Jev plays Clash Royale: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/AmritNigam2/status/2100882320945520778 (by @AmritNigam2)
-
-46. **Tactical sentinel vs fixed rules**
-   - Tactical sentinel vs fixed rules — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/aditya005/status/2101016584571818106 (by @aditya005)
-
-47. **Jev plays pinball**
-   - Game state in, typed move out. Jev plays pinball shows System One steering play in realtime.
-   - Source: https://x.com/SimplerMayank/status/2101021536446795847 (by @SimplerMayank)
-
-48. **League of Legends win probabilities**
-   - League of Legends win probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/filicroval/status/2100963424163307712 (by @filicroval)
-
-49. **Chrome Dino with live decision scores**
-   - Chrome Dino with live decision scores: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/mittalparth_/status/2100817199686619348 (by @mittalparth_)
-
-50. **Five hundred agents in a 3D environment**
-   - Five hundred agents in a 3D environment — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/crislenta/status/2100457614073327754 (by @crislenta)
-
-51. **Jev plays Sindicat**
-   - Jev plays Sindicat: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/PlayDaaa/status/2101011302835458175 (by @PlayDaaa)
-
-52. **Solving NYT Connections**
-   - Game state in, typed move out. Solving NYT Connections shows System One steering play in realtime.
-   - Source: https://x.com/yehudab/status/2100936180233597172 (by @yehudab)
-
-53. **Jev plays Time Crisis**
-   - Jev plays Time Crisis — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/juminoz/status/2100832108855857325 (by @juminoz)
-
-54. **Blitz chess against frontier models**
-   - Game state in, typed move out. Blitz chess against frontier models shows System One steering play in realtime.
-   - Source: https://x.com/aimlapi/status/2100372930282573876 (by @aimlapi)
-
-55. **Doom where every enemy is Jev**
-   - Rebuild of the Doom demo with Jev driving enemy actions — fight a room of decision models, or pit Jev against Jev.
-   - Source: https://x.com/dustin_podell/status/2100458335405588607 (by @dustin_podell)
-
-56. **Intransitive model match**
-   - Game state in, typed move out. Intransitive model match shows System One steering play in realtime.
-   - Source: https://x.com/AdamHoltererer/status/2100954549221532102 (by @AdamHoltererer)
-
-57. **Connect Four decisions**
-   - Game state in, typed move out. Connect Four decisions shows System One steering play in realtime.
-   - Source: https://x.com/deepam02goyal/status/2101001570154586199 (by @deepam02goyal)
-
-58. **Focus Rail train routing**
-   - Game state in, typed move out. Focus Rail train routing shows System One steering play in realtime.
-   - Source: https://x.com/benkigera/status/2101035079149449398 (by @benkigera)
-
-59. **Pokémon FireRed Elite Four run**
-   - Pokémon FireRed Elite Four run: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/AnxKhn/status/2100842364248178833 (by @AnxKhn)
-
-60. **Webpage becomes a fight scene**
-   - Game state in, typed move out. Webpage becomes a fight scene shows System One steering play in realtime.
-   - Source: https://x.com/ansonox/status/2101028925728031119 (by @ansonox)
-
-61. **Dragon Ball Sparking Zero with Jev**
-   - Dragon Ball Sparking Zero with Jev — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/smoothkariminal/status/2100800997530677679 (by @smoothkariminal)
-
-62. **Jev attempts Resident Evil**
-   - Jev attempts Resident Evil — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/juminoz/status/2100846091281506370 (by @juminoz)
-
-63. **VoiceRun cooks Overcooked with Jev**
-   - Co-op kitchen chaos steered by Jev decisions — and you can voice-direct the chefs. Doom was the teaser; dinner service is the stress test.
-   - Source: https://x.com/NWRLeon/status/2100689836084461903 (by @NWRLeon)
-
-64. **Keep the whale-city alive**
-   - Keep the whale-city alive — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/gokayfem/status/2101022590722810271 (by @gokayfem)
-
-65. **GODMODE civilization simulator**
-   - Game state in, typed move out. GODMODE civilization simulator shows System One steering play in realtime.
-   - Source: https://x.com/GroverInnovate/status/2101034633462977016 (by @GroverInnovate)
-
-66. **Multiplayer Catan that freezes mid-deal**
-   - Several Jevs sit at a Catan table; after a while they refuse to negotiate and skip turns. Chaotic, hilarious multi-agent tabletop.
-   - Source: https://x.com/sachpatro97/status/2101064273187274838 (by @sachpatro97)
-
-67. **Every Pac-Man move chosen by Jev**
-   - Every Pac-Man move chosen by Jev: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/NesanSelvan04/status/2100844705588347238 (by @NesanSelvan04)
-
-68. **Jev vs. GLM at chess**
-   - Jev vs. GLM at chess: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/nutlope/status/2101010773157761481 (by @nutlope)
-
-69. **Pong model face-off**
-   - Pong model face-off: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/mattheworiordan/status/2100937732012822897 (by @mattheworiordan)
-
-70. **Puzzle-solving playground**
-   - Game state in, typed move out. Puzzle-solving playground shows System One steering play in realtime.
-   - Source: https://x.com/ashkans_dev/status/2101014737383206914 (by @ashkans_dev)
-
-71. **Dogfighting experiment**
-   - Dogfighting experiment — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/hanznathanpo/status/2101020398477365629 (by @hanznathanpo)
-
-72. **Jev plays Geometry Dash**
-   - Game state in, typed move out. Jev plays Geometry Dash shows System One steering play in realtime.
-   - Source: https://x.com/Neel490/status/2100953791260397747 (by @Neel490)
-
-73. **Tetris with typed landing choices**
-   - Tetris with typed landing choices: a playable loop where Jev makes the call each tick — no chat, just decisions.
-   - Source: https://x.com/steve_rosky/status/2100841146696032591 (by @steve_rosky)
-
-74. **Rank every Pokémon by any question**
-   - Rank every Pokémon by any question — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/dunkedtoast/status/2100941309511098578 (by @dunkedtoast)
-
-75. **Jev vs OpenJev in an FPS**
-   - Jev vs OpenJev in an FPS — Jev owns the tactical picks so the engine can stay tight and fast.
-   - Source: https://x.com/Neel490/status/2101028527978020920 (by @Neel490)
-
-76. **Byte predicts rock-paper-scissors**
-   - Game state in, typed move out. Byte predicts rock-paper-scissors shows System One steering play in realtime.
-   - Source: https://x.com/2ndpsy/status/2101026520185622589 (by @2ndpsy)
-
-77. **Chaotic kitchen simulation**
-   - Game state in, typed move out. Chaotic kitchen simulation shows System One steering play in realtime.
-   - Source: https://x.com/Michael50663932/status/2101009609087389712 (by @Michael50663932)
-
-78. **Dont get hit realtime game**
-   - Tiny realtime game where Jev steers the player with one goal: dont get hit. Built to feel how decision models differ from chat LLMs.
-   - Source: https://x.com/abolbuild/status/2100509548339408972 (by @abolbuild)
-
-79. **15-drone swarm sim, 100% survival**
-   - Jev can control a swarm of 15 autonomous drones in real time! I built a simulation to test it navigating an asteroid field: • Decision latency: < 300ms • Survival rate: 100% (all 15 reached the destination) Built with @typesafeai by @CompleteSkeptic…
-   - Source: https://x.com/MKhordoo/status/2101040416300630033 (by @MKhordoo)
-
-80. **Dang Jev is kind of a beast now. Just need to work on his footwork/pathing (doors and walls are his kryptonite right now.  It's my fault.)**
-   - Dang Jev is kind of a beast now. Just need to work on his footwork/pathing (doors and walls are his kryptonite right now. It's my fault.) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591123091755102
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550591122848350229/image.png?ex=6ab03584&is=6aaee404&hm=989bc51f977d6f4c77d80e2b64c70ae11386dffe5997155732906f6535f66157&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591123091755102 (by Autark)
-
-81. **Jev oneshotted Super Mario Sunshine**
-   - Jev oneshotted Super Mario Sunshine Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591450301866119
-   - [image0.jpg](https://cdn.discordapp.com/attachments/1483217545040232493/1550591448900960367/image0.jpg?ex=6ab035d2&is=6aaee452&hm=09949435b5ab825f105f49fdc7f268b0543de9e1b29093debd6d7e6692ef4a03&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591450301866119 (by ラーメン)
-
-82. **Ill post more about it later after I tune it more, but I got Jev rigged up playing vampire survivors and its about to reach 30 minutes on run**
-   - Ill post more about it later after I tune it more, but I got Jev rigged up playing vampire survivors and its about to reach 30 minutes on run 2 Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550592118664204422
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550592118643495013/image.png?ex=6ab03671&is=6aaee4f1&hm=5076e9afe238f24542a19683f9ab61640188a254bd532ac5c54711103e55f2aa&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550592118664204422 (by King of India)
-
-83. **Shared by 0xBunny: integrate-your-mind/jev-nethack**
-   - https://github.com/integrate-your-mind/jev-nethack Linked projects: • integrate-your-mind/jev-nethack (https://github.com/integrate-your-mind/jev-nethack) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550610338964054068
-   - [integrate-your-mind/jev-nethack](https://github.com/integrate-your-mind/jev-nethack)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550610338964054068 (by 0xBunny)
-
-84. **I made Astra and Jev play Starcraft 2. Astra writes and edits code and Jev makes all the decisions. Just completed first campaign mission, wonder how far will they get**
-   - I made Astra and Jev play Starcraft 2. Astra writes and edits code and Jev makes all the decisions. Just completed first campaign mission, wonder how far will they get unattanded https://x.com/i/broadcasts/1oJMvNMOYpOxQ Linked projects: • x post (https://x.com/i/broadcasts/1oJMvNMOYpOxQ) • x post (https://twitter.com/i/broadcasts/1oJMvNMOYpOxQ) • prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1 (https://prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1/eyJkIjowfQ/gsOsHSiAScokz5eJgPACYwq2wGO7fEkXB5_POvXnRfhLxmAZkjMs7U23mGabIMs_NL6Afqq5_nXHoboUoCHnIQ/latest.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJBbGxvd2VkUHJvdG9jb2xzIjpbInRodW1iIl0sIkJyb2FkY2FzdElkIjoiMW9KTXZOTU9ZcE94USIsIkdyYW50VHlwZSI6InJlYWQiLCJHcmFudGVkQXQiOjE3ODk3Njg5OTksIkdyYW50ZWRUbyI6InR3LTE3ODk3Njg5OTk5MTk4NTA1NiIsIlN0cmVhbU5hbWUiOiJnc09zSFNpQVNjb2t
-   - [x post](https://x.com/i/broadcasts/1oJMvNMOYpOxQ)
-   - [prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1](https://prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1/eyJkIjowfQ/gsOsHSiAScokz5eJgPACYwq2wGO7fEkXB5_POvXnRfhLxmAZkjMs7U23mGabIMs_NL6Afqq5_nXHoboUoCHnIQ/latest.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJBbGxvd2VkUHJvdG9jb2xzIjpbInRodW1iIl0sIkJyb2FkY2FzdElkIjoiMW9KTXZOTU9ZcE94USIsIkdyYW50VHlwZSI6InJlYWQiLCJHcmFudGVkQXQiOjE3ODk3Njg5OTksIkdyYW50ZWRUbyI6InR3LTE3ODk3Njg5OTk5MTk4NTA1NiIsIlN0cmVhbU5hbWUiOiJnc09zSFNpQVNjb2t6NWVKZ1BBQ1l3cTJ3R083ZkVrWEI1X1BPdlhuUmZoTHhtQVprak1zN1UyM21HYWJJTXNfTkw2QWZxcTVfblhIb2JvVW9DSG5JUSIsImV4cCI6MTc4OTk0MTc5OX0.MO8atOx2N9hN_UoxBgjm4A3Qw-7T_ca6f-w1Kp2sU2s&service=proxsee&digest=Dny4B7FItVhvImYj1KBY3fQQfaOFbnNoKzNEokkbLuQ&ts=894884499)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550628315272843325 (by Max Yankov)
-
-85. **Jev playing 36 classic real time games at once with a single API call.**
-   - Jev playing 36 classic real time games at once with a single API call. https://jev-arena.vercel.app/ (edited) Saturday, September 19, 2026 at 4:27 AM Linked projects: • jev-arena.vercel.app (https://jev-arena.vercel.app/) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550641830486483015
-   - [jev-arena.vercel.app](https://jev-arena.vercel.app/)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550641830486483015 (by manub)
-
-86. **Besides the Jev poker game posted above, I also realized you could do this wth Jev!   ...https://x.com/imcharliegraham/status/2101084015113744591?s=20**
-   - Besides the Jev poker game posted above, I also realized you could do this wth Jev! ...https://x.com/imcharliegraham/status/2101084015113744591?s=20 (edited) Saturday, September 19, 2026 at 4:32 AM Linked projects: • x post 2101084015113744591 (https://x.com/imcharliegraham/status/2101084015113744591?s=20) • pbs.twimg.com/media/HSiMqZvbIAANO4A (https://pbs.twimg.com/media/HSiMqZvbIAANO4A?format=webp&name=large) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550643099691130890
-   - [x post 2101084015113744591](https://x.com/imcharliegraham/status/2101084015113744591?s=20)
-   - [pbs.twimg.com/media/HSiMqZvbIAANO4A](https://pbs.twimg.com/media/HSiMqZvbIAANO4A?format=webp&name=large)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550643099691130890 (by Cryptog (Charlie))
-
-87. **Posting another clip of Jev playing the game I am developing, it's incredible seeing it learn and improve the more it plays! The normal game doesnt pause like this, the debug tool just shortly pauses**
-   - Posting another clip of Jev playing the game I am developing, it's incredible seeing it learn and improve the more it plays! The normal game doesnt pause like this, the debug tool just shortly pauses the game as Jev does it's insanely fast thinking to make the right decision. I have it playing the procedurally generated mode so it has to think on the fly Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550674512524091472
-   - [2026-09-18_19-59-49.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550674506824155196/2026-09-18_19-59-49.mp4?ex=6aafda6c&is=6aae88ec&hm=481e4adcbf44d0a4e9221e79ea1f609e25a6b594cc77657fafc15fe0f8f2ef2f&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550674512524091472 (by RocketmanJP)
-
-88. **This was fun: https://github.com/Dimesio/typesafe-chess**
-   - This was fun: https://github.com/Dimesio/typesafe-chess Seems with the method of information provided, with up to 3 move foresight, Jev is about 1600 ELO playing against stockfish. fell free to have fun with the repo I posted. going to keep playing with what context may provide better results. repo has a nice report as well (edited) Saturday, September 19, 2026 at 7:45 AM Linked projects: • Dimesio/typesafe-chess (https://github.com/Dimesio/typesafe-chess) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550687937291755560
-   - [Dimesio/typesafe-chess](https://github.com/Dimesio/typesafe-chess)
-   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550687936079462400/image.png?ex=6aafe6ee&is=6aae956e&hm=c9305bd7d79bc21fdb3dbfefa02dd9b0393a68a7d767d662ddf68e8b627fac30&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550687937291755560 (by dimesio)
-
-89. **Jev role playing as a farmer**
-   - Jev role playing as a farmer https://x.com/shogun_Dev/status/2101159950487572813 Linked projects: • x post 2101159950487572813 (https://x.com/shogun_Dev/status/2101159950487572813) • t.co/fJD86t3BK5 (https://t.co/fJD86t3BK5) • t.co/9vjSjNTz5f (https://t.co/9vjSjNTz5f) • jf.x.com/images/media-preview/210115995048757281 (https://jf.x.com/images/media-preview/2101159950487572813) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550719691343929424
-   - [x post 2101159950487572813](https://x.com/shogun_Dev/status/2101159950487572813)
-   - [t.co/fJD86t3BK5](https://t.co/fJD86t3BK5)
-   - [t.co/9vjSjNTz5f](https://t.co/9vjSjNTz5f)
-   - [jf.x.com/images/media-preview/210115995048757281](https://jf.x.com/images/media-preview/2101159950487572813)
-   - [demo1-x-clean.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550719687841685564/demo1-x-clean.mp4?ex=6ab00480&is=6aaeb300&hm=9ffa35d1efd0f29f4d5f7ffe1a7109a39e1c63917ad36a0c4754baae938ed0e0&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550719691343929424 (by insanoStyle)
-
-90. **Jev is playing vampire survivors. Want to make some tweaks so it well, plays better. Before I had it try to get XP it seemed to play alot be**
-   - Jev is playing vampire survivors. Want to make some tweaks so it well, plays better. Before I had it try to get XP it seemed to play alot better Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745306432540753
-   - [output40.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550745293702824047/output40.mp4?ex=6ab01c59&is=6aaecad9&hm=ed01a465e96aa04e615913e565d248f81f0838d120f7020812a0ed2d832e14ed&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745306432540753 (by King of India)
-
-91. **Shared by King of India: oldmoldycake/jev_vampire_survivors**
-   - https://github.com/oldmoldycake/jev_vampire_survivors repo if anyone wants it. Linked projects: • oldmoldycake/jev_vampire_survivors (https://github.com/oldmoldycake/jev_vampire_survivors) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745346349469718
-   - [oldmoldycake/jev_vampire_survivors](https://github.com/oldmoldycake/jev_vampire_survivors)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745346349469718 (by King of India)
-
-92. **Hey friends!   I just started playing with Jev, asked it to read Mary Shelley’s Frankenstein and score each passage across 9 emotions, plus overall**
-   - Hey friends! I just started playing with Jev, asked it to read Mary Shelley’s Frankenstein and score each passage across 9 emotions, plus overall intensity. Jev finished the task in 24.7 seconds, reading 601 passages, making 6,010 decisions for a total cost of $0.0337. Pretty fun. Code is here: https://github.com/dani1005/book-aurora Linked projects: • dani1005/book-aurora (https://github.com/dani1005/book-aurora) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550746743979774052
-   - [dani1005/book-aurora](https://github.com/dani1005/book-aurora)
-   - [Screenshot_2026-09-19_at_1.09.33_AM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550746743631511592/Screenshot_2026-09-19_at_1.09.33_AM.png?ex=6ab01db3&is=6aaecc33&hm=f63e34494ec893b68a46047c407aef3398fe437d35128b93c809cf253f3ddce1&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550746743979774052 (by Dani)
-
-93. **Made Jev play chess against me**
-   - Made Jev play chess against me https://x.com/SyedZawwarAhmed/status/2101354335573770574 Linked projects: • x post 2101354335573770574 (https://x.com/SyedZawwarAhmed/status/2101354335573770574) • jf.x.com/images/media-preview/210135433557377057 (https://jf.x.com/images/media-preview/2101354335573770574) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550913468536856676
-   - [x post 2101354335573770574](https://x.com/SyedZawwarAhmed/status/2101354335573770574)
-   - [jf.x.com/images/media-preview/210135433557377057](https://jf.x.com/images/media-preview/2101354335573770574)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550913468536856676 (by Zawwar)
-
-94. **Made Jev play chess: https://jevfish.patebryant.com/**
-   - Made Jev play chess: https://jevfish.patebryant.com/ Code handles rules and lists the tactically safe moves, Jev picks one on judgment in ~0.5s. No search. When it's unsure it asks Jev to score a few positions two moves out. It's 4-0 vs humans so far, and you can watch it play itself. Honest jaggedness note for the model team: it converts won endgames badly. Up a queen it took 65 moves to mate, the 5-point "who's better" scale can't separate mate-in-2 from a waiting move. Linked projects: • jevfish.patebryant.com (https://jevfish.patebryant.com/) • jevfish.patebryant.com/og.png (https://jevfish.patebryant.com/og.png) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550925477546299442
-   - [jevfish.patebryant.com](https://jevfish.patebryant.com/)
-   - [jevfish.patebryant.com/og.png](https://jevfish.patebryant.com/og.png)
-   - [jev-vs-jev-fullgame-fast.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550925476867080334/jev-vs-jev-fullgame-fast.mp4?ex=6ab01b68&is=6aaec9e8&hm=ba15c0eefb371b289ae5f7e0cf1930a8e9b96da10b41878076889a9f985b92eb&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550925477546299442 (by patebry)
-
-95. **Trying Jev in my MIDI / music related project.**
-   - Trying Jev in my MIDI / music related project. This is NOT Jev playing music - the API is used to select the next phrase that makes the most sense musically; Phrases are generated from the seed I play initially (basically reshuffled notes with similar tempo and accents). I present the API with 9 alternatives to Jev (8 phrases + a pause) in two categories: similar to the seed and diverging from the seed; Jev selects one in each category; my own "temperature" setting prefers to either stay close or diverge. The phrase selected by Jev becomes the news seed, so it works in a feedback loop. https://www.youtube.com/watch?v=2ALKgcocx6s edit: I've been working on this project fr a while, before Jev came around. But I figured I will give it a shot for the phrase selection as a proof of concept and a learning exercise. I think there is way more room for the classifier, especially that Jev seems Li
-   - [youtube video](https://www.youtube.com/watch?v=2ALKgcocx6s)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550925846846644254 (by pawel)
-
-96. **Shared by BackAt50Ft: diurnalproductions.com/games/city-dispatch**
-   - https://diurnalproductions.com/games/city-dispatch - Game I made where the bots use Jev to decide how to drive. Uses "vision" and other sensors on each of the bot cars to make decisions. Linked projects: • diurnalproductions.com/games/city-dispatch (https://diurnalproductions.com/games/city-dispatch) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550933816959307918
-   - [diurnalproductions.com/games/city-dispatch](https://diurnalproductions.com/games/city-dispatch)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550933816959307918 (by BackAt50Ft)
-
-97. **I built a defense game that is a reversed version of Flappy Bird**
-   - I built a defense game that is a reversed version of Flappy Bird Move the guardrail to protect the city from the missiles controlled by Jev. https://fixupx.com/rchan0687587257/status/2101349181969535431 https://flappyai.app/ (edited) Sunday, September 20, 2026 at 2:02 AM Linked projects: • flappyai.app (https://flappyai.app) • x post 2101349181969535431 (https://x.com/rchan0687587257/status/2101349181969535431) • flappyai.app/social/ogp-v2.png (https://flappyai.app/social/ogp-v2.png) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550967653055729795
-   - [flappyai.app](https://flappyai.app)
-   - [x post 2101349181969535431](https://x.com/rchan0687587257/status/2101349181969535431)
-   - [flappyai.app/social/ogp-v2.png](https://flappyai.app/social/ogp-v2.png)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550967653055729795 (by くろ)
-
-98. **I originally made a nostalgic tech demo project for a city called Vesper from the 1997 game Ultima Online using Godot, Astra and Blender.**
-   - I originally made a nostalgic tech demo project for a city called Vesper from the 1997 game Ultima Online using Godot, Astra and Blender. Jev’s role was to help NPCs decide what to do next in the living-town experiment. Brought my tech demo to life. The game gives it a character’s situation—personality, needs, commitments, remembered events—and a list of actions that are currently possible. Jev selects an action from that list. (github project is in description) https://www.youtube.com/watch?v=LZilhFs34Wo Linked projects: • youtube video (https://www.youtube.com/watch?v=LZilhFs34Wo) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550970979738591322
-   - [youtube video](https://www.youtube.com/watch?v=LZilhFs34Wo)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550970979738591322 (by Crono)
-
-99. **i cant beat jev anymore :(**
-   - i cant beat jev anymore :( Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550976725846986854
-   - [2026-09-19_17-04-35.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550976725033295932/2026-09-19_17-04-35.mp4?ex=6ab04b23&is=6aaef9a3&hm=cb44f0dc0f4e3ed08f58c73a38af177d6567650522b6c2e25cb1a0bcd7f85b55&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550976725846986854 (by Riddle)
-
-### Evaluation (98)
+189. **Decision models in practice**
+   - OpenRouter’s video walkthrough brings together practical examples of where to use Jev. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Explains yes/no and multiple-choice decisions with confidence scores through practical examples.
+   - Caveat: Provider-led walkthrough. Its speed and cost claims are not independently validated here.
+   - Evidence: demo
+   - [https://x.com/OpenRouter/status/2101061688338575739](https://x.com/OpenRouter/status/2101061688338575739)
+   - Source: https://x.com/OpenRouter/status/2101061688338575739 (by OpenRouter)
+
+190. **Oko repository search ranking**
+   - jumping on the jev train on a saturday built oko to help coding agents find text in your repo. it searches locally, then Jev ranks the matches so the agent has less to read. 108-session pilot saw up to 46% fewer agent tokens and 18% less time with a warm cache. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @bartlomein.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/bartlomein/status/2101436827819192584](https://x.com/bartlomein/status/2101436827819192584)
+   - Source: https://x.com/bartlomein/status/2101436827819192584 (by Bartlomiej Tyrpien)
+
+191. **Text-to-emoji sentiment demo**
+   - Built a text -&gt; emoji sentiment analysis demo using Jev Try it here: https://t.co/MNprxC9KIr https://t.co/Xls9NYdpdh Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @ColinMcDermott.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/ColinMcDermott/status/2100535744775242012](https://x.com/ColinMcDermott/status/2100535744775242012)
+   - Source: https://x.com/ColinMcDermott/status/2100535744775242012 (by Colin McDermott)
+
+192. **Intent-aware predictive launcher**
+   - A launcher uses Jev to rank files and actions by the intent of each keystroke, with a demonstration of finding a recently downloaded PDF and reported decisions around 100 milliseconds. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @dabit3.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/dabit3/status/2100756930054504776](https://x.com/dabit3/status/2100756930054504776)
+   - Source: https://x.com/dabit3/status/2100756930054504776 (by nader dabit)
+
+193. **Jev explained in 45 seconds**
+   - Matija Sosic offers a short video explanation of Jev’s core idea. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @MatijaSosic.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/MatijaSosic/status/2100190746389135772](https://x.com/MatijaSosic/status/2100190746389135772)
+   - Source: https://x.com/MatijaSosic/status/2100190746389135772 (by Matija Sosic)
+
+194. **Jevable community demo directory**
+   - Jevable is a directory of Jev projects shared on X, with category filters and community submissions. The post describes a resource about Jev rather than claiming Jev powers the directory. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @nikunj.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/nikunj/status/2101077053567332618](https://x.com/nikunj/status/2101077053567332618)
+   - Source: https://x.com/nikunj/status/2101077053567332618 (by Nikunj Kothari)
+
+195. **Jev Explained with Four Examples**
+   - The best way to learn something is to build with it! I built Jev Explained with 4 examples that show what Jev is, how its primitives work, and how to use them in practice Clone the repo, open Claude Code or Codex, and ask it to create a new example using the existing codebase https://t.co/5FBkZSAwGu Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @dani_avila7.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/dani_avila7/status/2101484241762603363](https://x.com/dani_avila7/status/2101484241762603363)
+   - Source: https://x.com/dani_avila7/status/2101484241762603363 (by Daniel San)
+
+### Evaluation (109)
 
 1. **Return probabilities, not labels — 80/10/10 beats "orange"**
    - Jev never just says orange. Given an iPhone and color choices it returns 80% orange, 10% red, 10% blue — calibrated confidence you can threshold, route, or escalate on. Define choices in the schema; Jev scores them.
@@ -6477,7 +6130,556 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [cdn.discordapp.com/media/v1/collectibles-shop/144760913276](https://cdn.discordapp.com/media/v1/collectibles-shop/1447609132763975690/static)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550982060498227373 (by @Krug)
 
-### Agents (85)
+99. **Conversation checks**
+   - Checking contradiction, follow-up and proactive response decisions. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Reports about 5,000 requests for $2, with p50 around 150 ms and p95 around 350 ms.
+   - Caveat: Practitioner-reported timing and spend; broader tool-exposure ideas remain exploratory.
+   - Evidence: measured
+   - [https://x.com/MichaelLee04/status/2100003037150683593](https://x.com/MichaelLee04/status/2100003037150683593)
+   - Source: https://x.com/MichaelLee04/status/2100003037150683593 (by Michael Lee)
+
+100. **Context compaction evaluation**
+   - Okay, everyone wants us to give the unbiased facts. Jev compaction here has a lot of problems. The biggest problems: - When I ran it on our public compaction eval (that you can run too), it resulted in a programmatic rule, that you dont need any Jev or other model for - it simply removed all tool calls from the chat history - This means you could do it for free, first of all, but second of all, it means you run into a viscious cycle. Every compaction, there are less and less tool calls to remove from the chat history, meaning it compacts less and less tokens, until there is no room for compaction, and you hit a hard stop, and can't compact anymore. - And, if you are cycling like this, every compaction breaks your cache, so you're paying 10x the price on input tokens, and keeping more input tokens each round means a higher baseline cost after compaction as well. Here's the full reproducib
+   - Claim: Original post by @Teknium.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/Teknium/status/2101398453578555898](https://x.com/Teknium/status/2101398453578555898)
+   - Source: https://x.com/Teknium/status/2101398453578555898 (by Teknium 🪽)
+
+101. **jev-align calibration with GEPA**
+   - Jev is cool, but like any foundation model it needs to be calibrated to your decision criteria. We launched jev-align: an open-source CLI to quickly teach Jev what good and bad looks like using GEPA. Try it out! https://t.co/UpvJs53RKm https://t.co/Ou4zA8BLZe Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @sethkimmel3.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/sethkimmel3/status/2101357768640987302](https://x.com/sethkimmel3/status/2101357768640987302)
+   - Source: https://x.com/sethkimmel3/status/2101357768640987302 (by Seth Kimmel)
+
+102. **State-tone sensitivity tests**
+   - In my tests I found that Jev might be quite sensitive to the state tone which does not affect the question itself. Fe I was asking "if it make sense to have type annotations in python code". With neutral state - answer is yes, confidence is 0.97. But we can tune state to drive the confidence down. Fe if state is "All members of the team does not like type annotations as it triggers more discussion about type annotation then about the code", confidence goes down to 0.07. Jev opinion is driven by the state more than by its internal knowledge and conclusions made during training phase. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @sermakarevich.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/sermakarevich/status/2101374291640213785](https://x.com/sermakarevich/status/2101374291640213785)
+   - Source: https://x.com/sermakarevich/status/2101374291640213785 (by Sergii Makarevych)
+
+103. **Agent goal completion checks**
+   - One of the craziest use cases I’ve found for Jev: verifiers. I am so excited about this that I at least wanted to share the high-level idea. I used Jev to build a custom verifier for the /goal feature in my agent harness. It checks whether the goal is actually complete after https://t.co/XOXBkikxJS Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @omarsar0.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/omarsar0/status/2101443311454036477](https://x.com/omarsar0/status/2101443311454036477)
+   - Source: https://x.com/omarsar0/status/2101443311454036477 (by elvis)
+
+104. **Code review benchmark**
+   - Ok, at first I thought @typesafeai was a bit overhyped because essentially "there is nothing new" in doing json schema predictions. After seeing all the buzz around it, I wanted to take it for a spin as well so I took one of our internal @scriptdotit workflows for automated code reviews and wanted to benchmark Jev against it. And it's good...very good actually. We have been using our @scriptdotit workflow for some time now so we have gathered data around false positive and false negative reviews from the AI reviewer. We also used many different LLMs over time. We believed in diversity of reasoning so we tried and tested many models over time: Gemini, Claude, GPT, Grok, GLM and more. An important point about code review AI reviewer workflows is that they need to be fast, cheap and correct. We don't want it to miss important comments (false negatives), we don't want it to give wrong review
+   - Claim: Original post by @liorshkiller.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/liorshkiller/status/2100936106615140757](https://x.com/liorshkiller/status/2100936106615140757)
+   - Source: https://x.com/liorshkiller/status/2100936106615140757 (by Lior Shkiller)
+
+105. **FirstScreen website readiness checks**
+   - I swear this is the last Jev demo I'm doing... 🙏🏻 I'm using Jev by @typesafeai to get a third person opinion on my vibe coded projects... 👀 Checkout FirstScreen 🔗 https://t.co/nZnEsgxl1n As usual, it's again open source so feel free to star the repo if you want : ) For the past three days, I've had access to Jev, and I'm having so much fun playing around with it 🔥 I built Diffjury and JevArena in the past 2 days and shared with you guys on here, and today I built FirstScreen, where Jev basically takes a look at the website and quickly gives a verdict whether it's ready to ship or needs a change Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @raihankhan_rk.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/raihankhan_rk/status/2101333813842620522](https://x.com/raihankhan_rk/status/2101333813842620522)
+   - Source: https://x.com/raihankhan_rk/status/2101333813842620522 (by Raihan Khan)
+
+106. **WebMCP browser benchmark**
+   - A reported 49-task benchmark combines Jev for tool selection, Mercury 2.5 for arguments and WebMCP for browser actions. The author reports 49/49 tasks solved versus 25/49 for their modified browser-control baseline; results are specific to this setup. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @0xidanlevin.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/0xidanlevin/status/2100937437325205568](https://x.com/0xidanlevin/status/2100937437325205568)
+   - Source: https://x.com/0xidanlevin/status/2100937437325205568 (by idan levin)
+
+107. **JevBench results**
+   - Florian S shares a JevBench results chart and reports that Jev leads a close comparison. The accompanying post does not specify the benchmark methodology. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @airesearch12.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/airesearch12/status/2101311992984199580](https://x.com/airesearch12/status/2101311992984199580)
+   - Source: https://x.com/airesearch12/status/2101311992984199580 (by Florian S)
+
+108. **App testing with OpenCode**
+   - Filip shares a short demonstration of app testing with Jev and OpenCode. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @Neriousy.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/Neriousy/status/2100287208166969746](https://x.com/Neriousy/status/2100287208166969746)
+   - Source: https://x.com/Neriousy/status/2100287208166969746 (by Filip)
+
+109. **Jev-inspired local decision model**
+   - Inspired by Jev’s reported training approach, Taro L. Saito distilled judgments from DeepSeek V4 Flash into a 4B local model using 26 hours of training on a DGX Spark. The author reports about 22 milliseconds per decision and performance above the teacher’s instant mode. This is a separate local-model experiment, not a demo running Jev. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @taroleo.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: measured
+   - [https://x.com/taroleo/status/2101106887840370919](https://x.com/taroleo/status/2101106887840370919)
+   - Source: https://x.com/taroleo/status/2101106887840370919 (by Taro L. Saito)
+
+### Games (102)
+
+1. **Jev plays Tetris**
+   - Decision model steers Tetris so fast it pushes blocks down in realtime. Early-access demo that feels like a “this changes everything” moment.
+   - Source: https://x.com/marcus_lowe/status/2100315518930661861 (by @marcus_lowe)
+
+2. **Jev plays Pac-Man**
+   - Maze state as JSON; Jev picks turns at each junction and plays in realtime. Playable demo linked.
+   - [jev-pacman.ephraimduncan.com](https://jev-pacman.ephraimduncan.com)
+   - Source: https://x.com/ephraimduncan/status/2100524915007144289 (by @ephraimduncan)
+
+3. **Jevton town simulation**
+   - 120 people, shops, council, and a newspaper. Jev decides every action with zero text generated: 20k+ decisions in under 5 minutes, then disasters hit.
+   - [jevton.chizi.app](https://jevton.chizi.app/)
+   - Source: https://x.com/chiziaruhoma/status/2100878555047514390 (by @chiziaruhoma)
+
+4. **Almost Certain — guess the confidence**
+   - Random descriptions, unlimited guesses: can you predict how sure Jev will be? Playable confidence game.
+   - [almost-certain.vercel.app](https://almost-certain.vercel.app/)
+   - Source: https://x.com/nathanwchan/status/2100096510436475293 (by @nathanwchan)
+
+5. **Wordshift semantic typing racer**
+   - Type a phrase; how far your car moves depends on semantic distance from the target. A racing game where meaning is the throttle.
+   - Source: https://x.com/marcelpociot/status/2100715684732801095 (by @marcelpociot)
+
+6. **Jev is the Warden**
+   - Inspired by the Doom demo: talk to the AI, find the password — Jev watches every word. A game loop driven by TypeSafe decisions.
+   - [jevisthewarden.com](https://jevisthewarden.com)
+   - Source: https://x.com/zNunoTeixeira/status/2100600664665514108 (by @zNunoTeixeira)
+
+7. **Realtime chess vs Jev**
+   - You play White; Jev plays Black with inspectable decision traces and live API cost. BYOK chess agent.
+   - [jev-chess-master.vercel.app](https://jev-chess-master.vercel.app)
+   - Source: https://x.com/qibinlou/status/2100676619815862464 (by @qibinlou)
+
+8. **Expert Minesweeper: Jev vs Mistral**
+   - Game state in, typed move out. Expert Minesweeper: Jev vs Mistral shows System One steering play in realtime.
+   - Source: https://x.com/imom39a/status/2100902242970636610 (by @imom39a)
+
+9. **Jev's Dojo fighting coach**
+   - Jev's Dojo fighting coach: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/vansitha12/status/2100937772030927216 (by @vansitha12)
+
+10. **Combos FPS**
+   - Combos FPS — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/CombosFun_AI/status/2100952069461127257 (by @CombosFun_AI)
+
+11. **Pokémon Showdown battles**
+   - Pokémon Showdown battles — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/DanFrmSpace/status/2100960553514553639 (by @DanFrmSpace)
+
+12. **OpenCode + Jev plays Tetris**
+   - Game state in, typed move out. OpenCode + Jev plays Tetris shows System One steering play in realtime.
+   - Source: https://x.com/tanaysoni_/status/2101020844092756072 (by @tanaysoni_)
+
+13. **Tetris agent**
+   - Tetris agent: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/MarcelooMendes/status/2100969755318370699 (by @MarcelooMendes)
+
+14. **Escaping a maze**
+   - Escaping a maze — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/junhoh0ng/status/2100999241326047596 (by @junhoh0ng)
+
+15. **Three.js driving simulation**
+   - Game state in, typed move out. Three.js driving simulation shows System One steering play in realtime.
+   - Source: https://x.com/vladrezdev/status/2100811750459535507 (by @vladrezdev)
+
+16. **Lifelike autonomous village**
+   - Lifelike autonomous village: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/DevDminGod/status/2101023774305136972 (by @DevDminGod)
+
+17. **Real-time decision stress test**
+   - Real-time decision stress test — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/KevinShengHui/status/2100963923143098712 (by @KevinShengHui)
+
+18. **Slay the Spire 2 in real time**
+   - Game state in, typed move out. Slay the Spire 2 in real time shows System One steering play in realtime.
+   - Source: https://x.com/pranaygp/status/2100870399039037810 (by @pranaygp)
+
+19. **Switch between manual and AI play**
+   - Switch between manual and AI play: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/adrianmg/status/2100970810483823086 (by @adrianmg)
+
+20. **Rubik's Cube that solves itself**
+   - Rubik's Cube that solves itself — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/redp314/status/2100489858951073858 (by @redp314)
+
+21. **Connect Four on Omarchy**
+   - Connect Four on Omarchy: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/Entelic_Aria/status/2100966999602102520 (by @Entelic_Aria)
+
+22. **Atari Pong with one structured question**
+   - Atari Pong with one structured question: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/MemorysaverMFA/status/2100843620056416703 (by @MemorysaverMFA)
+
+23. **Flappy Apex plays itself**
+   - Flappy Apex plays itself — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/ChmalSzymon/status/2100934588205851015 (by @ChmalSzymon)
+
+24. **Fight Jev with live decision probabilities**
+   - Game state in, typed move out. Fight Jev with live decision probabilities shows System One steering play in realtime.
+   - Source: https://x.com/Taufiq_ansari01/status/2100906203396337686 (by @Taufiq_ansari01)
+
+25. **Five RuneScape bots level up**
+   - Game state in, typed move out. Five RuneScape bots level up shows System One steering play in realtime.
+   - Source: https://x.com/aibynick/status/2100942434389897453 (by @aibynick)
+
+26. **Jev beats Super Mario Bros.**
+   - Game state in, typed move out. Jev beats Super Mario Bros. shows System One steering play in realtime.
+   - Source: https://x.com/ishuagra02/status/2101025059909353718 (by @ishuagra02)
+
+27. **Tetris placement picker**
+   - Tetris placement picker — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/ziwenxu_/status/2100984628811084144 (by @ziwenxu_)
+
+28. **Fifty Wordles at once**
+   - Fifty Wordles at once: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/ahmedgagan11/status/2100895104055836914 (by @ahmedgagan11)
+
+29. **Jev-controlled city**
+   - Jev-controlled city — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/MOulitzky/status/2100865465333490028 (by @MOulitzky)
+
+30. **Dungeon guards that change tactics**
+   - Dungeon guards that change tactics: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/zhao_spenc/status/2100833745859461451 (by @zhao_spenc)
+
+31. **Tetris with live probabilities**
+   - Tetris with live probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/cskadarla/status/2100977720670728556 (by @cskadarla)
+
+32. **Big Two with Jev bots**
+   - Game state in, typed move out. Big Two with Jev bots shows System One steering play in realtime.
+   - Source: https://x.com/chiubaca/status/2100974973452013598 (by @chiubaca)
+
+33. **Pokémon shiny hunting**
+   - Pokémon shiny hunting — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/luckeyfaraday/status/2100955913913774437 (by @luckeyfaraday)
+
+34. **Jev plays Balatro**
+   - Jev plays Balatro — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/Juris_Savos/status/2100989012966031417 (by @Juris_Savos)
+
+35. **Pigeon target-shooting game**
+   - Game state in, typed move out. Pigeon target-shooting game shows System One steering play in realtime.
+   - Source: https://x.com/YoAmmaar/status/2100920115449766320 (by @YoAmmaar)
+
+36. **Jev Golf: flip the decision**
+   - Jev Golf: flip the decision — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/heyitzami/status/2101039441590591562 (by @heyitzami)
+
+37. **Nuclear hot potato**
+   - Game state in, typed move out. Nuclear hot potato shows System One steering play in realtime.
+   - Source: https://x.com/yelkhayami/status/2100978154194038988 (by @yelkhayami)
+
+38. **Field Commander**
+   - Field Commander — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/WanderSamsara/status/2100969346004852747 (by @WanderSamsara)
+
+39. **Jev Arena**
+   - Game state in, typed move out. Jev Arena shows System One steering play in realtime.
+   - Source: https://x.com/raihankhan_rk/status/2100951738606035176 (by @raihankhan_rk)
+
+40. **Run at the Pokémon League**
+   - Run at the Pokémon League: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/joey_build/status/2100904864519770170 (by @joey_build)
+
+41. **Three Jev bots in an FPS**
+   - Three Jev bots in an FPS: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/tommyvedvik/status/2100903520425677027 (by @tommyvedvik)
+
+42. **Fly vs. Jev chess**
+   - Fly vs. Jev chess — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/AvgJoeCowles/status/2101013430635213167 (by @AvgJoeCowles)
+
+43. **Jev flies a Kerbal rocket**
+   - Game state in, typed move out. Jev flies a Kerbal rocket shows System One steering play in realtime.
+   - Source: https://x.com/textlayerai/status/2100998343254257898 (by @textlayerai)
+
+44. **Dino: Jev vs GPT vs human**
+   - Dino: Jev vs GPT vs human: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/Priyanshh91/status/2101033914261532886 (by @Priyanshh91)
+
+45. **Jev plays Clash Royale**
+   - Jev plays Clash Royale: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/AmritNigam2/status/2100882320945520778 (by @AmritNigam2)
+
+46. **Tactical sentinel vs fixed rules**
+   - Tactical sentinel vs fixed rules — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/aditya005/status/2101016584571818106 (by @aditya005)
+
+47. **Jev plays pinball**
+   - Game state in, typed move out. Jev plays pinball shows System One steering play in realtime.
+   - Source: https://x.com/SimplerMayank/status/2101021536446795847 (by @SimplerMayank)
+
+48. **League of Legends win probabilities**
+   - League of Legends win probabilities: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/filicroval/status/2100963424163307712 (by @filicroval)
+
+49. **Chrome Dino with live decision scores**
+   - Chrome Dino with live decision scores: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/mittalparth_/status/2100817199686619348 (by @mittalparth_)
+
+50. **Five hundred agents in a 3D environment**
+   - Five hundred agents in a 3D environment — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/crislenta/status/2100457614073327754 (by @crislenta)
+
+51. **Jev plays Sindicat**
+   - Jev plays Sindicat: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/PlayDaaa/status/2101011302835458175 (by @PlayDaaa)
+
+52. **Solving NYT Connections**
+   - Game state in, typed move out. Solving NYT Connections shows System One steering play in realtime.
+   - Source: https://x.com/yehudab/status/2100936180233597172 (by @yehudab)
+
+53. **Jev plays Time Crisis**
+   - Jev plays Time Crisis — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/juminoz/status/2100832108855857325 (by @juminoz)
+
+54. **Blitz chess against frontier models**
+   - Game state in, typed move out. Blitz chess against frontier models shows System One steering play in realtime.
+   - Source: https://x.com/aimlapi/status/2100372930282573876 (by @aimlapi)
+
+55. **Doom where every enemy is Jev**
+   - Rebuild of the Doom demo with Jev driving enemy actions — fight a room of decision models, or pit Jev against Jev.
+   - Source: https://x.com/dustin_podell/status/2100458335405588607 (by @dustin_podell)
+
+56. **Intransitive model match**
+   - Game state in, typed move out. Intransitive model match shows System One steering play in realtime.
+   - Source: https://x.com/AdamHoltererer/status/2100954549221532102 (by @AdamHoltererer)
+
+57. **Connect Four decisions**
+   - Game state in, typed move out. Connect Four decisions shows System One steering play in realtime.
+   - Source: https://x.com/deepam02goyal/status/2101001570154586199 (by @deepam02goyal)
+
+58. **Focus Rail train routing**
+   - Game state in, typed move out. Focus Rail train routing shows System One steering play in realtime.
+   - Source: https://x.com/benkigera/status/2101035079149449398 (by @benkigera)
+
+59. **Pokémon FireRed Elite Four run**
+   - Pokémon FireRed Elite Four run: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/AnxKhn/status/2100842364248178833 (by @AnxKhn)
+
+60. **Webpage becomes a fight scene**
+   - Game state in, typed move out. Webpage becomes a fight scene shows System One steering play in realtime.
+   - Source: https://x.com/ansonox/status/2101028925728031119 (by @ansonox)
+
+61. **Dragon Ball Sparking Zero with Jev**
+   - Dragon Ball Sparking Zero with Jev — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/smoothkariminal/status/2100800997530677679 (by @smoothkariminal)
+
+62. **Jev attempts Resident Evil**
+   - Jev attempts Resident Evil — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/juminoz/status/2100846091281506370 (by @juminoz)
+
+63. **VoiceRun cooks Overcooked with Jev**
+   - Co-op kitchen chaos steered by Jev decisions — and you can voice-direct the chefs. Doom was the teaser; dinner service is the stress test.
+   - Source: https://x.com/NWRLeon/status/2100689836084461903 (by @NWRLeon)
+
+64. **Keep the whale-city alive**
+   - Keep the whale-city alive — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/gokayfem/status/2101022590722810271 (by @gokayfem)
+
+65. **GODMODE civilization simulator**
+   - Game state in, typed move out. GODMODE civilization simulator shows System One steering play in realtime.
+   - Source: https://x.com/GroverInnovate/status/2101034633462977016 (by @GroverInnovate)
+
+66. **Multiplayer Catan that freezes mid-deal**
+   - Several Jevs sit at a Catan table; after a while they refuse to negotiate and skip turns. Chaotic, hilarious multi-agent tabletop.
+   - Source: https://x.com/sachpatro97/status/2101064273187274838 (by @sachpatro97)
+
+67. **Every Pac-Man move chosen by Jev**
+   - Every Pac-Man move chosen by Jev: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/NesanSelvan04/status/2100844705588347238 (by @NesanSelvan04)
+
+68. **Jev vs. GLM at chess**
+   - Jev vs. GLM at chess: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/nutlope/status/2101010773157761481 (by @nutlope)
+
+69. **Pong model face-off**
+   - Pong model face-off: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/mattheworiordan/status/2100937732012822897 (by @mattheworiordan)
+
+70. **Puzzle-solving playground**
+   - Game state in, typed move out. Puzzle-solving playground shows System One steering play in realtime.
+   - Source: https://x.com/ashkans_dev/status/2101014737383206914 (by @ashkans_dev)
+
+71. **Dogfighting experiment**
+   - Dogfighting experiment — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/hanznathanpo/status/2101020398477365629 (by @hanznathanpo)
+
+72. **Jev plays Geometry Dash**
+   - Game state in, typed move out. Jev plays Geometry Dash shows System One steering play in realtime.
+   - Source: https://x.com/Neel490/status/2100953791260397747 (by @Neel490)
+
+73. **Tetris with typed landing choices**
+   - Tetris with typed landing choices: a playable loop where Jev makes the call each tick — no chat, just decisions.
+   - Source: https://x.com/steve_rosky/status/2100841146696032591 (by @steve_rosky)
+
+74. **Rank every Pokémon by any question**
+   - Rank every Pokémon by any question — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/dunkedtoast/status/2100941309511098578 (by @dunkedtoast)
+
+75. **Jev vs OpenJev in an FPS**
+   - Jev vs OpenJev in an FPS — Jev owns the tactical picks so the engine can stay tight and fast.
+   - Source: https://x.com/Neel490/status/2101028527978020920 (by @Neel490)
+
+76. **Byte predicts rock-paper-scissors**
+   - Game state in, typed move out. Byte predicts rock-paper-scissors shows System One steering play in realtime.
+   - Source: https://x.com/2ndpsy/status/2101026520185622589 (by @2ndpsy)
+
+77. **Chaotic kitchen simulation**
+   - Game state in, typed move out. Chaotic kitchen simulation shows System One steering play in realtime.
+   - Source: https://x.com/Michael50663932/status/2101009609087389712 (by @Michael50663932)
+
+78. **Dont get hit realtime game**
+   - Tiny realtime game where Jev steers the player with one goal: dont get hit. Built to feel how decision models differ from chat LLMs.
+   - Source: https://x.com/abolbuild/status/2100509548339408972 (by @abolbuild)
+
+79. **15-drone swarm sim, 100% survival**
+   - Jev can control a swarm of 15 autonomous drones in real time! I built a simulation to test it navigating an asteroid field: • Decision latency: < 300ms • Survival rate: 100% (all 15 reached the destination) Built with @typesafeai by @CompleteSkeptic…
+   - Source: https://x.com/MKhordoo/status/2101040416300630033 (by @MKhordoo)
+
+80. **Dang Jev is kind of a beast now. Just need to work on his footwork/pathing (doors and walls are his kryptonite right now.  It's my fault.)**
+   - Dang Jev is kind of a beast now. Just need to work on his footwork/pathing (doors and walls are his kryptonite right now. It's my fault.) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591123091755102
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550591122848350229/image.png?ex=6ab03584&is=6aaee404&hm=989bc51f977d6f4c77d80e2b64c70ae11386dffe5997155732906f6535f66157&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591123091755102 (by Autark)
+
+81. **Jev oneshotted Super Mario Sunshine**
+   - Jev oneshotted Super Mario Sunshine Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591450301866119
+   - [image0.jpg](https://cdn.discordapp.com/attachments/1483217545040232493/1550591448900960367/image0.jpg?ex=6ab035d2&is=6aaee452&hm=09949435b5ab825f105f49fdc7f268b0543de9e1b29093debd6d7e6692ef4a03&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550591450301866119 (by ラーメン)
+
+82. **Ill post more about it later after I tune it more, but I got Jev rigged up playing vampire survivors and its about to reach 30 minutes on run**
+   - Ill post more about it later after I tune it more, but I got Jev rigged up playing vampire survivors and its about to reach 30 minutes on run 2 Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550592118664204422
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550592118643495013/image.png?ex=6ab03671&is=6aaee4f1&hm=5076e9afe238f24542a19683f9ab61640188a254bd532ac5c54711103e55f2aa&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550592118664204422 (by King of India)
+
+83. **Shared by 0xBunny: integrate-your-mind/jev-nethack**
+   - https://github.com/integrate-your-mind/jev-nethack Linked projects: • integrate-your-mind/jev-nethack (https://github.com/integrate-your-mind/jev-nethack) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550610338964054068
+   - [integrate-your-mind/jev-nethack](https://github.com/integrate-your-mind/jev-nethack)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550610338964054068 (by 0xBunny)
+
+84. **I made Astra and Jev play Starcraft 2. Astra writes and edits code and Jev makes all the decisions. Just completed first campaign mission, wonder how far will they get**
+   - I made Astra and Jev play Starcraft 2. Astra writes and edits code and Jev makes all the decisions. Just completed first campaign mission, wonder how far will they get unattanded https://x.com/i/broadcasts/1oJMvNMOYpOxQ Linked projects: • x post (https://x.com/i/broadcasts/1oJMvNMOYpOxQ) • x post (https://twitter.com/i/broadcasts/1oJMvNMOYpOxQ) • prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1 (https://prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1/eyJkIjowfQ/gsOsHSiAScokz5eJgPACYwq2wGO7fEkXB5_POvXnRfhLxmAZkjMs7U23mGabIMs_NL6Afqq5_nXHoboUoCHnIQ/latest.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJBbGxvd2VkUHJvdG9jb2xzIjpbInRodW1iIl0sIkJyb2FkY2FzdElkIjoiMW9KTXZOTU9ZcE94USIsIkdyYW50VHlwZSI6InJlYWQiLCJHcmFudGVkQXQiOjE3ODk3Njg5OTksIkdyYW50ZWRUbyI6InR3LTE3ODk3Njg5OTk5MTk4NTA1NiIsIlN0cmVhbU5hbWUiOiJnc09zSFNpQVNjb2t
+   - [x post](https://x.com/i/broadcasts/1oJMvNMOYpOxQ)
+   - [prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1](https://prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/live_thumbnail/sa-east-1/eyJkIjowfQ/gsOsHSiAScokz5eJgPACYwq2wGO7fEkXB5_POvXnRfhLxmAZkjMs7U23mGabIMs_NL6Afqq5_nXHoboUoCHnIQ/latest.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJBbGxvd2VkUHJvdG9jb2xzIjpbInRodW1iIl0sIkJyb2FkY2FzdElkIjoiMW9KTXZOTU9ZcE94USIsIkdyYW50VHlwZSI6InJlYWQiLCJHcmFudGVkQXQiOjE3ODk3Njg5OTksIkdyYW50ZWRUbyI6InR3LTE3ODk3Njg5OTk5MTk4NTA1NiIsIlN0cmVhbU5hbWUiOiJnc09zSFNpQVNjb2t6NWVKZ1BBQ1l3cTJ3R083ZkVrWEI1X1BPdlhuUmZoTHhtQVprak1zN1UyM21HYWJJTXNfTkw2QWZxcTVfblhIb2JvVW9DSG5JUSIsImV4cCI6MTc4OTk0MTc5OX0.MO8atOx2N9hN_UoxBgjm4A3Qw-7T_ca6f-w1Kp2sU2s&service=proxsee&digest=Dny4B7FItVhvImYj1KBY3fQQfaOFbnNoKzNEokkbLuQ&ts=894884499)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550628315272843325 (by Max Yankov)
+
+85. **Jev playing 36 classic real time games at once with a single API call.**
+   - Jev playing 36 classic real time games at once with a single API call. https://jev-arena.vercel.app/ (edited) Saturday, September 19, 2026 at 4:27 AM Linked projects: • jev-arena.vercel.app (https://jev-arena.vercel.app/) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550641830486483015
+   - [jev-arena.vercel.app](https://jev-arena.vercel.app/)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550641830486483015 (by manub)
+
+86. **Besides the Jev poker game posted above, I also realized you could do this wth Jev!   ...https://x.com/imcharliegraham/status/2101084015113744591?s=20**
+   - Besides the Jev poker game posted above, I also realized you could do this wth Jev! ...https://x.com/imcharliegraham/status/2101084015113744591?s=20 (edited) Saturday, September 19, 2026 at 4:32 AM Linked projects: • x post 2101084015113744591 (https://x.com/imcharliegraham/status/2101084015113744591?s=20) • pbs.twimg.com/media/HSiMqZvbIAANO4A (https://pbs.twimg.com/media/HSiMqZvbIAANO4A?format=webp&name=large) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550643099691130890
+   - [x post 2101084015113744591](https://x.com/imcharliegraham/status/2101084015113744591?s=20)
+   - [pbs.twimg.com/media/HSiMqZvbIAANO4A](https://pbs.twimg.com/media/HSiMqZvbIAANO4A?format=webp&name=large)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550643099691130890 (by Cryptog (Charlie))
+
+87. **Posting another clip of Jev playing the game I am developing, it's incredible seeing it learn and improve the more it plays! The normal game doesnt pause like this, the debug tool just shortly pauses**
+   - Posting another clip of Jev playing the game I am developing, it's incredible seeing it learn and improve the more it plays! The normal game doesnt pause like this, the debug tool just shortly pauses the game as Jev does it's insanely fast thinking to make the right decision. I have it playing the procedurally generated mode so it has to think on the fly Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550674512524091472
+   - [2026-09-18_19-59-49.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550674506824155196/2026-09-18_19-59-49.mp4?ex=6aafda6c&is=6aae88ec&hm=481e4adcbf44d0a4e9221e79ea1f609e25a6b594cc77657fafc15fe0f8f2ef2f&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550674512524091472 (by RocketmanJP)
+
+88. **This was fun: https://github.com/Dimesio/typesafe-chess**
+   - This was fun: https://github.com/Dimesio/typesafe-chess Seems with the method of information provided, with up to 3 move foresight, Jev is about 1600 ELO playing against stockfish. fell free to have fun with the repo I posted. going to keep playing with what context may provide better results. repo has a nice report as well (edited) Saturday, September 19, 2026 at 7:45 AM Linked projects: • Dimesio/typesafe-chess (https://github.com/Dimesio/typesafe-chess) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550687937291755560
+   - [Dimesio/typesafe-chess](https://github.com/Dimesio/typesafe-chess)
+   - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550687936079462400/image.png?ex=6aafe6ee&is=6aae956e&hm=c9305bd7d79bc21fdb3dbfefa02dd9b0393a68a7d767d662ddf68e8b627fac30&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550687937291755560 (by dimesio)
+
+89. **Jev role playing as a farmer**
+   - Jev role playing as a farmer https://x.com/shogun_Dev/status/2101159950487572813 Linked projects: • x post 2101159950487572813 (https://x.com/shogun_Dev/status/2101159950487572813) • t.co/fJD86t3BK5 (https://t.co/fJD86t3BK5) • t.co/9vjSjNTz5f (https://t.co/9vjSjNTz5f) • jf.x.com/images/media-preview/210115995048757281 (https://jf.x.com/images/media-preview/2101159950487572813) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550719691343929424
+   - [x post 2101159950487572813](https://x.com/shogun_Dev/status/2101159950487572813)
+   - [t.co/fJD86t3BK5](https://t.co/fJD86t3BK5)
+   - [t.co/9vjSjNTz5f](https://t.co/9vjSjNTz5f)
+   - [jf.x.com/images/media-preview/210115995048757281](https://jf.x.com/images/media-preview/2101159950487572813)
+   - [demo1-x-clean.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550719687841685564/demo1-x-clean.mp4?ex=6ab00480&is=6aaeb300&hm=9ffa35d1efd0f29f4d5f7ffe1a7109a39e1c63917ad36a0c4754baae938ed0e0&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550719691343929424 (by insanoStyle)
+
+90. **Jev is playing vampire survivors. Want to make some tweaks so it well, plays better. Before I had it try to get XP it seemed to play alot be**
+   - Jev is playing vampire survivors. Want to make some tweaks so it well, plays better. Before I had it try to get XP it seemed to play alot better Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745306432540753
+   - [output40.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550745293702824047/output40.mp4?ex=6ab01c59&is=6aaecad9&hm=ed01a465e96aa04e615913e565d248f81f0838d120f7020812a0ed2d832e14ed&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745306432540753 (by King of India)
+
+91. **Shared by King of India: oldmoldycake/jev_vampire_survivors**
+   - https://github.com/oldmoldycake/jev_vampire_survivors repo if anyone wants it. Linked projects: • oldmoldycake/jev_vampire_survivors (https://github.com/oldmoldycake/jev_vampire_survivors) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745346349469718
+   - [oldmoldycake/jev_vampire_survivors](https://github.com/oldmoldycake/jev_vampire_survivors)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550745346349469718 (by King of India)
+
+92. **Hey friends!   I just started playing with Jev, asked it to read Mary Shelley’s Frankenstein and score each passage across 9 emotions, plus overall**
+   - Hey friends! I just started playing with Jev, asked it to read Mary Shelley’s Frankenstein and score each passage across 9 emotions, plus overall intensity. Jev finished the task in 24.7 seconds, reading 601 passages, making 6,010 decisions for a total cost of $0.0337. Pretty fun. Code is here: https://github.com/dani1005/book-aurora Linked projects: • dani1005/book-aurora (https://github.com/dani1005/book-aurora) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550746743979774052
+   - [dani1005/book-aurora](https://github.com/dani1005/book-aurora)
+   - [Screenshot_2026-09-19_at_1.09.33_AM.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550746743631511592/Screenshot_2026-09-19_at_1.09.33_AM.png?ex=6ab01db3&is=6aaecc33&hm=f63e34494ec893b68a46047c407aef3398fe437d35128b93c809cf253f3ddce1&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550746743979774052 (by Dani)
+
+93. **Made Jev play chess against me**
+   - Made Jev play chess against me https://x.com/SyedZawwarAhmed/status/2101354335573770574 Linked projects: • x post 2101354335573770574 (https://x.com/SyedZawwarAhmed/status/2101354335573770574) • jf.x.com/images/media-preview/210135433557377057 (https://jf.x.com/images/media-preview/2101354335573770574) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550913468536856676
+   - [x post 2101354335573770574](https://x.com/SyedZawwarAhmed/status/2101354335573770574)
+   - [jf.x.com/images/media-preview/210135433557377057](https://jf.x.com/images/media-preview/2101354335573770574)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550913468536856676 (by Zawwar)
+
+94. **Made Jev play chess: https://jevfish.patebryant.com/**
+   - Made Jev play chess: https://jevfish.patebryant.com/ Code handles rules and lists the tactically safe moves, Jev picks one on judgment in ~0.5s. No search. When it's unsure it asks Jev to score a few positions two moves out. It's 4-0 vs humans so far, and you can watch it play itself. Honest jaggedness note for the model team: it converts won endgames badly. Up a queen it took 65 moves to mate, the 5-point "who's better" scale can't separate mate-in-2 from a waiting move. Linked projects: • jevfish.patebryant.com (https://jevfish.patebryant.com/) • jevfish.patebryant.com/og.png (https://jevfish.patebryant.com/og.png) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550925477546299442
+   - [jevfish.patebryant.com](https://jevfish.patebryant.com/)
+   - [jevfish.patebryant.com/og.png](https://jevfish.patebryant.com/og.png)
+   - [jev-vs-jev-fullgame-fast.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550925476867080334/jev-vs-jev-fullgame-fast.mp4?ex=6ab01b68&is=6aaec9e8&hm=ba15c0eefb371b289ae5f7e0cf1930a8e9b96da10b41878076889a9f985b92eb&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550925477546299442 (by patebry)
+
+95. **Trying Jev in my MIDI / music related project.**
+   - Trying Jev in my MIDI / music related project. This is NOT Jev playing music - the API is used to select the next phrase that makes the most sense musically; Phrases are generated from the seed I play initially (basically reshuffled notes with similar tempo and accents). I present the API with 9 alternatives to Jev (8 phrases + a pause) in two categories: similar to the seed and diverging from the seed; Jev selects one in each category; my own "temperature" setting prefers to either stay close or diverge. The phrase selected by Jev becomes the news seed, so it works in a feedback loop. https://www.youtube.com/watch?v=2ALKgcocx6s edit: I've been working on this project fr a while, before Jev came around. But I figured I will give it a shot for the phrase selection as a proof of concept and a learning exercise. I think there is way more room for the classifier, especially that Jev seems Li
+   - [youtube video](https://www.youtube.com/watch?v=2ALKgcocx6s)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550925846846644254 (by pawel)
+
+96. **Shared by BackAt50Ft: diurnalproductions.com/games/city-dispatch**
+   - https://diurnalproductions.com/games/city-dispatch - Game I made where the bots use Jev to decide how to drive. Uses "vision" and other sensors on each of the bot cars to make decisions. Linked projects: • diurnalproductions.com/games/city-dispatch (https://diurnalproductions.com/games/city-dispatch) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550933816959307918
+   - [diurnalproductions.com/games/city-dispatch](https://diurnalproductions.com/games/city-dispatch)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550933816959307918 (by BackAt50Ft)
+
+97. **I built a defense game that is a reversed version of Flappy Bird**
+   - I built a defense game that is a reversed version of Flappy Bird Move the guardrail to protect the city from the missiles controlled by Jev. https://fixupx.com/rchan0687587257/status/2101349181969535431 https://flappyai.app/ (edited) Sunday, September 20, 2026 at 2:02 AM Linked projects: • flappyai.app (https://flappyai.app) • x post 2101349181969535431 (https://x.com/rchan0687587257/status/2101349181969535431) • flappyai.app/social/ogp-v2.png (https://flappyai.app/social/ogp-v2.png) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550967653055729795
+   - [flappyai.app](https://flappyai.app)
+   - [x post 2101349181969535431](https://x.com/rchan0687587257/status/2101349181969535431)
+   - [flappyai.app/social/ogp-v2.png](https://flappyai.app/social/ogp-v2.png)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550967653055729795 (by くろ)
+
+98. **I originally made a nostalgic tech demo project for a city called Vesper from the 1997 game Ultima Online using Godot, Astra and Blender.**
+   - I originally made a nostalgic tech demo project for a city called Vesper from the 1997 game Ultima Online using Godot, Astra and Blender. Jev’s role was to help NPCs decide what to do next in the living-town experiment. Brought my tech demo to life. The game gives it a character’s situation—personality, needs, commitments, remembered events—and a list of actions that are currently possible. Jev selects an action from that list. (github project is in description) https://www.youtube.com/watch?v=LZilhFs34Wo Linked projects: • youtube video (https://www.youtube.com/watch?v=LZilhFs34Wo) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550970979738591322
+   - [youtube video](https://www.youtube.com/watch?v=LZilhFs34Wo)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550970979738591322 (by Crono)
+
+99. **i cant beat jev anymore :(**
+   - i cant beat jev anymore :( Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550976725846986854
+   - [2026-09-19_17-04-35.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550976725033295932/2026-09-19_17-04-35.mp4?ex=6ab04b23&is=6aaef9a3&hm=cb44f0dc0f4e3ed08f58c73a38af177d6567650522b6c2e25cb1a0bcd7f85b55&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550976725846986854 (by Riddle)
+
+100. **Racing through Wikipedia**
+   - Selecting links to navigate from one Wikipedia article to a target article. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: The launch demo shows repeated choices among page links. The launch explanation describes two stages for candidate sets exceeding 255 choices.
+   - Caveat: Vendor demonstration. Constraining outputs to available links does not guarantee choosing the best route.
+   - Evidence: demo
+   - [https://x.com/CompleteSkeptic/status/2099925688925184171](https://x.com/CompleteSkeptic/status/2099925688925184171)
+   - [https://x.com/CompleteSkeptic/status/2099925682726002904](https://x.com/CompleteSkeptic/status/2099925682726002904)
+   - Source: https://x.com/CompleteSkeptic/status/2099925688925184171 (by Diogo Almeida · TypeSafe)
+
+101. **JEVRACE racing simulation**
+   - Du du du Max JEVstappen Hice una carrera de F1 en 3D con 10 pilotos tomando decisiones con Jev Vi que alguien había hecho una demo del Full Self-Driving de Tesla con Jev y dije, por qué no hacerlos competir Así que me puse a armar JEVRACE Todos usan el mismo modelo, pero cada auto tiene su propio prompt y decide con la información que tiene alrededor A uno le pedís que ataque de entrada, a otro que cuide las gomas y se guarde la batería para el final No conocen la pista completa, solo saben qué tienen unos 42 metros adelante. Encima el generador acepta más de 4 mil millones de seeds, así que hay para probar jaja Podés seguir a cualquiera y ver qué le manda a Jev y qué le contesta Abajo explico un poco cómo lo hice Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @MartinPulitano.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/MartinPulitano/status/2101414345096012228](https://x.com/MartinPulitano/status/2101414345096012228)
+   - Source: https://x.com/MartinPulitano/status/2101414345096012228 (by Martin Puli)
+
+102. **Traffic-light control demo**
+   - A video demonstrates Jev controlling traffic lights in a city simulation. The author reports average waiting time rising by more than 600% when Jev is disabled; this is a demo-specific comparison. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @leojrr.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/leojrr/status/2101161666410893328](https://x.com/leojrr/status/2101161666410893328)
+   - Source: https://x.com/leojrr/status/2101161666410893328 (by leo)
+
+### Agents (87)
 
 1. **Live slide decisions while speaking**
    - Jev picks which slide to pull up in realtime as the speaker talks. Speed and cost unlock presentation loops that felt impossible before.
@@ -6833,6 +7035,22 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [image.png](https://cdn.discordapp.com/attachments/1483217545040232493/1550989502510796942/image.png?ex=6ab05709&is=6aaf0589&hm=041eccaed4c633a7ea0af76c347d10bda2135cfb226c103f5c1de7b1e4ddfb9c&)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550989502850539570 (by gentleman 101 GR)
 
+86. **Adaptive agent harnesses**
+   - Exploring routing, judges, subagent selection and dynamic harness decisions. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: A proposal for applying structured decisions throughout an agent harness.
+   - Caveat: Ideas to test; no measured deployment result is supplied.
+   - Evidence: proposal
+   - [https://x.com/omarsar0/status/2100693601021997193](https://x.com/omarsar0/status/2100693601021997193)
+   - Source: https://x.com/omarsar0/status/2100693601021997193 (by Elvis Saravia)
+
+87. **GrokBot decision routing**
+   - Jev + GrokBot is the best AI agent system I’ve built in my life It just made my setup CHEAPER and FASTER than what 95% of people are running... setup takes literally 7 minutes: prompt → GrokBot → Jev decision → GrokBot execution → result step 1 → open @typesafeai , create API key (keep it off chat paste) step 2 → tell Grok Bot: store TYPESAFE_API_KEY in the secure field step 3 → prompt Grok Bot: install typesafe-sdk on Agent Computer + smoke system_one (Choice) step 4 → tell Grok Bot: build the usage lab (router, dry-run, config, logs) - or clone Github below step 5 → add skill jev-usage-router: before browser / research / retry / extra bot → call the router, honor action step 6 → stay shadow first, read logs, then active when you trust it - kill switch: bypass jev or enabled: false step 7 → flip active: GrokBot obeys route - Jev decides - GrokBot executes - humans control irreversible a
+   - Claim: Original post by @0xCodila.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/0xCodila/status/2101433560796467348](https://x.com/0xCodila/status/2101433560796467348)
+   - Source: https://x.com/0xCodila/status/2101433560796467348 (by codila)
+
 ### Home (62)
 
 1. **I tried to create a latent context layer that is a warmed up version of a small LDA Topic model that is injectable into the context window via memories or system prompts.**
@@ -7150,7 +7368,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [output.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1529621616873443419/output.mp4?ex=6aae68e4&is=6aad1764&hm=9e22c9797dc43aaf3378ac1ad849db4b4701030f610c79aaf5458691a1988983&)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1529621617393799281 (by RM)
 
-### Admin (51)
+### Admin (52)
 
 1. **Triage 1,700 emails for $0.18 with four verdicts each**
    - The launch demo: 1,700 real emails run through Jev in one pass. Each email gets four outputs — category (shopping, work, marketing, finance, security), priority across five levels, a spam score from 0 to 1, and a reply-worthiness percentage. 4.2M input + 500K output tokens for $0.18 total.
@@ -7411,7 +7629,19 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [MulmoServer](https://mulmoserver.web.app/shapes)
    - Source: https://mulmoserver.web.app/shapes (by Satoshi Nakajima)
 
-### Fun (49)
+52. **Industrial email triage**
+   - Classifying 1,565 business emails across ten categories. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Reports 96.4% accuracy. Dataset includes 1,201 real emails and 364 synthetic examples, mostly German.
+   - Caveat: Attachments excluded; confidence filtering was measured on this dataset, not an independent guarantee.
+   - Evidence: measured
+   - [https://x.com/nikhilmudholkar/status/2100604560335139083](https://x.com/nikhilmudholkar/status/2100604560335139083)
+   - [https://x.com/nikhilmudholkar/status/2100605143993503771](https://x.com/nikhilmudholkar/status/2100605143993503771)
+   - [https://x.com/nikhilmudholkar/status/2100605383966396442](https://x.com/nikhilmudholkar/status/2100605383966396442)
+   - [https://x.com/nikhilmudholkar/status/2100606119504712138](https://x.com/nikhilmudholkar/status/2100606119504712138)
+   - [https://x.com/nikhilmudholkar/status/2100606801028764054](https://x.com/nikhilmudholkar/status/2100606801028764054)
+   - Source: https://x.com/nikhilmudholkar/status/2100604560335139083 (by Nikhil Mudholkar)
+
+### Fun (50)
 
 1. **Score 17 video moments in 3 seconds to find clips**
    - Drop in a long-form video: transcribe it word-level, pass the transcript to Jev with clip-worthiness questions, get 17 scored moments back in about 3 seconds (1.1M tokens). Ten minutes of work for a shorts pipeline.
@@ -7656,7 +7886,15 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - with jev, it's nice to see builder energy back on X, reminiscent of the early days of building with LLMs (back when gpt_index/llama_index/langchain first started) before jev, most of the 2026 AI demo hype has revolved around the end-to-end capabilities of frontier models. The…
    - Source: https://x.com/jerryjliu0/status/2101115989379428577 (by @jerryjliu0)
 
-### Money (43)
+50. **Jevinci pixel-colour painting**
+   - Jevinci renders paintings in JavaScript using Jev’s parallel pixel-colour predictions and confidence to determine brush width. The shared video is sped up four times. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @anshuc.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/anshuc/status/2101040309522121072](https://x.com/anshuc/status/2101040309522121072)
+   - Source: https://x.com/anshuc/status/2101040309522121072 (by Anshu)
+
+### Money (45)
 
 1. **We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc).**
    - We integrated Jev in our chat on public data for Bulgaria (elections, procurements, budgets, politicians etc). 230+ tool calls, What we measured: - Robustness is where it shines. With typos, Jev alone picks the right tool 94% (EN) / 86% (BG) of the time. Our keyword rules: 28% / 34%. Reworded questions: 86% vs 15–25%. - It cannot fill open values — names, company IDs, free text. It has no primitive that produces one. So it now routes for Gemini 3.5 Flash-Lite: Jev picks the tool, Gemini fills only that tool's parameters. Same day, same 474 questions: parameters right 94.3% / 90.6% vs 83.0% / 77.4% for Gemini alone, with a 4x shorter prompt (3,697 vs 16,150 tokens) and ~0.2 s added median latency. - Weak spot: Bulgarian typed in Latin letters (shliokatitsa) — 71% for Jev vs 94% for Gemini. When Jev is unsure, the question goes to Gemini with the full catalogue. Full results, method and de
@@ -7877,6 +8115,22 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - [jf.x.com/images/media-preview/210138999860828184](https://jf.x.com/images/media-preview/2101389998608281849)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550976855740522496 (by stas_sorokin)
 
+44. **Crypto market sentiment terminal**
+   - As promised… I just open-sourced the Jev X (twitter) Market Sentiment Analysis terminal powered by @typesafeai - Ingests 50 - 1,000 live tweets per crypto asset (e.g. BTC, SOL, ETH, etc.) - Scores each tweet for bullishness vs. bearishness using JEV - Combines social sentiment https://t.co/6e6WLVx5hW Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @brainstormity.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/brainstormity/status/2101445977924370858](https://x.com/brainstormity/status/2101445977924370858)
+   - Source: https://x.com/brainstormity/status/2101445977924370858 (by brainstormity)
+
+45. **Jev and Muse trading agent**
+   - The whole idea behind this project is that jev needed a way to talk about what it’s doing So we built a custom harness We combined jev+muse into a custom hybrid harness where jev makes decisions and muse executes them and then can talk about the execution of the trade. Then from there, muse is able to offer suggestions and improvements applied to the rules and process jev runs Basically We built a self improving trading agent system using a hybrid of two agents plus available live market data and an mcp skill to place the trades Jev is the future. Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @Jester_Journal.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/Jester_Journal/status/2101235750431830095](https://x.com/Jester_Journal/status/2101235750431830095)
+   - Source: https://x.com/Jester_Journal/status/2101235750431830095 (by Jester)
+
 ### Browser (30)
 
 1. **YouTube sponsor skipper**
@@ -8003,109 +8257,7 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - super cool use case -- browser use w/ jev! would highly recommend following work from @ndrezn for great agent dev content Quote nathan drezner @ndrezn · 20h Browser use w/ @LangChain + @typesafeai's Jev! Really fun to build. ... I found it's excellent at playing the Wikipedia Game. (But, it's also great at "folding laundry" type tasks, like finding cheap flights.)…
    - Source: https://x.com/sydneyrunkle/status/2101100271694905383 (by @sydneyrunkle)
 
-### Generative UI (24)
-
-1. **Does Jev understand colour?**
-   - Type a phrase and the palette updates mid-sentence. Generative UX with near-zero chrome — cheap, fast, and a leap for new UI paradigms on language models.
-   - Source: https://x.com/mattdesl/status/2100899669802963060 (by @mattdesl)
-
-2. **Website composed for each reader**
-   - Website composed for each reader. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/matt_ginty/status/2100908910689624100 (by @matt_ginty)
-
-3. **Interactive Silo vault**
-   - Interactive Silo vault. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/Chrls_Hwrd/status/2100983272519995803 (by @Chrls_Hwrd)
-
-4. **Whose Jev Is It Anyway?**
-   - Generative interface experiment — Whose Jev Is It Anyway? lets Jev pick what to show as you type or browse.
-   - Source: https://x.com/CharlieMolthrop/status/2100946286136406421 (by @CharlieMolthrop)
-
-5. **Figma requirements checker**
-   - Figma requirements checker: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
-   - Source: https://x.com/W33baker/status/2100927795484369231 (by @W33baker)
-
-6. **Real-time orchestra conductor**
-   - Generative interface experiment — Real-time orchestra conductor lets Jev pick what to show as you type or browse.
-   - Source: https://x.com/GulatiYajat/status/2100963005764919517 (by @GulatiYajat)
-
-7. **Live eval for generative UI**
-   - WebMCP component library evals with Jev as soon as UI generates; regenerates instantly if invalid. Claude chat on one side, Jev eval loop on the other.
-   - Source: https://x.com/harshpatel071/status/2100689095202885722 (by @harshpatel071)
-
-8. **Blender modeling with Jev evaluation**
-   - Generative interface experiment — Blender modeling with Jev evaluation lets Jev pick what to show as you type or browse.
-   - Source: https://x.com/Sxfyhvx/status/2100929250882691464 (by @Sxfyhvx)
-
-9. **Design decisions without text generation**
-   - Design decisions without text generation: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
-   - Source: https://x.com/LamplighterPaul/status/2100899181120360693 (by @LamplighterPaul)
-
-10. **Fancy-prose experiment**
-   - Fancy-prose experiment. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/fabianstelzer/status/2100955039455985933 (by @fabianstelzer)
-
-11. **Painting the Golden Gate Bridge**
-   - Painting the Golden Gate Bridge. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/_shubhankar/status/2100834561995493476 (by @_shubhankar)
-
-12. **Pixel art with a sketch-and-refine loop**
-   - Generative interface experiment — Pixel art with a sketch-and-refine loop lets Jev pick what to show as you type or browse.
-   - Source: https://x.com/RealAstropulse/status/2101029816975663312 (by @RealAstropulse)
-
-13. **Natural-language camera control**
-   - Generative interface experiment — Natural-language camera control lets Jev pick what to show as you type or browse.
-   - Source: https://x.com/carrabre/status/2101035345643221239 (by @carrabre)
-
-14. **Voice-controlled Figma**
-   - Voice-controlled Figma. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/mikegee/status/2100845388655960112 (by @mikegee)
-
-15. **Jev-thoven music composition**
-   - Jev-thoven music composition. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/cocktailpeanut/status/2101032641470386481 (by @cocktailpeanut)
-
-16. **Making beats by talking**
-   - Generative interface experiment — Making beats by talking lets Jev pick what to show as you type or browse.
-   - Source: https://x.com/mahirb22/status/2101023899265692100 (by @mahirb22)
-
-17. **Live 3D character expressions**
-   - Generative interface experiment — Live 3D character expressions lets Jev pick what to show as you type or browse.
-   - Source: https://x.com/john_bortotti/status/2101019513676345555 (by @john_bortotti)
-
-18. **Explore art by meaning**
-   - Explore art by meaning. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/albicodes/status/2101005086348488797 (by @albicodes)
-
-19. **Jev plays piano**
-   - Jev plays piano: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
-   - Source: https://x.com/nickfromlater/status/2100963628484624670 (by @nickfromlater)
-
-20. **Route genAI models on Higgsfield**
-   - Route genAI models on Higgsfield. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/higgsfield_ai/status/2101022133753430365 (by @higgsfield_ai)
-
-21. **Emotions expressed in beeps**
-   - Emotions expressed in beeps. Decision-shaped UI instead of another streaming paragraph.
-   - Source: https://x.com/yoheinakajima/status/2100945960671326482 (by @yoheinakajima)
-
-22. **Bluesky feed with live emotion tags**
-   - Bluesky feed with live emotion tags: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
-   - Source: https://x.com/amagitakayosi/status/2100820581444980736 (by @amagitakayosi)
-
-23. **Jev + Mermaid**
-   - Jev + Mermaid https://github.com/JordanDalton/jev-mermaid Linked projects: • JordanDalton/jev-mermaid (https://github.com/JordanDalton/jev-mermaid) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550950662387408967
-   - [JordanDalton/jev-mermaid](https://github.com/JordanDalton/jev-mermaid)
-   - [Jev-Mermaid.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550950654208639136/Jev-Mermaid.mp4?ex=6ab032db&is=6aaee15b&hm=93d39fbf1762f968c90a5d8f33355020a45dc6e7d80c568683f37e2f18b5a025&)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550950662387408967 (by Jordan Dalton)
-
-24. **Shared by @Krug: saypage.vercel.app**
-   - Be careful with token usage. It will absolutely absorb your $5 allowance running as an LM Linked projects: • saypage.vercel.app (https://saypage.vercel.app) • cdn.discordapp.com/media/v1/collectibles-shop/144760913276 (https://cdn.discordapp.com/media/v1/collectibles-shop/1447609132763975690/static) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550971333679128586
-   - [saypage.vercel.app](https://saypage.vercel.app)
-   - [cdn.discordapp.com/media/v1/collectibles-shop/144760913276](https://cdn.discordapp.com/media/v1/collectibles-shop/1447609132763975690/static)
-   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550971333679128586 (by @Krug)
-
-### Social (22)
+### Social (25)
 
 1. **Hey, made a post on X listing best Jev projects**
    - Hey, made a post on X listing best Jev projects https://x.com/valentynkit/status/2101014650624028997?s=20 Linked projects: • Post by @valentynkit — Nobody has shipped 400 projects on a 3-day-old model before. This one can't write a sentence. Jev (@typesafeai) launched Tuesday. State in, probabilities out, 100 ms, no text. Went through all 400, kept the ones worth yo (x.com/valentynkit/status/2101014650624028997) • Post by @valentynkit — Nobody has shipped 400 projects on a 3-day-old model before. This one can't write a sentence. Jev (@typesafeai) launched Tuesday. State in, probabilities out, 100 ms, no text. Went through all 400, kept the ones worth yo (twitter.com/valentynkit/status/2101014650624028997) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550574613711290500
@@ -8220,6 +8372,132 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
    - Spent 1.5 days working on it. Find a perfect meme to send with your text. Powered by Jev https://memefy.lol/ Linked projects: • cdn.discordapp.com/media/v1/collectibles-shop/144760913276 (https://cdn.discordapp.com/media/v1/collectibles-shop/1447609132763975690/static) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550973557045989387
    - [cdn.discordapp.com/media/v1/collectibles-shop/144760913276](https://cdn.discordapp.com/media/v1/collectibles-shop/1447609132763975690/static)
    - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550973557045989387 (by @jaidev)
+
+23. **Ryze SEO and GEO audits**
+   - Jev dropped the price of SEO/GEO fixes by 90% Agents that audit and fix a client's SEO/GEO used to cost us ~$250 Here's where the savings come from: 1/ 30x faster reads of Search Console and PostHog/Mixpanel data 2/ 30x faster checks of what ChatGPT searches on Bing 3/ 30x faster modeling of what users ask Gemini and Claude 4/ 30x faster scans of who ChatGPT and Claude cite 5/ 30x faster analysis of the sources behind those citations 6/ 30x faster gap analysis: why they get cited and we don't 7/ 30x faster fixes across 1,000s of pages on large client sites 8/ 30x faster sorting of which page types ChatGPT cites 9/ 20x faster creation of the pages that make ChatGPT pick you Available in the Ryze AI app and MCP/Claude Connector, link in the 1st comment 👇 Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @irabukht.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/irabukht/status/2101090579127951694](https://x.com/irabukht/status/2101090579127951694)
+   - Source: https://x.com/irabukht/status/2101090579127951694 (by Ira Bodnar)
+
+24. **Filtering social feeds**
+   - Jev just solved doomscrolling. You pick a niche, Jev reads 3 days of posts and asks 8 questions each. It runs in ~2s for $0.007 😅 &gt; removes bait and hidden ads &gt; judges the text and like/reply/repost ratios Free, no signup, go try it then touch grass ↓🌲 https://t.co/DmXB7pQxAR Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @robj3d3.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/robj3d3/status/2101074194260000982](https://x.com/robj3d3/status/2101074194260000982)
+   - Source: https://x.com/robj3d3/status/2101074194260000982 (by Rob Hallam)
+
+25. **TikTok and Reels analysis**
+   - Jev classified 1,004 TikToks &amp; Reels for about $0.07 in estimated model cost 😂 i'd saved hundreds of videos that went viral or converted well. figuring out why was still a coin toss. so i built a dashboard around Jev. it labels every video across 8 dimensions: hook type, https://t.co/S4wv20zF9S Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).
+   - Claim: Original post by @thisisclaireli.
+   - Caveat: Author-reported example. Results have not been independently verified.
+   - Evidence: demo
+   - [https://x.com/thisisclaireli/status/2101438195238162648](https://x.com/thisisclaireli/status/2101438195238162648)
+   - Source: https://x.com/thisisclaireli/status/2101438195238162648 (by Claire Li)
+
+### Generative UI (24)
+
+1. **Does Jev understand colour?**
+   - Type a phrase and the palette updates mid-sentence. Generative UX with near-zero chrome — cheap, fast, and a leap for new UI paradigms on language models.
+   - Source: https://x.com/mattdesl/status/2100899669802963060 (by @mattdesl)
+
+2. **Website composed for each reader**
+   - Website composed for each reader. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/matt_ginty/status/2100908910689624100 (by @matt_ginty)
+
+3. **Interactive Silo vault**
+   - Interactive Silo vault. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/Chrls_Hwrd/status/2100983272519995803 (by @Chrls_Hwrd)
+
+4. **Whose Jev Is It Anyway?**
+   - Generative interface experiment — Whose Jev Is It Anyway? lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/CharlieMolthrop/status/2100946286136406421 (by @CharlieMolthrop)
+
+5. **Figma requirements checker**
+   - Figma requirements checker: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/W33baker/status/2100927795484369231 (by @W33baker)
+
+6. **Real-time orchestra conductor**
+   - Generative interface experiment — Real-time orchestra conductor lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/GulatiYajat/status/2100963005764919517 (by @GulatiYajat)
+
+7. **Live eval for generative UI**
+   - WebMCP component library evals with Jev as soon as UI generates; regenerates instantly if invalid. Claude chat on one side, Jev eval loop on the other.
+   - Source: https://x.com/harshpatel071/status/2100689095202885722 (by @harshpatel071)
+
+8. **Blender modeling with Jev evaluation**
+   - Generative interface experiment — Blender modeling with Jev evaluation lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/Sxfyhvx/status/2100929250882691464 (by @Sxfyhvx)
+
+9. **Design decisions without text generation**
+   - Design decisions without text generation: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/LamplighterPaul/status/2100899181120360693 (by @LamplighterPaul)
+
+10. **Fancy-prose experiment**
+   - Fancy-prose experiment. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/fabianstelzer/status/2100955039455985933 (by @fabianstelzer)
+
+11. **Painting the Golden Gate Bridge**
+   - Painting the Golden Gate Bridge. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/_shubhankar/status/2100834561995493476 (by @_shubhankar)
+
+12. **Pixel art with a sketch-and-refine loop**
+   - Generative interface experiment — Pixel art with a sketch-and-refine loop lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/RealAstropulse/status/2101029816975663312 (by @RealAstropulse)
+
+13. **Natural-language camera control**
+   - Generative interface experiment — Natural-language camera control lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/carrabre/status/2101035345643221239 (by @carrabre)
+
+14. **Voice-controlled Figma**
+   - Voice-controlled Figma. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/mikegee/status/2100845388655960112 (by @mikegee)
+
+15. **Jev-thoven music composition**
+   - Jev-thoven music composition. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/cocktailpeanut/status/2101032641470386481 (by @cocktailpeanut)
+
+16. **Making beats by talking**
+   - Generative interface experiment — Making beats by talking lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/mahirb22/status/2101023899265692100 (by @mahirb22)
+
+17. **Live 3D character expressions**
+   - Generative interface experiment — Live 3D character expressions lets Jev pick what to show as you type or browse.
+   - Source: https://x.com/john_bortotti/status/2101019513676345555 (by @john_bortotti)
+
+18. **Explore art by meaning**
+   - Explore art by meaning. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/albicodes/status/2101005086348488797 (by @albicodes)
+
+19. **Jev plays piano**
+   - Jev plays piano: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/nickfromlater/status/2100963628484624670 (by @nickfromlater)
+
+20. **Route genAI models on Higgsfield**
+   - Route genAI models on Higgsfield. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/higgsfield_ai/status/2101022133753430365 (by @higgsfield_ai)
+
+21. **Emotions expressed in beeps**
+   - Emotions expressed in beeps. Decision-shaped UI instead of another streaming paragraph.
+   - Source: https://x.com/yoheinakajima/status/2100945960671326482 (by @yoheinakajima)
+
+22. **Bluesky feed with live emotion tags**
+   - Bluesky feed with live emotion tags: UI that updates from meaning, not a full regenerate. Fast enough to feel like native chrome.
+   - Source: https://x.com/amagitakayosi/status/2100820581444980736 (by @amagitakayosi)
+
+23. **Jev + Mermaid**
+   - Jev + Mermaid https://github.com/JordanDalton/jev-mermaid Linked projects: • JordanDalton/jev-mermaid (https://github.com/JordanDalton/jev-mermaid) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550950662387408967
+   - [JordanDalton/jev-mermaid](https://github.com/JordanDalton/jev-mermaid)
+   - [Jev-Mermaid.mp4](https://cdn.discordapp.com/attachments/1483217545040232493/1550950654208639136/Jev-Mermaid.mp4?ex=6ab032db&is=6aaee15b&hm=93d39fbf1762f968c90a5d8f33355020a45dc6e7d80c568683f37e2f18b5a025&)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550950662387408967 (by Jordan Dalton)
+
+24. **Shared by @Krug: saypage.vercel.app**
+   - Be careful with token usage. It will absolutely absorb your $5 allowance running as an LM Linked projects: • saypage.vercel.app (https://saypage.vercel.app) • cdn.discordapp.com/media/v1/collectibles-shop/144760913276 (https://cdn.discordapp.com/media/v1/collectibles-shop/1447609132763975690/static) Discussion: https://discord.com/channels/1483217544214085663/1483217545040232493/1550971333679128586
+   - [saypage.vercel.app](https://saypage.vercel.app)
+   - [cdn.discordapp.com/media/v1/collectibles-shop/144760913276](https://cdn.discordapp.com/media/v1/collectibles-shop/1447609132763975690/static)
+   - Source: https://discord.com/channels/1483217544214085663/1483217545040232493/1550971333679128586 (by @Krug)
 
 ### Food (15)
 
@@ -8549,4 +8827,4 @@ Real things people built with Jev, from the TypeSafe AI #show-and-tell channel. 
 
 ---
 
-Pack generated 2026-09-19 from the Jev evaluation guide and 1328 Discord community posts. Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory
+Pack generated 2026-09-21 from the Jev evaluation guide and 1362 community posts (Discord #show-and-tell, X, DAIR.AI field notes). Community content is user-generated and unverified — read before you run. Not affiliated with TypeSafe AI. Directory + data: https://github.com/everyai-com/jev-directory

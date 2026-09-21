@@ -34,6 +34,13 @@
    texts below are curated with the worker and versioned alongside it.
    No keys, no external services.
 
+   Speed notes: the directory loads lazily — initialize, ping, tools/list
+   and notifications never touch the assets, so session setup stays fast
+   even on a cold isolate. On load, every entry is pre-tokenized into
+   search haystacks and O(1) lookup maps, category counts are tallied
+   once, and built resource markdown is memoised — every repeat call is
+   served from the isolate cache. Responses are compact JSON.
+
    Shipped as a Pages advanced-mode worker: _routes.json scopes it to
    /mcp, every other path is served from the static assets. The handler
    is pure (message in, message out) apart from that one asset read,
@@ -41,7 +48,7 @@
    ================================================================ */
 
 const SERVER_NAME = 'jev-directory';
-const SERVER_VERSION = '1.1.0';
+const SERVER_VERSION = '1.2.0';
 const RESOURCE_URI = 'jev://evals';
 const GUIDE_URI = 'jev://guide';
 const PLAYBOOK_URI = 'jev://playbook';
@@ -62,6 +69,14 @@ function negotiate(clientVersion) {
   if (PROTOCOL_VERSIONS.includes(clientVersion)) return clientVersion;
   return PROTOCOL_VERSIONS[0];
 }
+
+// Methods that need the directory loaded; everything else (initialize, ping,
+// tools/list, notifications) is answered without touching the assets.
+const NEEDS_DIR = new Set(['tools/call', 'resources/list', 'resources/read']);
+
+// Bounds so one request can't burn the isolate: MCP calls are small.
+const MAX_BODY_BYTES = 1024 * 1024;
+const MAX_BATCH = 50;
 
 // ── Static assets (memoised per isolate) ────────────────────────
 let PACK_CACHE = null;
@@ -100,6 +115,39 @@ function secondsToMs(value) {
   return Number.isNaN(t) ? 0 : t;
 }
 
+// Pure: turn the raw pack + setup text into the indexed dir every tool runs
+// against. Exported for tests — loadDirectory is just asset reads + memoize.
+export function buildDirectory(pack, setup) {
+  const evals = (pack.evals || []).map((entry, index) => indexEntry({
+    ...entry,
+    kind: 'eval',
+    n: index + 1,
+    id: entry.id || slug(entry.title)
+  }));
+
+  const builds = (pack.community || []).map(entry => indexEntry({
+    ...entry,
+    kind: 'build',
+    // Capability-pack builds carry no id; titles are unique across the
+    // directory, so the slug is stable and readable in a citation.
+    id: slug(entry.title)
+  }));
+
+  return {
+    pack,
+    evals,
+    builds,
+    setup,
+    evalById: toMap(evals),
+    evalLookup: buildLookup(evals),
+    buildLookup: buildLookup(builds),
+    evalCounts: countBy(evals),
+    buildCounts: countBy(builds),
+    resourceCache: {},
+    loadedAt: new Date().toISOString()
+  };
+}
+
 async function loadDirectory(request, env) {
   if (PACK_CACHE) return PACK_CACHE;
 
@@ -112,22 +160,7 @@ async function loadDirectory(request, env) {
     setup = `Load the Jev capability pack: ${pack.packUrl || `${PACK_SITE}/capabilities.md`}`;
   }
 
-  const evals = (pack.evals || []).map((entry, index) => ({
-    ...entry,
-    kind: 'eval',
-    n: index + 1,
-    id: entry.id || slug(entry.title)
-  }));
-
-  const builds = (pack.community || []).map(entry => ({
-    ...entry,
-    kind: 'build',
-    // Capability-pack builds carry no id; titles are unique across the
-    // directory, so the slug is stable and readable in a citation.
-    id: slug(entry.title)
-  }));
-
-  PACK_CACHE = { pack, evals, builds, setup, loadedAt: new Date().toISOString() };
+  PACK_CACHE = buildDirectory(pack, setup);
   return PACK_CACHE;
 }
 
@@ -279,6 +312,9 @@ const PATTERNS = [
   }
 ];
 
+// Pre-tokenized once at module load: recommend scores every pattern per call.
+PATTERNS.forEach(p => { p._hay = tokens(`${p.title} ${p.when} ${p.keywords}`).join(' '); });
+
 const INTEGRATION = {
   quickstart: [
     '1. Install the AI SDK (7.0.105+ supports the evaluate API): pnpm add ai@latest',
@@ -382,8 +418,9 @@ export const TOOLS = [
   {
     name: 'get_jev_build',
     description:
-      'Fetch one community build in full: what it does, every linked project, and the ' +
-      'source post it came from.',
+      'Fetch one community build in full: what it does, every linked project, the ' +
+      'source post it came from, and — for field-notes imports — the reporter\u2019s claim, ' +
+      'its caveat, and the evidence level (measured / demo / proposal).',
     inputSchema: {
       type: 'object',
       properties: {
@@ -493,6 +530,26 @@ export const TOOLS = [
   }
 ];
 
+// Human-readable titles (MCP 2025-06-18) + capability hints. Every tool only
+// reads the bundled directory — nothing here writes, charges, calls out, or
+// stores user data.
+const TOOL_META = {
+  search_jev: 'Search evals + builds',
+  get_jev_eval: 'Read one eval',
+  get_jev_build: 'Read one build',
+  list_jev_categories: 'List categories',
+  get_jev_pack: 'Capability pack brief',
+  explain_jev: 'Explain Jev',
+  get_jev_integration_guide: 'Integration guide',
+  list_jev_patterns: 'Decision patterns',
+  recommend_jev_use_cases: 'Recommend for my product',
+  get_jev_eval_manifest: 'Eval manifest'
+};
+TOOLS.forEach(t => {
+  t.title = TOOL_META[t.name] || t.name;
+  t.annotations = { readOnlyHint: true, openWorldHint: false };
+});
+
 // ── Search ──────────────────────────────────────────────────────
 function tokens(text) {
   return String(text || '')
@@ -502,25 +559,62 @@ function tokens(text) {
     .filter(word => word.length > 1);
 }
 
-function scoreEntry(entry, queryTokens) {
-  const title = tokens(entry.title).join(' ');
-  const category = tokens(entry.category).join(' ');
-  const body = tokens([
+// Pre-tokenized search haystacks, built once per entry at load. Scoring
+// semantics are unchanged — this is exactly what scoreEntry used to rebuild
+// on every call, for every entry. _m feeds matchedTerms (title, category and
+// the short fields only — no prompts, links or handles).
+function indexEntry(entry) {
+  entry._t = tokens(entry.title).join(' ');
+  entry._c = tokens(entry.category).join(' ');
+  entry._b = tokens([
     entry.story,
     entry.description,
+    entry.claim,
+    entry.caveat,
     entry.state,
     entry.prompt,
     entry.handle,
     (entry.links || []).map(link => `${link.title || ''} ${link.url || ''}`).join(' ')
   ].join(' ')).join(' ');
+  entry._m = tokens([entry.title, entry.category, entry.story, entry.description, entry.claim, entry.caveat, entry.state].join(' ')).join(' ');
+  return entry;
+}
 
+function scoreEntry(entry, queryTokens) {
   let score = 0;
   for (const token of queryTokens) {
-    if (title.includes(token)) score += 3;
-    else if (category.includes(token)) score += 2;
-    else if (body.includes(token)) score += 1;
+    if (entry._t.includes(token)) score += 3;
+    else if (entry._c.includes(token)) score += 2;
+    else if (entry._b.includes(token)) score += 1;
   }
   return score;
+}
+
+function toMap(list) {
+  const map = new Map();
+  for (const item of list) {
+    if (!map.has(item.id)) map.set(item.id, item);
+  }
+  return map;
+}
+
+// First-wins maps mirroring the old linear lookup's fallback order: exact
+// id, then lowercase id, then title slug, then lowercase title.
+function buildLookup(list) {
+  const byId = new Map();
+  const byIdLower = new Map();
+  const bySlug = new Map();
+  const byTitleLower = new Map();
+  for (const item of list) {
+    if (!byId.has(item.id)) byId.set(item.id, item);
+    const lower = String(item.id).toLowerCase();
+    if (!byIdLower.has(lower)) byIdLower.set(lower, item);
+    const s = slug(item.title);
+    if (!bySlug.has(s)) bySlug.set(s, item);
+    const t = String(item.title).toLowerCase();
+    if (!byTitleLower.has(t)) byTitleLower.set(t, item);
+  }
+  return { byId, byIdLower, bySlug, byTitleLower };
 }
 
 function snippet(text, length) {
@@ -529,16 +623,16 @@ function snippet(text, length) {
   return `${clean.slice(0, length - 1).trimEnd()}…`;
 }
 
-function byIdOrTitle(list, want) {
+function byIdOrTitle(lookup, want) {
   const raw = String(want == null ? '' : want).trim();
   if (!raw) return null;
   const wanted = slug(raw);
 
   return (
-    list.find(item => item.id === wanted) ||
-    list.find(item => item.id === raw.toLowerCase()) ||
-    list.find(item => slug(item.title) === wanted) ||
-    list.find(item => String(item.title).toLowerCase() === raw.toLowerCase()) ||
+    lookup.byId.get(wanted) ||
+    lookup.byIdLower.get(raw.toLowerCase()) ||
+    lookup.bySlug.get(wanted) ||
+    lookup.byTitleLower.get(raw.toLowerCase()) ||
     null
   );
 }
@@ -561,17 +655,20 @@ function runSearch(dir, args) {
   const category = String(args.category || '').trim().toLowerCase();
   const limit = Math.min(25, Math.max(1, Number.isInteger(args.limit) ? args.limit : 8));
 
-  const pool = kind === 'eval' ? dir.evals : kind === 'build' ? dir.builds : [...dir.evals, ...dir.builds];
-
-  const matches = pool
-    .map(item => ({ item, score: scoreEntry(item, queryTokens) }))
-    .filter(({ item, score }) => {
-      if (score <= 0) return false;
-      if (category && String(item.category).toLowerCase() !== category) return false;
-      return true;
-    })
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit);
+  // No copy on kind=all: score both lists in place (evals first, so the
+  // stable sort below keeps the same tie order as before).
+  const lists = kind === 'eval' ? [dir.evals] : kind === 'build' ? [dir.builds] : [dir.evals, dir.builds];
+  const scored = [];
+  for (const list of lists) {
+    for (const item of list) {
+      const score = scoreEntry(item, queryTokens);
+      if (score <= 0) continue;
+      if (category && String(item.category).toLowerCase() !== category) continue;
+      scored.push({ item, score });
+    }
+  }
+  scored.sort((a, b) => b.score - a.score);
+  const matches = scored.slice(0, limit);
 
   if (!matches.length) {
     return toolText(
@@ -585,7 +682,7 @@ function runSearch(dir, args) {
   const lines = matches.map(({ item }) => {
     const head = item.kind === 'eval'
       ? `- [eval ${item.n}] ${item.title} — ${item.category} (runnable prompt available)`
-      : `- [build] ${item.title} — ${item.category}`;
+      : `- [build] ${item.title} — ${item.category}${item.evidence ? ` [evidence: ${item.evidence}]` : ''}`;
     const id = `  id: ${item.id}`;
     const summary = snippet(item.story || item.description, 220);
     const links = item.kind === 'build' && (item.links || []).length
@@ -612,7 +709,7 @@ function runGetEval(dir, args) {
   const asNumber = Number(wanted);
   const item = Number.isInteger(asNumber) && asNumber >= 1 && asNumber <= dir.evals.length
     ? dir.evals[asNumber - 1]
-    : byIdOrTitle(dir.evals, wanted);
+    : byIdOrTitle(dir.evalLookup, wanted);
 
   if (!item) {
     return toolError(
@@ -640,7 +737,7 @@ function runGetEval(dir, args) {
 }
 
 function runGetBuild(dir, args) {
-  const item = byIdOrTitle(dir.builds, args.id);
+  const item = byIdOrTitle(dir.buildLookup, args.id);
   if (!item) {
     return toolError(
       `No build matched "${args.id}". Search for it with search_jev — ids are slugs of the title.`
@@ -649,7 +746,10 @@ function runGetBuild(dir, args) {
 
   const lines = [`${item.title}`, `category: ${item.category}`];
   if (item.handle) lines.push(`shared by: ${item.handle}`);
+  if (item.evidence) lines.push(`evidence: ${item.evidence} (measured = reported numbers, demo = walkthrough, proposal = idea to test)`);
   if (item.description) lines.push('', 'What it does:', String(item.description).replace(/\s+/g, ' ').trim());
+  if (item.claim) lines.push('', 'Claim (reported):', String(item.claim).replace(/\s+/g, ' ').trim());
+  if (item.caveat) lines.push('', 'Caveat:', String(item.caveat).replace(/\s+/g, ' ').trim());
   if ((item.links || []).length) {
     lines.push('', 'Links:');
     item.links.forEach(link => {
@@ -673,8 +773,8 @@ function countBy(list) {
 }
 
 function runListCategories(dir) {
-  const evalCounts = countBy(dir.evals);
-  const buildCounts = countBy(dir.builds);
+  const evalCounts = dir.evalCounts;
+  const buildCounts = dir.buildCounts;
 
   const lines = [
     `The directory holds ${dir.evals.length} runnable evals and ${dir.builds.length} community builds` +
@@ -794,7 +894,7 @@ function runIntegrationGuide(dir, args) {
 }
 
 function evalById(dir, id) {
-  return dir.evals.find(item => item.id === id) || null;
+  return dir.evalById.get(id) || null;
 }
 
 function topMatches(pool, query, limit) {
@@ -859,17 +959,15 @@ function runListPatterns(dir, args) {
 }
 
 function patternScore(pattern, queryTokens) {
-  const hay = tokens(`${pattern.title} ${pattern.when} ${pattern.keywords}`).join(' ');
   let score = 0;
   for (const token of queryTokens) {
-    if (hay.includes(token)) score += 1;
+    if (pattern._hay.includes(token)) score += 1;
   }
   return score;
 }
 
 function matchedTerms(entry, queryTokens) {
-  const hay = tokens([entry.title, entry.category, entry.story, entry.description, entry.state].join(' ')).join(' ');
-  return queryTokens.filter(t => hay.includes(t)).slice(0, 4);
+  return queryTokens.filter(t => entry._m.includes(t)).slice(0, 4);
 }
 
 function runRecommend(dir, args) {
@@ -1073,6 +1171,13 @@ function handleMessage(msg, dir) {
   const isNotification = msg.id === undefined || msg.id === null;
   const params = (msg.params && typeof msg.params === 'object') ? msg.params : {};
 
+  // The HTTP layer only loads the directory for methods that need it; any
+  // other path reaching here without one gets a clean error, not a crash.
+  if (dir == null && NEEDS_DIR.has(msg.method)) {
+    if (isNotification) return null;
+    return fail(msg.id, -32603, 'Directory not loaded.');
+  }
+
   switch (msg.method) {
     case 'initialize':
       return ok(msg.id, {
@@ -1145,8 +1250,12 @@ function handleMessage(msg, dir) {
       if (!read) {
         return fail(msg.id, -32602, `Unknown resource "${params.uri}". Available: ${Object.keys(readers).join(', ')}.`);
       }
+      // Built markdown is memoised on the dir (which itself lives in the
+      // isolate cache): the playbook costs ten scans on first read, then ~0.
+      const cached = dir.resourceCache[params.uri];
+      const text = cached !== undefined ? cached : (dir.resourceCache[params.uri] = read(dir));
       return ok(msg.id, {
-        contents: [{ uri: params.uri, mimeType: 'text/markdown', text: read(dir) }]
+        contents: [{ uri: params.uri, mimeType: 'text/markdown', text }]
       });
     }
 
@@ -1157,8 +1266,8 @@ function handleMessage(msg, dir) {
   }
 }
 
-// Exported for tests: pure JSON-RPC in / JSON-RPC out against a dir
-// shaped like loadDirectory's ({ pack, evals, builds, setup }).
+// Exported for tests: pure JSON-RPC in / JSON-RPC out against a dir built by
+// buildDirectory (indexed entries, lookup maps, counts, resource cache).
 export function handleMcp(body, dir) {
   if (Array.isArray(body)) {
     if (!body.length) return fail(null, -32600, 'Invalid Request: empty batch.');
@@ -1174,7 +1283,9 @@ export function handleMcp(body, dir) {
 
 // ── HTTP ────────────────────────────────────────────────────────
 function sendJson(body, status = 200, extra = {}) {
-  return new Response(JSON.stringify(body, null, 2), {
+  // Compact JSON: no client needs pretty-printing, and the big resources
+  // shed real bytes without it.
+  return new Response(JSON.stringify(body), {
     status,
     headers: { 'content-type': 'application/json; charset=utf-8', ...CORS, ...extra }
   });
@@ -1210,6 +1321,15 @@ async function handleRequest(context) {
     return sendJson({ error: 'method not allowed — POST a JSON-RPC message to /mcp' }, 405, { allow: 'POST, GET, HEAD, OPTIONS' });
   }
 
+  // Cheap guard before parsing: honest clients declare their size.
+  const declared = Number(request.headers.get('content-length'));
+  if (Number.isFinite(declared) && declared > MAX_BODY_BYTES) {
+    return sendJson(
+      { jsonrpc: '2.0', id: null, error: { code: -32600, message: 'Invalid Request: body too large (max 1 MB).' } },
+      413
+    );
+  }
+
   let body;
   try {
     body = await request.json();
@@ -1220,23 +1340,45 @@ async function handleRequest(context) {
     );
   }
 
-  let dir;
-  try {
-    dir = await loadDirectory(request, env);
-  } catch (err) {
+  const batch = Array.isArray(body) ? body : [body];
+  if (batch.length > MAX_BATCH) {
     return sendJson(
-      { jsonrpc: '2.0', id: null, error: { code: -32603, message: `Directory unavailable: ${err.message}` } },
-      503
+      { jsonrpc: '2.0', id: null, error: { code: -32600, message: `Invalid Request: batch too large (max ${MAX_BATCH}).` } },
+      400
     );
   }
+
+  // Lazy load: session setup and discovery never touch the assets.
+  const needDir = batch.some(m => m && typeof m.method === 'string' && NEEDS_DIR.has(m.method));
+  let dir = null;
+  if (needDir) {
+    try {
+      dir = await loadDirectory(request, env);
+    } catch (err) {
+      return sendJson(
+        { jsonrpc: '2.0', id: null, error: { code: -32603, message: `Directory unavailable: ${err.message}` } },
+        503
+      );
+    }
+  }
+
+  // Echo the negotiated protocol version for Streamable HTTP clients.
+  let negotiated;
+  for (const m of batch) {
+    if (m && m.method === 'initialize') {
+      negotiated = negotiate(m.params && m.params.protocolVersion);
+      break;
+    }
+  }
+  const extra = negotiated ? { 'mcp-protocol-version': negotiated } : {};
 
   const result = handleMcp(body, dir);
 
   // Notification-only input gets an empty 202, per the MCP spec.
   if (result === null || result === undefined) {
-    return new Response(null, { status: 202, headers: CORS });
+    return new Response(null, { status: 202, headers: { ...CORS, ...extra } });
   }
-  return sendJson(result);
+  return sendJson(result, 200, extra);
 }
 
 // Pages advanced mode: _routes.json keeps this running only for /mcp, so

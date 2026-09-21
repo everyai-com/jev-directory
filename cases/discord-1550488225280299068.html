@@ -29,6 +29,8 @@
 <h1>Built a little demo of using Jev to check against inefficient code evolution using standard agentic LLMs.</h1>
 <div class="meta"><span class="catname">Home</span><span>by xebulun</span><span>2026-09-18</span></div>
 <div class="body">Built a little demo of using Jev to check against inefficient code evolution using standard agentic LLMs. How it works: a task involving programming happens as usual through codex, but edit tool_calls are intercepted, the code [edits] are statically analysed using fbinfer to obtain a work estimate differential and then a schema is prepared with instructions for Jev to classify at a fine-grained level the edits using the user-prompt and the code comments as well as the Infer runtime instrumentation output to score with respect to computational complexity, necessity for the requested change and accrual of poor architecture (the main failure antipattern is that as users request new features they are near-sightedly implemented in a way that makes the whole code inefficient because it doesn&#39;t trigger reappraisal of the architecture). If the classification is below some thresholds then an intervention is made with the Jev feedback and the</div>
+
+
 <div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://cdn.discordapp.com/attachments/1483217545040232493/1550488224760340630/bund.tgz?ex=6aae842f&amp;is=6aad32af&amp;hm=57b6d0b19acbe3393dc4619cf01591c064f837dc02e771430c76bd120f5508a3&amp;" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=cdn.discordapp.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">bund.tgz</span><span class="d">cdn.discordapp.com</span><span class="x">application/x-tar · 5 MB</span></span></a></div>
 <div class="actions">
 <button class="btn solid" id="copyBrief">copy brief for your agent</button>
@@ -61,7 +63,7 @@
 </div>
 </div>
 <div class="fbar">
-<span>Generated 2026-09-19 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
+<span>Generated 2026-09-21 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
 <span class="flinks"><a href="../capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
 </div>
 </div></footer>

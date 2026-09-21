@@ -31,6 +31,8 @@
 <div class="body">Hello — me and my agents are building AILANG, an ai-first typed functional language designed for coding agents with explicit effects, closed types, all non-determinism declared. Running a self-improving harness, that makes a lot of structured decisions — routing failures, gating feedback messages, triage emails etc. To date been using gemini/glm3 flash and JSON-parsing.
 
 Jev looks to be a good fit as AILANG already works with a closed ADT behind a declared effect. the language has package ecosystem now (monitored by ai-agents) and they wrote sunholo/decisions — a pure-AILANG binding to Jev via OpenRouter&#39;s Decisions API. Noul / Choice / Score are ADT constructors; answers come back as NoulA | ChoiceA | ScoreA with their distributions; and the one policy helper, gate(answer, threshold), is three-way — Act | Escalate | Ungateable — so the package ships no default threshold and low confidence can&#39;t be confused with a wrong type. We fall</div>
+
+
 <div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://github.com/sunholo-data/ailang-packages/tree/main/packages/decisions" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">sunholo-data/ailang-packages</span><span class="d">github.com</span><span class="x">Curated AILANG packages — auth, HTTP utils, config, logging, GCP integration - sunholo-data/ailang-packages</span></span></a><a class="lnk" href="https://github.com/sunholo-data/ailang/blob/dev/design_docs/implemented/v0_40_1/m-ai-decide-system-one.md" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=github.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">sunholo-data/ailang</span><span class="d">github.com</span><span class="x">For humans, a language is a tool for expression. For AIs, it&amp;#39;s a substrate for reasoning. - sunholo-data/ailang</span></span></a></div>
 <div class="actions">
 <button class="btn solid" id="copyBrief">copy brief for your agent</button>
@@ -63,7 +65,7 @@ Jev looks to be a good fit as AILANG already works with a closed ADT behind a de
 </div>
 </div>
 <div class="fbar">
-<span>Generated 2026-09-19 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
+<span>Generated 2026-09-21 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
 <span class="flinks"><a href="../capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
 </div>
 </div></footer>

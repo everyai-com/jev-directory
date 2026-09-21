@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code review benchmark — Jev Directory</title>
+<meta name="description" content="Ok, at first I thought @typesafeai was a bit overhyped because essentially &quot;there is nothing new&quot; in doing json schema predictions. After seeing all the buzz ar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Code review benchmark — Jev Directory">
+<meta property="og:description" content="Ok, at first I thought @typesafeai was a bit overhyped because essentially &quot;there is nothing new&quot; in doing json schema predictions. After seeing all the buzz ar">
+<meta property="og:url" content="https://jev.magicteams.ai/cases/xfn-2100936106615140757">
+<meta property="og:image" content="https://jev.magicteams.ai/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../directory.css">
+<link rel="describedby" href="../llms.txt">
+</head>
+<body>
+<div class="topbar"><div class="in">
+<a class="brand" href="../index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<nav class="topnav"><a href="../index.html">directory</a><a href="../what-is-jev.html">what is jev</a><a href="../jev-like-im-10.html">like i'm 10</a></nav>
+<span class="sp"></span>
+<a class="btn gh" href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener" title="Star or fork on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
+<a class="btn" href="../capabilities.md">agent pack</a>
+<a class="btn solid" href="../index.html#connect">connect your agent</a>
+</div></div>
+<div class="casepage">
+<h1>Code review benchmark</h1>
+<div class="meta"><span class="catname">Evaluation</span><span class="evpill ev-measured">measured</span><span>by Lior Shkiller</span><span>2026-09-19</span></div>
+<div class="body">Ok, at first I thought @typesafeai  was a bit overhyped because essentially &quot;there is nothing new&quot; in doing json schema predictions. After seeing all the buzz around it, I wanted to take it for a spin as well so I took one of our internal @scriptdotit  workflows for automated code reviews and wanted to benchmark Jev against it. 
+
+And it&#39;s good...very good actually.
+
+We have been using our @scriptdotit  workflow for some time now so we have gathered data around false positive and false negative reviews from the AI reviewer. We also used many different LLMs over time. We believed in diversity of reasoning so we tried and tested many models over time: Gemini, Claude, GPT, Grok, GLM and more.
+
+An important point about code review AI reviewer workflows is that they need to be fast, cheap and correct. We don&#39;t want it to miss important comments (false negatives), we don&#39;t want it to give wrong reviews (false positives), we don&#39;t want to wait a long time for the review after each commit (latency) and since it&#39;s running very frequently (kudos to the team :) ) then it needs to be cheap.
+
+Now the results, I benchmarked it against our current setup which is an ensemble (GLM + Grok + Gemini) multi-turn code reviewer. 
+
+To use Jev properly, I had to change the workflow architecture a bit. Instead of letting an agent &quot;explore&quot; the PR and propose issues, we score the raw git diff directly with Jev first, and only invoke an LLM to format an explanation when Jev flags an issue.
+
+The benchmark on our data showed:
+- Zero false positives: It completely filtered out the false positives that the developers pushed back on
+- ~50x faster: Reviews dropped from minutes down to just a few seconds. 
+- ~100x cheaper: A massive cost reduction compared to running multi-model agent ensembles.
+- 75% overall bug recall: It caught three out of every four confirmed issues without needing multi-turn exploration. 
+
+As you can see, it&#39;s a huge leap, but there are trade-offs. The agent ensemble workflow picked up more bugs overall, but the speed and cost improvements here are impossible to ignore.
+Overall, it turns out you don&#39;t always need heavy, multi-turn model agents to achieve high-precision code reviews. Using calibrated probability scoring with a good model like Jev gets you the vast majority of the value at a fraction of the time and cost.
+
+I&#39;ll write about it more in the future and if you would like to test the actual workflow we are using, let me know and i&#39;ll share it with you.
+
+Via DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).</div>
+<div class="claim"><span>Claim · reported</span>Original post by @liorshkiller.</div>
+<div class="caveat"><span>Caveat</span>Author-reported example. Results have not been independently verified.</div>
+<div class="llabel" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:22px 0 0">Links</div><div class="links"><a class="lnk" href="https://x.com/liorshkiller/status/2100936106615140757" target="_blank" rel="noopener"><img class="fv" src="https://www.google.com/s2/favicons?domain=x.com&sz=32" alt="" loading="lazy" onerror="this.remove()"><span class="tt"><span class="t">https://x.com/liorshkiller/status/2100936106615140757</span><span class="d">x.com</span></span></a></div>
+<div class="actions">
+<button class="btn solid" id="copyBrief">copy brief for your agent</button>
+<a class="btn" href="https://x.com/liorshkiller/status/2100936106615140757" target="_blank" rel="noopener">open source</a>
+
+</div>
+<div class="more"><h2>More in Evaluation</h2><a href="./video-probabilities.html">Return probabilities, not labels — 80/10/10 beats &quot;orange&quot;</a><a href="./discord-1550583220318507041.html">I’m building Aurapunk, an open-source multi-agent IDE.</a><a href="./discord-1550544655148392610.html">Tested jev against deepseek v4.1 flash on norwegian text.</a></div>
+</div>
+<footer class="site"><div class="in">
+<div class="fgrid">
+<div class="fcol fbrand">
+<a class="brand" href="../index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
+<p>Everything Jev can do, with receipts: runnable judge-model evals plus real community builds, each linked to the project and the post it came from.</p>
+</div>
+<div class="fcol"><h5>Directory</h5>
+<a href="../index.html">All builds</a>
+<a href="../index.html#evals-section">Runnable evals</a>
+<a href="../capabilities.md">Capability pack .md</a>
+<a href="../capabilities.json">Pack .json</a>
+</div>
+<div class="fcol"><h5>Learn</h5>
+<a href="../what-is-jev.html">What is Jev?</a>
+<a href="../jev-like-im-10.html">Explained like you're 10</a>
+<a href="https://github.com/typesafe-ai/jev" target="_blank" rel="noopener">typesafe-ai/jev</a>
+</div>
+<div class="fcol"><h5>Use it from an agent</h5>
+<a href="../index.html#connect">MCP server</a>
+<a href="../setup.txt">Setup prompt</a>
+<a href="https://github.com/everyai-com/jev-directory/issues/new?template=submit-use-case.yml" target="_blank" rel="noopener">Submit your build</a>
+</div>
+</div>
+<div class="fbar">
+<span>Generated 2026-09-21 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
+<span class="flinks"><a href="../capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
+</div>
+</div></footer>
+<div class="toast" id="toast"></div>
+<script>
+document.getElementById('copyBrief').addEventListener('click', function () {
+  var text = "Code review benchmark\n\nOk, at first I thought @typesafeai  was a bit overhyped because essentially \"there is nothing new\" in doing json schema predictions. After seeing all the buzz around it, I wanted to take it for a spin as well so I took one of our internal @scriptdotit  workflows for automated code reviews and wanted to benchmark Jev against it. \n\nAnd it's good...very good actually.\n\nWe have been using our @scriptdotit  workflow for some time now so we have gathered data around false positive and false negative reviews from the AI reviewer. We also used many different LLMs over time. We believed in diversity of reasoning so we tried and tested many models over time: Gemini, Claude, GPT, Grok, GLM and more.\n\nAn important point about code review AI reviewer workflows is that they need to be fast, cheap and correct. We don't want it to miss important comments (false negatives), we don't want it to give wrong reviews (false positives), we don't want to wait a long time for the review after each commit (latency) and since it's running very frequently (kudos to the team :) ) then it needs to be cheap.\n\nNow the results, I benchmarked it against our current setup which is an ensemble (GLM + Grok + Gemini) multi-turn code reviewer. \n\nTo use Jev properly, I had to change the workflow architecture a bit. Instead of letting an agent \"explore\" the PR and propose issues, we score the raw git diff directly with Jev first, and only invoke an LLM to format an explanation when Jev flags an issue.\n\nThe benchmark on our data showed:\n- Zero false positives: It completely filtered out the false positives that the developers pushed back on\n- ~50x faster: Reviews dropped from minutes down to just a few seconds. \n- ~100x cheaper: A massive cost reduction compared to running multi-model agent ensembles.\n- 75% overall bug recall: It caught three out of every four confirmed issues without needing multi-turn exploration. \n\nAs you can see, it's a huge leap, but there are trade-offs. The agent ensemble workflow picked up more bugs overall, but the speed and cost improvements here are impossible to ignore.\nOverall, it turns out you don't always need heavy, multi-turn model agents to achieve high-precision code reviews. Using calibrated probability scoring with a good model like Jev gets you the vast majority of the value at a fraction of the time and cost.\n\nI'll write about it more in the future and if you would like to test the actual workflow we are using, let me know and i'll share it with you.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).\n\nClaim: Original post by @liorshkiller.\nCaveat: Author-reported example. Results have not been independently verified.\nEvidence: measured\n- https://x.com/liorshkiller/status/2100936106615140757: https://x.com/liorshkiller/status/2100936106615140757\n\nSource: https://x.com/liorshkiller/status/2100936106615140757";
+  function done() {
+    var el = document.getElementById('toast');
+    el.textContent = 'Brief copied — paste it into your agent';
+    el.classList.add('show');
+    setTimeout(function () { el.classList.remove('show'); }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, done); }
+  else {
+    var area = document.createElement('textarea');
+    area.value = text; document.body.appendChild(area); area.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    area.remove(); done();
+  }
+});
+</script>
+</body>
+</html>

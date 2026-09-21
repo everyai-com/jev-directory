@@ -71,7 +71,7 @@ function contextOf(question) {
   });
 
   var builds = topMatches(words, JEV_DIR.community, function (b) {
-    return [norm(b.t), norm(b.c), norm(b.d + ' ' + (b.l || []).map(function (l) { return l.t; }).join(' '))];
+    return [norm(b.t), norm(b.c), norm(b.d + ' ' + (b.k || '') + ' ' + (b.v || '') + ' ' + (b.l || []).map(function (l) { return l.t; }).join(' '))];
   }, 8);
   var evals = topMatches(words, JEV_DIR.evals, function (e) {
     return [norm(e.t), '', norm(e.s)];
@@ -79,8 +79,10 @@ function contextOf(question) {
 
   builds.forEach(function (r) {
     var b = r.item;
-    lines.push('- [build] "' + b.t + '" (' + b.c + ') — page: cases/' + b.i + '.html');
+    lines.push('- [build] "' + b.t + '" (' + b.c + ')' + (b.e ? ' [evidence: ' + b.e + ']' : '') + ' — page: cases/' + b.i + '.html');
     lines.push('  ' + String(b.d || '').replace(/\s+/g, ' ').slice(0, 280));
+    if (b.k) lines.push('  Claim: ' + String(b.k).replace(/\s+/g, ' ').slice(0, 200));
+    if (b.v) lines.push('  Caveat: ' + String(b.v).replace(/\s+/g, ' ').slice(0, 200));
     (b.l || []).slice(0, 2).forEach(function (l) {
       lines.push('  link: ' + l.t.slice(0, 80) + ' — ' + l.u);
     });
