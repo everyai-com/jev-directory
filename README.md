@@ -37,6 +37,8 @@ resolved project links ────────┘
 | `capabilities.md` / `capabilities.json` / `setup.txt` | The agent pack: playbook, structured data, paste-into-agent prompt |
 | `llms.txt` | Agent index (llmstxt.org v2): MCP endpoint, pack, guides, key facts |
 | `robots.txt` / `_headers` | Crawlers welcome (incl. AI ones) + `Link: </llms.txt>` on every asset |
+| `404.html` / `privacy.html` / `terms.html` | Branded 404 + legal pages, linked from the footer |
+| `og.png` / `icon.svg` | Social card + SVG site icon, referenced from every page head |
 | `AGENTS.md` | README for coding agents: layout, builders, deploy |
 | `data/use-case-candidates.json` | Every community build: title, category, description, links, source |
 | `data/links.json` | Per-message link index with resolved titles |

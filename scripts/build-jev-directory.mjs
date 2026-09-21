@@ -657,7 +657,7 @@ function siteFooter(base, generated) {
 </div>
 <div class="fbar">
 <span>Generated ${generated} · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
-<span class="flinks"><a href="${base}capabilities.md">agent pack</a><span class="sep">·</span><a href="${GITHUB_REPO}" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="${GITHUB_REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="${GITHUB_REPO}/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
+<span class="flinks"><a href="${base}capabilities.md">agent pack</a><span class="sep">·</span><a href="${GITHUB_REPO}" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="${GITHUB_REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="${base}privacy.html">privacy</a><span class="sep">·</span><a href="${base}terms.html">terms</a><span class="sep">·</span><a href="${GITHUB_REPO}/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
 </div>
 </div></footer>`;
 }
@@ -684,6 +684,8 @@ function pageShell(generated, evalCount, buildCount, linkedCount, setupText, man
 <link rel="stylesheet" href="./directory.css">
 <link rel="describedby" href="./llms.txt">
 <link rel="alternate" type="text/markdown" href="./capabilities.md">
+<link rel="canonical" href="https://jev.magicteams.ai/">
+<link rel="icon" type="image/svg+xml" href="./icon.svg">
 </head>
 <body>
 ${topbar('', 'home')}
@@ -708,7 +710,7 @@ ${topbar('', 'home')}
 </div>
 <div class="searchwrap"><div class="searchbox">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-<input id="q" type="search" placeholder="Search builds and evals — try \\"rubric\\", \\"router\\", \\"refund\\"…" autocomplete="off">
+<input id="q" type="search" aria-label="Search builds and evals" placeholder="Search builds and evals — try \\"rubric\\", \\"router\\", \\"refund\\"…" autocomplete="off">
 <span class="kbd">/</span>
 </div></div>
 <section class="best" id="best" aria-label="Best of Jev"><div class="sechead"><h2>Best of Jev</h2><span class="count">the ten builds to start with</span></div><div class="bestrow" id="bestRow"></div></section>
@@ -716,7 +718,7 @@ ${topbar('', 'home')}
 <aside class="side"><h4>Categories</h4><div class="cats" id="cats"></div></aside>
 <div>
 <div class="sechead"><h2>Community builds</h2><span class="count" id="buildCount"></span><span class="sp"></span>
-<select class="sortsel" id="sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="az">A–Z</option></select></div>
+<select class="sortsel" id="sort" aria-label="Sort builds"><option value="new">Newest</option><option value="old">Oldest</option><option value="az">A–Z</option></select></div>
 <p class="sub">Real things people built with Jev. Open any build for its links, previews and an agent-ready brief.</p>
 <div class="grid" id="builds"></div>
 <div class="morewrap" id="moreWrap"></div>
@@ -794,6 +796,8 @@ function guideShell(title, desc, bodyHtml, generated, current) {
 <link rel="stylesheet" href="./directory.css">
 <link rel="describedby" href="./llms.txt">
 <link rel="alternate" type="text/markdown" href="${mdAlternate}">
+<link rel="canonical" href="${pageUrl}">
+<link rel="icon" type="image/svg+xml" href="./icon.svg">
 </head>
 <body>
 ${topbar('', current)}
@@ -1011,6 +1015,8 @@ function casePage(item, entry, generated) {
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='38' font-weight='bold' text-anchor='middle' fill='%231a1206'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../directory.css">
 <link rel="describedby" href="../llms.txt">
+<link rel="canonical" href="https://jev.magicteams.ai/cases/${item.id}">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
 </head>
 <body>
 ${topbar('../', '')}
@@ -1070,9 +1076,12 @@ async function buildCasePages(candidates, linksById, generated) {
     urls.push(`cases/${item.id}.html`);
   }
   const NL = String.fromCharCode(10);
+  // Absolute clean locs (no .html): the sitemap spec requires absolute URLs,
+  // and these are the canonical 200s — the .html variants 308 to them.
+  const locOf = u => 'https://jev.magicteams.ai/' + (u === 'index.html' ? '' : u.replace(/\.html$/, ''));
   const sitemap = '<?xml version="1.0" encoding="UTF-8"?>' + NL +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + NL +
-    urls.map(u => `  <url><loc>./${u}</loc><lastmod>${generated}</lastmod></url>`).join(NL) +
+    urls.map(u => `  <url><loc>${locOf(u)}</loc><lastmod>${generated}</lastmod></url>`).join(NL) +
     NL + '</urlset>' + NL;
   await writeFile(join(OUT, 'sitemap.xml'), sitemap);
   return urls.length;

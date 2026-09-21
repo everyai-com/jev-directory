@@ -19,6 +19,8 @@
 <link rel="stylesheet" href="./directory.css">
 <link rel="describedby" href="./llms.txt">
 <link rel="alternate" type="text/markdown" href="./capabilities.md">
+<link rel="canonical" href="https://jev.magicteams.ai/">
+<link rel="icon" type="image/svg+xml" href="./icon.svg">
 </head>
 <body>
 <div class="topbar"><div class="in">
@@ -50,7 +52,7 @@
 </div>
 <div class="searchwrap"><div class="searchbox">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-<input id="q" type="search" placeholder="Search builds and evals — try \"rubric\", \"router\", \"refund\"…" autocomplete="off">
+<input id="q" type="search" aria-label="Search builds and evals" placeholder="Search builds and evals — try \"rubric\", \"router\", \"refund\"…" autocomplete="off">
 <span class="kbd">/</span>
 </div></div>
 <section class="best" id="best" aria-label="Best of Jev"><div class="sechead"><h2>Best of Jev</h2><span class="count">the ten builds to start with</span></div><div class="bestrow" id="bestRow"></div></section>
@@ -58,7 +60,7 @@
 <aside class="side"><h4>Categories</h4><div class="cats" id="cats"></div></aside>
 <div>
 <div class="sechead"><h2>Community builds</h2><span class="count" id="buildCount"></span><span class="sp"></span>
-<select class="sortsel" id="sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="az">A–Z</option></select></div>
+<select class="sortsel" id="sort" aria-label="Sort builds"><option value="new">Newest</option><option value="old">Oldest</option><option value="az">A–Z</option></select></div>
 <p class="sub">Real things people built with Jev. Open any build for its links, previews and an agent-ready brief.</p>
 <div class="grid" id="builds"></div>
 <div class="morewrap" id="moreWrap"></div>
@@ -140,7 +142,7 @@ It covers 50 runnable judge-model evals (exact experimental_evaluate prompts) pl
 </div>
 <div class="fbar">
 <span>Generated 2026-09-21 · community content is user-generated — read before you run · not affiliated with TypeSafe AI</span>
-<span class="flinks"><a href="capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
+<span class="flinks"><a href="capabilities.md">agent pack</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute</a><span class="sep">·</span><a href="privacy.html">privacy</a><span class="sep">·</span><a href="terms.html">terms</a><span class="sep">·</span><a href="https://github.com/everyai-com/jev-directory/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></span>
 </div>
 </div></footer>
 <div class="toast" id="toast"></div>

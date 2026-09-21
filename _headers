@@ -3,3 +3,5 @@
 # <link rel="describedby"> tags in the HTML heads.
 /*
   Link: </llms.txt>; rel="describedby"
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
