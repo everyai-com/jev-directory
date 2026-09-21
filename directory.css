@@ -275,3 +275,47 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 .caveat>span{color:var(--faint)}
 .casepage .meta .evpill{margin-left:2px}
 @media (max-width:560px){.connect .gfact{flex-direction:column;gap:3px;padding:9px 0}.connect .gfact b{min-width:0}}
+/* ── Chat 2.0: sources, markdown, controls, mobile ── */
+.msg{animation:msgin .18s ease}
+@keyframes msgin{from{opacity:0;transform:translateY(5px)}}
+.msg p{margin:6px 0}
+.msg p:first-child{margin-top:0}.msg p:last-child{margin-bottom:0}
+.msg h4{font-size:13.5px;margin:10px 0 4px}
+.msg ul,.msg ol{margin:8px 0;padding-left:20px}
+.msg li{margin:3px 0}
+.msg table{border-collapse:collapse;margin:8px 0;font-size:12.5px;display:block;overflow-x:auto;max-width:100%}
+.msg th,.msg td{border:1px solid var(--line2);padding:5px 9px;text-align:left;white-space:nowrap}
+.msg th{background:var(--panel2);font-weight:600}
+.codeblock{position:relative;margin:8px 0}
+.codeblock pre{margin:0}
+.codehead{display:flex;align-items:center;justify-content:space-between;background:var(--panel2);border:1px solid var(--line);border-bottom:0;border-radius:7px 7px 0 0;padding:4px 6px 4px 10px;font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+.codeblock pre{border-radius:0 0 7px 7px}
+.codecopy,.msgacts button,.fups button,.asklatest{font-family:var(--mono);cursor:pointer;touch-action:manipulation}
+.codecopy{background:none;border:1px solid var(--line2);color:var(--dim);border-radius:6px;font-size:10.5px;padding:3px 9px}
+.codecopy:hover{color:var(--accent);border-color:var(--accent)}
+.sources{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;padding-top:9px;border-top:1px dotted var(--line2)}
+.srclabel{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);align-self:center;margin-right:2px}
+.sources a{font-size:12px;border:1px solid var(--line2);border-radius:999px;padding:3px 11px;color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:7px;max-width:100%}
+.sources a:hover{color:var(--accent);border-color:var(--accent)}
+.sources .evpill{font-size:8.5px;padding:1px 7px}
+.msgacts{display:flex;gap:6px;margin-top:9px}
+.msgacts button{background:none;border:1px solid transparent;color:var(--faint);border-radius:6px;font-size:11px;padding:3px 9px}
+.msgacts button:hover{color:var(--accent);border-color:var(--line2)}
+.fups{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.fups button{text-align:left;font-size:12.5px;background:none;border:1px solid var(--line2);color:var(--dim);border-radius:8px;padding:8px 11px}
+.fups button:hover{color:var(--accent);border-color:var(--accent)}
+.asklatest{position:absolute;left:50%;transform:translateX(-50%);bottom:132px;z-index:5;display:none;background:var(--panel2);border:1px solid var(--line2);color:var(--dim);border-radius:999px;font-size:11px;padding:5px 14px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.asklatest:hover{color:var(--accent);border-color:var(--accent)}
+.askheadbtns{display:flex;gap:6px}
+.askform textarea{flex:1;min-width:0;background:var(--panel2);border:1px solid var(--line2);border-radius:8px;color:var(--text);font-size:13.5px;padding:9px 11px;outline:0;font-family:var(--sans);resize:none;line-height:1.45;max-height:120px}
+.askform textarea:focus{border-color:var(--accent)}
+.askformcol{display:flex;flex-direction:column;gap:4px;align-items:stretch}
+.charcount{font-family:var(--mono);font-size:9.5px;color:var(--faint);text-align:center;min-height:12px}
+.askform .btn.stop{background:#3a2424;color:#f28b8b;border:1px solid #5b3434}
+@media (max-width:560px){
+.askform textarea{font-size:16px}
+.askfab{bottom:calc(14px + env(safe-area-inset-bottom))}
+.askpanel{padding-bottom:env(safe-area-inset-bottom)}
+.msg table{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){.msg{animation:none}.askpanel{transition:none}.typing i{animation:none;opacity:.7}}

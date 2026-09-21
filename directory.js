@@ -85,7 +85,7 @@ function buildCard(item, i) {
     '<button class="mini" data-brief="' + i + '">copy brief</button></div></article>';
 }
 function evalBlock(item, i) {
-  return '<details class="eval"><summary><span class="qn">' + String(i + 1).padStart(2, '0') +
+  return '<details class="eval" id="eval' + (i + 1) + '"><summary><span class="qn">' + String(i + 1).padStart(2, '0') +
     '</span><span>' + esc(item.t) + '</span></summary><div class="evalbody"><p>' + esc(item.s) +
     '</p><div class="passrule">✓ ' + esc(item.v) + ' <span>· manifest ' + JEV_DIR.rev.slice(0, 8) + '</span></div>' +
     '<pre id="evp' + i + '">' + esc(item.p) + '</pre><div class="row" style="margin-top:10px">' +
@@ -256,3 +256,12 @@ countUp('statLinks', JEV_DIR.linkedProjects);
 countUp('statCats', new Set(JEV_DIR.community.map(function (i) { return i.c; })).size);
 renderProof();
 buildCats(); render();
+// Deep link from chat sources: open + reveal the referenced eval.
+(function () {
+  var m = (location.hash || '').match(/^#eval(d+)$/);
+  if (!m) return;
+  var el = document.getElementById('eval' + m[1]);
+  if (!el) return;
+  el.open = true;
+  setTimeout(function () { el.scrollIntoView({ block: 'center' }); }, 60);
+})();
