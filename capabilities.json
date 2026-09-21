@@ -18782,6 +18782,11 @@
    "description": "Jev dropped the price of SEO/GEO fixes by 90%\n\nAgents that audit and fix a client's SEO/GEO used to cost us ~$250\n\nHere's where the savings come from:\n\n1/ 30x faster reads of Search Console and PostHog/Mixpanel data\n\n2/ 30x faster checks of what ChatGPT searches on Bing\n\n3/ 30x faster modeling of what users ask Gemini and Claude\n\n4/ 30x faster scans of who ChatGPT and Claude cite\n\n5/ 30x faster analysis of the sources behind those citations\n\n6/ 30x faster gap analysis: why they get cited and we don't\n\n7/ 30x faster fixes across 1,000s of pages on large client sites\n\n8/ 30x faster sorting of which page types ChatGPT cites\n\n9/ 20x faster creation of the pages that make ChatGPT pick you\n\nAvailable in the Ryze AI app and MCP/Claude Connector, link in the 1st comment 👇\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
     {
+     "url": "https://www.get-ryze.ai/",
+     "title": "Ryze AI — SEO/GEO autopilot",
+     "description": null
+    },
+    {
      "url": "https://x.com/irabukht/status/2101090579127951694",
      "title": null,
      "description": null
@@ -18816,6 +18821,11 @@
    "description": "Okay, everyone wants us to give the unbiased facts.\n\nJev compaction here has a lot of problems. The biggest problems:\n\n- When I ran it on our public compaction eval (that you can run too), it resulted in a programmatic rule, that you dont need any Jev or other model for - it simply removed all tool calls from the chat history\n- This means you could do it for free, first of all, but second of all, it means you run into a viscious cycle.\nEvery compaction, there are less and less tool calls to remove from the chat history, meaning it compacts less and less tokens, until there is no room for compaction, and you hit a hard stop, and can't compact anymore.\n- And, if you are cycling like this, every compaction breaks your cache, so you're paying 10x the price on input tokens, and keeping more input tokens each round means a higher baseline cost after compaction as well.\n\nHere's the full reproducible eval that you can run against Hermes Agent between the two (Hermes' vs Jev's):\n\nhttps://t.co/0vJV5u10Cn\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
     {
+     "url": "https://github.com/NousResearch/hermes-agent/pull/116246",
+     "title": "NousResearch/hermes-agent — reproducible compaction eval",
+     "description": null
+    },
+    {
      "url": "https://x.com/Teknium/status/2101398453578555898",
      "title": null,
      "description": null
@@ -18833,6 +18843,11 @@
    "description": "Jev is cool, but like any foundation model it needs to be calibrated to your decision criteria.\n\nWe launched jev-align: an open-source CLI to quickly teach Jev what good and bad looks like using GEPA. \n\nTry it out! https://t.co/UpvJs53RKm https://t.co/Ou4zA8BLZe\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
     {
+     "url": "https://github.com/sutro-sh/jev-align",
+     "title": "sutro-sh/jev-align — calibrate Jev with GEPA",
+     "description": null
+    },
+    {
      "url": "https://x.com/sethkimmel3/status/2101357768640987302",
      "title": null,
      "description": null
@@ -18849,6 +18864,11 @@
    "category": "Work",
    "description": "everyone's making demos with Jev\n\nbut nobody is making real products\n\nintroducing https://t.co/fClaUNrMAn\n\nfind and monitor reddit threads to get cited by AI\n&gt; FREE\n&gt; 4000 reddit threads scanned\n&gt; email, discord, slack\n\nonly possible to give for free bc of Jev &amp; @getanyapi https://t.co/31iD8ygfxu\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
+    {
+     "url": "https://lurk.so/",
+     "title": "lurk.so — Reddit thread monitoring",
+     "description": null
+    },
     {
      "url": "https://x.com/mxfp4/status/2101070906852298910",
      "title": null,
@@ -18883,6 +18903,11 @@
    "category": "Agents",
    "description": "Jev + GrokBot is the best AI agent system I’ve built in my life\n\nIt just made my setup CHEAPER and FASTER than what 95% of people are running...\n\nsetup takes literally 7 minutes:\n\nprompt → GrokBot → Jev decision → GrokBot execution → result\n\nstep 1 → open @typesafeai , create API key (keep it off chat paste)\n\nstep 2 → tell Grok Bot: store TYPESAFE_API_KEY in the secure field\n\nstep 3 → prompt Grok Bot: install typesafe-sdk on Agent Computer + smoke system_one (Choice)\n\nstep 4 → tell Grok Bot: build the usage lab (router, dry-run, config, logs) - or clone Github below\n\nstep 5 → add skill jev-usage-router: before browser / research / retry / extra bot → call the router, honor action\n\nstep 6 → stay shadow first, read logs, then active when you trust it - kill switch: bypass jev or enabled: false\n\nstep 7 → flip active: GrokBot obeys route - Jev decides - GrokBot executes - humans control irreversible actions\n\nthe result: Jev + GrokBot the best and fastest agent running directly on your computer rn, I’ve already tested it on routine tasks - and the results are genuinely incredible \n\nYou can come up with endless ways to use Jev + GrokBot - but the most important thing is to install it as soon as possible\n\nCopy this 2028 setup, explore my repo below - then read the full Jev deep dive ↓\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
+    {
+     "url": "https://jevlist.ai/projects/grok-bot-jev",
+     "title": "Grok Bot Jev — setup guide",
+     "description": null
+    },
     {
      "url": "https://x.com/0xCodila/status/2101433560796467348",
      "title": null,
@@ -18935,6 +18960,11 @@
    "description": "As promised… I just open-sourced the Jev X (twitter) Market Sentiment Analysis terminal powered by @typesafeai \n\n- Ingests 50 - 1,000 live tweets per crypto asset (e.g. BTC, SOL, ETH, etc.)\n- Scores each tweet for bullishness vs. bearishness using JEV\n- Combines social sentiment https://t.co/6e6WLVx5hW\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
     {
+     "url": "https://x.com/brainstormity/status/2100772250181947507",
+     "title": null,
+     "description": null
+    },
+    {
      "url": "https://x.com/brainstormity/status/2101445977924370858",
      "title": null,
      "description": null
@@ -18951,6 +18981,11 @@
    "category": "Evaluation",
    "description": "I swear this is the last Jev demo I'm doing... 🙏🏻\n\nI'm using Jev by @typesafeai to get a third person opinion on my vibe coded projects... 👀\n\nCheckout FirstScreen 🔗 https://t.co/nZnEsgxl1n\nAs usual, it's again open source so feel free to star the repo if you want : )\n\nFor the past three days, I've had access to Jev, and I'm having so much fun playing around with it 🔥\n\nI built Diffjury and JevArena in the past 2 days and shared with you guys on here, and today I built FirstScreen, where Jev basically takes a look at the website and quickly gives a verdict whether it's ready to ship or needs a change\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
+    {
+     "url": "https://firstscreen.up.railway.app/",
+     "title": "FirstScreen — website readiness verdict",
+     "description": null
+    },
     {
      "url": "https://x.com/raihankhan_rk/status/2101333813842620522",
      "title": null,
@@ -19020,6 +19055,11 @@
    "description": "Built a text -&gt; emoji sentiment analysis demo using Jev\n\nTry it here: https://t.co/MNprxC9KIr https://t.co/Xls9NYdpdh\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
     {
+     "url": "https://emoji-jev.whop.site/",
+     "title": "Emoji sentiment demo, live",
+     "description": null
+    },
+    {
      "url": "https://x.com/ColinMcDermott/status/2100535744775242012",
      "title": null,
      "description": null
@@ -19053,6 +19093,11 @@
    "category": "Evaluation",
    "description": "A reported 49-task benchmark combines Jev for tool selection, Mercury 2.5 for arguments and WebMCP for browser actions. The author reports 49/49 tasks solved versus 25/49 for their modified browser-control baseline; results are specific to this setup.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
+    {
+     "url": "https://webmcp.co/",
+     "title": "WebMCP — full benchmark results",
+     "description": null
+    },
     {
      "url": "https://x.com/0xidanlevin/status/2100937437325205568",
      "title": null,
@@ -19173,6 +19218,11 @@
    "description": "A pipeline summarizes papers with DeepSeek V4 Flash and uses Jev to select among 24 topics. The author reports $0.08 for Jev classification and 256-millisecond median latency per paper, plus $3.99 for summaries; classification evaluations were still in progress.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
     {
+     "url": "https://www.1kpapers.com/",
+     "title": "1kpapers — atlas of 1,018 AI papers",
+     "description": null
+    },
+    {
      "url": "https://x.com/nutlope/status/2100426999546184123",
      "title": null,
      "description": null
@@ -19189,6 +19239,11 @@
    "category": "Tools",
    "description": "Jevable is a directory of Jev projects shared on X, with category filters and community submissions. The post describes a resource about Jev rather than claiming Jev powers the directory.\n\nVia DAIR.AI Jev Field Notes (research paraphrase, snapshot 2026-09-20).",
    "links": [
+    {
+     "url": "https://jevable.com/",
+     "title": "Jevable — community demo directory",
+     "description": null
+    },
     {
      "url": "https://x.com/nikunj/status/2101077053567332618",
      "title": null,

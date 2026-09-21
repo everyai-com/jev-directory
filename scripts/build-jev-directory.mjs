@@ -73,7 +73,7 @@ async function readFirst(paths) {
 
 const CSS = `:root{--bg:#0b0c0e;--panel:#121418;--panel2:#171a20;--line:#23272f;--line2:#2e333d;--text:#edeff3;--dim:#9aa0ae;--faint:#626873;--accent:#f5a524;--accent-ink:#1a1206;--mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
-.topbar{position:sticky;top:0;z-index:30;background:rgba(11,12,14,.82);-webkit-backdrop-filter:blur(16px) saturate(150%);backdrop-filter:blur(16px) saturate(150%);border-bottom:1px solid var(--line)}
+.topbar{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
 .topbar .in{max-width:1180px;margin:0 auto;padding:11px 22px;display:flex;align-items:center;gap:14px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;letter-spacing:.13em;color:var(--text);text-decoration:none;white-space:nowrap}
 .brand .mark{width:23px;height:23px;border-radius:7px;background:linear-gradient(140deg,var(--accent),#ff7d1f);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:0;box-shadow:0 2px 10px rgba(245,165,36,.28)}
@@ -347,6 +347,7 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 .caveat{margin-top:10px;font-size:13px;line-height:1.65;color:var(--dim)}
 .caveat>span{color:var(--faint)}
 .casepage .meta .evpill{margin-left:2px}
+@media (max-width:560px){.connect .gfact{flex-direction:column;gap:3px;padding:9px 0}.connect .gfact b{min-width:0}}
 `;
 
 const JS = `import { JEV_DIR } from './data.js';

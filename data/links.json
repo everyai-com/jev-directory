@@ -23051,10 +23051,16 @@
   "timestamp": "2026-09-19T12:00:00Z",
   "sourceUrl": "https://x.com/irabukht/status/2101090579127951694",
   "urls": [
+   "https://www.get-ryze.ai/",
    "https://x.com/irabukht/status/2101090579127951694"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://www.get-ryze.ai/": {
+    "kind": "link",
+    "title": "Ryze AI — SEO/GEO autopilot"
+   }
+  }
  },
  {
   "id": "xfn-2101074194260000982",
@@ -23073,10 +23079,16 @@
   "timestamp": "2026-09-19T12:00:00Z",
   "sourceUrl": "https://x.com/Teknium/status/2101398453578555898",
   "urls": [
+   "https://github.com/NousResearch/hermes-agent/pull/116246",
    "https://x.com/Teknium/status/2101398453578555898"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://github.com/NousResearch/hermes-agent/pull/116246": {
+    "kind": "link",
+    "title": "NousResearch/hermes-agent — reproducible compaction eval"
+   }
+  }
  },
  {
   "id": "xfn-2101357768640987302",
@@ -23084,10 +23096,16 @@
   "timestamp": "2026-09-19T12:00:00Z",
   "sourceUrl": "https://x.com/sethkimmel3/status/2101357768640987302",
   "urls": [
+   "https://github.com/sutro-sh/jev-align",
    "https://x.com/sethkimmel3/status/2101357768640987302"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://github.com/sutro-sh/jev-align": {
+    "kind": "link",
+    "title": "sutro-sh/jev-align — calibrate Jev with GEPA"
+   }
+  }
  },
  {
   "id": "xfn-2101070906852298910",
@@ -23095,10 +23113,16 @@
   "timestamp": "2026-09-19T12:00:00Z",
   "sourceUrl": "https://x.com/mxfp4/status/2101070906852298910",
   "urls": [
+   "https://lurk.so/",
    "https://x.com/mxfp4/status/2101070906852298910"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://lurk.so/": {
+    "kind": "link",
+    "title": "lurk.so — Reddit thread monitoring"
+   }
+  }
  },
  {
   "id": "xfn-2101374291640213785",
@@ -23117,10 +23141,16 @@
   "timestamp": "2026-09-19T12:00:00Z",
   "sourceUrl": "https://x.com/0xCodila/status/2101433560796467348",
   "urls": [
+   "https://jevlist.ai/projects/grok-bot-jev",
    "https://x.com/0xCodila/status/2101433560796467348"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://jevlist.ai/projects/grok-bot-jev": {
+    "kind": "link",
+    "title": "Grok Bot Jev — setup guide"
+   }
+  }
  },
  {
   "id": "xfn-2101443311454036477",
@@ -23150,6 +23180,7 @@
   "timestamp": "2026-09-19T12:00:00Z",
   "sourceUrl": "https://x.com/brainstormity/status/2101445977924370858",
   "urls": [
+   "https://x.com/brainstormity/status/2100772250181947507",
    "https://x.com/brainstormity/status/2101445977924370858"
   ],
   "attachments": [],
@@ -23161,10 +23192,16 @@
   "timestamp": "2026-09-19T12:00:00Z",
   "sourceUrl": "https://x.com/raihankhan_rk/status/2101333813842620522",
   "urls": [
+   "https://firstscreen.up.railway.app/",
    "https://x.com/raihankhan_rk/status/2101333813842620522"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://firstscreen.up.railway.app/": {
+    "kind": "link",
+    "title": "FirstScreen — website readiness verdict"
+   }
+  }
  },
  {
   "id": "xfn-2101436827819192584",
@@ -23205,10 +23242,16 @@
   "timestamp": "2026-09-20T12:00:00Z",
   "sourceUrl": "https://x.com/ColinMcDermott/status/2100535744775242012",
   "urls": [
+   "https://emoji-jev.whop.site/",
    "https://x.com/ColinMcDermott/status/2100535744775242012"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://emoji-jev.whop.site/": {
+    "kind": "link",
+    "title": "Emoji sentiment demo, live"
+   }
+  }
  },
  {
   "id": "xfn-2100891604735099103",
@@ -23227,10 +23270,16 @@
   "timestamp": "2026-09-20T12:00:00Z",
   "sourceUrl": "https://x.com/0xidanlevin/status/2100937437325205568",
   "urls": [
+   "https://webmcp.co/",
    "https://x.com/0xidanlevin/status/2100937437325205568"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://webmcp.co/": {
+    "kind": "link",
+    "title": "WebMCP — full benchmark results"
+   }
+  }
  },
  {
   "id": "xfn-2100756930054504776",
@@ -23304,10 +23353,16 @@
   "timestamp": "2026-09-20T12:00:00Z",
   "sourceUrl": "https://x.com/nutlope/status/2100426999546184123",
   "urls": [
+   "https://www.1kpapers.com/",
    "https://x.com/nutlope/status/2100426999546184123"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://www.1kpapers.com/": {
+    "kind": "link",
+    "title": "1kpapers — atlas of 1,018 AI papers"
+   }
+  }
  },
  {
   "id": "xfn-2101077053567332618",
@@ -23315,10 +23370,16 @@
   "timestamp": "2026-09-20T12:00:00Z",
   "sourceUrl": "https://x.com/nikunj/status/2101077053567332618",
   "urls": [
+   "https://jevable.com/",
    "https://x.com/nikunj/status/2101077053567332618"
   ],
   "attachments": [],
-  "meta": {}
+  "meta": {
+   "https://jevable.com/": {
+    "kind": "link",
+    "title": "Jevable — community demo directory"
+   }
+  }
  },
  {
   "id": "xfn-2101106887840370919",

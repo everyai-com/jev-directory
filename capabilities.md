@@ -3362,6 +3362,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @mxfp4.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [lurk.so — Reddit thread monitoring](https://lurk.so/)
    - [https://x.com/mxfp4/status/2101070906852298910](https://x.com/mxfp4/status/2101070906852298910)
    - Source: https://x.com/mxfp4/status/2101070906852298910 (by Kevin Wang)
 
@@ -3378,6 +3379,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @nutlope.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: measured
+   - [1kpapers — atlas of 1,018 AI papers](https://www.1kpapers.com/)
    - [https://x.com/nutlope/status/2100426999546184123](https://x.com/nutlope/status/2100426999546184123)
    - Source: https://x.com/nutlope/status/2100426999546184123 (by Hassan)
 
@@ -5604,6 +5606,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @ColinMcDermott.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [Emoji sentiment demo, live](https://emoji-jev.whop.site/)
    - [https://x.com/ColinMcDermott/status/2100535744775242012](https://x.com/ColinMcDermott/status/2100535744775242012)
    - Source: https://x.com/ColinMcDermott/status/2100535744775242012 (by Colin McDermott)
 
@@ -5628,6 +5631,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @nikunj.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [Jevable — community demo directory](https://jevable.com/)
    - [https://x.com/nikunj/status/2101077053567332618](https://x.com/nikunj/status/2101077053567332618)
    - Source: https://x.com/nikunj/status/2101077053567332618 (by Nikunj Kothari)
 
@@ -6143,6 +6147,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @Teknium.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: measured
+   - [NousResearch/hermes-agent — reproducible compaction eval](https://github.com/NousResearch/hermes-agent/pull/116246)
    - [https://x.com/Teknium/status/2101398453578555898](https://x.com/Teknium/status/2101398453578555898)
    - Source: https://x.com/Teknium/status/2101398453578555898 (by Teknium 🪽)
 
@@ -6151,6 +6156,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @sethkimmel3.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [sutro-sh/jev-align — calibrate Jev with GEPA](https://github.com/sutro-sh/jev-align)
    - [https://x.com/sethkimmel3/status/2101357768640987302](https://x.com/sethkimmel3/status/2101357768640987302)
    - Source: https://x.com/sethkimmel3/status/2101357768640987302 (by Seth Kimmel)
 
@@ -6183,6 +6189,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @raihankhan_rk.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [FirstScreen — website readiness verdict](https://firstscreen.up.railway.app/)
    - [https://x.com/raihankhan_rk/status/2101333813842620522](https://x.com/raihankhan_rk/status/2101333813842620522)
    - Source: https://x.com/raihankhan_rk/status/2101333813842620522 (by Raihan Khan)
 
@@ -6191,6 +6198,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @0xidanlevin.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: measured
+   - [WebMCP — full benchmark results](https://webmcp.co/)
    - [https://x.com/0xidanlevin/status/2100937437325205568](https://x.com/0xidanlevin/status/2100937437325205568)
    - Source: https://x.com/0xidanlevin/status/2100937437325205568 (by idan levin)
 
@@ -7048,6 +7056,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @0xCodila.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [Grok Bot Jev — setup guide](https://jevlist.ai/projects/grok-bot-jev)
    - [https://x.com/0xCodila/status/2101433560796467348](https://x.com/0xCodila/status/2101433560796467348)
    - Source: https://x.com/0xCodila/status/2101433560796467348 (by codila)
 
@@ -8120,6 +8129,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @brainstormity.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [https://x.com/brainstormity/status/2100772250181947507](https://x.com/brainstormity/status/2100772250181947507)
    - [https://x.com/brainstormity/status/2101445977924370858](https://x.com/brainstormity/status/2101445977924370858)
    - Source: https://x.com/brainstormity/status/2101445977924370858 (by brainstormity)
 
@@ -8378,6 +8388,7 @@ Real things people built with Jev — from the TypeSafe AI #show-and-tell channe
    - Claim: Original post by @irabukht.
    - Caveat: Author-reported example. Results have not been independently verified.
    - Evidence: demo
+   - [Ryze AI — SEO/GEO autopilot](https://www.get-ryze.ai/)
    - [https://x.com/irabukht/status/2101090579127951694](https://x.com/irabukht/status/2101090579127951694)
    - Source: https://x.com/irabukht/status/2101090579127951694 (by Ira Bodnar)
 
