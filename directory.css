@@ -249,7 +249,8 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 .hero h1{margin-top:0}
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,var(--line2) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:radial-gradient(ellipse 90% 85% at 18% 0%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse 90% 85% at 18% 0%,#000 25%,transparent 72%);pointer-events:none}
 .hero>*{position:relative}
-.proof{font-family:var(--mono);font-size:12px;background:var(--panel);border:1px solid var(--line2);border-radius:12px;overflow:hidden}
+.proof{font-family:var(--mono);font-size:12px;background:var(--panel);border:1px solid var(--line2);border-radius:12px;overflow:hidden;transition:opacity .28s ease}
+.proof.fade{opacity:0}
 .proof .ph{padding:10px 14px;border-bottom:1px dashed var(--line2);color:var(--faint);font-size:11px;display:flex;justify-content:space-between;gap:8px}
 .proof .ph b{color:var(--dim);font-weight:600}
 .proof .pl{padding:12px 14px;display:flex;flex-direction:column;gap:9px}
@@ -318,4 +319,4 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 .askpanel{padding-bottom:env(safe-area-inset-bottom)}
 .msg table{font-size:12px}
 }
-@media (prefers-reduced-motion:reduce){.msg{animation:none}.askpanel{transition:none}.typing i{animation:none;opacity:.7}}
+@media (prefers-reduced-motion:reduce){.msg{animation:none}.askpanel{transition:none}.typing i{animation:none;opacity:.7}.proof{transition:none}}

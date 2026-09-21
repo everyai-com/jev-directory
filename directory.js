@@ -232,10 +232,13 @@ function countUp(id, target) {
   }
   requestAnimationFrame(frame);
 }
+var proofIdx = 0;
 function renderProof() {
   var host = $('proof');
   if (!host || !JEV_DIR.evals.length) return;
-  var rows = JEV_DIR.evals.slice(0, 3).map(function (e) {
+  var evals = JEV_DIR.evals;
+  var rows = [0, 1, 2].map(function (k) {
+    var e = evals[(proofIdx + k) % evals.length];
     var q = (e.r && e.r[0]) || [];
     var val = e.x ? e.x[q[0]] : null;
     var disp = val === true ? 'true' : (val === false ? 'false' : String(val));
@@ -256,6 +259,28 @@ countUp('statLinks', JEV_DIR.linkedProjects);
 countUp('statCats', new Set(JEV_DIR.community.map(function (i) { return i.c; })).size);
 renderProof();
 buildCats(); render();
+// Rotate the sample verdicts through all evals. Static when reduced
+// motion is preferred; pauses while hovered or when the tab hides.
+(function () {
+  var host = $('proof');
+  if (!host || !JEV_DIR.evals.length) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var timer = null;
+  function tick() {
+    if (document.hidden) return;
+    host.classList.add('fade');
+    setTimeout(function () {
+      proofIdx = (proofIdx + 3) % JEV_DIR.evals.length;
+      renderProof();
+      host.classList.remove('fade');
+    }, 280);
+  }
+  function start() { stop(); timer = setInterval(tick, 4200); }
+  function stop() { if (timer) clearInterval(timer); timer = null; }
+  host.addEventListener('mouseenter', stop);
+  host.addEventListener('mouseleave', start);
+  start();
+})();
 // Deep link from chat sources: open + reveal the referenced eval.
 (function () {
   var m = (location.hash || '').match(/^#eval(d+)$/);

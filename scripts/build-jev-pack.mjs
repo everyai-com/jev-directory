@@ -350,6 +350,7 @@ async function main() {
   llms.push('');
   llms.push('- [What is Jev?](./what-is-jev.html) ([markdown](./what-is-jev.md)): judge-model explainer with the exact AI SDK call shape.');
   llms.push(`- [Jev, explained like you're 10](./jev-like-im-10.html) ([markdown](./jev-like-im-10.md)): the same idea with no jargon.`);
+  llms.push('- [Decision patterns](./decision-patterns.html) ([markdown](./decision-patterns.md)): ten reusable judge-model patterns, each linked to runnable evals.');
   llms.push('');
   llms.push('## Directory');
   llms.push('');

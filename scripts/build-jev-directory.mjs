@@ -322,7 +322,8 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 .hero h1{margin-top:0}
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,var(--line2) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:radial-gradient(ellipse 90% 85% at 18% 0%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse 90% 85% at 18% 0%,#000 25%,transparent 72%);pointer-events:none}
 .hero>*{position:relative}
-.proof{font-family:var(--mono);font-size:12px;background:var(--panel);border:1px solid var(--line2);border-radius:12px;overflow:hidden}
+.proof{font-family:var(--mono);font-size:12px;background:var(--panel);border:1px solid var(--line2);border-radius:12px;overflow:hidden;transition:opacity .28s ease}
+.proof.fade{opacity:0}
 .proof .ph{padding:10px 14px;border-bottom:1px dashed var(--line2);color:var(--faint);font-size:11px;display:flex;justify-content:space-between;gap:8px}
 .proof .ph b{color:var(--dim);font-weight:600}
 .proof .pl{padding:12px 14px;display:flex;flex-direction:column;gap:9px}
@@ -391,7 +392,7 @@ pre.code{background:#08090b;border:1px solid var(--line);border-radius:10px;padd
 .askpanel{padding-bottom:env(safe-area-inset-bottom)}
 .msg table{font-size:12px}
 }
-@media (prefers-reduced-motion:reduce){.msg{animation:none}.askpanel{transition:none}.typing i{animation:none;opacity:.7}}
+@media (prefers-reduced-motion:reduce){.msg{animation:none}.askpanel{transition:none}.typing i{animation:none;opacity:.7}.proof{transition:none}}
 `;
 
 const JS = `import { JEV_DIR } from './data.js';
@@ -628,10 +629,13 @@ function countUp(id, target) {
   }
   requestAnimationFrame(frame);
 }
+var proofIdx = 0;
 function renderProof() {
   var host = $('proof');
   if (!host || !JEV_DIR.evals.length) return;
-  var rows = JEV_DIR.evals.slice(0, 3).map(function (e) {
+  var evals = JEV_DIR.evals;
+  var rows = [0, 1, 2].map(function (k) {
+    var e = evals[(proofIdx + k) % evals.length];
     var q = (e.r && e.r[0]) || [];
     var val = e.x ? e.x[q[0]] : null;
     var disp = val === true ? 'true' : (val === false ? 'false' : String(val));
@@ -652,6 +656,28 @@ countUp('statLinks', JEV_DIR.linkedProjects);
 countUp('statCats', new Set(JEV_DIR.community.map(function (i) { return i.c; })).size);
 renderProof();
 buildCats(); render();
+// Rotate the sample verdicts through all evals. Static when reduced
+// motion is preferred; pauses while hovered or when the tab hides.
+(function () {
+  var host = $('proof');
+  if (!host || !JEV_DIR.evals.length) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var timer = null;
+  function tick() {
+    if (document.hidden) return;
+    host.classList.add('fade');
+    setTimeout(function () {
+      proofIdx = (proofIdx + 3) % JEV_DIR.evals.length;
+      renderProof();
+      host.classList.remove('fade');
+    }, 280);
+  }
+  function start() { stop(); timer = setInterval(tick, 4200); }
+  function stop() { if (timer) clearInterval(timer); timer = null; }
+  host.addEventListener('mouseenter', stop);
+  host.addEventListener('mouseleave', start);
+  start();
+})();
 // Deep link from chat sources: open + reveal the referenced eval.
 (function () {
   var m = (location.hash || '').match(/^#eval(\d+)$/);
@@ -676,7 +702,7 @@ function topbar(base, current) {
     `<a href="${href}"${key === current ? ' class="on"' : ''}>${label}</a>`;
   return `<div class="topbar"><div class="in">
 <a class="brand" href="${base}index.html"><span class="mark">J</span><span><b>JEV</b><i>·DIRECTORY</i></span></a>
-<nav class="topnav">${link(`${base}index.html`, 'directory', 'home')}${link(`${base}what-is-jev.html`, 'what is jev', 'what')}${link(`${base}jev-like-im-10.html`, "like i'm 10", 'eli10')}</nav>
+<nav class="topnav">${link(`${base}index.html`, 'directory', 'home')}${link(`${base}what-is-jev.html`, 'what is jev', 'what')}${link(`${base}jev-like-im-10.html`, "like i'm 10", 'eli10')}${link(`${base}decision-patterns.html`, 'patterns', 'patterns')}</nav>
 <span class="sp"></span>
 <a class="btn gh" href="${GITHUB_REPO}" target="_blank" rel="noopener" title="Star or fork on GitHub">${GH_ICON}<span>GitHub</span></a>
 <a class="btn" href="${base}capabilities.md">agent pack</a>
@@ -700,6 +726,7 @@ function siteFooter(base, generated) {
 <div class="fcol"><h5>Learn</h5>
 <a href="${base}what-is-jev.html">What is Jev?</a>
 <a href="${base}jev-like-im-10.html">Explained like you're 10</a>
+<a href="${base}decision-patterns.html">Decision patterns</a>
 <a href="https://github.com/typesafe-ai/jev" target="_blank" rel="noopener">typesafe-ai/jev</a>
 </div>
 <div class="fcol"><h5>Use it from an agent</h5>
@@ -829,8 +856,8 @@ ${siteFooter('', generated)}
 }
 
 function guideShell(title, desc, bodyHtml, generated, current) {
-  const mdAlternate = current === 'eli10' ? './jev-like-im-10.md' : './what-is-jev.md';
-  const pageUrl = current === 'eli10' ? 'https://jev.magicteams.ai/jev-like-im-10' : 'https://jev.magicteams.ai/what-is-jev';
+  const mdAlternate = current === 'eli10' ? './jev-like-im-10.md' : current === 'patterns' ? './decision-patterns.md' : './what-is-jev.md';
+  const pageUrl = current === 'eli10' ? 'https://jev.magicteams.ai/jev-like-im-10' : current === 'patterns' ? 'https://jev.magicteams.ai/decision-patterns' : 'https://jev.magicteams.ai/what-is-jev';
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1017,6 +1044,78 @@ function guideEli10() {
 <div class="callout">That's really it — the grown-up version is the same three whistles with code attached. <a href="./what-is-jev.html">Read the grown-up version</a>, then go poke at the <a href="./index.html#evals-section">50 runnable tests</a> and the real builds behind them.</div>`;
 }
 
+function guidePatterns() {
+  const ev = (...ns) => ns.map(n => `<a href="./index.html#eval-${n}">eval ${n}</a>`).join(' · ');
+  const mcp = id => `list_jev_patterns {"id": "${id}"}`;
+  return `<div class="guidehero">
+<div class="gk">Decision patterns</div>
+<h1>Ten ways to use a judge model.</h1>
+<p class="lede">Every Jev integration in this directory is one of ten reusable patterns. Find the shape of your problem below, copy the closest runnable eval, adapt its questions to your own states — and check the community builds that prove each pattern in production.</p>
+</div>
+
+<h2 id="boolean-gate">1. Boolean gate — stop the action unless the rule holds</h2>
+<p>One boolean question per policy rule. The action — refund, send, charge, publish — only proceeds when every verdict is true; otherwise pause for approval or a human.</p>
+<div class="gfact"><b>When</b><span>Refunds, sends, charges, publishes — anywhere an agent must prove it disclosed, redacted, or confirmed something before acting.</span></div>
+<div class="gfact"><b>Ask</b><span><code>amount_disclosed</code> (boolean): "True only if the agent stated the exact refund amount before the customer approved."</span></div>
+<p>Try: ${ev(1, 4, 6, 9)} · over MCP: <code>${mcp('boolean-gate')}</code></p>
+
+<h2 id="choice-router">2. Choice router — send each item to exactly one owner</h2>
+<p>One choice question whose criteria are your queues, owners, or priorities. Every ticket, alert, or message lands somewhere — never two places, never nowhere.</p>
+<div class="gfact"><b>When</b><span>Support triage, bug intake, lead routing, escalation queues, moderation dispositions.</span></div>
+<div class="gfact"><b>Ask</b><span><code>queue</code> (choice: billing | shipping | account): "Route this ticket to the team that owns the underlying problem."</span></div>
+<p>Try: ${ev(13, 11, 14, 15, 50)} · over MCP: <code>${mcp('choice-router')}</code></p>
+
+<h2 id="score-rubric">3. Score rubric — grade quality on your own scale</h2>
+<p>One score question per quality dimension with an ordered rubric. Track the numbers over time instead of re-reading everything.</p>
+<div class="gfact"><b>When</b><span>Reviewing agent replies, summaries, drafts, translations, plans — anything where "good" is a spectrum, not a switch.</span></div>
+<div class="gfact"><b>Ask</b><span><code>empathy</code> (score 1–4): ["1 - none", "3 - acknowledged the problem", "4 - owned it and fixed it"].</span></div>
+<p>Try: ${ev(23, 21, 24, 25)} · over MCP: <code>${mcp('score-rubric')}</code></p>
+
+<h2 id="multi-question-fanout">4. Multi-question fan-out — one state, many verdicts, one call</h2>
+<p>Pack every question about the same record into a single call. Questions evaluate in parallel and output is free, so the tenth question costs about nothing extra.</p>
+<div class="gfact"><b>When</b><span>Auditing transcripts, calls, or artifacts where you need the gate <i>and</i> the route <i>and</i> the grade together.</span></div>
+<div class="gfact"><b>Ask</b><span><code>policy_followed</code> (boolean) + <code>empathy</code> (score) over the same transcript — pass only when both match.</span></div>
+<p>Try: ${ev(31, 32, 34, 40)} · over MCP: <code>${mcp('multi-question-fanout')}</code></p>
+
+<h2 id="confidence-routing">5. Confidence routing — automate the clear, escalate the unsure</h2>
+<p>Read the boolean probability (and Choice/Score confidence) on every answer. Automate above your threshold, route below it to a human — calibrated on your own labelled examples.</p>
+<div class="gfact"><b>When</b><span>Any automation where a wrong auto-decision costs more than a review: refunds, access grants, publishes, medical or legal drafts.</span></div>
+<div class="gfact"><b>Ask</b><span><code>refunded</code> (boolean), then in code: if probability &lt; 0.8, send for manual review.</span></div>
+<p>Try: ${ev(50, 16, 6)} · over MCP: <code>${mcp('confidence-routing')}</code></p>
+
+<h2 id="retag-loop">6. Retag loop — reclassify all of history when the question changes</h2>
+<p>Tag what matters today; when the business changes, re-run Jev over everything for a few dollars instead of predicting the right taxonomy six months ahead. The directory's headline run: 20,000 messages into 8 buckets in 7 minutes for $1.45.</p>
+<div class="gfact"><b>When</b><span>Email, Slack, and transcript archives, CRM hygiene, content libraries — any corpus whose categories keep evolving.</span></div>
+<div class="gfact"><b>Ask</b><span><code>intent</code> (choice over your buckets), re-run over the whole archive in one batch job.</span></div>
+<p>Try: ${ev(13, 12, 17)} · over MCP: <code>${mcp('retag-loop')}</code></p>
+
+<h2 id="hypothesis-loop">7. Hypothesis loop — let the LLM guess, let Jev measure</h2>
+<p>Hand a thinking model transcripts plus outcomes; it proposes candidate drivers ("used the prospect's name"). Point Jev at history, score every record against all candidates, keep what correlates, repeat.</p>
+<div class="gfact"><b>When</b><span>Sales-call analysis, support deflection, churn drivers — anywhere you suspect patterns but can't hand-label enough data to prove them.</span></div>
+<div class="gfact"><b>Ask</b><span>Twenty booleans (one per hypothesis) over every call transcript, joined to outcomes in your warehouse.</span></div>
+<p>Try: ${ev(40, 20, 15)} · over MCP: <code>${mcp('hypothesis-loop')}</code></p>
+
+<h2 id="eval-harness">8. Eval harness — pin agent behavior with fixed states + verdicts</h2>
+<p>Fixed states, exact expected verdicts, one dataset revision. Run the suite on every agent change; a revision bump means the definition of success changed, never silently.</p>
+<div class="gfact"><b>When</b><span>CI gates for agent behavior, regression suites for prompts, comparing two agent versions on identical inputs.</span></div>
+<div class="gfact"><b>Ask</b><span>This directory's 50 evals are the template: exact match per question, pass iff every question matches.</span></div>
+<p>Try: ${ev(1, 31, 49)} · over MCP: <code>${mcp('eval-harness')}</code></p>
+
+<h2 id="agent-loop-step">9. Agent-loop step — Jev picks the next move, the LLM executes it</h2>
+<p>At each loop iteration Jev chooses the next tool or subagent — or one of continue / retry / ask-the-user / stop. The LLM never burns reasoning on the routing decision itself.</p>
+<div class="gfact"><b>When</b><span>Multi-step agents, tool-heavy tasks, browser automation — anywhere routing tokens dominate the bill.</span></div>
+<div class="gfact"><b>Ask</b><span><code>next_step</code> (choice: continue | retry | ask_user | stop): "Given the goal and the last tool result, what should the agent do next?"</span></div>
+<p>Try: ${ev(50, 48, 18)} · over MCP: <code>${mcp('agent-loop-step')}</code></p>
+
+<h2 id="output-verifier">10. Output verifier — check the artifact before it ships</h2>
+<p>Judge the draft, not the chat: groundedness, citations, tone, PII leaks, audience fit. The generator writes; Jev signs off or sends back with a scored reason.</p>
+<div class="gfact"><b>When</b><span>Newsletters, release notes, RAG answers, code reviews, generated reports — any artifact with a bar to clear.</span></div>
+<div class="gfact"><b>Ask</b><span><code>claims_sourced</code> (boolean) + <code>draft_quality</code> (score) over the draft artifact.</span></div>
+<p>Try: ${ev(5, 49, 43, 38, 19)} · over MCP: <code>${mcp('output-verifier')}</code></p>
+
+<div class="callout">Not sure which pattern fits? Describe your product to the <a href="./index.html#connect">MCP server's recommend_jev_use_cases</a> — or <a href="./index.html#best">start from the ten best builds</a> and work backwards.</div>`;
+}
+
 function escHtml(v) {
   return String(v == null ? '' : v).replace(/[&<>'"]/g, ch => (
     { '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[ch]));
@@ -1120,7 +1219,7 @@ async function buildCasePages(candidates, linksById, generated) {
     if (!byCat.has(a.category)) byCat.set(a.category, []);
     byCat.get(a.category).push(a);
   });
-  const urls = ['index.html', 'what-is-jev.html', 'jev-like-im-10.html'];
+  const urls = ['index.html', 'what-is-jev.html', 'jev-like-im-10.html', 'decision-patterns.html'];
   for (const item of candidates) {
     const entry = linksById[String(item.id).replace(/^discord-/, '')] || {};
     const { html } = casePage(item, entry, generated);
@@ -1252,6 +1351,8 @@ async function main() {
     guideShell('What is Jev?', 'Jev is a judge model: hand it what happened plus plain-English questions and get typed verdicts back — boolean, choice or score.', guideWhatIs(), generated, 'what'));
   await writeFile(join(OUT, 'jev-like-im-10.html'),
     guideShell("Jev, explained like you're 10", 'Jev is the referee for robots: it watches what an AI did and answers yes-or-no, pick-one, and star-rating questions about it.', guideEli10(), generated, 'eli10'));
+  await writeFile(join(OUT, 'decision-patterns.html'),
+    guideShell('Jev decision patterns', 'Ten reusable ways to use a judge model — gates, routers, rubrics, retag loops and more — each linked to runnable evals.', guidePatterns(), generated, 'patterns'));
   const pages = await buildCasePages(candidates, linksById, generated);
   console.log(`  case pages: ${pages - 1} + sitemap.xml`);
   console.log(`jev directory → ${OUT}/  (evals: ${data.evals.length}, builds: ${data.community.length}, linked: ${linkedProjects})`);

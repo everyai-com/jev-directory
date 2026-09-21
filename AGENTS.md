@@ -22,9 +22,9 @@ Cloudflare Pages advanced-mode worker that serves an MCP endpoint. Live at
 | --- | --- | --- |
 | `index.html`, `directory.css`, `directory.js`, `data.js` | Generated directory page | No — edit `scripts/build-jev-directory.mjs` |
 | `cases/*.html`, `sitemap.xml` | Generated case pages + sitemap | No — same builder |
-| `what-is-jev.html`, `jev-like-im-10.html` | Generated guide pages | No — same builder (`guideWhatIs`, `guideEli10`) |
+| `what-is-jev.html`, `jev-like-im-10.html`, `decision-patterns.html` | Generated guide pages | No — same builder (`guideWhatIs`, `guideEli10`, `guidePatterns`) |
 | `capabilities.md`, `capabilities.json`, `setup.txt`, `llms.txt` | Generated agent pack | No — edit `scripts/build-jev-pack.mjs` |
-| `what-is-jev.md`, `jev-like-im-10.md` | Hand-written markdown alternates of the guides | Yes, keep in sync with the guide builders |
+| `what-is-jev.md`, `jev-like-im-10.md`, `decision-patterns.md` | Hand-written markdown alternates of the guides | Yes, keep in sync with the guide builders |
 | `data/use-case-candidates.json`, `data/links.json` | Curated community builds + link index | Yes — then rebuild |
 | `data/jev-guide.js`, `data/jev-manifest.js` | The 50 evals + ground-truth verdicts | Yes, in tandem (see below) |
 | `_worker.js`, `_routes.json`, `_headers` | MCP worker + Pages routing/headers | Yes |

@@ -32,8 +32,8 @@ resolved project links ────────┘
 | `ask.js` | Side chat: "what can Jev build?", answered from the directory with links |
 | `_worker.js` | MCP server (Pages advanced-mode worker): the directory as agent tools at `/mcp` |
 | `_routes.json` | Scopes the worker to `/mcp` — every other path is a plain static asset |
-| `what-is-jev.html` / `jev-like-im-10.html` | Guide pages: the grown-up explainer and the 10-year-old version, linked from the topbar |
-| `what-is-jev.md` / `jev-like-im-10.md` | Markdown alternates of the guides (hand-written, `rel="alternate"`) |
+| `what-is-jev.html` / `jev-like-im-10.html` / `decision-patterns.html` | Guide pages: the explainer, the 10-year-old version, and ten decision patterns — all linked from the topbar |
+| `what-is-jev.md` / `jev-like-im-10.md` / `decision-patterns.md` | Markdown alternates of the guides (hand-written, `rel="alternate"`) |
 | `capabilities.md` / `capabilities.json` / `setup.txt` | The agent pack: playbook, structured data, paste-into-agent prompt |
 | `llms.txt` | Agent index (llmstxt.org v2): MCP endpoint, pack, guides, key facts |
 | `robots.txt` / `_headers` | Crawlers welcome (incl. AI ones) + `Link: </llms.txt>` on every asset |
